@@ -169,6 +169,9 @@ Another equation mentioned in TSR is the **Consciousness-Kinetic Energy** analog
 
 $$Eck=E⋅Enp.E_{ck} = \sqrt{E \cdot E_{np}}$$.
 
+![_- visual selection (8)](https://github.com/user-attachments/assets/59e11cc3-5553-4d2d-ba7a-caf826983f84)
+
+
 This mixes physical energy $$E$$ and nonphysical energy $$E_{np}$$. It’s analogous to a geometric mean, and in plainer terms it might represent *mind-body interaction energy*. For example, $$E_{ck}$$ could be relevant when a mental intention translates into a physical action – it’s where the two domains overlap. If $$E$$ (physical) or $$E_{np}$$ (mental) is zero, the interaction energy is zero (no mind-body interaction if either side isn’t active). If both are present, $$E_{ck}$$ gives a scale of combined effect.
 
 ### 4.2 Logical Consistency – A Proof in Coq
@@ -213,6 +216,9 @@ Notice the structure: $$4GM$$ in gravity corresponds to $$k M_{np}$$ in TSR (sin
 
 In plain language, $$\theta_{np}$$ could be thought of as **“how much reality is bent”** by a strong intention or group consciousness. If $$\theta_{np}$$ is small but non-zero, it suggests a measurable, albeit tiny, effect.
 
+![_- visual selection (9)](https://github.com/user-attachments/assets/74238697-2327-41aa-90c7-7e38c63a830b)
+
+
 For example, TSR might predict that a highly coherent group meditation (large $$M_{np}$$ because many minds focus together) could slightly “bend” outcomes in a community – maybe influencing probabilities of events like crime or cooperation (we’ll see in Chapter 5 that some social experiments hint at this). The challenge is measuring such a “deflection” in reality, which is subtle compared to something like bending of light. But formulating it this way allows researchers to derive **testable hypotheses**. For instance: *If 1,000 people meditate with a certain intensity for a week, crime rates in that city should shift by X% beyond expected trends.* That’s analogous to predicting how much a galaxy cluster will bend light from a quasar behind it.
 
 ### 4.4 Summary of the Framework
@@ -250,6 +256,9 @@ One of TSR’s simpler and more testable claims is that individual practices lik
 
 In TSR’s terms, **resistance** ($$R$$) can be thought of as the “push-back” or friction between you and reality (remember Chapter 2). High resistance might correspond to high stress and tension in the body. TSR suggests that practices which align consciousness (like meditation, prayer, or deep breathing) reduce resistance.
 
+![_- visual selection (10)](https://github.com/user-attachments/assets/ba9b42f3-370e-4e03-8b28-7be15f40d88d)
+
+
 A mathematical formulation given is:
 
 $$ln⁡(R)=−αt,\ln(R) = -\alpha t$$,
@@ -272,6 +281,9 @@ Another domain of social evidence is in **psychology experiments on intention**.
 
 **Causation vs. Correlation:** TSR is careful to differentiate **correlated events** from **causal influence**. If a happy person often encounters happy coincidences, is it cause or just perception? Maybe they interpret events more positively (a correlation of mindset and outlook, but not causing the events). TSR acknowledges this and thus encourages rigorous testing. For example, in the crime study, it’s not just that meditators *felt* things were safer – actual crime reports went down. That’s more strongly indicative of causation. Similarly, if cortisol drops during meditation, it’s not just perception – it’s a physical causal effect of the practice.
 
+![_- visual selection (11)](https://github.com/user-attachments/assets/bb9b502f-8312-4724-a41e-b0554ddbe3e9)
+
+
 In sum, the social and group evidence provides tantalizing support but is not conclusive. **TSR predicts these kinds of effects** will be reproducible: group coherence leading to measurable social benefits, focused intentions leading to slight physical changes, etc. Part of the mission of TSR is to inspire more controlled experiments. If consciousness truly is a factor in reality, we should see consistent, though perhaps subtle, outcomes beyond what chance or conventional science would predict.
 
 ### 5.3 Vibrational Lensing and Hard Science Tests
@@ -283,6 +295,9 @@ The most challenging aspect to test is TSR’s quasi-physical prediction of **vi
 - **Astronomical observation**: This one is far-fetched but imaginative – if collective consciousness on Earth has effects, could it ever influence something like cosmic rays or solar activity? Probably not feasibly detectable, but it shows the scale of thinking.
 
 At present, vibrational lensing remains a theoretical construct without direct evidence. TSR acknowledges this and treats it as a **frontier hypothesis** – one that **awaits empirical verification**. It’s akin to how the bending of light by gravity was predicted by Einstein in 1915 but only confirmed in 1919 during a solar eclipse. For TSR, a “confirmation” might be a future experiment where a prediction of consciousness affecting a physical system is validated.
+
+![_- visual selection (12)](https://github.com/user-attachments/assets/e1daa82a-3033-4fa5-8ce2-d329d97c182e)
+
 
 ### 5.4 Summary of Evidence Alignment
 
@@ -329,6 +344,9 @@ Practically, a sovereign mindset means:
 Carlos’s transformation exemplified this: after his talk with the mentor, he shifted from self-pity (which is understandable but not productive) to proactive growth. He couldn’t undo the layoff, but he could prepare for the next chapter – and that mindset likely contributed to him finding a new job, by keeping him motivated and open to opportunities.
 
 **Try This: Reframing a Setback** – *Think of a recent setback or disappointment you faced. Write down on paper two narratives about it: (A) the disempowered story, where you had no control and everything is awful; (B) the sovereign story, where you identify at least one thing you learned or one way you can respond constructively. For example, if you had a health issue, the disempowered story is “I’m unlucky and my body betrayed me”; the sovereign story is “This is a signal to care for my health more; I can research treatments and cultivate a healing mindset.” You’re not denying the difficulty, just choosing to also see your capacity to respond. Notice how the two stories feel different. Keep the paper and whenever you catch yourself in pure victim mode about something, revisit how you could rewrite that situation with you as an active agent.*
+
+![_- visual selection (13)](https://github.com/user-attachments/assets/57534e0e-19be-48ba-a8af-1f8f09a29665)
+
 
 ### 6.3 Sovereignty vs. Control – Embracing Uncertainty
 
@@ -384,6 +402,9 @@ At lunch, Alex takes a walk outside (even during a busy day, a short walk clears
 
 This interaction demonstrates **the ripple effect**: Alex’s reflective mindset not only helps him but also those around him. By the simple act of reframing Nina’s narrative, he helps her reflect a better view of the situation. Communities can uplift each other in this way, one person’s sovereignty inspiring another’s.
 
+
+![_- visual selection (14)](https://github.com/user-attachments/assets/1759e21f-03f9-4d16-8a21-61fd3a5c9ecf)
+
 ### 7.3 Evening – Reflection and Integration
 
 After a full day, Alex heads home. In the evening, he unwinds with some music and cooking (he finds these activities meditative). He wants to make sure he **learns from the day** and reinforces the positive shifts he made. So after dinner, he sits down with his journal – just 10 minutes to jot down thoughts.
@@ -430,7 +451,10 @@ A **flow diagram** for a reflective team process (Figure 3) could look like this
 
 *(We have trimmed overlapping explanations here to keep it concise: essentially, the same feedback loop from Chapter 2 now operates at a group level.)*
 
-**Figure 3: Team Reflectivity Feedback Loop** – *This diagram illustrates a team process: Team’s collective mindset → Project execution → Outcome → Team reflection on mindset → (loops back) influencing next collective mindset. For instance, a fearful team mindset might lead to a stiff execution and mediocre outcome; reflecting on that, they decide to adopt a more open, experimental mindset next time, leading to a better outcome.*
+**Figure: Team Reflectivity Feedback Loop** – *This diagram illustrates a team process: Team’s collective mindset → Project execution → Outcome → Team reflection on mindset → (loops back) influencing next collective mindset. For instance, a fearful team mindset might lead to a stiff execution and mediocre outcome; reflecting on that, they decide to adopt a more open, experimental mindset next time, leading to a better outcome.*
+
+![_- visual selection (15)](https://github.com/user-attachments/assets/566d96a4-f661-4421-97bd-d3adfd5ac3a2)
+
 
 ### 8.2 Community Initiatives and Social Change
 
@@ -477,6 +501,9 @@ Let’s unpack Dr. Rajan’s concerns in a structured way:
 ### 9.1 “Isn’t This Just the Law of Attraction rebranded?”
 
 **Clarification:** TSR and the popularized Law of Attraction (LoA) share the core idea that thoughts influence reality, but TSR attempts to go further by providing a framework for *how* and *to what extent* this occurs, and it emphasizes empirical testing and logical consistency. LoA often comes across as “think positive and you’ll get what you want” – a one-liner without nuance. TSR, in contrast, distinguishes between **correlation and causation**, acknowledges external factors, and introduces concepts like the **resistance contrast filter** (essentially how your resistance can filter or distort the outcomes you get) with formal definitions.
+
+![_- visual selection (16)](https://github.com/user-attachments/assets/dfd05eaf-b409-4617-af99-13409dcf6d88)
+
 
 It’s fair to say TSR is **LoA plus accountability and a dash of science**. Where LoA might say “you attracted this,” TSR says “you may have contributed to this, here’s how we might measure that contribution.” It also doesn’t ignore negative outcomes – it confronts them as part of the feedback to learn from, whereas LoA literature sometimes glosses over the hard stuff.
 
@@ -543,6 +570,9 @@ With a balanced view of strengths and limitations in mind, we can now transition
 - If sitting meditation isn’t your style, try mindful walking: walk slowly and pay attention to each step and the sensation of movement.
 
 **Why it helps:** Meditation has a wealth of benefits – it lowers stress (remember the cortisol link), increases gamma coherence in the brain (alignment indicator), and improves emotional regulation. It essentially reduces “resistance” by helping you accept the present moment. After meditating, you often feel reset, as if your mind’s mirror has been cleaned.
+
+![_- visual selection (17)](https://github.com/user-attachments/assets/0fc5f408-540d-45e4-a875-4cf388eef3a2)
+
 
 **Example:** Dr. Lee (from Chapter 3) started a 10-minute morning meditation routine. She found that on days she meditated, her interactions at the lab were smoother. When an experiment failed, she was less reactive and more analytical, often leading to quicker problem-solving. Over months, she realized meditation made her both more peaceful *and* a better scientist – a clear demonstration of inner state affecting outer effectiveness.
 
@@ -670,6 +700,9 @@ Through the chapters of this book, we explored the interplay between consciousne
 - **Critiques & Clarifications (Ch.9):** We confronted skepticism and potential misuses, reinforcing that TSR aims to be clear, testable, and complementary to rational thought, not in conflict with it.
 - **Toolkit (Ch.10):** Finally, we compiled a robust set of tools that anyone can use to practice reflectivity, from meditation and journaling to letting go techniques and group activities.
 
+![_- visual selection (18)](https://github.com/user-attachments/assets/8abdf6ea-79ef-4cfa-9555-9774a140ebbc)
+
+
 Throughout, we maintained a blend of narrative and academic tone – telling human stories to ground each concept, then analyzing it with precision. We also included visuals, scenarios, and exercises to ensure the material is not just understood, but *experienced* by you, the reader.
 
 **11.2 Coherence, Clarity, and Practicality**
@@ -703,6 +736,8 @@ The world is your mirror, and you are a mirror to the world. Polish your mirror,
 Thank you for reading and reflecting with us.
 
 Go forth and shine. Your reality is waiting – reflect it well.
+
+![_- visual selection (19)](https://github.com/user-attachments/assets/d1cfc083-8e50-4e06-8c51-7731ba76121b)
 
 ---
 
