@@ -23,6 +23,7 @@ At first glance, this might sound mystical or purely anecdotal. Yet, consider ho
 **Sovereign Reflectivity (TSR)** is the idea that each individual is a *sovereign* (a principal agent) in co-creating their reality through **reflectivity** (a mirror-like process between inner state and outer world). Here’s what that means in plain terms: your **mind acts like a mirror and a projector** – the attitudes and beliefs you hold inside are reflected back by your experiences, as if the universe were a giant mirror responding to your thoughts. Unlike a passive mirror on the wall, however, this reflective process is active and creative (*co-creative*). You are continuously shaping and interpreting the world, and the world in turn is responding to you.
 
 **Figure 1: Mirror Reflection Metaphor** – *Imagine looking into a mirror that is actually your life. In **Figure 1**, a person stands before a mirror labeled “Reality.” Their joyful expression is met with a joyful reflection; their frown is met with a frown. This simple sketch illustrates TSR’s core premise: the outer world reflects inner consciousness.*
+
 ![image](https://github.com/user-attachments/assets/a8520236-0543-44eb-9a3b-54bfc176c736)
 ![image (1)](https://github.com/user-attachments/assets/c2a59fb5-9f9d-41c6-9dd6-e2f7c10d559f)
 
@@ -53,6 +54,7 @@ In plain terms, resisting something – be it an emotion, a situation, or a pers
 
 **Try This: The Let-Go Exercise** – *Identify one minor annoyance in your day (a noisy neighbor, a messy room, a long line). For a moment, notice how your body and mind **resist** it – maybe tight shoulders or thoughts like “I hate this.” Now, take a slow breath and consciously **allow** the situation. Tell yourself, “It’s okay for this to exist right now.” Observe if your feelings shift even slightly. This isn’t solving the issue itself; it’s changing your relationship to it. By practicing with small annoyances, you build skill to apply allowance to bigger challenges gradually.*
 
+
 ### 2.2 Co-Creation: You and Reality as Partners
 
 TSR posits that we **co-create reality**. Co-creation means it’s a two-way street: **you influence the world, and the world influences you**. It doesn’t mean you single-handedly control everything that happens (no one can, and TSR doesn’t claim that). Instead, picture life as a dance between your inner state and external events. You can’t lead the dance for the whole world, but you *can* lead your part of the dance.
@@ -60,6 +62,9 @@ TSR posits that we **co-create reality**. Co-creation means it’s a two-way str
 In Elena’s story, her shift in attitude co-created a different outcome: her openness somehow engaged her team and boss more positively. Skeptics might say that’s just because her outward behavior changed (she likely communicated more calmly). That’s certainly true – and it’s exactly how co-creation operates. **Your beliefs and mood affect your actions (tone of voice, body language, choices), which in turn affect how others respond.** Those responses then influence your next thought, and so on. It’s a feedback loop.
 
 **Figure 2: Flow of Co-Creation** – *This figure illustrates the co-creation feedback loop: It starts with a person’s **beliefs and emotional state**, which shape their **perceptions** (what they notice and how they interpret events). Those perceptions influence the person’s **actions** and responses. The actions then impact **outcomes in the world** (how people or situations develop). Finally, those outcomes feed back into the person’s beliefs and emotions. Arrows cycle through these steps, showing a continuous loop between mind and reality.*
+
+![_- visual selection (3)](https://github.com/user-attachments/assets/5548448e-a4f3-4a9f-907f-b1cd489f9802)
+
 
 In plain language: if you wake up thinking “Today will be tough,” you might approach the day defensively (inner state → perception). You could then act less friendly or more impatient (perception → action), causing colleagues or family to also be cold or resistant (action → outcome). That outcome confirms your belief that the day is tough (outcome → inner state). The cycle can become vicious. But co-creation also means you can initiate *virtuous* cycles. A small positive belief (“Maybe something good will happen today”) can open your eyes to opportunities (you notice a helpful coworker or a lucky break) leading to encouraging outcomes that reinforce optimism.
 
@@ -106,6 +111,11 @@ While TSR is not identical to any of these ideas, it lives in the same family of
 
 **Copenhagen Interpretation Analogy:** In the **Copenhagen interpretation** of quantum physics (one of the mainstream interpretations), there’s a line drawn between what is observable and how we interpret those observations. We might apply a similar approach in TSR to separate **observables** from **interpretations**. For example, in Dr. Lee’s lab, an observable might be “Alex’s cortisol level dropped by 30%.” The interpretation in TSR terms might be “Alex’s focused positive consciousness contributed to that drop.” The observable is empirical and not controversial; the interpretation is a theoretical lens through which we explain it. TSR encourages maintaining this distinction: gather solid observables (data from neuroscience, psychology, social experiments) and then cautiously build interpretations that involve consciousness-reflection mechanisms.
 
+
+![_- visual selection (7)](https://github.com/user-attachments/assets/6a5a1cc2-d71e-4d70-ad46-b7fb5d60f6d4)
+
+
+
 ### 3.3 Is It Science, Pseudoscience, or Something in Between?
 
 Some readers with scientific training might worry: *is TSR verifiable or just a pseudoscientific concept?* It’s a fair question. **Falsifiability** – the idea that a theory should be testable and disprovable – is a key criterion for scientific theories. TSR does make falsifiable claims (we’ll detail those in Chapter 5 on evidence and predictions). For instance, if TSR says “group meditation can reduce community violence by ~15-20%,” this can be tested with experiments and statistics. If repeated quality studies show no effect, that aspect of TSR would be proven false. TSR also incorporates formal logic and math (coming up in Chapter 4), meaning it’s willing to be specific, another scientific virtue.
@@ -126,6 +136,11 @@ Arjun is a theoretical physicist who has spent years studying cosmology. Late on
 
 $$Enp=MnpCnp2E_{np} = M_{np} \cdot C_{np}^2$$
 
+
+![_- visual selection (5)](https://github.com/user-attachments/assets/0b907674-a134-45a9-a583-1b20d3c035c5)
+
+
+
 It looks similar to Einstein’s formula, but here $$E_{np}$$ stands for “nonphysical energy,” $$M_{np}$$ for “nonphysical mass or movement,” and $$C_{np}$$ for a constant akin to the speed of light – perhaps a “current of consciousness.” Arjun’s heart races. It’s speculative, even bizarre, but this could be a starting point for a *mathematical theory of mind and reality*. He imagines that just as mass and energy are interchangeable in physics, maybe **belief (a form of nonphysical energy) and outcomes (a form of physical energy) are interchangeable** under certain conditions. This moment plants the seeds for what will become the formal framework of TSR.
 
 ### 4.1 Axioms and Equations of TSR
@@ -134,8 +149,10 @@ Every solid theory starts with **axioms** – basic assumptions. TSR’s axioms 
 
 - **Axiom 1: Asymmetric Reflection** – For every physical property, there is a corresponding nonphysical property that is its inverse or complement. *(Plain terms: aspects of consciousness mirror aspects of physics in an opposite way.)*
    - For example, TSR posits **nonphysical movement** ($$M_{np}$$) as an inverse of physical mass or movement ($$M$$). In Arjun’s scribble, he imagined $$M_{np} = \frac{1}{M}$$. The heavier or more immovable something is physically, perhaps the “lighter” or more fluid it is nonphysically, and vice versa. It’s a philosophical way to say consciousness is a mirror image of matter.
+
 - **Axiom 2: Consciousness Current** – There exists a fundamental “speed” or rate of consciousness flow, denoted $$C_{np}$$, analogous to the speed of light $$c$$. This $$C_{np}$$ is a constant in the nonphysical domain. *(Plain terms: we assume there’s a limit or scale to how fast or potent consciousness can be in shaping reality, just as light speed is a cosmic speed limit.)*
    - This is speculative, but useful: by treating consciousness influence as something quantifiable ($$C_{np}$$), TSR can use mathematics to explore it.
+
 - **Axiom 3: Co-Creative Energy** – There is an energy associated with consciousness (thoughts, intentions) that can interact with physical energy. This is represented as $$E_{np}$$ for nonphysical energy.
 
 Given these axioms, Arjun’s inspired equation can be seen as an **energy equivalence** in TSR:
@@ -169,6 +186,7 @@ Qed.
 ```
 
 *(Don’t worry about the syntax; we’ll explain it.)*
+[GitHub Repo for Coq work](https://github.com/njfio/tsr_coq)
 
 This formal proof ensures that a certain operation in the theoretical model (here called `execute_filter`) **never results in a self-contradictory state**. In plain terms, the proof is saying: *given the way TSR’s rules are set up (its axioms about co-creation, reflection, etc.), you can’t end up with an “Error contradiction” – meaning the axioms won’t logically disagree with each other halfway through the reasoning.* It’s like building a complex machine and running a diagnostic that confirms none of the gears jam due to design flaws.
 
