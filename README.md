@@ -23,6 +23,9 @@ At first glance, this might sound mystical or purely anecdotal. Yet, consider ho
 **Sovereign Reflectivity (TSR)** is the idea that each individual is a *sovereign* (a principal agent) in co-creating their reality through **reflectivity** (a mirror-like process between inner state and outer world). Here’s what that means in plain terms: your **mind acts like a mirror and a projector** – the attitudes and beliefs you hold inside are reflected back by your experiences, as if the universe were a giant mirror responding to your thoughts. Unlike a passive mirror on the wall, however, this reflective process is active and creative (*co-creative*). You are continuously shaping and interpreting the world, and the world in turn is responding to you.
 
 **Figure 1: Mirror Reflection Metaphor** – *Imagine looking into a mirror that is actually your life. In **Figure 1**, a person stands before a mirror labeled “Reality.” Their joyful expression is met with a joyful reflection; their frown is met with a frown. This simple sketch illustrates TSR’s core premise: the outer world reflects inner consciousness.*
+![image](https://github.com/user-attachments/assets/a8520236-0543-44eb-9a3b-54bfc176c736)
+![image (1)](https://github.com/user-attachments/assets/c2a59fb5-9f9d-41c6-9dd6-e2f7c10d559f)
+
 
 **How This Book Will Guide You**
 
