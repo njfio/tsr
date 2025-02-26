@@ -22,7 +22,7 @@ At first glance, this might sound mystical or purely anecdotal. Yet, consider ho
 
 **Sovereign Reflectivity (TSR)** is the idea that each individual is a *sovereign* (a principal agent) in co-creating their reality through **reflectivity** (a mirror-like process between inner state and outer world). Here’s what that means in plain terms: your **mind acts like a mirror and a projector** – the attitudes and beliefs you hold inside are reflected back by your experiences, as if the universe were a giant mirror responding to your thoughts. Unlike a passive mirror on the wall, however, this reflective process is active and creative (*co-creative*). You are continuously shaping and interpreting the world, and the world in turn is responding to you.
 
-**Figure 1: Mirror Reflection Metaphor** – *Imagine looking into a mirror that is actually your life. In **Figure 1**, a person stands before a mirror labeled “Reality.” Their joyful expression is met with a joyful reflection; their frown is met with a frown. This simple sketch illustrates TSR’s core premise: the outer world reflects inner consciousness.*
+**Figure Mirror Reflection Metaphor** – *Imagine looking into a mirror that is actually your life. In **Figure 1**, a person stands before a mirror labeled “Reality.” Their joyful expression is met with a joyful reflection; their frown is met with a frown. This simple sketch illustrates TSR’s core premise: the outer world reflects inner consciousness.*
 
 ![image](https://github.com/user-attachments/assets/a8520236-0543-44eb-9a3b-54bfc176c736)
 ![image (1)](https://github.com/user-attachments/assets/c2a59fb5-9f9d-41c6-9dd6-e2f7c10d559f)
@@ -61,7 +61,7 @@ TSR posits that we **co-create reality**. Co-creation means it’s a two-way str
 
 In Elena’s story, her shift in attitude co-created a different outcome: her openness somehow engaged her team and boss more positively. Skeptics might say that’s just because her outward behavior changed (she likely communicated more calmly). That’s certainly true – and it’s exactly how co-creation operates. **Your beliefs and mood affect your actions (tone of voice, body language, choices), which in turn affect how others respond.** Those responses then influence your next thought, and so on. It’s a feedback loop.
 
-**Figure 2: Flow of Co-Creation** – *This figure illustrates the co-creation feedback loop: It starts with a person’s **beliefs and emotional state**, which shape their **perceptions** (what they notice and how they interpret events). Those perceptions influence the person’s **actions** and responses. The actions then impact **outcomes in the world** (how people or situations develop). Finally, those outcomes feed back into the person’s beliefs and emotions. Arrows cycle through these steps, showing a continuous loop between mind and reality.*
+**Figure Flow of Co-Creation** – *This figure illustrates the co-creation feedback loop: It starts with a person’s **beliefs and emotional state**, which shape their **perceptions** (what they notice and how they interpret events). Those perceptions influence the person’s **actions** and responses. The actions then impact **outcomes in the world** (how people or situations develop). Finally, those outcomes feed back into the person’s beliefs and emotions. Arrows cycle through these steps, showing a continuous loop between mind and reality.*
 
 ![_- visual selection (3)](https://github.com/user-attachments/assets/5548448e-a4f3-4a9f-907f-b1cd489f9802)
 
@@ -451,7 +451,7 @@ A **flow diagram** for a reflective team process (Figure 3) could look like this
 
 *(We have trimmed overlapping explanations here to keep it concise: essentially, the same feedback loop from Chapter 2 now operates at a group level.)*
 
-**Figure: Team Reflectivity Feedback Loop** – *This diagram illustrates a team process: Team’s collective mindset → Project execution → Outcome → Team reflection on mindset → (loops back) influencing next collective mindset. For instance, a fearful team mindset might lead to a stiff execution and mediocre outcome; reflecting on that, they decide to adopt a more open, experimental mindset next time, leading to a better outcome.*
+**Figure Team Reflectivity Feedback Loop** – *This diagram illustrates a team process: Team’s collective mindset → Project execution → Outcome → Team reflection on mindset → (loops back) influencing next collective mindset. For instance, a fearful team mindset might lead to a stiff execution and mediocre outcome; reflecting on that, they decide to adopt a more open, experimental mindset next time, leading to a better outcome.*
 
 ![_- visual selection (15)](https://github.com/user-attachments/assets/566d96a4-f661-4421-97bd-d3adfd5ac3a2)
 
