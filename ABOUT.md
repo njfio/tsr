@@ -6,10 +6,11 @@ The philosophical clarity came first. The fundamental insight that consciousness
 
 To transform these insights into a comprehensive theoretical framework, I leveraged multiple AI systems as collaborative partners. Each AI brought different strengths to the process:
 
-- Grok3, Gemini-Flash-2.0-Thinking, and Deepseak helped expand and articulate the philosophical concepts
+- Grok3, Gemini-Flash-2.0-Thinking, and Deepseak helped expand and articulate the philosophical concepts.
 - o1-Pro and Kimi.ai assisted with developing narrative scenarios and practical applications
 - Claude 3 Sonnet and Opus contributed to structuring the overall work and creating cohesive transitions
 - Perplexity provided fact-checking and validation of referenced studies
+- All were used to grade, test and validate the concepts and the writing.
 
 The mathematical formalism presented a particular challenge. While I provided the conceptual foundation - the idea of nonphysical mass-energy equivalence, vibrational lensing, and resistance contrast filters and a myriad of other structures  - I needed computational assistance to develop the dimensional consistency and formal proofs. The AI systems helped translate my philosophical insights into mathematical language with proper notation and structure.
 
