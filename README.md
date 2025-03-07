@@ -7,6 +7,7 @@ A Paradigm Shift in Consciousness, Reality, and Knowledge
 Here, you’ll find the full Markdown version of the book, openly accessible for exploration, discussion, and contribution. TSR is more than a book—it’s an evolving framework that invites engagement from scientists, philosophers, AI researchers, and seekers who are ready to rethink the fundamental nature of reality.
 
 🌍 Read more at: tsr.wtf
+
 📓 Available on [Amazon Kindle](https://a.co/d/blywsK0)
 
 📖 Download the latest Markdown version: tsr.md
