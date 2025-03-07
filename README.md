@@ -18,7 +18,7 @@ Here, you’ll find the full Markdown version of the book, openly accessible for
 
 The Theory of Sovereign Reflectivity (TSR) presents a revolutionary idea:
 
-	Consciousness and reality are not separate—each influences and evolves through the other in a mathematically precise feedback loop.
+> Consciousness and reality are not separate—each influences and evolves through the other in a mathematically precise feedback loop.
 
 🔹 TSR introduces new models of consciousness-reality interaction that integrate:
 ✅ Quantum mechanics & complexity science
