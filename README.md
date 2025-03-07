@@ -46,6 +46,7 @@ This repository provides:
 You can clone this repository to your local machine for easy reading or contributions:
 
 git clone https://github.com/njfio/tsr.git
+
 cd tsr
 
 Then open tsr.md in any Markdown viewer or text editor.
@@ -150,10 +151,10 @@ Join the conversation on TSR, share your insights, and engage in philosophical &
 
 🔗 Quick Links
 
-📖 Read TSR: tsr.wtf
-🛒 Ebook and Physical Copise: [Amazon](https://a.co/d/82Hrk67)
+📖 Website: tsr.wtf
+🛒 Ebook and Physical Copies: [Amazon](https://a.co/d/82Hrk67)
 💬 Join the Discussion: Discussion Forum
-📢 Follow for Updates: @njfdotio @ @tsr_wtf
+📢 Follow for Updates: @njfdotio @tsr_wtf 
 
 🔥 The mirror of reality awaits. Are you ready to step through?
 
