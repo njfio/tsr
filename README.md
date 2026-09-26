@@ -1,165 +1,57 @@
-# The Theory of Sovereign Reflectivity (TSR) – Open Access Repository
+<p align="center"><img src="the-sovereign-mirror/cover.jpg" alt="Cover of The Sovereign Mirror by Nicholas Ferguson" width="220"></p>
 
-## A Paradigm Shift in Consciousness, Reality, and Knowledge
+# The Theory of Sovereign Reflectivity (TSR)
 
-### 🚀 Welcome to the official GitHub repository for The Theory of Sovereign Reflectivity (TSR)!
+TSR is a way of seeing consciousness that starts from one rule: **the main difference between the physical and the nonphysical is resistance.** Reflect what physics already knows, keep each relationship, flip the condition, and the other side comes into view.
 
-   Here, you’ll find the full Markdown version of the book, openly accessible for exploration, discussion, and contribution. TSR is more than a book—it’s an evolving framework that invites engagement from scientists, philosophers, AI researchers, and seekers who are ready to rethink the fundamental nature of reality.
+This repository is where the theory is shared openly. It holds a free sample of the new book, the complete 2025 edition, and a few extras.
 
-🌍 Read more at: tsr.wtf
+## 📖 The new book: *The Sovereign Mirror* (2026)
 
-📓 Available on [Amazon Kindle](https://a.co/d/blywsK0)
+*The Sovereign Mirror: A Conversation About Consciousness, Resistance, and the Present* explains TSR as a conversation. A curious, skeptical questioner asks what anyone would ask, and I answer with the stories behind each idea: a quiet voice on a basketball court, the hot seat on the last day of a cruise, journal entries carved into oil pastel with a knife, and a son who seemed to grow up overnight after a fever.
 
-📖 Download the latest Markdown version: tsr.md
+- **Read the opening free:** [`tsr.md`](tsr.md) has the opening note, the prelude, and Chapter 1.
+- **Kindle:** [amazon.com/dp/B0HL1YBX5K](https://www.amazon.com/dp/B0HL1YBX5K)
+- **Paperback:** coming soon
+- **About the book:** [njf.io/books/the-sovereign-mirror](https://www.njf.io/books/the-sovereign-mirror)
 
-⸻
+You don't have to believe any of it to try it.
 
-## 📌 What is TSR?
+## 🪞 TSR in brief
 
-   The Theory of Sovereign Reflectivity (TSR) presents a revolutionary idea:
+These are the ideas the book builds, in its own words.
 
-> Consciousness and reality are not separate—each influences and evolves through the other in a mathematically precise feedback loop.
+- **Awareness first.** Instead of trying to build awareness out of matter, TSR starts with awareness and asks what follows. The parts are how the whole gets to experience difference.
+- **Two environments, mirror images.** The physical is limited, resistant, and radiates. The nonphysical is limitless, receptive, and collects. Everything else in TSR comes from what happens where they meet.
+- **Resistance isn't the enemy.** Resistance is why you're a particular someone: a body that stays yours and a point of view nobody else can stand in. The kind that hurts is *holding on*, which keeps you from changing when a change is already wanted.
+- **The Current of Consciousness.** The nonphysical side is like a river in laminar flow, so smooth it looks idle while it moves the entire time. It's always the furthest point the whole has reached, and everyone's expansion moves it.
+- **Sovereignty.** Each of us is fully inside the whole *from somewhere*, and nobody else gets to be there. That's also why the other person is always real, and why nothing I want entitles me to their place in the flow.
+- **Einstein, reflected.** The book mirrors relativity: E = mc² on the physical side and its reflection on the nonphysical side, with the Current in place of the speed of light. I'm not a physicist; I use the shape of his thinking to look at the other side of it.
+- **A practice, not a creed.** Tune before you focus, notice what you feel, and test it against your own life.
 
-🔹 TSR introduces new models of consciousness-reality interaction that integrate:
+## 📚 What's in this repository
 
-- ✅ Quantum mechanics & complexity science
-- ✅ Mathematical formalisms of consciousness influence
-- ✅ Neuroscience, cognitive science, & meditation research
-- ✅ Recursive field dynamics & self-organizing knowledge systems
+| Path | What it is |
+|---|---|
+| [`tsr.md`](tsr.md) | Free sample of *The Sovereign Mirror* (2026) |
+| [`editions/2025-theory-of-sovereign-reflectivity.md`](editions/2025-theory-of-sovereign-reflectivity.md) | The complete 2025 book, *Theory of Sovereign Reflectivity* ([Kindle](https://a.co/d/blywsK0)) |
+| [`ABOUT.md`](ABOUT.md) | How the 2025 edition was written |
+| `10-02 The universe as reflection..mp3` | Audio recording: *The universe as reflection* |
+| [`the-sovereign-mirror/`](the-sovereign-mirror/) | Cover art for the new book |
 
+The 2025 edition was an earlier, more formal attempt with equations and case studies. *The Sovereign Mirror* is the place to start.
 
-⸻
+## 🤝 How it was written
 
-## 📚 What You’ll Find in This Repository
+Both books were written with AI as a collaborator. For *The Sovereign Mirror* I explained TSR in conversation, again and again, until the questions stopped breaking the picture. The questions are real ones, and the answers are mine. The text was drafted with Claude (Anthropic) and edited extensively over many revisions.
 
-   This repository provides:
+## 💬 Get involved
 
-- 📖 The full Markdown text of TSR for open access.
-- 📂 Structured chapters & appendices for easy reference.
-- 📝 HTML-formatted equations for publishing (If you want latex let me know).
-- 📊 Interactive models & Python notebooks (coming soon) to explore key TSR concepts computationally.
-- 💡 Open discussions & issues tracker for contributions and community insights.
+- Questions, disagreements, and connections to other traditions are welcome: [open an issue](https://github.com/njfio/tsr/issues).
+- Companion site: [tsr.wtf](https://tsr.wtf)
+- Updates: @njfdotio · @tsr_wtf · [LinkedIn](https://www.linkedin.com/in/njfio/) · [njf.io](https://www.njf.io)
 
-⸻
+## 📜 License
 
-## 📥 How to Read & Use This Repository
-
-🔹 Clone the Repository
-
-   You can clone this repository to your local machine for easy reading or contributions:
-
-```git clone https://github.com/njfio/tsr.git```
-
-```cd tsr```
-
-   Then open tsr.md in any Markdown viewer or text editor.
-
-## 📖 Read Online
-
-- You can read the full text in rendered Markdown via:
-	GitHub’s Markdown Viewer
-- Supplimental Material
-  	tsr.wtf – Companion website for interactive exploration
-
-⸻
-
-## 🔬 Key Concepts in TSR
-
-### 📡 1. Vibrational Lensing
-
-   Consciousness bends probability fields, influencing experience.
-   TSR proposes that focused awareness functions similarly to gravitational lensing, shaping the structure of reality.
-
-### 🌀 2. Resistance Contrast Filters
-
-   Your internal state influences what reality mirrors back to you.
-   This equation formalizes how cognitive dissonance, resistance, and belief structures distort or refine the reflective process.
-
-### ♾ 3. Recursive Field Dynamics
-
-   Knowledge is not static—it evolves through self-referential feedback loops.
-   TSR explores how symbolic systems, equations, and intelligence co-create and refine their own understanding.
-
-### 🤖 4. Human-AI Co-Creation in Knowledge Discovery
-
-   This book was not written alone—it was co-developed through an iterative dialogue between human intuition and AI models.
-
-### 🤝 The process involved:
-
-- ✅ Nicholas Ferguson providing the core insights
-- ✅ AI systems like GPT, Gemini, Opus, Sonnet refining structure & equations
-- ✅ Recursive feedback loops between human and machine intelligence
-
-⸻
-
-## 🎯 Contributing & Engaging
-
-This repository is not just a static book—it’s an open framework for further exploration.
-
-### 🛠 How to Contribute
-
-🚀 If you are interested in exploring, expanding, or refining TSR, you can contribute in the following ways:
-
-### 📝 1. Philosophical & Scientific Contributions
-
-- ✅ Submit new perspectives, counterarguments, or refinements to core TSR concepts.
-- ✅ Propose connections to quantum physics, AI research, cognitive science, or other fields.
-
-### 📊 2. Computational & Mathematical Validation
-
-= ✅ Develop computational models to test TSR predictions.
-- ✅ Implement Python/Mathematica simulations for key equations.
-
-### 🎥 3. Multimedia & Learning Materials
-
-- ✅ Create visual diagrams, infographics, or explainer videos.
-- ✅ Develop interactive web tools for experiencing TSR concepts.
-
-⸻
-
-## 📢 Community & Discussion
-
-Join the conversation on TSR, share your insights, and engage in philosophical & scientific discussions:
-
-- 🗣 GitHub Discussions: Discussion Forum
-
-- 📢 Twitter/X: @njfdotio @tsr_wtf 
-
-- 🌍 Companion Website: tsr.wtf
-
-- 🔹 Want to collaborate? Open an issue or start a discussion!
-
-⸻
-
-## 💡 Next Steps & Future Expansions
-
-### 🚀 The Theory of Sovereign Reflectivity is just the beginning.
-
-### 🔹 Upcoming expansions include:
-- 📖 Follow-up books exploring TSR’s implications for AI, simulation theory, and knowledge evolution.
-- 🎥 Generated movies about TSR?
-- 📊 Interactive simulations and apps that allow readers to engage with TSR mathematically & experientially.
-
-### 📢 Stay connected for updates!
-
-⸻
-
-## 📚 Licensing & Open Access
-
-🌍 The Theory of Sovereign Reflectivity is published openly under a MIT License.
-
-🔹 You are free to read, share, and adapt this work for non-commercial purposes, provided you attribute the original source and share adaptations under the same license.
-
-📜 License Details: MIT
-
-⸻
-
-🔗 Quick Links
-
-- 📖 Website: tsr.wtf
-- 🛒 Ebook and Physical Copies: [Amazon](https://a.co/d/82Hrk67)
-- 🔗 [njfio](https://www.linkedin.com/in/njfio/)
-- 💬 Join the Discussion: Discussion Forum
-- 📢 Follow for Updates: @njfdotio @tsr_wtf 
-- 🔥 The mirror of reality awaits. Are you ready to step through?
-
+- *The Sovereign Mirror* sample and cover art: **CC BY-NC-ND 4.0**, meaning share it unchanged, with credit, non-commercially. See [`LICENSE-BOOK.md`](LICENSE-BOOK.md). The full book is © 2026 Nicholas Ferguson, all rights reserved.
+- Everything else, including the 2025 edition: **MIT License**. See [`LICENSE`](LICENSE).

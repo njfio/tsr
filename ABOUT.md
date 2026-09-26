@@ -1,3 +1,5 @@
+> **Note (2026):** This account is about the 2025 edition, *Theory of Sovereign Reflectivity*, now in [`editions/`](editions/2025-theory-of-sovereign-reflectivity.md). The new book, *The Sovereign Mirror*, tells its own origin story in its opening note. The first part is free in [`tsr.md`](tsr.md).
+
 # Writing "Theory of Sovereign Reflectivity": A First-Person Account
 
 I began with a philosophical breakthrough 10 years ago. It emerged through unconventional means. After periods of meditation, journaling, and painting, I developed the core conceptual framework for what would become the Theory of Sovereign Reflectivity. My artistic process was particularly significant - inscribing journal messages on canvas as a first layer, then painting over them to create textured works where each layer built upon the foundation of consciousness made manifest.
