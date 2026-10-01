@@ -12,7 +12,7 @@ This repository is where the theory is shared openly. It holds a free sample of 
 
 - **Read the opening free:** [`tsr.md`](tsr.md) has the opening note, the prelude, and Chapter 1.
 - **Kindle:** [amazon.com/dp/B0HL1YBX5K](https://www.amazon.com/dp/B0HL1YBX5K)
-- **Paperback:** coming soon
+- **Paperback:** [amazon.com/dp/B0HL4TQ5RK](https://www.amazon.com/dp/B0HL4TQ5RK)
 - **About the book:** [njf.io/books/the-sovereign-mirror](https://www.njf.io/books/the-sovereign-mirror)
 
 You don't have to believe any of it to try it.
