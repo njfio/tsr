@@ -17,6 +17,10 @@ This repository is where the theory is shared openly. It holds a free sample of 
 
 You don't have to believe any of it to try it.
 
+## 🎲 Run the game yourself
+
+[`reflection-game.md`](reflection-game.md) is a prompt you can paste into Claude, ChatGPT or Gemini to test TSR the hard way. I don't think another table of reflections holds together like this one. Try to build one that does: different words, the same rule, as many connections and as much sense, or more. Or warm up by reflecting one new piece of physics. The prompt carries the table, what holds each word in place, the three tests, the traps I fell into, and the swaps that failed. If you end up somewhere I didn't, [open an issue](https://github.com/njfio/tsr/issues) and tell me.
+
 ## 🪞 TSR in brief
 
 These are the ideas the book builds, in its own words.
@@ -35,6 +39,7 @@ These are the ideas the book builds, in its own words.
 |---|---|
 | [`tsr.md`](tsr.md) | Free sample of *The Sovereign Mirror* (2026) |
 | [`editions/2025-theory-of-sovereign-reflectivity.md`](editions/2025-theory-of-sovereign-reflectivity.md) | The complete 2025 book, *Theory of Sovereign Reflectivity* ([Kindle](https://a.co/d/blywsK0)) |
+| [`reflection-game.md`](reflection-game.md) | The Reflection Game: try to build a table that holds together like TSR's, with any AI |
 | [`ABOUT.md`](ABOUT.md) | How the 2025 edition was written |
 | `10-02 The universe as reflection..mp3` | Audio recording: *The universe as reflection* |
 | [`the-sovereign-mirror/`](the-sovereign-mirror/) | Cover art for the new book |
