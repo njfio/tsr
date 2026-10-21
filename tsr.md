@@ -6,8 +6,8 @@
 
 *by Nicholas Ferguson*
 
-> **This is a free sample:** the opening note, the prelude, and Chapter 1 (about a tenth of the book).
-> The full book is on [Kindle](https://www.amazon.com/dp/B0HL1YBX5K), with the paperback coming soon. More at [njf.io/books/the-sovereign-mirror](https://www.njf.io/books/the-sovereign-mirror).
+> **This is a free sample:** the opening note, the prelude, and Chapter 1.
+> The full book is on [Kindle](https://www.amazon.com/dp/B0HL1YBX5K) and in [paperback](https://www.amazon.com/dp/B0HL4TQ5RK). More at [njf.io/books/the-sovereign-mirror](https://www.njf.io/books/the-sovereign-mirror).
 >
 > Looking for the 2025 book *Theory of Sovereign Reflectivity* that used to live in this file? It's in [editions/2025-theory-of-sovereign-reflectivity.md](editions/2025-theory-of-sovereign-reflectivity.md).
 
@@ -42,15 +42,16 @@
   - 20 · The End of a Body
   - 21 · What I Don't Know
 - Coda: What Are You Going to Do With That Now?
+- Running the Test
 - The Map
 
 ---
 
 ## A Note Before We Begin
 
-When I was a kid I played a basketball game where I couldn't do anything wrong. Shots, passes, steals, blocks. I was in the flow, the way athletes talk about it, and somewhere in the middle of it I noticed a voice. It wasn't quite mine. It was quieter than mine, and simpler. It told me where to go and what to do, and every time I followed it, something good happened. A basket. An assist. A steal.
+When I was in fourth grade, in a YMCA league in Denver, I played a basketball game where I couldn't do anything wrong. My mom and dad and my sister were in the bleachers. By my coach's stats I had a quintuple double that day: points, rebounds, assists, steals, blocks. Nine years old. I was in the flow, the way athletes talk about it, and somewhere in the middle of it I noticed a voice. It wasn't quite mine. It was quieter than mine, and simpler. It told me where to go and what to do, and every time I followed it, something good happened. A basket. An assist. A steal.
 
-It happened a few more times over the years I played sports, but that game was the first time I really noticed it. Afterward I told my mom. I said I could hear another voice in my head, a quieter one, and when I followed it I was always right.
+It happened a few more times over the years I played, the last time around eighth grade, while the game was still nothing but fun. But that one was the first time I really noticed it. Afterward I told my mom. I said I could hear another voice in my head, a quieter one, and when I followed it I was always right.
 
 My mom was a great mother. She was loving and caring, and she took me to sports and school events and everything else. She listened to me. Then she told me I should never tell anybody else about that voice, because they would think I was crazy and lock me up.
 
@@ -66,9 +67,9 @@ What finally worked was conversation. For years I've explained TSR to anyone who
 
 That's this book. The questions are real ones. People have asked them, machines have asked them, and I asked most of them myself years ago. I kept the ones that were wrong in useful ways, because you'll probably ask them too. The questions are in bold. The answers are mine.
 
-One thing I'll say once, so I don't have to keep saying it. I'm not a physicist. I'm a computer systems engineer. I barely graduated high school and I failed out of college. When I lean on Einstein in this book, I'm using the shape of his thinking to look at the other side of it. I'm not adding to his physics. To me, what follows isn't speculation. It's a translation of something I understood whole, and I'm going to tell it to you the way I understand it.
+One thing I'll say once, so I don't have to keep saying it. I'm not a physicist. I'm a computer systems engineer. I barely graduated high school and I dropped out of college, and a lot of that was reading. I was never diagnosed with anything. Letters and words transposed on me, and I could make out the words well enough but I couldn't hold their meaning for more than a few at a time, so by the end of a sentence the beginning was gone. I didn't do homework. I collected zeros and passed on tests, because a multiple-choice test rewards intuition. When my mother sat me down to read a book and write the report, what came out was a story I'd made up, because I had no idea what I'd just read, and she filled in the rest to get me through. It worked. The verbal section of my ACT came back in the single digits, doing my best, and I remember her crying at the number. I'm not an avid reader and never have been. Almost nothing in this book came from other people's books; it came through thought games and conversation. Most of the lineage you'll meet in Chapter 9 was shown to me after the fact, and so were the Buddhist terms in Chapter 10 and the biology in Chapter 18, much of it while this book was being checked, and I checked it. Over the years I taught myself a way of reading and learning that works for me, mostly one precise definition at a time, and I mention it here so you know what kind of mind this came through. When I lean on Einstein in this book, I'm using the shape of his thinking to look at the other side of it. I'm not adding to his physics. Obviously the nonphysical isn't physics. It's the inverse reflection of it, and that is the whole claim: the table borrows the shape of physics, not its authority, and every row has to earn its place by holding the rows around it up. To me, what follows isn't speculation. It's a translation of something I understood whole, and I'm going to tell it to you the way I understand it.
 
-I'm not asking you to believe it because I received it. I'm asking you to understand it. What you do after that is yours. The theory insists on that part.
+I'm not asking you to believe it because I received it. I'm asking you to understand it. What you do after that is yours. The theory insists on that part. And if the two ever pull against each other, if what I understood whole disagrees with what your own life shows you when you look carefully, your life governs. That's true for you, and it's true for me; the last chapter is me holding myself to it. And if you're waiting for the part where I say people cause their own illnesses, or that someone's suffering was their own doing, it isn't coming. Chapters 13 and 19 say the opposite, and I'd rather you know that now than wonder for the rest of the book.
 
 ## Prelude: Awareness First
 
@@ -104,9 +105,9 @@ I worked in restaurants for years as a waiter, a busboy, a bartender. I worked a
 
 I missed both goals by about a year.
 
-I did become a CTO. I worked in Bermuda. By 2016 I was running technology at a hedge fund, and for the ten years before that I'd been watching projects and people go through cycles. The same cycles of change, over and over, in projects and in people. Once I'd noticed them I couldn't stop seeing them.
+I did become a CTO. Bermuda is how. In my late twenties my mother was very sick, in and out of the hospital for the better part of three years, far more in than out. She was living with me in a third-floor walk-up in Denver with no elevator, and every day I carried her down the stairs to her appointments and back up again. The bills were serious, and my job at HP had been under a pay freeze for years. So I put my résumé online, and a consulting firm on an island in the Atlantic offered me a job. When I was about six, watching a television show about Bermuda, I'd told my parents I was going to live there one day. You can't just move to Bermuda. There's a work permit and a dozen hoops. I moved to Bermuda. I went to pay off what her illness had cost and to support her from there, and I could only go because a friend of hers offered to take her in. Keep that detail. My ease was somebody's weight, and I'll come back to what that means. By 2016 I was running technology at a hedge fund, and for the ten years before that I'd been watching projects and people go through cycles. The same cycles of change, over and over, in projects and in people. Once I'd noticed them I couldn't stop seeing them.
 
-In 2017, in the middle of my second divorce, I started meditating and painting to get through it. In 2019 I went on a cruise, sat in a comfortable chair on a stage in front of a room full of people, and came home with something I've been trying to put into words ever since.
+In 2017, in the middle of my second divorce, a short marriage that had nothing to do with my son's mother, who had left years earlier, I started meditating and painting to get through it. In 2019 I went on a cruise, sat in a comfortable chair on a stage in front of a room full of people, and came home with something I've been trying to put into words ever since.
 
 **That's a strange résumé for a theory of consciousness.**
 
@@ -124,7 +125,7 @@ I never set out to write TSR. It came through me. I'll tell you how, but it make
 
 Resistance.
 
-That's the short answer, and most of this book unpacks it. There are two environments, the physical and the nonphysical, and they're mirror images of each other. The physical is limited, resistant, and it radiates. The nonphysical is limitless, receptive, and it collects. Those three pairs are the whole foundation. Everything else in TSR comes from what happens where they meet.
+That's the short answer, and most of this book unpacks it. There are two environments, the physical and the nonphysical, and they're mirror images of each other. The physical is limited, resistant, and it radiates. The nonphysical is limitless, receptive, and it collects. Those three pairs aren't three separate rules—they're one condition seen three ways. Resistance creates a boundary, which makes a thing limited, and bounded things can only reach each other by radiating across the space between them. Take resistance away and there's no boundary, so the nonphysical is limitless, and with nothing held apart, it collects instead of radiating. Everything else in TSR comes from what happens where they meet.
 
 Resistance is the thing the physical has that the nonphysical doesn't. Physics measures one form of it every day and calls it mass: a thing's resistance to a change in its motion, its inertia. Resistance is what lets something hold a shape. It gives you a body that stays yours from one minute to the next. It gives you a history that stays behind you, and a point of view that nobody else can stand in. Your resistance is why you're a you.
 
@@ -144,7 +145,13 @@ On the other side, there's no separation. Not really.
 
 I call it the Current of Consciousness. Picture a river so smooth it looks like it isn't moving. Engineers call that laminar flow: every layer sliding past the next without any turbulence. From the outside it looks idle, still enough to reflect the sky. It's moving the entire time.
 
-The Current is always the furthest point the whole has reached, and expansion is what moves it. My expansion moves it. So does yours. The vibrations I expand aren't distinct from the vibrations you expand. We're both adding to the same flow. What differs between us is our frequency, meaning how aligned each of us is with where the Current has gotten to.
+**If the river is that smooth, what makes a vibration in it?**
+
+Expansion does. That's what a vibration is, here or anywhere: a disturbance of an equilibrium. A still pond is in equilibrium. Drop something in and the surface has to answer, and the answer is a ripple. The Current is the smooth surface. A new desire arriving in it is the stone. The disturbance is the expansion, and the ripple it leaves in the flow is the vibration. You can't expand the Current without setting up a vibration, and every vibration is the record of an expansion. That's why, when we get to the mirror, space and time come across as a single continuum and not two separate words: Expansion is the act of disturbing the flow, and Vibration is what the disturbance leaves in it.
+
+And here's the part that matters most, and I'll come back to it at the end of the book. In water, a ripple dies out. Friction and viscosity flatten it, and those are forms of resistance. The Current has none. Disturb a flow with no resistance in it and nothing is there to damp the ripple. It never decays. It culminates: the Current takes the new vibration into its new baseline and goes smooth again, one desire larger, ready to be disturbed by the next one.
+
+The Current is always the furthest point the whole has reached, and expansion is what moves it. My expansion moves it. So does yours. The vibrations I expand aren't separate from the vibrations you expand. We're both adding to the same flow. What differs between us is how aligned each of us is with where the Current has gotten to, and you feel that in your frequency.
 
 **So on that side I'm not an individual at all.**
 
@@ -164,11 +171,11 @@ People sometimes want me to prove the Current exists first and then talk about f
 
 It means you have your own point of view on the whole, one nobody else can have. It doesn't mean independence from the whole. Every one of us is fully inside it. Sovereignty is that each of us is inside it *from somewhere*, and nobody else gets to be there.
 
-That matters later, when we get to how you should treat other people. Everyone you meet has their own current, their own place in the flow, and nothing I want or feel entitles me to theirs.
+That matters later, when we get to how you should treat other people. Everyone you meet has their own Movement, their own place in the flow, and nothing I want or feel entitles me to theirs.
 
 **Have you ever felt it? The no-separation part?**
 
-Once, very strongly, for a few minutes. I was on that stage on the cruise. For the first time in my life I felt like I could hear all the thoughts in the room. It wasn't words exactly. It was more like a collective stream of thought, many voices and many separate flows moving at once, at different speeds and from different perspectives. My mind has never moved that fast, before or since.
+Once, very strongly, for a few minutes. I was on that stage on the cruise. For the first time in my life I felt like I could hear all the thoughts in the room.
 
 I'll tell you that story properly when we get there. I mention it now because it's the one time your question stopped being theoretical for me. For those few minutes my resistance was so low that the separation got thin. Then I walked back to my seat, and I was me again.
 
@@ -179,7 +186,7 @@ I'll tell you that story properly when we get there. I mention it now because it
 The rest of the book goes on from here: the one rule, the hot seat, the four directions, why wanting hurts, the knife and the carved paintings, twelve reflections of Einstein, what counts as an entity, and the map that holds it all together.
 
 - **Kindle:** [amazon.com/dp/B0HL1YBX5K](https://www.amazon.com/dp/B0HL1YBX5K)
-- **Paperback:** coming soon
+- **Paperback:** [amazon.com/dp/B0HL4TQ5RK](https://www.amazon.com/dp/B0HL4TQ5RK)
 - **About the book:** [njf.io/books/the-sovereign-mirror](https://www.njf.io/books/the-sovereign-mirror)
 
 ---

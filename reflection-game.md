@@ -57,7 +57,7 @@ These reflections are already established. Use them, build on them, and don't qu
 | m, mass | **M, Nonphysical Movement** |
 | E = m × c² | **C² × M = E** |
 
-Read whole, the equation of the Present is **C² × M = E = M × C²**: the nonphysical on the left, the physical on the right, and E, the entity, where they meet. In TSR the × sign means "the product of," because you can't multiply things that have no quantities. **Tune** sits at the left product sign and **Focus** at the right one. They aren't extra factors in the equation. They name the entity's two actions where the factors meet: Tune on the nonphysical side, Focus on the physical side. Together they make Attraction.
+Read whole, the equation of the Present is **C² × M = E = m × c²**: the nonphysical on the left, the physical on the right, and E, the entity, where they meet. In TSR the × sign means "the product of," because you can't multiply things that have no quantities. **Tune** sits at the left product sign and **Focus** at the right one. They aren't extra factors in the equation. They name the entity's two actions where the factors meet: Tune on the nonphysical side, Focus on the physical side. Together they make Attraction.
 
 **Core partnerships (physical → nonphysical)**
 
@@ -70,21 +70,21 @@ Read whole, the equation of the Present is **C² × M = E = M × C²**: the nonp
 | density | Desire | What is wanted; how much wanting is packed into a Movement. |
 | volume | Vibrance | How ready a Movement is to vibrate. |
 | mass = density × volume | Movement = Desire × Vibrance | |
-| acceleration | Appreciation | How a Movement increases: accumulation, the way a house appreciates (and, second meaning, gratitude). |
-| force = mass × acceleration | Frequency = Movement × Appreciation | What you feel as a Movement grows. |
+| acceleration | Appreciation | How a Movement’s rising changes, quickening or slowing. Under the Current’s steady pull, that comes down to how much of the pull you let move you: full in free fall, low while you hold on. Meant the way a house appreciates (and, second meaning, gratitude). |
+| force = mass × acceleration | Frequency = Movement × Appreciation | What you feel as a Movement’s rising quickens or slows. Units don’t cross the mirror, only relationships do, so cycles per second stays with physics. |
 | Focus | Tune | Focus is where physical attention and effort go. Tune is what you're receptive to, like a radio dial picking a station. |
 | manifestation | imagination | |
 | Electro-Magnetic | Idle-Reflected | Idle like an engine idling: still-looking but running. Reflected: it returns rather than radiates. |
 | radiation | collection | |
 | empirical evidence (a change in force, measured) | emotional evidence (a change in frequency, felt) | Emotion shows your alignment with the Current. |
-| kinetic energy (in the wide sense: everything physical, at rest and in motion) | conscious energy | Where they meet: conscious-kinetic energy. There aren't two energies; it's one energy seen from both sides. |
+| physical energy (at rest and in motion; physics splits it into rest energy and kinetic energy) | conscious energy | Where they meet: conscious-physical energy. There aren't two energies; it's one energy seen from both sides. |
 | space-time continuum | Vibration-Expansion continuum | |
 
 **Derived reflections**
 
 | Physical | Nonphysical |
 |---|---|
-| velocity (space over time) | Vibration over Expansion. Not a speed: how much Vibration a Movement holds as it expands. |
+| velocity (space over time) | Vibration over Expansion. Not a speed: how much a Movement’s vibration rises per Expansion. |
 | time dilation | Expansion Dilation: the gap between where the Current is and what you're living, widened by resistance. |
 | length contraction | Vibrational Contraction: the felt distance between what you want and its arrival shrinks as you align. |
 | gravity well | Vortex: Desire and Vibrance, organized strongly enough, turning the Current around themselves. It draws in whatever resonates and shapes the paths realization takes. It's an organization, not a place. |
@@ -98,7 +98,7 @@ Read whole, the equation of the Present is **C² × M = E = M × C²**: the nonp
 | Objective Reality (the shared physical world) | Collective Reality (everything the Current has culminated into) |
 | Subjective Reality (your experience of the objective world) | Vibrational Reality (the vibrations you keep active in the Current) |
 
-Nobody lives in either whole directly. The wholes only ever arrive as yours. Where your Vibrational and Subjective realities overlap is you: the **Eternal-Energetic-Entity**, the soul, the crossing point. The center of that crossing is the **Point of Reflection**, where energy changes form and where free will lives.
+Nobody lives in either whole directly. The wholes only ever arrive as yours. Where your Vibrational and Subjective realities overlap is you: the crossing point, the E. The two realities together make the **Eternal-Energetic-Entity Continuum**, the soul’s environment. The center of that crossing is the **Point of Reflection**, where energy changes form and where free will lives.
 
 **The four directions (all running at once, not as steps)**
 
@@ -120,7 +120,7 @@ The Future is active expansion. The Current is what that culminates into, the mo
 - **Pure positive** means nonresistant, expansive and receptive. Morality, a ranking of good and bad, is a physical concept.
 - **No rank.** Nesting, yes; authority, no. The nonphysical has no "above."
 - **Sovereignty.** Everyone is fully inside the whole *from somewhere*, and nobody else gets to be there. Nothing I want entitles me to another person's place in the flow. Disagreement with TSR is sovereignty, not resistance.
-- **Energy and the cycle.** The cycle In From the world and Out Through the entity is the cycle of space-time, where energy is neither created nor destroyed. Conservation of energy is that side's law. The nonphysical comes in through that same cycle, in spurts, as a change of intuition and intention in the moment. It isn't more energy. It's less-resistant conscious energy, realized (made real), being actualized (made actual) through physical kinetic energy. So the physical books always balance: what the nonphysical changes is the form and direction of energy already moving, not its amount.
+- **Energy and the cycle.** The cycle In From the world and Out Through the entity is the cycle of space-time, where energy is neither created nor destroyed. Conservation of energy is that side's law. The nonphysical comes in through that same cycle, in spurts, as a change of intuition and intention in the moment. It isn't more energy. It's less-resistant conscious energy, realized (made real), being actualized (made actual) through physical energy. So the physical books always balance: what the nonphysical changes is the form and direction of energy already moving, not its amount.
 
 ## 4b. What holds each word (the web)
 
@@ -132,14 +132,14 @@ A table isn't a list of word pairs. Each word has to do several jobs at once, ac
 - **Expansion:** reflection of time · what the Current does · can't be unexpanded · the Future is active expansion · Expansion Dilation.
 - **Desire:** reflection of density · a factor of Movement · flows Out For you · the Future · "what is wanted" · crosses Belief at the top of the diagram.
 - **Vibrance:** reflection of volume · a factor of Movement · tied to Vibration the way volume is a measure of space.
-- **Appreciation:** reflection of acceleration · how a Movement increases · a factor in Frequency · its second meaning, gratitude, ties what you feel to what you can do about it.
+- **Appreciation:** reflection of acceleration · how a Movement’s rising changes · a factor in Frequency · its second meaning, gratitude, ties what you feel to what you can do about it.
 - **Frequency:** reflection of force · Movement × Appreciation · belongs to Vibration · emotional evidence is a change in it, felt.
 - **Tune:** reflection of Focus · selects (picks the station) · sits at the left product sign · with Focus makes Attraction.
 - **Imagination:** reflection of manifestation · comes In To you with intuition.
 - **Idle and Reflected:** reflections of Electro and Magnetic · together, the Current's character, as electro-magnetic is light's.
 - **Collection:** reflection of radiation · with radiation makes Momentum.
 - **Emotional evidence:** reflection of empirical evidence · a change in frequency, felt.
-- **Conscious energy:** reflection of kinetic energy · one energy transmuting, seen from two sides.
+- **Conscious energy:** reflection of physical energy · one energy transmuting, seen from two sides.
 
 Words in TSR sit in up to ten of these jobs at once. A rival word that does one job well and drops the rest doesn't beat the table. It only replaces a row.
 
@@ -197,7 +197,7 @@ Start by greeting me in two or three sentences: what the game is and that you'll
 
 The goal is to build a different set of reflections for the core rows that interrelates in as many ways as TSR's, and makes as much sense or more. You can replace one word, several, or the whole table.
 
-1. **Set the field.** Show the core physical terms in a short list: mass, the speed of light, space, time, density, volume, acceleration, force, focus, manifestation, electro and magnetic, radiation, empirical evidence, kinetic energy. Ask whether I want to start from scratch or change TSR's table one word at a time.
+1. **Set the field.** Show the core physical terms in a short list: mass, the speed of light, space, time, density, volume, acceleration, force, focus, manifestation, electro and magnetic, radiation, empirical evidence, physical energy. Ask whether I want to start from scratch or change TSR's table one word at a time.
 2. **Build.** For each row, I propose a word (or ask you to propose candidates). Run the three tests and the trap scan on each. Then check the new word against **every job** the original holds in section 4b, plus any new jobs the rival table creates. Mark each job held ✓, torn ✗, or new ★.
 3. **Keep the rival honest.** A rival table is allowed to change other rows to make itself fit. That's fair, but then the changed rows have to pass everything too. Track it.
 4. **Score it side by side.** When I'm done, or when the rival table runs out of rows, show a scorecard: for each word, TSR's jobs held and the rival's jobs held, tears, new connections the rival found, and trap hits. Then the totals.
