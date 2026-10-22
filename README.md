@@ -39,6 +39,7 @@ These are the ideas the book builds, in its own words.
 |---|---|
 | [`tsr.md`](tsr.md) | Free sample of *The Sovereign Mirror* (2026) |
 | [`reflection-game.md`](reflection-game.md) | The Reflection Game: try to build a table that holds together like TSR's, with any AI |
+| [`tests/`](tests/) | Tests of the one rule: a formal model, an extension test run with five AIs, and a blind round, with results and open questions |
 | `10-02 The universe as reflection..mp3` | Audio recording: *The universe as reflection* |
 | [`the-sovereign-mirror/`](the-sovereign-mirror/) | Cover art for the book |
 

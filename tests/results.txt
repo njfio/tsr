@@ -1,0 +1,43 @@
+== 1. Mirror twice (one-to-one?) ==
+  'Current' has 2 physical partners: [('Past', 'energy flow'), ('speed of light c', 'symbol')]
+  'Desire' has 2 physical partners: [('Belief', 'entity contrast'), ('density', 'co-creating partner')]
+  physical words with more than one reflection: none
+  clashes once each pairing is typed by its Map row: none
+
+== 2. The rule against the book's own rulings ==
+  Ch 2, first clause read literally: 10/17 rows match
+     miss: 2 no shared now (distance): book says invert, wording predicts keep
+     miss: 7 E = mc^2: book says keep, wording predicts invert
+     miss: 11 mass-energy warps space-time: book says keep, wording predicts invert
+     miss: 12 wells and lensing: book says keep, wording predicts invert
+     miss: m = density x volume: book says keep, wording predicts invert
+     miss: F = ma: book says keep, wording predicts invert
+     miss: Boyle: squeeze volume, pressure climbs: book says keep, wording predicts invert
+  Ch 2, both clauses: 13/17 rows match
+     miss: 2 no shared now (distance): book says invert, wording predicts keep
+     miss: 11 mass-energy warps space-time: book says keep, wording predicts invert
+     miss: 12 wells and lensing: book says keep, wording predicts invert
+     miss: Boyle: squeeze volume, pressure climbs: book says keep, wording predicts invert
+  Ch 16, cost vs equivalence: 17/17 rows match
+
+== 3. Composition ==
+  velocity -> rise per Expansion: commutes  ('quotient', ('Vibration', 'Expansion'))
+  acceleration -> Appreciation: commutes  ('rate', ('rise per Expansion', 'Expansion'))
+  mass m -> Movement M: commutes  ('product', ('Desire', 'Vibrance'))
+  force -> Frequency: commutes  ('product', ('Movement M', 'Appreciation'))
+  physical energy -> conscious energy: commutes  ('product', ('Movement M', 'Current', 'Current'))
+  extension test (relations the book does not reflect):
+     momentum = product of ('Movement M', 'rise per Expansion')
+     work = product of ('Frequency', 'Vibration')
+     power = product of ('Frequency', 'rise per Expansion')
+     kinetic energy = half product of ('Movement M', 'rise per Expansion', 'rise per Expansion')
+     impulse = product of ('Frequency', 'Expansion')
+     weight = product of ('Movement M', 'Attraction')
+
+== 4. Qualitative check: does Frequency rise with alignment? ==
+  product M x A: sign = 1
+  ratio A / M: sign = ?
+
+== 5. Constraint count for the Current's slot ==
+  words meeting all 3 requirements: ['Current']
+  requirements met by each candidate: {'Current': 3, 'Source': 0, 'God': 0, 'field': 0, 'flow': 1, 'stream': 2, 'tide': 2, 'Now': 1, 'present': 1, 'Relation': 0, 'Resonance': 0}

@@ -1,0 +1,1378 @@
+{
+ "Astra": {
+  "1": {
+   "id": 1,
+   "physical": "Momentum through space: p = m × v.",
+   "reflected_formula": "NEW[Momentum through Vibration] = Movement × (Vibration ÷ Expansion).",
+   "reflected_sentence": "Momentum through Vibration is Movement multiplied by Vibration over Expansion.",
+   "shape": "keeps",
+   "rule_reason": "The relation defines momentum as a product, rather than stating an increasing cost or a resistance-caused limit. Its factors have partners, but the prompt names only the reflected momentum through time.",
+   "unmapped_terms": [
+    "momentum through space"
+   ],
+   "new_words": [
+    "NEW[Momentum through Vibration]"
+   ],
+   "interpretation": "A person's receptivity and the rise of their vibration per Expansion would jointly constitute this new kind of momentum. The prompt does not explain what that momentum means in experience beyond its two factors.",
+   "conflicts": "none",
+   "sense": 4,
+   "confidence": 6
+  },
+  "2": {
+   "id": 2,
+   "physical": "Work: W = F × d (force times distance).",
+   "reflected_formula": "NEW[Work counterpart] = Frequency × NEW[Distance counterpart].",
+   "reflected_sentence": "The counterpart of work is felt Frequency multiplied by an unspecified counterpart of distance.",
+   "shape": "keeps",
+   "rule_reason": "Read as the supplied definition of work, the product keeps its shape. Reading the same relation as a cost increasing with distance would instead suggest reversal, because distance is described as what resistance makes; the prompt does not settle that competing classification.",
+   "unmapped_terms": [
+    "work",
+    "distance"
+   ],
+   "new_words": [
+    "NEW[Work counterpart]",
+    "NEW[Distance counterpart]"
+   ],
+   "interpretation": "A person has a felt Frequency, but the prompt supplies no second experiential factor corresponding specifically to distance. Replacing distance with space's partner, Vibration, would require an additional judgment rather than a supplied pairing.",
+   "conflicts": "A literal distance factor would contradict: \"Nothing on the nonphysical side has a number or a distance.\" The placeholder does not resolve what replaces it.",
+   "sense": 2,
+   "confidence": 3
+  },
+  "3": {
+   "id": 3,
+   "physical": "Power: P = F × v.",
+   "reflected_formula": "NEW[Power counterpart] = Frequency × (Vibration ÷ Expansion).",
+   "reflected_sentence": "The counterpart of power is felt Frequency multiplied by Vibration over Expansion.",
+   "shape": "keeps",
+   "rule_reason": "The supplied relation defines power through a product of two mapped quantities; it does not explicitly describe a resistance-caused cost or limit.",
+   "unmapped_terms": [
+    "power"
+   ],
+   "new_words": [
+    "NEW[Power counterpart]"
+   ],
+   "interpretation": "This combines what a person feels with how much their vibration rises per Expansion. The supplied meanings do not establish a separate experience corresponding to power, so the product names a combination without explaining its significance.",
+   "conflicts": "none",
+   "sense": 3,
+   "confidence": 6
+  },
+  "4": {
+   "id": 4,
+   "physical": "Kinetic energy: K = ½ × m × v².",
+   "reflected_formula": "NEW[Kinetic-energy counterpart] = ½ × Movement × (Vibration ÷ Expansion)², as a formal relationship only.",
+   "reflected_sentence": "The counterpart of kinetic energy is formally half the product of Movement and squared Vibration over Expansion.",
+   "shape": "keeps",
+   "rule_reason": "As an energy equivalence, the relation keeps its shape. However, interpreting kinetic energy as the cost of attaining motion brings it under the book's opposite ruling about increasing speed; no precedence rule distinguishes these readings.",
+   "unmapped_terms": [
+    "kinetic energy as a distinct portion of the shared E"
+   ],
+   "new_words": [
+    "NEW[Kinetic-energy counterpart]"
+   ],
+   "interpretation": "Formally, this associates receptivity and rising vibration with an energy counterpart. It does not establish that a person's next step becomes easier, and the prompt provides no experiential meaning for the factor one-half.",
+   "conflicts": "If read as the cost of increasing Vibration over Expansion, the retained squared dependence conflicts with \"each next step takes less.\" Giving one-half literal numerical significance would also conflict with \"Nothing on the nonphysical side has a number or a distance.\"",
+   "sense": 2,
+   "confidence": 3
+  },
+  "5": {
+   "id": 5,
+   "physical": "Impulse: J = F × t, which equals the change in momentum.",
+   "reflected_formula": "NEW[Impulse counterpart] = Frequency × Expansion = change in NEW[Momentum through Vibration].",
+   "reflected_sentence": "Frequency multiplied by Expansion equals a change in momentum through Vibration.",
+   "shape": "keeps",
+   "rule_reason": "The supplied equality between impulse and momentum change is an equivalence, not a resistance-caused limit. Momentum here is interpreted as the momentum through space introduced in item 1.",
+   "unmapped_terms": [
+    "impulse",
+    "momentum through space"
+   ],
+   "new_words": [
+    "NEW[Impulse counterpart]",
+    "NEW[Momentum through Vibration]"
+   ],
+   "interpretation": "A person's felt Frequency across Expansion would correspond to a change in the combination of receptivity and rising vibration. The prompt does not explain how that combination changes when Movement itself varies.",
+   "conflicts": "none",
+   "sense": 4,
+   "confidence": 6
+  },
+  "6": {
+   "id": 6,
+   "physical": "Weight: w = m × g.",
+   "reflected_formula": "NEW[Weight counterpart] = Movement × Appreciation associated with Attraction and Vortexes.",
+   "reflected_sentence": "The counterpart of weight combines receptivity with Appreciation associated with Attraction and Vortexes.",
+   "shape": "keeps",
+   "rule_reason": "This is a force product of the same form as F = m × a, which the book explicitly preserves. Identifying g as the gravitational instance of acceleration is a judgment implicit in reading the supplied weight relation.",
+   "unmapped_terms": [
+    "weight as a distinct kind of Frequency"
+   ],
+   "new_words": [
+    "NEW[Weight counterpart]"
+   ],
+   "interpretation": "What a person has already expanded into draws them toward it. The reflected product associates that drawing with their receptivity and Appreciation, but supplies no separate felt quality corresponding specifically to weight.",
+   "conflicts": "none",
+   "sense": 4,
+   "confidence": 6
+  },
+  "7": {
+   "id": 7,
+   "physical": "Friction: resistance between two surfaces sliding past each other; it turns motion into heat (F = μ × N).",
+   "reflected_formula": "Formal substitution: Frequency = NEW[μ counterpart] × NEW[N counterpart]; resistance becomes receptivity, but the rule supplies no reversed equation.",
+   "reflected_sentence": "Sliding resistance becomes receptivity, but the counterparts of its coefficient, normal force, surfaces, and heat are not specified.",
+   "shape": "turns around",
+   "rule_reason": "The relation explicitly concerns resistance to motion, so its resistance aspect turns around. The rule does not specify whether to reverse a coefficient, the force's direction, the dependence on N, or the conversion into heat.",
+   "unmapped_terms": [
+    "friction",
+    "coefficient μ",
+    "normal force N as a particular force",
+    "surfaces",
+    "sliding contact",
+    "heat"
+   ],
+   "new_words": [
+    "NEW[μ counterpart]",
+    "NEW[N counterpart]"
+   ],
+   "interpretation": "The only supplied personal meaning is a shift from resisting change to being receptive to it. There is no authorized meaning for contact between surfaces or for the heat produced, so a fuller life interpretation would be invented.",
+   "conflicts": "none",
+   "sense": 2,
+   "confidence": 5
+  },
+  "8": {
+   "id": 8,
+   "physical": "Hooke's law: a spring pushes back in proportion to how far it is stretched (F = −k × x).",
+   "reflected_formula": "Formal substitution: Frequency = −NEW[k counterpart] × NEW[x counterpart]; the resisting relationship turns around, but its replacement formula is unspecified.",
+   "reflected_sentence": "The spring's increasing opposition to stretching must become a receptive relationship whose mathematical form is not supplied.",
+   "shape": "turns around",
+   "rule_reason": "The verbal relation explicitly describes pushback increasing with stretching, making it a resistance relationship. The rule does not decide whether reversal removes the minus sign, reverses proportionality, or changes the interpretation of stretching.",
+   "unmapped_terms": [
+    "spring",
+    "spring constant k",
+    "stretch displacement x",
+    "restoring direction"
+   ],
+   "new_words": [
+    "NEW[k counterpart]",
+    "NEW[x counterpart]"
+   ],
+   "interpretation": "One can say only that opposition is supposed to become receptivity. Claiming that a person feels more supported when stretched would introduce meanings for stretching and support that the prompt does not provide.",
+   "conflicts": "Treating x as a literal retained stretch distance would contradict: \"Nothing on the nonphysical side has a number or a distance.\"",
+   "sense": 2,
+   "confidence": 4
+  },
+  "9": {
+   "id": 9,
+   "physical": "Centripetal force: keeping a mass on a curved path takes F = m × v² ÷ r.",
+   "reflected_formula": "Formal substitution: Frequency = Movement × (Vibration ÷ Expansion)² ÷ NEW[Radius counterpart]; a cost reading requires reversal, but no reversed formula is determined.",
+   "reflected_sentence": "The resistance-related demand of maintaining curved motion should become easier with receptivity, although the reflected curved path has no supplied meaning.",
+   "shape": "turns around",
+   "rule_reason": "The phrase 'keeping a mass on a curved path takes' presents a force requirement involving mass as resistance. This supports a cost reversal, but reading the same equation as F = m × a with a specified acceleration instead supports keeping the product.",
+   "unmapped_terms": [
+    "curved path",
+    "radius r",
+    "centripetal direction"
+   ],
+   "new_words": [
+    "NEW[Radius counterpart]"
+   ],
+   "interpretation": "The cost reading says receptivity makes a requirement easier, but does not identify what personal experience corresponds to a curved path. The preserved product reading would simply combine Movement and Appreciation, producing a different result without resolving the geometry.",
+   "conflicts": "Inverting the Movement factor would conflict with the explicit ruling \"Frequency = Movement × Appreciation.\" Retaining r as a distance would conflict with \"Nothing on the nonphysical side has a number or a distance.\"",
+   "sense": 2,
+   "confidence": 2
+  },
+  "10": {
+   "id": 10,
+   "physical": "Gravitational potential energy: U = m × g × h.",
+   "reflected_formula": "NEW[Gravitational-potential-energy counterpart] = Movement × Appreciation associated with Attraction and Vortexes × NEW[Height counterpart].",
+   "reflected_sentence": "The counterpart of gravitational potential energy combines Movement, gravitationally associated Appreciation, and an unspecified counterpart of height.",
+   "shape": "keeps",
+   "rule_reason": "Read as the supplied energy equivalence, the product keeps its shape. Reading it instead as the cost of moving against gravity over a distance would invite reversal, but that classification is not settled by the rule.",
+   "unmapped_terms": [
+    "gravitational potential energy as a distinct portion of E",
+    "height h"
+   ],
+   "new_words": [
+    "NEW[Gravitational-potential-energy counterpart]",
+    "NEW[Height counterpart]"
+   ],
+   "interpretation": "The prompt connects Attraction with being drawn toward what one has already expanded into. It provides no corresponding height or distinct store of potential energy, so the formula does not yield a complete statement about a person's life.",
+   "conflicts": "Retaining height as a literal distance would contradict: \"Nothing on the nonphysical side has a number or a distance.\"",
+   "sense": 2,
+   "confidence": 3
+  },
+  "11": {
+   "id": 11,
+   "physical": "Pressure and Boyle's law: pressure is force per area (P = F ÷ A); with the amount of gas and its temperature held steady, squeezing the volume raises the pressure (P × V stays constant).",
+   "reflected_formula": "NEW[Pressure counterpart] = Frequency ÷ NEW[Area counterpart]; NEW[Pressure counterpart] × Vibrance stays unchanged, conditional on NEW[Gas-amount counterpart] and NEW[Temperature counterpart] staying unchanged.",
+   "reflected_sentence": "The counterpart of pressure is Frequency per counterpart of area and varies inversely with Vibrance under two unmapped conditions.",
+   "shape": "keeps",
+   "rule_reason": "Pressure is explicitly a definition. Boyle's law is provisionally treated as a conditional fixed-product relationship, not a conservation law; the prompt does not explicitly classify every such relationship or establish that squeezing here is a resistance-caused cost.",
+   "unmapped_terms": [
+    "pressure",
+    "area",
+    "gas",
+    "amount of gas",
+    "temperature",
+    "squeezing"
+   ],
+   "new_words": [
+    "NEW[Pressure counterpart]",
+    "NEW[Area counterpart]",
+    "NEW[Gas-amount counterpart]",
+    "NEW[Temperature counterpart]"
+   ],
+   "interpretation": "Vibrance has a supplied meaning as the extent of a Movement in Vibration, but the quantity said to increase when that extent decreases has none. Calling it emotional pressure or concentrated feeling would add an unsupported personal meaning.",
+   "conflicts": "none",
+   "sense": 2,
+   "confidence": 3
+  },
+  "12": {
+   "id": 12,
+   "physical": "Wave interference: two waves in opposite phase cancel at a point.",
+   "reflected_formula": "NEW[Wave counterpart 1] + NEW[Wave counterpart 2] → cancellation under NEW[Opposite-phase counterpart] at NEW[Point counterpart].",
+   "reflected_sentence": "Two unmapped wave counterparts cancel under an unmapped phase relationship at an unmapped counterpart of a point.",
+   "shape": "no partner",
+   "rule_reason": "The prompt supplies no partners for waves, phase, or a point, and no explicit resistance-caused cost to reverse. Merely using the word Vibration does not supply those missing relationships.",
+   "unmapped_terms": [
+    "wave",
+    "opposite phase",
+    "point",
+    "wave cancellation"
+   ],
+   "new_words": [
+    "NEW[Wave counterpart 1]",
+    "NEW[Wave counterpart 2]",
+    "NEW[Opposite-phase counterpart]",
+    "NEW[Point counterpart]"
+   ],
+   "interpretation": "Nothing supplied establishes that feelings, Desires, or Movements can cancel through opposite phase. Any such personal interpretation would invent the central mechanism rather than reflect an available mapping.",
+   "conflicts": "none",
+   "sense": 1,
+   "confidence": 6
+  },
+  "13": {
+   "id": 13,
+   "physical": "Conservation of momentum: in a closed system, total momentum stays constant.",
+   "reflected_formula": "Within NEW[Closed-system counterpart], the total of NEW[Momentum through Vibration] stays unchanged.",
+   "reflected_sentence": "The total momentum through Vibration remains unchanged within a counterpart of a closed system.",
+   "shape": "keeps",
+   "rule_reason": "Conservation laws explicitly keep their shape. This uses the spatial momentum reflected in item 1; interpreting momentum as the book's momentum through time would change the conserved expression to a total of Movement × Current without changing the classification.",
+   "unmapped_terms": [
+    "momentum through space",
+    "closed system"
+   ],
+   "new_words": [
+    "NEW[Momentum through Vibration]",
+    "NEW[Closed-system counterpart]"
+   ],
+   "interpretation": "Changes in individual combinations of receptivity and rising vibration would have to leave their total unchanged within the stipulated system. The prompt does not explain what makes a group of Movements closed or how their nonnumerical momenta form a total.",
+   "conflicts": "none",
+   "sense": 3,
+   "confidence": 7
+  },
+  "14": {
+   "id": 14,
+   "physical": "Newton's first law: a body keeps its state of motion unless a force acts on it.",
+   "reflected_formula": "No acting Frequency → no change in NEW[State-of-motion counterpart] of a Movement.",
+   "reflected_sentence": "A Movement retains its state of motion's counterpart unless Frequency acts on it.",
+   "shape": "keeps",
+   "rule_reason": "This provisionally preserves the condition for change, consistent with the book's retained Frequency = Movement × Appreciation relationship. The first law is not explicitly classified in the prompt, and receptivity does not by itself specify spontaneous change without Frequency.",
+   "unmapped_terms": [
+    "body as an entity distinct from its mass",
+    "state of motion as a whole"
+   ],
+   "new_words": [
+    "NEW[State-of-motion counterpart]"
+   ],
+   "interpretation": "A person's receptivity does not by itself establish a change in how their vibration rises. The reflected condition associates a change with Frequency, but Frequency is defined as what one feels rather than clearly as an external action upon someone.",
+   "conflicts": "none",
+   "sense": 3,
+   "confidence": 3
+  },
+  "15": {
+   "id": 15,
+   "physical": "Escape velocity: the speed needed to leave a planet rises with the planet's mass (v = √(2GM ÷ r)).",
+   "reflected_formula": "Formal substitution: NEW[Escape-velocity counterpart] = √(2 × NEW[G counterpart] × planet's Movement ÷ NEW[Radius counterpart]); the stated threshold must instead decrease with receptivity, but the reversed formula is unspecified.",
+   "reflected_sentence": "Greater receptivity must make the counterpart of leaving easier rather than raise its required threshold.",
+   "shape": "turns around",
+   "rule_reason": "The relation explicitly states that the required escape speed rises with a planet's mass, which TSR identifies as resistance. The qualitative reversal is therefore direct, but the rule does not justify replacing Movement with its reciprocal or otherwise determine a new square-root formula.",
+   "unmapped_terms": [
+    "escape as a nonphysical process",
+    "planet",
+    "gravitational constant G",
+    "radius r",
+    "escape threshold"
+   ],
+   "new_words": [
+    "NEW[Escape-velocity counterpart]",
+    "NEW[G counterpart]",
+    "NEW[Radius counterpart]"
+   ],
+   "interpretation": "The rule says only that a resistance-related threshold becomes easier with receptivity. It does not establish what a person is leaving, whose receptivity is involved experientially, or what escape means when Attraction draws one toward what one has already expanded into.",
+   "conflicts": "Keeping the formal substitution as the final relationship would contradict the required reversal of an increasing resistance-related threshold. A literal radius or numerical escape speed would contradict \"Nothing on the nonphysical side has a number or a distance.\"",
+   "sense": 2,
+   "confidence": 6
+  }
+ },
+ "Kimi K3": {
+  "1": {
+   "id": 1,
+   "physical": "Momentum through space: p = m × v",
+   "reflected_formula": "Momentum = Movement × (Vibration ÷ Expansion)",
+   "reflected_sentence": "A Movement's momentum is its receptivity carried through its rate of rising in Vibration.",
+   "shape": "keeps",
+   "rule_reason": "definition of momentum",
+   "unmapped_terms": [],
+   "new_words": [],
+   "interpretation": "The book already reflects momentum through time as M × C: expansion you carry even when your Vibration isn't changing. This adds the complementary piece: momentum through Vibration is what a Movement carries while it is actually rising. In a life, it's the felt momentum of growth itself — how much of you is in motion upward, weighted by how receptive you are.",
+   "conflicts": "none",
+   "sense": 6,
+   "confidence": 6
+  },
+  "2": {
+   "id": 2,
+   "physical": "Work: W = F × d (force times distance)",
+   "reflected_formula": "E received = Frequency × Vibration",
+   "reflected_sentence": "What costs energy as Frequency pressed across distance becomes energy gathered as Frequency felt across Vibration.",
+   "shape": "turns around",
+   "rule_reason": "cost that rises with resistance: the energy expended rises with distance, and distance is what resistance makes",
+   "unmapped_terms": [],
+   "new_words": [],
+   "interpretation": "Physically, the farther you push something against its resistance, the more energy you spend. Reflected, the more Vibration a receptive Movement lets Frequency act across, the more E it collects rather than spends. In a life: effort expended crossing ground flips into energy received across the span of life you let feeling actually move through.",
+   "conflicts": "none",
+   "sense": 5,
+   "confidence": 4
+  },
+  "3": {
+   "id": 3,
+   "physical": "Power: P = F × v",
+   "reflected_formula": "Flow (NEW) = Frequency × (Vibration ÷ Expansion)",
+   "reflected_sentence": "Power, the rate energy is spent pressing against resistance, reflects as the rate E flows in as Frequency meets receptivity that is rising.",
+   "shape": "turns around",
+   "rule_reason": "cost that rises with resistance: sustaining motion against resistance at higher speed costs energy faster",
+   "unmapped_terms": [],
+   "new_words": [
+    "Flow (NEW)"
+   ],
+   "interpretation": "Physically, moving something fast against its resistance drains energy at a high rate; power measures that drain. Reflected, the faster a Movement's Vibration rises per Expansion, the faster Frequency delivers E to it. In a life, it reads as the difference between burning yourself out pushing and being refilled at the speed you're actually growing.",
+   "conflicts": "none",
+   "sense": 4,
+   "confidence": 4
+  },
+  "4": {
+   "id": 4,
+   "physical": "Kinetic energy: K = ½ × m × v²",
+   "reflected_formula": "E of rising = ½ × Movement × (Vibration ÷ Expansion)²",
+   "reflected_sentence": "The E held in a Movement's rising grows with the square of how fast its Vibration rises per Expansion.",
+   "shape": "keeps",
+   "rule_reason": "definition of kinetic energy; the ½ and the square are part of the relationship, and relationships cross even though units don't",
+   "unmapped_terms": [],
+   "new_words": [],
+   "interpretation": "Physically, a moving body's energy is set by its mass and the square of its speed. Reflected, the E in a growing Movement is set by its receptivity and the square of its rate of rising. In a life: the energy in your growth multiplies steeply with how fast the growth itself is quickening, scaled by how receptive you are to it.",
+   "conflicts": "none",
+   "sense": 6,
+   "confidence": 6
+  },
+  "5": {
+   "id": 5,
+   "physical": "Impulse: J = F × t, which equals the change in momentum",
+   "reflected_formula": "Frequency × Expansion = change in Momentum",
+   "reflected_sentence": "A Frequency felt over a span of Expansion equals the change in the Movement's momentum.",
+   "shape": "keeps",
+   "rule_reason": "identity: impulse is defined as F × t and shown to equal the change in momentum",
+   "unmapped_terms": [],
+   "new_words": [],
+   "interpretation": "Physically, a push sustained over time changes a body's momentum by exactly the push times the duration. Reflected, a feeling sustained through Expansion changes a Movement's momentum by exactly that feeling times the Expansion. In a life: what actually changes the momentum of your growth is not intensity alone but feeling held steadily through what the Current does.",
+   "conflicts": "none",
+   "sense": 6,
+   "confidence": 6
+  },
+  "6": {
+   "id": 6,
+   "physical": "Weight: w = m × g",
+   "reflected_formula": "Frequency of Attraction = Movement × Appreciation",
+   "reflected_sentence": "The Frequency a Vortex's draw delivers to a Movement is its receptivity times the Appreciation the draw provides.",
+   "shape": "keeps",
+   "rule_reason": "definition of weight, the same product shape as F = Frequency's form m × a, with g as the pull's acceleration",
+   "unmapped_terms": [
+    "g as a named constant (g itself is an acceleration, which maps, but its fixed Earth value is a unit and units don't cross)"
+   ],
+   "new_words": [],
+   "interpretation": "Physically, weight is the force you must resist just by being massive where gravity pulls. Reflected through Attraction and Vortexes — what you've already expanded into drawing you toward it — the draw you feel from a Vortex is your receptivity times how strongly it quickens you. In a life: how heavily a calling pulls on you depends on how open you are to it and how strongly it moves what is already yours.",
+   "conflicts": "none",
+   "sense": 5,
+   "confidence": 5
+  },
+  "7": {
+   "id": 7,
+   "physical": "Friction: resistance between two surfaces sliding past each other; turns motion into heat (F = μ × N)",
+   "reflected_formula": "Frequency of ease = (NEW: slip coefficient) × Frequency pressing the two together",
+   "reflected_sentence": "Where two Movements' Vibrations slide past each other, receptivity turns their slipping into E collected rather than E radiated.",
+   "shape": "turns around",
+   "rule_reason": "cost caused by resistance: friction is motion drained against resistance, radiated as heat; the book pairs radiation with collection",
+   "unmapped_terms": [
+    "two surfaces (no partner for a boundary between bodies)",
+    "heat",
+    "coefficient of friction μ",
+    "normal force N as a distinct quantity (N is a force, so it maps to Frequency, but its pressing-together role has no stated partner)"
+   ],
+   "new_words": [
+    "slip coefficient (NEW)"
+   ],
+   "interpretation": "Physically, contact between sliding surfaces bleeds motion away as radiated heat. Reflected, contact between two Movements' Vibrations gathers E instead of losing it — the book's own radiation/collection flip. In a life: friction between two people drains; the same contact, met receptively, collects energy for both instead of burning it off.",
+   "conflicts": "none",
+   "sense": 6,
+   "confidence": 6
+  },
+  "8": {
+   "id": 8,
+   "physical": "Hooke's law: a spring pushes back in proportion to how far it is stretched (F = −k × x)",
+   "reflected_formula": "Frequency = −(NEW: resilience) × Vibration",
+   "reflected_sentence": "A receiving medium stretched in Vibration yields further in proportion to how far it has been displaced, drawing the Movement home more the farther it strays.",
+   "shape": "turns around",
+   "rule_reason": "judgment call under the cost clause: the spring's push-back and its stored energy rise with stretch, and stretch is distance, which resistance makes; the reflection of resistance is receptivity, so push-back flips to yielding",
+   "unmapped_terms": [
+    "spring (no partner for the elastic medium itself)",
+    "spring constant k"
+   ],
+   "new_words": [
+    "resilience (NEW)"
+   ],
+   "interpretation": "Physically, the more you displace a spring, the harder it fights you, and the energy you've locked into it grows with the square of the stretch. Reflected, the more Vibration is displaced, the more freely the displacement is received and returned. In a life it would read as: the farther you're pulled out of your shape, the more the return pulls for you instead of against you — but note this needed two NEW words (spring, resilience) and the keeps-vs-turns call here is the shakiest in the set.",
+   "conflicts": "none",
+   "sense": 3,
+   "confidence": 3
+  },
+  "9": {
+   "id": 9,
+   "physical": "Centripetal force: keeping a mass on a curved path takes F = m × v² ÷ r",
+   "reflected_formula": "Frequency = Movement × (Vibration ÷ Expansion)² ÷ Vibration",
+   "reflected_sentence": "Holding a receptive Movement on a curved Vibrational path yields Frequency rather than demanding it, rising as the curve tightens.",
+   "shape": "turns around",
+   "rule_reason": "cost caused by resistance: the demand rises with the body's mass and with the tightness of the path, and a tighter path means less distance, which resistance makes",
+   "unmapped_terms": [
+    "path (as a geometric object; radius r maps to Vibration)"
+   ],
+   "new_words": [],
+   "interpretation": "Physically, the harder and faster you swing a heavy body around a tight circle, the more force you must supply against its urge to fly straight. Reflected, a Movement held curving through Vibration isn't force-fed to keep turning; its receptivity lets the curve deliver Frequency instead. In a life: being bent off your straight line physically costs you; nonphysically the turning itself brings you more of what you feel, and tighter turns bring more.",
+   "conflicts": "none",
+   "sense": 5,
+   "confidence": 4
+  },
+  "10": {
+   "id": 10,
+   "physical": "Gravitational potential energy: U = m × g × h",
+   "reflected_formula": "E held = Movement × Appreciation × Vibration",
+   "reflected_sentence": "The E available to a Movement in a Vortex grows with its receptivity, the Appreciation, and how much Vibration it has expanded into.",
+   "shape": "turns around",
+   "rule_reason": "cost caused by resistance: physically the energy must be spent lifting resistance against the pull, and it rises with height, a distance, which resistance makes; reflected, expansion into Vibration holds the energy freely rather than paying it upward",
+   "unmapped_terms": [
+    "height as height (h maps to Vibration, but 'up' as a direction in a field has no stated partner)"
+   ],
+   "new_words": [],
+   "interpretation": "Physically, energy parked at height is energy you paid to climb, and it falls out of the body when released. Reflected through the book's 'what you've already expanded into draws you toward it,' the further a Movement has expanded into a Vortex, the more E is held for it and the stronger it is drawn inward. In a life: what you've already grown into both stores energy for you and pulls you deeper, without you having to pay the climb.",
+   "conflicts": "none",
+   "sense": 4,
+   "confidence": 4
+  },
+  "11": {
+   "id": 11,
+   "physical": "Pressure and Boyle's law: pressure is force per area (P = F ÷ A); with the amount of gas and its temperature held steady, squeezing the volume raises the pressure (P × V stays constant)",
+   "reflected_formula": "Pressure (NEW) = Frequency ÷ Vibration²; Pressure (NEW) × Vibrance = constant (with the Movements and their warmth held steady)",
+   "reflected_sentence": "Squeezing the Vibrance holding a fixed gathering of Movements raises the Frequency per Vibration in exact inverse proportion.",
+   "shape": "keeps",
+   "rule_reason": "constant-product identity at fixed conditions: P × V = constant is a conservation-like equivalence, and pressure is defined as force per area",
+   "unmapped_terms": [
+    "temperature (no partner at all; the law can't even be stated without it)",
+    "a gathering of gas (maps loosely to a gathering of Movements, but 'gas' as a phase has no partner)",
+    "area (A maps to Vibration² via space, but 'area' as such isn't given a partner)"
+   ],
+   "new_words": [
+    "Pressure (NEW)"
+   ],
+   "interpretation": "With temperature unmapped, this is the weakest full reflection: Boyle's law is conditional on held temperature, and nothing in the book's vocabulary holds that condition. Taken on its formula alone it says: compress the Vibrance a fixed gathering of Movements occupies, and the feeling per Vibration rises reciprocally. It survives only as arithmetic, not as lived meaning, because 'held steady in temperature' has no nonphysical reading.",
+   "conflicts": "none",
+   "sense": 3,
+   "confidence": 4
+  },
+  "12": {
+   "id": 12,
+   "physical": "Wave interference: two waves in opposite phase cancel at a point",
+   "reflected_formula": "Vibration of one + Vibration opposite = no Vibration (at a shared Expansion, since 'a point' has no distance to map)",
+   "reflected_sentence": "Two Movements whose Vibrations are exactly opposed erase each other's Vibration wherever they meet in the Current's now.",
+   "shape": "keeps",
+   "rule_reason": "identity of addition: cancellation from exact opposition is pure symmetry, so the relationship keeps its shape",
+   "unmapped_terms": [
+    "wave as an object (waves map through Vibration, but 'wave' itself has no named partner)",
+    "a point (no distance on the nonphysical side)"
+   ],
+   "new_words": [],
+   "interpretation": "Physically, two exactly opposed waves wipe each other out where they meet — and crucially, only at that location, which is the part that can't cross, since nothing nonphysical has a location. The symmetric core survives: exact opposition in Vibration cancels Vibration, and the book's simultaneity flip ('every Movement shares the Current's now') supplies the meeting-place the point can't. In a life: two opposed upwellings of feeling, precisely matched, flatten each other — and physically that should free the cancelled energy elsewhere, a consequence the reflection loses entirely.",
+   "conflicts": "\"Units don't cross the mirror, only relationships do.\" Nothing on the nonphysical side has a number or a distance. — cancellation 'at a point' is a spatial claim and has no exact nonphysical counterpart; only the phase-opposition symmetry crosses cleanly.",
+   "sense": 5,
+   "confidence": 6
+  },
+  "13": {
+   "id": 13,
+   "physical": "Conservation of momentum: in a closed system, total momentum stays constant",
+   "reflected_formula": "Total Momentum (M × C, plus M × (Vibration ÷ Expansion) while rising) of a closed gathering = constant",
+   "reflected_sentence": "Within a closed gathering of Movements, the total of all their momenta — carried expansion and rising both — never changes.",
+   "shape": "keeps",
+   "rule_reason": "conservation law, an identity; the book rules explicitly that conservation laws keep",
+   "unmapped_terms": [
+    "closed system (maps loosely to a closed gathering; no stated partner)"
+   ],
+   "new_words": [],
+   "interpretation": "Physically, momentum only travels; it is never made or lost. Reflected, within any closed gathering — a family, a group, a self — the total momentum of feeling and growth only passes between Movements. In a life: nothing felt in a closed circle is ever destroyed, only handed around, which is coherent but is a claim the book already makes in substance.",
+   "conflicts": "none",
+   "sense": 4,
+   "confidence": 7
+  },
+  "14": {
+   "id": 14,
+   "physical": "Newton's first law: a body keeps its state of motion unless a force acts on it",
+   "reflected_formula": "A Movement keeps its Vibration ÷ Expansion unless a Frequency moves it",
+   "reflected_sentence": "A Movement goes on rising at an unchanging rate in Vibration until a Frequency acts on it.",
+   "shape": "keeps",
+   "rule_reason": "law of inertia: the persistence statement carries no cost gradient, and it follows directly from the already-given pairing of mass as resistance to change in motion and Movement as receptivity to change in motion",
+   "unmapped_terms": [],
+   "new_words": [],
+   "interpretation": "Physically, the universe's default is coasting: change requires push. Reflected, a Movement's default is steady rising in Vibration, and only a Frequency — something felt — changes its rate. In a life: your growth holds its current pace on its own; what redirects it is always something that reaches you as feeling. Because the book's mass/Movement pairing already implies this, the result says little the book doesn't.",
+   "conflicts": "none",
+   "sense": 4,
+   "confidence": 5
+  },
+  "15": {
+   "id": 15,
+   "physical": "Escape velocity: the speed needed to leave a planet rises with the planet's mass (v = √(2GM ÷ r))",
+   "reflected_formula": "Rising needed to leave a Vortex = √(2 × (NEW: draw constant) × the Vortex's Movement ÷ Vibration) — and the requirement turns around: it falls as the escapee's receptivity grows",
+   "reflected_sentence": "Where the speed needed to escape a pull rises with the puller's mass, the rising needed to leave a Vortex becomes easier the more receptive the departing Movement.",
+   "shape": "turns around",
+   "rule_reason": "limit caused by resistance: greater mass raises the price of leaving, which is the same resistance-shaped threshold as the speed-of-light limit the book already turns around ('nothing a Movement expands into can ever fall short of' the Current)",
+   "unmapped_terms": [
+    "G, the gravitational constant (a unit-bearing constant; units don't cross)",
+    "planet (maps loosely to a Vortex, but a concentrated mass-body as such has no stated partner)"
+   ],
+   "new_words": [
+    "draw constant (NEW)"
+   ],
+   "interpretation": "Physically, escape is a threshold you buy with speed, and a heavier world charges more, so the most massive things — black holes at the limit — charge everything and let nothing out. Reflected, the threshold inverts: reaching free of a Vortex is not bought but eased, costing a receptive Movement less the more openness it brings, matching the book's own flipped light-speed limit where expansion can always be completed. In a life: the harder a pull grips physically, the more completely a receptive Movement is guaranteed to be able to leave it nonphysically.",
+   "conflicts": "none",
+   "sense": 6,
+   "confidence": 5
+  }
+ },
+ "Fable 5.1": {
+  "1": {
+   "id": 1,
+   "physical": "p = m × v",
+   "reflected_formula": "Momentum through Vibration = M × (Vibration ÷ Expansion)",
+   "reflected_sentence": "A Movement's momentum through Vibration is its receptivity times how much its vibration rises per Expansion.",
+   "shape": "keeps",
+   "rule_reason": "Definition, and the book already keeps the sibling m × c as M × C.",
+   "unmapped_terms": [],
+   "new_words": [],
+   "interpretation": "The more receptive you are, and the faster your vibration is rising, the more momentum you carry, so the harder it is for anything to leave you unchanged in your rising. A receptive person whose vibration is climbing is carried forward by that very climb. Momentum here is not stubbornness; it is a receptivity already in motion.",
+   "conflicts": "none",
+   "sense": 4,
+   "confidence": 6
+  },
+  "2": {
+   "id": 2,
+   "physical": "W = F × d",
+   "reflected_formula": "Energy taken in = Frequency × rise in Vibration",
+   "reflected_sentence": "The energy a Movement takes in is the Frequency it feels times how far its vibration rises while feeling it.",
+   "shape": "keeps",
+   "rule_reason": "Definition of work; E is shared across the mirror.",
+   "unmapped_terms": [
+    "work (as a named quantity)",
+    "distance (mapped to Vibration only via space → Vibration)"
+   ],
+   "new_words": [],
+   "interpretation": "Energy comes into your life when you feel a Frequency and your vibration actually moves while you feel it. Feeling something without rising delivers nothing, and rising without feeling delivers nothing either. Both together are what the book would call energy arriving.",
+   "conflicts": "none, though 'distance is what resistance makes' sits oddly inside a kept relation.",
+   "sense": 5,
+   "confidence": 4
+  },
+  "3": {
+   "id": 3,
+   "physical": "P = F × v",
+   "reflected_formula": "Energy per Expansion = Frequency × (Vibration ÷ Expansion)",
+   "reflected_sentence": "How fast energy flows into a Movement per Expansion is the Frequency felt times how fast its vibration is rising.",
+   "shape": "keeps",
+   "rule_reason": "Definition (energy per unit time).",
+   "unmapped_terms": [
+    "power"
+   ],
+   "new_words": [],
+   "interpretation": "The rate at which your life takes in energy depends on both what you are feeling and how quickly your vibration is climbing. A strong feeling during a fast rise is the most energy per Expansion. It adds nothing the book does not already imply from Frequency and velocity.",
+   "conflicts": "none",
+   "sense": 4,
+   "confidence": 5
+  },
+  "4": {
+   "id": 4,
+   "physical": "K = ½ × m × v²",
+   "reflected_formula": "Energy of rising = M × (Vibration ÷ Expansion)² (the ½ cannot cross: numbers do not reflect)",
+   "reflected_sentence": "The energy a Movement holds in its rising is its receptivity times the square of how fast it rises.",
+   "shape": "keeps",
+   "rule_reason": "Definition in Newtonian form, but the quadratic growth of energy with speed is the same cost the book turns around in the relativistic case.",
+   "unmapped_terms": [
+    "the coefficient ½",
+    "kinetic (as a qualifier)"
+   ],
+   "new_words": [],
+   "interpretation": "The faster your vibration rises, the more energy is bound up in that rising, and disproportionately so. Receptive people with quickly rising vibration carry a lot of energy. The book would say that energy is yours, not spent against you.",
+   "conflicts": "\"The faster an object moves, the more energy it takes to speed it up further. Reflected, and inverted: the closer you move to the Current, the more receptive you become, so each next step takes less.\" Keeping K as written says the opposite: energy of rising grows with the square of rising.",
+   "sense": 3,
+   "confidence": 3
+  },
+  "5": {
+   "id": 5,
+   "physical": "J = F × t = Δp",
+   "reflected_formula": "Frequency × Expansion = change in (M × Vibration ÷ Expansion)",
+   "reflected_sentence": "A Frequency felt across an Expansion changes a Movement's momentum by exactly that much.",
+   "shape": "keeps",
+   "rule_reason": "Identity (impulse equals change in momentum).",
+   "unmapped_terms": [
+    "impulse (as a named quantity)"
+   ],
+   "new_words": [],
+   "interpretation": "What shifts your momentum is a feeling held across Expansion, not a feeling that flashes and is gone. A small Frequency felt for a long Expansion changes you as much as a strong one felt briefly. This is coherent in the book's terms and slightly new: sustained feeling, not intensity, is what moves a life.",
+   "conflicts": "none",
+   "sense": 5,
+   "confidence": 6
+  },
+  "6": {
+   "id": 6,
+   "physical": "w = m × g",
+   "reflected_formula": "Frequency of Attraction = M × Appreciation due to Attraction",
+   "reflected_sentence": "The Frequency a Movement feels from Attraction is its receptivity times how much the Attraction quickens it.",
+   "shape": "keeps",
+   "rule_reason": "Special case of F = m × a, which the book keeps.",
+   "unmapped_terms": [
+    "weight (as a named quantity)",
+    "g (only reachable as a compound: Appreciation caused by Attraction)"
+   ],
+   "new_words": [],
+   "interpretation": "The more receptive you are, the more you feel the pull of what you have already expanded into. Weight is a burden physically; reflected, it is how much of your own past expansion you can feel drawing you. A receptive person feels their Attraction more, not less.",
+   "conflicts": "none",
+   "sense": 5,
+   "confidence": 5
+  },
+  "7": {
+   "id": 7,
+   "physical": "Friction: F = μ × N, turning motion into heat",
+   "reflected_formula": "Frequency gained between two Movements ∝ Frequency pressing them together; what is radiated as heat physically is collected nonphysically",
+   "reflected_sentence": "Two Movements differing in Vibration and pressed together do not drain each other's rising but collect from the contact, in proportion to how strongly they are pressed together.",
+   "shape": "turns around",
+   "rule_reason": "Friction is the paradigm cost caused by resistance: it eats motion in proportion to how hard the surfaces are pressed.",
+   "unmapped_terms": [
+    "μ (coefficient of friction)",
+    "surface",
+    "heat",
+    "sliding"
+   ],
+   "new_words": [],
+   "interpretation": "Rubbing up against other people, when both are receptive, would not wear you down; the closer the contact, the more each collects. That is the honest result of the flip, and it is thin: the book gives no partner for the coefficient, for surfaces, or for heat, so most of the relation's content is lost. Only 'radiation becomes collection' does any work here.",
+   "conflicts": "none",
+   "sense": 2,
+   "confidence": 4
+  },
+  "8": {
+   "id": 8,
+   "physical": "F = −k × x",
+   "reflected_formula": "Frequency = +(no partner for k) × rise in Vibration, acting with the rise rather than against it",
+   "reflected_sentence": "The further a Movement's vibration has risen, the more Frequency it feels drawing it further, not back.",
+   "shape": "turns around",
+   "rule_reason": "Stiffness k is resistance to displacement, and the restoring force is a cost that grows with distance, which is what resistance makes.",
+   "unmapped_terms": [
+    "k (spring constant)",
+    "spring",
+    "the minus sign (opposition)"
+   ],
+   "new_words": [],
+   "interpretation": "Physically, the more you stretch, the harder you are pulled back to where you were. Reflected, the further your vibration has risen, the more you feel drawn onward, which matches the book's 'each next step takes less.' But it also makes any raised vibration self-reinforcing with no return, which the book's own Attraction seems to deny.",
+   "conflicts": "\"What you've already expanded into draws you toward it.\" Attraction reads like a restoring pull; a turned-around Hooke's law says the pull runs the other way.",
+   "sense": 3,
+   "confidence": 3
+  },
+  "9": {
+   "id": 9,
+   "physical": "F = m × v² ÷ r",
+   "reflected_formula": "Frequency in a Vortex = M × (Vibration ÷ Expansion)² ÷ Vibrational radius",
+   "reflected_sentence": "The Frequency a Movement feels inside a Vortex is its receptivity times the square of its rising, divided by how wide in Vibration the Vortex is.",
+   "shape": "keeps",
+   "rule_reason": "Kinematic identity (a = v² ÷ r) composed with F = m × a, which the book keeps.",
+   "unmapped_terms": [
+    "r (radius; only reachable as a spread in Vibration)",
+    "curved path (assigned to Vortexes by the gravity row)"
+   ],
+   "new_words": [],
+   "interpretation": "A tight Vortex with fast rising produces a strong, constant Frequency; a wide one produces a gentle one. In a life, a narrow, intense pattern you keep circling is felt more strongly than a broad, slow one. The Vortex link is the one place this item says something the book's table only hints at.",
+   "conflicts": "none",
+   "sense": 5,
+   "confidence": 4
+  },
+  "10": {
+   "id": 10,
+   "physical": "U = m × g × h",
+   "reflected_formula": "Stored energy = M × Appreciation due to Attraction × rise in Vibration above what the Movement has expanded into",
+   "reflected_sentence": "The energy a Movement holds in reserve is its receptivity times the pull of its Attraction times how far its vibration has risen beyond what it has already expanded into.",
+   "shape": "keeps",
+   "rule_reason": "Definition of potential energy; E is shared. The rule's 'cost that rises with resistance' clause could also claim it, since lifting more mass higher costs more.",
+   "unmapped_terms": [
+    "h (height; only reachable as Vibration)",
+    "g (compound, as in item 6)",
+    "potential (as a qualifier)"
+   ],
+   "new_words": [],
+   "interpretation": "Rising above what you have already expanded into stores energy, and the more receptive you are, the more it stores. A receptive person who has lifted their vibration is holding a reserve that Attraction can release. This is coherent and mildly new, but the keeps call is not clean.",
+   "conflicts": "none",
+   "sense": 5,
+   "confidence": 3
+  },
+  "11": {
+   "id": 11,
+   "physical": "P = F ÷ A; P × V constant at fixed temperature and amount",
+   "reflected_formula": "Frequency ÷ (no partner for area) × Vibrance stays constant",
+   "reflected_sentence": "Concentrating a Movement into less Vibrance raises the Frequency it carries, in proportion.",
+   "shape": "keeps",
+   "rule_reason": "Equation of state, an equivalence; the 'squeezing' reading as a resistance cost was set aside.",
+   "unmapped_terms": [
+    "area",
+    "pressure (as a named quantity)",
+    "temperature",
+    "amount of gas",
+    "gas"
+   ],
+   "new_words": [],
+   "interpretation": "Narrowing how much of you is vibrating intensifies what you feel; spreading out dilutes it. The book already says exactly this through Desire = Movement ÷ Vibrance, so this item restates it with an unmapped 'area' in the way. Nothing new.",
+   "conflicts": "none",
+   "sense": 4,
+   "confidence": 3
+  },
+  "12": {
+   "id": 12,
+   "physical": "Two waves in opposite phase cancel at a point",
+   "reflected_formula": "Vibration₁ + Vibration₂ = nothing, where the two are in opposite phase",
+   "reflected_sentence": "Two Movements vibrating in opposite phase cancel each other's Vibration where they meet.",
+   "shape": "keeps",
+   "rule_reason": "Superposition is a linear identity.",
+   "unmapped_terms": [
+    "wave",
+    "phase",
+    "point (no location on the nonphysical side)"
+   ],
+   "new_words": [],
+   "interpretation": "Two people whose vibrations run opposite leave nothing where they overlap; neither is felt. It reads true-feeling but it is not a reflection, because the physical relation is already stated in terms of vibration and nothing flipped. Unclear whether 'cancel' is the condition the rule wants reversed.",
+   "conflicts": "none",
+   "sense": 4,
+   "confidence": 4
+  },
+  "13": {
+   "id": 13,
+   "physical": "Total momentum in a closed system stays constant",
+   "reflected_formula": "Sum of M × (Vibration ÷ Expansion) across a set of Movements stays constant",
+   "reflected_sentence": "Across a set of Movements that only act on each other, the total of receptivity times rising does not change.",
+   "shape": "keeps",
+   "rule_reason": "Conservation law; the book says conservation laws keep.",
+   "unmapped_terms": [
+    "closed system"
+   ],
+   "new_words": [],
+   "interpretation": "Rising cannot appear from nowhere inside a group: if one Movement's rising increases, another's decreases, or its receptivity does. That is coherent, but 'closed' has no partner on a side where everything shares the Current, and 'constant total' leans on a number the mirror says does not exist.",
+   "conflicts": "\"Units don't cross the mirror, only relationships do. Nothing on the nonphysical side has a number.\" A conserved total is a number held fixed.",
+   "sense": 4,
+   "confidence": 6
+  },
+  "14": {
+   "id": 14,
+   "physical": "A body keeps its state of motion unless a force acts on it",
+   "reflected_formula": "A Movement keeps its rising (and its expansion with the Current) unless a Frequency acts on it",
+   "reflected_sentence": "A Movement feeling no Frequency goes on expanding with the Current at an unchanged rising.",
+   "shape": "keeps",
+   "rule_reason": "Definition of the force-free state; the book's own line 'a Movement that isn't changing in Vibration is still expanding with the Current' is already this law.",
+   "unmapped_terms": [
+    "body"
+   ],
+   "new_words": [],
+   "interpretation": "Nothing about you changes unless something is felt; absent feeling, you simply expand with the Current as you were. Inertia is resistance physically, so one might expect the condition to flip, but the book has already stated the reflected form, and it keeps. Coherent, nothing new.",
+   "conflicts": "none",
+   "sense": 4,
+   "confidence": 5
+  },
+  "15": {
+   "id": 15,
+   "physical": "v = √(2GM ÷ r)",
+   "reflected_formula": "Rising needed to leave a Movement's Attraction falls as that Movement's receptivity rises (√, 2 and G cannot cross)",
+   "reflected_sentence": "The more receptive the Movement you are leaving, the less rising it takes to leave its Attraction.",
+   "shape": "turns around",
+   "rule_reason": "A limit caused by resistance: the threshold speed rises with the attracting body's mass.",
+   "unmapped_terms": [
+    "G",
+    "planet",
+    "escape (as a named condition)",
+    "√ and 2 (numbers)",
+    "r (only as Vibration)"
+   ],
+   "new_words": [],
+   "interpretation": "Leaving something receptive is easy; leaving something resistant is hard. In a life, a receptive relationship or habit lets you go freely, and the threshold to depart shrinks the more open it is. That is coherent, but it leaves unclear whether anything need be 'escaped' at all when Attraction is only your own past expansion.",
+   "conflicts": "\"What you've already expanded into draws you toward it.\" If Attraction is always your own expansion, there is no outside to escape to, so the turned-around limit may be describing a non-event.",
+   "sense": 4,
+   "confidence": 5
+  }
+ },
+ "Argon": {
+  "1": {
+   "id": 1,
+   "physical": "Momentum through space: p = m × v.",
+   "reflected_formula": "momentum through Vibration = Movement × (Vibration ÷ Expansion)",
+   "reflected_sentence": "A Movement's momentum through Vibration is its Movement multiplied by its Vibration over Expansion.",
+   "shape": "keeps",
+   "rule_reason": "Definition/equivalence of momentum, directly parallel to the book's ruling for momentum through time (m × c → M × C) and F = m × a.",
+   "unmapped_terms": [
+    "momentum through space (p)"
+   ],
+   "new_words": [
+    "momentum through Vibration (NEW)"
+   ],
+   "interpretation": "When a Movement is actively rising in Vibration per Expansion, its overall vibrational momentum comes from both how receptive it is to a change in motion (Movement) and how much its vibration rises per Expansion. Unlike M × C, which is expansion with the Current even when not changing in Vibration, this describes momentum while actively shifting in Vibration.",
+   "conflicts": "none",
+   "sense": 6,
+   "confidence": 7
+  },
+  "2": {
+   "id": 2,
+   "physical": "Work: W = F × d (force times distance).",
+   "reflected_formula": "Work (NEW) = Frequency × Vibration (or Frequency ÷ Vibration)",
+   "reflected_sentence": "The energetic yield of a shift is the Frequency felt across a span of Vibration, or else turns around because distance is what resistance makes.",
+   "shape": "turns around",
+   "rule_reason": "Work is a cost that rises with resistance and across distance, which the rule defines as \"what resistance makes.\"",
+   "unmapped_terms": [
+    "Work (W)",
+    "distance (d)"
+   ],
+   "new_words": [
+    "Work (NEW)",
+    "span of Vibration (NEW, for distance)"
+   ],
+   "interpretation": "Physically, pushing against resistance over a greater distance costs more work. Nonphysically, there is no distance—particulars only differ by how they vibrate—and Frequency reads how freely you are yielding to receptivity. Because more receptivity makes each step easier rather than costlier, traversing a difference in Vibration requires less effort the more freely you yield.",
+   "conflicts": "\"With no distance, particulars 'differ by how they vibrate'\" and \"Nothing on the nonphysical side has a number or a distance.\"",
+   "sense": 2,
+   "confidence": 3
+  },
+  "3": {
+   "id": 3,
+   "physical": "Power: P = F × v.",
+   "reflected_formula": "Power (NEW) = Frequency × (Vibration ÷ Expansion)",
+   "reflected_sentence": "Power is Frequency multiplied by Vibration over Expansion.",
+   "shape": "keeps",
+   "rule_reason": "Definition of rate (product of Frequency and Vibration over Expansion), though derived from Work per time.",
+   "unmapped_terms": [
+    "Power (P)"
+   ],
+   "new_words": [
+    "Power (NEW)"
+   ],
+   "interpretation": "This combines what you feel as you yield to receptivity (Frequency) with how much your Movement's vibration rises per Expansion. In a person's life, it would describe the felt intensity of yielding multiplied by the pace at which their vibration is rising as the Current expands.",
+   "conflicts": "none",
+   "sense": 4,
+   "confidence": 4
+  },
+  "4": {
+   "id": 4,
+   "physical": "Kinetic energy: K = ½ × m × v².",
+   "reflected_formula": "Kinetic E (NEW) = Movement × (Vibration ÷ Expansion)² (or turns around so faster rising takes less E)",
+   "reflected_sentence": "The energy of a rising Movement scales with Movement and the square of Vibration over Expansion, or inverts so that rising faster takes less energy.",
+   "shape": "turns around",
+   "rule_reason": "Cost that rises with resistance: the book explicitly rules that \"the faster an object moves, the more energy it takes to speed it up further. Reflected, and inverted: the closer you move to the Current, the more receptive you become, so each next step takes less.\"",
+   "unmapped_terms": [
+    "kinetic energy (K)",
+    "½ (numerical coefficient)"
+   ],
+   "new_words": [
+    "Kinetic E (NEW)"
+   ],
+   "interpretation": "If treated as an equivalence like E = m × c², the energy of a Movement's rising would grow with the square of its Vibration over Expansion, minus the ½ because nothing on the nonphysical side has a number. However, the book explicitly rules that the energy cost of speed turns around: as your vibration rises closer to the Current, you become more receptive, so each next step takes less energy rather than quadratically more.",
+   "conflicts": "\"The faster an object moves, the more energy it takes to speed it up further. Reflected, and inverted: the closer you move to the Current, the more receptive you become, so each next step takes less.\" Also: \"Nothing on the nonphysical side has a number.\"",
+   "sense": 3,
+   "confidence": 3
+  },
+  "5": {
+   "id": 5,
+   "physical": "Impulse: J = F × t, which equals the change in momentum.",
+   "reflected_formula": "Impulse (NEW) = Frequency × Expansion = change in (Movement × (Vibration ÷ Expansion))",
+   "reflected_sentence": "Frequency sustained over Expansion equals the change in a Movement's momentum.",
+   "shape": "keeps",
+   "rule_reason": "Mathematical identity/equivalence derived directly from F = m × a (which the book rules keeps its product) multiplied by time (Expansion).",
+   "unmapped_terms": [
+    "Impulse (J)"
+   ],
+   "new_words": [
+    "Impulse (NEW)"
+   ],
+   "interpretation": "What you feel as you yield to receptivity (Frequency), held across what the Current does and cannot undo (Expansion), produces a total shift in your Movement's rising. Sustaining a feeling across Expansion directly shifts how much your Movement's vibration rises per Expansion.",
+   "conflicts": "none",
+   "sense": 6,
+   "confidence": 6
+  },
+  "6": {
+   "id": 6,
+   "physical": "Weight: w = m × g.",
+   "reflected_formula": "Weight (NEW) = Movement × Appreciation of Attraction and Vortexes",
+   "reflected_sentence": "The pull felt by a Movement is its Movement multiplied by the Appreciation drawn by Attraction and Vortexes.",
+   "shape": "keeps",
+   "rule_reason": "Definition/equivalence: a specific instance of F = m × a (which keeps its product) where the acceleration is caused by gravity (Attraction and Vortexes).",
+   "unmapped_terms": [
+    "Weight (w)",
+    "gravitational acceleration (g)"
+   ],
+   "new_words": [
+    "Weight (NEW)"
+   ],
+   "interpretation": "Gravity reflects to Attraction and Vortexes—\"what you've already expanded into draws you toward it.\" Weight is the specific Frequency (feeling) that arises when your receptivity to a change in motion (Movement) lets the pull of what you have already expanded into quicken you (Appreciation).",
+   "conflicts": "none",
+   "sense": 6,
+   "confidence": 6
+  },
+  "7": {
+   "id": 7,
+   "physical": "Friction: resistance between two surfaces sliding past each other; it turns motion into heat (F = μ × N).",
+   "reflected_formula": "Frequency of receptivity (NEW) = coefficient of receptivity (NEW) × Normal Frequency (NEW)",
+   "reflected_sentence": "Receptivity between two Movements moving together turns rising Vibration into collection.",
+   "shape": "turns around",
+   "rule_reason": "Friction is explicitly a cost and drag caused by resistance between surfaces.",
+   "unmapped_terms": [
+    "friction",
+    "surfaces",
+    "heat",
+    "coefficient of friction (μ)",
+    "normal force (N)"
+   ],
+   "new_words": [
+    "coefficient of receptivity (NEW)",
+    "Normal Frequency (NEW)",
+    "thermal collection (NEW, for heat)"
+   ],
+   "interpretation": "Physically, two surfaces pressing against each other resist sliding and dissipate motion as radiating heat. Flipped from resistant to receptive and from radiating to collecting, two Movements in contact would ease each other's rising rather than oppose it. However, because surfaces, normal force, and heat have no partners in the table, the formula itself does not translate into existing TSR terms.",
+   "conflicts": "none",
+   "sense": 1,
+   "confidence": 5
+  },
+  "8": {
+   "id": 8,
+   "physical": "Hooke's law: a spring pushes back in proportion to how far it is stretched (F = −k × x).",
+   "reflected_formula": "Frequency = +Receptivity Constant (NEW) × Vibration",
+   "reflected_sentence": "A Movement yields forward in proportion to how far its Vibration reaches.",
+   "shape": "turns around",
+   "rule_reason": "Restoring force is a resistance that opposes displacement further the more it is stretched; under the rule, resistant becomes receptive and distance is what resistance makes.",
+   "unmapped_terms": [
+    "spring",
+    "spring constant (k)",
+    "stretch/displacement (x)"
+   ],
+   "new_words": [
+    "Receptivity Constant (NEW)"
+   ],
+   "interpretation": "Instead of pushing back harder the further you stretch from a starting point, flipping resistance to receptivity means the further a Movement shifts in Vibration, the more freely it yields (Frequency). Without a TSR partner for a spring or elasticity, however, this merely repeats the book's general claim that each next step in receptivity gets easier.",
+   "conflicts": "\"Nothing on the nonphysical side has a number or a distance.\"",
+   "sense": 2,
+   "confidence": 4
+  },
+  "9": {
+   "id": 9,
+   "physical": "Centripetal force: keeping a mass on a curved path takes F = m × v² ÷ r.",
+   "reflected_formula": "Frequency = Movement × (Vibration ÷ Expansion)² ÷ Vibration",
+   "reflected_sentence": "Keeping a Movement on a curved path in Vibration takes a Frequency of Movement times Vibration over Expansion squared, divided by Vibration (or its inverse).",
+   "shape": "turns around",
+   "rule_reason": "Framed as a cost caused by inertia/resistance (\"keeping a mass on a curved path takes...\") and depends on radius r (distance, which resistance makes).",
+   "unmapped_terms": [
+    "curved path",
+    "radius (r)"
+   ],
+   "new_words": [
+    "curved path in Vibration (NEW)",
+    "Vibrational radius (NEW)"
+   ],
+   "interpretation": "In physics, inertia resists changing direction, requiring an inward force inversely proportional to the radius of curvature. In TSR, there is no distance or spatial geometry to define a radius vs. a curved path, only Vibration. Treating both v and r using Vibration makes the formula algebraically collapse while describing a geometry that cannot exist without distance.",
+   "conflicts": "\"With no distance, particulars 'differ by how they vibrate'\" and \"Nothing on the nonphysical side has a number or a distance.\"",
+   "sense": 1,
+   "confidence": 3
+  },
+  "10": {
+   "id": 10,
+   "physical": "Gravitational potential energy: U = m × g × h.",
+   "reflected_formula": "Potential E (NEW) = Movement × Appreciation of Attraction and Vortexes × Vibration",
+   "reflected_sentence": "The stored energy of Attraction is Movement multiplied by the Appreciation of Attraction and Vortexes and the difference in Vibration.",
+   "shape": "turns around",
+   "rule_reason": "U = m × g × h is the energy cost of lifting a mass against gravity across a height h (distance, which is what resistance makes).",
+   "unmapped_terms": [
+    "potential energy (U)",
+    "gravitational acceleration (g)",
+    "height (h)"
+   ],
+   "new_words": [
+    "Potential E (NEW)",
+    "Vibrational height (NEW)"
+   ],
+   "interpretation": "Gravity is Attraction and Vortexes—\"what you've already expanded into draws you toward it.\" Physically, separating a mass from what pulls it by a height h stores energy by working against resistance; nonphysically, there is no spatial height separating you from what you've expanded into, only a difference in how particulars vibrate. Whether being \"further\" in Vibration from your Vortex increases or decreases E is ambiguous because distance is caused by resistance.",
+   "conflicts": "\"With no distance, particulars 'differ by how they vibrate'\" and \"Nothing on the nonphysical side has a number or a distance.\"",
+   "sense": 2,
+   "confidence": 3
+  },
+  "11": {
+   "id": 11,
+   "physical": "Pressure and Boyle's law: pressure is force per area (P = F ÷ A); with the amount of gas and its temperature held steady, squeezing the volume raises the pressure (P × V stays constant).",
+   "reflected_formula": "Pressure (NEW) = Frequency ÷ Vibrational Area (NEW); Pressure (NEW) ÷ Vibrance = constant (or Pressure × Vibrance = constant)",
+   "reflected_sentence": "Concentrating a Movement into less Vibrance raises its Desire and Frequency, or turns around because squeezing against resistance flips to limitless receptivity.",
+   "shape": "turns around",
+   "rule_reason": "P = F ÷ A is a definition (keeps), while Boyle's law (squeezing volume raises pressure) describes the resistant pushback of a confined gas against compression (turns around: resistant becomes receptive, limited becomes limitless).",
+   "unmapped_terms": [
+    "pressure (P)",
+    "area (A)",
+    "amount of gas",
+    "temperature"
+   ],
+   "new_words": [
+    "Pressure (NEW)",
+    "Vibrational Area (NEW)",
+    "thermal state (NEW, for temperature)"
+   ],
+   "interpretation": "Volume reflects to Vibrance (\"how much of the Movement is vibrating: its extent in Vibration\"), and the book already notes that packing wanting into a Movement is Desire (density). However, area (space²), gas amount, and temperature have no partners in the table. Furthermore, it is unclear whether Boyle's law is a conservation-like identity (keeping P × Vibrance constant) or a resistance cost to compression that flips.",
+   "conflicts": "none",
+   "sense": 2,
+   "confidence": 2
+  },
+  "12": {
+   "id": 12,
+   "physical": "Wave interference: two waves in opposite phase cancel at a point.",
+   "reflected_formula": "Wave interference (NEW): two Vibrations combine without canceling",
+   "reflected_sentence": "Two Vibrations never cancel each other out because limited becomes limitless and there is no single point in space.",
+   "shape": "turns around",
+   "rule_reason": "Cancellation is a limit/destructive opposition; under the rule, resistant becomes receptive and limited becomes limitless, or else it is a mathematical wave identity that keeps.",
+   "unmapped_terms": [
+    "wave",
+    "opposite phase",
+    "cancel",
+    "point"
+   ],
+   "new_words": [
+    "phase in Vibration (NEW)"
+   ],
+   "interpretation": "Although space reflects to Vibration, the table gives no partners for phase, wave superposition, or a spatial point. If treated as a mathematical identity, opposite feelings or Vibrations would cancel to nothing; if flipped because resistance becomes receptivity and radiating becomes collecting, Vibrations would only collect and add rather than cancel.",
+   "conflicts": "\"With no distance, particulars 'differ by how they vibrate'\" (so two different Vibrations are not at the same spatial \"point\" to cancel).",
+   "sense": 2,
+   "confidence": 2
+  },
+  "13": {
+   "id": 13,
+   "physical": "Conservation of momentum: in a closed system, total momentum stays constant.",
+   "reflected_formula": "Total momentum (Movement × C and Movement × (Vibration ÷ Expansion)) = constant",
+   "reflected_sentence": "In a whole system, total nonphysical momentum stays constant.",
+   "shape": "keeps",
+   "rule_reason": "The rule explicitly states: \"Conservation laws keep (identities).\"",
+   "unmapped_terms": [
+    "closed system"
+   ],
+   "new_words": [
+    "closed system in Vibration (NEW)"
+   ],
+   "interpretation": "Just as Newton's third law keeps so that everything going Out Through lands In From on somebody as a real return, total momentum across Movements is conserved. Whatever shift in Vibration or Expansion goes out from one Movement is matched in the whole, though the notion of a \"closed\" boundary is awkward where limited becomes limitless.",
+   "conflicts": "\"Resistant becomes receptive, limited becomes limitless\" makes a \"closed\" (limited/isolated) system hard to define unless it refers to the whole Current.",
+   "sense": 5,
+   "confidence": 7
+  },
+  "14": {
+   "id": 14,
+   "physical": "Newton's first law: a body keeps its state of motion unless a force acts on it.",
+   "reflected_formula": "A Movement keeps its Vibration over Expansion unless a Frequency acts on it (or turns around because mass as inertia flips to receptivity, and every Movement expands at C).",
+   "reflected_sentence": "A Movement keeps its state of rising in Vibration unless a Frequency is felt, or else constantly shifts because resistance (inertia) flips to receptivity.",
+   "shape": "keeps",
+   "rule_reason": "Special case (F = 0 → a = 0) of F = m × a, which the book rules keeps its shape as Frequency = Movement × Appreciation.",
+   "unmapped_terms": [],
+   "new_words": [],
+   "interpretation": "Because Frequency = Movement × Appreciation keeps its shape, having zero Appreciation (no quickening or slowing of a Movement's rising) corresponds to zero Frequency (no feeling/yield). Meanwhile, the book already explains what a Movement does when it isn't changing in Vibration: it is still expanding with the Current with momentum M × C. Still, there is a deep tension because Newton's first law IS the law of inertia—defined in the table as \"resistance to a change in motion\"—which is the very condition that is supposed to flip to receptivity.",
+   "conflicts": "Tension with mass defined as \"resistance to a change in motion. So its reflection is receptivity to a change in motion,\" and \"Nonphysically, nothing a Movement expands into can ever fall short of [the Current].\"",
+   "sense": 5,
+   "confidence": 4
+  },
+  "15": {
+   "id": 15,
+   "physical": "Escape velocity: the speed needed to leave a planet rises with the planet's mass (v = √(2GM ÷ r)).",
+   "reflected_formula": "Escape (Vibration ÷ Expansion) (NEW) falls with Movement (or draws inward toward Attraction and Vortexes)",
+   "reflected_sentence": "The rising in Vibration needed to move beyond a Vortex falls as Movement and receptivity increase, rather than rising as a barrier.",
+   "shape": "turns around",
+   "rule_reason": "Escape velocity is explicitly a threshold limit and energy cost caused by mass and distance (r), both of which turn around under the rule.",
+   "unmapped_terms": [
+    "escape",
+    "planet",
+    "gravitational constant (G)",
+    "radius (r)",
+    "2 (numerical factor)"
+   ],
+   "new_words": [
+    "Escape Vibration-over-Expansion (NEW)"
+   ],
+   "interpretation": "Physically, a larger mass creates a stronger gravitational barrier that takes more speed to escape. Nonphysically, gravity is Attraction and Vortexes—\"what you've already expanded into draws you toward it\"—and mass is receptivity (Movement). Because the cost fails to be a barrier when resistance flips to receptivity, more Movement makes shifting easier, though wanting to \"escape\" what you have already expanded into makes little sense in TSR's terms.",
+   "conflicts": "\"Gravity: Attraction and Vortexes — 'What you've already expanded into draws you toward it'\" (making 'escape' from a Vortex run counter to the meaning of Attraction) and \"Nothing on the nonphysical side has a number or a distance.\"",
+   "sense": 2,
+   "confidence": 6
+  }
+ },
+ "Grok 4.7": {
+  "1": {
+   "id": 1,
+   "physical": "Momentum through space: p = m × v",
+   "reflected_formula": "M × (Vibration ÷ Expansion)",
+   "reflected_sentence": "The product keeps: Movement times how much Vibration rises per Expansion.",
+   "shape": "keeps",
+   "rule_reason": "A definition, the same kind of product as momentum through time, m × c, which keeps as M × C.",
+   "unmapped_terms": [],
+   "new_words": [],
+   "interpretation": "Movement is receptivity to a change in motion, and Vibration over Expansion is how much that vibration rises per Expansion, not a speed. Their product would be a second momentum, through Vibration rather than with the Current. The given meanings do not say what a person would feel that as, beyond Frequency's already stated role.",
+   "conflicts": "\"That expansion, M × C, is its momentum.\"",
+   "sense": 4,
+   "confidence": 6
+  },
+  "2": {
+   "id": 2,
+   "physical": "Work: W = F × d",
+   "reflected_formula": "Frequency × Vibration",
+   "reflected_sentence": "The product keeps as Frequency times Vibration, and the distance does not cross.",
+   "shape": "keeps",
+   "rule_reason": "Classed as a definition, a product like F = m × a, which keeps. It is also an energy cost over distance, which the cost rule could invert.",
+   "unmapped_terms": [
+    "work"
+   ],
+   "new_words": [],
+   "interpretation": "Frequency is what you feel as you yield, and Vibration is how particulars differ when there is no distance. Their product is a felt yielding extended through Vibration, not a push through a length. Nothing above names that product, so it cannot be called work in a life.",
+   "conflicts": "none",
+   "sense": 3,
+   "confidence": 4
+  },
+  "3": {
+   "id": 3,
+   "physical": "Power: P = F × v",
+   "reflected_formula": "Frequency × (Vibration ÷ Expansion)",
+   "reflected_sentence": "The product keeps as Frequency times Vibration per Expansion.",
+   "shape": "keeps",
+   "rule_reason": "A definition, a product of terms already reflected. It is not itself the book's stated cost of more speed.",
+   "unmapped_terms": [
+    "power"
+   ],
+   "new_words": [],
+   "interpretation": "It multiplies what you feel as you yield by how much your Vibration rises per Expansion. That is a rate only in the sense that Expansion is what the Current does and cannot undo. Power has no partner, so this names no new feeling beyond Frequency and a change in Frequency.",
+   "conflicts": "none",
+   "sense": 3,
+   "confidence": 5
+  },
+  "4": {
+   "id": 4,
+   "physical": "Kinetic energy: K = ½ × m × v²",
+   "reflected_formula": "E goes as M × (Vibration ÷ Expansion)²",
+   "reflected_sentence": "The equivalence keeps as shared E going as Movement times the square of Vibration over Expansion, and the one-half does not cross.",
+   "shape": "keeps",
+   "rule_reason": "An energy equivalence, like E = m × c², which keeps. The one-half is a number. The same relation is also the energy cost of speed, which the book already inverts.",
+   "unmapped_terms": [
+    "kinetic energy"
+   ],
+   "new_words": [],
+   "interpretation": "Shared E would still grow as a Movement's Vibration rises faster per Expansion, and it would grow with Movement. That keeps the square relationship and drops the number. It does not say the next rise costs less.",
+   "conflicts": "\"The faster an object moves, the more energy it takes to speed it up further. Reflected, and inverted: the closer you move to the Current, the more receptive you become, so each next step takes less.\"",
+   "sense": 2,
+   "confidence": 3
+  },
+  "5": {
+   "id": 5,
+   "physical": "Impulse: J = F × t, which equals the change in momentum",
+   "reflected_formula": "Frequency × Expansion = change in (M × (Vibration ÷ Expansion))",
+   "reflected_sentence": "The identity keeps: Frequency times Expansion equals the change in the spatial momentum product.",
+   "shape": "keeps",
+   "rule_reason": "A definition and an identity. Identities keep.",
+   "unmapped_terms": [
+    "impulse"
+   ],
+   "new_words": [],
+   "interpretation": "Frequency felt across Expansion would equal a change in how a Movement is rising in Vibration per Expansion. A change in Frequency is what you notice, so the notice and the Expansion together would be that change. Impulse itself is not named above.",
+   "conflicts": "\"That expansion, M × C, is its momentum.\"",
+   "sense": 4,
+   "confidence": 5
+  },
+  "6": {
+   "id": 6,
+   "physical": "Weight: w = m × g",
+   "reflected_formula": "Frequency = Movement × (Appreciation of Attraction and Vortexes)",
+   "reflected_sentence": "Weight keeps the force product, with gravitational acceleration as the Appreciation of Attraction and Vortexes.",
+   "shape": "keeps",
+   "rule_reason": "The same product as F = m × a, which keeps. Acceleration reflects as Appreciation, and gravity reflects as Attraction and Vortexes.",
+   "unmapped_terms": [
+    "weight",
+    "g"
+   ],
+   "new_words": [],
+   "interpretation": "Attraction and Vortexes are what you have already expanded into drawing you toward it. Weight would be the Frequency you feel when that draw's Appreciation moves your Movement. It is the gravitational case of a product the book already keeps, not a new relation.",
+   "conflicts": "none",
+   "sense": 4,
+   "confidence": 6
+  },
+  "7": {
+   "id": 7,
+   "physical": "Friction: resistance between two surfaces sliding past each other; it turns motion into heat (F = μ × N)",
+   "reflected_formula": "no complete product; the cost inverts, and μ × N cannot be written",
+   "reflected_sentence": "Resistance that makes sliding harder and turns motion into heat turns around, but the formula has no partners.",
+   "shape": "turns around",
+   "rule_reason": "A cost caused by resistance: more of this resistance makes motion harder and sheds it as heat.",
+   "unmapped_terms": [
+    "friction coefficient μ",
+    "normal force",
+    "heat",
+    "surface"
+   ],
+   "new_words": [],
+   "interpretation": "Resistance becomes receptivity, so two Movements passing one another would meet receptivity rather than a drag, and the passing would get easier rather than harder. Heat has no partner, so the shedding of motion cannot be reflected. The coefficient and the pressing-together force are also missing, so no life-scale strength can be stated.",
+   "conflicts": "none",
+   "sense": 2,
+   "confidence": 5
+  },
+  "8": {
+   "id": 8,
+   "physical": "Hooke's law: a spring pushes back in proportion to how far it is stretched (F = −k × x)",
+   "reflected_formula": "opposing Frequency no longer rises with Vibration",
+   "reflected_sentence": "The push-back that grows with stretch turns around: further Vibration does not bring a stronger opposing Frequency.",
+   "shape": "turns around",
+   "rule_reason": "A restoring cost caused by resistance. The further the stretch, the harder it pushes back, in proportion to a stiffness that is itself resistance.",
+   "unmapped_terms": [
+    "spring constant k",
+    "spring"
+   ],
+   "new_words": [],
+   "interpretation": "Stretch is distance, which resistance makes, so on this side it can only be Vibration. The rising opposition would invert: more Vibration would not cost a stronger Frequency against you. Stiffness has no partner, so the reflected relation has direction and no strength.",
+   "conflicts": "none",
+   "sense": 3,
+   "confidence": 4
+  },
+  "9": {
+   "id": 9,
+   "physical": "Centripetal force: keeping a mass on a curved path takes F = m × v² ÷ r",
+   "reflected_formula": "Frequency = Movement × (Vibration ÷ Expansion)² ÷ Vibration",
+   "reflected_sentence": "The product formally keeps, but the radius and the length inside velocity both become Vibration.",
+   "shape": "keeps",
+   "rule_reason": "An instance of F = m × a, whose product keeps. The wording \"takes\" is also a force requirement that rises with mass, which the cost rule could invert.",
+   "unmapped_terms": [
+    "radius",
+    "curved path"
+   ],
+   "new_words": [],
+   "interpretation": "Substituting the given partners puts Movement and Appreciation back into Frequency, which the book already did. Radius has no partner but Vibration, and velocity's space is already Vibration, so the division no longer distinguishes a path from its radius. In a life this says nothing the force product did not already say.",
+   "conflicts": "\"Nothing on the nonphysical side has a number or a distance.\"",
+   "sense": 2,
+   "confidence": 3
+  },
+  "10": {
+   "id": 10,
+   "physical": "Gravitational potential energy: U = m × g × h",
+   "reflected_formula": "E = Movement × (Appreciation of Attraction and Vortexes) × Vibration",
+   "reflected_sentence": "The energy product keeps, with height standing in as Vibration and g as Attraction and Vortexes' Appreciation.",
+   "shape": "keeps",
+   "rule_reason": "Classed as an energy product, with E = m × c². It is also the energy cost of height, and that cost rises with mass, so the cost rule could invert it.",
+   "unmapped_terms": [
+    "potential energy",
+    "height",
+    "g"
+   ],
+   "new_words": [],
+   "interpretation": "Shared E would grow with Movement, with how much of Attraction and Vortexes' pull you let move you, and with Vibration in place of height. That is a stored yielding only if potential energy is the same E, which is not given. Height as Vibration also drops the separation the formula needs.",
+   "conflicts": "\"Nothing on the nonphysical side has a number or a distance.\"",
+   "sense": 2,
+   "confidence": 3
+  },
+  "11": {
+   "id": 11,
+   "physical": "Pressure and Boyle's law: P = F ÷ A, and P × V stays constant when amount and temperature are steady",
+   "reflected_formula": "no partner; Vibrance is the only mapped term in P × V",
+   "reflected_sentence": "Pressure, area, temperature, and amount of gas have no partners, so neither the definition nor the constant product can be written.",
+   "shape": "no partner",
+   "rule_reason": "The constant product looks like an identity, and squeezing volume to raise pressure looks like a cost of confinement, but the missing partners decide the call before that split applies.",
+   "unmapped_terms": [
+    "pressure",
+    "area",
+    "temperature",
+    "amount of gas"
+   ],
+   "new_words": [],
+   "interpretation": "Volume would be Vibrance, how much of a Movement is vibrating. Force would be Frequency, but area is not volume and is not Vibration in the table. Without pressure, nothing above says whether reducing Vibrance raises a feeling, lowers it, or leaves it alone.",
+   "conflicts": "none",
+   "sense": 1,
+   "confidence": 5
+  },
+  "12": {
+   "id": 12,
+   "physical": "Wave interference: two waves in opposite phase cancel at a point",
+   "reflected_formula": "no partner",
+   "reflected_sentence": "Opposite-phase cancellation at a point cannot be reflected, because wave, phase, and point have no partners.",
+   "shape": "no partner",
+   "rule_reason": "Superposition would be an identity and would keep, but the terms that carry it are unmapped.",
+   "unmapped_terms": [
+    "wave",
+    "phase",
+    "point",
+    "interference"
+   ],
+   "new_words": [],
+   "interpretation": "Vibration is how particulars differ, and Idle and Reflected are the pair that makes the Current, but neither is a phase or a point. Cancellation at a location needs a place, and this side has no distance. The given meanings do not say what opposing waves become in a life.",
+   "conflicts": "\"Nothing on the nonphysical side has a number or a distance.\"",
+   "sense": 1,
+   "confidence": 6
+  },
+  "13": {
+   "id": 13,
+   "physical": "Conservation of momentum: in a closed system, total momentum stays constant",
+   "reflected_formula": "total M × C stays constant",
+   "reflected_sentence": "The conservation identity keeps, using the book's momentum, M × C.",
+   "shape": "keeps",
+   "rule_reason": "A conservation law. The book says conservation laws keep.",
+   "unmapped_terms": [
+    "closed system"
+   ],
+   "new_words": [],
+   "interpretation": "Where nothing outside acts, Movements keep the same total expansion with the Current, M × C. That is the conservation ruling applied to the momentum the book already named. It does not add a life-claim beyond what is conserved staying conserved.",
+   "conflicts": "none",
+   "sense": 4,
+   "confidence": 7
+  },
+  "14": {
+   "id": 14,
+   "physical": "Newton's first law: a body keeps its state of motion unless a force acts on it",
+   "reflected_formula": "Vibration ÷ Expansion stays as it is unless a Frequency acts",
+   "reflected_sentence": "The identity keeps: a Movement keeps its Vibration over Expansion unless a Frequency acts.",
+   "shape": "keeps",
+   "rule_reason": "An identity, like the third law, which keeps. As stated, it contains no mass.",
+   "unmapped_terms": [
+    "body"
+   ],
+   "new_words": [],
+   "interpretation": "With no Frequency acting, how a Movement's Vibration rises per Expansion does not change. A change in Frequency is what you notice, so nothing is noticed as a change unless Frequency acts. That is the first law with the table's nouns, not a further claim.",
+   "conflicts": "none",
+   "sense": 4,
+   "confidence": 6
+  },
+  "15": {
+   "id": 15,
+   "physical": "Escape velocity: the speed needed to leave a planet rises with the planet's mass (v = √(2GM ÷ r))",
+   "reflected_formula": "(Vibration ÷ Expansion) needed to leave Attraction and Vortexes falls as their Movement rises",
+   "reflected_sentence": "The threshold that rises with mass turns around: the Vibration over Expansion needed to leave Attraction and Vortexes falls as their Movement rises.",
+   "shape": "turns around",
+   "rule_reason": "A threshold and a cost that rise with mass, and mass is resistance. The square root, the two, and G are numbers or unmapped, so they do not cross.",
+   "unmapped_terms": [
+    "planet",
+    "gravitational constant G",
+    "radius",
+    "escape"
+   ],
+   "new_words": [],
+   "interpretation": "Attraction and Vortexes are what you have already expanded into drawing you toward it. Leaving that draw would take less rise in Vibration per Expansion as its Movement grows, not more. Radius and G have no partners, so only the mass-cost inverts, not the full formula.",
+   "conflicts": "none",
+   "sense": 4,
+   "confidence": 6
+  }
+ }
+}
