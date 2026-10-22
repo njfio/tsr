@@ -15,7 +15,6 @@ In plain words, you may copy and share this material in any medium or format, as
 Full license: https://creativecommons.org/licenses/by-nc-nd/4.0/
 
 The complete book is not licensed here. It is all rights reserved and available on
-[Kindle](https://www.amazon.com/dp/B0HL1YBX5K).
+[Kindle](https://www.amazon.com/dp/B0HL1YBX5K) and in [paperback](https://www.amazon.com/dp/B0HL4TQ5RK).
 
-Everything else in this repository, including the 2025 edition in [`editions/`](editions/), stays under the
-MIT License in [`LICENSE`](LICENSE).
+Everything else in this repository stays under the MIT License in [`LICENSE`](LICENSE).

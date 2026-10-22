@@ -8,8 +8,6 @@
 
 > **This is a free sample:** the opening note, the prelude, and Chapter 1.
 > The full book is on [Kindle](https://www.amazon.com/dp/B0HL1YBX5K) and in [paperback](https://www.amazon.com/dp/B0HL4TQ5RK). More at [njf.io/books/the-sovereign-mirror](https://www.njf.io/books/the-sovereign-mirror).
->
-> Looking for the 2025 book *Theory of Sovereign Reflectivity* that used to live in this file? It's in [editions/2025-theory-of-sovereign-reflectivity.md](editions/2025-theory-of-sovereign-reflectivity.md).
 
 ## Contents
 

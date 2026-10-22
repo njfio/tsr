@@ -4,9 +4,9 @@
 
 TSR is a way of seeing consciousness that starts from one rule: **the main difference between the physical and the nonphysical is resistance.** Reflect what physics already knows, keep each relationship, flip the condition, and the other side comes into view.
 
-This repository is where the theory is shared openly. It holds a free sample of the new book, the complete 2025 edition, and a few extras.
+This repository is where the theory is shared openly. It holds a free sample of the book and a few extras.
 
-## 📖 The new book: *The Sovereign Mirror* (2026)
+## 📖 The book: *The Sovereign Mirror* (2026)
 
 *The Sovereign Mirror: A Conversation About Consciousness, Resistance, and the Present* explains TSR as a conversation. A curious, skeptical questioner asks what anyone would ask, and I answer with the stories behind each idea: a quiet voice on a basketball court, the hot seat on the last day of a cruise, journal entries carved into oil pastel with a knife, and a son who seemed to grow up overnight after a fever.
 
@@ -38,17 +38,13 @@ These are the ideas the book builds, in its own words.
 | Path | What it is |
 |---|---|
 | [`tsr.md`](tsr.md) | Free sample of *The Sovereign Mirror* (2026) |
-| [`editions/2025-theory-of-sovereign-reflectivity.md`](editions/2025-theory-of-sovereign-reflectivity.md) | The complete 2025 book, *Theory of Sovereign Reflectivity* ([Kindle](https://a.co/d/blywsK0)) |
 | [`reflection-game.md`](reflection-game.md) | The Reflection Game: try to build a table that holds together like TSR's, with any AI |
-| [`ABOUT.md`](ABOUT.md) | How the 2025 edition was written |
 | `10-02 The universe as reflection..mp3` | Audio recording: *The universe as reflection* |
-| [`the-sovereign-mirror/`](the-sovereign-mirror/) | Cover art for the new book |
-
-The 2025 edition was an earlier, more formal attempt with equations and case studies. *The Sovereign Mirror* is the place to start.
+| [`the-sovereign-mirror/`](the-sovereign-mirror/) | Cover art for the book |
 
 ## 🤝 How it was written
 
-Both books were written with AI as a collaborator. For *The Sovereign Mirror* I explained TSR in conversation, again and again, until the questions stopped breaking the picture. The questions are real ones, and the answers are mine. The text was drafted with Claude (Anthropic) and edited extensively over many revisions.
+*The Sovereign Mirror* was written with AI as a collaborator. I explained TSR in conversation, again and again, until the questions stopped breaking the picture. The questions are real ones, and the answers are mine. The text was drafted with Claude (Anthropic) and edited extensively over many revisions.
 
 ## 💬 Get involved
 
@@ -59,4 +55,4 @@ Both books were written with AI as a collaborator. For *The Sovereign Mirror* I 
 ## 📜 License
 
 - *The Sovereign Mirror* sample and cover art: **CC BY-NC-ND 4.0**, meaning share it unchanged, with credit, non-commercially. See [`LICENSE-BOOK.md`](LICENSE-BOOK.md). The full book is © 2026 Nicholas Ferguson, all rights reserved.
-- Everything else, including the 2025 edition: **MIT License**. See [`LICENSE`](LICENSE).
+- Everything else: **MIT License**. See [`LICENSE`](LICENSE).
