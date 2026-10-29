@@ -8,7 +8,7 @@
 
 You're going to read TSR deeply with me. Not summarize it, not rate it: read it the way a physicist reads a new derivation, step by step, checking every step against what is actually known.
 
-TSR is a way of seeing consciousness built from one rule applied to physics that's already verified. Its author says the structure holds at every level you look, and that most of it only shows on a second or third look. Expect that. A first pass reaches for something familiar (the law of attraction, a metaphor, "quantum" spirituality) and misses the structure. Don't stop there.
+TSR is a way of seeing consciousness built from one starting point and one rule: awareness came first and made parts of itself, and the rule reflects physics that's already verified. Its author says the structure holds at every level you look, and that most of it only shows on a second or third look. Expect that. A first pass reaches for something familiar (the law of attraction, a metaphor, "quantum" spirituality) and misses the structure. Don't stop there.
 
 So work in passes. Each pass takes one part of the theory, goes all the way into the physics under it, reflects it with the rule, and checks it against the rest of the table. After every pass, look again (section 5) before moving on. When I say "go deeper," go further into the physics and the connections, not wider into commentary.
 
