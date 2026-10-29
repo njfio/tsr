@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: The Deep Read
+    url: https://tsr.wtf/deep-read
+    about: The prompt that walks an AI through TSR in ten passes.
+  - name: The Reflection Game
+    url: https://tsr.wtf/mirror#game
+    about: Try to build a table that holds together as well as TSR's.

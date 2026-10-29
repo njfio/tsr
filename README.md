@@ -21,6 +21,10 @@ You don't have to believe any of it to try it.
 
 [`reflection-game.md`](reflection-game.md) is a prompt you can paste into Claude, ChatGPT or Gemini to test TSR the hard way. I don't think another table of reflections holds together like this one. Try to build one that does: different words, the same rule, as many connections and as much sense, or more. Or warm up by reflecting one new piece of physics. The prompt carries the table, what holds each word in place, the three tests, the traps I fell into, and the swaps that failed. If you end up somewhere I didn't, [open an issue](https://github.com/njfio/tsr/issues) and tell me.
 
+## 🔬 Read it deep with an AI
+
+[`deep-read.md`](deep-read.md) is a prompt that takes an AI all the way into TSR in ten passes: the physics under each row first, then the reflection, then the web of connections, with a second look after every pass. It carries the book's own answers to the questions a first read raises, so it works without the book; with the book, it goes further. The live copy is at [tsr.wtf/deep-read](https://tsr.wtf/deep-read). When it turns something up, a tear, a candidate row or a connection, [file it here](https://github.com/njfio/tsr/issues/new/choose).
+
 ## 🪞 TSR in brief
 
 These are the ideas the book builds, in its own words.
@@ -39,6 +43,7 @@ These are the ideas the book builds, in its own words.
 |---|---|
 | [`tsr.md`](tsr.md) | Free sample of *The Sovereign Mirror* (2026) |
 | [`reflection-game.md`](reflection-game.md) | The Reflection Game: try to build a table that holds together like TSR's, with any AI |
+| [`deep-read.md`](deep-read.md) | The Deep Read: a prompt that walks an AI through TSR in ten passes |
 | [`tests/`](tests/) | Tests of the one rule: a formal model, an extension test run with five AIs, and a blind round, with results and open questions |
 | `10-02 The universe as reflection..mp3` | Audio recording: *The universe as reflection* |
 | [`the-sovereign-mirror/`](the-sovereign-mirror/) | Cover art for the book |
@@ -49,6 +54,7 @@ These are the ideas the book builds, in its own words.
 
 ## 💬 Get involved
 
+- Found a tear, a candidate row or a connection? [File it](https://github.com/njfio/tsr/issues/new/choose); there's a form for each.
 - Questions, disagreements, and connections to other traditions are welcome: [open an issue](https://github.com/njfio/tsr/issues).
 - Companion site: [tsr.wtf](https://tsr.wtf)
 - Updates: @njfdotio · @tsr_wtf · [LinkedIn](https://www.linkedin.com/in/njfio/) · [njf.io](https://www.njf.io)

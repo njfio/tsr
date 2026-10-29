@@ -1,0 +1,37 @@
+name: Connection
+description: An outside idea or result that rhymes with TSR.
+title: "Connection: "
+labels: ["connection"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        A connection is a reading, not support. Say what rhymes and where the rhyme stops.
+  - type: input
+    id: idea
+    attributes:
+      label: The idea or result
+      placeholder: "e.g. circuit duality: resistance ↔ conductance, with Ohm's law keeping its shape"
+    validations:
+      required: true
+  - type: textarea
+    id: physics
+    attributes:
+      label: What it says
+      description: The physics, the research or the tradition, with a link if you have one.
+  - type: textarea
+    id: rows
+    attributes:
+      label: Where it touches TSR
+      description: Which rows, and how.
+    validations:
+      required: true
+  - type: textarea
+    id: limits
+    attributes:
+      label: Where the rhyme stops
+  - type: input
+    id: source
+    attributes:
+      label: Where it came from
+      placeholder: "e.g. the Deep Read with Claude, ChatGPT or Gemini; the Reflection Game; my own reading"

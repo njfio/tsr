@@ -1,0 +1,44 @@
+name: Tear
+description: A row of the table fails one of the tests.
+title: "Tear: "
+labels: ["tear"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        A tear is a row that fails one of the tests. If an AI wrote it up, paste its write-up into the fields below. If the Deep Read gives the book's answer to this question, say whether that answer holds and why.
+  - type: input
+    id: row
+    attributes:
+      label: Which row
+      placeholder: "e.g. entropy ↔ Culmination"
+    validations:
+      required: true
+  - type: textarea
+    id: physics
+    attributes:
+      label: The physics
+      description: What physics actually says, including where the popular version simplifies.
+  - type: textarea
+    id: reflection
+    attributes:
+      label: The reflection
+      description: The row as the table has it, and what it claims on the nonphysical side.
+  - type: textarea
+    id: tests
+    attributes:
+      label: The test it fails
+      description: Does it turn around or keep its shape, the web check, the swap test, or a trap. Say which, and why.
+    validations:
+      required: true
+  - type: textarea
+    id: held
+    attributes:
+      label: What held and what tore
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Where it came from
+      placeholder: "e.g. the Deep Read with Claude, ChatGPT or Gemini; the Reflection Game; my own reading"

@@ -1,0 +1,44 @@
+name: Candidate row
+description: New physics reflected by the rule, with the tests run.
+title: "Candidate row: "
+labels: ["candidate row"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        A candidate row takes a relationship physics already knows, keeps the relationship and flips the condition. Run the tests before filing: does it depend on resistance or is it an identity, does it fit the web, and does the word survive the swap test.
+  - type: input
+    id: physics-row
+    attributes:
+      label: The physical relationship
+      placeholder: "e.g. the equivalence principle"
+    validations:
+      required: true
+  - type: textarea
+    id: physics
+    attributes:
+      label: The physics
+      description: The relationship, the formula if it helps, and what experiments measured.
+  - type: textarea
+    id: reflection
+    attributes:
+      label: The reflection and the word
+      description: The reflected relationship, and the ordinary word that already means what it needs.
+    validations:
+      required: true
+  - type: textarea
+    id: tests
+    attributes:
+      label: The tests
+      description: Does it turn around or keep its shape? Which other rows does it touch? Which close synonyms did you try, and what did each break? Did it fall into any of the traps?
+    validations:
+      required: true
+  - type: textarea
+    id: held
+    attributes:
+      label: What held and what tore
+  - type: input
+    id: source
+    attributes:
+      label: Where it came from
+      placeholder: "e.g. the Deep Read with Claude, ChatGPT or Gemini; the Reflection Game; my own reading"
