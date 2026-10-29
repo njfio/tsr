@@ -25,6 +25,8 @@ You don't have to believe any of it to try it.
 
 [`deep-read.md`](deep-read.md) is a prompt that takes an AI all the way into TSR in ten passes: the physics under each row first, then the reflection, then the web of connections, with a second look after every pass. It carries the book's own answers to the questions a first read raises, so it works without the book; with the book, it goes further. The live copy is at [tsr.wtf/deep-read](https://tsr.wtf/deep-read). When it turns something up, a tear, a candidate row or a connection, [file it here](https://github.com/njfio/tsr/issues/new/choose).
 
+Before you file a tear, check [Hard questions, answered](https://tsr.wtf/answers): most first objections are answered in the book, in its own words. AI assistants that can browse can read everything at once in [tsr.wtf/llms-full.txt](https://tsr.wtf/llms-full.txt).
+
 ## 🪞 TSR in brief
 
 These are the ideas the book builds, in its own words.

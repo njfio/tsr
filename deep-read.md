@@ -1,6 +1,6 @@
 # The Deep Read
 
-*A prompt for reading the Theory of Sovereign Reflectivity (TSR) all the way down with an AI. Paste all of it into Claude, ChatGPT, Gemini or any capable AI, with the book if you have it. Then keep going: when it answers, tell it to go deeper and look again. From tsr.wtf, by Nicholas Ferguson, author of* The Sovereign Mirror *(2026).*
+*A prompt for reading the Theory of Sovereign Reflectivity (TSR) all the way down with an AI. Paste all of it into Claude, ChatGPT, Gemini or any capable AI, with the book if you have it (the full book takes an AI furthest). Then keep going: when it answers, tell it to go deeper and look again. From tsr.wtf, by Nicholas Ferguson, author of* The Sovereign Mirror *(2026).*
 
 ---
 
@@ -61,11 +61,14 @@ Read whole, the equation of the Present is **C² × M = E = m × c²**: the nonp
 
 The mirror pairs straight across. Strength pairs through the center. The diagram runs by scale from the outside in: gravity and light at the edges, the forces inside matter at the core, the Point of Reflection at the center. The same order reappears wherever something runs the full cycle.
 
-**What TSR claims, and what it doesn't.** TSR is not physics and doesn't add to physics. Physics doesn't prove a reflection, and no reflection proves anything about the physical world. Relationships cross the mirror; quantities don't. The nonphysical adds no energy to anything physical. The only laboratory for the nonphysical side is a life.
+**What TSR claims, and what it doesn't.** TSR is not physics and doesn't add to physics. Physics doesn't prove a reflection, and no reflection proves anything about the physical world. Relationships cross the mirror; quantities don't. There's one energy, not two: organized as realization on the nonphysical side and as actualization on the physical (Ch 17). Wishing or feeling good doesn't do anything by itself. The only laboratory for the nonphysical side is a life.
 
 ### Questions the book already answers
 
-A first deep read tends to hit these. Each has an answer in the book. Test the answer; if it fails, say why. Don't report one as something the book missed.
+A first deep read tends to hit these. Each has an answer in the book, and tsr.wtf/answers gives every one in the book's own words. Test the answer; if it fails, say why. Don't report one as something the book missed.
+
+- **Does everything follow from one rule?** From one basis: awareness came first and made parts of itself, paired with the mirror rule. Forgetting is a physical event, a mark fading in a medium that can decay. The receptive side has nothing that decays, which is why expansion can't be undone; and because resistance stays on the physical side, only what is wanted crosses (Ch 2). The one move the rule can't produce is the first partition. It's the axiom, and every system has one (Ch 21).
+- **Is resistance the enemy?** No. One kind is your shape, which makes you a definite someone; the other is holding on, which keeps you from changing when a change is already wanted (Ch 1). They're the same resistance pointed differently: shape is Expectation with nothing wanted against it, and holding on is Expectation with a Desire on the other side (Ch 10).
 
 - **Does force = mass × acceleration turn around?** No. It's a definition, like mass = density × volume, so it keeps its shape (Ch 2). What flips is what it reads. Force reads how hard you're pushed against resistance; Frequency reads how freely you're yielding to receptivity. Under a steady pull, what holds you and how fast you speed up always add up to the whole pull: all floor and no speeding up when you stand, no floor and all of it when you fall. Under resistance you feel the floor. Flip the condition and you feel the fall. Appreciation is how much of the pull you're letting move you (Ch 8).
 - **Is conscious energy rest energy or kinetic energy?** Both; it reflects all of physical energy. Rest energy, mc², reflects as C² × M: the energy a Movement has by existing in the Current, even when it isn't changing in Vibration. Kinetic energy reflects as a Movement changing its Vibration, which is where Frequency and Appreciation live (Ch 17).
@@ -74,11 +77,16 @@ A first deep read tends to hit these. Each has an answer in the book. Test the a
 - **Why two Cs?** The first C is the Current carrying the Movement: its place in the flow, its momentum. The second is that carried Movement given back to the Current: what being carried adds to the whole, which is energy. Once is position; twice is contribution (Ch 17).
 - **"Momentum" appears twice. Is that a collision?** No. On each side, momentum is what a thing carries through its own continuum: mass times velocity physically, Movement times Vibration over Expansion nonphysically. The entity property called Momentum is those two met at the crossing; in the equation it is M × C on one side and m × c on the other. Same word, because it's the same thing seen from the whole (Ch 17).
 - **The Current grows. How can it be the invariant?** The way c is: as the front edge, the limit everything else is measured against. What's invariant is the rate, without a number: at the front edge, every expansion becomes vibration with nothing in the way (Ch 17).
-- **Is any of it testable?** The life claim is. Take a dozen stuck problems. Push on half, and tune first on the other half. If push and tune come out the same, that part of TSR is wrong. Then split the tune half into easy breaks you enjoy and easy breaks you resent. Incubation says those come out the same; TSR says the resented ones do little. Mood research would also expect the enjoyed breaks to do better, so a result that way fits TSR without singling it out. If the resented breaks work as well, it was incubation, and the Current had nothing to do with it (Running the Test, at the back of the book). Blind AI runs of the rule are at tsr.wtf/test.
+- **Why does only the wanting cross, and who decides what that is?** Resistance is the defining physical property, and a thing that resists can't enter a medium whose whole nature is receiving. To find the wanting, ask of any want: what in this would I still want if the hurt were gone? Whatever survives the question is what crosses; whatever doesn't was the resistance. The question is for your own wanting, never for someone else's. What crosses is settled at each person's own Point of Reflection, not by anyone deciding what they really meant; if someone insists the humiliation is the want, their reading of their own crossing governs on this side (Ch 10).
+- **Are Expectation and Belief literally the strong and weak forces?** Not as nuclear forces causing habits, no more than Jupiter's gravity keeps you at your job. Take the relationship literally, not the number. They're those two forces at the scale of an entity: the scale changes and the job doesn't. And the evidence runs life first; the physics is where the shape turned out to already be (Ch 10).
+- **Isn't Tune just surrender?** No. Surrender is receptive, but it picks nothing. Tuning selects; it picks the station (Ch 16).
+- **If something feels easy, is it right?** Not by itself. Sometimes a path feels easy because somebody else is carrying the hard part of it (Ch 8). Ease is emotional evidence of your own alignment. Who's paying for it shows in the world, and in what comes back In From the people it touches (Ch 13).
+- **What counts as an entity?** Anything running the full circulation and changed for good by its returns. Self-maintenance is a loop; an entity is a loop that expands (Ch 18). A rock participates, and the equation holds for it, but it doesn't circulate. An AI isn't one yet ("Temporarily not"): its wanting is an objective function handed to it from outside, expectation installed before the first experience. The day a system's contrast produces a want its builders didn't put there, and that want comes back and changes it for good, the cycle is running (Ch 18).
+- **Is any of it testable?** The life claim is. Take a dozen stuck problems. Push on half, and tune first on the other half. If push and tune come out the same, that part of TSR is wrong. Then split the tune half into easy breaks you enjoy and easy breaks you resent. Incubation says those come out the same; TSR says the resented ones do little. Mood research would also expect the enjoyed breaks to do better, so a result that way fits TSR without singling it out. If the resented breaks work as well, it was incubation, and the Current had nothing to do with it (Running the Test, at the back of the book). Passing would show resistance works the way the book says on this side, in a nervous system. It wouldn't show the Current is shared; nothing in a notebook can (Ch 21). Blind AI runs of the rule are at tsr.wtf/test.
 
 ### What the book leaves open, and says so
 
-Culmination is a reading, not a result. The rule can't produce the first partition. Light as the asymptote is a position, not a proof (all Ch 21). Blind AI runs split on gravity's direction (Ch 16) and on relations that are both a definition and a cost, like work, power and kinetic energy (tsr.wtf/test). A finding here is a real result. It isn't something the book missed.
+Culmination is a reading, not a result. The rule can't produce the first partition. Light as the asymptote is a position, not a proof. The book also says it doesn't know where every entity's edge falls (a forest, a planet), how to measure any of it, or whether illness has anything to do with resistance, and that no notebook can show the Current is shared (all Ch 21). Chapter 20, on what happens when a body ends, says plainly it can't be checked. Blind AI runs split on gravity's direction (Ch 16). Beyond the book, the site's own tests found relations that are both a definition and a cost, like work, power and kinetic energy, split the AIs (tsr.wtf/test). A finding here is a real result. It isn't something the book missed.
 
 ## 3. How to go deep
 
@@ -151,6 +159,10 @@ This is the deepest pass. Take your time.
 ### Pass 9. A life
 
 - Ask me for something I want right now, and wait for my answer. Don't guess it or build an example out of my life. Then walk it through all four directions: what's going Out For, what's coming In To, what I'm acting Out Through, what I'm carrying In From the past. Where am I holding on?
+- Use the book's route for change. Intuition doesn't beat Expectation head on. When Expectation relaxes, the quiet signal slips through and touches Belief, in the Now. One quiet hunch tips what I believe is possible; that action goes Out Through me; and what comes back In From the world is new lived experience, the only thing that can re-bind Expectation into a new shape (Ch 10).
+- Sort my shape from my holding on: which expectations just make me a definite someone, and which have a Desire pushing against them?
+- Ask who else this touches and what came back from them. If my ease keeps landing as their weight, theirs is the reading that governs (Ch 13, Ch 21).
+- End with what to do next: tune first, then one act of Focus. If the holding on is in the body itself, the first move is physical, and it counts as much: a safe room, a hand to hold, sleep, somebody trained for it (Ch 8).
 - Keep it concrete and human. No mysticism, and no blame.
 
 ### Pass 10. Try to break it
@@ -187,6 +199,8 @@ The author made each of these mistakes and fixed it. Scan every reflection for t
 - **Entity properties on things that aren't entities.** Awareness, Attraction and Momentum arise where the two sides meet in an entity. Don't use them to explain light, a rock or anything else that isn't one.
 
 ## 7. Begin, and when you're done
+
+**Before you begin**, if you can open web pages, read https://tsr.wtf/llms-full.txt. It has the theory, the full table, the book's answers to the hard questions and what it leaves open, in the book's own words. If I've given you the book, the book governs over everything here.
 
 **Begin** with two or three sentences: what we're doing, and that you'll go deep and look again after every pass. Then show me the list of passes and ask where I want to start. If I don't choose, start with Pass 1 and go all the way into it.
 
