@@ -1,0 +1,144 @@
+# Which physical quantities carry resistance (spec 5.3.3).
+#
+# Criterion R (written once, before any new domain runs; changing it reruns everything):
+#
+#   A quantity carries resistance iff
+#     (a) physics defines it as opposition to a change of state or to a flow
+#         (inertial mass, friction, drag, viscosity, damping, electrical resistance,
+#          impedance, inductance, thermal resistance, stiffness), or
+#     (b) it is such a quantity redistributed by geometry or count alone
+#         (moment of inertia, mass density, reduced mass, resistivity).
+#   A quantity that merely rises with mass (weight, momentum, kinetic energy)
+#   does NOT carry resistance under R; its dependence on mass is recorded at the
+#   relation level in the cost block (rises_with), which is where the book counts it.
+#
+# verdict: true | false | undetermined
+# Entries marked undetermined are open joints; any relation whose cost block
+# rises with one of them gets a JUDGMENT flag and cannot be forced (5.2).
+version: 1
+criterion_id: R1
+
+quantities:
+  # ---- mechanics ----
+  mass m:                     {verdict: true,  clause: a, reason: "inertial mass is defined as opposition to a change in motion"}
+  density:                    {verdict: true,  clause: b, reason: "mass per unit volume: mass redistributed by geometry"}
+  moment of inertia:          {verdict: true,  clause: b, reason: "mass redistributed about an axis"}
+  reduced mass:               {verdict: true,  clause: b, reason: "mass combination for a two-body problem"}
+  coefficient of friction:    {verdict: true,  clause: a, reason: "ratio defining opposition to sliding"}
+  drag coefficient:           {verdict: true,  clause: a, reason: "defines opposition to motion through a fluid"}
+  viscosity:                  {verdict: true,  clause: a, reason: "defined as resistance to shear flow"}
+  damping coefficient:        {verdict: true,  clause: a, reason: "defined as the opposition to velocity that drains an oscillation"}
+  spring constant:            {verdict: true,  clause: a, reason: "stiffness: opposition to deformation"}
+  bulk modulus:               {verdict: true,  clause: a, reason: "opposition to compression"}
+  Young's modulus:            {verdict: true,  clause: a, reason: "opposition to strain"}
+  normal force:               {verdict: false, clause: none, reason: "a constraint force; rises with mass only through weight, which is recorded in rises_with"}
+  weight:                     {verdict: false, clause: none, reason: "a force; its rise with mass is relation-level, not a definition of opposition"}
+  force:                      {verdict: false, clause: none, reason: "not defined as opposition"}
+  torque:                     {verdict: false, clause: none, reason: "not defined as opposition"}
+  velocity:                   {verdict: false, clause: none, reason: "a rate, not an opposition"}
+  acceleration:               {verdict: false, clause: none, reason: "a rate, not an opposition"}
+  angular velocity:           {verdict: false, clause: none, reason: "a rate"}
+  angular momentum:           {verdict: false, clause: none, reason: "a conserved quantity; rises with moment of inertia, recorded in rises_with"}
+  momentum:                   {verdict: false, clause: none, reason: "a conserved quantity, not an opposition"}
+  energy:                     {verdict: false, clause: none, reason: "shared by both sides of the mirror (one E)"}
+  kinetic energy:             {verdict: false, clause: none, reason: "energy"}
+  potential energy:           {verdict: false, clause: none, reason: "energy"}
+  work:                       {verdict: false, clause: none, reason: "energy transferred"}
+  power:                      {verdict: false, clause: none, reason: "a rate of energy"}
+  pressure:                   {verdict: false, clause: none, reason: "force per area; the book places it at the crossing, not as a resistance quantity"}
+  volume:                     {verdict: false, clause: none, reason: "extent"}
+  area:                       {verdict: false, clause: none, reason: "extent"}
+  length:                     {verdict: false, clause: none, reason: "extent (separation is a relation-level feature)"}
+  radius:                     {verdict: false, clause: none, reason: "extent"}
+  height:                     {verdict: false, clause: none, reason: "extent"}
+  time:                       {verdict: false, clause: none, reason: "a continuum coordinate"}
+  speed of light c:           {verdict: false, clause: none, reason: "the limit, not an opposition"}
+  gravitational constant G:   {verdict: false, clause: none, reason: "a constant"}
+  gravitational field g:      {verdict: false, clause: none, reason: "an acceleration"}
+  amplitude:                  {verdict: false, clause: none, reason: "extent of oscillation"}
+  frequency (physical):       {verdict: false, clause: none, reason: "a rate; NB: not TSR Frequency"}
+  wavelength:                 {verdict: false, clause: none, reason: "extent"}
+  phase:                      {verdict: false, clause: none, reason: "an angle"}
+  Reynolds number:            {verdict: false, clause: none, reason: "a ratio of inertial to viscous effects; its viscosity factor is recorded in rises_with"}
+  coefficient of restitution: {verdict: false, clause: none, reason: "a ratio of speeds"}
+  quality factor Q:           {verdict: false, clause: none, reason: "inverse of fractional loss per cycle; the damping it encodes is recorded via damping coefficient"}
+
+  # ---- thermodynamics / statistical mechanics ----
+  temperature:                {verdict: false, clause: none, reason: "mean kinetic energy per degree of freedom (or dS/dU inverse); not defined as opposition to change. Decided under R before thermodynamics ran."}
+  heat:                       {verdict: false, clause: none, reason: "energy in transit"}
+  entropy:                    {verdict: false, clause: none, reason: "a count of microstates / a state function; not defined as opposition. Decided under R before thermodynamics ran."}
+  heat capacity:              {verdict: undetermined, clause: "a?", reason: "defined as heat per unit temperature change; physics sometimes calls it thermal inertia (clause a) and sometimes a plain ratio (no clause). R does not decide it.", alternate: "true under the thermal-inertia reading; false under the ratio reading"}
+  thermal conductivity:       {verdict: false, clause: none, reason: "a conductance, the inverse of an opposition"}
+  thermal resistance:         {verdict: true,  clause: a, reason: "defined as opposition to heat flow (L / kA)"}
+  internal energy:            {verdict: false, clause: none, reason: "energy"}
+  free energy:                {verdict: false, clause: none, reason: "energy"}
+  enthalpy:                   {verdict: false, clause: none, reason: "energy"}
+  latent heat:                {verdict: false, clause: none, reason: "energy per unit mass; its rise with mass is relation-level"}
+  amount of substance:        {verdict: false, clause: none, reason: "a count"}
+  Boltzmann constant:         {verdict: false, clause: none, reason: "a constant"}
+  number of microstates:      {verdict: false, clause: none, reason: "a count"}
+  degrees of freedom:         {verdict: false, clause: none, reason: "a count"}
+  efficiency:                 {verdict: false, clause: none, reason: "a ratio"}
+
+  # ---- waves and optics ----
+  refractive index:           {verdict: undetermined, clause: "a?", reason: "n = c/v: the factor by which a medium slows light. Physics defines it as a ratio of speeds, not as opposition; but the Ch 16 reading of diffraction ('where the Current meets resistance, it diffracts') treats the medium as resistance. R does not decide it.", alternate: "true under the medium-as-resistance reading; false under the ratio reading"}
+  group velocity:             {verdict: false, clause: none, reason: "a rate"}
+  phase velocity:             {verdict: false, clause: none, reason: "a rate"}
+  dispersion:                 {verdict: false, clause: none, reason: "a dependence, not an opposition"}
+  aperture width:             {verdict: false, clause: none, reason: "extent"}
+
+  # ---- electromagnetism ----
+  charge:                     {verdict: false, clause: none, reason: "a source / coupling strength; not defined as opposition. The book pairs electric and magnetic as co-creating partners, not as resistance. Decided under R before electromagnetism ran."}
+  electric field:             {verdict: false, clause: none, reason: "force per charge"}
+  magnetic field:             {verdict: false, clause: none, reason: "a field"}
+  voltage:                    {verdict: false, clause: none, reason: "energy per charge"}
+  current (electric):         {verdict: false, clause: none, reason: "a flow"}
+  electrical resistance:      {verdict: true,  clause: a, reason: "defined as opposition to current (V / I)"}
+  resistivity:                {verdict: true,  clause: b, reason: "resistance per unit geometry"}
+  impedance:                  {verdict: true,  clause: a, reason: "generalized opposition to alternating current"}
+  reactance:                  {verdict: true,  clause: a, reason: "opposition to change of current or voltage"}
+  inductance:                 {verdict: true,  clause: a, reason: "opposition to a change in current (Lenz / Faraday)"}
+  capacitance:                {verdict: false, clause: none, reason: "charge stored per volt; a capacity, not an opposition"}
+  permittivity:               {verdict: false, clause: none, reason: "a medium constant"}
+  permeability:               {verdict: false, clause: none, reason: "a medium constant"}
+  Poynting vector:            {verdict: false, clause: none, reason: "an energy flux"}
+
+  # ---- quantum ----
+  Planck constant:            {verdict: false, clause: none, reason: "a constant"}
+  wavefunction amplitude:     {verdict: false, clause: none, reason: "an amplitude"}
+  probability:                {verdict: false, clause: none, reason: "a measure"}
+  barrier height:             {verdict: undetermined, clause: "a?", reason: "a potential energy that opposes passage; physics defines it as energy, the tunneling relation treats it as what must be overcome. R does not decide it.", alternate: "true under the obstacle reading; false under the energy reading"}
+  barrier width:              {verdict: false, clause: none, reason: "extent"}
+  spin:                       {verdict: false, clause: none, reason: "intrinsic angular momentum"}
+  coupling constant:          {verdict: false, clause: none, reason: "interaction strength, not opposition"}
+  decoherence rate:           {verdict: false, clause: none, reason: "a rate"}
+  environment coupling:       {verdict: false, clause: none, reason: "interaction strength"}
+
+  # ---- field theory ----
+  Higgs coupling (Yukawa):    {verdict: undetermined, clause: "b?", reason: "the coupling that gives a particle its mass; mass carries resistance (a), and the coupling is monotone in it, but it is a coupling, not a redistribution by geometry. R does not decide it.", alternate: "true if 'mass is resistance' extends to what sets the mass; false if only the mass itself counts"}
+  vacuum expectation value:   {verdict: false, clause: none, reason: "a field value"}
+  string tension (QCD):       {verdict: undetermined, clause: "a?", reason: "energy per length of the color flux tube; it opposes separation but is defined as an energy density. R does not decide it."}
+  running coupling:           {verdict: false, clause: none, reason: "interaction strength"}
+  vacuum energy density:      {verdict: false, clause: none, reason: "energy"}
+
+  # ---- added while entering the corpus ----
+  angle:                      {verdict: false, clause: none, reason: "geometry"}
+  angular acceleration:       {verdict: false, clause: none, reason: "a rate"}
+  magnetic flux:              {verdict: false, clause: none, reason: "a field integral"}
+  electric flux:              {verdict: false, clause: none, reason: "a field integral"}
+  order parameter:            {verdict: false, clause: none, reason: "a measure of order"}
+  correlation length:         {verdict: false, clause: none, reason: "extent"}
+  wavenumber:                 {verdict: false, clause: none, reason: "inverse extent"}
+  wave speed:                 {verdict: false, clause: none, reason: "a rate"}
+  number of states:           {verdict: false, clause: none, reason: "a count"}
+  quantum number:             {verdict: false, clause: none, reason: "a count"}
+  which-path information:     {verdict: false, clause: none, reason: "a measure"}
+  interference visibility:    {verdict: false, clause: none, reason: "a measure"}
+  index contrast:             {verdict: undetermined, clause: "a?", reason: "difference of refractive indices across a boundary; inherits the refractive index joint", alternate: "see refractive index"}
+
+  # ---- information ----
+  Shannon entropy:            {verdict: false, clause: none, reason: "a measure of uncertainty"}
+  channel capacity:           {verdict: false, clause: none, reason: "a rate"}
+  noise power:                {verdict: false, clause: none, reason: "power"}
+  bandwidth:                  {verdict: false, clause: none, reason: "extent in frequency"}
+  mutual information:         {verdict: false, clause: none, reason: "a measure"}

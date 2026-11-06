@@ -1,0 +1,26 @@
+{
+ "id": "field.gauge_invariance",
+ "physical": "Requiring the laws to be unchanged under local phase changes of the matter fields forces the existence of the gauge fields that carry the forces.",
+ "reflected_formula": "",
+ "reflected_sentence": "An unchanged requirement keeps, and Frequency is the partner of what is carried.",
+ "shape": "keeps",
+ "rule_reason": "A symmetry with no cost or separation. Symmetries keep their shape. Zero such costs.",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "local phase",
+  "matter fields",
+  "gauge fields",
+  "laws"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "Frequency keeps as the partner of what is carried. The Current is not this relationship. The relationship does not turn.",
+ "conflicts": "none",
+ "sense": 1,
+ "confidence": 6,
+ "closing": "The rule decides the keep: the form is a symmetry and no cost is given. I did not need a judgment for the shape. Local would drag in location, which cannot cross, and phase and gauge field have no partners. I mapped only the carried forces to Frequency, and I did not map the compelling sense of forces to Frequency. The existence claim cannot be said in frozen words. Missing partners do not change the keep. Sense is nonsense in TSR's terms.",
+ "knew_tsr": false
+}

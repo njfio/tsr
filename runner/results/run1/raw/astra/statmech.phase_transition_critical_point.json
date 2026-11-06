@@ -1,0 +1,30 @@
+{
+ "id": "statmech.phase_transition_critical_point",
+ "physical": "At a continuous phase transition the order parameter vanishes and the correlation length diverges: fluctuations at every scale, and no characteristic size.",
+ "reflected_formula": "",
+ "reflected_sentence": "No complete reflected sentence is available from the frozen vocabulary.",
+ "shape": "keeps",
+ "rule_reason": "The mathematical limit is not specified as resistance-caused, no listed quantity carries resistance or distance, and zero qualifying costs selects keeps; the essential terms have no partners.",
+ "rule_trace": [
+  "none"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "continuous phase transition",
+  "order parameter",
+  "correlation length",
+  "temperature",
+  "critical temperature",
+  "fluctuations",
+  "scale",
+  "characteristic size"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "",
+ "conflicts": "none",
+ "sense": 1,
+ "confidence": 7,
+ "closing": "The fixed flags rule out treating correlation length as a distance-made separation in this run. A divergent mathematical limit is not automatically the resistant condition that turns around, and mapping divergence directly to limitless would not supply partners for the order parameter, correlation length, or critical temperature. The direction follows the zero-cost rule, but no complete frozen-word reflection follows.",
+ "knew_tsr": false
+}

@@ -1,0 +1,27 @@
+{
+ "id": "statmech.phase_transition_critical_point",
+ "physical": "At a continuous phase transition the order parameter vanishes and the correlation length diverges: fluctuations at every scale, and no characteristic size.",
+ "reflected_formula": "",
+ "reflected_sentence": "At a continuous change of phase a measure of order still vanishes and an extent still runs without bound, with wavering and no characteristic size.",
+ "shape": "keeps",
+ "rule_reason": "The form is a limit, but not a limit caused by resistance: the cost block is empty, correlation length does not carry resistance, and it is marked as not carrying distance.",
+ "rule_trace": [
+  "none"
+ ],
+ "forced": false,
+ "unmapped_terms": [
+  "order parameter",
+  "correlation length",
+  "temperature",
+  "phase transition",
+  "fluctuation"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "The limit keeps: a measure of order vanishes and an extent runs without bound. The gap does not turn it. Movement, Current, and Culmination do not enter.",
+ "conflicts": "none",
+ "sense": 2,
+ "confidence": 5,
+ "closing": "Judgment call, because the form is tagged limit and the rule turns a limit caused by resistance. I kept it: none of the quantities carries resistance, the cost block is empty, and correlation length is marked as not carrying distance, so the divergence is not a separation made by distance. I did not map correlation length onto Vibrational Contraction; that row is length contraction, a different term. A boundless extent is barely speakable on this side, which is why the sense is low. Infinity does not cross as a quantity, so the formula has no frozen-word image.",
+ "knew_tsr": false
+}

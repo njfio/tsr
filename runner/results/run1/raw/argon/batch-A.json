@@ -1,0 +1,454 @@
+[
+  {
+    "id": "mech.angular_momentum",
+    "physical": "Angular momentum is moment of inertia times angular velocity (the rotational definition), and is conserved when no external torque acts.",
+    "reflected_formula": "",
+    "reflected_sentence": "Rotational momentum is the rotational distribution of Movement M times the rate of turning per Expansion, and is conserved when no turning Frequency acts.",
+    "shape": "keeps",
+    "rule_reason": "definition and conservation law (0 costs)",
+    "rule_trace": [
+      "identity"
+    ],
+    "forced": true,
+    "unmapped_terms": [
+      "angular momentum",
+      "moment of inertia",
+      "angular velocity",
+      "torque"
+    ],
+    "new_words": [],
+    "monotone_claims": [
+      {
+        "rises": "momentum",
+        "with": "Movement M",
+        "sign": 1
+      }
+    ],
+    "interpretation": "The relation is a definition and conservation law with no costs, so it keeps its shape. However, angular momentum, moment of inertia, angular velocity, and torque have no partners in the frozen vocabulary.",
+    "conflicts": "none",
+    "sense": 1,
+    "confidence": 7,
+    "closing": "The rule clearly decides that a definition and conservation law with zero costs keeps its shape, while the rotational quantities go into unmapped_terms.",
+    "knew_tsr": false
+  },
+  {
+    "id": "mech.bernoulli",
+    "physical": "Along a streamline of steady, inviscid, incompressible flow, pressure plus kinetic energy per volume plus gravitational energy per volume is constant.",
+    "reflected_formula": "",
+    "reflected_sentence": "Along a steady flow, Frequency per area plus Desire times rise per Expansion squared plus Desire times Attraction times Vibration is constant.",
+    "shape": "keeps",
+    "rule_reason": "conservation law with 0 costs",
+    "rule_trace": [
+      "identity"
+    ],
+    "forced": true,
+    "unmapped_terms": [
+      "pressure",
+      "height",
+      "kinetic energy",
+      "gravitational field g"
+    ],
+    "new_words": [],
+    "monotone_claims": [],
+    "interpretation": "This conservation law has no resistance cost in its statement, so its shape keeps. Because pressure and height lack partners in the frozen vocabulary and the formula adds terms as a sum, those physical terms remain unmapped.",
+    "conflicts": "No sums where the book has products.",
+    "sense": 1,
+    "confidence": 7,
+    "closing": "The conservation form has zero costs, which cleanly triggers identity and keeps its shape, with the missing vocabulary mappings recorded in unmapped_terms.",
+    "knew_tsr": false
+  },
+  {
+    "id": "mech.buoyancy",
+    "physical": "A body immersed in a fluid is pushed up by a force equal to the weight of the fluid it displaces; it floats if it is less dense than the fluid.",
+    "reflected_formula": "Frequency = Desire × Attraction × Vibrance",
+    "reflected_sentence": "A body in a medium is lifted by a Frequency equal to the Desire times Attraction times Vibrance it displaces, and rises when it has less Desire than the medium.",
+    "shape": "keeps",
+    "rule_reason": "equation with 0 costs listed",
+    "rule_trace": [
+      "identity"
+    ],
+    "forced": false,
+    "unmapped_terms": [
+      "gravitational field g",
+      "fluid",
+      "floats"
+    ],
+    "new_words": [],
+    "monotone_claims": [
+      {
+        "rises": "Frequency",
+        "with": "Desire",
+        "sign": 1
+      },
+      {
+        "rises": "Frequency",
+        "with": "Attraction",
+        "sign": 1
+      },
+      {
+        "rises": "Frequency",
+        "with": "Vibrance",
+        "sign": 1
+      }
+    ],
+    "interpretation": "Frequency is Desire times Attraction times Vibrance. As Desire and Vibrance rise with Attraction, Frequency rises with them.",
+    "conflicts": "none",
+    "sense": 3,
+    "confidence": 5,
+    "closing": "The costs array is empty even though density carries resistance, so by the explicit costs list the relation keeps its shape; gravitational field g is not directly in the frozen table (only gravitational pull -> Attraction is), so it is recorded in unmapped_terms.",
+    "knew_tsr": false
+  },
+  {
+    "id": "mech.collisions_elastic_inelastic",
+    "physical": "Momentum is conserved in every collision; kinetic energy is conserved in an elastic collision and partly converted to internal energy in an inelastic one, the fraction set by the coefficient of restitution.",
+    "reflected_formula": "",
+    "reflected_sentence": "Momentum is conserved in every meeting; conscious energy of motion is conserved when fully preserved and partly converted when not, in proportion to the ratio of rise per Expansion.",
+    "shape": "keeps",
+    "rule_reason": "conservation law with 0 costs",
+    "rule_trace": [
+      "identity"
+    ],
+    "forced": true,
+    "unmapped_terms": [
+      "coefficient of restitution",
+      "kinetic energy",
+      "internal energy",
+      "collision"
+    ],
+    "new_words": [],
+    "monotone_claims": [],
+    "interpretation": "Momentum is conserved across the reflection and the conservation relation keeps its shape. Because kinetic energy and coefficient of restitution have no partners in the frozen vocabulary, they are recorded as unmapped terms.",
+    "conflicts": "none",
+    "sense": 1,
+    "confidence": 7,
+    "closing": "The rule directly identifies this as a conservation law with zero costs, so the shape keeps, while the vocabulary table lacks coefficient of restitution and collision terms.",
+    "knew_tsr": false
+  },
+  {
+    "id": "mech.gravitational_potential_energy",
+    "physical": "Lifting a body against gravity costs energy in proportion to its mass and the height gained.",
+    "reflected_formula": "E = Movement M × Attraction × Vibration",
+    "reflected_sentence": "Rising in Vibration with Attraction becomes easier as alignment and receptivity rise, rather than costing conscious energy in proportion to Movement M and Vibration.",
+    "shape": "turns around",
+    "rule_reason": "1 resistance cost: lifting the body costs energy rising with mass m (resistance)",
+    "rule_trace": [
+      "resistance-cost"
+    ],
+    "forced": true,
+    "unmapped_terms": [
+      "potential energy"
+    ],
+    "new_words": [],
+    "monotone_claims": [
+      {
+        "rises": "E",
+        "with": "alignment",
+        "sign": 1
+      },
+      {
+        "rises": "E",
+        "with": "Attraction",
+        "sign": 1
+      },
+      {
+        "rises": "E",
+        "with": "Vibration",
+        "sign": 1
+      }
+    ],
+    "interpretation": "The formula keeps Movement M times Attraction times Vibration, while the reading turns around because mass carries resistance. What costs energy against gravitational pull on the physical side becomes easier with receptivity and alignment on the nonphysical side.",
+    "conflicts": "none",
+    "sense": 4,
+    "confidence": 6,
+    "closing": "The rule forces a turnaround because there is one cost rising with mass m, and physical_terms maps h to space and g to gravitational pull, leaving only potential energy U without a dedicated frozen partner beyond conscious energy / E.",
+    "knew_tsr": false
+  },
+  {
+    "id": "mech.hooke",
+    "physical": "A spring pushes back in proportion to how far it is stretched; stretching it further takes more force, more so the stiffer the spring.",
+    "reflected_formula": "Frequency = k × Vibration",
+    "reflected_sentence": "Extending further in Vibration becomes easier and takes less Frequency as receptivity and alignment rise.",
+    "shape": "turns around",
+    "rule_reason": "1 resistance cost (stretching the spring further rises with spring constant)",
+    "rule_trace": [
+      "resistance-cost"
+    ],
+    "forced": true,
+    "unmapped_terms": [
+      "spring constant"
+    ],
+    "new_words": [],
+    "monotone_claims": [
+      {
+        "rises": "Frequency",
+        "with": "alignment",
+        "sign": 1
+      },
+      {
+        "rises": "Frequency",
+        "with": "Vibration",
+        "sign": 1
+      }
+    ],
+    "interpretation": "Because spring constant carries resistance, the single cost of stretching turns around with receptivity and alignment. What takes more Frequency with greater stiffness on the physical side becomes easier with receptivity in Vibration.",
+    "conflicts": "none",
+    "sense": 2,
+    "confidence": 7,
+    "closing": "The single resistance cost clearly triggers turns around, and spring constant goes into unmapped_terms because it is absent from the frozen vocabulary table.",
+    "knew_tsr": false
+  },
+  {
+    "id": "mech.moment_of_inertia",
+    "physical": "A body's moment of inertia about an axis is the sum of each mass element times the square of its distance from the axis.",
+    "reflected_formula": "",
+    "reflected_sentence": "A body's rotational distribution of Movement M about an axis is the product of each Movement M element and the square of its Vibration from the axis.",
+    "shape": "keeps",
+    "rule_reason": "definition with 0 costs",
+    "rule_trace": [
+      "identity"
+    ],
+    "forced": true,
+    "unmapped_terms": [
+      "moment of inertia",
+      "radius"
+    ],
+    "new_words": [],
+    "monotone_claims": [],
+    "interpretation": "As a definition with no cost, the relation keeps its shape. However, moment of inertia and radius have no partners in the frozen vocabulary, and neither distance nor sums cross the mirror.",
+    "conflicts": "No distance, time, location, travel or quantities on the nonphysical side. No sums where the book has products.",
+    "sense": 1,
+    "confidence": 7,
+    "closing": "The rule is completely unambiguous here: the form is a definition with zero costs, so the shape keeps, while the unmapped terms and traps against distance and sums are recorded.",
+    "knew_tsr": false
+  },
+  {
+    "id": "mech.newton_gravitation",
+    "physical": "Two masses attract with a force proportional to the product of the masses and inversely proportional to the square of their separation.",
+    "reflected_formula": "Frequency = G × Movement M × Movement M ÷ Vibration²",
+    "reflected_sentence": "Two Movement M terms share Attraction and Frequency proportional to their product, and instead of being weakened by separation in Vibration, their Attraction is already met and rises with alignment.",
+    "shape": "turns around",
+    "rule_reason": "separation made by distance (carries_distance: true on separation r, and alternate statement has 1 separation cost)",
+    "rule_trace": [
+      "separation"
+    ],
+    "forced": false,
+    "unmapped_terms": [
+      "gravitational constant G"
+    ],
+    "new_words": [],
+    "monotone_claims": [
+      {
+        "rises": "Frequency",
+        "with": "Movement M",
+        "sign": 1
+      },
+      {
+        "rises": "Frequency",
+        "with": "Vibration",
+        "sign": 1
+      },
+      {
+        "rises": "Attraction",
+        "with": "alignment",
+        "sign": 1
+      }
+    ],
+    "interpretation": "In the formula, Frequency relates Movement M and Vibration, while gravitational pull reflects to Attraction. Because separation made by distance turns around, what is weakened by separation on the physical side is already met in Vibration and rises with alignment.",
+    "conflicts": "none",
+    "sense": 4,
+    "confidence": 5,
+    "closing": "A judgment call arises between the main entry's empty costs list (though r has carries_distance: true) and the alternate statement's explicit separation cost; because separation made by distance turns around by rule, the shape is turns around with G in unmapped_terms.",
+    "knew_tsr": false
+  },
+  {
+    "id": "mech.resonance_width",
+    "physical": "A driven oscillator responds most strongly near its natural frequency; the width of that response grows with the damping, and the peak height falls with it (Q = ω0/Δω).",
+    "reflected_formula": "",
+    "reflected_sentence": "An oscillator responds most strongly at resonance, and as receptivity and alignment rise instead of draining the oscillation, the response sharpens and its peak rises.",
+    "shape": "turns around",
+    "rule_reason": "1 resistance cost: a sharp, strong response gets harder as damping coefficient rises",
+    "rule_trace": [
+      "resistance-cost"
+    ],
+    "forced": true,
+    "unmapped_terms": [
+      "frequency (physical)",
+      "damping coefficient"
+    ],
+    "new_words": [],
+    "monotone_claims": [
+      {
+        "rises": "resonance",
+        "with": "alignment",
+        "sign": 1
+      },
+      {
+        "rises": "resonance",
+        "with": "receptivity",
+        "sign": 1
+      }
+    ],
+    "interpretation": "Because damping coefficient carries resistance, the single cost on the sharpness of response turns around so that response rises with receptivity and alignment. Physical frequency (explicitly noted as not TSR Frequency) and damping coefficient are recorded in unmapped_terms.",
+    "conflicts": "Frequency is not a rate and not cycles per second.",
+    "sense": 2,
+    "confidence": 7,
+    "closing": "The rule cleanly dictates a turnaround from the single damping cost, while physical frequency and damping coefficient are placed in unmapped_terms.",
+    "knew_tsr": false
+  },
+  {
+    "id": "mech.reynolds_laminar_turbulent",
+    "physical": "Flow stays laminar while inertial effects are small relative to viscous ones (low Reynolds number); as density, speed or size rise, or viscosity falls, the flow becomes turbulent.",
+    "reflected_formula": "",
+    "reflected_sentence": "Keeping the flow ordered becomes easier with receptivity and alignment as Desire, rise per Expansion, and Vibration change relative to fluid opposition.",
+    "shape": "turns around",
+    "rule_reason": "1 cost entry in the costs block (keeping the flow ordered rises with density and falls with viscosity)",
+    "rule_trace": [
+      "resistance-cost"
+    ],
+    "forced": false,
+    "unmapped_terms": [
+      "Reynolds number",
+      "viscosity"
+    ],
+    "new_words": [],
+    "monotone_claims": [
+      {
+        "rises": "alignment",
+        "with": "receptivity",
+        "sign": 1
+      }
+    ],
+    "interpretation": "Density reflects to Desire, velocity to rise per Expansion, and length to Vibration, while Reynolds number and viscosity have no partners in the frozen vocabulary. By the single cost block in the record, keeping the flow ordered turns around with receptivity and alignment.",
+    "conflicts": "none",
+    "sense": 1,
+    "confidence": 5,
+    "closing": "The costs array has 1 cost object (an odd number, indicating turns around), yet that single cost rises with one resistance quantity (density) and falls with another (viscosity), which makes counting resistance costs slightly ambiguous.",
+    "knew_tsr": false
+  },
+  {
+    "id": "mech.terminal_velocity",
+    "physical": "A falling body stops accelerating when drag balances weight; that terminal speed rises with the body's mass and falls with the drag coefficient, the fluid's density and the cross-section.",
+    "reflected_formula": "rise per Expansion = √(2 × Movement M × Attraction ÷ (Desire × C_d × A))",
+    "reflected_sentence": "A body stops changing its rise per Expansion in Appreciation when fluid opposition balances Movement M and Attraction, and settling into that balance becomes easier with receptivity and alignment as Desire rises.",
+    "shape": "turns around",
+    "rule_reason": "1 cost object in costs array (stopping the fall rises with mass m, falls with drag coefficient and density)",
+    "rule_trace": [
+      "resistance-cost"
+    ],
+    "forced": false,
+    "unmapped_terms": [
+      "drag coefficient",
+      "area",
+      "gravitational field g"
+    ],
+    "new_words": [],
+    "monotone_claims": [
+      {
+        "rises": "rise per Expansion",
+        "with": "Movement M",
+        "sign": 1
+      },
+      {
+        "rises": "rise per Expansion",
+        "with": "Desire",
+        "sign": -1
+      }
+    ],
+    "interpretation": "Velocity reflects to rise per Expansion, mass m to Movement M, and density to Desire, while drag coefficient and area have no partners. Because there is one cost block in the record, the difficulty of stopping the fall turns around with receptivity and alignment.",
+    "conflicts": "none",
+    "sense": 1,
+    "confidence": 5,
+    "closing": "There is one cost object in the specification, which formally triggers turns around, though three different resistance-carrying quantities (mass, drag coefficient, density) act in opposing directions in the formula.",
+    "knew_tsr": false
+  },
+  {
+    "id": "mech.torque",
+    "physical": "Torque equals moment of inertia times angular acceleration: the rotational form of Newton's second law, read as the definition of torque's effect.",
+    "reflected_formula": "",
+    "reflected_sentence": "Rotational Frequency equals the rotational distribution of Movement M times rotational Appreciation.",
+    "shape": "keeps",
+    "rule_reason": "definition with 0 costs in the primary record (1 resistance cost in the alternate statement)",
+    "rule_trace": [
+      "identity"
+    ],
+    "forced": true,
+    "unmapped_terms": [
+      "torque",
+      "moment of inertia",
+      "angular acceleration"
+    ],
+    "new_words": [],
+    "monotone_claims": [],
+    "interpretation": "Read as a definition with zero costs in the primary record, the relation keeps its shape; read as the alternate law where required torque rises with moment of inertia, the single resistance cost turns around. Torque, moment of inertia, and angular acceleration are recorded in unmapped_terms.",
+    "conflicts": "none",
+    "sense": 1,
+    "confidence": 7,
+    "closing": "The primary record is explicitly marked as a definition with an empty costs list, which forces keeps, while the alternate statement has one resistance cost (moment of inertia) which would turn around.",
+    "knew_tsr": false
+  },
+  {
+    "id": "mech.damping",
+    "physical": "A damping force opposing velocity drains an oscillation: the amplitude decays exponentially, faster the larger the damping coefficient.",
+    "reflected_formula": "",
+    "reflected_sentence": "Instead of an opposing Frequency draining the extent of oscillation over Expansion, the oscillation is sustained more easily as receptivity and alignment rise.",
+    "shape": "turns around",
+    "rule_reason": "1 resistance cost: amplitude lost per cycle rises with the damping coefficient",
+    "rule_trace": [
+      "resistance-cost"
+    ],
+    "forced": true,
+    "unmapped_terms": [
+      "damping coefficient",
+      "amplitude"
+    ],
+    "new_words": [],
+    "monotone_claims": [
+      {
+        "rises": "alignment",
+        "with": "receptivity",
+        "sign": 1
+      }
+    ],
+    "interpretation": "Time reflects to Expansion and mass m to Movement M, while the single resistance cost from the damping coefficient turns decay into sustaining with receptivity and alignment. Damping coefficient and amplitude have no partners in the frozen vocabulary and go in unmapped_terms.",
+    "conflicts": "none",
+    "sense": 2,
+    "confidence": 7,
+    "closing": "The single resistance cost on survival of the oscillation unambiguously fires resistance-cost to turn the reading around, with damping coefficient and amplitude listed in unmapped_terms.",
+    "knew_tsr": false
+  },
+  {
+    "id": "mech.friction",
+    "physical": "Resistance between two surfaces sliding past each other: the frictional force rises with the coefficient of friction and the normal force, and turns motion into heat.",
+    "reflected_formula": "Frequency = resonance × Frequency",
+    "reflected_sentence": "Where two surfaces meet in resonance, keeping going becomes easier rather than harder as receptivity and alignment rise, with Frequency rising with resonance.",
+    "shape": "turns around",
+    "rule_reason": "1 resistance cost: keeping the surfaces moving past each other gets harder with coefficient of friction",
+    "rule_trace": [
+      "resistance-cost"
+    ],
+    "forced": true,
+    "unmapped_terms": [
+      "coefficient of friction",
+      "normal force"
+    ],
+    "new_words": [],
+    "monotone_claims": [
+      {
+        "rises": "Frequency",
+        "with": "resonance",
+        "sign": 1
+      },
+      {
+        "rises": "resonance",
+        "with": "alignment",
+        "sign": 1
+      }
+    ],
+    "interpretation": "Friction reflects to resonance and force to Frequency, and the single resistance cost turns around so that what opposed motion on the physical side becomes easier with receptivity and alignment. Coefficient of friction and normal force do not have separate partners in the frozen vocabulary and are listed in unmapped_terms.",
+    "conflicts": "none",
+    "sense": 4,
+    "confidence": 7,
+    "closing": "The turnaround is clearly forced by the single resistance cost on coefficient of friction, while coefficient of friction and normal force go into unmapped_terms.",
+    "knew_tsr": false
+  }
+]

@@ -1,0 +1,30 @@
+{
+ "id": "field.weak_flavor_change",
+ "physical": "Flavor change via the weak interaction: Only the weak interaction changes one kind of quark or lepton into another (through the charged W boson); the strong and electromagnetic interactions never do.",
+ "reflected_formula": "",
+ "reflected_sentence": "Only one kind of interaction changes one kind of thing into another; the binding interaction and the Idle-Reflected interaction never do; the shape keeps.",
+ "shape": "keeps",
+ "rule_reason": "identity; zero costs → keeps",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "weak interaction",
+  "strong interaction",
+  "quark",
+  "lepton",
+  "flavor",
+  "W boson",
+  "charged",
+  "coupling constant"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "Idle and Reflected are the only frozen words that touch this relation, and they appear only as what does not change a thing's kind. The interaction that does change kind has no partner. The table says nothing about kinds of things or their changing.",
+ "conflicts": "none",
+ "sense": 1,
+ "confidence": 6,
+ "closing": "The rule decided without a judgment call; an identity keeps. The content is entirely outside the vocabulary except for the electromagnetic pairing, which enters only negatively. No new word was needed, but the reflection is empty in TSR's terms.",
+ "knew_tsr": false
+}

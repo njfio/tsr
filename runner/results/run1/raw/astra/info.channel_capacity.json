@@ -1,0 +1,29 @@
+{
+ "id": "info.channel_capacity",
+ "physical": "The greatest rate at which information can be sent reliably through a noisy channel is the bandwidth times the log of one plus the signal-to-noise ratio.",
+ "reflected_formula": "",
+ "reflected_sentence": "No complete reflected sentence is available from the frozen vocabulary.",
+ "shape": "keeps",
+ "rule_reason": "A definition keeps its shape, and none of the listed quantities carries resistance; however, the quantities in the formula have no frozen partners.",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "channel capacity",
+  "bandwidth",
+  "signal power",
+  "noise power",
+  "information",
+  "noisy channel",
+  "signal-to-noise ratio"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "",
+ "conflicts": "none",
+ "sense": 1,
+ "confidence": 7,
+ "closing": "The definition rule independently selects keeps, but the frozen vocabulary prevents an actual reflection. I have left the formula and interpretation empty rather than supply invented partners or pass physical quantities off as reflected terms; the reflected_sentence reports this failure rather than asserting a nonphysical relation. This reporting convention also applies to the remaining incomplete rows.",
+ "knew_tsr": false
+}

@@ -1,0 +1,31 @@
+{
+ "id": "thermo.fourier_conduction",
+ "physical": "The heat flowing through a slab for a given temperature difference falls as the slab's thermal resistance (thickness over conductivity times area) rises. q = ΔT ÷ R_th",
+ "reflected_formula": "",
+ "reflected_sentence": "The cost turns around: what grew harder as an unnamed opposition to the flow grew, now eases as receptivity rises, and more conscious energy passes for the same difference in warmth.",
+ "shape": "turns around",
+ "rule_reason": "One cost and it rises with thermal resistance, which the fixed list says carries resistance; an odd number of resistance-costs, so the relation turns around. The formula is not rewritten; its reading flips from harder to easier.",
+ "rule_trace": [
+  "resistance-cost"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "heat",
+  "temperature",
+  "thermal resistance"
+ ],
+ "new_words": [],
+ "monotone_claims": [
+  {
+   "rises": "conscious energy passed",
+   "with": "alignment",
+   "sign": 1
+  }
+ ],
+ "interpretation": "The flipped reading is honest TSR speech: receptivity replaces opposition and flow eases. But no term in the formula has a frozen partner, so only the reading crosses, never the symbols.",
+ "conflicts": "none",
+ "sense": 2,
+ "confidence": 7,
+ "closing": "The rule decided the turn cleanly: the cost driver is on the carries-resistance list, count is one, turn. The unmapped status of every symbol is a vocabulary failure separate from the shape call, which is why the sense is low despite the clean decision.",
+ "knew_tsr": false
+}

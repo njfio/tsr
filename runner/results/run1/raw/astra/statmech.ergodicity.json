@@ -1,0 +1,28 @@
+{
+ "id": "statmech.ergodicity",
+ "physical": "For an ergodic system the long-time average of an observable equals its average over the ensemble of accessible states.",
+ "reflected_formula": "",
+ "reflected_sentence": "Expansion has a partner, but the complete relation does not.",
+ "shape": "keeps",
+ "rule_reason": "An identity keeps its shape; the vocabulary maps time to Expansion but supplies no partners for ergodicity, observables, or either averaging construction.",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "ergodic system",
+  "long-time average",
+  "observable",
+  "ensemble average",
+  "ensemble",
+  "accessible states"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "",
+ "conflicts": "none",
+ "sense": 1,
+ "confidence": 7,
+ "closing": "The identity rule selects keeps without importing assumptions from any other relation. Replacing the time component by Expansion does not define a long-time average or an ensemble average, and the absence of listed variables does not remove those unmapped terms from the statement.",
+ "knew_tsr": false
+}

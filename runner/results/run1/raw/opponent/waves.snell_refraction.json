@@ -1,0 +1,8 @@
+{
+ "id": "waves.snell_refraction",
+ "alternative_shape": null,
+ "rule_compliant": false,
+ "argument": "The strongest attempt reads the medium as resistance (the Ch 16 reading) so that the index, the factor by which a medium slows light, makes the bend a resistance-caused cost. It fails: the statement records no cost, the index's resistance status is explicitly undetermined (R does not decide it), and the law is the symmetry that index times sine of the angle is the same on both sides, and symmetries keep their shape. No rule-compliant 'turns around' reading exists.",
+ "reflected_sentence": "",
+ "knew_tsr": false
+}

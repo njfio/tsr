@@ -1,0 +1,15 @@
+id: rel.row06_length_contraction
+domain: calibration
+title: "Row 6: length contraction"
+statement: "A body moving relative to an observer is measured shorter along its motion by the Lorentz factor; the effect depends on speed, not on mass."
+formula: "L = L0 ÷ γ"
+form: equation
+variables:
+  - {name: proper length L0, quantity: length}
+  - {name: relative velocity v, quantity: velocity}
+  - {name: speed of light c, quantity: speed of light c}
+costs: []
+standard_sources: ["Taylor & Wheeler, Spacetime Physics, ch. 1"]
+book_status: ruled
+ruling: {shape: keeps, words: "Vibrational Contraction", source: "Ch16 #6"}
+review: "reviewed:spec-port"

@@ -1,0 +1,34 @@
+{
+ "id": "mech.hooke",
+ "physical": "A spring pushes back in proportion to how far it is stretched; stretching it further takes more force, more so the stiffer the spring. F = k × x",
+ "reflected_formula": "Frequency = receptivity × Vibration",
+ "reflected_sentence": "The further the reach into Vibration, the more Frequency it asks; but where the spring's stiffness set the price, receptivity now eases it, and the ask falls as receptivity rises.",
+ "shape": "turns around",
+ "rule_reason": "One listed cost: stretching further gets harder and rises with the spring constant, which carries resistance as stiffness; one odd cost turns the reading around.",
+ "rule_trace": [
+  "resistance-cost"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "spring constant k"
+ ],
+ "new_words": [],
+ "monotone_claims": [
+  {
+   "rises": "Frequency",
+   "with": "receptivity",
+   "sign": -1
+  },
+  {
+   "rises": "Frequency",
+   "with": "Vibration",
+   "sign": 1
+  }
+ ],
+ "interpretation": "Frequency is asked in proportion to Vibration, and the proportion that was stiffness now reads as receptivity. The product keeps its shape; the condition flips. What got harder with a stiffer spring gets easier with a more receptive one.",
+ "conflicts": "none",
+ "sense": 4,
+ "confidence": 7,
+ "closing": "Shape was rule-decided: one cost, rising with the spring constant, which the resistance list defines as opposition to deformation, so the odd count turns it. The one judgment-adjacent move was lexical: spring constant has no frozen partner, and I used receptivity, the legal word for the flipped condition, in the reflected formula rather than inventing a word; this is flagged in unmapped_terms so the substitution is on record.",
+ "knew_tsr": false
+}

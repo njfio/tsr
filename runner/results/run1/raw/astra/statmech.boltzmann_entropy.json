@@ -1,0 +1,26 @@
+{
+ "id": "statmech.boltzmann_entropy",
+ "physical": "The entropy of a macrostate is Boltzmann's constant times the logarithm of the number of microstates that realize it.",
+ "reflected_formula": "",
+ "reflected_sentence": "Culmination has a provisional partner, but the complete relation does not.",
+ "shape": "keeps",
+ "rule_reason": "A definition keeps its shape; entropy maps provisionally to Culmination, but neither the constant nor the number of microstates has a partner.",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "Boltzmann constant",
+  "number of microstates",
+  "macrostate",
+  "microstates"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "",
+ "conflicts": "none",
+ "sense": 1,
+ "confidence": 7,
+ "closing": "The rule determines keeps without a judgment call, but one provisional mapped term does not complete the equation. Reading the microstate count as a literal nonphysical count would violate the prohibition on quantities, and replacing it with another concept would invent a partner.",
+ "knew_tsr": false
+}

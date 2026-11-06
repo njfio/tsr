@@ -1,0 +1,25 @@
+{
+ "id": "thermo.heat_capacity_definition",
+ "physical": "Heat capacity is the heat required per unit rise in temperature.",
+ "reflected_formula": "? = ? ÷ Δ?",
+ "reflected_sentence": "What is defined remains what warming requires divided by the change in how warm it is.",
+ "shape": "keeps",
+ "rule_reason": "The underlying shape keeps because this is a definition with no listed cost; heat capacity's undetermined resistance status does not itself reverse a definition.",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "heat capacity",
+  "heat",
+  "temperature"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "No complete reflection is available. Missing partners prevent a nonphysical interpretation.",
+ "conflicts": "none",
+ "sense": 1,
+ "confidence": 7,
+ "closing": "The definition decides keeps without resolving heat capacity's explicitly undetermined resistance status. This relation is evaluated independently of its cost-reading counterpart; none of its three quantities has an explicit frozen partner.",
+ "knew_tsr": false
+}

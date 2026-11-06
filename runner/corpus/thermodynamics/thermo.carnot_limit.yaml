@@ -1,0 +1,17 @@
+id: thermo.carnot_limit
+domain: thermodynamics
+title: "Carnot limit"
+statement: "No heat engine between two reservoirs can be more efficient than a reversible one; the limit is one minus the ratio of the cold to the hot temperature."
+formula: "η ≤ 1 − T_c ÷ T_h"
+form: inequality
+variables:
+  - {name: efficiency η, quantity: efficiency}
+  - {name: cold temperature T_c, quantity: temperature}
+  - {name: hot temperature T_h, quantity: temperature}
+costs:
+  - {what_gets_harder: "extracting work; the cap tightens as the two temperatures approach each other", rises_with: [temperature]}
+derived_from: [thermo.second_law_clausius]
+standard_sources: ["Carnot 1824; Fermi, Thermodynamics, ch. 3"]
+book_status: unreflected
+review: pending
+notes: "A limit with no resistance-carrying quantity: keeps under the procedure."

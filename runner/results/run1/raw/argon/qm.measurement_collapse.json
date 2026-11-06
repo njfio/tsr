@@ -1,0 +1,29 @@
+{
+ "id": "qm.measurement_collapse",
+ "physical": "A measurement yields one of the observable's eigenvalues, and afterwards the system is in the corresponding eigenstate; which value appears is not determined by the prior state.",
+ "reflected_formula": "",
+ "reflected_sentence": "What happens when a state is met keeps its shape: one realization appears and the state matches it, without the prior state fixing which one.",
+ "shape": "keeps",
+ "rule_reason": "a statistical law; no cost caused by resistance and no separation",
+ "rule_trace": [
+  "none"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "probability",
+  "wavefunction amplitude",
+  "measurement",
+  "observable",
+  "eigenvalue",
+  "eigenstate",
+  "system"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "It keeps its shape. The only partner available is 'actualization' becoming 'realization', and that would be a creative rescue, so I did not use it.",
+ "conflicts": "none",
+ "sense": 1,
+ "confidence": 6,
+ "closing": "The rule decided the shape (keeps). It is tempting to map collapse to actualization/realization, but the rule does not license that, so I left it unmapped. The word 'afterwards' implies time, and time cannot cross.",
+ "knew_tsr": false
+}

@@ -1,0 +1,32 @@
+{
+ "id": "em.impedance",
+ "physical": "In an alternating-current circuit the ratio of voltage to current is the impedance, whose magnitude combines resistance with the inductive and capacitive reactances. (|Z| = √(R² + (X_L − X_C)²))",
+ "reflected_formula": "|Z| = √(receptivity² + (X_L − X_C)²)",
+ "reflected_sentence": "In an alternating flow the ratio of conscious energy per source to flow is the total receptivity (or total gap), whose magnitude combines receptivity with the reactive components.",
+ "shape": "keeps",
+ "rule_reason": "Definition form ('Equivalences, definitions, identities, conservation laws and symmetries keep their shape') with an empty costs array keeps its shape.",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": false,
+ "unmapped_terms": [
+  "impedance Z",
+  "reactance X",
+  "voltage",
+  "current (electric)"
+ ],
+ "new_words": [],
+ "monotone_claims": [
+  {
+   "rises": "receptivity",
+   "with": "alignment",
+   "sign": 1
+  }
+ ],
+ "interpretation": "As a definition, the combination keeps its shape while resistant flips to receptive (or appears only as the gap). The total receptivity combines the direct and alternating components.",
+ "conflicts": "Trap: 'No resistance on the nonphysical side; it appears only as the gap' and 'No sums where the book has products' conflict with R² + (X_L − X_C)².",
+ "sense": 2,
+ "confidence": 6,
+ "closing": "Because the record has `form: definition` and `costs: []`, the rule says definitions keep their shape even though Z, R, and X carry resistance in the quantity table. Impedance and reactance lack frozen vocabulary partners and are listed in unmapped_terms.",
+ "knew_tsr": false
+}

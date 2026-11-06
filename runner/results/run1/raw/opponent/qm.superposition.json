@@ -1,0 +1,8 @@
+{
+ "id": "qm.superposition",
+ "alternative_shape": null,
+ "rule_compliant": false,
+ "argument": "The statement is an identity about allowed combinations of allowed states; identities keep their shape by the rule, and no cost, resistance, or distance is present, so nothing can turn.",
+ "reflected_sentence": "",
+ "knew_tsr": false
+}

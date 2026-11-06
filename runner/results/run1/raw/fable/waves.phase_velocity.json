@@ -1,0 +1,29 @@
+{
+ "id": "waves.phase_velocity",
+ "physical": "Phase and phase velocity — A wave's phase advances by one cycle per wavelength; the phase velocity is wavelength times frequency, or angular frequency over wavenumber. v_p = ω ÷ k (definition)",
+ "reflected_formula": "(pace of a crest) = (rate of turning) ÷ (crests per extent) — none has a frozen partner; the shape of a definition is kept",
+ "reflected_sentence": "A vibration's crest advances by one full turn per wave-length, and the pace of the crest is the length of a wave times how often it turns.",
+ "shape": "keeps",
+ "rule_reason": "Form: definition. No cost or separation listed. Definitions keep their shape.",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "phase",
+  "phase velocity v_p",
+  "wavelength λ",
+  "frequency (physical; not TSR Frequency)",
+  "angular frequency ω",
+  "wavenumber k",
+  "cycle"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "A definition keeps its shape. Nothing in it has a partner: not the turning, not the length of a wave, not how often it turns. The relation crosses as an empty definition.",
+ "conflicts": "The trap 'Frequency is not a rate and not cycles per second' — this relation is exactly cycles per length and a rate; physical frequency has no partner and must not become Frequency.",
+ "sense": 1,
+ "confidence": 6,
+ "closing": "The rule decided on its own: definition, keeps. No judgment call on shape. The only pressure was the pun between physical frequency and TSR Frequency, which the prompt explicitly forbids; I kept frequency as 'how often it turns' in plain words. Nothing nonphysical is said.",
+ "knew_tsr": false
+}

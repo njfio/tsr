@@ -1,0 +1,8 @@
+{
+ "id": "statmech.phase_transition_critical_point",
+ "alternative_shape": null,
+ "rule_compliant": false,
+ "argument": "The limit (correlation length diverging) is caused by temperature approaching the critical temperature, and temperature, correlation length and the order parameter are all fixed as not carrying resistance; the rule turns around only limits caused by resistance, so this limit keeps and no rule-compliant alternative exists.",
+ "reflected_sentence": "",
+ "knew_tsr": false
+}

@@ -1,0 +1,28 @@
+{
+ "id": "waves.diffraction",
+ "physical": "A wave passing through an aperture spreads; the narrower the aperture compared with the wavelength, the wider the spread.",
+ "reflected_formula": "no partner",
+ "reflected_sentence": "With receptivity, remaining together rather than spreading becomes easier.",
+ "shape": "turns around",
+ "rule_reason": "The supplied separation_made_by_distance cost fires once, so the primary reading turns around. Angle, wavelength and aperture width have no frozen partners, preventing a complete word-map image of sin θ ≈ λ ÷ a.",
+ "rule_trace": [
+  "separation"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "wave",
+  "aperture",
+  "spreading angle θ",
+  "wavelength λ",
+  "aperture width a",
+  "spread"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "No partner. No partner.",
+ "conflicts": "none",
+ "sense": 1,
+ "confidence": 7,
+ "closing": "The supplied separation annotation forces a turn for the primary statement even though aperture width itself is classified as nonresistant. Its alternate statement has no costs and therefore keeps. The rule consequently gives different readings for these formulations of the same formula. Neither reading supplies the missing vocabulary. The no-partner markers are reporting statuses, not proposed nonphysical vocabulary or replacement formulas.",
+ "knew_tsr": false
+}

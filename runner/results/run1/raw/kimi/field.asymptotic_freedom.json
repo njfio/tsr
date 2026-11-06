@@ -1,0 +1,30 @@
+{
+ "id": "field.asymptotic_freedom",
+ "physical": "Asymptotic freedom — The strong coupling becomes weak at short distances and high energies: quarks close together interact almost freely, and the interaction grows as they are pulled apart. Formula: α_s(Q) → 0 as Q → ∞",
+ "reflected_formula": "the interaction → 0 as conscious energy → limitless",
+ "reflected_sentence": "In Vibrational Reality, what felt forced between beings fades into the Current as conscious energy grows limitless.",
+ "shape": "turns around",
+ "rule_reason": "A separation made by distance turns around: the interaction growing with separation becomes, on the nonphysical side, alignment growing with nearness to the Current.",
+ "rule_trace": [
+  "separation"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "strong coupling α_s",
+  "quark"
+ ],
+ "new_words": [],
+ "monotone_claims": [
+  {
+   "rises": "alignment",
+   "with": "alignment",
+   "sign": 1
+  }
+ ],
+ "interpretation": "Distance made the interaction grow; its reflection is that separation from the Current is what makes interaction feel forced at all. As separation closes, forcing vanishes. The coupling has no partner, so only the relationship's turn is reported.",
+ "conflicts": "none",
+ "sense": 3,
+ "confidence": 5,
+ "closing": "The rule decided on its own: a cost caused by separation made by distance turns around. The only friction was that α_s and quark have no nonphysical partner, so the reflection is partial by design.",
+ "knew_tsr": false
+}

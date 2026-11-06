@@ -1,0 +1,22 @@
+id: rel.row08_cost_of_more_speed
+domain: calibration
+title: "Row 8: the cost of more speed"
+statement: "The faster a massive body moves, the more energy each further increase in speed requires; the energy needed rises with the body's mass and diverges as v approaches c."
+formula: "K = (γ − 1) × m × c²"
+form: equation
+variables:
+  - {name: mass m, quantity: mass m}
+  - {name: speed v, quantity: velocity}
+  - {name: speed of light c, quantity: speed of light c}
+  - {name: kinetic energy K, quantity: kinetic energy}
+physical_terms: {K: "kinetic energy", m: "mass m", c: "speed of light c"}
+costs:
+  - what_gets_harder: "the energy required for the next increment of speed"
+    rises_with: [mass m]
+derived_from: [rel.row05_time_dilation, rel.row07_mass_energy_equivalence]
+derivation: "relativistic kinetic energy from the Lorentz factor and rest energy"
+standard_sources: ["Taylor & Wheeler, Spacetime Physics, ch. 7"]
+book_status: ruled
+ruling: {shape: turns around, words: "the closer you move to the Current, the more receptive you become, so each next step takes less", source: "Ch16 #8: a cost that rises with resistance"}
+review: "reviewed:spec-port"
+notes: "Built from rows 5 and 7, which keep. The reading turns; the formula is not rewritten (October 2026 ruling)."

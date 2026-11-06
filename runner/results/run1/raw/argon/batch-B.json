@@ -1,0 +1,454 @@
+[
+  {
+    "id": "thermo.carnot_limit",
+    "physical": "No heat engine between two reservoirs can be more efficient than a reversible one; the limit is one minus the ratio of the cold to the hot temperature.",
+    "reflected_formula": "",
+    "reflected_sentence": "The cap on how much of the energy taken in can be turned to use, set by the ratio of the cooler to the warmer intensity of the two sources, keeps its shape: it is not a cost caused by resistance, so it stays a cap.",
+    "shape": "keeps",
+    "rule_reason": "Temperature does not carry resistance, so the cost is not caused by resistance; moreover, efficiency, temperature, heat engine, and reservoirs have no partners in the frozen vocabulary.",
+    "rule_trace": [
+      "none"
+    ],
+    "forced": true,
+    "unmapped_terms": [
+      "efficiency η",
+      "cold temperature T_c",
+      "hot temperature T_h",
+      "heat engine",
+      "reservoirs",
+      "reversible"
+    ],
+    "new_words": [],
+    "monotone_claims": [],
+    "interpretation": "Every term reflects. When a term has no partner in the frozen vocabulary, the reflection cannot be formed in frozen words.",
+    "conflicts": "none",
+    "sense": 1,
+    "confidence": 7,
+    "closing": "The rule decided on its own. Temperature and efficiency are explicitly listed as not carrying resistance, so no resistance-cost fires, and none of the thermodynamic variables in this relation appear in the frozen vocabulary table.",
+    "knew_tsr": false
+  },
+  {
+    "id": "thermo.enthalpy",
+    "physical": "Enthalpy is internal energy plus pressure times volume; at constant pressure the heat absorbed equals the change in enthalpy.",
+    "reflected_formula": "E + Point of Reflection × Vibrance",
+    "reflected_sentence": "The total energy of a system with its surroundings equals its own energy together with the push of the surroundings and its Vibrance, and this definition keeps its shape.",
+    "shape": "keeps",
+    "rule_reason": "Definition (form is definition and no quantity carries resistance), which would keep its shape, but enthalpy, internal energy, pressure, and heat are unmapped in the frozen vocabulary.",
+    "rule_trace": [
+      "identity"
+    ],
+    "forced": true,
+    "unmapped_terms": [
+      "enthalpy H",
+      "internal energy U",
+      "pressure P",
+      "heat"
+    ],
+    "new_words": [],
+    "monotone_claims": [
+      {
+        "rises": "E",
+        "with": "Vibrance",
+        "sign": 1
+      }
+    ],
+    "interpretation": "Vibrance is the partner of volume, and conscious energy is the partner of physical energy. The other terms in the relation have no partner in the frozen vocabulary.",
+    "conflicts": "No sums where the book has products.",
+    "sense": 1,
+    "confidence": 7,
+    "closing": "The rule decided the keeps-or-turns question on its own because the relation is a definition with zero resistance costs. However, only volume (Vibrance) and general energy (E / conscious energy) are in the vocabulary; enthalpy, internal energy, pressure, and heat lack frozen partners, and the formula uses a sum which conflicts with the no-sums trap.",
+    "knew_tsr": false
+  },
+  {
+    "id": "thermo.first_law",
+    "physical": "The change in a system's internal energy equals the heat added minus the work it does: energy is conserved.",
+    "reflected_formula": "E = E − E",
+    "reflected_sentence": "The change in a system's own energy equals the energy taken in less the energy given out: E is conserved, and the equivalence keeps its shape.",
+    "shape": "keeps",
+    "rule_reason": "Conservation law (form is conservation and no quantity carries resistance), which keeps its shape, but internal energy, heat, and work have no separate partners in the frozen vocabulary.",
+    "rule_trace": [
+      "identity"
+    ],
+    "forced": true,
+    "unmapped_terms": [
+      "internal energy U",
+      "heat Q",
+      "work W"
+    ],
+    "new_words": [],
+    "monotone_claims": [],
+    "interpretation": "E is the one energy shared by both sides. Because internal energy, heat, and work have no distinct partners in the frozen vocabulary, their difference collapses.",
+    "conflicts": "No sums where the book has products.",
+    "sense": 2,
+    "confidence": 7,
+    "closing": "The rule decided without a judgment call that a conservation law with no resistance quantities keeps its shape. However, the frozen vocabulary does not distinguish internal energy, heat, and work, so the formula cannot be distinctly mapped.",
+    "knew_tsr": false
+  },
+  {
+    "id": "thermo.fourier_conduction",
+    "physical": "The heat flowing through a slab for a given temperature difference falls as the slab's thermal resistance (thickness over conductivity times area) rises.",
+    "reflected_formula": "",
+    "reflected_sentence": "Where the passing of energy between a warmer and a cooler body falls as resistance rises, here it rises with receptivity: the less the gap, the more freely the energy passes.",
+    "shape": "turns around",
+    "rule_reason": "A cost caused by resistance: heat getting through gets harder as thermal resistance rises, and thermal resistance carries resistance; however, heat and temperature are unmapped in the frozen vocabulary.",
+    "rule_trace": [
+      "resistance-cost"
+    ],
+    "forced": true,
+    "unmapped_terms": [
+      "heat flow q",
+      "temperature difference ΔT",
+      "thermal resistance R_th"
+    ],
+    "new_words": [],
+    "monotone_claims": [
+      {
+        "rises": "conscious energy",
+        "with": "alignment",
+        "sign": 1
+      },
+      {
+        "rises": "conscious energy",
+        "with": "receptivity",
+        "sign": 1
+      }
+    ],
+    "interpretation": "Resistant becomes receptive, and resistance appears only as the gap between the Current and what you are living. What gets harder with more resistance gets easier with more receptivity and alignment. Heat and temperature have no partners in the frozen vocabulary.",
+    "conflicts": "none",
+    "sense": 2,
+    "confidence": 7,
+    "closing": "The rule decided the turnaround on its own because thermal resistance is fixed as carrying resistance and there is one cost caused by it. Still, heat flow and temperature difference have no partners in the frozen vocabulary, forcing the no-partner outcome for the full statement.",
+    "knew_tsr": false
+  },
+  {
+    "id": "thermo.free_energy",
+    "physical": "Gibbs free energy is enthalpy minus temperature times entropy; at fixed temperature and pressure a process is spontaneous when it lowers the free energy.",
+    "reflected_formula": "",
+    "reflected_sentence": "The energy available for use equals the total energy less the product of thermal intensity and Culmination (provisional), and this definition keeps its shape.",
+    "shape": "keeps",
+    "rule_reason": "Definition (form is definition and no quantity carries resistance), which would keep its shape, but free energy, enthalpy, temperature, and pressure are unmapped in the frozen vocabulary.",
+    "rule_trace": [
+      "identity"
+    ],
+    "forced": true,
+    "unmapped_terms": [
+      "free energy G",
+      "enthalpy H",
+      "temperature T",
+      "pressure"
+    ],
+    "new_words": [],
+    "monotone_claims": [
+      {
+        "rises": "E",
+        "with": "Culmination (provisional)",
+        "sign": -1
+      }
+    ],
+    "interpretation": "Entropy reflects as Culmination (provisional). Free energy, enthalpy, and temperature have no partners in the frozen vocabulary, so the relationship cannot be completed.",
+    "conflicts": "No sums where the book has products.",
+    "sense": 1,
+    "confidence": 7,
+    "closing": "The rule decided on its own that a definition with no resistance quantities keeps its shape. However, three of the four variables in the formula (free energy, enthalpy, temperature) are missing from the frozen vocabulary.",
+    "knew_tsr": false
+  },
+  {
+    "id": "thermo.heat_capacity_cost",
+    "physical": "Warming a body by a given amount takes more heat the larger its heat capacity: thermal inertia.",
+    "reflected_formula": "",
+    "reflected_sentence": "Read as thermal inertia, where warming a body takes more energy the more it holds back, here the warming comes more easily the more receptive the body is.",
+    "shape": "turns around",
+    "rule_reason": "Heat capacity is UNDETERMINED as to whether it carries resistance, requiring a judgment call on whether the cost turns around; in addition, heat capacity, heat, and temperature are unmapped in the frozen vocabulary.",
+    "rule_trace": [
+      "resistance-cost"
+    ],
+    "forced": false,
+    "unmapped_terms": [
+      "heat capacity C",
+      "heat Q",
+      "temperature change ΔT"
+    ],
+    "new_words": [],
+    "monotone_claims": [],
+    "interpretation": "If thermal inertia is treated as resistance, what gets harder with more resistance gets easier with more receptivity. Because heat capacity, heat, and temperature have no partners in the frozen vocabulary, the reflection cannot be expressed.",
+    "conflicts": "none",
+    "sense": 1,
+    "confidence": 3,
+    "closing": "The rule did not decide on its own: the prompt explicitly marks heat capacity as UNDETERMINED (a judgment call) between thermal inertia (carrying resistance, which turns the relation around) and a plain ratio (not carrying resistance, which keeps its shape). Regardless of that call, none of the variables have partners in the frozen vocabulary. Under the amendment I made the call as turns around, taking the statement's own 'thermal inertia' reading (clause a); under the plain-ratio reading it would keep.",
+    "knew_tsr": false
+  },
+  {
+    "id": "thermo.heat_capacity_definition",
+    "physical": "Heat capacity is the heat required per unit rise in temperature.",
+    "reflected_formula": "",
+    "reflected_sentence": "A body's capacity for warming equals the energy taken in for each step of warming, and this definition keeps its shape.",
+    "shape": "keeps",
+    "rule_reason": "Definition with no costs listed, so it keeps its shape by form, though heat capacity is undetermined for resistance and all three variables are unmapped in the frozen vocabulary.",
+    "rule_trace": [
+      "identity"
+    ],
+    "forced": true,
+    "unmapped_terms": [
+      "heat capacity C",
+      "heat Q",
+      "temperature change ΔT"
+    ],
+    "new_words": [],
+    "monotone_claims": [],
+    "interpretation": "Definitions keep their shape across the Point of Reflection. However, heat capacity, heat, and temperature have no partners in the frozen vocabulary.",
+    "conflicts": "none",
+    "sense": 1,
+    "confidence": 6,
+    "closing": "Because the form is explicitly a definition with an empty costs list, the rule keeps its shape without needing to resolve the undetermined status of heat capacity, though the presence of 'required' in the statement borders on a cost reading. All three variables lack partners in the frozen vocabulary.",
+    "knew_tsr": false
+  },
+  {
+    "id": "thermo.joule_heating",
+    "physical": "A current through a resistance dissipates power as heat in proportion to the resistance and the square of the current.",
+    "reflected_formula": "",
+    "reflected_sentence": "Where a flow through resistance loses energy in proportion to the resistance and the square of the flow, here the flow loses less the more receptive the path, and what was given off is collected.",
+    "shape": "turns around",
+    "rule_reason": "A cost caused by resistance: carrying the current without loss gets harder as electrical resistance rises, and electrical resistance carries resistance; however, power, electric current, and heat are unmapped in the frozen vocabulary.",
+    "rule_trace": [
+      "resistance-cost"
+    ],
+    "forced": true,
+    "unmapped_terms": [
+      "power P",
+      "current I",
+      "resistance R",
+      "heat"
+    ],
+    "new_words": [],
+    "monotone_claims": [
+      {
+        "rises": "conscious energy",
+        "with": "receptivity",
+        "sign": 1
+      },
+      {
+        "rises": "conscious energy",
+        "with": "alignment",
+        "sign": 1
+      }
+    ],
+    "interpretation": "Resistant becomes receptive, and radiating becomes collecting. What is lost to the gap on the physical side is collected through receptivity and alignment on the nonphysical side. Power, heat, and electric current have no partners in the frozen vocabulary.",
+    "conflicts": "none",
+    "sense": 2,
+    "confidence": 7,
+    "closing": "The rule decided the turnaround on its own because electrical resistance is fixed as carrying resistance and there is one resistance cost. However, 'Current' in the frozen vocabulary is the partner of 'speed of light c' and 'Past', not 'current (electric)', and power and heat also lack partners.",
+    "knew_tsr": false
+  },
+  {
+    "id": "thermo.latent_heat_cost",
+    "physical": "Changing a body's phase takes heat in proportion to its mass, with no rise in temperature while it happens.",
+    "reflected_formula": "E = Movement M × E",
+    "reflected_sentence": "Where changing a body's form takes energy in proportion to its mass, here the change takes less the more receptive the Movement M, with no warming while it happens.",
+    "shape": "turns around",
+    "rule_reason": "A cost caused by resistance: changing the body's phase gets harder as mass m rises, and mass m carries resistance; however, latent heat, heat, phase, and temperature are unmapped in the frozen vocabulary.",
+    "rule_trace": [
+      "resistance-cost"
+    ],
+    "forced": true,
+    "unmapped_terms": [
+      "latent heat L",
+      "heat Q",
+      "temperature",
+      "phase"
+    ],
+    "new_words": [],
+    "monotone_claims": [
+      {
+        "rises": "conscious energy",
+        "with": "Movement M",
+        "sign": -1
+      },
+      {
+        "rises": "conscious energy",
+        "with": "receptivity",
+        "sign": -1
+      }
+    ],
+    "interpretation": "Mass m reflects as Movement M, and what gets harder with more resistance gets easier with more receptivity. Because latent heat, heat, and temperature have no partners in the frozen vocabulary, the full relation cannot be stated.",
+    "conflicts": "none",
+    "sense": 2,
+    "confidence": 7,
+    "closing": "The rule decided the turnaround on its own because mass m carries resistance and there is one cost rising with mass m. However, only mass m (Movement M) is mapped; latent heat, heat, and temperature have no partners in the frozen vocabulary.",
+    "knew_tsr": false
+  },
+  {
+    "id": "thermo.latent_heat_definition",
+    "physical": "Latent heat is the heat absorbed per unit mass in a phase change at constant temperature.",
+    "reflected_formula": "E = E ÷ Movement M",
+    "reflected_sentence": "The energy for a change of form, for each portion of Movement M, equals the energy taken in divided by Movement M, and this definition keeps its shape.",
+    "shape": "keeps",
+    "rule_reason": "Definition (form is definition with no costs), so it keeps its shape, even though mass m carries resistance; however, latent heat, heat, phase, and temperature are unmapped in the frozen vocabulary.",
+    "rule_trace": [
+      "identity"
+    ],
+    "forced": true,
+    "unmapped_terms": [
+      "latent heat L",
+      "heat Q",
+      "temperature",
+      "phase"
+    ],
+    "new_words": [],
+    "monotone_claims": [
+      {
+        "rises": "conscious energy",
+        "with": "Movement M",
+        "sign": -1
+      }
+    ],
+    "interpretation": "Definitions keep their shape, and mass m reflects as Movement M. Because latent heat, heat, and temperature have no partners in the frozen vocabulary, the definition cannot be completed.",
+    "conflicts": "none",
+    "sense": 1,
+    "confidence": 7,
+    "closing": "The rule decided on its own that a definition with no cost clauses keeps its shape. Only mass m has a partner (Movement M); latent heat, heat, and temperature are unmapped.",
+    "knew_tsr": false
+  },
+  {
+    "id": "thermo.second_law_clausius",
+    "physical": "Heat does not spontaneously flow from a colder body to a hotter body; the entropy of an isolated system never decreases.",
+    "reflected_formula": "Culmination (provisional) ≥ 0",
+    "reflected_sentence": "Energy does not of itself pass from the cooler body to the warmer, and Culmination (provisional) never falls; since no cost here is caused by resistance, the relation keeps its shape.",
+    "shape": "keeps",
+    "rule_reason": "Neither entropy nor heat nor temperature carries resistance, so the listed costs are not caused by resistance and the relation keeps its shape; however, heat, temperature, and work are unmapped in the frozen vocabulary.",
+    "rule_trace": [
+      "none"
+    ],
+    "forced": true,
+    "unmapped_terms": [
+      "temperature T",
+      "heat",
+      "work",
+      "isolated system"
+    ],
+    "new_words": [],
+    "monotone_claims": [
+      {
+        "rises": "Culmination (provisional)",
+        "with": "Expansion",
+        "sign": 1
+      }
+    ],
+    "interpretation": "Entropy reflects as Culmination (provisional), where vibrations culminate. Because neither entropy nor temperature carries resistance, the direction does not turn around, and Culmination (provisional) never falls. Heat, work, and temperature have no partners in the frozen vocabulary.",
+    "conflicts": "none",
+    "sense": 3,
+    "confidence": 7,
+    "closing": "The rule decided on its own because entropy, temperature, and heat are explicitly fixed as not carrying resistance, meaning the cost in the prompt is not a cost caused by resistance. The inequality part maps entropy to Culmination (provisional), but the Clausius and Kelvin-Planck statements depend on heat, temperature, and work, which have no partners in the frozen vocabulary.",
+    "knew_tsr": false
+  },
+  {
+    "id": "thermo.temperature_mean_kinetic_energy",
+    "physical": "In an ideal gas the average translational kinetic energy per molecule is three halves of k times the temperature: temperature measures mean molecular kinetic energy.",
+    "reflected_formula": "Movement M × (rise per Expansion)²",
+    "reflected_sentence": "Movement M times the square of rise per Expansion equals a fixed constant times the thermal intensity, and this identity keeps its shape.",
+    "shape": "keeps",
+    "rule_reason": "Identity (form is identity with no costs), which keeps its shape, but Boltzmann constant and temperature have no partners in the frozen vocabulary.",
+    "rule_trace": [
+      "identity"
+    ],
+    "forced": true,
+    "unmapped_terms": [
+      "temperature T",
+      "Boltzmann constant k",
+      "ideal gas",
+      "molecule"
+    ],
+    "new_words": [],
+    "monotone_claims": [
+      {
+        "rises": "conscious energy",
+        "with": "Movement M",
+        "sign": 1
+      },
+      {
+        "rises": "conscious energy",
+        "with": "rise per Expansion",
+        "sign": 1
+      }
+    ],
+    "interpretation": "Identities keep their shape, and numbers do not cross the Point of Reflection. Mass m reflects as Movement M and velocity reflects as rise per Expansion, while temperature and the Boltzmann constant have no partners in the frozen vocabulary.",
+    "conflicts": "none",
+    "sense": 2,
+    "confidence": 7,
+    "closing": "The rule decided on its own that an identity with no costs keeps its shape and that numerical factors (1/2, 3/2) drop out. While the left-hand side maps mass m to Movement M and velocity to rise per Expansion, the right-hand side is completely unmapped because k and T are not in the frozen vocabulary.",
+    "knew_tsr": false
+  },
+  {
+    "id": "thermo.thermal_equilibrium",
+    "physical": "Two bodies in thermal contact exchange heat from the hotter to the colder until they reach a common temperature.",
+    "reflected_formula": "",
+    "reflected_sentence": "Two bodies in contact pass energy from the warmer to the cooler until they share one thermal intensity, and the relation keeps its shape.",
+    "shape": "keeps",
+    "rule_reason": "No costs and neither temperature nor heat carries resistance, so it would keep its shape, but temperature and heat are unmapped in the frozen vocabulary.",
+    "rule_trace": [
+      "none"
+    ],
+    "forced": true,
+    "unmapped_terms": [
+      "temperature T",
+      "heat Q",
+      "thermal contact"
+    ],
+    "new_words": [],
+    "monotone_claims": [],
+    "interpretation": "Neither heat nor temperature carries resistance, and there is no separation made by distance. Because heat and temperature have no partners in the frozen vocabulary, the statement has no reflection.",
+    "conflicts": "none",
+    "sense": 1,
+    "confidence": 7,
+    "closing": "The rule decided on its own: there are no costs and no quantities that carry resistance or distance. Neither variable (temperature T, heat Q) has a partner in the frozen vocabulary.",
+    "knew_tsr": false
+  },
+  {
+    "id": "thermo.third_law",
+    "physical": "As temperature approaches absolute zero the entropy approaches a constant, and absolute zero cannot be reached in a finite number of steps.",
+    "reflected_formula": "",
+    "reflected_sentence": "As thermal intensity approaches its lowest point, Culmination (provisional) approaches a constant and the lowest point stays unreached; the cost is not caused by resistance, so it keeps its shape.",
+    "shape": "keeps",
+    "rule_reason": "The cost rises with temperature, which does not carry resistance and has no separation made by distance, so the cost is not caused by resistance; moreover, temperature is unmapped in the frozen vocabulary.",
+    "rule_trace": [
+      "none"
+    ],
+    "forced": false,
+    "unmapped_terms": [
+      "temperature T",
+      "absolute zero",
+      "finite number of steps"
+    ],
+    "new_words": [],
+    "monotone_claims": [],
+    "interpretation": "Entropy reflects as Culmination (provisional), and nothing on the nonphysical side has a number. Because temperature does not carry resistance and has no partner in the frozen vocabulary, the limit cannot be formed in frozen words.",
+    "conflicts": "none",
+    "sense": 1,
+    "confidence": 5,
+    "closing": "There is a slight ambiguity in the rule: the general principle says 'unreachable becomes already there' and 'limited becomes limitless', which suggests an unattainability limit should turn around, but the deciding clause specifies 'a cost or a limit caused by resistance turns around', and temperature is explicitly fixed as not carrying resistance. Either way, temperature has no partner in the frozen vocabulary. Under the amendment I call it keeps, following the deciding clause.",
+    "knew_tsr": false
+  },
+  {
+    "id": "thermo.zeroth_law",
+    "physical": "If two bodies are each in thermal equilibrium with a third, they are in thermal equilibrium with each other; this is what makes temperature a well-defined property.",
+    "reflected_formula": "",
+    "reflected_sentence": "Two bodies each in balance of warmth with a third are in balance with each other, and this equivalence keeps its shape.",
+    "shape": "keeps",
+    "rule_reason": "Definition / equivalence (form is definition with no costs and temperature does not carry resistance), which keeps its shape, but temperature and thermal equilibrium are unmapped in the frozen vocabulary.",
+    "rule_trace": [
+      "identity"
+    ],
+    "forced": true,
+    "unmapped_terms": [
+      "temperature T",
+      "thermal equilibrium"
+    ],
+    "new_words": [],
+    "monotone_claims": [],
+    "interpretation": "Equivalences and definitions keep their shape across the Point of Reflection. Because temperature and thermal equilibrium have no partners in the frozen vocabulary, the statement cannot be expressed.",
+    "conflicts": "none",
+    "sense": 1,
+    "confidence": 7,
+    "closing": "The rule decided on its own that a definition/equivalence with no costs keeps its shape. However, the sole variable (temperature T) has no partner in the frozen vocabulary.",
+    "knew_tsr": false
+  }
+]

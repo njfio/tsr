@@ -1,0 +1,24 @@
+{
+ "id": "mech.moment_of_inertia",
+ "physical": "A body's moment of inertia about an axis is the sum of each mass element times the square of its distance from the axis.",
+ "reflected_formula": "",
+ "reflected_sentence": "A body's rotational distribution of Movement M about an axis is the product of each Movement M element and the square of its Vibration from the axis.",
+ "shape": "keeps",
+ "rule_reason": "definition with 0 costs",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "moment of inertia",
+  "radius"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "As a definition with no cost, the relation keeps its shape. However, moment of inertia and radius have no partners in the frozen vocabulary, and neither distance nor sums cross the mirror.",
+ "conflicts": "No distance, time, location, travel or quantities on the nonphysical side. No sums where the book has products.",
+ "sense": 1,
+ "confidence": 7,
+ "closing": "The rule is completely unambiguous here: the form is a definition with zero costs, so the shape keeps, while the unmapped terms and traps against distance and sums are recorded.",
+ "knew_tsr": false
+}

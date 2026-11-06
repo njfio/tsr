@@ -1,0 +1,27 @@
+{
+ "id": "field.vacuum_energy",
+ "physical": "The quantum vacuum has an energy density; the value field theory estimates and the value cosmology measures differ by many orders of magnitude.",
+ "reflected_formula": "",
+ "reflected_sentence": "No complete reflection has frozen vocabulary partners.",
+ "shape": "keeps",
+ "rule_reason": "The definition keeps and contains no resistance cost; a discrepancy of estimated and measured quantities is not a resistance cost.",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "quantum vacuum",
+  "vacuum energy density as a composite quantity",
+  "field-theory estimate",
+  "cosmological measurement",
+  "orders of magnitude"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "No partner. No complete reflection.",
+ "conflicts": "none",
+ "sense": 1,
+ "confidence": 7,
+ "closing": "The definition clause decides keeps. Density maps to Desire and energy to conscious energy or shared E, but their juxtaposition does not supply a mapped quantum vacuum or a rule for the composite. A numerical discrepancy cannot be carried over as quantities, so no complete reflection is asserted.",
+ "knew_tsr": false
+}

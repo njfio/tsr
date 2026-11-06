@@ -1,0 +1,28 @@
+{
+ "id": "em.wave_propagation",
+ "physical": "A changing electric field makes a magnetic field and a changing magnetic field makes an electric field; the pair regenerates itself and travels at a speed fixed by the permittivity and permeability of free space. c = 1 ÷ √(ε0 × μ0)",
+ "reflected_formula": "Current = 1 ÷ √(? × ?)",
+ "reflected_sentence": "The identity involving Current keeps its shape, with the partners combined in its expression unnamed.",
+ "shape": "keeps",
+ "rule_reason": "The identity keeps its shape, and neither medium constant nor c carries resistance. There is no stated resistance cost or separation cost to reverse.",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "permittivity ε0",
+  "permeability μ0",
+  "electric field as a whole",
+  "magnetic field as a whole",
+  "wave propagation",
+  "free space as a medium"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "Idle and Reflected are co-creating partners. Current does not supply the missing partners.",
+ "conflicts": "none",
+ "sense": 1,
+ "confidence": 7,
+ "closing": "The identity rule decides keeps, but the medium constants prevent a complete reflection. The literal 1 and square root preserve the required formula syntax only; assigning their numerical meaning to Current would violate the prohibition on nonphysical quantities. The propagation language cannot be smuggled into the reflected sentence.",
+ "knew_tsr": false
+}

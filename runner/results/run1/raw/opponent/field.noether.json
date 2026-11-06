@@ -1,0 +1,8 @@
+{
+ "id": "field.noether",
+ "alternative_shape": "null",
+ "rule_compliant": false,
+ "argument": "This is an identity backed by conservation laws, both of which the rule says keep their shape; energy, momentum and charge are all fixed in advance as non-resistance quantities. No cost caused by resistance and no separation made by distance appears, so no rule-compliant turn exists.",
+ "reflected_sentence": "",
+ "knew_tsr": false
+}

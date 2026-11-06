@@ -1,0 +1,29 @@
+{
+ "id": "statmech.equipartition",
+ "physical": "⟨E⟩ = ½ × k × T per degree of freedom: in thermal equilibrium every quadratic degree of freedom carries an average energy of half k times the temperature.",
+ "reflected_formula": "⟨E⟩ = [½: a number, does not cross] × [Boltzmann constant k: no partner] × [temperature T: no partner] per [degree of freedom: no partner]",
+ "reflected_sentence": "The relationship keeps: the average E on each independent way of holding it is a number times a fixed constant times the mean kinetic energy per such way, and only E has a frozen partner.",
+ "shape": "keeps",
+ "rule_reason": "identity; energy, temperature, Boltzmann constant and degrees of freedom are all fixed as not carrying resistance, so zero resistance-costs and the shape keeps",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "temperature T",
+  "Boltzmann constant k",
+  "degrees of freedom",
+  "½",
+  "thermal equilibrium",
+  "quadratic",
+  "average"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "The one E is shared, so E crosses. What it is shared out over, and what sets its share, have no partners. The nonphysical side receives a statement that E is divided equally among things it cannot name.",
+ "conflicts": "none",
+ "sense": 1,
+ "confidence": 7,
+ "closing": "The rule decided on its own: identity, keeps. There was no ambiguity in the shape, only emptiness in the vocabulary; temperature and degrees of freedom have no partners and ½ is a number.",
+ "knew_tsr": false
+}

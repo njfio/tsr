@@ -1,0 +1,16 @@
+id: waves.doppler
+domain: waves_optics
+title: "Doppler effect (waves in a medium)"
+statement: "A receiver moving toward a source, or a source moving toward a receiver, measures a higher frequency than the one emitted; moving apart, a lower one."
+formula: "f' = f × (v + v_r) ÷ (v − v_s)"
+form: equation
+variables:
+  - {name: emitted frequency f, quantity: frequency (physical)}
+  - {name: wave speed v, quantity: wave speed}
+  - {name: receiver speed v_r, quantity: velocity}
+  - {name: source speed v_s, quantity: velocity}
+costs: []
+standard_sources: ["Doppler 1842; French, Vibrations and Waves, ch. 7"]
+book_status: unreflected
+review: pending
+notes: "Relative motion, no resistance, no separation required (the shift depends on velocities, not on how far apart): keeps."

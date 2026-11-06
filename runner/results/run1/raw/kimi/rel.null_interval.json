@@ -1,0 +1,25 @@
+{
+ "id": "rel.null_interval",
+ "physical": "Null interval — Along a light ray the space-time interval is zero: no proper time passes for light, and its energy depends on who measures it. Formula: ds² = 0",
+ "reflected_formula": "(Vibration-Expansion)² = 0",
+ "reflected_sentence": "In Vibrational Reality, where Current moves, Vibration-Expansion is nothing: Expansion does not pass for Current, and what E shows depends on who meets it.",
+ "shape": "keeps",
+ "rule_reason": "An identity keeps its shape; the null interval is a definition of light's path, not a cost or a separation.",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "light ray",
+  "proper time",
+  "observer"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "The identity keeps its shape. Space-time reflects to Vibration-Expansion; c is Current. The vanishing of the interval becomes the vanishing of Vibration-Expansion along Current's path.",
+ "conflicts": "none",
+ "sense": 5,
+ "confidence": 6,
+ "closing": "The rule decided on its own: an identity with no costs keeps shape. The reflection is coherent within the frozen vocabulary.",
+ "knew_tsr": false
+}

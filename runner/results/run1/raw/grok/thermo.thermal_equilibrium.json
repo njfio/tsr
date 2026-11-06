@@ -1,0 +1,24 @@
+{
+ "id": "thermo.thermal_equilibrium",
+ "physical": "Two bodies in thermal contact exchange heat from the hotter to the colder until they reach a common temperature.",
+ "reflected_formula": "",
+ "reflected_sentence": "The relation keeps: two bodies pass an unmatched transit from the hotter condition to the colder until the condition is shared.",
+ "shape": "keeps",
+ "rule_reason": "Equation with no formula and an empty cost block. Temperature and heat do not carry resistance. No separation. Zero such costs, so the relationship keeps.",
+ "rule_trace": [
+  "none"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "temperature",
+  "heat"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "The relation keeps. No frozen word names the transit or the condition. It does not become Culmination, receptivity, or the gap.",
+ "conflicts": "none",
+ "sense": 1,
+ "confidence": 6,
+ "closing": "The rule decided on its own. The cost block is empty, neither variable carries resistance, and no separation is recorded, so the relation keeps. I did not invent a cost for the one-way transit. The empty formula stays empty. Temperature and heat have no partners.",
+ "knew_tsr": false
+}

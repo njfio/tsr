@@ -1,0 +1,24 @@
+{
+ "id": "info.data_processing_inequality",
+ "physical": "Processing cannot increase information: if Z depends on X only through Y, then the information Z carries about X is at most what Y carries.",
+ "reflected_formula": "",
+ "reflected_sentence": "What a later reading carries about a source stays at most what an earlier reading carries, and handling cannot increase it.",
+ "shape": "keeps",
+ "rule_reason": "Inequality with an empty cost block; mutual information does not carry resistance, so the ceiling is not a resistance-caused limit, and the count of such costs is zero.",
+ "rule_trace": [
+  "none"
+ ],
+ "forced": false,
+ "unmapped_terms": [
+  "mutual information",
+  "information"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "The ceiling keeps. The gap does not enter, and receptivity does not turn the ceiling into a floor. No frozen word names the measure.",
+ "conflicts": "none",
+ "sense": 2,
+ "confidence": 5,
+ "closing": "Judgment call on a narrow point. Zero recorded costs keep a relation, and mutual information is listed as not carrying resistance, so I kept it. The ambiguity is that an inequality is a ceiling, and a ceiling can be misread as the rule's turning limit; the rule turns only a limit caused by resistance, which this is not. No term has a frozen partner, so the formula has no word-map image.",
+ "knew_tsr": false
+}

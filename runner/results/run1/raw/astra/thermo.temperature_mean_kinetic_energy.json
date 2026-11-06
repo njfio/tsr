@@ -1,0 +1,28 @@
+{
+ "id": "thermo.temperature_mean_kinetic_energy",
+ "physical": "In an ideal gas the average translational kinetic energy per molecule is three halves of k times the temperature: temperature measures mean molecular kinetic energy.",
+ "reflected_formula": "½ × Movement × ⟨(rise per Expansion)²⟩ = 3/2 × ? × ?",
+ "reflected_sentence": "The identity connecting Movement and rise per Expansion to how warm it is keeps its relationship.",
+ "shape": "keeps",
+ "rule_reason": "The underlying shape keeps because this is an identity with no listed cost; the occurrence of mass is insufficient to reverse it.",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "temperature",
+  "Boltzmann constant",
+  "ideal gas",
+  "molecule",
+  "mean molecular kinetic energy",
+  "statistical averaging"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "No complete reflection is available. Missing partners prevent a nonphysical interpretation.",
+ "conflicts": "none",
+ "sense": 1,
+ "confidence": 7,
+ "closing": "The identity decides keeps without a judgment call. Mass and the supplied velocity quantity map to Movement and rise per Expansion, but temperature and k do not. The numerical coefficients and averaging brackets preserve formal syntax only; treating them as measured nonphysical quantities would violate the prompt.",
+ "knew_tsr": false
+}

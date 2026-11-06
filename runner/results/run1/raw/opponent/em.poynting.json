@@ -1,0 +1,8 @@
+{
+ "id": "em.poynting",
+ "alternative_shape": null,
+ "rule_compliant": false,
+ "argument": "The Poynting vector is fixed as not carrying resistance (an energy flux), and the Idle and Reflected partners and the medium constant do not carry resistance either; no cost or separation is named, so a turn-around would invent one.",
+ "reflected_sentence": "",
+ "knew_tsr": false
+}

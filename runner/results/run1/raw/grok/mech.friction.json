@@ -1,0 +1,25 @@
+{
+ "id": "mech.friction",
+ "physical": "Resistance between two surfaces sliding past each other: the frictional force rises with the coefficient of friction and the normal force, and turns motion into heat.",
+ "reflected_formula": "",
+ "reflected_sentence": "The reading turns around: resonance is easier with alignment, where sliding had been harder against a roughness and a pressing load.",
+ "shape": "turns around",
+ "rule_reason": "One resistance-cost in the block, rising with the coefficient of friction; odd count, so the reading turns around.",
+ "rule_trace": [
+  "resistance-cost"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "coefficient of friction",
+  "normal force",
+  "heat"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "The named partner is resonance, and one cost in the block turns the reading: harder becomes easier with alignment. Frequency is not written into a product, because the pressing load and the roughness have no partner. Culmination is not used.",
+ "conflicts": "none",
+ "sense": 4,
+ "confidence": 7,
+ "closing": "One listed cost rises with the coefficient of friction, an odd count, so the reading turns and the product is not rewritten. friction's table partner is resonance. The coefficient and the normal force have no partners, so both force symbols were not sent to Frequency. Heat was not mapped to Culmination. No new word was introduced.",
+ "knew_tsr": false
+}

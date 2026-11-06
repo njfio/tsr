@@ -1,0 +1,35 @@
+{
+ "id": "mech.friction",
+ "physical": "Resistance between two surfaces sliding past each other: the frictional force rises with the coefficient of friction and the normal force, and turns motion into heat.",
+ "reflected_formula": "Frequency = resonance × Frequency",
+ "reflected_sentence": "Where two surfaces meet in resonance, keeping going becomes easier rather than harder as receptivity and alignment rise, with Frequency rising with resonance.",
+ "shape": "turns around",
+ "rule_reason": "1 resistance cost: keeping the surfaces moving past each other gets harder with coefficient of friction",
+ "rule_trace": [
+  "resistance-cost"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "coefficient of friction",
+  "normal force"
+ ],
+ "new_words": [],
+ "monotone_claims": [
+  {
+   "rises": "Frequency",
+   "with": "resonance",
+   "sign": 1
+  },
+  {
+   "rises": "resonance",
+   "with": "alignment",
+   "sign": 1
+  }
+ ],
+ "interpretation": "Friction reflects to resonance and force to Frequency, and the single resistance cost turns around so that what opposed motion on the physical side becomes easier with receptivity and alignment. Coefficient of friction and normal force do not have separate partners in the frozen vocabulary and are listed in unmapped_terms.",
+ "conflicts": "none",
+ "sense": 4,
+ "confidence": 7,
+ "closing": "The turnaround is clearly forced by the single resistance cost on coefficient of friction, while coefficient of friction and normal force go into unmapped_terms.",
+ "knew_tsr": false
+}

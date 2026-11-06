@@ -1,0 +1,8 @@
+{
+ "id": "rel.velocity_addition",
+ "alternative_shape": "null",
+ "rule_compliant": false,
+ "argument": "The never-exceeds-c limit is fixed in advance as the limit, not an opposition: a limit caused by resistance would turn around, but this one is caused by the composition identity itself, which keeps its shape, and velocities carry no resistance. No rule-compliant turn exists.",
+ "reflected_sentence": "",
+ "knew_tsr": false
+}

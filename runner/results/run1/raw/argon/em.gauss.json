@@ -1,0 +1,26 @@
+{
+ "id": "em.gauss",
+ "physical": "The electric flux through any closed surface equals the enclosed charge divided by the permittivity of free space. (Φ_E = Q ÷ ε0)",
+ "reflected_formula": "Idle_flux = Q ÷ ε0",
+ "reflected_sentence": "The total Idle outflow through a closed surface equals the enclosed source strength divided by the medium constant.",
+ "shape": "keeps",
+ "rule_reason": "Identity form with zero resistance or separation costs keeps its shape.",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "electric flux Φ_E",
+  "enclosed charge Q",
+  "permittivity ε0",
+  "closed surface"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "Idle reflects electric in this identity, which keeps its shape because neither charge nor flux nor permittivity carries resistance or separation.",
+ "conflicts": "none",
+ "sense": 2,
+ "confidence": 7,
+ "closing": "The rule unambiguously says an identity with no resistance or distance costs keeps its shape, while flux, charge, and permittivity go into unmapped_terms.",
+ "knew_tsr": false
+}

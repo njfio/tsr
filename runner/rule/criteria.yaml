@@ -1,0 +1,167 @@
+# Rule closure: every judgment call written as a criterion (spec section 5.3).
+# Each criterion is a hypothesis. Every run reports which criteria version it used.
+# A criterion that cannot be stated without breaking a book ruling is logged as an
+# open joint (see open_joints below), never patched around.
+version: 1
+baseline:
+  id: C0
+  name: "Ch 16 parity"
+  text: >
+    A record's reading turns around iff its statement contains an odd number of
+    resistance-caused costs or limits, where a cost is counted as the book counts
+    it: a difficulty that rises with a resistance-carrying quantity, or a
+    separation made by distance. Otherwise it keeps its shape.
+  source: "tests/tsr_formal.py wording_ch16; Ch 16: 'One is an equivalence. The other is a cost that rises with resistance.'"
+
+criteria:
+  - id: C1
+    joint: "identity vs cost when mass appears in both"
+    text: >
+      A record is classified by what its statement asserts, not by what its
+      formula contains. If the statement is an equivalence (form in
+      {definition, identity, conservation, symmetry}) it is an identity and
+      keeps, even with mass in it. If the statement asserts a difficulty or a
+      limit (a cost block is present) it is a cost claim and goes to C0.
+      A relation that is both (kinetic energy) has two records, one per
+      statement, linked by derived_from; both hold, at different levels. The
+      reflected formula of a cost record is never rewritten: it is the word-map
+      image of the physical formula, and only its reading turns.
+    source: "Author's ruling, October 2026 (tsr.wtf/answers, 'Kinetic energy, work, and force'); deep-read.md 3.3"
+    closes: "tests/README.md open question 1 and 4"
+    mechanical_form: "is_identity := form in IDENTITY_FORMS; cost := cost blocks present. A record with both is rejected by the validator and must be split."
+
+  - id: C2
+    joint: "does what curves count as energy (row 11, gravity)"
+    text: >
+      Open. Both readings are encoded. Reading A: curvature is a source relation
+      (mass tells space-time how to curve), not a difficulty, so no cost block
+      and the record keeps. Reading B: the well is a cost of leaving, rising with
+      mass, so one cost and the record turns. Any record whose primary reading or
+      alternate differs between A and B is flagged depends_on: gravity_call and
+      cannot be forced.
+    source: "Ch 16 gravity call (open); tests/tsr_formal.py row 11 source note"
+    mechanical_form: "depends_on contains 'gravity_call' -> forced = false"
+    status: open
+
+  - id: C3
+    joint: "which quantities carry resistance"
+    text: >
+      Criterion R1 in vocab/resistance_lexicon.yaml, stated once and
+      domain-independently: a quantity carries resistance iff physics defines it
+      as opposition to a change of state or a flow (clause a) or it is such a
+      quantity redistributed by geometry or count alone (clause b). A quantity
+      that merely rises with mass does not carry resistance; that dependence is
+      counted at the relation level in the cost block. Charge: no. Temperature:
+      no. Entropy: no. Quantities R1 cannot decide are marked undetermined and
+      force a JUDGMENT flag.
+    source: "spec 5.3.3; Ch 2 'mass is resistance to a change in motion'"
+    mechanical_form: "lexicon lookup on cost.rises_with; any undetermined -> JUDGMENT"
+
+  - id: C4
+    joint: "which sense of a word"
+    text: >
+      Vocabulary is frozen to vocab/frozen.yaml. A generator may not introduce a
+      word or a sense that is not there. Rows with new_words or new_sense are
+      recorded as 'no partner' and cannot be forced.
+    source: "spec 5.3.4; extension-test-prompt.md ground rules"
+    mechanical_form: "vocab.check_words(reflected_formula, reflected_sentence) must return no NEW tokens"
+
+  - id: C5
+    joint: "units don't cross"
+    text: >
+      A reflected formula containing a numeral (other than the book's own
+      squared Current, C^2), a unit or dimension word, or a magnitude word is
+      invalid.
+    source: "Ch 16: 'Units don't cross the mirror, only relationships do.'"
+    mechanical_form: "vocab.lint_formula(reflected_formula) returns no errors"
+
+  - id: C6
+    joint: "contested standard forms"
+    text: >
+      When physics states a relation in more than one standard form (Newton's
+      second law as a definition of force or as a law), every form is run. If
+      the forms disagree on shape, the record is not forced and the
+      disagreement is logged as an open joint 'form_call'. No form is chosen
+      because it reflects well.
+    source: "spec section 2 (non-goals) and 4 (alternate_statements)"
+    mechanical_form: "decide(primary) != decide(alternate) for any alternate -> forced = false"
+
+identity_forms: [definition, identity, conservation, symmetry]
+cost_forms: [equation, inequality, limit, statistical]
+
+# Joints that could not be closed by a criterion. These are findings.
+open_joints:
+  - id: rest_energy_call
+    criterion: C1
+    affects: [rel.row07_mass_energy_equivalence, rel.energy_momentum_relation]
+    note: >
+      Surfaced by run1 Layer B/C. Row 7 (E = C²M) read as the rest-energy row (Ch 17:
+      "Rest energy is the reflection of C²M") is consistent with the reflected
+      energy-momentum relation; read as the total-energy row for any Movement it
+      collides with it for nonzero momentum. The book states the first in prose
+      and never restricts the equation. Author's call; recorded, not resolved.
+  - id: cost_count_call
+    criterion: C0
+    affects: [all cost records]
+    note: >
+      Surfaced by run1 opponent. Odd-cost parity does not force a row unless the
+      number of costs is fixed by the record's cost block; the opponent split
+      friction's single cost into two parity-balanced costs and flipped the book's
+      own ruling. The rule text does not say how costs are counted.
+  - id: gravity_call
+    criterion: C2
+    affects: [rel.row11_mass_energy_warps_spacetime, rel.row12_wells_and_lensing]
+    note: "The book marks it open. Both readings reproduce the book's 'keep' only under reading A."
+  - id: form_call
+    criterion: C6
+    affects: [mech.newtons_second_law]
+    note: >
+      F = ma reproduces the book's 'keep' only as a definition. Read as a law
+      with a cost ('more mass needs more force for the same acceleration') the
+      procedure turns it. The book rules it a definition (Ch 2), so the ruling
+      is reproduced; the alternate is recorded, not resolved.
+  - id: heat_capacity_resistance
+    criterion: C3
+    affects: [thermodynamics]
+    note: "R1 does not decide whether heat capacity (thermal inertia) carries resistance."
+  - id: refractive_index_resistance
+    criterion: C3
+    affects: [waves_optics]
+    note: "R1 does not decide whether a medium's index is resistance; Ch 16 diffraction reading suggests yes, the definition says ratio."
+  - id: barrier_resistance
+    criterion: C3
+    affects: [quantum]
+    note: "R1 does not decide whether a potential barrier is resistance."
+  - id: higgs_coupling_resistance
+    criterion: C3
+    affects: [field_theory]
+    note: "R1 does not decide whether what sets a mass carries resistance the way the mass does."
+  - id: string_tension_resistance
+    criterion: C3
+    affects: [field_theory]
+    note: "R1 does not decide whether the color flux tube's tension is resistance."
+
+  - id: separation_call
+    criterion: C0
+    affects: [em.coulomb, mech.newton_gravitation, field.asymptotic_freedom, waves.diffraction]
+    note: >
+      The book's two separation rulings (row 2, interference) turn because distance splits something
+      that would otherwise be shared. Whether a dependence on separation with no named difficulty
+      (an inverse-square falloff; a coupling that grows with distance; an aperture) counts as 'a
+      separation made by distance' is not stated. Both readings are encoded as primary + alternate;
+      such rows are not forced.
+  - id: reverse_cost
+    criterion: C0
+    affects: [mech.terminal_velocity, quantum.bound_state_quantization, field.yukawa_range]
+    note: >
+      The rule speaks of a cost that rises with resistance. A difficulty that FALLS with a
+      resistance-carrying quantity (terminal speed rises with mass; confinement energy falls with
+      mass; a force's range falls with the mediator's mass) is not covered by either clause. Such
+      cost blocks carry falls_with and force a JUDGMENT flag.
+
+# Rulings whose content the spec references but the repo and site do not publish.
+pending_author_rulings:
+  - id: mech.escape_velocity
+    note: "Spec cites an October 2026 ruling; tsr.wtf/test says only 'may not have a reflection at all'. Enter the ruling in the record's ruling block."
+  - id: mech.centripetal_force
+    note: "Spec cites an October 2026 ruling; not published. Enter in the record's ruling block."

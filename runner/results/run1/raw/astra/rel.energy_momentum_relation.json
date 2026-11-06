@@ -1,0 +1,25 @@
+{
+ "id": "rel.energy_momentum_relation",
+ "physical": "A body's energy squared equals its momentum times c squared plus its rest energy squared; for a massless particle the energy is momentum times c.",
+ "reflected_formula": "E² = (momentum × Current)² + (Movement M × Current²)²",
+ "reflected_sentence": "E squared equals momentum times Current squared plus Movement M times Current squared squared.",
+ "shape": "keeps",
+ "rule_reason": "An identity keeps despite containing mass; no resistance cost or separation is listed.",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "body",
+  "particle",
+  "massless particle"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "E. momentum × Current; Movement M × Current².",
+ "conflicts": "none",
+ "sense": 2,
+ "confidence": 7,
+ "closing": "The identity determines keeps and its algebraic terms all have partners, although the physical objects in the prose do not. The formula preserves the supplied sum and products; it does not replace the Present's product with a sum. Exponents here record formal relationship structure, not numerical nonphysical quantities. The prompt supplies no nonquantitative meaning for adding the squared terms, so a complete coherent interpretation is not established.",
+ "knew_tsr": false
+}

@@ -1,0 +1,18 @@
+id: thermo.temperature_mean_kinetic_energy
+domain: thermodynamics
+title: "Temperature as mean kinetic energy"
+statement: "In an ideal gas the average translational kinetic energy per molecule is three halves of k times the temperature: temperature measures mean molecular kinetic energy."
+formula: "½ × m × ⟨v²⟩ = 3/2 × k × T"
+form: identity
+variables:
+  - {name: molecular mass m, quantity: mass m}
+  - {name: mean square speed, quantity: velocity}
+  - {name: temperature T, quantity: temperature}
+  - {name: Boltzmann constant k, quantity: Boltzmann constant}
+costs: []
+derived_from: [mech.kinetic_energy_definition]
+derivation: "kinetic theory average of ½mv² over the Maxwell-Boltzmann distribution"
+standard_sources: ["Reif, Statistical Physics, ch. 7"]
+book_status: unreflected
+review: pending
+notes: "Mass is in it and it keeps: an equivalence (C1). The generators will have no partner for temperature; the row is shape-only."

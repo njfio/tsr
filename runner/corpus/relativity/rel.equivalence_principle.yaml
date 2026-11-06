@@ -1,0 +1,13 @@
+id: rel.equivalence_principle
+domain: relativity
+title: "Equivalence principle"
+statement: "Gravitational mass equals inertial mass, so a freely falling observer feels no gravity: locally, free fall is indistinguishable from the absence of gravitation."
+form: identity
+variables:
+  - {name: mass m, quantity: mass m}
+  - {name: gravitational field g, quantity: gravitational field g}
+costs: []
+standard_sources: ["Einstein 1907; Eötvös 1889; MICROSCOPE 2022"]
+book_status: reflected
+review: pending
+notes: "The book's falling man (Ch 8): the most aligned with gravity anyone can be feels nothing but ease. An equivalence with mass in it: keeps (C1)."

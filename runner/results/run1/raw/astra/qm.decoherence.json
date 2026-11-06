@@ -1,0 +1,31 @@
+{
+ "id": "qm.decoherence",
+ "physical": "Interaction with an environment spreads a system's phase relations into degrees of freedom no one can recover, suppressing interference; two branches of a superposition lose coherence faster the more strongly they couple to the environment and the farther apart in position they are.",
+ "reflected_formula": "",
+ "reflected_sentence": "With receptivity, keeping what was together becomes easier rather than harder.",
+ "shape": "turns around",
+ "rule_reason": "The single coherence cost explicitly includes separation made by distance, so the reading turns around. Environment coupling is explicitly not resistance and does not add another qualifying cost.",
+ "rule_trace": [
+  "separation"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "decoherence rate Γ",
+  "environment coupling Λ",
+  "branch separation Δx",
+  "system",
+  "phase relations",
+  "degrees of freedom",
+  "interference",
+  "superposition",
+  "coherence"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "",
+ "conflicts": "none",
+ "sense": 1,
+ "confidence": 7,
+ "closing": "The supplied separation feature forces turns around. Calling coupling resistance would contradict the fixed assignments, and calling decoherence Culmination would invent a mapping. The missing partners prevent a frozen formula or interpretation, so those fields are empty.",
+ "knew_tsr": false
+}

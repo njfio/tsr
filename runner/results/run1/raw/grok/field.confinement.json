@@ -1,0 +1,28 @@
+{
+ "id": "field.confinement",
+ "physical": "The force between two quarks does not weaken with separation; the energy stored in the color flux tube grows linearly with distance until it is enough to make a new quark-antiquark pair, so no quark is ever found free.",
+ "reflected_formula": "",
+ "reflected_sentence": "What cannot be finished turns so that it eases with receptivity, and alignment already holds what was withheld.",
+ "shape": "turns around",
+ "rule_reason": "One cost entry, qualified by separation made by distance: pulling the pair apart cannot be finished. An odd count turns the reading. String tension is undetermined and sits in that same entry's rises_with; it was not counted as a second cost, and it was not judged to carry resistance.",
+ "rule_trace": [
+  "separation"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "potential energy V",
+  "string tension σ",
+  "separation r",
+  "quarks",
+  "color flux tube",
+  "quark-antiquark pair"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "Receptivity eases the gap. Frequency eases with receptivity. Alignment already holds what was withheld.",
+ "conflicts": "none",
+ "sense": 2,
+ "confidence": 5,
+ "closing": "The rule decides the turn from the single given cost: separation made by distance is true, so the count is odd either way. String tension is undetermined as a resistance carrier, but it is inside that same one cost, not a second cost, so judging it would not change the parity; I did not judge it. Force's partner is Frequency, and the turned reading is that what did not weaken eases with receptivity; I did not rewrite V = σ × r, and V, σ, and r have no frozen partners, so there is no formula image. Missing partners do not change the turn.",
+ "knew_tsr": false
+}

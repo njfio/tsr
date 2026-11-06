@@ -1,0 +1,25 @@
+{
+ "id": "em.faraday",
+ "physical": "A changing magnetic flux through a loop induces an electromotive force equal to the rate of change of the flux. EMF = dΦ_B ÷ dt",
+ "reflected_formula": "(unmapped) = d(unmapped) ÷ d(Expansion)",
+ "reflected_sentence": "What a change induces stays equal to that change in Expansion, and the equality keeps.",
+ "shape": "keeps",
+ "rule_reason": "The cost block is empty, so the count of costs is even and the relationship keeps. The statement is an equality, which agrees, though the form tag is equation rather than identity.",
+ "rule_trace": [
+  "none"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "voltage",
+  "magnetic flux",
+  "loop"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "Expansion holds the change, and the relationship keeps. Nothing turns.",
+ "conflicts": "none",
+ "sense": 2,
+ "confidence": 6,
+ "closing": "The keeps call is forced by an empty cost block. The form tag is equation, not identity, so I traced none rather than identity; the statement's equal-to agrees with the keep and I did not need it to decide. Magnetic flux and the induced side have no partners. I did not import the opposing sign from the inductance relation. The coordinate's partner is Expansion.",
+ "knew_tsr": false
+}

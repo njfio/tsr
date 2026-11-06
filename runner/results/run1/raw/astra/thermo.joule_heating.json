@@ -1,0 +1,26 @@
+{
+ "id": "thermo.joule_heating",
+ "physical": "A current through a resistance dissipates power as heat in proportion to the resistance and the square of the current.",
+ "reflected_formula": "? = ?² × ?",
+ "reflected_sentence": "Maintaining what flows without losing what warms becomes easier with receptivity.",
+ "shape": "turns around",
+ "rule_reason": "The underlying reading turns around because one loss cost rises with electrical resistance, which explicitly carries resistance.",
+ "rule_trace": [
+  "resistance-cost"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "power",
+  "current (electric)",
+  "electrical resistance",
+  "heat"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "No complete reflection is available. Missing partners prevent a nonphysical interpretation.",
+ "conflicts": "none",
+ "sense": 1,
+ "confidence": 7,
+ "closing": "The single qualifying loss cost decides reversal, not an algebraic inversion of the product. Electric maps to Idle, but electric current has no supplied partner and must not be confused with Current, which is assigned to Past and the speed of light. Receptivity is a flipped condition, not a specified new electrical quantity.",
+ "knew_tsr": false
+}

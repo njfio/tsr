@@ -1,0 +1,25 @@
+{
+ "id": "waves.fresnel_partial_reflection",
+ "physical": "At an interface between two media part of the light reflects and part transmits; the reflected fraction grows with the index contrast and the two fractions sum to one.",
+ "reflected_formula": "",
+ "reflected_sentence": "The share that turns back keeps growing with the contrast of the two media, and the two shares still complete the whole.",
+ "shape": "keeps",
+ "rule_reason": "The cost rises with index contrast, which is undetermined and not counted as resistance, and no separation is flagged.",
+ "rule_trace": [
+  "none"
+ ],
+ "forced": false,
+ "unmapped_terms": [
+  "reflected fraction R",
+  "index contrast",
+  "refractive index n"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "The relation keeps. The gap is not decided, and alignment does not flip the share that turns back. Receptivity is not applied, because the contrast was not counted as the gap.",
+ "conflicts": "none",
+ "sense": 2,
+ "confidence": 3,
+ "closing": "Index contrast and refractive index are marked undetermined, and the prompt says R does not decide them. I did not count the cost as resistance-caused, so the relation keeps; that is a judgment, and forced is false. Treating the medium as the gap, as the diffraction note suggests, would turn it around: getting through would get easier with receptivity, and the share that turns back would fall as alignment grows. I did not take that call. Optical reflection is not the table's Reflected.",
+ "knew_tsr": false
+}

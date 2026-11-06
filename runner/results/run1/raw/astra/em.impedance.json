@@ -1,0 +1,30 @@
+{
+ "id": "em.impedance",
+ "physical": "In an alternating-current circuit the ratio of voltage to current is the impedance, whose magnitude combines resistance with the inductive and capacitive reactances. |Z| = √(R² + (X_L − X_C)²)",
+ "reflected_formula": "|?| = √(?² + (? − ?)²)",
+ "reflected_sentence": "The definition keeps its shape, with what is defined and what combines unnamed.",
+ "shape": "keeps",
+ "rule_reason": "A definition keeps its shape even though impedance, electrical resistance and reactance carry resistance. None of those quantities has an individual frozen partner.",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "impedance Z",
+  "electrical resistance R",
+  "inductive reactance X_L",
+  "capacitive reactance X_C",
+  "voltage",
+  "electric current",
+  "alternating-current circuit",
+  "magnitude"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "Receptivity does not supply the missing partners. The gap does not complete the reflection.",
+ "conflicts": "none",
+ "sense": 1,
+ "confidence": 7,
+ "closing": "The definition rule decides keeps; counting three resistance-bearing variables as three costs would be an additional rule not supplied here. The resistant-to-receptive property flip does not define separate replacements for impedance, electrical resistance and reactance. The physical sum is retained formally rather than replaced with a product.",
+ "knew_tsr": false
+}

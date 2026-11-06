@@ -1,0 +1,14 @@
+id: thermo.thermal_equilibrium
+domain: thermodynamics
+title: "Approach to thermal equilibrium"
+statement: "Two bodies in thermal contact exchange heat from the hotter to the colder until they reach a common temperature."
+form: equation
+variables:
+  - {name: temperature T, quantity: temperature}
+  - {name: heat Q, quantity: heat}
+costs: []
+derived_from: [thermo.second_law_clausius]
+standard_sources: ["Fermi, Thermodynamics, ch. 1"]
+book_status: unreflected
+review: pending
+notes: "No resistance in the statement; keeps. Contrast Fourier conduction, where thermal resistance sets how fast."

@@ -1,0 +1,16 @@
+id: rel.energy_momentum_relation
+domain: relativity
+title: "Energy-momentum relation"
+statement: "A body's energy squared equals its momentum times c squared plus its rest energy squared; for a massless particle the energy is momentum times c."
+formula: "E² = (p × c)² + (m × c²)²"
+form: identity
+variables:
+  - {name: energy E, quantity: energy}
+  - {name: momentum p, quantity: momentum}
+  - {name: mass m, quantity: mass m}
+  - {name: speed of light c, quantity: speed of light c}
+costs: []
+standard_sources: ["Einstein 1905; Taylor & Wheeler, ch. 7"]
+book_status: reflected
+review: pending
+notes: "The relation E = mc² comes from (deep read Pass 3). A sum where the book has a product: the generators must not write Culmination of two squares; the formula is the word-map image or nothing."

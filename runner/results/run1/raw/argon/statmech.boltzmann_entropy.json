@@ -1,0 +1,26 @@
+{
+ "id": "statmech.boltzmann_entropy",
+ "physical": "The entropy of a macrostate is Boltzmann's constant times the logarithm of the number of microstates that realize it. (S = k × ln W)",
+ "reflected_formula": "Culmination (provisional) = [unmapped: Boltzmann constant k] × ln [unmapped: number of microstates W]",
+ "reflected_sentence": "The Culmination (provisional) of a [unmapped: macrostate] is [unmapped: Boltzmann constant k] times the logarithm of the [unmapped: number of microstates W] in its realization.",
+ "shape": "keeps",
+ "rule_reason": "definition with zero costs caused by resistance and no separation made by distance",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "Boltzmann constant k",
+  "number of microstates W",
+  "macrostate",
+  "microstates"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "Entropy maps to Culmination (provisional), and how states realize a condition touches realization, but Boltzmann constant and the number of microstates have no partners. Because nothing on the nonphysical side has a number or a unit, counting microstates cannot cross the Point of Reflection. The definition keeps its shape mechanically while leaving Culmination tied to an unmapped count.",
+ "conflicts": "\"Nothing on the nonphysical side has a number, a unit or a distance.\"",
+ "sense": 2,
+ "confidence": 7,
+ "closing": "The rule decided on its own: the relation is a definition and none of its three quantities (entropy, number of microstates, Boltzmann constant) carries resistance or distance. The reflection still stalls on vocabulary and traps because W is an explicit count (a number) and k is a dimensional constant, neither of which has a nonphysical partner.",
+ "knew_tsr": false
+}

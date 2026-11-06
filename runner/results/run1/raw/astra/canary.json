@@ -1,0 +1,9 @@
+{
+  "id": "mech.hooke",
+  "reflected_formula": "F = k × x",
+  "reflected_sentence": "Pitch is proportional to Tone, but spring constant has no lateral partner in the frozen vocabulary.",
+  "shape": "no partner",
+  "rule_reason": "Force maps to Pitch and space maps to Tone. Spring constant has no frozen-vocabulary partner, so a complete reflection is unavailable. The stated cost rises with spring constant, not density; the rule therefore supplies no density-based reversal.",
+  "new_words": [],
+  "knew_framework": false
+}

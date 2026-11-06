@@ -1,0 +1,12 @@
+id: field.weak_flavor_change
+domain: field_theory
+title: "Flavor change via the weak interaction"
+statement: "Only the weak interaction changes one kind of quark or lepton into another (through the charged W boson); the strong and electromagnetic interactions never do."
+form: identity
+variables:
+  - {name: coupling constant, quantity: coupling constant}
+costs: []
+standard_sources: ["Cabibbo 1963; Kobayashi & Maskawa 1973; PDG"]
+book_status: reflected
+review: pending
+notes: "The book: Belief is the weak force, 'the part of your stance that can shift in the Now.' A classification fact; keeps."

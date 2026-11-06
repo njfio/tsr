@@ -1,0 +1,31 @@
+{
+ "id": "em.coulomb",
+ "physical": "Two charges push or pull with a force proportional to the product of the charges and inversely proportional to the square of their separation. F = k × q1 × q2 ÷ r²",
+ "reflected_formula": "Frequency = (unmapped) × (unmapped) × (unmapped) ÷ (unmapped)²",
+ "reflected_sentence": "The Frequency of two sources rises with alignment, and the meeting is already there as the gap closes.",
+ "shape": "turns around",
+ "rule_reason": "A separation made by distance: the meeting is weakened inversely with separation, one such separation, so the relationship turns around.",
+ "rule_trace": [
+  "separation"
+ ],
+ "forced": false,
+ "unmapped_terms": [
+  "charge",
+  "separation",
+  "Coulomb constant"
+ ],
+ "new_words": [],
+ "monotone_claims": [
+  {
+   "rises": "Frequency",
+   "with": "alignment",
+   "sign": 1
+  }
+ ],
+ "interpretation": "Frequency rises with alignment. The gap closes into a meeting that is already there. Receptivity holds that meeting.",
+ "conflicts": "none",
+ "sense": 3,
+ "confidence": 5,
+ "closing": "The primary cost block is empty and the form is equation, so a parity count of recorded costs would keep. The statement is inversely proportional to separation, the separation variable is marked as carrying distance, and an alternate statement tags separation_made_by_distance. I treated that as the rule's separation and called the turn. That is a judgment call, so forced is false. Charge, the constant, and separation have no partners; I described them in plain words and did not invent partners. I did not map the pull to Attraction, which the table reserves for gravitational pull.",
+ "knew_tsr": false
+}

@@ -1,0 +1,18 @@
+id: em.lenz_inductance
+domain: electromagnetism
+title: "Lenz's law and self-inductance"
+statement: "An induced current flows so as to oppose the change that produced it; a coil opposes a change in its own current with a back-EMF proportional to its inductance."
+formula: "EMF = L × dI ÷ dt"
+form: equation
+variables:
+  - {name: back-EMF, quantity: voltage}
+  - {name: inductance L, quantity: inductance}
+  - {name: current I, quantity: current (electric)}
+  - {name: time t, quantity: time}
+costs:
+  - {what_gets_harder: "changing the current", rises_with: [inductance]}
+derived_from: [em.faraday]
+standard_sources: ["Lenz 1834; Purcell, Electricity and Magnetism, ch. 7"]
+book_status: unreflected
+review: pending
+notes: "A reaction that opposes the change that caused it: resistance-shaped (spec). Inductance is clause-(a) resistance under R1, so the row turns."

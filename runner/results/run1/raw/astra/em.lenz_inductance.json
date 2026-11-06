@@ -1,0 +1,27 @@
+{
+ "id": "em.lenz_inductance",
+ "physical": "An induced current flows so as to oppose the change that produced it; a coil opposes a change in its own current with a back-EMF proportional to its inductance. EMF = L × dI ÷ dt",
+ "reflected_formula": "? = ? × d? ÷ dExpansion",
+ "reflected_sentence": "The relationship turns around so that changing what remains unnamed becomes easier with receptivity.",
+ "shape": "turns around",
+ "rule_reason": "One explicit cost, changing current becoming harder with inductance, turns the reading around so the corresponding change would become easier with receptivity. The required partners for that change and its quantities are absent.",
+ "rule_trace": [
+  "resistance-cost"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "back-EMF (voltage)",
+  "inductance L",
+  "electric current I",
+  "coil",
+  "rate of change of current"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "Receptivity does not supply the missing partners. Expansion alone does not complete the reflection.",
+ "conflicts": "none",
+ "sense": 1,
+ "confidence": 7,
+ "closing": "The explicit inductance cost forces a turn, but no complete frozen-vocabulary sentence can express its reflected dependent quantity. I have not changed the formula, mapped electric current to Current, or mapped inductance to an invented kind of receptivity. No supported monotone claim between named frozen partners is available.",
+ "knew_tsr": false
+}

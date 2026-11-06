@@ -1,0 +1,29 @@
+{
+ "id": "mech.collisions_elastic_inelastic",
+ "physical": "Momentum is conserved in every collision; kinetic energy is conserved in an elastic collision and partly converted to internal energy in an inelastic one, the fraction set by the coefficient of restitution.",
+ "reflected_formula": "",
+ "reflected_sentence": "The momentum partner does not supply partners for the collision and energy distinctions.",
+ "shape": "keeps",
+ "rule_reason": "The conservation form keeps its shape, and no resistance-cost or separation is stated.",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "collision",
+  "elastic collision",
+  "inelastic collision",
+  "kinetic energy",
+  "internal energy",
+  "coefficient of restitution",
+  "fraction"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "Momentum. Collection.",
+ "conflicts": "none",
+ "sense": 1,
+ "confidence": 7,
+ "closing": "The rule decides keeps, but supplies no distinction corresponding to elasticity, restitution or the differentiated energies. The legal momentum word is not permission to assign the entity property Momentum to colliding objects. The interpretation fragments make no such assignment, and no numerical fraction crosses the mirror.",
+ "knew_tsr": false
+}

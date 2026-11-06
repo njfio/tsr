@@ -1,0 +1,8 @@
+{
+ "id": "statmech.equipartition",
+ "alternative_shape": null,
+ "rule_compliant": false,
+ "argument": "An identity in thermal equilibrium; energy, temperature, degrees of freedom and the Boltzmann constant are all fixed as not carrying resistance, and the statement names no cost and no separation, so the identity keeps its shape and no alternative exists.",
+ "reflected_sentence": "",
+ "knew_tsr": false
+}

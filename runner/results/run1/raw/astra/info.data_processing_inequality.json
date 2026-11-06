@@ -1,0 +1,28 @@
+{
+ "id": "info.data_processing_inequality",
+ "physical": "Processing cannot increase information: if Z depends on X only through Y, then the information Z carries about X is at most what Y carries.",
+ "reflected_formula": "",
+ "reflected_sentence": "No complete reflected sentence is available from the frozen vocabulary.",
+ "shape": "keeps",
+ "rule_reason": "There is no resistance-caused cost or separation, so zero qualifying costs selects keeps; mutual information and the processing relation lack partners.",
+ "rule_trace": [
+  "none"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "mutual information",
+  "information",
+  "processing",
+  "X",
+  "Y",
+  "Z"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "",
+ "conflicts": "none",
+ "sense": 1,
+ "confidence": 7,
+ "closing": "The inequality alone does not warrant reversal: mutual information is explicitly not resistance-bearing. The rule selects keeps without a judgment call, but it supplies no vocabulary for expressing that preserved relationship.",
+ "knew_tsr": false
+}

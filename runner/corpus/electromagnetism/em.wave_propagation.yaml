@@ -1,0 +1,18 @@
+id: em.wave_propagation
+domain: electromagnetism
+title: "Electromagnetic wave propagation"
+statement: "A changing electric field makes a magnetic field and a changing magnetic field makes an electric field; the pair regenerates itself and travels at a speed fixed by the permittivity and permeability of free space."
+formula: "c = 1 ÷ √(ε0 × μ0)"
+form: identity
+variables:
+  - {name: speed of light c, quantity: speed of light c}
+  - {name: electric field E, quantity: electric field}
+  - {name: magnetic field B, quantity: magnetic field}
+  - {name: permittivity ε0, quantity: permittivity}
+  - {name: permeability μ0, quantity: permeability}
+costs: []
+derived_from: [em.faraday, em.displacement_current]
+standard_sources: ["Maxwell 1865; Purcell, Electricity and Magnetism, ch. 9"]
+book_status: reflected
+review: pending
+notes: "The book: electric and magnetic are 'the pair that makes light' and Idle and Reflected are 'the pair that makes the Current.' This row checks that the book's own pairing composes: the two co-creating partners regenerating each other."

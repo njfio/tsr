@@ -1,0 +1,27 @@
+{
+ "id": "field.yukawa_range",
+ "physical": "A force carried by exchange of a virtual particle has a range of about the reduced Planck constant over the mediator's mass times c: the heavier the mediator, the shorter the reach.",
+ "reflected_formula": "",
+ "reflected_sentence": "No complete reflection has frozen vocabulary partners.",
+ "shape": "turns around",
+ "rule_reason": "The single limit on reach becomes more restrictive with mass, which carries resistance, so its reading turns around; no separate separation cost is listed.",
+ "rule_trace": [
+  "resistance-cost"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "range r",
+  "reduced Planck constant ħ",
+  "virtual particle",
+  "mediator",
+  "particle exchange"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "No partner. No complete reflection.",
+ "conflicts": "none",
+ "sense": 1,
+ "confidence": 7,
+ "closing": "The physical statement makes the cost clear: increasing mass reduces reach, hence makes reaching harder. The falls_with entry describes the available range rather than a rising numerical cost, but the stated resistance limit still decides turns around. Movement M and Current are mapped denominator terms; neither range nor ħ has a partner, and the reciprocal formula must not be inverted to manufacture the changed reading.",
+ "knew_tsr": false
+}

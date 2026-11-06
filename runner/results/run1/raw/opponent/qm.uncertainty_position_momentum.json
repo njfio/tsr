@@ -1,0 +1,8 @@
+{
+ "id": "qm.uncertainty_position_momentum",
+ "alternative_shape": null,
+ "rule_compliant": false,
+ "argument": "The spread of Vibration is an extent flagged as carrying no distance, momentum carries no resistance, and the floor is a constant; nothing in the statement is a cost caused by resistance or a separation made by distance.",
+ "reflected_sentence": "",
+ "knew_tsr": false
+}

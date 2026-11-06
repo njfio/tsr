@@ -1,0 +1,25 @@
+{
+ "id": "qm.decoherence",
+ "physical": "Interaction with an environment spreads a system's phase relations into degrees of freedom no one can recover, suppressing interference; two branches of a superposition lose coherence faster the more strongly they couple to the environment and the farther apart in position they are.",
+ "reflected_formula": "Γ ∝ Λ × (Δx)²",
+ "reflected_sentence": "This turns around: holding two outcomes coherent, which the separation made harder, gets easier with receptivity.",
+ "shape": "turns around",
+ "rule_reason": "one cost with separation_made_by_distance true. Environment coupling does not carry resistance, so the rise with coupling is not a resistance-cost",
+ "rule_trace": [
+  "separation"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "decoherence rate",
+  "environment coupling",
+  "length"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "This turns around. What was harder is easier with receptivity. This is not resonance, not Culmination, and not Frequency.",
+ "conflicts": "none",
+ "sense": 2,
+ "confidence": 6,
+ "closing": "The rule decided. The one cost has separation_made_by_distance true, so the shape turns around. Environment coupling does not carry resistance, so its rise was not a second flip. No variable maps to a frozen word; a rate and an extent do not cross. I did not map the loss of coherence to resonance.",
+ "knew_tsr": false
+}

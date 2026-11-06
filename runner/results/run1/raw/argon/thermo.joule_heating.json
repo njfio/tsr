@@ -1,0 +1,37 @@
+{
+ "id": "thermo.joule_heating",
+ "physical": "A current through a resistance dissipates power as heat in proportion to the resistance and the square of the current.",
+ "reflected_formula": "",
+ "reflected_sentence": "Where a flow through resistance loses energy in proportion to the resistance and the square of the flow, here the flow loses less the more receptive the path, and what was given off is collected.",
+ "shape": "turns around",
+ "rule_reason": "A cost caused by resistance: carrying the current without loss gets harder as electrical resistance rises, and electrical resistance carries resistance; however, power, electric current, and heat are unmapped in the frozen vocabulary.",
+ "rule_trace": [
+  "resistance-cost"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "power P",
+  "current I",
+  "resistance R",
+  "heat"
+ ],
+ "new_words": [],
+ "monotone_claims": [
+  {
+   "rises": "conscious energy",
+   "with": "receptivity",
+   "sign": 1
+  },
+  {
+   "rises": "conscious energy",
+   "with": "alignment",
+   "sign": 1
+  }
+ ],
+ "interpretation": "Resistant becomes receptive, and radiating becomes collecting. What is lost to the gap on the physical side is collected through receptivity and alignment on the nonphysical side. Power, heat, and electric current have no partners in the frozen vocabulary.",
+ "conflicts": "none",
+ "sense": 2,
+ "confidence": 7,
+ "closing": "The rule decided the turnaround on its own because electrical resistance is fixed as carrying resistance and there is one resistance cost. However, 'Current' in the frozen vocabulary is the partner of 'speed of light c' and 'Past', not 'current (electric)', and power and heat also lack partners.",
+ "knew_tsr": false
+}

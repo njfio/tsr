@@ -1,0 +1,8 @@
+{
+ "id": "waves.doppler",
+ "alternative_shape": null,
+ "rule_compliant": false,
+ "argument": "The statement records no cost (costs is empty), no variable carries resistance or distance, and the effect depends only on relative motion, a symmetry, which keeps its shape. No resistance-caused cost or distance-made separation is actually present, so no rule-compliant 'turns around' reading exists.",
+ "reflected_sentence": "",
+ "knew_tsr": false
+}

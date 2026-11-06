@@ -1,0 +1,26 @@
+{
+ "id": "em.displacement_current",
+ "physical": "A changing electric field acts as a source of magnetic field just as a current does, which closes the symmetry between the two fields and makes electromagnetic waves possible. ∇ × B = μ0 × J + μ0 × ε0 × dE ÷ dt",
+ "reflected_formula": "turn of Reflected = μ0 × J + μ0 × ε0 × dIdle ÷ dExpansion",
+ "reflected_sentence": "A changing Idle makes a Reflected just as a flow does, and the partnership between them keeps its shape across the mirror.",
+ "shape": "keeps",
+ "rule_reason": "A symmetry between the two sides of the pair, no cost or limit caused by resistance listed, so it keeps its shape.",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "permeability μ0",
+  "permittivity ε0",
+  "current J",
+  "curl of a field"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "Idle and Reflected are co-creating partners and stay so. What makes the one makes the other. Nothing here was made harder.",
+ "conflicts": "none",
+ "sense": 3,
+ "confidence": 7,
+ "closing": "The rule decided: the form is explicit symmetry and no costs are listed, so it keeps. The only judgment was lexical - mapping electric to Idle and magnetic to Reflected follows the table directly, but the curl, the constants, and current have no partner, so the reflected formula leans on symbols.",
+ "knew_tsr": false
+}

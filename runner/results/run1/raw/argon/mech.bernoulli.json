@@ -1,0 +1,26 @@
+{
+ "id": "mech.bernoulli",
+ "physical": "Along a streamline of steady, inviscid, incompressible flow, pressure plus kinetic energy per volume plus gravitational energy per volume is constant.",
+ "reflected_formula": "",
+ "reflected_sentence": "Along a steady flow, Frequency per area plus Desire times rise per Expansion squared plus Desire times Attraction times Vibration is constant.",
+ "shape": "keeps",
+ "rule_reason": "conservation law with 0 costs",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "pressure",
+  "height",
+  "kinetic energy",
+  "gravitational field g"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "This conservation law has no resistance cost in its statement, so its shape keeps. Because pressure and height lack partners in the frozen vocabulary and the formula adds terms as a sum, those physical terms remain unmapped.",
+ "conflicts": "No sums where the book has products.",
+ "sense": 1,
+ "confidence": 7,
+ "closing": "The conservation form has zero costs, which cleanly triggers identity and keeps its shape, with the missing vocabulary mappings recorded in unmapped_terms.",
+ "knew_tsr": false
+}

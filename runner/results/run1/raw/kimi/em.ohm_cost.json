@@ -1,0 +1,31 @@
+{
+ "id": "em.ohm_cost",
+ "physical": "For a given voltage, the current that flows falls as the resistance rises. I = V ÷ R",
+ "reflected_formula": "I = V ÷ R",
+ "reflected_sentence": "For a given push, the flow rises as receptivity rises; what used to choke it, receptivity now opens.",
+ "shape": "turns around",
+ "rule_reason": "A cost that rises with resistance: current for a given voltage gets harder as electrical resistance rises, one such cost, odd count, so it turns around.",
+ "rule_trace": [
+  "resistance-cost"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "voltage V",
+  "electrical resistance R",
+  "current I"
+ ],
+ "new_words": [],
+ "monotone_claims": [
+  {
+   "rises": "receptivity",
+   "with": "alignment",
+   "sign": 1
+  }
+ ],
+ "interpretation": "The harder becomes easier. Flow grows as receptivity grows, the push held same. The formula divides; the reading turns.",
+ "conflicts": "none",
+ "sense": 5,
+ "confidence": 7,
+ "closing": "The rule decided on its own: one explicit cost rising with electrical resistance per the fixed table, so a single turn-around with the formula untouched. This is the cleanest turned case in the batch; the mirror sentence reads coherently with no new words.",
+ "knew_tsr": false
+}

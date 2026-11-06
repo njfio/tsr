@@ -1,0 +1,15 @@
+id: mech.moment_of_inertia
+domain: mechanics
+title: "Moment of inertia"
+statement: "A body's moment of inertia about an axis is the sum of each mass element times the square of its distance from the axis."
+formula: "I = Σ m × r²"
+form: definition
+variables:
+  - {name: moment of inertia I, quantity: moment of inertia}
+  - {name: mass element m, quantity: mass m}
+  - {name: distance from axis r, quantity: radius}
+costs: []
+standard_sources: ["Kleppner & Kolenkow, ch. 7"]
+book_status: unreflected
+review: pending
+notes: "Mass redistributed by geometry: carries resistance under R1 clause (b)."

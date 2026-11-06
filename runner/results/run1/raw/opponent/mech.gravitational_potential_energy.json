@@ -1,0 +1,8 @@
+{
+ "id": "mech.gravitational_potential_energy",
+ "alternative_shape": null,
+ "rule_compliant": false,
+ "argument": "The statement is explicitly the cost reading: the lift costs energy in proportion to mass m, which carries resistance — a single resistance-caused cost, an odd count, so the mirror must turn it around. The formula U = m × g × h only measures that cost; it is not an equivalence, conservation law or symmetry that could keep the shape, so no rule-compliant keeps reading exists.",
+ "reflected_sentence": "",
+ "knew_tsr": false
+}

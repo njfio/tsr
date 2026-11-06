@@ -1,0 +1,24 @@
+{
+ "id": "rel.null_interval",
+ "physical": "Along a light ray the space-time interval is zero: no proper time passes for light, and its energy depends on who measures it.",
+ "reflected_formula": "Vibration-Expansion² = 0",
+ "reflected_sentence": "The Vibration-Expansion relationship keeps, with no Expansion for the Current, and E keeps dependent on who meets it.",
+ "shape": "keeps",
+ "rule_reason": "An identity with no cost or separation. Identities keep. The zero interval is the identity, not a resistance-cost.",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "light ray",
+  "measurer"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "Vibration-Expansion keeps with the Current. Expansion does not accrue for the Current. E keeps, with no partner for who meets it.",
+ "conflicts": "none",
+ "sense": 2,
+ "confidence": 5,
+ "closing": "The rule decides the keep: identity, no costs. Space-Time maps to Vibration-Expansion, time to Expansion, light's c to the Current, energy to E. I did not rewrite the interval squared equals 0. The number 0 does not cross, so the formula image fails TSR's own ban on numbers even though the substitution is mechanical; that is why sense is low. Along a ray would be travel, so I did not say it. Who measures it has no partner. No shape judgment. Mapping the interval onto Vibration-Expansion rather than leaving the interval unmapped is the one soft step; the continuum row is the only partner the formula has.",
+ "knew_tsr": false
+}

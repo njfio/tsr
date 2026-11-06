@@ -1,0 +1,36 @@
+{
+ "id": "qm.bound_state_quantization",
+ "physical": "A particle confined to a region has only discrete allowed energies; the spacing grows as the region shrinks and falls as the particle's mass rises. E_n = n² × π² × ħ² ÷ (2 × m × L²)",
+ "reflected_formula": "E = n² × π² × ħ² ÷ (2 × Movement M × Vibration²)",
+ "reflected_sentence": "An E held in Vibration is not limited to a few allowed E; the E that seemed unreachable between the levels are already there, and the holding eases rather than tightens as Vibration narrows and Movement M grows.",
+ "shape": "turns around",
+ "rule_reason": "one cost (which energies are allowed) marked as a separation made by distance; it also falls with mass m. One cost entry is odd, so it turns.",
+ "rule_trace": [
+  "separation",
+  "resistance-cost"
+ ],
+ "forced": false,
+ "unmapped_terms": [
+  "quantum number",
+  "Planck constant"
+ ],
+ "new_words": [],
+ "monotone_claims": [
+  {
+   "rises": "E",
+   "with": "Movement M",
+   "sign": -1
+  },
+  {
+   "rises": "E",
+   "with": "Vibration",
+   "sign": -1
+  }
+ ],
+ "interpretation": "The formula keeps its terms: E falls as Movement M rises and falls as Vibration widens. The reading turns: what the physical side calls a limited set of allowed E is limitless on the nonphysical side. The gap between levels is the only trace of what held them apart.",
+ "conflicts": "\"Nothing on the nonphysical side has a number\" is contradicted by n², π² and 2 remaining in the reflected formula; without them the formula is rewritten, which is forbidden.",
+ "sense": 2,
+ "confidence": 3,
+ "closing": "Needed two judgment calls. First, the cost falls with mass m rather than rising, so it is not literally 'a cost that rises with resistance'; the separation flag is what actually fired. Second, the cost entry contains both a resistance term and a separation flag, and the parity rule counts 'costs', not triggers: one entry gives odd and turns, two triggers would give even and keep. I counted entries. The reflected formula also cannot shed its numbers without being rewritten, so the units-don't-cross rule is violated either way.",
+ "knew_tsr": false
+}

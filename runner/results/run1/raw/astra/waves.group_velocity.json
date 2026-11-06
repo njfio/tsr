@@ -1,0 +1,28 @@
+{
+ "id": "waves.group_velocity",
+ "physical": "The envelope of a wave packet travels at the group velocity, the derivative of angular frequency with respect to wavenumber; it is the speed at which energy and signal travel.",
+ "reflected_formula": "no partner",
+ "reflected_sentence": "The defining relationship for the combined form keeps its shape.",
+ "shape": "keeps",
+ "rule_reason": "A definition keeps its shape. Group velocity, physical angular frequency and wavenumber are nonresistant and lack frozen partners, preventing the image of v_g = dω ÷ dk.",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "group velocity v_g",
+  "angular frequency ω",
+  "wavenumber k",
+  "wave packet",
+  "envelope",
+  "signal"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "No partner. No partner.",
+ "conflicts": "none",
+ "sense": 1,
+ "confidence": 7,
+ "closing": "The definition forces keeps; identity is the available trace label for the shape-preserving definition branch. Physical energy has the partner conscious energy, but that partial mapping cannot complete the definition. Treating angular frequency as Frequency or group velocity as Current would introduce mappings the prompt does not authorize. The no-partner markers report this failure.",
+ "knew_tsr": false
+}

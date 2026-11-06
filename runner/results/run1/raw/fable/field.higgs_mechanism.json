@@ -1,0 +1,35 @@
+{
+ "id": "field.higgs_mechanism",
+ "physical": "Higgs mechanism: The masses of the W and Z bosons and of the fundamental fermions arise from their coupling to the Higgs field's nonzero vacuum value; a particle's mass is its coupling strength times that value. Formula: m_f = y_f × v ÷ √2",
+ "reflected_formula": "M = y_f × v ÷ √2 (y_f, the coupling, and v, the field's resting value, have no partner; √2 is a number and does not cross)",
+ "reflected_sentence": "Movement M arises from how strongly a thing couples to a field whose resting value is not nothing; a thing's Movement M is that coupling strength times that value, and the shape keeps.",
+ "shape": "keeps",
+ "rule_reason": "equation with no cost named; zero costs → keeps. The Higgs coupling is UNDETERMINED as a resistance carrier, but with no cost named its status does not enter the count.",
+ "rule_trace": [
+  "none"
+ ],
+ "forced": false,
+ "unmapped_terms": [
+  "Yukawa coupling y_f",
+  "Higgs field",
+  "vacuum expectation value v",
+  "W boson",
+  "Z boson",
+  "fermion",
+  "√2 (a number)"
+ ],
+ "new_words": [],
+ "monotone_claims": [
+  {
+   "rises": "Movement M",
+   "with": "Frequency",
+   "sign": 1
+  }
+ ],
+ "interpretation": "Movement M is the one frozen word that fits. The relation says where Movement M comes from: a coupling to a field that is never nothing. The table gives Movement M as mass's symbol and says nothing about its origin, so this is a claim the table cannot check.",
+ "conflicts": "none",
+ "sense": 1,
+ "confidence": 4,
+ "closing": "The shape was decided by the empty cost block, but the prompt marks the Yukawa coupling UNDETERMINED as a resistance carrier and asks for that to be flagged, so I set forced false: had a cost been named that rose with the coupling, the verdict could have turned. The monotone claim uses Frequency only as the nearest frozen word to 'coupling strength', which is a stretch I note rather than endorse. Everything but mass is unmapped.",
+ "knew_tsr": false
+}

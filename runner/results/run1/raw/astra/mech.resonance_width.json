@@ -1,0 +1,29 @@
+{
+ "id": "mech.resonance_width",
+ "physical": "A driven oscillator responds most strongly near its natural frequency; the width of that response grows with the damping, and the peak height falls with it (Q = ω0/Δω).",
+ "reflected_formula": "∅ = ∅ ÷ Movement M",
+ "reflected_sentence": "Receptivity turns the stated cost reading, but neither physical frequency nor damping has a partner.",
+ "shape": "turns around",
+ "rule_reason": "One cost of maintaining a sharp strong response rises with damping coefficient, which carries resistance, so the reading turns around.",
+ "rule_trace": [
+  "resistance-cost"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "frequency (physical)",
+  "resonance width",
+  "damping coefficient",
+  "driven oscillator",
+  "natural frequency",
+  "peak height",
+  "Q"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "Movement M. Receptivity.",
+ "conflicts": "none",
+ "sense": 1,
+ "confidence": 7,
+ "closing": "The rule independently decides turns around. It does not license mapping physical frequency to Frequency, mapping a response peak to strong frequency, or mapping damping to resonance merely because friction has that partner. The quotient remains intact but cannot be completed from the frozen vocabulary.",
+ "knew_tsr": false
+}

@@ -1,0 +1,25 @@
+{
+ "id": "mech.damping",
+ "physical": "A damping force opposing velocity drains an oscillation: the amplitude decays exponentially, faster the larger the damping coefficient. A(t) = A0 × exp(−b t ÷ 2m)",
+ "reflected_formula": "A(Expansion) = A0 × exp(−b × Expansion ÷ (2 × Movement M)) (A, A0 and b have no partner)",
+ "reflected_sentence": "The reach of a swing falls away through Expansion, faster the larger the drain on it is against Movement M, and the reading turns: where the physical swing dies faster the more it is damped, on the nonphysical side it is kept more fully through Expansion the more receptive the entity is, and nothing drains it.",
+ "shape": "turns around",
+ "rule_reason": "One cost caused by resistance: the oscillation surviving gets harder as the damping coefficient rises, and damping carries resistance. One cost, odd, turns.",
+ "rule_trace": [
+  "resistance-cost"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "damping coefficient",
+  "amplitude",
+  "oscillation"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "Expansion and Movement M cross; the reach of the swing and the drain on it do not. The kept formula has something unpaired shrinking as Expansion grows, which reads against the grain of a side where limited becomes limitless. The turned reading restores the grain: with receptivity, what swings is kept through Expansion instead of draining.",
+ "conflicts": "none",
+ "sense": 2,
+ "confidence": 6,
+ "closing": "The rule decided on its own: one cost rising with the damping coefficient, odd, turns. The formula's time becomes Expansion, and the forbidden word time had to be kept off the nonphysical side even in describing the decay, which made the kept formula awkward to say: an exponential fall through Expansion. The legal word culminate (what two vibrations do instead of cancel) would have made a tidy turned reading, but it is defined for two vibrations and this relation has one oscillator, so I did not use it. Amplitude and damping have no partner; the 2 and the exponential are numbers and functions that should not cross but were kept with the formula.",
+ "knew_tsr": false
+}

@@ -1,0 +1,29 @@
+{
+ "id": "qm.zero_point_energy",
+ "physical": "The lowest energy of a bound system is not zero; an oscillator's ground state keeps half a quantum of energy.",
+ "reflected_formula": "",
+ "reflected_sentence": "The relationship concerning conscious energy that remains keeps its shape.",
+ "shape": "keeps",
+ "rule_reason": "The listed quantities carry no resistance and no qualifying cost is supplied, so the limit keeps. Physical energy has a partner, but physical angular frequency, the Planck constant and the ground-state structure do not.",
+ "rule_trace": [
+  "none"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "bound system",
+  "oscillator",
+  "ground state",
+  "ground-state energy E0",
+  "quantum",
+  "angular frequency ω",
+  "Planck constant ħ"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "",
+ "conflicts": "none",
+ "sense": 1,
+ "confidence": 7,
+ "closing": "The zero-cost rule decides keeps; neither the title nor the bound-system wording licenses adding an unlisted separation cost. Physical frequency cannot be mapped to TSR Frequency, whose table partner is force. A literal half-quantum claim would import quantities, and the missing partners prevent a formula or frozen-vocabulary interpretation.",
+ "knew_tsr": false
+}

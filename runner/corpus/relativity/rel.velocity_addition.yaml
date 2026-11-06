@@ -1,0 +1,16 @@
+id: rel.velocity_addition
+domain: relativity
+title: "Relativistic velocity addition"
+statement: "Velocities compose so that the result never exceeds c: the combined speed is the sum divided by one plus the product over c squared."
+formula: "u' = (u + v) ÷ (1 + u × v ÷ c²)"
+form: identity
+variables:
+  - {name: velocity u, quantity: velocity}
+  - {name: velocity v, quantity: velocity}
+  - {name: speed of light c, quantity: speed of light c}
+costs: []
+derived_from: [rel.row10_spacetime_one_continuum]
+standard_sources: ["Einstein 1905; Taylor & Wheeler, ch. 3"]
+book_status: unreflected
+review: pending
+notes: "A composition law (identity) with no mass in it: keeps. Its limit, that nothing composes past c, is row 9's limit without the mass, and row 9 turned because mass is in it. Layer B should test the two sentences together."

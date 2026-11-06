@@ -1,0 +1,28 @@
+{
+ "id": "qm.spin",
+ "physical": "Particles carry an intrinsic angular momentum quantized in multiples of the reduced Planck constant, not a rotation in space.",
+ "reflected_formula": "",
+ "reflected_sentence": "The definition keeps its shape: momentum that belongs to the thing itself is still momentum, and what is not a turning in space is not a turning in Vibration.",
+ "shape": "keeps",
+ "rule_reason": "definition",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "spin",
+  "Planck constant",
+  "angular",
+  "quantized multiples",
+  "particle",
+  "rotation"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "Momentum maps to momentum and space maps to Vibration. The quantization is in numbers, so it cannot cross, and only the bare definition is left.",
+ "conflicts": "\"Nothing on the nonphysical side has a number\" (half-integer and integer multiples)",
+ "sense": 2,
+ "confidence": 7,
+ "closing": "Decided by the rule: a definition keeps its shape. The only mapped words are momentum and space. 'Angular' and the half-integer counting have no partner.",
+ "knew_tsr": false
+}

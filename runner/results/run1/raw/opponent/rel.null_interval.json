@@ -1,0 +1,8 @@
+{
+ "id": "rel.null_interval",
+ "alternative_shape": "null",
+ "rule_compliant": false,
+ "argument": "The interval is zero: no distance is present to make a separation, and the vanishing identity keeps its shape; the speed of light is fixed in advance as the limit, not an opposition, so nothing in the statement is caused by resistance. No rule-compliant turn exists.",
+ "reflected_sentence": "",
+ "knew_tsr": false
+}

@@ -1,0 +1,28 @@
+{
+ "id": "em.mutual_induction",
+ "physical": "A changing current in one coil induces an EMF in a nearby coil in proportion to their mutual inductance, which depends on their geometry and how much flux they share. EMF_2 = M × dI_1 ÷ dt",
+ "reflected_formula": "(unmapped) = (unmapped) × d(unmapped) ÷ d(Expansion)",
+ "reflected_sentence": "What the other flow's change induces stays proportional to receptivity, and the proportion keeps.",
+ "shape": "keeps",
+ "rule_reason": "The form is an equation and the cost block is empty, so the count of costs is even and the relationship keeps. Mutual inductance carries resistance, which flips the condition, but no cost is recorded as rising with it.",
+ "rule_trace": [
+  "none"
+ ],
+ "forced": false,
+ "unmapped_terms": [
+  "voltage",
+  "inductance",
+  "current",
+  "coil",
+  "magnetic flux",
+  "geometry"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "Receptivity keeps in the proportion. Expansion holds the change. Nothing turns.",
+ "conflicts": "none",
+ "sense": 3,
+ "confidence": 5,
+ "closing": "The keeps call follows an empty cost block and an even count. I did not promote nearby or geometry into a separation cost, because no variable is marked as carrying distance and the cost block does not tag a separation. That refusal is the judgment call, so forced is false. Inductance carries resistance, so the condition flips to receptivity, but the proportion does not turn.",
+ "knew_tsr": false
+}

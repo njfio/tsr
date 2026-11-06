@@ -1,0 +1,25 @@
+{
+ "id": "thermo.third_law",
+ "physical": "As temperature approaches absolute zero the entropy approaches a constant, and absolute zero cannot be reached in a finite number of steps.",
+ "reflected_formula": "lim ?→0 Culmination = Culmination₀",
+ "reflected_sentence": "Culmination approaches what is unchanged as the coldest is approached, and what cannot be reached remains unreached.",
+ "shape": "keeps",
+ "rule_reason": "The underlying shape keeps because the listed limit rises with temperature, which explicitly does not carry resistance, and there is no separation made by distance.",
+ "rule_trace": [
+  "none"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "temperature",
+  "absolute zero",
+  "finite number of steps"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "No complete reflection is available. Missing partners prevent a nonphysical interpretation.",
+ "conflicts": "none",
+ "sense": 1,
+ "confidence": 7,
+ "closing": "The fixed classification decides keeps; unattainability does not by itself mean already there. The supplied rises-with labeling and the verbal approach toward zero need not be repaired to make this call, since temperature is non-resistant either way. The provisional entropy mapping cannot supply a temperature partner or a nonphysical numerical zero.",
+ "knew_tsr": false
+}

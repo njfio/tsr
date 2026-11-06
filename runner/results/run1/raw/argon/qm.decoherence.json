@@ -1,0 +1,29 @@
+{
+ "id": "qm.decoherence",
+ "physical": "Two branches lose coherence faster the more strongly they couple to the environment and the farther apart in position they are. Γ ∝ Λ × (Δx)²",
+ "reflected_formula": "[decoherence rate: no partner] ∝ [environment coupling: no partner] × ([length: no partner])²",
+ "reflected_sentence": "What being apart made harder turns around: two vibrations stay able to culminate together more easily, not less, the more Vibration they span.",
+ "shape": "turns around",
+ "rule_reason": "one separation made by distance (branch separation Δx); environment coupling does not carry resistance, so it adds no resistance cost; one turn, so it turns around",
+ "rule_trace": [
+  "separation"
+ ],
+ "forced": false,
+ "unmapped_terms": [
+  "decoherence rate",
+  "environment coupling",
+  "length",
+  "coherence",
+  "branch",
+  "superposition",
+  "phase relations"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "The separation made by distance turns around, so what physics loses with separation is kept with receptivity. But the rate and the coupling have no partner, and a rate is not Frequency, so the reflected relation has nothing to stand on.",
+ "conflicts": "\"No distance, time, location, travel or quantities on the nonphysical side\" (the reflected sentence needs some partner for the branch separation, and 'Vibration lies between them' comes close to a distance)",
+ "sense": 2,
+ "confidence": 4,
+ "closing": "The trace came out cleanly as a single separation, so the relation turns around. But the reflected sentence is hard to write without bringing distance back in, and every term except length's separation role is unmapped. Whether 'separation' fires when the term is only squared in a rate is my judgment call. The terms say coupling is not resistance, although it acts like opposition.",
+ "knew_tsr": false
+}

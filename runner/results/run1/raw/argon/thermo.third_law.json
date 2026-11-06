@@ -1,0 +1,25 @@
+{
+ "id": "thermo.third_law",
+ "physical": "As temperature approaches absolute zero the entropy approaches a constant, and absolute zero cannot be reached in a finite number of steps.",
+ "reflected_formula": "",
+ "reflected_sentence": "As thermal intensity approaches its lowest point, Culmination (provisional) approaches a constant and the lowest point stays unreached; the cost is not caused by resistance, so it keeps its shape.",
+ "shape": "keeps",
+ "rule_reason": "The cost rises with temperature, which does not carry resistance and has no separation made by distance, so the cost is not caused by resistance; moreover, temperature is unmapped in the frozen vocabulary.",
+ "rule_trace": [
+  "none"
+ ],
+ "forced": false,
+ "unmapped_terms": [
+  "temperature T",
+  "absolute zero",
+  "finite number of steps"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "Entropy reflects as Culmination (provisional), and nothing on the nonphysical side has a number. Because temperature does not carry resistance and has no partner in the frozen vocabulary, the limit cannot be formed in frozen words.",
+ "conflicts": "none",
+ "sense": 1,
+ "confidence": 5,
+ "closing": "There is a slight ambiguity in the rule: the general principle says 'unreachable becomes already there' and 'limited becomes limitless', which suggests an unattainability limit should turn around, but the deciding clause specifies 'a cost or a limit caused by resistance turns around', and temperature is explicitly fixed as not carrying resistance. Either way, temperature has no partner in the frozen vocabulary. Under the amendment I call it keeps, following the deciding clause.",
+ "knew_tsr": false
+}

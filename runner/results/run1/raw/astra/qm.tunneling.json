@@ -1,0 +1,30 @@
+{
+ "id": "qm.tunneling",
+ "physical": "A particle can cross a barrier higher than its energy; the chance falls exponentially with the barrier's width, with the square root of its height above the particle's energy, and with the square root of the particle's mass.",
+ "reflected_formula": "",
+ "reflected_sentence": "With receptivity, what was harder to overcome becomes easier.",
+ "shape": "turns around",
+ "rule_reason": "The single listed crossing cost rises with mass, which carries resistance, so the reading turns around. Barrier height is explicitly UNDETERMINED; it does not create a second listed cost. Barrier width is explicitly nonresistant and has no supplied separation flag.",
+ "rule_trace": [
+  "resistance-cost"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "particle",
+  "barrier",
+  "transmission T",
+  "probability",
+  "barrier height V",
+  "barrier width d",
+  "Planck constant ħ",
+  "κ"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "",
+ "conflicts": "none",
+ "sense": 1,
+ "confidence": 7,
+ "closing": "The mass-dependent crossing cost forces turns around regardless of how barrier height is classified. Barrier height itself remains UNDETERMINED and would require a judgment call; I leave it unresolved rather than silently classifying it. Counting two rising variables as two costs would differ from the supplied single-cost representation. Missing partners prevent a complete mapped formula and interpretation.",
+ "knew_tsr": false
+}

@@ -1,0 +1,31 @@
+{
+ "id": "em.ohm_cost",
+ "physical": "For a given voltage, the current that flows falls as the resistance rises. (I = V ÷ R)",
+ "reflected_formula": "I = V ÷ receptivity",
+ "reflected_sentence": "For a given conscious energy per source, the flow that moves rises as receptivity and alignment rise (and as the gap narrows).",
+ "shape": "turns around",
+ "rule_reason": "One cost caused by electrical resistance ('current flowing for a given voltage' gets harder as electrical resistance rises) turns the reading around so flow rises with receptivity.",
+ "rule_trace": [
+  "resistance-cost"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "voltage V",
+  "current I (electric)",
+  "electrical resistance R (as noun; only resistant -> receptive and the gap are provided)"
+ ],
+ "new_words": [],
+ "monotone_claims": [
+  {
+   "rises": "alignment",
+   "with": "receptivity",
+   "sign": 1
+  }
+ ],
+ "interpretation": "When the condition flips from resistant to receptive, what got harder with more opposition now gets easier with more receptivity. As the gap shrinks and alignment rises, the flow for a given source rises.",
+ "conflicts": "Trap: 'No resistance on the nonphysical side; it appears only as the gap.' Also 'Current' in the vocabulary maps Past and speed of light c, not electric current I.",
+ "sense": 5,
+ "confidence": 7,
+ "closing": "The turn-around is 100% forced by the single resistance cost in the record. Voltage and electric current lack partners in the frozen vocabulary and are listed in unmapped_terms.",
+ "knew_tsr": false
+}

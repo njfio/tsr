@@ -1,0 +1,29 @@
+{
+ "id": "thermo.carnot_limit",
+ "physical": "No heat engine between two reservoirs can be more efficient than a reversible one; the limit is one minus the ratio of the cold to the hot temperature.",
+ "reflected_formula": "? ≤ 1 − ? ÷ ?",
+ "reflected_sentence": "The upper bound on what can be obtained keeps its relationship to how warm the two are.",
+ "shape": "keeps",
+ "rule_reason": "The underlying shape keeps: the listed cost rises with temperature, which explicitly does not carry resistance, and there is no separation made by distance.",
+ "rule_trace": [
+  "none"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "efficiency",
+  "cold temperature",
+  "hot temperature",
+  "heat engine",
+  "reservoir",
+  "reversible",
+  "work"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "No complete reflection is available. Missing partners prevent a nonphysical interpretation.",
+ "conflicts": "none",
+ "sense": 1,
+ "confidence": 7,
+ "closing": "The rule decides keeps without a judgment call; a limit alone does not trigger reversal. Here and throughout, ? marks a missing vocabulary partner, not a new nonphysical term, and any retained numerical constants are formula syntax rather than asserted nonphysical quantities. The refusal sentences are reporting commentary, not invented reflections.",
+ "knew_tsr": false
+}

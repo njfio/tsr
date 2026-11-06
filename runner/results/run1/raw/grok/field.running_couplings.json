@@ -1,0 +1,26 @@
+{
+ "id": "field.running_couplings",
+ "physical": "The strengths of the interactions depend on the energy scale at which they are probed: the electromagnetic coupling grows with energy, the strong coupling falls.",
+ "reflected_formula": "",
+ "reflected_sentence": "Strengths that grow or fall with E keep that dependence, with no frozen partner for either strength.",
+ "shape": "keeps",
+ "rule_reason": "No cost or separation is given. Running coupling does not carry resistance, and energy does not carry resistance. Zero such costs, so the dependence keeps. It is not an identity; it is a scale dependence with no difficulty named.",
+ "rule_trace": [
+  "none"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "running coupling",
+  "electromagnetic coupling",
+  "strong coupling",
+  "interaction"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "E keeps. Idle is not claimed. The relationship does not turn.",
+ "conflicts": "none",
+ "sense": 2,
+ "confidence": 6,
+ "closing": "The rule decides the keep: the cost list is empty, so nothing turns. I did not import a separation from another statement; this record names no difficulty. Electromagnetic was not split into Idle and Reflected, because the term is a coupling strength and coupling has no row. Energy's partner is E, which is shared, but a strength rising with E cannot be written as a monotone claim without a frozen word for the strength. No judgment call. Missing partners do not change the keep.",
+ "knew_tsr": false
+}

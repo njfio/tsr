@@ -1,0 +1,29 @@
+{
+ "id": "waves.standing_waves",
+ "physical": "Standing waves — Between two fixed ends only wavelengths that fit a whole number of half-waves into the length persist; the ends force nodes and the allowed modes are set by the separation. λ_n = 2 × L ÷ n (limit)",
+ "reflected_formula": "(no frozen image: the wavelength, the length between the held ends and the mode count have no partners; the factor 2 and the count are numbers and do not cross; the shape 'extent = extent ÷ count' is kept and read turned)",
+ "reflected_sentence": "No separation holds vibrations apart, so every vibration persists; nothing picks which ones fit.",
+ "shape": "turns around",
+ "rule_reason": "Form: limit. The one cost ('which vibrations can persist: only those that fit between the two ends') rises with no resistance-carrying quantity but is flagged as a separation made by distance (the length between the ends carries distance). One separation = odd = turns around: what the separation forbids is already there.",
+ "rule_trace": [
+  "separation"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "wavelength λ",
+  "length L between the ends",
+  "mode number n",
+  "fixed ends",
+  "nodes",
+  "modes",
+  "half-waves"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "Where the physical side has a separation that picks which vibrations persist, the nonphysical side has none. Every vibration persists. No count and no extent cross, so the picking rule itself has no image.",
+ "conflicts": "none",
+ "sense": 2,
+ "confidence": 5,
+ "closing": "The rule decided on its own: the separation flag is set, one separation, turns around. No judgment on shape. What is ambiguous is whether the turned reading says anything: 'every vibration persists' is what the property flip 'limited → limitless' would say without any rule, and the actual content of the relation (nodes, modes, whole numbers, the length) has no partner and cannot cross. The record's own cost text uses the word 'vibrations' for the physical waves, which I carried across; that is the only reason the sentence has a subject.",
+ "knew_tsr": false
+}

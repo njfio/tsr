@@ -1,0 +1,26 @@
+{
+ "id": "em.ohm_definition",
+ "physical": "Resistance is the ratio of the voltage across a conductor to the current through it. R = V ÷ I",
+ "reflected_formula": "? = ? ÷ ?",
+ "reflected_sentence": "The definition keeps its shape, with what equals what divided by what unnamed.",
+ "shape": "keeps",
+ "rule_reason": "The explicit definition keeps its shape despite the resistance-bearing quantity. Voltage, current and electrical resistance have no individual frozen partners.",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "electrical resistance R",
+  "voltage V",
+  "electric current I",
+  "conductor"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "Receptivity does not supply the missing partners. The gap does not complete the reflection.",
+ "conflicts": "none",
+ "sense": 1,
+ "confidence": 7,
+ "closing": "The definition rule decides keeps without borrowing the cost reading of Ohm's law. A property flip does not define a quantitative counterpart of R, and neither Current nor Vibrance is licensed by the formula's letter names. The retained quotient therefore remains only an incomplete structural image.",
+ "knew_tsr": false
+}

@@ -1,0 +1,8 @@
+{
+ "id": "thermo.fourier_conduction",
+ "alternative_shape": null,
+ "rule_compliant": false,
+ "argument": "The strongest keeps reading would rest on the parenthetical definition of thermal resistance (thickness over conductivity times area), but the statement's core is a cost caused by thermal resistance, which the fixed table marks as carrying resistance, and the rule turns such a cost around; the embedded definition of the resistance cannot keep the whole relation while the cost it causes turns, so no rule-compliant keeps reading exists.",
+ "reflected_sentence": "",
+ "knew_tsr": false
+}

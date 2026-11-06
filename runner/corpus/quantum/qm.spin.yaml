@@ -1,0 +1,12 @@
+id: qm.spin
+domain: quantum
+title: "Spin"
+statement: "Particles carry an intrinsic angular momentum that is quantized in half-integer or integer multiples of the reduced Planck constant and is not a rotation in space."
+form: definition
+variables:
+  - {name: spin, quantity: spin}
+  - {name: Planck constant ħ, quantity: Planck constant}
+costs: []
+standard_sources: ["Uhlenbeck & Goudsmit 1925; Dirac 1928"]
+book_status: unreflected
+review: pending

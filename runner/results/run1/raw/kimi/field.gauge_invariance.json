@@ -1,0 +1,31 @@
+{
+ "id": "field.gauge_invariance",
+ "physical": "Gauge invariance — Requiring the laws to be unchanged under local phase changes of the matter fields forces the existence of the gauge fields that carry the forces.",
+ "reflected_formula": "",
+ "reflected_sentence": "In Vibrational Reality, the Demand that Desire remain unchanged under every shift of imagination brings Frequency into being.",
+ "shape": "keeps",
+ "rule_reason": "A symmetry keeps its shape: an invariance that forces a structure into existence reflects as a Demand that calls forth Frequency.",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "local phase",
+  "gauge field",
+  "matter field"
+ ],
+ "new_words": [],
+ "monotone_claims": [
+  {
+   "rises": "Frequency",
+   "with": "Desire",
+   "sign": 1
+  }
+ ],
+ "interpretation": "The symmetry keeps its shape because there is no cost and no resistance. Desire stands for the invariance requirement; Frequency is the partner that the requirement calls into existence.",
+ "conflicts": "none",
+ "sense": 4,
+ "confidence": 6,
+ "closing": "The rule decided on its own: symmetry, no costs, keeps shape. The only ambiguity was choosing Demand for the invariance requirement; that is a lexical gap, not a rule gap.",
+ "knew_tsr": false
+}

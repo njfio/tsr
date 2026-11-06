@@ -1,0 +1,30 @@
+{
+ "id": "qm.decoherence",
+ "physical": "Interaction with an environment spreads a system's phase relations into degrees of freedom no one can recover, suppressing interference; two branches of a superposition lose coherence faster the more strongly they couple to the environment and the farther apart in position they are. Γ ∝ Λ × (Δx)²",
+ "reflected_formula": "Γ ∝ Λ × Vibration²",
+ "reflected_sentence": "Two branches of one E that are apart in Vibration are not lost to each other; the more they are joined to what is around them, the more readily they culminate rather than cancel.",
+ "shape": "turns around",
+ "rule_reason": "one cost (keeping two branches coherent) marked as a separation made by distance; environment coupling does not carry resistance, so only the separation fired. One cost is odd, so it turns.",
+ "rule_trace": [
+  "separation"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "decoherence rate",
+  "environment coupling"
+ ],
+ "new_words": [],
+ "monotone_claims": [
+  {
+   "rises": "Vibration",
+   "with": "alignment",
+   "sign": -1
+  }
+ ],
+ "interpretation": "On the physical side the separation in Vibration is what makes the branches fall apart. Turned around, the separation is already closed: the branches culminate. What was a cost of keeping them together becomes something that is simply so.",
+ "conflicts": "none",
+ "sense": 3,
+ "confidence": 5,
+ "closing": "The rule decided on its own: the only trigger was the separation flag, since environment coupling is declared non-resistant. The reflected sentence is the one in this batch where a frozen word (culminate, what two vibrations do instead of cancel) lands on the physical content without stretching. Weaknesses: the rate Γ and the coupling Λ have no partners, so the formula only half crosses, and the monotone claim had to be expressed against alignment because the rate itself is unmapped.",
+ "knew_tsr": false
+}

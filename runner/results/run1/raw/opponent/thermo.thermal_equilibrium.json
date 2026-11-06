@@ -1,0 +1,8 @@
+{
+ "id": "thermo.thermal_equilibrium",
+ "alternative_shape": null,
+ "rule_compliant": false,
+ "argument": "The statement is an evening-out with no cost, and temperature and heat are both fixed as not carrying resistance; the equalizing approach behaves like a symmetry, which keeps its shape, so no rule-compliant turn exists.",
+ "reflected_sentence": "",
+ "knew_tsr": false
+}

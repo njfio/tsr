@@ -1,0 +1,26 @@
+{
+ "id": "thermo.enthalpy",
+ "physical": "Enthalpy is internal energy plus pressure times volume; at constant pressure the heat absorbed equals the change in enthalpy. H = U + P × V",
+ "reflected_formula": "",
+ "reflected_sentence": "The definition keeps its shape: an unnamed fullness is an unnamed inner store plus an unnamed pressing acting on Vibrance.",
+ "shape": "keeps",
+ "rule_reason": "Definition with no costs at all; definitions keep their shape.",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "enthalpy",
+  "internal energy",
+  "pressure",
+  "heat"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "The sum-times structure has one named crossing: volume as Vibrance. Everything else stands on the physical side without a partner and appears in the sentence only as plain description, so no formula image exists.",
+ "conflicts": "none",
+ "sense": 1,
+ "confidence": 7,
+ "closing": "Fully decided by the rule: a cost-free definition keeps. The only ambiguity was whether internal energy might borrow the physical energy to conscious energy row; I read the frozen table literally and said no, so it is unmapped.",
+ "knew_tsr": false
+}

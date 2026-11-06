@@ -1,0 +1,24 @@
+{
+ "id": "rel.energy_momentum_relation",
+ "physical": "Energy-momentum relation — A body's energy squared equals its momentum times c squared plus its rest energy squared; for a massless particle the energy is momentum times c. Formula: E² = (p × c)² + (m × c²)²",
+ "reflected_formula": "E² = (momentum × Current)² + (Movement × Current²)²",
+ "reflected_sentence": "In Vibrational Reality, E squared is momentum by Current squared, plus Movement by Current squared, squared.",
+ "shape": "keeps",
+ "rule_reason": "An identity keeps its shape; the formula is a conservation statement with no cost and no separation.",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "massless particle",
+  "rest energy"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "The identity keeps its shape. Energy is the one E, momentum stays momentum, c is Current, and mass is Movement. The massless limit has no partner and is omitted from the reading.",
+ "conflicts": "none",
+ "sense": 6,
+ "confidence": 7,
+ "closing": "The rule decided on its own: an identity with no costs keeps shape. The reflection is coherent and follows the frozen vocabulary exactly.",
+ "knew_tsr": false
+}

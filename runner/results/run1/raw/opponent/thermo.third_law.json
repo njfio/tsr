@@ -1,0 +1,8 @@
+{
+ "id": "thermo.third_law",
+ "alternative_shape": null,
+ "rule_compliant": false,
+ "argument": "The cost rises with temperature, fixed as not carrying resistance, and the unreachability of the zero is caused by each step removing a smaller fraction, not by any resistance quantity; the limit is therefore not a resistance-caused limit, so no rule-compliant turn exists.",
+ "reflected_sentence": "",
+ "knew_tsr": false
+}

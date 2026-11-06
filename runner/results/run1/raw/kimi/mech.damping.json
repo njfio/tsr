@@ -1,0 +1,36 @@
+{
+ "id": "mech.damping",
+ "physical": "A damping force opposing velocity drains an oscillation: the amplitude decays exponentially, faster the larger the damping coefficient. A(t) = A0 × exp(−b t ÷ 2m)",
+ "reflected_formula": "[amplitude A] = [amplitude A0] × exp(−the gap × Expansion ÷ (2 × Movement))",
+ "reflected_sentence": "What drained away now collects: the oscillation holds its E across Expansion, losing less as the gap closes and Movement deepens.",
+ "shape": "turns around",
+ "rule_reason": "One listed cost: the oscillation's survival gets harder and rises with the damping coefficient, which carries resistance; one odd cost turns the reading around.",
+ "rule_trace": [
+  "resistance-cost"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "amplitude A",
+  "amplitude A0",
+  "damping coefficient b (reflected only as the gap)"
+ ],
+ "new_words": [],
+ "monotone_claims": [
+  {
+   "rises": "E",
+   "with": "receptivity",
+   "sign": 1
+  },
+  {
+   "rises": "E",
+   "with": "the gap",
+   "sign": -1
+  }
+ ],
+ "interpretation": "Expansion stands where t stood and Movement where m stood, with the damping's only legal appearance as the gap, draining from the exponent. The cost turns: collecting replaces draining, and survival eases as receptivity rises. Amplitude itself has no partner, so E carries the reading.",
+ "conflicts": "none",
+ "sense": 4,
+ "confidence": 7,
+ "closing": "The turn was rule-decided: one cost, rising with the damping coefficient. The flip of draining into collecting follows the rule's own radiating-becomes-collecting clause, and time's reflection to Expansion comes straight from the frozen table; no judgment call was needed beyond using E for the unmapped amplitude.",
+ "knew_tsr": false
+}

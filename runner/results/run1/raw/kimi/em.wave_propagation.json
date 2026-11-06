@@ -1,0 +1,25 @@
+{
+ "id": "em.wave_propagation",
+ "physical": "A changing electric field makes a magnetic field and a changing magnetic field makes an electric field; the pair regenerates itself and travels at a speed fixed by the permittivity and permeability of free space. c = 1 ÷ √(ε0 × μ0)",
+ "reflected_formula": "Current = 1 ÷ √(ε0 × μ0)",
+ "reflected_sentence": "A changing Idle makes a Reflected and a changing Reflected makes an Idle; the pair regenerates itself, and the Current is fixed by the medium, an identity.",
+ "shape": "keeps",
+ "rule_reason": "An identity fixing c by the medium constants, with no cost or limit caused by resistance; the fixed table says c is the limit, not an opposition, so it keeps its shape.",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "permittivity ε0",
+  "permeability μ0",
+  "changing field makes field loop"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "Idle and Reflected make each other and unmake nothing. The Current is set by the medium and nothing else. The identity holds on both sides.",
+ "conflicts": "none",
+ "sense": 5,
+ "confidence": 7,
+ "closing": "The rule decided alone: identity, no costs, and the fixed table explicitly keeps c out of resistance. The 'travels' clause cannot cross at all, so the reflected sentence drops it; what remains, the regenerating pair and the fixed Current, sits coherently in the frozen vocabulary, even using the table's own pairing of electric and magnetic.",
+ "knew_tsr": false
+}

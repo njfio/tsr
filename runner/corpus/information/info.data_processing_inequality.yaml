@@ -1,0 +1,13 @@
+id: info.data_processing_inequality
+domain: information
+title: "Data processing inequality"
+statement: "Processing cannot increase information: if Z depends on X only through Y, then the information Z carries about X is at most what Y carries."
+formula: "I(X;Z) ≤ I(X;Y)"
+form: inequality
+variables:
+  - {name: mutual information I, quantity: mutual information}
+costs: []
+standard_sources: ["Cover & Thomas, Elements of Information Theory, ch. 2"]
+book_status: unreflected
+review: pending
+notes: "A limit with no resistance in it: keeps. Its direction (information only decreases along a chain) runs opposite to Culmination's ('more and more gathered into relation, never less'). Whether those two sentences describe a situation differently is a Layer B question, and the book's answer, if any, is in Ch 21 (with distance, spreading looks like entropy)."

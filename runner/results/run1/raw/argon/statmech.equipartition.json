@@ -1,0 +1,26 @@
+{
+ "id": "statmech.equipartition",
+ "physical": "In thermal equilibrium every quadratic degree of freedom carries an average energy of half k times the temperature. (⟨E⟩ = ½ × k × T per degree of freedom)",
+ "reflected_formula": "⟨E⟩ = ½ × [unmapped: Boltzmann constant k] × [unmapped: temperature T] per [unmapped: degree of freedom]",
+ "reflected_sentence": "In [unmapped: thermal equilibrium] every [unmapped: quadratic degree of freedom] holds an average E of half [unmapped: Boltzmann constant k] times [unmapped: temperature T].",
+ "shape": "keeps",
+ "rule_reason": "identity with zero costs caused by resistance and no separation made by distance",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "temperature T",
+  "degrees of freedom",
+  "Boltzmann constant k",
+  "thermal equilibrium"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "Only E has a partner on the nonphysical side, while temperature, Boltzmann constant, and degrees of freedom remain unmapped. Moreover, the factor of one half and the count of degrees of freedom rely on numbers that do not cross the mirror, and E is one shared whole rather than partitioned into numerical shares. The identity keeps its shape by rule, but fails to form a coherent statement in frozen words.",
+ "conflicts": "\"Nothing on the nonphysical side has a number, a unit or a distance.\" and \"E (the one energy / the entity, shared by both sides)\"",
+ "sense": 1,
+ "confidence": 7,
+ "closing": "The rule decided without a judgment call because the relation is an identity with no costs and none of energy, temperature, degrees of freedom, or Boltzmann constant carries resistance or distance. However, with three of the four variables unmapped and a numerical fraction ½ attached to a count of degrees of freedom, the reflected expression has no standalone meaning in TSR's vocabulary.",
+ "knew_tsr": false
+}

@@ -1,0 +1,8 @@
+{
+ "id": "mech.bernoulli",
+ "alternative_shape": null,
+ "rule_compliant": false,
+ "argument": "The statement is a conservation law — the sum is constant along the streamline — and conservation laws keep their shape; no cost gets harder and no separation is made by distance. Density carries resistance but appears only inside the conserved sum, which cannot turn without rewriting the formula.",
+ "reflected_sentence": "",
+ "knew_tsr": false
+}

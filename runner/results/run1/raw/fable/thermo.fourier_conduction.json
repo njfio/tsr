@@ -1,0 +1,29 @@
+{
+ "id": "thermo.fourier_conduction",
+ "physical": "Heat conduction (Fourier) and thermal resistance: The heat flowing through a slab for a given temperature difference falls as the slab's thermal resistance (thickness over conductivity times area) rises. q = ΔT ÷ R_th",
+ "reflected_formula": "[no partner: heat flow q] = [no partner: temperature difference ΔT] ÷ [thermal resistance R_th → the gap]",
+ "reflected_sentence": "The relationship turns around: what gets through, for a given difference, grows as receptivity grows and the gap closes, where the physical reading had it shrink; the flow and the difference themselves have no partners.",
+ "shape": "turns around",
+ "rule_reason": "One cost (heat getting through for a given temperature difference) rises with thermal resistance, which the fixed table says carries resistance. One resistance-cost is an odd number, so the reading turns: what gets harder with more resistance gets easier with more receptivity.",
+ "rule_trace": [
+  "resistance-cost"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "heat (flow q)",
+  "temperature (difference ΔT)",
+  "thermal resistance (no table row; only the flipped condition 'receptivity' and 'the gap' are legal for it)",
+  "slab",
+  "thickness",
+  "conductivity",
+  "area"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "Receptivity lets more through; the gap lets less. What flows, and what drives it, have no partners, so only the direction survives the crossing.",
+ "conflicts": "none",
+ "sense": 2,
+ "confidence": 7,
+ "closing": "The rule decided on its own: thermal resistance is fixed as carrying resistance, the one cost rises with it, so the row turns. The ambiguity is in the words, not the verdict: thermal resistance has no row in the frozen table, so its only legal images are the rule's own flip (receptivity) and 'the gap'; I used those rather than coin anything. The flow and the difference have no partners, so I could not write a monotone claim in frozen words; the turned direction is stated in the sentence only.",
+ "knew_tsr": false
+}

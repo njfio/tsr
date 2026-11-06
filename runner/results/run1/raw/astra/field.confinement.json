@@ -1,0 +1,29 @@
+{
+ "id": "field.confinement",
+ "physical": "The force between two quarks does not weaken with separation; the energy stored in the color flux tube grows linearly with distance until it is enough to make a new quark-antiquark pair, so no quark is ever found free.",
+ "reflected_formula": "",
+ "reflected_sentence": "No complete reflection has frozen vocabulary partners.",
+ "shape": "turns around",
+ "rule_reason": "One listed cost includes a separation made by distance, so it turns around independently of the undetermined resistance status of string tension.",
+ "rule_trace": [
+  "separation"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "potential energy V as a distinct energy form",
+  "string tension σ",
+  "separation r",
+  "quarks",
+  "antiquarks",
+  "color flux tube",
+  "pair creation"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "No partner. No complete reflection.",
+ "conflicts": "none",
+ "sense": 1,
+ "confidence": 7,
+ "closing": "String tension's resistance status is explicitly undetermined and would require a judgment call if needed. It is not needed here: separation already qualifies the single cost, and two possible grounds for that same cost do not make two costs. The rule thus decides the turning reading but cannot supply the missing vocabulary or a complete formula image.",
+ "knew_tsr": false
+}

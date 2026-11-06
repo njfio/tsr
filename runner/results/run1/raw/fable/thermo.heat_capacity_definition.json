@@ -1,0 +1,25 @@
+{
+ "id": "thermo.heat_capacity_definition",
+ "physical": "Heat capacity (the definition): Heat capacity is the heat required per unit rise in temperature. C = Q ÷ ΔT",
+ "reflected_formula": "[heat capacity C: UNDETERMINED, no partner] = [no partner: heat Q] ÷ [no partner: temperature change ΔT]",
+ "reflected_sentence": "The definition keeps its shape: an unnamed capacity equals what is taken in divided by the unnamed change it produces; none of the three quantities has a partner.",
+ "shape": "keeps",
+ "rule_reason": "Definition (an equivalence); no costs listed; keeps its shape regardless of whether heat capacity carries resistance, since the rule turns only costs, not definitions.",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "heat capacity",
+  "heat",
+  "temperature"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "A ratio of two terms with no partners, equal to a third with none. The shape keeps and nothing is said.",
+ "conflicts": "none",
+ "sense": 1,
+ "confidence": 7,
+ "closing": "The rule decided on its own: a definition keeps, and the UNDETERMINED status of heat capacity does not matter because no cost is listed. The reflection is empty of content, which is the honest result for a quantity the frozen vocabulary never names.",
+ "knew_tsr": false
+}

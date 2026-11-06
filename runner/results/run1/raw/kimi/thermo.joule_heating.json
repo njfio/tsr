@@ -1,0 +1,32 @@
+{
+ "id": "thermo.joule_heating",
+ "physical": "A current through a resistance dissipates power as heat in proportion to the resistance and the square of the current. P = I² × R",
+ "reflected_formula": "",
+ "reflected_sentence": "What the gap took from the flow, alignment gives back: as receptivity rises, less conscious energy is lost from the unnamed flow and more of it reaches what it was Out For.",
+ "shape": "turns around",
+ "rule_reason": "One cost and it rises with electrical resistance, which the fixed list says carries resistance (defined as opposition to current); an odd count, so the relation turns around while the formula keeps its terms.",
+ "rule_trace": [
+  "resistance-cost"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "power",
+  "current (electric)",
+  "electrical resistance",
+  "heat"
+ ],
+ "new_words": [],
+ "monotone_claims": [
+  {
+   "rises": "conscious energy kept",
+   "with": "receptivity",
+   "sign": 1
+  }
+ ],
+ "interpretation": "The flipped reading is one of the cleanest in this batch: loss shrinking as receptivity grows is expressible in legal words. The symbols still cannot cross; the electric flow stays unmapped rather than borrowing Current, which belongs to c.",
+ "conflicts": "none",
+ "sense": 3,
+ "confidence": 7,
+ "closing": "The rule decided the turn outright. The only discipline I applied was refusing to map electric current to Current, since the table assigns Current to the speed of light; that refusal is strictness, not a judgment call about shape.",
+ "knew_tsr": false
+}

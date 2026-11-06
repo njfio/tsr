@@ -1,0 +1,17 @@
+id: qm.decoherence
+domain: quantum
+title: "Decoherence"
+statement: "Interaction with an environment spreads a system's phase relations into degrees of freedom no one can recover, suppressing interference; two branches of a superposition lose coherence faster the more strongly they couple to the environment and the farther apart in position they are."
+formula: "Γ ∝ Λ × (Δx)²"
+form: equation
+variables:
+  - {name: decoherence rate Γ, quantity: decoherence rate}
+  - {name: environment coupling Λ, quantity: environment coupling}
+  - {name: branch separation Δx, quantity: length, carries_distance: true}
+costs:
+  - {what_gets_harder: "keeping two branches coherent", rises_with: [environment coupling], separation_made_by_distance: true}
+distance_dependence: true
+standard_sources: ["Zurek 1991; Joos & Zeh 1985; Schlosshauer, Decoherence and the Quantum-to-Classical Transition, ch. 3"]
+book_status: reflected
+review: pending
+notes: "The physics under the book's Culmination reading (Ch 21: 'once two things interact, their states are correlated ... until no one can get them back'). Environment coupling is not resistance under R1; the separation of the branches is a separation made by distance, so the row turns. Reflected reading: without distance, nothing is lost; the correlations gather."

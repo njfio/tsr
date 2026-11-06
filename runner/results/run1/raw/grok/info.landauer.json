@@ -1,0 +1,27 @@
+{
+ "id": "info.landauer",
+ "physical": "Erasing one bit of information dissipates at least k T ln 2 of energy as heat; logically irreversible operations have a thermodynamic cost that rises with temperature.",
+ "reflected_formula": "",
+ "reflected_sentence": "The least E given off when a recorded distinction is cleared stays bound by a constant times how warm it is, and that cost still rises with how warm it is.",
+ "shape": "keeps",
+ "rule_reason": "A cost is recorded, but it rises with temperature, and temperature does not carry resistance; it is not a cost that rises with resistance, so the count of such costs is zero.",
+ "rule_trace": [
+  "none"
+ ],
+ "forced": false,
+ "unmapped_terms": [
+  "temperature",
+  "Boltzmann constant",
+  "heat",
+  "bit",
+  "information"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "E stays E, and the lower bound keeps. The recorded cost rises with a quantity that is not Movement, so receptivity does not flip it and the gap does not enter. Culmination is not this relation.",
+ "conflicts": "none",
+ "sense": 3,
+ "confidence": 5,
+ "closing": "Judgment call. The cost block is non-empty and the statement calls the bound a thermodynamic cost, which looks like the turning case. I did not turn it, because that cost rises with temperature, and temperature was fixed as not carrying resistance. If any recorded cost turned a relation, the shape would be turns around; the rule requires the cost to rise with resistance. Energy stays the shared E. The constant, the warmth, and the number do not cross, so I did not write a partial formula.",
+ "knew_tsr": false
+}

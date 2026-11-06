@@ -1,0 +1,30 @@
+{
+ "id": "field.weak_flavor_change",
+ "physical": "Only the weak interaction changes one kind of quark or lepton into another (through the charged W boson); the strong and electromagnetic interactions never do.",
+ "reflected_formula": "",
+ "reflected_sentence": "No complete reflection has frozen vocabulary partners.",
+ "shape": "keeps",
+ "rule_reason": "The stated identity has no resistance cost and keeps, including its exclusive distinction.",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "weak interaction",
+  "quark",
+  "lepton",
+  "flavor change",
+  "charged W boson",
+  "strong interaction",
+  "electromagnetic interaction",
+  "coupling constant"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "No partner. No complete reflection.",
+ "conflicts": "none",
+ "sense": 1,
+ "confidence": 7,
+ "closing": "The identity rule decides keeps. Weak frequency and strong frequency are legal terms, but the table never pairs them with the corresponding physical interactions. Realization likewise cannot substitute for arbitrary particle conversion; that would invent an additional mapping.",
+ "knew_tsr": false
+}

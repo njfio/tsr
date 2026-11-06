@@ -1,0 +1,24 @@
+{
+ "id": "waves.snell_refraction",
+ "physical": "Crossing into a medium with a different refractive index, a ray bends so that index times the sine of the angle is the same on both sides. n1 × sin θ1 = n2 × sin θ2",
+ "reflected_formula": "n1 × sin θ1 = n2 × sin θ2 (kept as given; n and θ have no frozen partners)",
+ "reflected_sentence": "It keeps its shape: what matches on the two sides of a crossing still matches, since the balance of a slowing factor times a bend measure is an invariance and names no difficulty.",
+ "shape": "keeps",
+ "rule_reason": "An invariance ('the same on both sides') with no cost named; equivalences and conservations keep their shape.",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "refractive index n",
+  "angle θ"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "The invariance crosses whole even though neither n nor θ has a partner. Bending becomes a matching of two bare symbols. No gap appears because no opposition was named.",
+ "conflicts": "none",
+ "sense": 3,
+ "confidence": 6,
+ "closing": "The relation as given names no cost, so even parity keeps it and the UNDETERMINED status of refractive index never had to be settled. Slightly less clean than the pure definitions, because 'crossing into a different medium' flirts with opposition, but the statement names none and strictness says to take it as given.",
+ "knew_tsr": false
+}

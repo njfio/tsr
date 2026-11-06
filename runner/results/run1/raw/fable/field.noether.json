@@ -1,0 +1,28 @@
+{
+ "id": "field.noether",
+ "physical": "Noether's theorem: Every continuous symmetry of the action corresponds to a conserved quantity: time translation to energy, space translation to momentum, rotation to angular momentum, phase to charge.",
+ "reflected_formula": "",
+ "reflected_sentence": "Every continuous symmetry corresponds to something conserved: sameness under Expansion to E, sameness under Vibration to momentum, sameness under turning to turning-momentum, sameness under phase to a source strength; the shape keeps.",
+ "shape": "keeps",
+ "rule_reason": "identity; conservation laws and symmetries keep their shape",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "action",
+  "rotation",
+  "angular momentum",
+  "phase",
+  "charge",
+  "translation (kept as 'sameness under')"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "Where Expansion is the same throughout, E is conserved; where Vibration is the same throughout, momentum is conserved. E is already shared by both sides as the one energy, so the first half says only that the one E is kept. The second half gives momentum, which the table lists as its own partner, a reason to be conserved.",
+ "conflicts": "none",
+ "sense": 3,
+ "confidence": 7,
+ "closing": "The rule decided on its own: an identity keeps. Two of the four pairs cross cleanly (time → Expansion, space → Vibration, energy → E, momentum → momentum); rotation, angular momentum, phase and charge have no partners and are described in plain words. 'Symmetry' and 'conserved' are relationship words that the rule itself uses, so I treated them as crossing with the relationship rather than as new words.",
+ "knew_tsr": false
+}

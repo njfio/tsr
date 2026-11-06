@@ -1,0 +1,30 @@
+{
+ "id": "field.running_couplings",
+ "physical": "Running couplings — The strengths of the interactions depend on the energy scale at which they are probed: the electromagnetic coupling grows with energy, the strong coupling falls.",
+ "reflected_formula": "",
+ "reflected_sentence": "In Vibrational Reality, the strength of each pull shifts with the conscious energy at which it is met: one grows with conscious energy, the other fades.",
+ "shape": "keeps",
+ "rule_reason": "No cost, no resistance, and no separation appears; the running of a coupling with energy is a dependence, not a cost, so it keeps its shape.",
+ "rule_trace": [
+  "none"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "electromagnetic coupling",
+  "strong coupling"
+ ],
+ "new_words": [],
+ "monotone_claims": [
+  {
+   "rises": "strength",
+   "with": "conscious energy",
+   "sign": 1
+  }
+ ],
+ "interpretation": "The dependence keeps its shape. Energy reflects to conscious energy; the couplings have no frozen partner, so only the pattern of growing and falling carries across.",
+ "conflicts": "none",
+ "sense": 4,
+ "confidence": 6,
+ "closing": "The rule decided on its own: no costs, keeps shape. The unmapped couplings limit the reflection to a pattern, not a verdict on the rule.",
+ "knew_tsr": false
+}

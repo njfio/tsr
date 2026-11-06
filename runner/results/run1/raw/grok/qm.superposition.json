@@ -1,0 +1,23 @@
+{
+ "id": "qm.superposition",
+ "physical": "Any linear combination of allowed states is an allowed state; the state space is linear.",
+ "reflected_formula": "",
+ "reflected_sentence": "This identity keeps: any linear combination of allowed states is an allowed state, and the set of states stays linear.",
+ "shape": "keeps",
+ "rule_reason": "identity; empty cost block",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "wavefunction amplitude"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "This keeps. It is not Vibration and not E.",
+ "conflicts": "none",
+ "sense": 2,
+ "confidence": 7,
+ "closing": "The rule decided: identity, empty costs, shape keeps. Amplitude is unmapped. I did not read state space as the table's space, so Vibration does not enter. No judgment call on the shape.",
+ "knew_tsr": false
+}

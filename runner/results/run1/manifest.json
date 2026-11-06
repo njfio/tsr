@@ -1,0 +1,144 @@
+{
+  "run_id": "run1",
+  "batches": {
+    "A": {
+      "records": [
+        "mech.angular_momentum",
+        "mech.bernoulli",
+        "mech.buoyancy",
+        "mech.collisions_elastic_inelastic",
+        "mech.gravitational_potential_energy",
+        "mech.hooke",
+        "mech.moment_of_inertia",
+        "mech.newton_gravitation",
+        "mech.resonance_width",
+        "mech.reynolds_laminar_turbulent",
+        "mech.terminal_velocity",
+        "mech.torque",
+        "mech.damping",
+        "mech.friction"
+      ],
+      "prompt_sha256": "3588c31a74a4b5e99637f6ff145b666ed8e6da7bfdff3c86fa56c6eaf51eae35",
+      "n": 14
+    },
+    "B": {
+      "records": [
+        "thermo.carnot_limit",
+        "thermo.enthalpy",
+        "thermo.first_law",
+        "thermo.fourier_conduction",
+        "thermo.free_energy",
+        "thermo.heat_capacity_cost",
+        "thermo.heat_capacity_definition",
+        "thermo.joule_heating",
+        "thermo.latent_heat_cost",
+        "thermo.latent_heat_definition",
+        "thermo.second_law_clausius",
+        "thermo.temperature_mean_kinetic_energy",
+        "thermo.thermal_equilibrium",
+        "thermo.third_law",
+        "thermo.zeroth_law"
+      ],
+      "prompt_sha256": "94333f2f130eabb5bf26c009c9a78d4cb353ffb9fb5091c9a2aa84f97f3e43c3",
+      "n": 15
+    },
+    "C": {
+      "records": [
+        "info.channel_capacity",
+        "info.data_processing_inequality",
+        "info.landauer",
+        "info.shannon_entropy",
+        "statmech.boltzmann_entropy",
+        "statmech.equipartition",
+        "statmech.ergodicity",
+        "statmech.fluctuation_dissipation",
+        "statmech.maxwell_boltzmann_width",
+        "statmech.phase_transition_critical_point"
+      ],
+      "prompt_sha256": "e4735ce1b5a1b26efd60a03afc92c92bb10316375ca45209bd7adc137450afc3",
+      "n": 10
+    },
+    "D": {
+      "records": [
+        "waves.diffraction",
+        "waves.dispersion",
+        "waves.doppler",
+        "waves.fresnel_partial_reflection",
+        "waves.group_velocity",
+        "waves.phase_velocity",
+        "waves.snell_refraction",
+        "waves.standing_waves",
+        "waves.superposition",
+        "waves.total_internal_reflection",
+        "waves.interference_cancellation"
+      ],
+      "prompt_sha256": "99cf483c04b49dd29fd650fe69561df76c204993d867b42a2b74a75f63a86f49",
+      "n": 11
+    },
+    "E": {
+      "records": [
+        "em.coulomb",
+        "em.displacement_current",
+        "em.faraday",
+        "em.gauss",
+        "em.impedance",
+        "em.lenz_inductance",
+        "em.mutual_induction",
+        "em.ohm_cost",
+        "em.ohm_definition",
+        "em.poynting",
+        "em.wave_propagation"
+      ],
+      "prompt_sha256": "0cb2e3ac6dec8af452f22af950b7da09ba8d7a2213817bc0935d89c2386ad3d0",
+      "n": 11
+    },
+    "F": {
+      "records": [
+        "qm.born_rule",
+        "qm.bound_state_quantization",
+        "qm.complementarity",
+        "qm.decoherence",
+        "qm.entanglement",
+        "qm.measurement_collapse",
+        "qm.no_cloning",
+        "qm.pauli_exclusion",
+        "qm.spin",
+        "qm.superposition",
+        "qm.tunneling",
+        "qm.uncertainty_energy_time",
+        "qm.uncertainty_position_momentum",
+        "qm.zero_point_energy"
+      ],
+      "prompt_sha256": "3d238d7209f51b72bcee0521705022b5e17ca8ce65da4b20788ba7e559f99d60",
+      "n": 14
+    },
+    "G": {
+      "records": [
+        "field.asymptotic_freedom",
+        "field.confinement",
+        "field.cp_violation",
+        "field.gauge_invariance",
+        "field.higgs_mechanism",
+        "field.noether",
+        "field.running_couplings",
+        "field.vacuum_energy",
+        "field.weak_flavor_change",
+        "field.yukawa_range",
+        "rel.energy_momentum_relation",
+        "rel.equivalence_principle",
+        "rel.gravitational_time_dilation",
+        "rel.null_interval",
+        "rel.relativistic_doppler",
+        "rel.velocity_addition"
+      ],
+      "prompt_sha256": "e2c0ff6f651169b7036c02f77c8641d560b5db602c3dd34cf6ae530d285437e7",
+      "n": 16
+    }
+  },
+  "criteria_version": 1,
+  "lexicon_version": 1,
+  "canary": {
+    "record": "mech.hooke",
+    "prompt_sha256": "907b7cd853251bd2ff9b077a7e146a471351a98254be64bf807452a75f7ab21d"
+  }
+}

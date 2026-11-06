@@ -1,0 +1,14 @@
+id: qm.entanglement
+domain: quantum
+title: "Entanglement"
+statement: "Measurements on two entangled particles are correlated more strongly than any local account allows (Bell), and the correlation does not weaken with their separation."
+form: statistical
+variables:
+  - {name: probability, quantity: probability}
+  - {name: separation, quantity: length, carries_distance: true}
+costs: []
+distance_dependence: false
+standard_sources: ["Bell 1964; Aspect 1982; Hensen et al. 2015"]
+book_status: unreflected
+review: pending
+notes: "Distance appears in the statement only to say it does not matter. No separation is 'made': keeps. The generators will want to read this as the Current shared by every Movement (row 2); that is a connection, logged only if Layer C produces it."

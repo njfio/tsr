@@ -1,0 +1,24 @@
+id: mech.newtons_second_law
+domain: calibration
+title: "F = ma"
+statement: "Force equals mass times acceleration; Newton's second law, read as the definition of force."
+formula: "F = m × a"
+form: definition
+variables:
+  - {name: force F, quantity: force}
+  - {name: mass m, quantity: mass m}
+  - {name: acceleration a, quantity: acceleration}
+physical_terms: {F: "force", m: "mass m", a: "acceleration"}
+costs: []
+alternate_statements:
+  - statement: "Newton's second law read as a law: for a given acceleration, the force required rises with the body's mass."
+    form: equation
+    formula: "F = m × a"
+    costs:
+      - what_gets_harder: "the force required for a given acceleration"
+        rises_with: [mass m]
+    note: "The law reading (Newton's own; force defined independently, e.g. by a spring). Under C0 this form turns. The book rules the definition reading (Ch 2). Logged as open joint form_call (C6)."
+standard_sources: ["Newton, Principia, Law II; Mach, Science of Mechanics (definition reading)"]
+book_status: ruled
+ruling: {shape: keeps, words: "Frequency = Movement × Appreciation", source: "Ch2 / Map"}
+review: "reviewed:spec-port"

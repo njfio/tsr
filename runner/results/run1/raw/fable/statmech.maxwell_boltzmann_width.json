@@ -1,0 +1,34 @@
+{
+ "id": "statmech.maxwell_boltzmann_width",
+ "physical": "σ_v ∝ √(k × T ÷ m): the spread of molecular speeds in a gas grows with the square root of temperature and shrinks with the square root of molecular mass.",
+ "reflected_formula": "rise per Expansion (spread) ∝ √([Boltzmann constant k: no partner] × [temperature T: no partner] ÷ Movement M)",
+ "reflected_sentence": "The relationship keeps: the spread of rise per Expansion goes as the square root of the mean kinetic energy per degree of freedom over Movement M, so the spread falls as Movement M rises; the constant and the mean kinetic energy have no frozen partner.",
+ "shape": "keeps",
+ "rule_reason": "form is 'equation' and the record's cost block is empty; no cost or limit caused by resistance is recorded, so zero resistance-costs and by the parity clause the shape keeps, even though mass (resistance) appears in the formula",
+ "rule_trace": [
+  "none"
+ ],
+ "forced": false,
+ "unmapped_terms": [
+  "temperature T",
+  "Boltzmann constant k",
+  "gas",
+  "molecular",
+  "square root",
+  "spread (a statistical width)"
+ ],
+ "new_words": [],
+ "monotone_claims": [
+  {
+   "rises": "rise per Expansion",
+   "with": "Movement M",
+   "sign": -1
+  }
+ ],
+ "interpretation": "In the table's terms the formula is unchanged: the spread of rise per Expansion falls as Movement M rises. Since the record lists no cost, the reading does not turn, and more Movement M still means less spread. The quantity that sets the other side of the proportion has no partner.",
+ "conflicts": "\"mass m | Movement M\" (symbol row) against \"Mass is resistance\" and \"Resistant becomes receptive\": mass has two images, Movement M by the table and receptivity by the flip, and the turned reading needs the second while the formula is written in the first.",
+ "sense": 2,
+ "confidence": 4,
+ "closing": "Decided from the record's form and cost block as the amendment directs: 'equation' with an empty cost block gives zero resistance-costs, so keeps. I mark it not forced because the rule text alone would point the other way: the rule says mass is resistance, and the statement says the spread shrinks with mass, which reads as 'what gets harder with more resistance', one cost, odd, turns around. A reader applying the rule to the statement rather than to the cost block would turn this row; I followed the cost block and record the disagreement here. The row also exposes mass having two images (Movement M by the table, receptivity by the flip), and 'spread' is a width, a quantity the nonphysical side is not supposed to carry.",
+ "knew_tsr": false
+}

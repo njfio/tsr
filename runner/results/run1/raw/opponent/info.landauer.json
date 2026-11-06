@@ -1,0 +1,8 @@
+{
+ "id": "info.landauer",
+ "alternative_shape": null,
+ "rule_compliant": false,
+ "argument": "The cost (heat dissipated on erasure) rises with temperature, and temperature is fixed as not carrying resistance ('not defined as opposition to change'), as are energy and the Boltzmann constant; with no resistance-carrying quantity in the relation, calling the cost resistance-caused would invent physics, so the cost cannot turn around.",
+ "reflected_sentence": "",
+ "knew_tsr": false
+}

@@ -1,0 +1,34 @@
+{
+ "id": "qm.tunneling",
+ "physical": "A particle can cross a barrier higher than its energy; the chance falls exponentially with the barrier's width, with the square root of its height above the particle's energy, and with the square root of the particle's mass. T ≈ exp(−2 × κ × d), κ = √(2 × m × (V − E)) ÷ ħ",
+ "reflected_formula": "[probability: no partner] ≈ exp(−2 × κ × [barrier width: no partner]), κ = √(2 × Movement M × ([barrier height: no partner] − E)) ÷ [Planck constant: no partner]",
+ "reflected_sentence": "What was harder the more resistant the thing was turns around: passing what stood above E gets easier the more receptive Movement M is, so what was out of reach is already there.",
+ "shape": "turns around",
+ "rule_reason": "one cost caused by resistance (getting through the barrier rises with mass m); barrier height is undetermined; no separation, because the width does not carry distance; one cost, so it turns around",
+ "rule_trace": [
+  "resistance-cost"
+ ],
+ "forced": false,
+ "unmapped_terms": [
+  "probability",
+  "barrier height",
+  "barrier width",
+  "Planck constant",
+  "barrier",
+  "exponential"
+ ],
+ "new_words": [],
+ "monotone_claims": [
+  {
+   "rises": "receptivity",
+   "with": "alignment",
+   "sign": 1
+  }
+ ],
+ "interpretation": "Mass is resistance, and its partner Movement M is receptive, so the cost that rose with mass becomes an ease that rises with receptivity. E is shared by both sides; the barrier and its height have no partner, so only the turning survives.",
+ "conflicts": "\"No sums where the book has products\" (V − E is a difference inside the formula, kept as instructed); \"Nothing on the nonphysical side has a number\" (the exponential)",
+ "sense": 3,
+ "confidence": 4,
+ "closing": "Judgment call on two points. First, barrier height is undetermined. If it carries resistance and each resistance factor counts separately, there are two and the relation keeps its shape; if the count is per cost entry, there is one, and it turns around. I counted the single cost entry. Second, the formula has V − E, a difference, which I kept without rewriting. The monotone claim is close to a tautology because the probability has no partner.",
+ "knew_tsr": false
+}

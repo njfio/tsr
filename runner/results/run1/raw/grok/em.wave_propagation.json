@@ -1,0 +1,25 @@
+{
+ "id": "em.wave_propagation",
+ "physical": "A changing electric field makes a magnetic field and a changing magnetic field makes an electric field; the pair regenerates itself and travels at a speed fixed by the permittivity and permeability of free space. c = 1 ÷ √(ε0 × μ0)",
+ "reflected_formula": "Current = 1 ÷ √((unmapped) × (unmapped))",
+ "reflected_sentence": "Current stays fixed by the product of the two medium constants, and Idle and Reflected keep making each other.",
+ "shape": "keeps",
+ "rule_reason": "The form is an identity and the cost block is empty, so the relationship keeps. The speed of light is marked as the limit, not an opposition, so it is not a limit caused by resistance.",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "permittivity",
+  "permeability",
+  "free space"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "The relationship keeps. Current stays fixed with that product. Idle and Reflected keep making each other.",
+ "conflicts": "none",
+ "sense": 4,
+ "confidence": 6,
+ "closing": "The rule decided the keep: the form is an identity and the cost block is empty. I mapped c to Current by the symbol row, not by the energy-flow row that also uses that word, and I did not map electric current to Current. Electric maps to Idle and magnetic to Reflected. Permittivity, permeability, and free space have no partners; I did not map free space to Vibration, because here it is the medium of the constants rather than the space partnership. I did not carry travel or speed across. The quantity note says c is the limit, not an opposition, so I did not treat it as a limit caused by resistance.",
+ "knew_tsr": false
+}

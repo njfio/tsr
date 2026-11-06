@@ -1,0 +1,30 @@
+{
+ "id": "mech.bernoulli",
+ "physical": "Along a streamline of steady, inviscid, incompressible flow, pressure plus kinetic energy per volume plus gravitational energy per volume is constant.",
+ "reflected_formula": "",
+ "reflected_sentence": "The conservation keeps: a push plus Desire with rise per Expansion plus a weighty extent stays one unchanging sum.",
+ "shape": "keeps",
+ "rule_reason": "Conservation law; cost block empty, so the relationship keeps.",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "pressure",
+  "height",
+  "gravitational field g",
+  "kinetic energy",
+  "gravitational energy",
+  "streamline",
+  "inviscid",
+  "incompressible"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "The form is a conservation, so the relationship keeps. Desire and rise per Expansion are the frozen partners in the sum. No frozen word names the push, the weighty extent, or the field, so the sum is not written as a formula.",
+ "conflicts": "none",
+ "sense": 2,
+ "confidence": 6,
+ "closing": "The rule decided this from the conservation form and the empty cost block, so it keeps. Density and velocity have partners; pressure, height, and the gravitational field do not. Pressure was not sent to Point of Reflection, and the field was not sent to Attraction. No new word was introduced.",
+ "knew_tsr": false
+}

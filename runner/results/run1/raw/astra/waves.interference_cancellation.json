@@ -1,0 +1,28 @@
+{
+ "id": "waves.interference_cancellation",
+ "physical": "Two waves in opposite phase cancel at a point; the cancellation is located, and energy is conserved overall.",
+ "reflected_formula": "",
+ "reflected_sentence": "Vibrations culminate, while conscious energy is conserved.",
+ "shape": "turns around",
+ "rule_reason": "The supplied distance-made separation contributes one qualifying cost and turns the located-cancellation reading. Overall energy conservation keeps independently. The vocabulary explicitly licenses culminate for vibrations instead of cancel, but does not supply phase, amplitude or a partner for the specified point.",
+ "rule_trace": [
+  "separation",
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "phase difference",
+  "opposite phase",
+  "location of the point",
+  "length",
+  "amplitude"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "Vibrations culminate. Vibrations culminate.",
+ "conflicts": "none",
+ "sense": 2,
+ "confidence": 7,
+ "closing": "The supplied separation annotation forces the cancellation reading to turn, while the conservation clause keeps. The frozen explanation of culminate directly supports the partial sentence, but repeating that licensed sentence does not provide the missing phase and amplitude dependence or a complete interpretation. I do not identify a spatial point with Point of Reflection. The unmapped terms record these omissions independently of the turns-around shape call, rather than treating the partial culmination wording as a complete reflection of the whole relation.",
+ "knew_tsr": false
+}

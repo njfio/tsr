@@ -1,0 +1,26 @@
+{
+ "id": "qm.superposition",
+ "physical": "Any linear combination of allowed states is an allowed state; the state space is linear.",
+ "reflected_formula": "",
+ "reflected_sentence": "The identity keeps its shape: any blending of allowed states is itself an allowed state.",
+ "shape": "keeps",
+ "rule_reason": "identity (linearity of the state space)",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "wavefunction amplitude",
+  "state",
+  "linear combination",
+  "state space"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "It keeps its shape. A linear combination is a sum, and on the nonphysical side two vibrations culminate rather than add. Mapping one to the other would be a rescue, so I left it alone.",
+ "conflicts": "\"No sums where the book has products\" (linearity is a sum; arguably the book would read combining as culminating)",
+ "sense": 2,
+ "confidence": 6,
+ "closing": "The rule decided the shape (identity, so keeps). The open question is whether superposition's sum should be read as 'culminate', which the vocabulary offers as what two vibrations do instead of cancel. That is interpretation, not the rule.",
+ "knew_tsr": false
+}

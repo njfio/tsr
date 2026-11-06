@@ -1,0 +1,8 @@
+{
+ "id": "thermo.heat_capacity_definition",
+ "alternative_shape": null,
+ "rule_compliant": false,
+ "argument": "The statement is a definition, and heat capacity's carrying of resistance is fixed as UNDETERMINED, so no turn may rest on the thermal-inertia reading; with no decided resistance quantity and no cost in the statement, the definition keeps its shape and no rule-compliant turn exists.",
+ "reflected_sentence": "",
+ "knew_tsr": false
+}

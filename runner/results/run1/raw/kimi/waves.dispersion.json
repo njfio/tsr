@@ -1,0 +1,24 @@
+{
+ "id": "waves.dispersion",
+ "physical": "In a dispersive medium the phase velocity depends on wavelength, so a pulse made of many wavelengths spreads as it travels. v_p = v_p(λ)",
+ "reflected_formula": "rise per Expansion = rise per Expansion(λ) (λ kept as a symbol with no partner)",
+ "reflected_sentence": "The dependence keeps its shape: the rise per Expansion of a wave depends on its extent, and a pulse of many extents spreads all the same, because what drives the spreading is a dependence, not an opposition.",
+ "shape": "keeps",
+ "rule_reason": "The single cost ('a pulse keeping its shape') rises with dispersion, and the fixed table says dispersion does not carry resistance — 'a dependence, not an opposition'; zero resistance-caused costs, even parity, so it keeps.",
+ "rule_trace": [
+  "none"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "wavelength λ",
+  "dispersion"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "A dependence is not an opposition, so the spread of a many-extent pulse crosses unchanged. The rise per Expansion follows the extent and no gap appears. Wavelength has no partner and remains a bare symbol.",
+ "conflicts": "none",
+ "sense": 3,
+ "confidence": 6,
+ "closing": "The fixed table settled it without me: dispersion is explicitly not an opposition, so the named cost is not caused by resistance and the even-parity rule keeps the shape. No judgment call was needed; the only weakness is that wavelength and dispersion have no partners.",
+ "knew_tsr": false
+}

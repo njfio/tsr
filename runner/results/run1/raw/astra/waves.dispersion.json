@@ -1,0 +1,28 @@
+{
+ "id": "waves.dispersion",
+ "physical": "In a dispersive medium the phase velocity depends on wavelength, so a pulse made of many wavelengths spreads as it travels.",
+ "reflected_formula": "no partner",
+ "reflected_sentence": "The dependence that makes the combined form spread keeps its shape.",
+ "shape": "keeps",
+ "rule_reason": "Dispersion is explicitly nonresistant. The named difficulty therefore is not a qualifying resistance-cost, and there is no separation cost; the relationship keeps. The frozen table cannot translate v_p = v_p(λ).",
+ "rule_trace": [
+  "none"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "dispersive medium",
+  "phase velocity v_p",
+  "wavelength λ",
+  "dispersion",
+  "pulse",
+  "spread"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "No partner. No partner.",
+ "conflicts": "none",
+ "sense": 1,
+ "confidence": 7,
+ "closing": "The rule decides keeps without a judgment call because the fixed classification excludes dispersion as resistance. A generic velocity partner does not establish a frozen partner for the separately specified phase velocity, and wavelength remains unmapped regardless. A substantive reflected formula or interpretation would require additions to the vocabulary; the no-partner markers report that failure rather than adding terms.",
+ "knew_tsr": false
+}

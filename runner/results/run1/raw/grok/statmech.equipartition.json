@@ -1,0 +1,26 @@
+{
+ "id": "statmech.equipartition",
+ "physical": "In thermal equilibrium every quadratic degree of freedom carries an average energy of half k times the temperature.",
+ "reflected_formula": "",
+ "reflected_sentence": "In balance, each quadratic way of holding still carries the same average E, set by a constant times how warm it is.",
+ "shape": "keeps",
+ "rule_reason": "Identity; cost block empty; energy is the shared E and does not carry resistance, and temperature does not carry resistance.",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "temperature",
+  "degrees of freedom",
+  "Boltzmann constant",
+  "thermal equilibrium"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "The identity keeps, and E stays E. A warmth and a count do not map, so the share of E is not a claim about Movement or receptivity. The gap does not enter.",
+ "conflicts": "none",
+ "sense": 3,
+ "confidence": 7,
+ "closing": "The rule decided the shape on its own: the form is an identity and the cost block is empty. Half, the constant, and how warm it is do not make a frozen-word formula, because numbers and units do not cross and temperature has no partner. I did not rewrite the equal share into another relation. Energy stays the shared E rather than being renamed.",
+ "knew_tsr": false
+}

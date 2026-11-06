@@ -1,0 +1,30 @@
+{
+ "id": "mech.bernoulli",
+ "physical": "Along a streamline of steady, inviscid, incompressible flow, pressure plus kinetic energy per volume plus gravitational energy per volume is constant.",
+ "reflected_formula": "∅ + ½ × Desire × (rise per Expansion)² + Desire × ∅ × ∅ = ∅",
+ "reflected_sentence": "Desire and rise per Expansion have partners, but the complete conservation statement does not.",
+ "shape": "keeps",
+ "rule_reason": "A conservation law keeps its shape; density carrying resistance does not create a cost in a statement with no costs.",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "pressure",
+  "height",
+  "gravitational field g",
+  "kinetic energy",
+  "gravitational energy",
+  "streamline",
+  "steady inviscid incompressible flow",
+  "constant"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "Desire. Rise per Expansion.",
+ "conflicts": "none",
+ "sense": 1,
+ "confidence": 7,
+ "closing": "The rule independently decides keeps. The displayed coefficient and exponent are retained formal syntax, not nonphysical quantities. A complete reading would require partners for pressure, field and height, plus an account of the numerical and additive structure without nonphysical quantities. I do not substitute Attraction for gravitational field or conscious energy for a specifically differentiated energy without an explicit mapping.",
+ "knew_tsr": false
+}

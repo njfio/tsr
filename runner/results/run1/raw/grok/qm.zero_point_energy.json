@@ -1,0 +1,24 @@
+{
+ "id": "qm.zero_point_energy",
+ "physical": "The lowest energy of a bound system is not zero; an oscillator's ground state keeps half a quantum of energy.",
+ "reflected_formula": "E = ½ × ħ × ω",
+ "reflected_sentence": "This limit keeps: the lowest E is not zero, and the ground reading keeps half the product of the unmapped constant and the unmapped rate.",
+ "shape": "keeps",
+ "rule_reason": "a limit not caused by resistance. Empty cost block. Energy, physical frequency, and the Planck constant do not carry resistance",
+ "rule_trace": [
+  "none"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "frequency (physical)",
+  "Planck constant"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "This keeps. E stays E. This is not Frequency and not the Present, and unreachable does not become already there.",
+ "conflicts": "none",
+ "sense": 2,
+ "confidence": 6,
+ "closing": "The rule decided. The form is a limit with an empty cost block and no resistance-carrying quantity, so it keeps and does not flip to already there. Energy stays the shared E. Physical frequency is a rate and is not Frequency; I left it unmapped. The half is a number and does not cross. No judgment call on the shape.",
+ "knew_tsr": false
+}

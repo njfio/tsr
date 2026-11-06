@@ -1,0 +1,29 @@
+{
+ "id": "info.shannon_entropy",
+ "physical": "H = −Σ p × log p: the uncertainty of a source is minus the sum over outcomes of probability times log probability; the least average number of bits needed to encode it.",
+ "reflected_formula": "[Shannon entropy H: no partner] = −Σ [probability p: no partner] × log [probability p: no partner]",
+ "reflected_sentence": "The relationship keeps: the measure of uncertainty of a source is minus the sum over outcomes of each chance times the log of that chance, and neither the measure nor the chance has a frozen partner.",
+ "shape": "keeps",
+ "rule_reason": "definition; Shannon entropy and probability are both fixed as measures that do not carry resistance, so zero resistance-costs and the shape keeps",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "Shannon entropy H",
+  "probability p",
+  "source",
+  "outcome",
+  "bit",
+  "log",
+  "sum Σ"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "Nothing in this relation reaches the nonphysical side. Culmination is the partner of entropy, but the fixed list names Shannon entropy as a separate quantity, a measure of uncertainty, so I did not borrow Culmination for it.",
+ "conflicts": "none",
+ "sense": 1,
+ "confidence": 7,
+ "closing": "The rule decided on its own (definition, keeps). The one temptation was to map Shannon entropy onto Culmination through the entropy row; the fixed list treats them as different quantities, and being strict I left it unmapped. The formula is a sum; the trap about sums concerns introducing sums where the book has products, so keeping the physical sum is not a violation, but it also means a sum would be sitting on the nonphysical side if anything had crossed.",
+ "knew_tsr": false
+}

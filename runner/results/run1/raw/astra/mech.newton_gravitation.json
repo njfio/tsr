@@ -1,0 +1,23 @@
+{
+ "id": "mech.newton_gravitation",
+ "physical": "Two masses attract with a force proportional to the product of the masses and inversely proportional to the square of their separation.",
+ "reflected_formula": "Frequency = ∅ × Movement M × Movement M ÷ Vibration²",
+ "reflected_sentence": "The separation reading turns toward alignment, but the complete product relation has no partner.",
+ "shape": "turns around",
+ "rule_reason": "The statement explicitly weakens attraction through separation made by distance, and r is marked carries_distance; this is one separation and turns around.",
+ "rule_trace": [
+  "separation"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "gravitational constant G"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "Frequency. Movement M × Movement M.",
+ "conflicts": "none",
+ "sense": 1,
+ "confidence": 7,
+ "closing": "The rule's explicit separation clause decides turns around even though the primary costs list is empty; the alternate statement makes that same separation cost explicit and also turns. Reading only the empty list would miss the supplied statement and carries_distance flag. G has no partner, and the denominator remains unchanged formal syntax rather than becoming a measured nonphysical separation. Alignment is not substituted for r in the formula.",
+ "knew_tsr": false
+}

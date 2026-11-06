@@ -1,0 +1,38 @@
+{
+ "id": "em.poynting",
+ "physical": "Poynting flux: The energy carried by an electromagnetic field per unit area per unit time is the cross product of the electric and magnetic fields over the permeability. S = E × B ÷ μ0",
+ "reflected_formula": "[Poynting vector: unmapped] = Idle × Reflected ÷ [permeability: unmapped]",
+ "reflected_sentence": "The conscious energy collected by the Idle and the Reflected together is their product over the medium constant.",
+ "shape": "keeps",
+ "rule_reason": "definition: it keeps its shape; radiation reflects as collection but that is a term reflecting, not the shape turning",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "Poynting vector S",
+  "permeability μ0",
+  "cross product",
+  "per unit area",
+  "per unit time"
+ ],
+ "new_words": [],
+ "monotone_claims": [
+  {
+   "rises": "conscious energy",
+   "with": "Idle",
+   "sign": 1
+  },
+  {
+   "rises": "conscious energy",
+   "with": "Reflected",
+   "sign": 1
+  }
+ ],
+ "interpretation": "Physical energy crosses as conscious energy, and the outward flux of the physical side reflects as collection. The Idle and the Reflected, the co-creating partners, yield that energy as a product, which is consistent with the table's insistence on products. The 'per area per time' of the physical side does not cross at all; only the product relationship does.",
+ "conflicts": "none",
+ "sense": 3,
+ "confidence": 6,
+ "closing": "The rule decided on its own: a definition keeps. The prompt's physical_terms gave E and B as electric and magnetic, so the Idle and Reflected mapping was provided rather than chosen. The judgment call was reading 'energy carried per area per time' as radiation so that it crosses as collection; that follows from 'radiating becomes collecting' but the prompt did not flag the term. Permeability has no partner, and a vector quantity has no frozen image. (Amendment 1 applied: shape is the rule's call on the relationship; unmapped terms are listed separately and described in plain words in the sentence.)",
+ "knew_tsr": false
+}

@@ -1,0 +1,15 @@
+id: statmech.equipartition
+domain: statistical_mechanics
+title: "Equipartition"
+statement: "In thermal equilibrium every quadratic degree of freedom carries an average energy of half k times the temperature."
+formula: "⟨E⟩ = ½ × k × T per degree of freedom"
+form: identity
+variables:
+  - {name: energy E, quantity: energy}
+  - {name: temperature T, quantity: temperature}
+  - {name: degrees of freedom, quantity: degrees of freedom}
+  - {name: Boltzmann constant k, quantity: Boltzmann constant}
+costs: []
+standard_sources: ["Reif, Statistical Physics, ch. 7"]
+book_status: unreflected
+review: pending

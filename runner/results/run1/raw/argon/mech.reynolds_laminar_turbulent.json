@@ -1,0 +1,30 @@
+{
+ "id": "mech.reynolds_laminar_turbulent",
+ "physical": "Flow stays laminar while inertial effects are small relative to viscous ones (low Reynolds number); as density, speed or size rise, or viscosity falls, the flow becomes turbulent.",
+ "reflected_formula": "",
+ "reflected_sentence": "Keeping the flow ordered becomes easier with receptivity and alignment as Desire, rise per Expansion, and Vibration change relative to fluid opposition.",
+ "shape": "turns around",
+ "rule_reason": "1 cost entry in the costs block (keeping the flow ordered rises with density and falls with viscosity)",
+ "rule_trace": [
+  "resistance-cost"
+ ],
+ "forced": false,
+ "unmapped_terms": [
+  "Reynolds number",
+  "viscosity"
+ ],
+ "new_words": [],
+ "monotone_claims": [
+  {
+   "rises": "alignment",
+   "with": "receptivity",
+   "sign": 1
+  }
+ ],
+ "interpretation": "Density reflects to Desire, velocity to rise per Expansion, and length to Vibration, while Reynolds number and viscosity have no partners in the frozen vocabulary. By the single cost block in the record, keeping the flow ordered turns around with receptivity and alignment.",
+ "conflicts": "none",
+ "sense": 1,
+ "confidence": 5,
+ "closing": "The costs array has 1 cost object (an odd number, indicating turns around), yet that single cost rises with one resistance quantity (density) and falls with another (viscosity), which makes counting resistance costs slightly ambiguous.",
+ "knew_tsr": false
+}

@@ -1,0 +1,32 @@
+{
+ "id": "field.yukawa_range",
+ "physical": "A force carried by exchange of a virtual particle has a range of about the reduced Planck constant over the mediator's mass times c: the heavier the mediator, the shorter the reach.",
+ "reflected_formula": "range r ≈ Planck constant ħ ÷ (Movement M × Current)",
+ "reflected_sentence": "A Frequency has alignment that rises with Movement M and Current: the greater the Movement M, the greater the alignment.",
+ "shape": "turns around",
+ "rule_reason": "One cost caused by mass m (which carries resistance) turns the relationship around, so shorter reach with greater mass becomes greater alignment with greater Movement M.",
+ "rule_trace": [
+  "resistance-cost"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "range r",
+  "Planck constant ħ",
+  "virtual particle",
+  "mediator"
+ ],
+ "new_words": [],
+ "monotone_claims": [
+  {
+   "rises": "Frequency",
+   "with": "Movement M",
+   "sign": 1
+  }
+ ],
+ "interpretation": "Mass m carries resistance, so the cost on reach turns around into receptivity and alignment with Movement M and Current. Greater Movement M makes alignment easier rather than harder.",
+ "conflicts": "none",
+ "sense": 2,
+ "confidence": 6,
+ "closing": "The rule clearly decides that the relation turns around because there is one cost that falls with mass m (which carries resistance). Planck constant ħ, virtual particle, and range r have no partners in the vocabulary table and are recorded in unmapped_terms.",
+ "knew_tsr": false
+}

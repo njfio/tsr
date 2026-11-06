@@ -1,0 +1,24 @@
+{
+ "id": "qm.complementarity",
+ "physical": "The more which-path information an interferometer records, the less visible its interference fringes; the two trade off so that distinguishability squared plus visibility squared is at most one. D² + V² ≤ 1",
+ "reflected_formula": "(no partner)² + (no partner)² ≤ one; numbers do not cross",
+ "reflected_sentence": "How sharply a thread can be told apart and how clearly the vibrations show trade against one another, their squares fitting within a whole.",
+ "shape": "keeps",
+ "rule_reason": "An even trade of two measures with no cost; the shape keeps. Both measures are unmapped and listed in unmapped_terms.",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "which-path distinguishability D (which-path information)",
+  "fringe visibility V (interference visibility)"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "Two measures trade so that their squares sum to a whole; neither measure has a partner, so the kept sentence describes them in plain words. The trade keeps its shape. The sum is the book's own sum, not a swapped product.",
+ "conflicts": "none",
+ "sense": 2,
+ "confidence": 7,
+ "closing": "Amended reading applied: the rule alone gives keeps (no costs, identity-like bound), and the unmapped measures are reported rather than allowed to change the shape. The reflected sentence states the kept trade in plain words around frozen vibrations. No new words were introduced.",
+ "knew_tsr": false
+}

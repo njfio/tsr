@@ -1,0 +1,8 @@
+{
+ "id": "field.running_couplings",
+ "alternative_shape": "null",
+ "rule_compliant": false,
+ "argument": "Running couplings and energy are both fixed as non-resistance quantities, and the growing of one coupling and the falling of the other are changes with scale, not costs caused by resistance or separations made by distance. No rule-compliant turn exists.",
+ "reflected_sentence": "",
+ "knew_tsr": false
+}

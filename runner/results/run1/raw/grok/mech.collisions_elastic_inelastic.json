@@ -1,0 +1,27 @@
+{
+ "id": "mech.collisions_elastic_inelastic",
+ "physical": "Momentum is conserved in every collision; kinetic energy is conserved in an elastic collision and partly converted to internal energy in an inelastic one, the fraction set by the coefficient of restitution.",
+ "reflected_formula": "",
+ "reflected_sentence": "The conservation keeps: momentum stays through every meeting, while a motion-energy stays only when the meeting gives the rates back and is partly changed when it does not, by a ratio of rates.",
+ "shape": "keeps",
+ "rule_reason": "Conservation law; cost block empty, so the relationship keeps.",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "kinetic energy",
+  "coefficient of restitution",
+  "internal energy",
+  "elastic",
+  "inelastic"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "The form is a conservation, so the relationship keeps. momentum is the frozen partner. No frozen word names the motion-energy or the ratio of rates, and conscious energy is not substituted.",
+ "conflicts": "none",
+ "sense": 3,
+ "confidence": 6,
+ "closing": "Both clauses are conservation statements and the cost block is empty, so the relationship keeps. The restitution ratio does not carry resistance and was not treated as a cost. Kinetic energy was not mapped to conscious energy, because the table names physical energy, not kinetic energy. No new word was introduced.",
+ "knew_tsr": false
+}

@@ -1,0 +1,26 @@
+{
+ "id": "field.yukawa_range",
+ "physical": "A force carried by exchange of a virtual particle has a range of about the reduced Planck constant over the mediator's mass times c: the heavier the mediator, the shorter the reach.",
+ "reflected_formula": "",
+ "reflected_sentence": "What gets harder as Movement grows turns and eases with receptivity, and alignment already holds it.",
+ "shape": "turns around",
+ "rule_reason": "One cost: reaching far gets harder as mass grows (falls_with mass). Mass carries resistance, so this is a resistance-cost. Separation made by distance is given as false, so it is not counted. One such cost is odd, so the reading turns. The formula is not inverted.",
+ "rule_trace": [
+  "resistance-cost"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "range r",
+  "Planck constant ħ",
+  "virtual particle",
+  "exchange"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "Movement keeps with the Current. Receptivity eases what Movement withholds. Alignment already holds with the Current.",
+ "conflicts": "none",
+ "sense": 2,
+ "confidence": 6,
+ "closing": "The rule decides the turn without a judgment call. Mass is fixed as carrying resistance, it is the only entry in falls_with, and separation made by distance is false, so I did not add a separation for the reach. Planck's constant and c do not carry resistance and are not costs. The reading turns, harder becoming easier with receptivity, while the formula would have kept its shape, but the reach is a distance and does not cross, and the reduced Planck constant has no partner, so there is no formula image. Force's partner is Frequency, which does not rescue the reach. Sense is low because the relation's content is a distance. Missing partners do not change the turn.",
+ "knew_tsr": false
+}

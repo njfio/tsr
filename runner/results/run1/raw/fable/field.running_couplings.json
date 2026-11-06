@@ -1,0 +1,37 @@
+{
+ "id": "field.running_couplings",
+ "physical": "Running couplings: The strengths of the interactions depend on the energy scale at which they are probed: the electromagnetic coupling grows with energy, the strong coupling falls.",
+ "reflected_formula": "",
+ "reflected_sentence": "The strengths of the interactions depend on the E at which they are met: the strength of the Idle-Reflected interaction grows with E, the strength of the binding interaction falls; the shape keeps.",
+ "shape": "keeps",
+ "rule_reason": "equation with no cost named; zero costs → keeps",
+ "rule_trace": [
+  "none"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "running coupling",
+  "strong coupling",
+  "interaction strength",
+  "probed"
+ ],
+ "new_words": [],
+ "monotone_claims": [
+  {
+   "rises": "Idle",
+   "with": "E",
+   "sign": 1
+  },
+  {
+   "rises": "Reflected",
+   "with": "E",
+   "sign": 1
+  }
+ ],
+ "interpretation": "E crosses, and electric and magnetic cross as Idle and Reflected. What is said of them, that their strength changes with E, has no frozen word for 'strength of interaction'. The table pairs Idle and Reflected as co-creating partners and says nothing about either growing with E.",
+ "conflicts": "none",
+ "sense": 1,
+ "confidence": 6,
+ "closing": "The rule decided without a judgment call. The monotone claims are weak: they attach 'grows with E' to Idle and Reflected themselves because 'coupling' has no partner, which stretches the table's co-creating-partner rows into quantities. The strong interaction has no partner at all.",
+ "knew_tsr": false
+}

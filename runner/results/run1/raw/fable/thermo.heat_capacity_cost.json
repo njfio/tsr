@@ -1,0 +1,26 @@
+{
+ "id": "thermo.heat_capacity_cost",
+ "physical": "Heat capacity (the cost reading): Warming a body by a given amount takes more heat the larger its heat capacity: thermal inertia. Q = C × ΔT",
+ "reflected_formula": "[no partner: heat Q] = [heat capacity C: UNDETERMINED, no partner] × [no partner: temperature change ΔT]",
+ "reflected_sentence": "Read as thermal inertia the relationship turns around: what the warming takes comes easily with receptivity where the physical reading had it grow; none of the three quantities has a partner, so nothing on the nonphysical side carries the turned reading.",
+ "shape": "turns around",
+ "rule_reason": "The one cost (warming the body by a given amount) rises with heat capacity, which the fixed table leaves UNDETERMINED. Taking the relation's own words ('thermal inertia', clause a) as the deciding gloss, heat capacity carries resistance in the same way inertial mass does, giving one resistance-cost and a turn. Under the plain-ratio reading nothing fires and it keeps. This is a judgment call, not the rule.",
+ "rule_trace": [
+  "resistance-cost"
+ ],
+ "forced": false,
+ "unmapped_terms": [
+  "heat",
+  "heat capacity",
+  "temperature",
+  "body"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "If the quantity resists the change, receptivity makes the change come easily; if it is only a ratio, nothing turns. Either way, none of the three terms has a partner, so the row is empty on the nonphysical side.",
+ "conflicts": "none",
+ "sense": 1,
+ "confidence": 3,
+ "closing": "The rule did not decide this one. Heat capacity is marked UNDETERMINED in the fixed table, and the verdict hinges entirely on whether 'thermal inertia' counts as 'defined as opposition to change'. I sided with the relation's own title and statement (the cost reading, thermal inertia), which parallels the inertial-mass clause, so I recorded a turn; the opposite call (plain ratio, keeps) is equally defensible. Confidence is low and forced is false. Independently of that call, no term here has a partner, so the reflection carries no content.",
+ "knew_tsr": false
+}

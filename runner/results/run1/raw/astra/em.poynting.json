@@ -1,0 +1,29 @@
+{
+ "id": "em.poynting",
+ "physical": "The energy carried by an electromagnetic field per unit area per unit time is the cross product of the electric and magnetic fields over the permeability. S = E × B ÷ μ0",
+ "reflected_formula": "? = Idle × Reflected ÷ ?",
+ "reflected_sentence": "The definition involving Idle and Reflected keeps its shape, with what their product is divided by and what it defines unnamed.",
+ "shape": "keeps",
+ "rule_reason": "The definition keeps its shape; Poynting flux is not resistance. The explicit physical_terms map supplies Idle and Reflected, but Poynting vector and permeability have no partners.",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "Poynting vector S",
+  "permeability μ0",
+  "electric field as a whole",
+  "magnetic field as a whole",
+  "unit area",
+  "flux per unit time",
+  "vector cross-product semantics"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "Idle and Reflected are co-creating partners. Conscious energy does not supply the missing partners.",
+ "conflicts": "none",
+ "sense": 1,
+ "confidence": 7,
+ "closing": "The definition rule decides keeps, and the explicit symbol map licenses the partial product shown. The multiplication sign preserves the given syntax but supplies no nonphysical vector operation. Replacing S with conscious energy, Momentum or collection would conflate distinct terms and would not repair the absent permeability partner.",
+ "knew_tsr": false
+}

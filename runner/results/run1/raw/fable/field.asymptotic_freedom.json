@@ -1,0 +1,29 @@
+{
+ "id": "field.asymptotic_freedom",
+ "physical": "Asymptotic freedom: The strong coupling becomes weak at short distances and high energies: quarks close together interact almost freely, and the interaction grows as they are pulled apart. Formula: α_s(Q) → 0 as Q → ∞",
+ "reflected_formula": "α_s(E) → 0 as E → ∞ (α_s, the strength of the binding, has no partner; the energy scale Q is E)",
+ "reflected_sentence": "What on the physical side bound the pair more tightly the further they were pulled apart is, turned, not a tightening at all: the pair's holding together is already there, and is met more fully with more alignment, while at high E the holding fades.",
+ "shape": "turns around",
+ "rule_reason": "one cost that is a separation made by distance: the interaction grows as the quarks are pulled apart; one (odd) → turns around",
+ "rule_trace": [
+  "separation"
+ ],
+ "forced": false,
+ "unmapped_terms": [
+  "strong coupling α_s",
+  "running coupling",
+  "quark",
+  "separation r",
+  "length",
+  "short distances",
+  "interaction"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "Only E crosses by name; the pair, their binding and their pulling apart have no frozen words. Turned, the relation says the holding together is already there and is met with alignment rather than fought for. At high E the holding together fades, which is the only part that keeps a direction.",
+ "conflicts": "none",
+ "sense": 2,
+ "confidence": 3,
+ "closing": "The rule decided from the cost block (one separation → turns), but the record also carries an alternate statement with no cost (a running with energy scale), which the same rule would keep; the verdict depends on which statement is chosen, so I marked forced false. Almost nothing here has a frozen partner: coupling, quark and separation are all outside the table, and 'distance' cannot cross, so the reflected sentence describes them in plain words. The two readings (grows with separation; falls with energy) are the same physics, yet the rule gives them opposite shapes, which is the main ambiguity.",
+ "knew_tsr": false
+}

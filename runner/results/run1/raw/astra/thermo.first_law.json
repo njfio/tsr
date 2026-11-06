@@ -1,0 +1,26 @@
+{
+ "id": "thermo.first_law",
+ "physical": "The change in a system's internal energy equals the heat added minus the work it does: energy is conserved.",
+ "reflected_formula": "Δ? = ? − ?",
+ "reflected_sentence": "The change in what is held remains what is added by warming minus what is given by doing.",
+ "shape": "keeps",
+ "rule_reason": "The underlying shape keeps because conservation laws keep their shape.",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "internal energy",
+  "heat",
+  "work",
+  "system"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "No complete reflection is available. Missing partners prevent a nonphysical interpretation.",
+ "conflicts": "none",
+ "sense": 1,
+ "confidence": 7,
+ "closing": "Conservation decides keeps without a judgment call. Physical energy has conscious energy as a partner, but no mapping distinguishes stored internal energy, heat input, and work output; identifying all three with E would discard the relation's distinct terms.",
+ "knew_tsr": false
+}

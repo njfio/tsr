@@ -1,0 +1,26 @@
+{
+ "id": "em.gauss",
+ "physical": "The electric flux through any closed surface equals the enclosed charge divided by the permittivity of free space. Φ_E = Q ÷ ε0",
+ "reflected_formula": "(unmapped) = (unmapped) ÷ (unmapped)",
+ "reflected_sentence": "An Idle integral stays equal to the source divided by the medium constant, and the identity keeps.",
+ "shape": "keeps",
+ "rule_reason": "The form is an identity and the cost block is empty, so the relationship keeps.",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "electric flux",
+  "charge",
+  "permittivity",
+  "closed surface"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "The relationship keeps. Idle stays in the equality. Nothing turns.",
+ "conflicts": "none",
+ "sense": 2,
+ "confidence": 7,
+ "closing": "The rule decided. Form is identity and the cost block is empty. Electric maps to Idle; flux, charge, permittivity, and the closed surface have no partners. I did not use boundary, inside, or outside for the surface.",
+ "knew_tsr": false
+}

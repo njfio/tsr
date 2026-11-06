@@ -1,0 +1,35 @@
+{
+ "id": "mech.hooke",
+ "physical": "A spring pushes back in proportion to how far it is stretched; stretching it further takes more force, more so the stiffer the spring. F = k × x",
+ "reflected_formula": "Frequency = k × Vibration (k has no partner)",
+ "reflected_sentence": "Frequency is the stiffness times Vibration, and the reading turns: where the physical spring pushes back harder the further it is stretched and the stiffer it is, the nonphysical side gives way more easily the more receptive it is, so more Vibration comes with less pushback, not more.",
+ "shape": "turns around",
+ "rule_reason": "One cost caused by resistance: stretching further takes more force, more so with the spring constant, which carries resistance. One cost, odd, turns.",
+ "rule_trace": [
+  "resistance-cost"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "spring constant",
+  "spring"
+ ],
+ "new_words": [],
+ "monotone_claims": [
+  {
+   "rises": "Frequency",
+   "with": "Vibration",
+   "sign": 1
+  },
+  {
+   "rises": "Frequency",
+   "with": "alignment",
+   "sign": -1
+  }
+ ],
+ "interpretation": "The kept formula says Frequency rises with Vibration. The turned reading says the pushback that rises with stiffness becomes ease that rises with receptivity. Held together they say that Vibration and Frequency grow together without anything pushing back, which the table neither supports nor forbids.",
+ "conflicts": "none",
+ "sense": 3,
+ "confidence": 6,
+ "closing": "The rule decided on its own: one cost rising with the spring constant, odd, turns. The ambiguity is in what the turned reading does to the kept formula: Frequency = k × Vibration still has Frequency rising with Vibration, while 'harder becomes easier' says the Frequency needed falls with receptivity. I recorded both as monotone claims rather than pick one. The spring constant has no partner, so the thing that carries the flipping condition is the one blank in the row. A restoring force is opposition in all but name, though the fixed list says force carries none; I applied the list.",
+ "knew_tsr": false
+}

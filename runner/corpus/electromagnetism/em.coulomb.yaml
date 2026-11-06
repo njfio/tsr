@@ -1,0 +1,23 @@
+id: em.coulomb
+domain: electromagnetism
+title: "Coulomb's law"
+statement: "Two charges push or pull with a force proportional to the product of the charges and inversely proportional to the square of their separation."
+formula: "F = k × q1 × q2 ÷ r²"
+form: equation
+variables:
+  - {name: force F, quantity: force}
+  - {name: charge q, quantity: charge}
+  - {name: separation r, quantity: length, carries_distance: true}
+costs: []
+alternate_statements:
+  - statement: "Read as a separation cost: the interaction between the charges is weakened by their separation."
+    form: equation
+    costs:
+      - {what_gets_harder: "the interaction, weakened by separation", separation_made_by_distance: true}
+    note: "separation_call joint."
+    joint: separation_call
+distance_dependence: true
+standard_sources: ["Coulomb 1785; Purcell, Electricity and Magnetism, ch. 1"]
+book_status: unreflected
+review: pending
+notes: "Charge does not carry resistance under R1 (decided before this domain ran). Not forced because of the separation call, which is the same joint as Newtonian gravitation."

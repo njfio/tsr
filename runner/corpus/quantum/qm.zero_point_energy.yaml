@@ -1,0 +1,14 @@
+id: qm.zero_point_energy
+domain: quantum
+title: "Zero-point energy"
+statement: "The lowest energy of a bound system is not zero; an oscillator's ground state keeps half a quantum of energy."
+formula: "E0 = ½ × ħ × ω"
+form: limit
+variables:
+  - {name: ground-state energy E0, quantity: energy}
+  - {name: angular frequency ω, quantity: frequency (physical)}
+  - {name: Planck constant ħ, quantity: Planck constant}
+costs: []
+standard_sources: ["Planck 1911; Griffiths, ch. 2"]
+book_status: unreflected
+review: pending

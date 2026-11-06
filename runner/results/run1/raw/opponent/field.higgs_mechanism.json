@@ -1,0 +1,8 @@
+{
+ "id": "field.higgs_mechanism",
+ "alternative_shape": "null",
+ "rule_compliant": false,
+ "argument": "Mass m carries resistance, but in this statement the resistance is the result of the coupling, not the cause of any cost or limit: the formula hands mass out, it does not charge anything to resistance, and the Yukawa coupling is itself undetermined by R. With no resistance-caused cost and no distance-made separation present, the equation keeps its shape.",
+ "reflected_sentence": "",
+ "knew_tsr": false
+}

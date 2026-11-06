@@ -1,0 +1,39 @@
+{
+ "id": "mech.newton_gravitation",
+ "physical": "Two masses attract with a force proportional to the product of the masses and inversely proportional to the square of their separation.",
+ "reflected_formula": "Frequency = G × Movement M × Movement M ÷ Vibration²",
+ "reflected_sentence": "Two Movement M terms share Attraction and Frequency proportional to their product, and instead of being weakened by separation in Vibration, their Attraction is already met and rises with alignment.",
+ "shape": "turns around",
+ "rule_reason": "separation made by distance (carries_distance: true on separation r, and alternate statement has 1 separation cost)",
+ "rule_trace": [
+  "separation"
+ ],
+ "forced": false,
+ "unmapped_terms": [
+  "gravitational constant G"
+ ],
+ "new_words": [],
+ "monotone_claims": [
+  {
+   "rises": "Frequency",
+   "with": "Movement M",
+   "sign": 1
+  },
+  {
+   "rises": "Frequency",
+   "with": "Vibration",
+   "sign": 1
+  },
+  {
+   "rises": "Attraction",
+   "with": "alignment",
+   "sign": 1
+  }
+ ],
+ "interpretation": "In the formula, Frequency relates Movement M and Vibration, while gravitational pull reflects to Attraction. Because separation made by distance turns around, what is weakened by separation on the physical side is already met in Vibration and rises with alignment.",
+ "conflicts": "none",
+ "sense": 4,
+ "confidence": 5,
+ "closing": "A judgment call arises between the main entry's empty costs list (though r has carries_distance: true) and the alternate statement's explicit separation cost; because separation made by distance turns around by rule, the shape is turns around with G in unmapped_terms.",
+ "knew_tsr": false
+}

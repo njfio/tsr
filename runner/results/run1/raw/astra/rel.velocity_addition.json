@@ -1,0 +1,21 @@
+{
+ "id": "rel.velocity_addition",
+ "physical": "Velocities compose so that the result never exceeds c: the combined speed is the sum divided by one plus the product over c squared.",
+ "reflected_formula": "(rise per Expansion)' = ((rise per Expansion) + (rise per Expansion)) ÷ (1 + (rise per Expansion) × (rise per Expansion) ÷ Current²)",
+ "reflected_sentence": "The composed rise per Expansion never exceeds Current.",
+ "shape": "keeps",
+ "rule_reason": "The composition identity keeps; c is a limit but does not carry resistance, and no resistance-caused cost is supplied.",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "rise per Expansion. Current.",
+ "conflicts": "\"limited | limitless\"; \"Nothing on the nonphysical side has a number, a unit or a distance.\"",
+ "sense": 1,
+ "confidence": 7,
+ "closing": "The identity and zero-cost rules force keeps; flipping the bound merely because it is a bound would ignore the specified resistance criterion. Both input velocities map to the same frozen phrase, with their separate formula positions preserving their roles. The formal unit term and upper-bound reading clash with a limitless, nonquantitative side; the prompt gives no interpretation resolving that clash. The formula is retained as instructed rather than repaired, and its sum does not replace any supplied product.",
+ "knew_tsr": false
+}

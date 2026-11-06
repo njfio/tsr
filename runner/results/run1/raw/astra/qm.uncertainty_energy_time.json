@@ -1,0 +1,26 @@
+{
+ "id": "qm.uncertainty_energy_time",
+ "physical": "A state that lasts only a short time has a correspondingly broad energy; the product of the energy spread and the lifetime is at least half the reduced Planck constant.",
+ "reflected_formula": "",
+ "reflected_sentence": "The product relationship concerning conscious energy and Expansion keeps its shape.",
+ "shape": "keeps",
+ "rule_reason": "Energy, time and the Planck constant are explicitly nonresistant, and no qualifying cost is supplied, so the inequality keeps. Energy and time map to conscious energy and Expansion, but the Planck constant and spread operations have no partners.",
+ "rule_trace": [
+  "none"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "state",
+  "energy spread ΔE",
+  "lifetime Δt",
+  "Planck constant ħ"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "",
+ "conflicts": "none",
+ "sense": 1,
+ "confidence": 7,
+ "closing": "The rule decides keeps; a lower bound alone is not a resistance-caused limit. Mapping the underlying energy and time does not define a spread of conscious energy or a measurable duration of Expansion. The formula and interpretation are empty because these missing operations and the constant cannot be translated without additions.",
+ "knew_tsr": false
+}

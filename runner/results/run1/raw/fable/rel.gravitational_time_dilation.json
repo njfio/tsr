@@ -1,0 +1,34 @@
+{
+ "id": "rel.gravitational_time_dilation",
+ "physical": "Gravitational time dilation: A clock deeper in a gravitational well runs slower than one higher up; the effect depends on depth in the well, not on the clock's own mass. Formula: Δt = Δτ ÷ √(1 − 2 × G × M ÷ (r × c²))",
+ "reflected_formula": "ΔExpansion = ΔExpansion(own) ÷ √(1 − 2 × G × M ÷ (r × Current²)) (G, a constant, and r, the extent from the center, have no partner; 2 is a number)",
+ "reflected_sentence": "Expansion further into a Vortex is dilated against Expansion apart from it (Expansion Dilation), and the Dilation goes with how far into the Vortex the entity is, not with the entity's own Movement M.",
+ "shape": "keeps",
+ "rule_reason": "equation with no cost named; zero costs (even) → keeps",
+ "rule_trace": [
+  "none"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "clock",
+  "depth in the well",
+  "radius r",
+  "gravitational constant G",
+  "runs slower (a rate)",
+  "2 (a number)"
+ ],
+ "new_words": [],
+ "monotone_claims": [
+  {
+   "rises": "Expansion Dilation",
+   "with": "Movement M",
+   "sign": 1
+  }
+ ],
+ "interpretation": "The Vortex dilates Expansion, and the table already names this: Expansion Dilation is the named reflection of time dilation. The Dilation belongs to the Vortex, that is to the Movement M at its center, and not to the entity within it. The table does not say what more or less Expansion means for the entity.",
+ "conflicts": "none",
+ "sense": 3,
+ "confidence": 4,
+ "closing": "I applied the cost block as given (empty), so the rule keeps. My disagreement: the statement says a clock 'runs slower' the deeper it sits, which reads as something that worsens with the central mass (resistance) and with 'depth', and the rule's own gloss that distance is 'what resistance makes' could have counted that as a cost and turned the row. The prompt's record did not, and I followed it. 'Depth' is a separation-like word and had to be described in plain words.",
+ "knew_tsr": false
+}

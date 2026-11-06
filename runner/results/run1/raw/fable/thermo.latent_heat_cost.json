@@ -1,0 +1,27 @@
+{
+ "id": "thermo.latent_heat_cost",
+ "physical": "Latent heat (the cost reading): Changing a body's phase takes heat in proportion to its mass, with no rise in temperature while it happens. Q = m × L",
+ "reflected_formula": "[no partner: heat Q] = Movement M × [no partner: latent heat L]",
+ "reflected_sentence": "The relationship turns around: in the table's terms the formula stays as it is, Movement M multiplying an unnamed per-unit term, and the reading turns, so what is costly in the physical reading comes easily with receptivity; what is taken in and the per-unit term have no partners.",
+ "shape": "turns around",
+ "rule_reason": "One cost (changing the body's phase; the heat it takes) rises with mass m, which the fixed table says carries resistance (inertial mass as opposition to a change in motion). One resistance-cost is an odd number, so the reading turns.",
+ "rule_trace": [
+  "resistance-cost"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "heat",
+  "latent heat",
+  "phase",
+  "temperature",
+  "body"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "Movement M stands where the cost once stood, and the cost turns: with receptivity, the change comes easily. What is taken, and the change itself, have no partners.",
+ "conflicts": "none",
+ "sense": 2,
+ "confidence": 7,
+ "closing": "The rule decided on its own: mass carries resistance, the one cost rises with it, the row turns. What is strange in TSR's own terms is that Movement M is the image of the resistant quantity, yet the turned reading says the cost falls with receptivity; the table does not say how Movement M and receptivity relate, so I left the monotone claim empty rather than assert one. The 'no rise in temperature' clause has no frozen words at all.",
+ "knew_tsr": false
+}

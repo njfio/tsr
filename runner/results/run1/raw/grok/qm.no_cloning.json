@@ -1,0 +1,23 @@
+{
+ "id": "qm.no_cloning",
+ "physical": "No physical operation can make an independent copy of an arbitrary unknown quantum state.",
+ "reflected_formula": "",
+ "reflected_sentence": "This limit keeps: no operation makes an independent copy of an arbitrary unknown state.",
+ "shape": "keeps",
+ "rule_reason": "a limit, but not caused by resistance: empty cost block, no mass, no separation. A limit turns only when resistance causes it",
+ "rule_trace": [
+  "none"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "wavefunction amplitude"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "This keeps. It is not the gap and not realization. Unreachable does not become already there.",
+ "conflicts": "none",
+ "sense": 2,
+ "confidence": 6,
+ "closing": "The rule decided. The form is a limit, which turns only if resistance causes it. The cost block is empty and no quantity carries resistance, so the shape keeps and the reading does not flip to already there. Amplitude is unmapped. I did not invent a word for the copy.",
+ "knew_tsr": false
+}

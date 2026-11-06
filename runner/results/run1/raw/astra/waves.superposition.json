@@ -1,0 +1,29 @@
+{
+ "id": "waves.superposition",
+ "physical": "In a linear medium the net displacement at any point is the sum of the displacements each wave would produce alone.",
+ "reflected_formula": "no partner",
+ "reflected_sentence": "The additive relationship between the combined form and its contributions keeps its shape.",
+ "shape": "keeps",
+ "rule_reason": "An identity keeps its shape, with no resistance-cost or separation. Amplitude and displacement have no frozen partners, so y = y1 + y2 cannot be word-mapped.",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "amplitude",
+  "net displacement y",
+  "displacement y1",
+  "displacement y2",
+  "linear medium",
+  "wave",
+  "point"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "No partner. No partner.",
+ "conflicts": "none",
+ "sense": 1,
+ "confidence": 7,
+ "closing": "The identity forces keeps. Preserving the given addition would not itself violate the ban on replacing a book product with a sum, because this formula already contains a sum. Conversely, substituting a product or culmination for that addition would rewrite the relation. Missing amplitude and displacement partners prevent a substantive reflection.",
+ "knew_tsr": false
+}

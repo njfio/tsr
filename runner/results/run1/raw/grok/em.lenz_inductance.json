@@ -1,0 +1,26 @@
+{
+ "id": "em.lenz_inductance",
+ "physical": "An induced current flows so as to oppose the change that produced it; a coil opposes a change in its own current with a back-EMF proportional to its inductance. EMF = L × dI ÷ dt",
+ "reflected_formula": "(unmapped) = (unmapped) × d(unmapped) ÷ d(Expansion)",
+ "reflected_sentence": "Changing the flow gets easier with receptivity, and the reading of the proportion turns.",
+ "shape": "turns around",
+ "rule_reason": "One cost: changing the current gets harder as inductance rises, and inductance carries resistance, so the relationship turns around.",
+ "rule_trace": [
+  "resistance-cost"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "voltage",
+  "inductance",
+  "current",
+  "coil"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "Receptivity makes the change easier. The relationship turns. Expansion holds the change.",
+ "conflicts": "none",
+ "sense": 4,
+ "confidence": 7,
+ "closing": "The rule decided. One resistance-cost is listed, inductance is pre-marked as carrying resistance, and the count is odd, so it turns. I did not invent a frozen-word monotone, because the flow and the ease of changing it have no partners. I did not write resistance on the nonphysical side; the cost appears as getting easier with receptivity.",
+ "knew_tsr": false
+}

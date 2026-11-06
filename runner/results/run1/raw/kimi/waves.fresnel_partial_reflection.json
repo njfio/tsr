@@ -1,0 +1,31 @@
+{
+ "id": "waves.fresnel_partial_reflection",
+ "physical": "At an interface between two media part of the light reflects and part transmits; the reflected fraction grows with the index contrast and the two fractions sum to one. R = ((n1 − n2) ÷ (n1 + n2))²",
+ "reflected_formula": "R = ((n1 − n2) ÷ (n1 + n2))² (kept as given; R, n1 and n2 have no frozen partners)",
+ "reflected_sentence": "The formula keeps its form but its reading turns around: what got harder the more the two media differed now gets easier with receptivity, and the share held back at the gap shrinks as the two media meet in the Current rather than oppose.",
+ "shape": "turns around",
+ "rule_reason": "The cost 'getting through the boundary' rises with index contrast; judged to carry resistance here on Ch 16's medium-as-resistance reading, making one resistance-cost, odd parity, so the reading turns while the formula stays.",
+ "rule_trace": [
+  "resistance-cost"
+ ],
+ "forced": false,
+ "unmapped_terms": [
+  "reflected fraction R",
+  "index contrast",
+  "refractive index n"
+ ],
+ "new_words": [],
+ "monotone_claims": [
+  {
+   "rises": "alignment",
+   "with": "receptivity",
+   "sign": 1
+  }
+ ],
+ "interpretation": "The word for the surface may not cross, so the gap takes its part. What the contrast held back now passes as receptivity grows, and the two shares still sum to one because the conservation was an identity. Only the difficulty turned.",
+ "conflicts": "none",
+ "sense": 3,
+ "confidence": 4,
+ "closing": "Judgment call, and it decides everything: refractive index and index contrast are both marked UNDETERMINED. I read the medium as resistance, as Ch 16 does, since the named cost is literally 'getting through' and rises with the contrast; that makes one resistance-cost and the relation turns. Under the ratio-of-speeds reading no resistance-cost exists and the same formula would keep instead — the rule declined to choose.",
+ "knew_tsr": false
+}

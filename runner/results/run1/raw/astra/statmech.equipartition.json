@@ -1,0 +1,28 @@
+{
+ "id": "statmech.equipartition",
+ "physical": "In thermal equilibrium every quadratic degree of freedom carries an average energy of half k times the temperature.",
+ "reflected_formula": "",
+ "reflected_sentence": "E has a partner, but the complete relation does not.",
+ "shape": "keeps",
+ "rule_reason": "An identity keeps its shape, and the listed quantities carry no resistance; only energy has an available partner.",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "thermal equilibrium",
+  "quadratic degree of freedom",
+  "degrees of freedom",
+  "average energy",
+  "Boltzmann constant",
+  "temperature"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "",
+ "conflicts": "none",
+ "sense": 1,
+ "confidence": 7,
+ "closing": "The identity rule decides keeps on its own. Shared E does not define an averaging operation, thermal equilibrium, temperature, or degrees of freedom on the other side; retaining a literal half-unit allocation per degree of freedom would introduce prohibited quantities.",
+ "knew_tsr": false
+}

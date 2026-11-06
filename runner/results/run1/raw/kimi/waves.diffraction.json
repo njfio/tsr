@@ -1,0 +1,31 @@
+{
+ "id": "waves.diffraction",
+ "physical": "A wave passing through an aperture spreads; the narrower the aperture compared with the wavelength, the wider the spread. sin θ ≈ λ ÷ a",
+ "reflected_formula": "sin θ ≈ λ ÷ a (kept as given; θ, λ and a have no frozen partners)",
+ "reflected_sentence": "The formula keeps its form, but its reading turns around: what got harder the narrower the opening now gets easier the more receptive the opening, so where a wave was made to spread, the Current meets the gap and collecting widens instead.",
+ "shape": "turns around",
+ "rule_reason": "Separation made by distance: the cost 'passing through without spreading' is flagged as a separation cost and the aperture width carries distance; one such cost, odd parity, turns the reading.",
+ "rule_trace": [
+  "separation"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "spreading angle θ",
+  "wavelength λ",
+  "aperture width a"
+ ],
+ "new_words": [],
+ "monotone_claims": [
+  {
+   "rises": "collection",
+   "with": "receptivity",
+   "sign": 1
+  }
+ ],
+ "interpretation": "Radiation reflects to collection, so the spread of the wave reads as a widening collection. What a narrowing opening made hard, receptivity makes easy. The quantities themselves have no partners, so only the relationship crosses and the symbols stay bare.",
+ "conflicts": "none",
+ "sense": 3,
+ "confidence": 6,
+ "closing": "The rule decided on its own: the cost entry flags a separation made by distance, and separations turn by rule, so no judgment call was needed. The loss is that angle, wavelength and aperture width have no partners, so the formula crosses only as symbols and the reflection stays thin. The alternate statement with no named difficulty would keep, but the relation as given turns.",
+ "knew_tsr": false
+}

@@ -1,0 +1,8 @@
+{
+ "id": "qm.no_cloning",
+ "alternative_shape": null,
+ "rule_compliant": false,
+ "argument": "The limit follows from the linearity of states, an identity, and the only quantity present (the amplitude) carries no resistance; it is not a limit caused by resistance, so no turn is available.",
+ "reflected_sentence": "",
+ "knew_tsr": false
+}

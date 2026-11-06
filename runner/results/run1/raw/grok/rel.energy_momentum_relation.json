@@ -1,0 +1,21 @@
+{
+ "id": "rel.energy_momentum_relation",
+ "physical": "A body's energy squared equals its momentum times c squared plus its rest energy squared; for a massless particle the energy is momentum times c.",
+ "reflected_formula": "E² = (momentum × Current)² + (Movement M × Current²)²",
+ "reflected_sentence": "E squared keeps as the square of momentum times the Current, plus the square of Movement times the Current squared, and with no Movement, E keeps as momentum times the Current.",
+ "shape": "keeps",
+ "rule_reason": "An identity with no cost or separation. Identities keep their shape. Mass is in the identity but is not listed as a cost, so it does not turn the relation.",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "E keeps with momentum, the Current, and Movement. The relationship does not turn. Momentum keeps as momentum.",
+ "conflicts": "none",
+ "sense": 2,
+ "confidence": 6,
+ "closing": "The rule decides the keep: the form is an identity and the cost list is empty. All four quantities have partners, so the formula is the word-map image and is not rewritten, including the sum. That sum is the awkward point: the only E equation named beside the table is a product, the Present, and nothing on this side has a number, so Current squared is not a magnitude TSR can carry. I did not repair the sum into a product, because that would rewrite the formula. The mismatch is why sense is low, not a reason to turn the identity.",
+ "knew_tsr": false
+}

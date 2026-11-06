@@ -1,0 +1,26 @@
+{
+ "id": "statmech.ergodicity",
+ "physical": "For an ergodic system the long-time average of an observable equals its average over the ensemble of accessible states.",
+ "reflected_formula": "",
+ "reflected_sentence": "For an [unmapped: ergodic system] the long-Expansion [unmapped: average] of an [unmapped: observable] equals its [unmapped: average] over the [unmapped: ensemble of accessible states].",
+ "shape": "keeps",
+ "rule_reason": "identity equating two averages with zero costs caused by resistance and no separation made by distance",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "ergodic system",
+  "observable",
+  "average",
+  "ensemble of accessible states"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "Expansion replaces the physical clock in the first average, and the contrast between one path's Expansion and a whole collection echoes Vibrational Reality and Collective Reality, yet ergodic system, observable, and ensemble have no partners in the frozen table. The identity keeps its shape because no gap cost or separation appears. With only Expansion mapped, the sentence remains mostly unmapped physics prose.",
+ "conflicts": "none",
+ "sense": 2,
+ "confidence": 7,
+ "closing": "The rule decided on its own because the ergodic hypothesis is stated as an identity with no variables carrying resistance or distance and no costs. Only the word 'time' inside 'long-time' maps to 'Expansion' in the frozen vocabulary, leaving 'ergodic system', 'observable', 'average', and 'ensemble of accessible states' unmapped.",
+ "knew_tsr": false
+}

@@ -1,0 +1,8 @@
+{
+ "id": "waves.phase_velocity",
+ "alternative_shape": null,
+ "rule_compliant": false,
+ "argument": "The relation is a definition (v_p = ω/k) of the phase velocity, and definitions keep their shape; no cost or separation is recorded and no variable carries resistance. No rule-compliant 'turns around' reading exists.",
+ "reflected_sentence": "",
+ "knew_tsr": false
+}

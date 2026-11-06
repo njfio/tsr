@@ -1,0 +1,8 @@
+{
+ "id": "thermo.temperature_mean_kinetic_energy",
+ "alternative_shape": null,
+ "rule_compliant": false,
+ "argument": "The relation is an identity, which keeps its shape; although mass m carries resistance, no cost or limit caused by it appears in the statement, so there is nothing to turn.",
+ "reflected_sentence": "",
+ "knew_tsr": false
+}

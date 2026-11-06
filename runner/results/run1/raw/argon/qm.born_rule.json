@@ -1,0 +1,26 @@
+{
+ "id": "qm.born_rule",
+ "physical": "The probability of an outcome is the squared magnitude of its amplitude. P = |ψ|²",
+ "reflected_formula": "[probability: no partner] = |[wavefunction amplitude: no partner]|²",
+ "reflected_sentence": "How likely a realization is stays tied in the same way to the strength of the state that leads to it.",
+ "shape": "keeps",
+ "rule_reason": "definition; no cost caused by resistance and no separation",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "probability",
+  "wavefunction amplitude",
+  "outcome",
+  "squared magnitude"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "The definition keeps its shape. With no partners for its terms it says nothing on the nonphysical side, and the square is a number that cannot cross the mirror.",
+ "conflicts": "\"Nothing on the nonphysical side has a number, a unit or a distance\" (the square and the probability value are numbers)",
+ "sense": 1,
+ "confidence": 7,
+ "closing": "The rule decided the shape on its own (definition, so keeps). But the reflection is empty, because probability and amplitude have no partner in the vocabulary, and a probability is itself a number.",
+ "knew_tsr": false
+}

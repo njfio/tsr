@@ -1,0 +1,25 @@
+{
+ "id": "waves.interference_cancellation",
+ "physical": "Two waves in opposite phase cancel at a point; the cancellation is located, and energy is conserved overall. (no formula)",
+ "reflected_formula": "",
+ "reflected_sentence": "The relation turns around: two vibrations set against each other do not cancel at all, they culminate, and the conscious energy that an account of cancellation had to keep safe is simply E, shared by both sides.",
+ "shape": "turns around",
+ "rule_reason": "The cost 'two vibrations coexisting at one location' is a separation made by distance (the cancellation is located and carried by length); one separation, odd parity, turns the reading.",
+ "rule_trace": [
+  "separation"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "phase difference",
+  "amplitude",
+  "the point of cancellation"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "A located cancellation needs a separation, and separations do not cross. The frozen vocabulary already contains the turn: culminate is what two vibrations do instead of cancel. Conservation needs no rescue because E keeps the energy on both sides.",
+ "conflicts": "none",
+ "sense": 6,
+ "confidence": 6,
+ "closing": "The rule decided alone: the cost entry flags a separation made by distance and odd parity turns it. Unusually, the frozen vocabulary confirms the turned reading word for word, since culminate is defined as what two vibrations do instead of cancel; this is the one row where the reflection says something the table already half-said.",
+ "knew_tsr": false
+}

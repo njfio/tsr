@@ -1,0 +1,24 @@
+{
+ "id": "waves.superposition",
+ "physical": "In a linear medium the net displacement at any point is the sum of the displacements each wave would produce alone. y = y1 + y2",
+ "reflected_formula": "y = y1 + y2 (kept as given; y has no frozen partner)",
+ "reflected_sentence": "It keeps its shape: the net vibration is the sum of what each vibration brings alone, and on the nonphysical side two vibrations do more than add — they culminate, since the book itself has a sum here and the sum crosses whole.",
+ "shape": "keeps",
+ "rule_reason": "It is an identity in a linear medium; identities keep their shape; no costs named.",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "amplitude",
+  "displacement y"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "An identity crosses whole, sum and all, because the book itself writes a sum here. Culminate is the frozen word for what two vibrations do together. Amplitude never finds a partner.",
+ "conflicts": "none",
+ "sense": 5,
+ "confidence": 7,
+ "closing": "The rule decided alone: an identity with no costs keeps. The trap about sums does not bite because the physical relation itself is a sum. Ch 16's word culminate fits without stretching, which lifts this row above the bare-symbol rows.",
+ "knew_tsr": false
+}

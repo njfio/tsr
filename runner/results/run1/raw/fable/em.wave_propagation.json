@@ -1,0 +1,35 @@
+{
+ "id": "em.wave_propagation",
+ "physical": "Electromagnetic wave propagation: A changing electric field makes a magnetic field and a changing magnetic field makes an electric field; the pair regenerates itself and travels at a speed fixed by the permittivity and permeability of free space. c = 1 ÷ √(ε0 × μ0)",
+ "reflected_formula": "Current = 1 ÷ √([permittivity: unmapped] × [permeability: unmapped])",
+ "reflected_sentence": "A change in the Idle makes the Reflected and a change in the Reflected makes the Idle; the pair regenerates itself as the Current, set by the two medium constants.",
+ "shape": "keeps",
+ "rule_reason": "identity: no cost and no separation, so it keeps; c is fixed as the limit, not an opposition",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "permittivity ε0",
+  "permeability μ0",
+  "free space",
+  "travels",
+  "speed",
+  "wave",
+  "field"
+ ],
+ "new_words": [],
+ "monotone_claims": [
+  {
+   "rises": "Idle",
+   "with": "Reflected",
+   "sign": 1
+  }
+ ],
+ "interpretation": "The Idle and the Reflected co-create each other, each change in one bringing the other, and their self-regeneration is the Current. The speed of light crosses as the Current by the table, so the limit of the physical side is the Current of the nonphysical side. Limited becomes limitless: what is a fixed ceiling on one side is the flow itself on the other.",
+ "conflicts": "none",
+ "sense": 4,
+ "confidence": 7,
+ "closing": "The rule decided on its own: an identity keeps, and c is fixed in the prompt as the limit rather than an opposition, so no cost fires. The mutual regeneration of the Idle and the Reflected is the part of this batch that reads most like the table's own claim that electric and magnetic are co-creating partners, and the image of c as the Current adds a reading the table does not spell out. 'Travels at a speed' cannot cross and was dropped rather than paraphrased; the right-hand side of the formula is entirely unmapped, so the equation says only that the Current is set by two things with no names. (Amendment 1 applied: shape is the rule's call on the relationship; unmapped terms are listed separately and described in plain words in the sentence.)",
+ "knew_tsr": false
+}

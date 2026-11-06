@@ -1,0 +1,12 @@
+id: qm.pauli_exclusion
+domain: quantum
+title: "Pauli exclusion"
+statement: "No two identical fermions can occupy the same quantum state; the many-body state is antisymmetric under exchange."
+form: symmetry
+variables:
+  - {name: spin, quantity: spin}
+costs: []
+standard_sources: ["Pauli 1925; the spin-statistics theorem"]
+book_status: unreflected
+review: pending
+notes: "Stated as the symmetry it follows from. Read as a limit ('two can't share a state') it has no resistance-carrying quantity to rise with and would still keep."

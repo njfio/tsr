@@ -1,0 +1,25 @@
+{
+ "id": "waves.standing_waves",
+ "physical": "Between two fixed ends only wavelengths that fit a whole number of half-waves into the length persist; the ends force nodes and the allowed modes are set by the separation. λ_n = 2 × L ÷ n",
+ "reflected_formula": "λ_n = 2 × L ÷ n (kept as given; λ, L and n have no frozen partners)",
+ "reflected_sentence": "The formula keeps its form but the limit turns around: where a separation let only the fitting vibrations persist, no separation crosses the mirror, so the limited reads as limitless and every vibration is already welcome.",
+ "shape": "turns around",
+ "rule_reason": "A limit whose selection is set by a separation made by distance (the length between the ends, flagged as a separation); one separation, odd parity, turns the reading, and limited reflects to limitless.",
+ "rule_trace": [
+  "separation"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "wavelength λ",
+  "length L",
+  "mode number n"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "Length is a separation and separations do not cross. The fence of nodes is the gap's work, and without the fence the selection dissolves. What was limited is limitless.",
+ "conflicts": "none",
+ "sense": 4,
+ "confidence": 7,
+ "closing": "The cost entry flags the selection as a separation made by distance, and separations turn by rule, so no judgment was needed. The reflection even has frozen vocabulary for the turn (limited to limitless), which makes it cleaner than most of this batch, though none of the three symbols finds a partner.",
+ "knew_tsr": false
+}

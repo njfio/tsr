@@ -1,0 +1,27 @@
+{
+ "id": "em.impedance",
+ "physical": "In an alternating-current circuit the ratio of voltage to current is the impedance, whose magnitude combines resistance with the inductive and capacitive reactances. |Z| = √(R² + (X_L − X_C)²)",
+ "reflected_formula": "|Z| = √(R² + (X_L − X_C)²)",
+ "reflected_sentence": "The definition of the opposition's size as a combination of its parts keeps its shape, even though every part of it is made of opposition.",
+ "shape": "keeps",
+ "rule_reason": "A definition: it states how opposition's parts combine, not a cost that rises with resistance, so under the rule definitions keep their shape.",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "impedance Z",
+  "electrical resistance R",
+  "reactance X",
+  "voltage",
+  "current"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "The gap has parts, and this says how the parts compose the whole. It is a definition, so the shape survives the mirror. On the nonphysical side the whole of it can only appear as the gap.",
+ "conflicts": "none",
+ "sense": 2,
+ "confidence": 6,
+ "closing": "The rule decided via the form: definition, hence keeps, even though every quantity involved carries resistance in the fixed table. I noted the tension in closing rather than the reflection: one could argue the whole definition is opposition and should turn, but the rule assigns turns only to costs and limits, so keeps it is.",
+ "knew_tsr": false
+}

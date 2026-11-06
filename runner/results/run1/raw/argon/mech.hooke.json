@@ -1,0 +1,34 @@
+{
+ "id": "mech.hooke",
+ "physical": "A spring pushes back in proportion to how far it is stretched; stretching it further takes more force, more so the stiffer the spring.",
+ "reflected_formula": "Frequency = k × Vibration",
+ "reflected_sentence": "Extending further in Vibration becomes easier and takes less Frequency as receptivity and alignment rise.",
+ "shape": "turns around",
+ "rule_reason": "1 resistance cost (stretching the spring further rises with spring constant)",
+ "rule_trace": [
+  "resistance-cost"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "spring constant"
+ ],
+ "new_words": [],
+ "monotone_claims": [
+  {
+   "rises": "Frequency",
+   "with": "alignment",
+   "sign": 1
+  },
+  {
+   "rises": "Frequency",
+   "with": "Vibration",
+   "sign": 1
+  }
+ ],
+ "interpretation": "Because spring constant carries resistance, the single cost of stretching turns around with receptivity and alignment. What takes more Frequency with greater stiffness on the physical side becomes easier with receptivity in Vibration.",
+ "conflicts": "none",
+ "sense": 2,
+ "confidence": 7,
+ "closing": "The single resistance cost clearly triggers turns around, and spring constant goes into unmapped_terms because it is absent from the frozen vocabulary table.",
+ "knew_tsr": false
+}

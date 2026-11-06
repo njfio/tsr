@@ -1,0 +1,25 @@
+{
+ "id": "thermo.first_law",
+ "physical": "The change in a system's internal energy equals the heat added minus the work it does: energy is conserved.",
+ "reflected_formula": "E = E − E",
+ "reflected_sentence": "The change in a system's own energy equals the energy taken in less the energy given out: E is conserved, and the equivalence keeps its shape.",
+ "shape": "keeps",
+ "rule_reason": "Conservation law (form is conservation and no quantity carries resistance), which keeps its shape, but internal energy, heat, and work have no separate partners in the frozen vocabulary.",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "internal energy U",
+  "heat Q",
+  "work W"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "E is the one energy shared by both sides. Because internal energy, heat, and work have no distinct partners in the frozen vocabulary, their difference collapses.",
+ "conflicts": "No sums where the book has products.",
+ "sense": 2,
+ "confidence": 7,
+ "closing": "The rule decided without a judgment call that a conservation law with no resistance quantities keeps its shape. However, the frozen vocabulary does not distinguish internal energy, heat, and work, so the formula cannot be distinctly mapped.",
+ "knew_tsr": false
+}

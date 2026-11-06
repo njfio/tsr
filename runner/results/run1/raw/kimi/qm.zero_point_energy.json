@@ -1,0 +1,24 @@
+{
+ "id": "qm.zero_point_energy",
+ "physical": "The lowest energy of a bound system is not zero; an oscillator's ground state keeps half a quantum of energy. E0 = ½ × ħ × ω",
+ "reflected_formula": "E = (constant, no partner) × (rate, no partner); the half does not cross",
+ "reflected_sentence": "The lowest E still holds conscious energy; E never empties.",
+ "shape": "keeps",
+ "rule_reason": "A limit not caused by resistance; the count is none, so the shape keeps.",
+ "rule_trace": [
+  "none"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "Planck constant ħ",
+  "angular frequency ω (frequency, physical)"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "A count and a rate and a constant feed this floor; none has a partner. The limit is not raised by any opposition, so the shape keeps. E never empties.",
+ "conflicts": "none",
+ "sense": 3,
+ "confidence": 6,
+ "closing": "Two traps refused in one row: ω is a physical rate and the prompt warns it is not TSR Frequency, so I did not map it to Frequency; and the numerical half does not cross, since nothing on this side has a number. Only E made it through, which is enough for the kept sentence but not for the formula's content.",
+ "knew_tsr": false
+}

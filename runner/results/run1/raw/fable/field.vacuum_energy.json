@@ -1,0 +1,27 @@
+{
+ "id": "field.vacuum_energy",
+ "physical": "Vacuum energy: The quantum vacuum has an energy density; the value field theory estimates and the value cosmology measures differ by many orders of magnitude.",
+ "reflected_formula": "",
+ "reflected_sentence": "Where there is nothing else there is still E; what is reckoned for it and what emotional evidence shows of it do not agree, and the size of the disagreement is a number, which does not cross; the shape keeps.",
+ "shape": "keeps",
+ "rule_reason": "definition; zero costs → keeps",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "quantum vacuum",
+  "field theory",
+  "estimate",
+  "cosmology",
+  "orders of magnitude (a number)"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "E is present even where there is nothing else; that much crosses. The mismatch between the two values is a mismatch of numbers, and numbers do not cross, so the nonphysical side has only the fact that the two do not agree. Emotional evidence stands for what is measured.",
+ "conflicts": "none",
+ "sense": 1,
+ "confidence": 6,
+ "closing": "The rule decided on its own: a definition keeps. I refused the tempting map 'density → Desire' because the prompt fixes the quantity as energy, not density; 'vacuum energy Desire' would have been a word-map image with no sense. 'Measures → emotional evidence' follows the evidence row; 'estimates' has no partner and is left in plain words.",
+ "knew_tsr": false
+}

@@ -1,0 +1,25 @@
+{
+ "id": "qm.pauli_exclusion",
+ "physical": "No two identical fermions can occupy the same quantum state; the many-body state is antisymmetric under exchange.",
+ "reflected_formula": "",
+ "reflected_sentence": "No two E of the same kind can hold the same state; the state of the many is antisymmetric under exchange, unchanged.",
+ "shape": "keeps",
+ "rule_reason": "symmetry; it keeps its shape. Spin is unmapped but that does not change the shape.",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "spin",
+  "fermion",
+  "exchange antisymmetry"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "A symmetry keeps its shape. The table has no word for spin or for two things being the same kind, so the kept symmetry is stated in plain words. It says nothing the table does not.",
+ "conflicts": "none",
+ "sense": 1,
+ "confidence": 6,
+ "closing": "Forced keeps by form (symmetry). No ambiguity about shape; the vocabulary offers nothing for spin. The statement 'no two can occupy the same' is also a limit and would tempt a limited-to-limitless flip, but the deciding question does not turn it. Under Amendment 1 this is keeps with spin unmapped.",
+ "knew_tsr": false
+}

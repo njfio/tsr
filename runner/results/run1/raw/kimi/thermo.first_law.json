@@ -1,0 +1,25 @@
+{
+ "id": "thermo.first_law",
+ "physical": "The change in a system's internal energy equals the heat added minus the work it does: energy is conserved. ΔU = Q − W",
+ "reflected_formula": "",
+ "reflected_sentence": "Conservation keeps its shape: conscious energy is neither made nor lost, and what a vibration receives minus what it gives Out For is what its unnamed inner store gains.",
+ "shape": "keeps",
+ "rule_reason": "Conservation law; conservation laws keep their shape, and the cost list is empty.",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "internal energy",
+  "heat",
+  "work"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "The one energy E is shared by both sides, so a conservation reading survives the crossing in spirit. But the three differentiated quantities have no frozen partner, so the balance cannot be written in table words.",
+ "conflicts": "none",
+ "sense": 2,
+ "confidence": 7,
+ "closing": "The rule decided: conservation keeps. I allowed the sentence to lean on E, Out For and the inner-store description, which are legal or plainly descriptive, while keeping all three quantities unmapped; that is the only judgment in this row.",
+ "knew_tsr": false
+}

@@ -1,0 +1,25 @@
+{
+ "id": "mech.torque",
+ "physical": "Torque equals moment of inertia times angular acceleration: the rotational form of Newton's second law, read as the definition of torque's effect. τ = I × α",
+ "reflected_formula": "[torque] = [moment of inertia] × [angular acceleration]",
+ "reflected_sentence": "The product keeps its shape as a definition, but every one of its terms lacks a partner across the mirror, so nothing crosses but the multiplication itself.",
+ "shape": "keeps",
+ "rule_reason": "The relation as given is a definition with an empty costs list; definitions keep their shape.",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": false,
+ "unmapped_terms": [
+  "torque τ",
+  "moment of inertia I",
+  "angular acceleration α"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "A product of three unmapped terms keeps its definitional shape. Nothing in the frozen vocabulary speaks torque, moment of inertia or angular acceleration, so the reflection is an empty frame. The keeps call rests on the given form alone.",
+ "conflicts": "none",
+ "sense": 1,
+ "confidence": 5,
+ "closing": "This row needed a judgment call. The main statement is a definition, which keeps; but the alternate statement reads the same product as a law whose required torque rises with the moment of inertia, a resistance quantity, which would be one odd cost and a turn. I kept the main statement because the relation's declared form is definition and the instructions say take each statement as given, but the alternate makes the call genuinely contestable.",
+ "knew_tsr": false
+}

@@ -1,0 +1,27 @@
+id: mech.centripetal_force
+domain: calibration
+title: "Centripetal force"
+statement: "Keeping a mass on a circular path requires a center-directed force F = m v² / r (the definition of the centripetal requirement)."
+formula: "F = m × v² ÷ r"
+form: definition
+variables:
+  - {name: force F, quantity: force}
+  - {name: mass m, quantity: mass m}
+  - {name: speed v, quantity: velocity}
+  - {name: radius r, quantity: radius}
+physical_terms: {F: "force", m: "mass m", v: "velocity", r: "space"}
+costs: []
+alternate_statements:
+  - statement: "As a cost: the force needed to hold a body on its curve rises with its mass."
+    form: equation
+    costs:
+      - what_gets_harder: "holding the body on the curve"
+        rises_with: [mass m]
+    note: "The cost reading; under C1 this would be a second record once the author's ruling is entered."
+derived_from: [mech.newtons_second_law]
+derivation: "F = ma with centripetal acceleration v²/r"
+standard_sources: ["any mechanics text"]
+book_status: ruled
+ruling: {shape: null, source: "Author's ruling, October 2026, cited in the spec but not published. PENDING: enter shape here."}
+review: "reviewed:spec-port"
+notes: "Round 1: split (definition and cost). Under C1 the expected ruling is: definition record keeps; cost record turns."

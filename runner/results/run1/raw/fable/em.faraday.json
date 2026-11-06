@@ -1,0 +1,26 @@
+{
+ "id": "em.faraday",
+ "physical": "Faraday's law: A changing magnetic flux through a loop induces an electromotive force equal to the rate of change of the flux. EMF = dΦ_B ÷ dt",
+ "reflected_formula": "[voltage: unmapped] = d[Reflected flux: flux unmapped] ÷ dExpansion",
+ "reflected_sentence": "A change in the Reflected across Expansion gives rise to a push on sources.",
+ "shape": "keeps",
+ "rule_reason": "equation with no cost and no separation; none fired, so it keeps",
+ "rule_trace": [
+  "none"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "electromotive force (voltage)",
+  "magnetic flux (flux)",
+  "loop",
+  "rate of change"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "A change in the Reflected, read across Expansion, gives rise to something the table has no word for. The relationship keeps its shape, but with the left side unmapped the sentence names a cause and no effect. Only the Reflected and Expansion cross.",
+ "conflicts": "none",
+ "sense": 1,
+ "confidence": 6,
+ "closing": "The rule decided on its own: no cost, no separation, so keeps. The problem is vocabulary, not shape. Voltage and flux have no partners, and 'rate of change' is a quantity per time, which the mirror forbids; writing d ÷ dExpansion reads as a rate in disguise even though Expansion is the frozen partner of time. I could state no monotone claim in frozen words. (Amendment 1 applied: shape is the rule's call on the relationship; unmapped terms are listed separately and described in plain words in the sentence.)",
+ "knew_tsr": false
+}

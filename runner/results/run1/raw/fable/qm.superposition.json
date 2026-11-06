@@ -1,0 +1,25 @@
+{
+ "id": "qm.superposition",
+ "physical": "Any linear combination of allowed states is an allowed state; the state space is linear.",
+ "reflected_formula": "",
+ "reflected_sentence": "Any combination of allowed states of an E is an allowed state; the states form a linear whole, unchanged.",
+ "shape": "keeps",
+ "rule_reason": "identity; it keeps its shape. Amplitude is unmapped but that does not change the shape.",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "wavefunction amplitude",
+  "linear combination",
+  "state"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "An identity keeps. The physical side adds states; the table has no word for a state and its only word about two things meeting is culminate, which is about vibrations, not states. The kept identity is stated in plain words.",
+ "conflicts": "none",
+ "sense": 1,
+ "confidence": 6,
+ "closing": "Forced keeps. Two traps sit close: the relation is a sum, and the only nearby frozen word is culminate (what two vibrations do instead of cancel). Mapping a state to a vibration would be an invention, so I did not. Under Amendment 1 this is keeps with amplitude unmapped.",
+ "knew_tsr": false
+}

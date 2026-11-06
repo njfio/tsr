@@ -1,0 +1,35 @@
+{
+ "id": "mech.resonance_width",
+ "physical": "A driven oscillator responds most strongly near its natural frequency; the width of that response grows with the damping, and the peak height falls with it (Q = ω0/Δω).",
+ "reflected_formula": "",
+ "reflected_sentence": "An oscillator responds most strongly at resonance, and as receptivity and alignment rise instead of draining the oscillation, the response sharpens and its peak rises.",
+ "shape": "turns around",
+ "rule_reason": "1 resistance cost: a sharp, strong response gets harder as damping coefficient rises",
+ "rule_trace": [
+  "resistance-cost"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "frequency (physical)",
+  "damping coefficient"
+ ],
+ "new_words": [],
+ "monotone_claims": [
+  {
+   "rises": "resonance",
+   "with": "alignment",
+   "sign": 1
+  },
+  {
+   "rises": "resonance",
+   "with": "receptivity",
+   "sign": 1
+  }
+ ],
+ "interpretation": "Because damping coefficient carries resistance, the single cost on the sharpness of response turns around so that response rises with receptivity and alignment. Physical frequency (explicitly noted as not TSR Frequency) and damping coefficient are recorded in unmapped_terms.",
+ "conflicts": "Frequency is not a rate and not cycles per second.",
+ "sense": 2,
+ "confidence": 7,
+ "closing": "The rule cleanly dictates a turnaround from the single damping cost, while physical frequency and damping coefficient are placed in unmapped_terms.",
+ "knew_tsr": false
+}

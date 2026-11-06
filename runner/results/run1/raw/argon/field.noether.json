@@ -1,0 +1,28 @@
+{
+ "id": "field.noether",
+ "physical": "Every continuous symmetry of the action corresponds to a conserved quantity: time translation to energy, space translation to momentum, rotation to angular momentum, phase to charge.",
+ "reflected_formula": "",
+ "reflected_sentence": "Every symmetry in Vibration-Expansion corresponds to what is conserved: Expansion to E, and Vibration to momentum.",
+ "shape": "keeps",
+ "rule_reason": "Identity and conservation law with no costs keeps its shape.",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "action",
+  "translation",
+  "rotation",
+  "angular momentum",
+  "phase",
+  "charge"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "Expansion pairs with E, and Vibration pairs with momentum. Because action, rotation, angular momentum, phase, and charge have no partners in the table, only the Expansion-to-E and Vibration-to-momentum pairings can be stated in frozen words.",
+ "conflicts": "none",
+ "sense": 3,
+ "confidence": 7,
+ "closing": "The rule directly decides that an identity and conservation law with no costs keeps its shape, so no judgment call was needed on shape. However, several key terms in the statement (charge, phase, rotation, angular momentum, action) have no nonphysical partners in the frozen table.",
+ "knew_tsr": false
+}

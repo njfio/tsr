@@ -1,0 +1,24 @@
+{
+ "id": "qm.born_rule",
+ "physical": "The probability of an outcome is the squared magnitude of its amplitude.",
+ "reflected_formula": "P = |ψ|²",
+ "reflected_sentence": "This definition keeps: the measure of an outcome remains the square of the magnitude of the strength assigned to that outcome.",
+ "shape": "keeps",
+ "rule_reason": "definition; an equivalence with an empty cost block, so no resistance-cost and no separation",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "probability",
+  "wavefunction amplitude"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "This keeps. It is not a claim about E, Movement, or Current.",
+ "conflicts": "none",
+ "sense": 1,
+ "confidence": 7,
+ "closing": "The rule decided on its own. The form is a definition and the cost block is empty, so the shape keeps. Both quantities are unmapped, and the square is a number, so the kept formula has no frozen-word substitute. No judgment call.",
+ "knew_tsr": false
+}

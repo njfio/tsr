@@ -1,0 +1,8 @@
+{
+ "id": "em.lenz_inductance",
+ "alternative_shape": null,
+ "rule_compliant": false,
+ "argument": "Opposition is the entire content of the statement: the induced flow moves against the change, and inductance is fixed as opposition to a change in current. No equivalence, identity, conservation law or symmetry is present to keep, so a keeps reading is not rule-compliant.",
+ "reflected_sentence": "",
+ "knew_tsr": false
+}

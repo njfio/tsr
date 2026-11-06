@@ -1,0 +1,32 @@
+{
+  "pairs": {
+    "P001": {
+      "a": "S040",
+      "b": "S083",
+      "flagged_by": [
+        {
+          "judge": "opus-screen",
+          "situation": "With conscious energy per source held fixed, S040 says the flow rises as receptivity rises, but S083 defines receptivity as that energy per source divided by the flow, so receptivity rising would require the flow to fall."
+        },
+        {
+          "judge": "sol-screen",
+          "situation": "For the same positive conscious energy per source across a path, increasing its positive receptivity increases the flow according to S040 but decreases the flow according to S083's definition of receptivity as that fixed conscious energy per source divided by flow."
+        }
+      ]
+    },
+    "P002": {
+      "a": "S041",
+      "b": "S075",
+      "flagged_by": [
+        {
+          "judge": "opus-screen",
+          "situation": "An entity with zero momentum and Movement M = 2 would have E squared = 2 x Current^4 by S041 but E = 2 x Current^2 (so E squared = 4 x Current^4) by S075."
+        },
+        {
+          "judge": "sol-screen",
+          "situation": "For one state with nonzero momentum and nonzero Current C, S075 makes E squared equal to the square of Movement M times Current squared, whereas S041 adds a nonzero momentum term to that same squared quantity."
+        }
+      ]
+    }
+  }
+}

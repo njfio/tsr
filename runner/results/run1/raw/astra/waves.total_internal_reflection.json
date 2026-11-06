@@ -1,0 +1,30 @@
+{
+ "id": "waves.total_internal_reflection",
+ "physical": "Going from a higher to a lower index, beyond the critical angle no light crosses the boundary; all of it is reflected, while an evanescent field reaches past the surface without carrying energy across.",
+ "reflected_formula": "no partner",
+ "reflected_sentence": "With receptivity, what was unreachable is already there.",
+ "shape": "turns around",
+ "rule_reason": "The supplied crossing limit rises with refractive index, whose resistance status is explicitly undetermined. It turns if that index carries resistance and otherwise keeps, because no separation cost is supplied. Angle and index lack partners for sin θ_c = n2 ÷ n1.",
+ "rule_trace": [
+  "resistance-cost"
+ ],
+ "forced": false,
+ "unmapped_terms": [
+  "critical angle θ_c",
+  "refractive index n",
+  "index contrast",
+  "light",
+  "boundary",
+  "optical reflection",
+  "evanescent field",
+  "surface"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "No partner. No partner.",
+ "conflicts": "none",
+ "sense": 1,
+ "confidence": 1,
+ "closing": "The refractive-index classification requires a judgment call. Independently for this relation, I provisionally choose the prompt's resistant-medium reading to supply the requested shape call, so resistance-cost fires; the alternative nonresistant classification would keep. A limit alone is insufficient because the rule requires a limit caused by resistance. Conscious energy supplies only a partial partner, and neither Reflected nor Point of Reflection is a licensed substitute for the missing optical terms.",
+ "knew_tsr": false
+}

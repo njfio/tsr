@@ -1,0 +1,27 @@
+{
+ "id": "rel.velocity_addition",
+ "physical": "Relativistic velocity addition: Velocities compose so that the result never exceeds c: the combined speed is the sum divided by one plus the product over c squared. Formula: u' = (u + v) ÷ (1 + u × v ÷ c²)",
+ "reflected_formula": "rise per Expansion (u') = (rise per Expansion (u) + rise per Expansion (v)) ÷ (1 + rise per Expansion (u) × rise per Expansion (v) ÷ Current²)",
+ "reflected_sentence": "Rises per Expansion compose so that the result never exceeds the Current: the combined rise per Expansion is the sum divided by one plus the product over the Current squared.",
+ "shape": "keeps",
+ "rule_reason": "identity; the limit c is not a cost caused by resistance (c carries none); no cost named → keeps",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [],
+ "new_words": [],
+ "monotone_claims": [
+  {
+   "rises": "rise per Expansion",
+   "with": "rise per Expansion",
+   "sign": 1
+  }
+ ],
+ "interpretation": "Two rises per Expansion together are always less than the Current; the Current is never exceeded. Every rise per Expansion is measured against the Current. The Current is the limit that all composing approaches but does not pass.",
+ "conflicts": "limited | limitless: the reflected sentence keeps a limit (the Current is never exceeded) on the side the table calls limitless",
+ "sense": 2,
+ "confidence": 5,
+ "closing": "The rule decided as stated: a limit turns only if caused by resistance, and c is fixed as carrying none, so the identity keeps. The ambiguity is that the property flip 'limited → limitless' pulls the other way; a limit that survives onto the limitless side reads as a contradiction in the table's own terms, which I recorded as a conflict rather than resolving. The sum in the formula is the physics' own and was not introduced.",
+ "knew_tsr": false
+}

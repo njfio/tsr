@@ -1,0 +1,24 @@
+{
+ "id": "mech.damping",
+ "physical": "A damping force opposing velocity drains an oscillation: the amplitude decays exponentially, faster the larger the damping coefficient.",
+ "reflected_formula": "",
+ "reflected_sentence": "The reading turns around: what a drain takes from the swing is easier with receptivity, and Expansion carries no number.",
+ "shape": "turns around",
+ "rule_reason": "One resistance-cost in the block, rising with the damping coefficient; odd count, so the reading turns around.",
+ "rule_trace": [
+  "resistance-cost"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "damping coefficient",
+  "amplitude"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "One cost in the block turns the reading: harder becomes easier with receptivity. Expansion is the partner, and no number crosses with it. Movement is in the formula, and no frozen word names the drain or the swing's extent.",
+ "conflicts": "none",
+ "sense": 3,
+ "confidence": 6,
+ "closing": "One listed cost rises with the damping coefficient, an odd count, so the reading turns and the decay formula is not rewritten. Mass in the exponent was not added as a second cost. Amplitude has no partner. Time's partner is Expansion, and no number crosses. No new word was introduced.",
+ "knew_tsr": false
+}

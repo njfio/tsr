@@ -1,0 +1,8 @@
+{
+ "id": "info.shannon_entropy",
+ "alternative_shape": null,
+ "rule_compliant": false,
+ "argument": "This is a definition of a measure from probabilities; Shannon entropy and probability are fixed as not carrying resistance and the statement names no cost or separation, so there is nothing present in the physics statement that the rule could turn around.",
+ "reflected_sentence": "",
+ "knew_tsr": false
+}

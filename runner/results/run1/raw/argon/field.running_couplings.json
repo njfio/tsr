@@ -1,0 +1,30 @@
+{
+ "id": "field.running_couplings",
+ "physical": "The strengths of the interactions depend on the energy scale at which they are probed: the electromagnetic coupling grows with energy, the strong coupling falls.",
+ "reflected_formula": "",
+ "reflected_sentence": "Frequency depends on E: Idle and Reflected Frequency grows with E, while strong Frequency falls with E.",
+ "shape": "keeps",
+ "rule_reason": "Equation with no resistance or separation costs keeps its shape.",
+ "rule_trace": [
+  "none"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "running coupling",
+  "strong coupling"
+ ],
+ "new_words": [],
+ "monotone_claims": [
+  {
+   "rises": "Frequency",
+   "with": "E",
+   "sign": 1
+  }
+ ],
+ "interpretation": "E is shared by both sides of the Point of Reflection, and electric and magnetic reflect to Idle and Reflected. The relationship with E keeps its shape across the Point of Reflection.",
+ "conflicts": "none",
+ "sense": 2,
+ "confidence": 6,
+ "closing": "Neither running coupling nor energy carries resistance, and no separation is involved, so the rule forces a keeps-shape reading. However, coupling strength itself has no partner in the frozen vocabulary.",
+ "knew_tsr": false
+}

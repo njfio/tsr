@@ -1,0 +1,25 @@
+{
+ "id": "mech.moment_of_inertia",
+ "physical": "A body's moment of inertia about an axis is the sum of each mass element times the square of its distance from the axis. I = Σ m × r²",
+ "reflected_formula": "I = Σ Movement M × r² (I and r have no partner; the physical name of r is a forbidden word on this side)",
+ "reflected_sentence": "The definition keeps its shape: how a body's mass is spread about its axis is the sum over each bit of Movement M times the square of how far that bit sits from the axis, so the nonphysical side receives Movement M summed with weights it cannot name.",
+ "shape": "keeps",
+ "rule_reason": "A definition with no cost listed: identity, keeps.",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "moment of inertia",
+  "radius (distance from axis)",
+  "axis"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "Only Movement M crosses. The quantity being defined and the extent it is weighted by are both unpaired, and the extent is named by a word that cannot appear on this side at all. The definition is kept as a sum of Movement M with blank weights.",
+ "conflicts": "none",
+ "sense": 1,
+ "confidence": 7,
+ "closing": "The rule decided on its own: a definition with no cost keeps. Moment of inertia is listed as carrying the flipping condition, but the definition has no cost, and the rule counts costs. The statement defines r as a distance from the axis while the fixed list says r does not carry distance; I applied the list, but note that the word itself is on the forbidden list for the nonphysical side, so the definition cannot be spoken there without paraphrase. The sum is kept as a sum because the physics has a sum; the trap only forbids making sums of the book's products.",
+ "knew_tsr": false
+}

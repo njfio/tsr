@@ -1,0 +1,24 @@
+{
+ "id": "qm.born_rule",
+ "physical": "The probability of an outcome is the squared magnitude of its amplitude. P = |ψ|²",
+ "reflected_formula": "",
+ "reflected_sentence": "The chance of an outcome is the squared magnitude of its amplitude, unchanged; the chance and the amplitude have no frozen names.",
+ "shape": "keeps",
+ "rule_reason": "definition; it keeps its shape. Both terms are unmapped but that does not change the shape.",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "probability",
+  "wavefunction amplitude"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "A definition keeps its shape. The table has no word for the chance of an outcome and no word for its amplitude, so the kept shape is stated in plain words. It says nothing the table does not.",
+ "conflicts": "none",
+ "sense": 1,
+ "confidence": 7,
+ "closing": "The keeps-or-turns call was forced: the form is a definition with no costs, so it keeps. The weakness is in the vocabulary, not the rule. Neither variable has a partner and I refused to invent one (Belief, Expectation and manifestation all tempt as a stand-in for probability or amplitude, but the table does not say that). Under Amendment 1 this is keeps with both terms unmapped.",
+ "knew_tsr": false
+}

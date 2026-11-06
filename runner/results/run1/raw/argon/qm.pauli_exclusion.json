@@ -1,0 +1,26 @@
+{
+ "id": "qm.pauli_exclusion",
+ "physical": "No two identical fermions can occupy the same quantum state; the many-body state is antisymmetric under exchange.",
+ "reflected_formula": "",
+ "reflected_sentence": "The symmetry keeps its shape: two alike of this kind do not share one state, and trading them flips the sign of the whole.",
+ "shape": "keeps",
+ "rule_reason": "symmetry (antisymmetry under exchange)",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "spin",
+  "fermion",
+  "quantum state",
+  "exchange antisymmetry"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "Symmetries keep their shape. The exclusion reads like a limit, but it follows from the symmetry and not from resistance.",
+ "conflicts": "none",
+ "sense": 1,
+ "confidence": 6,
+ "closing": "Decided by the rule: a symmetry keeps its shape. One could argue the exclusion is a limit, but resistance does not cause it. The words 'occupy' and 'same state' suggest location, which cannot cross.",
+ "knew_tsr": false
+}

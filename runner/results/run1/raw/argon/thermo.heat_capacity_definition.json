@@ -1,0 +1,25 @@
+{
+ "id": "thermo.heat_capacity_definition",
+ "physical": "Heat capacity is the heat required per unit rise in temperature.",
+ "reflected_formula": "",
+ "reflected_sentence": "A body's capacity for warming equals the energy taken in for each step of warming, and this definition keeps its shape.",
+ "shape": "keeps",
+ "rule_reason": "Definition with no costs listed, so it keeps its shape by form, though heat capacity is undetermined for resistance and all three variables are unmapped in the frozen vocabulary.",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "heat capacity C",
+  "heat Q",
+  "temperature change ΔT"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "Definitions keep their shape across the Point of Reflection. However, heat capacity, heat, and temperature have no partners in the frozen vocabulary.",
+ "conflicts": "none",
+ "sense": 1,
+ "confidence": 6,
+ "closing": "Because the form is explicitly a definition with an empty costs list, the rule keeps its shape without needing to resolve the undetermined status of heat capacity, though the presence of 'required' in the statement borders on a cost reading. All three variables lack partners in the frozen vocabulary.",
+ "knew_tsr": false
+}

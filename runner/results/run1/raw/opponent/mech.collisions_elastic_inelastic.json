@@ -1,0 +1,8 @@
+{
+ "id": "mech.collisions_elastic_inelastic",
+ "alternative_shape": null,
+ "rule_compliant": false,
+ "argument": "Both clauses are conservation statements, which keep their shape. The inelastic conversion is set by the coefficient of restitution, which the fixed list says does not carry resistance (a ratio of speeds), so no resistance-caused cost or distance-made separation is present in the statement.",
+ "reflected_sentence": "",
+ "knew_tsr": false
+}

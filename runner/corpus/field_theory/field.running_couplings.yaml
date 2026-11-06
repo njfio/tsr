@@ -1,0 +1,12 @@
+id: field.running_couplings
+domain: field_theory
+title: "Running couplings"
+statement: "The strengths of the interactions depend on the energy scale at which they are probed: the electromagnetic coupling grows with energy, the strong coupling falls."
+form: equation
+variables:
+  - {name: running coupling, quantity: running coupling}
+  - {name: energy scale, quantity: energy}
+costs: []
+standard_sources: ["Gell-Mann & Low 1954; Peskin & Schroeder, ch. 12"]
+book_status: unreflected
+review: pending

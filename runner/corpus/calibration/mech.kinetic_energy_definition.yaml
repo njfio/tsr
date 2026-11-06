@@ -1,0 +1,19 @@
+id: mech.kinetic_energy_definition
+domain: calibration
+title: "Kinetic energy (the definition)"
+statement: "Kinetic energy is the work done to bring a body from rest to speed v: K = ½ m v²."
+formula: "K = ½ × m × v²"
+form: definition
+variables:
+  - {name: kinetic energy K, quantity: kinetic energy}
+  - {name: mass m, quantity: mass m}
+  - {name: speed v, quantity: velocity}
+physical_terms: {K: "kinetic energy", m: "mass m", v: "velocity"}
+costs: []
+derived_from: [mech.newtons_second_law, mech.work]
+derivation: "integrate F = ma over displacement using the definition of work"
+standard_sources: ["any mechanics text"]
+book_status: ruled
+ruling: {shape: keeps, source: "Author's ruling, October 2026: 'Kinetic energy follows from force = mass × acceleration and the definition of work, which both keep their shape, so it keeps its shape too.'", reading_note: "As the cost of speed its reading turns over, which is row 8 (rel.row08_cost_of_more_speed)."}
+review: "reviewed:spec-port"
+notes: "The cost reading of the same relation is rel.row08_cost_of_more_speed. Two records, both hold (C1)."

@@ -1,0 +1,15 @@
+id: statmech.boltzmann_entropy
+domain: statistical_mechanics
+title: "Boltzmann entropy"
+statement: "The entropy of a macrostate is Boltzmann's constant times the logarithm of the number of microstates that realize it."
+formula: "S = k × ln W"
+form: definition
+variables:
+  - {name: entropy S, quantity: entropy}
+  - {name: number of microstates W, quantity: number of microstates}
+  - {name: Boltzmann constant k, quantity: Boltzmann constant}
+costs: []
+standard_sources: ["Boltzmann 1877; Reif, Statistical Physics, ch. 3"]
+book_status: unreflected
+review: pending
+notes: "The book's provisional partner for entropy is Culmination. The definition keeps; the generators must say whether 'number of ways' has a partner (it does not)."

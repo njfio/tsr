@@ -1,0 +1,27 @@
+{
+ "id": "rel.velocity_addition",
+ "physical": "Velocities compose so that the result never exceeds c: the combined speed is the sum divided by one plus the product over c squared.",
+ "reflected_formula": "rise per Expansion' = (rise per Expansion + rise per Expansion) ÷ (1 + rise per Expansion × rise per Expansion ÷ Current²)",
+ "reflected_sentence": "Rise per Expansion composes with rise per Expansion so that it stays within Current.",
+ "shape": "keeps",
+ "rule_reason": "Identity with no resistance or separation costs keeps its shape (c is the limit, not an opposition).",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": false,
+ "unmapped_terms": [],
+ "new_words": [],
+ "monotone_claims": [
+  {
+   "rises": "rise per Expansion",
+   "with": "Current",
+   "sign": 1
+  }
+ ],
+ "interpretation": "Every velocity reflects to rise per Expansion, and the speed of light c reflects to the Current. Composing rise per Expansion with rise per Expansion remains bounded by the Current.",
+ "conflicts": "Nothing on the nonphysical side has a number, a unit or a distance. / No sums where the book has products.",
+ "sense": 2,
+ "confidence": 4,
+ "closing": "Although the statement says the result 'never exceeds c' (which sounds like a limit), the quantity list specifies that `c` is 'the limit, not an opposition' and does not carry resistance, and the YAML classifies the form as `identity` with empty `costs`. Keeping the formula also introduces the number `1` and addition `+` on the nonphysical side, which conflicts with the rules against numbers and sums.",
+ "knew_tsr": false
+}

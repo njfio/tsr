@@ -1,0 +1,26 @@
+{
+ "id": "em.displacement_current",
+ "physical": "A changing electric field acts as a source of magnetic field just as a current does, which closes the symmetry between the two fields and makes electromagnetic waves possible. ∇ × B = μ0 × J + μ0 × ε0 × dE ÷ dt",
+ "reflected_formula": "∇ × Reflected = (unmapped) × (unmapped) + (unmapped) × (unmapped) × d(Idle) ÷ d(Expansion)",
+ "reflected_sentence": "A changing Idle keeps acting as what brings Reflected, just as a flow does, and that symmetry keeps.",
+ "shape": "keeps",
+ "rule_reason": "The form is a symmetry, which the rule groups with identities, and the cost block is empty, so the relationship keeps.",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "current",
+  "permeability",
+  "permittivity",
+  "curl"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "Idle and Reflected stay partners. A rise of Idle with Expansion brings Reflected. That bringing keeps.",
+ "conflicts": "none",
+ "sense": 3,
+ "confidence": 6,
+ "closing": "The rule decided. Form is symmetry and the cost block is empty, so it keeps. I mapped electric to Idle, magnetic to Reflected, and the coordinate to Expansion, and I did not reuse the velocity phrase as a name for the derivative. Current, permeability, permittivity, and the curl have no partners. I did not read the wave remark as travel, and I did not turn the sum into a product.",
+ "knew_tsr": false
+}

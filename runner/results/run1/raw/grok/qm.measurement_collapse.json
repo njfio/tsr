@@ -1,0 +1,24 @@
+{
+ "id": "qm.measurement_collapse",
+ "physical": "A measurement yields one of the observable's eigenvalues, and afterwards the system is in the corresponding eigenstate; which value appears is not determined by the prior state.",
+ "reflected_formula": "",
+ "reflected_sentence": "This keeps: a reading yields one allowed value and the outcome then matches that value, and the prior strength does not fix which value appears.",
+ "shape": "keeps",
+ "rule_reason": "statistical form, empty cost block, no resistance-carrying quantity and no separation",
+ "rule_trace": [
+  "none"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "probability",
+  "wavefunction amplitude"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "This keeps. It is not realization. It is not Desire or Intuition.",
+ "conflicts": "none",
+ "sense": 2,
+ "confidence": 7,
+ "closing": "The rule decided on its own. Statistical form, empty costs, no resistance and no separation, so the shape keeps. The yielded value and the prior strength have no partners. I described them in plain words and did not borrow realization. No judgment call on the shape.",
+ "knew_tsr": false
+}

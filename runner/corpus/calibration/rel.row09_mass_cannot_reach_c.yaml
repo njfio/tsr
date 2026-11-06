@@ -1,0 +1,19 @@
+id: rel.row09_mass_cannot_reach_c
+domain: calibration
+title: "Row 9: nothing with mass reaches the speed of light"
+statement: "No body with nonzero rest mass can be accelerated to the speed of light; the energy required diverges."
+formula: "lim v→c of (γ − 1) m c² = ∞ for m > 0"
+form: limit
+variables:
+  - {name: mass m, quantity: mass m}
+  - {name: speed v, quantity: velocity}
+  - {name: speed of light c, quantity: speed of light c}
+costs:
+  - what_gets_harder: "reaching the limit; unreachable for any nonzero mass"
+    rises_with: [mass m]
+derived_from: [rel.row08_cost_of_more_speed]
+derivation: "the limit of row 8"
+standard_sources: ["Taylor & Wheeler, Spacetime Physics, ch. 7"]
+book_status: ruled
+ruling: {shape: turns around, words: "nothing a Movement expands into can ever fall short of it", source: "Ch16 #9: inverted, because mass is in it"}
+review: "reviewed:spec-port"

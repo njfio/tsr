@@ -1,0 +1,14 @@
+id: waves.group_velocity
+domain: waves_optics
+title: "Group velocity"
+statement: "The envelope of a wave packet travels at the group velocity, the derivative of angular frequency with respect to wavenumber; it is the speed at which energy and signal travel."
+formula: "v_g = dω ÷ dk"
+form: definition
+variables:
+  - {name: group velocity v_g, quantity: group velocity}
+  - {name: angular frequency ω, quantity: frequency (physical)}
+  - {name: wavenumber k, quantity: wavenumber}
+costs: []
+standard_sources: ["Hecht, Optics, ch. 7; Brillouin, Wave Propagation and Group Velocity"]
+book_status: unreflected
+review: pending

@@ -1,0 +1,32 @@
+{
+ "id": "em.coulomb",
+ "physical": "Two charges push or pull with a force proportional to the product of the charges and inversely proportional to the square of their separation. F = k × q1 × q2 ÷ r²",
+ "reflected_formula": "Frequency = k × q1 × q2 ÷ (the gap)²",
+ "reflected_sentence": "What separation weakens on the physical side, alignment strengthens on the nonphysical side: the Frequency between the two grows the nearer they are, because nearness here is not made of the gap.",
+ "shape": "turns around",
+ "rule_reason": "A separation made by distance: the interaction is weakened by separation, one such cost, so the reading turns around while the formula keeps its shape.",
+ "rule_trace": [
+  "separation"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "charge q1",
+  "charge q2",
+  "Coulomb constant k",
+  "separation r"
+ ],
+ "new_words": [],
+ "monotone_claims": [
+  {
+   "rises": "Frequency",
+   "with": "alignment",
+   "sign": 1
+  }
+ ],
+ "interpretation": "The two have no gap except what the gap is; the Frequency grows as alignment grows. What was far is already near. The product stays a product.",
+ "conflicts": "none",
+ "sense": 4,
+ "confidence": 6,
+ "closing": "The rule decided on its own once the separation reading was accepted: one separation cost, odd count, the relation turns around. The ambiguity is vocabulary, not rule: charge and the constant have no frozen partner, and the gap is the only legal stand-in for separation, which squares awkwardly but is what the rule permits.",
+ "knew_tsr": false
+}

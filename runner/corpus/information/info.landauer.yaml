@@ -1,0 +1,17 @@
+id: info.landauer
+domain: information
+title: "Landauer's principle"
+statement: "Erasing one bit of information dissipates at least k T ln 2 of energy as heat; logically irreversible operations have a thermodynamic cost that rises with temperature."
+formula: "E ≥ k × T × ln 2"
+form: inequality
+variables:
+  - {name: energy E, quantity: energy}
+  - {name: temperature T, quantity: temperature}
+  - {name: Boltzmann constant k, quantity: Boltzmann constant}
+costs:
+  - {what_gets_harder: "erasing; the heat it must dissipate", rises_with: [temperature]}
+derived_from: [thermo.second_law_clausius, statmech.boltzmann_entropy]
+standard_sources: ["Landauer 1961; Bérut et al. 2012"]
+book_status: unreflected
+review: pending
+notes: "A cost with no resistance-carrying quantity under R1: keeps. Note the book's Ch 2 claim that forgetting is a physical event, 'a mark fading in a medium that can decay,' and that the receptive side has nothing that decays. Layer B should test this row's sentence against that claim."

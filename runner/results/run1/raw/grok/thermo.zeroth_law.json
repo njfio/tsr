@@ -1,0 +1,23 @@
+{
+ "id": "thermo.zeroth_law",
+ "physical": "If two bodies are each in thermal equilibrium with a third, they are in thermal equilibrium with each other; this is what makes temperature a well-defined property.",
+ "reflected_formula": "",
+ "reflected_sentence": "The definition keeps: if two bodies share an unmatched condition with a third, they share it with each other, and that is what makes the condition well-defined.",
+ "shape": "keeps",
+ "rule_reason": "Definition, and the cost block is empty. Definitions keep. Temperature does not carry resistance and has no partner.",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "temperature"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "The definition keeps. No frozen word names the condition it defines. It does not become Culmination, Movement, or conscious energy.",
+ "conflicts": "none",
+ "sense": 1,
+ "confidence": 7,
+ "closing": "The rule decided on its own. It is a definition with an empty cost block and one variable, temperature, which has no partner and does not carry resistance. Nothing in the shape call was ambiguous.",
+ "knew_tsr": false
+}

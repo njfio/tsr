@@ -1,0 +1,25 @@
+{
+ "id": "rel.null_interval",
+ "physical": "Null interval: Along a light ray the space-time interval is zero: no proper time passes for light, and its energy depends on who measures it. Formula: ds² = 0",
+ "reflected_formula": "ds² = 0, with s the Vibration-Expansion interval",
+ "reflected_sentence": "Along the Current the Vibration-Expansion interval vanishes: no Expansion of its own passes for the Current, and its E depends on whose emotional evidence meets it.",
+ "shape": "keeps",
+ "rule_reason": "identity; no cost named → keeps",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "light / light ray (taken through c → Current)",
+  "interval (kept as a relationship word)",
+  "measures (taken through empirical evidence → emotional evidence)"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "The Current has no Expansion of its own and no Vibration-Expansion interval along it; it is all at once. What E it carries is not fixed in it but in the one meeting it. This fits the table's use of the Current as what alignment is nearness to.",
+ "conflicts": "none",
+ "sense": 4,
+ "confidence": 7,
+ "closing": "The rule decided on its own: an identity keeps. The one vocabulary judgment was reading 'light' through its symbol row (speed of light c → Current), since light itself has no row; 'who measures it' went through the evidence row. 'Zero' is a number, but '= 0' here is the relationship 'vanishes', which I take as crossing. The result is one of the more coherent rows.",
+ "knew_tsr": false
+}

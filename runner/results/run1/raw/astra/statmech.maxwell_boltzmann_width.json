@@ -1,0 +1,27 @@
+{
+ "id": "statmech.maxwell_boltzmann_width",
+ "physical": "The spread of molecular speeds in a gas grows with the square root of temperature and shrinks with the square root of molecular mass.",
+ "reflected_formula": "",
+ "reflected_sentence": "Movement and rise per Expansion have partners, but the complete relation does not.",
+ "shape": "keeps",
+ "rule_reason": "The supplied costs list is empty, so the explicit cost-counting reading selects keeps; mass carries resistance, but its occurrence alone does not specify a cost or a resistance-caused limit.",
+ "rule_trace": [
+  "none"
+ ],
+ "forced": false,
+ "unmapped_terms": [
+  "speed spread",
+  "temperature",
+  "Boltzmann constant",
+  "molecular",
+  "gas"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "",
+ "conflicts": "none",
+ "sense": 1,
+ "confidence": 4,
+ "closing": "A judgment call is needed about whether the shrinking spread should itself count as a resistance-caused limit despite the empty costs list. I have not invented that cost: on the explicitly supplied list there are zero qualifying costs and the relationship keeps, whereas the broader verbal rule could invite a reversal. Either reading leaves the row without partners for temperature, the constant, and the spread construction; mass maps to Movement and velocity to rise per Expansion without repairing those omissions.",
+ "knew_tsr": false
+}

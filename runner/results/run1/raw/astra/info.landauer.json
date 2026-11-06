@@ -1,0 +1,30 @@
+{
+ "id": "info.landauer",
+ "physical": "Erasing one bit of information dissipates at least k T ln 2 of energy as heat; logically irreversible operations have a thermodynamic cost that rises with temperature.",
+ "reflected_formula": "",
+ "reflected_sentence": "E has a partner, but the complete relation does not.",
+ "shape": "keeps",
+ "rule_reason": "The stated cost rises with temperature, which explicitly does not carry resistance; it is therefore not a qualifying resistance-cost, and zero qualifying costs selects keeps.",
+ "rule_trace": [
+  "none"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "temperature",
+  "Boltzmann constant",
+  "erasing",
+  "bit",
+  "information",
+  "heat",
+  "logically irreversible operations",
+  "thermodynamic cost"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "",
+ "conflicts": "none",
+ "sense": 1,
+ "confidence": 7,
+ "closing": "The fixed classification of temperature decides the direction without reinterpretation: a thermodynamic cost is not automatically a resistance-caused cost. E remains available, but it cannot provide missing partners for temperature, the constant, or erasure; the numerical factor also has no permitted literal nonphysical reading.",
+ "knew_tsr": false
+}

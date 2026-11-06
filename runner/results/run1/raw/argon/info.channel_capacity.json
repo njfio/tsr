@@ -1,0 +1,28 @@
+{
+ "id": "info.channel_capacity",
+ "physical": "The greatest rate at which information can be sent reliably through a noisy channel is the bandwidth times the log of one plus the signal-to-noise ratio. (C = B × log(1 + S ÷ N))",
+ "reflected_formula": "[unmapped: capacity C] = [unmapped: bandwidth B] × log(1 + [unmapped: signal power S] ÷ [unmapped: noise power N])",
+ "reflected_sentence": "The limitless collection of [unmapped: channel capacity C] equals [unmapped: bandwidth B] times the logarithm of one plus [unmapped: signal power S] divided by [unmapped: noise power N].",
+ "shape": "keeps",
+ "rule_reason": "definition with zero costs caused by resistance and no separation made by distance",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "capacity C (channel capacity)",
+  "bandwidth B (bandwidth)",
+  "signal power S (power)",
+  "noise power N (noise power)",
+  "information",
+  "noisy channel"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "Collection in Vibrational Reality has no partner for channel capacity, bandwidth, or noise in the frozen table. Even if power is read as E per Expansion, the ratio of two E per Expansion terms leaves signal and noise indistinguishable without new words. The relationship keeps its form by the rule, but says nothing in frozen terms.",
+ "conflicts": "\"Frequency is not a rate and not cycles per second.\" and \"Nothing on the nonphysical side has a number, a unit or a distance.\"",
+ "sense": 1,
+ "confidence": 7,
+ "closing": "The keeps-or-turns rule decided mechanically because the relation is a definition with no costs and none of the four variables carries resistance or distance. However, every domain variable (channel capacity, bandwidth, signal power, noise power) lacks a partner in the frozen vocabulary, and mapping bandwidth via Frequency is blocked because Frequency reflects force and is explicitly not cycles per second.",
+ "knew_tsr": false
+}

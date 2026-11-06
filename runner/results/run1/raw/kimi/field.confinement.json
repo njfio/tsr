@@ -1,0 +1,33 @@
+{
+ "id": "field.confinement",
+ "physical": "Confinement — The force between two quarks does not weaken with separation; the energy stored in the color flux tube grows linearly with distance until it is enough to make a new quark-antiquark pair, so no quark is ever found free. Formula: V(r) ≈ σ × r",
+ "reflected_formula": "conscious energy ≈ Desire × Vibration",
+ "reflected_sentence": "In Vibrational Reality, conscious energy grows as Desire meets Vibration, and what seems to pull apart is only the gap between Desire and the Current.",
+ "shape": "keeps",
+ "rule_reason": "Two cost markers fire: a cost that rises with resistance (string tension) and a separation made by distance; the even count means the relationship keeps its shape.",
+ "rule_trace": [
+  "resistance-cost",
+  "separation"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "string tension σ",
+  "color flux tube",
+  "quark",
+  "quark-antiquark pair"
+ ],
+ "new_words": [],
+ "monotone_claims": [
+  {
+   "rises": "conscious energy",
+   "with": "Desire",
+   "sign": 1
+  }
+ ],
+ "interpretation": "The two cost markers cancel by the even-count rule, so the linear growth of energy with extent keeps its shape. Desire stands for the tension and Vibration for the extent; the flux tube and the particles have no partner.",
+ "conflicts": "none",
+ "sense": 3,
+ "confidence": 4,
+ "closing": "The rule decided the shape on its own once the even-count clause was applied: one resistance-cost plus one separation makes two, and two keeps. The string tension's undetermined status affects only whether resistance is truly carried, not the count the record gives.",
+ "knew_tsr": false
+}

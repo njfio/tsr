@@ -1,0 +1,8 @@
+{
+ "id": "thermo.enthalpy",
+ "alternative_shape": null,
+ "rule_compliant": false,
+ "argument": "The relation is a definition whose variables (enthalpy, internal energy, pressure, volume) are all fixed as not carrying resistance, and no cost or distance-made separation appears in the statement; definitions keep their shape, so no rule-compliant turn exists.",
+ "reflected_sentence": "",
+ "knew_tsr": false
+}

@@ -1,0 +1,11 @@
+id: rel.row03_no_fixed_frame
+domain: calibration
+title: "Row 3: no preferred frame of reference"
+statement: "There is no absolute rest frame; only relative motion is physically meaningful."
+form: symmetry
+variables: []
+costs: []
+standard_sources: ["Einstein 1905"]
+book_status: ruled
+ruling: {shape: keeps, source: "Ch16 #3"}
+review: "reviewed:spec-port"

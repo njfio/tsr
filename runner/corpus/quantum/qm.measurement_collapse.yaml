@@ -1,0 +1,13 @@
+id: qm.measurement_collapse
+domain: quantum
+title: "Measurement"
+statement: "A measurement yields one of the observable's eigenvalues, and afterwards the system is in the corresponding eigenstate; which value appears is not determined by the prior state."
+form: statistical
+variables:
+  - {name: probability, quantity: probability}
+  - {name: wavefunction amplitude, quantity: wavefunction amplitude}
+costs: []
+standard_sources: ["von Neumann 1932, ch. VI"]
+book_status: unreflected
+review: pending
+notes: "Interpretation-laden in physics; the projection postulate is entered as the textbook statement. No resistance, no separation: keeps."

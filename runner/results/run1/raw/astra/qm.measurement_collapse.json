@@ -1,0 +1,30 @@
+{
+ "id": "qm.measurement_collapse",
+ "physical": "A measurement yields one of the observable's eigenvalues, and afterwards the system is in the corresponding eigenstate; which value appears is not determined by the prior state.",
+ "reflected_formula": "",
+ "reflected_sentence": "The relationship between what can appear and what does appear keeps its shape.",
+ "shape": "keeps",
+ "rule_reason": "No resistance-caused cost or separation is supplied, so the relation keeps. Measurement, eigenvalues, eigenstates, probability and amplitude lack partners.",
+ "rule_trace": [
+  "none"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "measurement",
+  "observable",
+  "eigenvalues",
+  "system",
+  "eigenstate",
+  "prior state",
+  "probability",
+  "wavefunction amplitude"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "",
+ "conflicts": "none",
+ "sense": 1,
+ "confidence": 7,
+ "closing": "The zero-cost rule decides keeps. Neither measurement nor state selection is mapped to realization, Focus, or Awareness by the frozen table. The interpretation is empty because filling it would require inventing a partnership.",
+ "knew_tsr": false
+}

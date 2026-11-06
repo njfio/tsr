@@ -1,0 +1,14 @@
+id: thermo.heat_capacity_definition
+domain: thermodynamics
+title: "Heat capacity (the definition)"
+statement: "Heat capacity is the heat required per unit rise in temperature."
+formula: "C = Q ÷ ΔT"
+form: definition
+variables:
+  - {name: heat capacity C, quantity: heat capacity}
+  - {name: heat Q, quantity: heat}
+  - {name: temperature change ΔT, quantity: temperature}
+costs: []
+standard_sources: ["Fermi, Thermodynamics, ch. 2"]
+book_status: unreflected
+review: pending

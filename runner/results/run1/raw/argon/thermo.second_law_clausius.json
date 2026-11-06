@@ -1,0 +1,32 @@
+{
+ "id": "thermo.second_law_clausius",
+ "physical": "Heat does not spontaneously flow from a colder body to a hotter body; the entropy of an isolated system never decreases.",
+ "reflected_formula": "Culmination (provisional) ≥ 0",
+ "reflected_sentence": "Energy does not of itself pass from the cooler body to the warmer, and Culmination (provisional) never falls; since no cost here is caused by resistance, the relation keeps its shape.",
+ "shape": "keeps",
+ "rule_reason": "Neither entropy nor heat nor temperature carries resistance, so the listed costs are not caused by resistance and the relation keeps its shape; however, heat, temperature, and work are unmapped in the frozen vocabulary.",
+ "rule_trace": [
+  "none"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "temperature T",
+  "heat",
+  "work",
+  "isolated system"
+ ],
+ "new_words": [],
+ "monotone_claims": [
+  {
+   "rises": "Culmination (provisional)",
+   "with": "Expansion",
+   "sign": 1
+  }
+ ],
+ "interpretation": "Entropy reflects as Culmination (provisional), where vibrations culminate. Because neither entropy nor temperature carries resistance, the direction does not turn around, and Culmination (provisional) never falls. Heat, work, and temperature have no partners in the frozen vocabulary.",
+ "conflicts": "none",
+ "sense": 3,
+ "confidence": 7,
+ "closing": "The rule decided on its own because entropy, temperature, and heat are explicitly fixed as not carrying resistance, meaning the cost in the prompt is not a cost caused by resistance. The inequality part maps entropy to Culmination (provisional), but the Clausius and Kelvin-Planck statements depend on heat, temperature, and work, which have no partners in the frozen vocabulary.",
+ "knew_tsr": false
+}

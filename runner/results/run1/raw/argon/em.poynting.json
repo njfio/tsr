@@ -1,0 +1,36 @@
+{
+ "id": "em.poynting",
+ "physical": "The energy carried by an electromagnetic field per unit area per unit time is the cross product of the electric and magnetic fields over the permeability. (S = E × B ÷ μ0)",
+ "reflected_formula": "S = Idle × Reflected ÷ μ0",
+ "reflected_sentence": "The conscious energy carried across Vibration and Expansion is the product of the Idle and Reflected co-creating partners over the medium constant.",
+ "shape": "keeps",
+ "rule_reason": "Definition form with zero resistance or separation costs keeps its shape.",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "Poynting vector S",
+  "permeability μ0",
+  "area"
+ ],
+ "new_words": [],
+ "monotone_claims": [
+  {
+   "rises": "conscious energy",
+   "with": "Idle",
+   "sign": 1
+  },
+  {
+   "rises": "conscious energy",
+   "with": "Reflected",
+   "sign": 1
+  }
+ ],
+ "interpretation": "Idle and Reflected co-create as a product in conscious energy across Vibration and Expansion. As a definition with no resistance costs, the relationship keeps its shape.",
+ "conflicts": "Symbol collision: E in S = E × B ÷ μ0 denotes the electric field (mapped to Idle in physical_terms), whereas E in the vocabulary denotes the one energy / entity.",
+ "sense": 4,
+ "confidence": 7,
+ "closing": "The rule forces `keeps` (definition, no resistance or distance costs), and `physical_terms` explicitly maps E to electric (Idle) and B to magnetic (Reflected). S and μ0 have no partners in the frozen table and are recorded in unmapped_terms.",
+ "knew_tsr": false
+}

@@ -1,0 +1,24 @@
+{
+ "id": "waves.total_internal_reflection",
+ "physical": "Going from a higher to a lower index, beyond the critical angle no light crosses the boundary; all of it is reflected, while an evanescent field reaches past the surface without carrying energy across.",
+ "reflected_formula": "",
+ "reflected_sentence": "The limit keeps: past the sharpest bend the factor allows, the whole share turns back and none goes on, while a fading remainder reaches on without carrying conscious energy on.",
+ "shape": "keeps",
+ "rule_reason": "A limit whose cost rises with refractive index, which is undetermined and not counted as resistance; no separation is flagged.",
+ "rule_trace": [
+  "none"
+ ],
+ "forced": false,
+ "unmapped_terms": [
+  "critical angle θ_c",
+  "refractive index n"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "The limit keeps. The gap is not decided, so alignment does not turn it into already there. Receptivity is not applied, and conscious energy is not given a crossing.",
+ "conflicts": "none",
+ "sense": 2,
+ "confidence": 3,
+ "closing": "The cost rises with refractive index, which the quantity list leaves undetermined and says R does not decide. I did not count it as resistance, so the limit keeps; that is a judgment, and forced is false. Counting the medium as the gap would turn the limit around, unreachable becoming already there with receptivity. I did not take that call. Optical reflection is not the table's Reflected, and the boundary in the statement cannot be named on this side.",
+ "knew_tsr": false
+}

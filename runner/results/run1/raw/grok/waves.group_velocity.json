@@ -1,0 +1,26 @@
+{
+ "id": "waves.group_velocity",
+ "physical": "The envelope of a wave packet travels at the group velocity, the derivative of angular frequency with respect to wavenumber; it is the speed at which energy and signal travel.",
+ "reflected_formula": "",
+ "reflected_sentence": "The definition keeps: a rate remains the change of a rate over the change of an inverse extent.",
+ "shape": "keeps",
+ "rule_reason": "A definition with no costs, and no quantity that carries resistance.",
+ "rule_trace": [
+  "none"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "group velocity v_g",
+  "angular frequency ω",
+  "wavenumber k",
+  "signal"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "The definition keeps. Frequency is not this rate, and rise per Expansion is not this group rate. Conscious energy is named in the statement, but it is not carried.",
+ "conflicts": "none",
+ "sense": 2,
+ "confidence": 7,
+ "closing": "Form is definition and the cost list is empty, so the relation keeps without a judgment. Group velocity is not the table's velocity, and the physical rate is not Frequency. The clause about energy and signal travel cannot be stated without forbidden words, so it is dropped rather than rewritten; energy would map to conscious energy if that clause could cross.",
+ "knew_tsr": false
+}

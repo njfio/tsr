@@ -1,0 +1,27 @@
+{
+ "id": "waves.doppler",
+ "physical": "A receiver moving toward a source, or a source moving toward a receiver, measures a higher frequency than the one emitted; moving apart, a lower one.",
+ "reflected_formula": "no partner",
+ "reflected_sentence": "The relationship between what is given and what is received keeps its dependence on rise per Expansion.",
+ "shape": "keeps",
+ "rule_reason": "There are no supplied costs or qualifying separations, and the specified rates do not carry resistance, so the relation keeps. Receiver and source velocities have the partial partner rise per Expansion, but physical frequency and wave speed have none, blocking f' = f × (v + v_r) ÷ (v − v_s).",
+ "rule_trace": [
+  "none"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "emitted frequency f",
+  "received frequency f'",
+  "wave speed v",
+  "receiver",
+  "source"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "No partner. No partner.",
+ "conflicts": "none",
+ "sense": 1,
+ "confidence": 7,
+ "closing": "The supplied relation decides keeps without a judgment call. Physical frequency cannot be replaced by Frequency, whose physical partner is force, and an unspecified wave speed cannot be replaced by Current, whose partner is c. Source and receiver approach do not license adding an unlisted separation cost. The no-partner markers record an incomplete map.",
+ "knew_tsr": false
+}

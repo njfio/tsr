@@ -1,0 +1,27 @@
+{
+ "id": "thermo.latent_heat_cost",
+ "physical": "Changing a body's phase takes heat in proportion to its mass, with no rise in temperature while it happens.",
+ "reflected_formula": "? = Movement × ?",
+ "reflected_sentence": "Changing how it is formed without becoming warmer becomes easier with receptivity.",
+ "shape": "turns around",
+ "rule_reason": "The underlying reading turns around because one phase-change cost rises with mass, which explicitly carries resistance.",
+ "rule_trace": [
+  "resistance-cost"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "latent heat",
+  "heat",
+  "phase change",
+  "body",
+  "temperature"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "No complete reflection is available. Missing partners prevent a nonphysical interpretation.",
+ "conflicts": "none",
+ "sense": 1,
+ "confidence": 7,
+ "closing": "The relation-level increase with mass decides reversal without reclassifying latent heat itself as resistance. Movement is the supplied mass partner, but inventing a phase-change or heat partner would be a rescue rather than a strict application.",
+ "knew_tsr": false
+}

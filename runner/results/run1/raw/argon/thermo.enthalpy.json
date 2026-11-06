@@ -1,0 +1,32 @@
+{
+ "id": "thermo.enthalpy",
+ "physical": "Enthalpy is internal energy plus pressure times volume; at constant pressure the heat absorbed equals the change in enthalpy.",
+ "reflected_formula": "E + Point of Reflection × Vibrance",
+ "reflected_sentence": "The total energy of a system with its surroundings equals its own energy together with the push of the surroundings and its Vibrance, and this definition keeps its shape.",
+ "shape": "keeps",
+ "rule_reason": "Definition (form is definition and no quantity carries resistance), which would keep its shape, but enthalpy, internal energy, pressure, and heat are unmapped in the frozen vocabulary.",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "enthalpy H",
+  "internal energy U",
+  "pressure P",
+  "heat"
+ ],
+ "new_words": [],
+ "monotone_claims": [
+  {
+   "rises": "E",
+   "with": "Vibrance",
+   "sign": 1
+  }
+ ],
+ "interpretation": "Vibrance is the partner of volume, and conscious energy is the partner of physical energy. The other terms in the relation have no partner in the frozen vocabulary.",
+ "conflicts": "No sums where the book has products.",
+ "sense": 1,
+ "confidence": 7,
+ "closing": "The rule decided the keeps-or-turns question on its own because the relation is a definition with zero resistance costs. However, only volume (Vibrance) and general energy (E / conscious energy) are in the vocabulary; enthalpy, internal energy, pressure, and heat lack frozen partners, and the formula uses a sum which conflicts with the no-sums trap.",
+ "knew_tsr": false
+}

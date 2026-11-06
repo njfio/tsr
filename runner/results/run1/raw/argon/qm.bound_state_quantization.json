@@ -1,0 +1,29 @@
+{
+ "id": "qm.bound_state_quantization",
+ "physical": "A particle confined to a region has only discrete allowed energies; the spacing grows as the region shrinks and falls as the particle's mass rises. E_n = n² × π² × ħ² ÷ (2 × m × L²)",
+ "reflected_formula": "E_n = [quantum number: no partner]² × π² × [Planck constant: no partner]² ÷ (2 × Movement M × [length: no partner]²)",
+ "reflected_sentence": "What being held in made limited, only some E allowed, turns around and becomes limitless: E is already there for Movement M in every form, not only in the ones that fit.",
+ "shape": "turns around",
+ "rule_reason": "one separation made by distance (the confinement length L); the cost falls with mass rather than rising with it, so it does not count as a resistance cost; one turn in total, so it turns around",
+ "rule_trace": [
+  "separation"
+ ],
+ "forced": false,
+ "unmapped_terms": [
+  "quantum number",
+  "Planck constant",
+  "length",
+  "confinement",
+  "region",
+  "particle",
+  "discrete allowed energies"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "E is shared by both sides; the discreteness the confinement makes is limited, and its reflection is limitless. Movement M is the partner of mass m, but here mass eased the limit, so the reflection gives Movement M no clear role.",
+ "conflicts": "\"Units don't cross the mirror\" / \"Nothing on the nonphysical side has a number\" (the levels are counted by n)",
+ "sense": 2,
+ "confidence": 3,
+ "closing": "This needed a judgment call. The cost entry falls with mass, which is the opposite of 'a cost that rises with resistance'. I left it out, so only the separation counts and the relation turns around. If you count the mass dependence as a resistance cost anyway, you get two costs, and the relation keeps its shape. The word 'discrete' is quantitative and has no partner.",
+ "knew_tsr": false
+}

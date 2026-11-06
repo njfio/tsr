@@ -1,0 +1,14 @@
+id: em.impedance
+domain: electromagnetism
+title: "Impedance"
+statement: "In an alternating-current circuit the ratio of voltage to current is the impedance, whose magnitude combines resistance with the inductive and capacitive reactances."
+formula: "|Z| = √(R² + (X_L − X_C)²)"
+form: definition
+variables:
+  - {name: impedance Z, quantity: impedance}
+  - {name: resistance R, quantity: electrical resistance}
+  - {name: reactance X, quantity: reactance}
+costs: []
+standard_sources: ["Purcell, Electricity and Magnetism, ch. 8"]
+book_status: unreflected
+review: pending

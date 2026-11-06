@@ -1,0 +1,27 @@
+{
+ "id": "mech.reynolds_laminar_turbulent",
+ "physical": "Flow stays laminar while inertial effects are small relative to viscous ones (low Reynolds number); as density, speed or size rise, or viscosity falls, the flow becomes turbulent. Re = ρ × v × L ÷ μ",
+ "reflected_formula": "Re = Desire × rise per Expansion × L ÷ μ (Re, L and μ have no partner)",
+ "reflected_sentence": "The ratio that tells smooth flow from churning flow is Desire times rise per Expansion times the size of the flow, over the fluid's thickness against shearing, and the reading turns: where keeping the physical flow smooth gets harder as density rises, on the nonphysical side it comes easier as receptivity rises; but the same cost gets harder as the thickness falls, and that half does not turn the same way.",
+ "shape": "turns around",
+ "rule_reason": "One cost caused by resistance: keeping the flow laminar gets harder as density rises (density carries resistance). The same cost gets easier as viscosity rises (viscosity also carries resistance), the opposite direction. The count is one cost, odd, so turns, though the cost pulls both ways.",
+ "rule_trace": [
+  "resistance-cost"
+ ],
+ "forced": false,
+ "unmapped_terms": [
+  "Reynolds number",
+  "length (length scale L)",
+  "viscosity",
+  "laminar flow",
+  "turbulent flow"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "Desire and rise per Expansion are the two words that cross, and together they push the unpaired ratio up, which on the physical side means the flow breaks into churning. The turned reading says the smooth flow comes easier with receptivity. In frozen words the relation says that Desire and rise per Expansion together unsettle something that has no name on this side.",
+ "conflicts": "The fixed list says of the Reynolds number that 'its viscosity factor is recorded in rises_with', but the cost block records viscosity in falls_with; the run's own notes disagree about the sign.",
+ "sense": 1,
+ "confidence": 3,
+ "closing": "This needed a judgment call. The rule counts costs and there is one, so the count says turns. But the one cost rises with one quantity that carries the flipping condition (density) and falls with another (viscosity), and the rule gives no instruction for a cost that pulls both ways; the parity rule is about the number of costs, not the number of directions. I recorded turns around with low confidence. Three of five terms have no partner, including the quantity on the left. The prompt's own note about where viscosity is recorded does not match the cost block.",
+ "knew_tsr": false
+}

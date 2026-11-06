@@ -1,0 +1,27 @@
+{
+ "id": "thermo.thermal_equilibrium",
+ "physical": "Two bodies in thermal contact exchange heat from the hotter to the colder until they reach a common temperature.",
+ "reflected_formula": "",
+ "reflected_sentence": "What is exchanged by warming continues from the warmer to the cooler until they are equally warm.",
+ "shape": "keeps",
+ "rule_reason": "The underlying shape keeps because there are no listed resistance-caused costs or separations.",
+ "rule_trace": [
+  "none"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "temperature",
+  "heat",
+  "body",
+  "thermal contact",
+  "thermal equilibrium"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "No complete reflection is available. Missing partners prevent a nonphysical interpretation.",
+ "conflicts": "none",
+ "sense": 1,
+ "confidence": 7,
+ "closing": "Zero qualifying costs decides keeps without a judgment call. The rule does not license changing thermal exchange into alignment or Culmination, and the frozen vocabulary offers no thermal-contact or common-temperature partner.",
+ "knew_tsr": false
+}

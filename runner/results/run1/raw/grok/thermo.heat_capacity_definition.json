@@ -1,0 +1,25 @@
+{
+ "id": "thermo.heat_capacity_definition",
+ "physical": "Heat capacity is the heat required per unit rise in temperature. C = Q ÷ ΔT",
+ "reflected_formula": "unmatched amount = unmatched transit ÷ unmatched change",
+ "reflected_sentence": "The definition keeps: the unmatched amount is the unmatched transit required for a given change in an unmatched condition.",
+ "shape": "keeps",
+ "rule_reason": "Definition, and the cost block is empty. Definitions keep whether or not heat capacity carries resistance. No term has a partner.",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "heat capacity",
+  "heat",
+  "temperature"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "The definition keeps. No frozen word names any term. It does not become Culmination, Movement, Vibrance, or conscious energy.",
+ "conflicts": "none",
+ "sense": 1,
+ "confidence": 7,
+ "closing": "The rule decided the shape on its own. A definition with an empty cost block keeps whether or not heat capacity carries resistance, so the undetermined status did not have to be judged for this row. No term has a partner, and that does not change the shape.",
+ "knew_tsr": false
+}

@@ -1,0 +1,31 @@
+{
+ "id": "waves.interference_cancellation",
+ "physical": "Two waves in opposite phase cancel at a point; the cancellation is located, and energy is conserved overall.",
+ "reflected_formula": "",
+ "reflected_sentence": "Two opposed vibrations culminate instead of cancel, and coexistence gets easier with receptivity.",
+ "shape": "turns around",
+ "rule_reason": "One separation made by distance, the coexistence that is harder at one location, odd count.",
+ "rule_trace": [
+  "separation"
+ ],
+ "forced": false,
+ "unmapped_terms": [
+  "phase difference",
+  "location of the point",
+  "amplitude"
+ ],
+ "new_words": [],
+ "monotone_claims": [
+  {
+   "rises": "Culmination",
+   "with": "alignment",
+   "sign": 1
+  }
+ ],
+ "interpretation": "Two vibrations culminate instead of cancel. Alignment raises Culmination, and the gap does not make the cancel. Conscious energy stays E, and Momentum is not set on what is not an entity.",
+ "conflicts": "none",
+ "sense": 4,
+ "confidence": 4,
+ "closing": "The cost block flags one separation made by distance, so the odd-count rule turns the relation around, and culminate is the prompt's own word for what two vibrations do instead of cancel. The statement also says energy is conserved, and conservation laws keep, so which clause governs the single shape is a judgment; I followed the cost count, and forced is false. Phase, amplitude, and location have no partners, and location is not named on this side.",
+ "knew_tsr": false
+}

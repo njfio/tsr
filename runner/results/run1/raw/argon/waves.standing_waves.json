@@ -1,0 +1,34 @@
+{
+ "id": "waves.standing_waves",
+ "physical": "Between two fixed ends only wavelengths that fit a whole number of half-waves into the length persist; the ends force nodes and the allowed modes are set by the separation.",
+ "reflected_formula": "Vibration_n = Vibration ÷ n",
+ "reflected_sentence": "Without separation between fixed ends, all Vibrations persist in limitless resonance rather than only discrete modes that fit.",
+ "shape": "turns around",
+ "rule_reason": "Limit caused by separation made by distance: length L between the ends carries distance and restricts which vibrations can persist.",
+ "rule_trace": [
+  "separation"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "fixed ends",
+  "wavelength λ",
+  "half-waves",
+  "length L",
+  "nodes",
+  "mode number n"
+ ],
+ "new_words": [],
+ "monotone_claims": [
+  {
+   "rises": "Vibration",
+   "with": "alignment",
+   "sign": 1
+  }
+ ],
+ "interpretation": "In Vibrational Reality, Vibration is limitless and receptive rather than confined between ends. Turning the limit around removes the restriction that only certain Vibrations can persist. Every Vibration is already in resonance without numbers or separation.",
+ "conflicts": "none",
+ "sense": 3,
+ "confidence": 6,
+ "closing": "The rule decided turns around on its own because the relation is a limit with one cost where separation_made_by_distance is true and length L carries distance. Still, wavelength, nodes, and mode number have no partners in the frozen vocabulary, and numbers do not cross the mirror.",
+ "knew_tsr": false
+}

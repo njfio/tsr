@@ -1,0 +1,13 @@
+id: rel.row01_laws_same_every_observer
+domain: calibration
+title: "Row 1: the laws of physics are the same for every inertial observer"
+statement: "The laws of physics take the same form in every inertial frame of reference."
+formula: ""
+form: symmetry
+variables: []
+costs: []
+standard_sources: ["Einstein 1905, postulate 1; Taylor & Wheeler, Spacetime Physics, ch. 3"]
+book_status: ruled
+ruling: {shape: keeps, words: "", source: "Ch16 #1"}
+review: "reviewed:spec-port"
+notes: "Ported from tests/tsr_formal.py ROWS[0]."

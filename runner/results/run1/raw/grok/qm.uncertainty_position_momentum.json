@@ -1,0 +1,24 @@
+{
+ "id": "qm.uncertainty_position_momentum",
+ "physical": "The spreads of position and momentum in any state cannot both be made small: their product is at least half the reduced Planck constant.",
+ "reflected_formula": "Δx × momentum ≥ ħ ÷ 2",
+ "reflected_sentence": "This keeps: the spread of extent and momentum cannot both be made small, and their product remains at least half the unmapped constant.",
+ "shape": "keeps",
+ "rule_reason": "inequality, empty cost block. Length does not carry resistance, momentum does not carry resistance, carries_distance is false, and no separation is flagged",
+ "rule_trace": [
+  "none"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "length",
+  "Planck constant"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "This keeps. momentum stays momentum. This is not Vibrational Contraction and not the gap.",
+ "conflicts": "none",
+ "sense": 3,
+ "confidence": 6,
+ "closing": "The rule decided: inequality, empty costs, so the shape keeps. Position is length with carries_distance false, so separation did not fire; I did not turn it into Vibrational Contraction. Momentum maps to momentum as the conserved quantity, not as the entity property. The constant does not cross. No judgment call on the shape.",
+ "knew_tsr": false
+}

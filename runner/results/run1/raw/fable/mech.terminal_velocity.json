@@ -1,0 +1,38 @@
+{
+ "id": "mech.terminal_velocity",
+ "physical": "A falling body stops accelerating when drag balances weight; that terminal speed rises with the body's mass and falls with the drag coefficient, the fluid's density and the cross-section. v_t = √(2 × m × g ÷ (ρ × C_d × A))",
+ "reflected_formula": "rise per Expansion_t = √(2 × Movement M × g ÷ (Desire × C_d × A)) (g, C_d and A have no partner)",
+ "reflected_sentence": "The settled rise per Expansion grows with Movement M and the pull of the ground and shrinks with Desire, with how much the shape is held back by the fluid, and with how broad a face it presents, and the reading turns: where the physical fall settles faster the more mass it carries and slower the thicker what it falls through, on the nonphysical side the settling comes easier with receptivity, and nothing thickens against it.",
+ "shape": "turns around",
+ "rule_reason": "One cost caused by resistance: the settled fall rises with mass m and falls with the drag coefficient and density, all three carrying resistance. One cost, odd, turns, though its three dependences point both ways.",
+ "rule_trace": [
+  "resistance-cost"
+ ],
+ "forced": false,
+ "unmapped_terms": [
+  "drag coefficient",
+  "area (cross-section)",
+  "gravitational field g",
+  "weight",
+  "drag"
+ ],
+ "new_words": [],
+ "monotone_claims": [
+  {
+   "rises": "rise per Expansion",
+   "with": "Movement M",
+   "sign": 1
+  },
+  {
+   "rises": "rise per Expansion",
+   "with": "Desire",
+   "sign": -1
+  }
+ ],
+ "interpretation": "In frozen words the kept formula says rise per Expansion grows with Movement M and shrinks with Desire. The turned reading says the settling comes easier with receptivity. Desire lowering the rise is the odd result: the table calls Desire the strong frequency, and here more of it holds the rise back.",
+ "conflicts": "'strong frequency (Desire)': in the kept formula more Desire means less rise per Expansion, a tension rather than a flat contradiction.",
+ "sense": 2,
+ "confidence": 3,
+ "closing": "A judgment call again. One cost, so the count says turns, but the cost rises with mass and falls with drag coefficient and density, and all three carry the flipping condition, so the flip pulls the reading in two directions at once and the rule does not say which wins. I recorded turns around with low confidence. The 2 and the square root are numbers that should not cross; I kept them because the formula is not to be rewritten. The phrase 'terminal speed' cannot be said on the nonphysical side, since speed is forbidden there; I used rise per Expansion throughout.",
+ "knew_tsr": false
+}

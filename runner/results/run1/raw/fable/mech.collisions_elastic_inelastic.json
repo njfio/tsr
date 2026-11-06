@@ -1,0 +1,26 @@
+{
+ "id": "mech.collisions_elastic_inelastic",
+ "physical": "Momentum is conserved in every collision; kinetic energy is conserved in an elastic collision and partly converted to internal energy in an inelastic one, the fraction set by the coefficient of restitution.",
+ "reflected_formula": "",
+ "reflected_sentence": "momentum is kept whenever two things meet and the conservation keeps its shape; the energy of motion that is kept or partly turned into warmth, and the ratio of parting to approaching that sets the fraction, have no partner.",
+ "shape": "keeps",
+ "rule_reason": "A conservation law with no cost listed: identity, keeps.",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "kinetic energy",
+  "internal energy",
+  "coefficient of restitution",
+  "collision"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "momentum is the one word that crosses unchanged, and its conservation is kept. Everything else in the statement is unpaired: the energy that is or is not kept, and the ratio that divides the two cases. On the nonphysical side the relation says that momentum is kept whenever two meet, and nothing more.",
+ "conflicts": "none",
+ "sense": 2,
+ "confidence": 7,
+ "closing": "The rule decided on its own: conservation keeps. Two things to flag. First, the table lists kinetic energy nowhere; the nearest row is 'physical energy → conscious energy', and I did not use it, since kinetic and internal energy are distinct quantities in the fixed list and the vocabulary is frozen. Second, the only mapped word, momentum, is also the name of an entity property (collecting and radiating met), and the colliding bodies are not entities, so I kept the lowercase word and did not read it as the property.",
+ "knew_tsr": false
+}

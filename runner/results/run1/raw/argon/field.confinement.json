@@ -1,0 +1,34 @@
+{
+ "id": "field.confinement",
+ "physical": "The force between two quarks does not weaken with separation; the energy stored in the color flux tube grows linearly with distance until it is enough to make a new quark-antiquark pair, so no quark is ever found free.",
+ "reflected_formula": "E ≈ string tension σ × alignment",
+ "reflected_sentence": "The Frequency does not weaken across the gap; conscious energy grows with alignment so that realization is already there.",
+ "shape": "turns around",
+ "rule_reason": "Separation made by distance turns around, and string tension (QCD) is undetermined as a resistance carrier.",
+ "rule_trace": [
+  "separation",
+  "resistance-cost"
+ ],
+ "forced": false,
+ "unmapped_terms": [
+  "potential energy V",
+  "string tension σ",
+  "quark",
+  "antiquark",
+  "color flux tube"
+ ],
+ "new_words": [],
+ "monotone_claims": [
+  {
+   "rises": "conscious energy",
+   "with": "alignment",
+   "sign": 1
+  }
+ ],
+ "interpretation": "Frequency and conscious energy reflect force and physical energy across the Point of Reflection. Because separation turns around into alignment, what was impossible to finish becomes already realized in Vibration. However, string tension and quarks have no partners in the frozen vocabulary.",
+ "conflicts": "none",
+ "sense": 2,
+ "confidence": 3,
+ "closing": "This required a judgment call because string tension (QCD) is explicitly listed as UNDETERMINED for carrying resistance, making it ambiguous whether one cost (separation only, turning around) or two costs (separation plus resistance-cost from string tension, keeping shape) fire. Furthermore, string tension, potential energy, and quarks have no partners in the frozen vocabulary.",
+ "knew_tsr": false
+}

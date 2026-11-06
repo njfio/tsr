@@ -1,0 +1,31 @@
+{
+ "id": "statmech.phase_transition_critical_point",
+ "physical": "ξ → ∞ as T → T_c: at a continuous phase transition the order parameter vanishes and the correlation length diverges; fluctuations at every scale, and no characteristic size.",
+ "reflected_formula": "[correlation length ξ: no partner] → ∞ as [temperature T: no partner] → [T_c: no partner]",
+ "reflected_sentence": "The relationship keeps: as the mean kinetic energy per degree of freedom nears its critical value the measure of order vanishes and the extent over which parts move together grows without bound, and none of these quantities has a frozen partner.",
+ "shape": "keeps",
+ "rule_reason": "a limit, but not one caused by resistance (order parameter, correlation length and temperature are all fixed as not carrying resistance); zero resistance-costs, shape keeps",
+ "rule_trace": [
+  "none"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "order parameter",
+  "correlation length ξ",
+  "temperature T",
+  "critical temperature T_c",
+  "phase transition",
+  "fluctuations",
+  "scale",
+  "characteristic size",
+  "∞"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "Nothing in this relation reaches the nonphysical side. The divergence to the limitless is the one place a frozen word nearly fits, but the thing that becomes limitless has no partner, so the word has nothing to attach to.",
+ "conflicts": "none",
+ "sense": 1,
+ "confidence": 6,
+ "closing": "The rule decided by the parity clause: this is a limit, and the rule turns only limits caused by resistance; none of the fixed quantities carries resistance, so keeps. Two soft spots: the form 'limit' sits awkwardly between the rule's two kinds, and the correlation length is a length yet is fixed as not carrying distance, so I did not treat 'no characteristic size' as a separation made by distance. 'Limited becomes limitless' tempts a reading of ξ → ∞ but it would be a word-play, not the rule, so I refused it.",
+ "knew_tsr": false
+}

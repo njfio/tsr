@@ -1,0 +1,32 @@
+{
+ "id": "statmech.maxwell_boltzmann_width",
+ "physical": "Maxwell-Boltzmann distribution width — The spread of molecular speeds in a gas grows with the square root of temperature and shrinks with the square root of molecular mass. σ_v ∝ √(k × T ÷ m). Form: equation.",
+ "reflected_formula": "rise per Expansion ∝ √(k × T ÷ Movement M) (formula kept in the table's terms; k and T have no partner; the reading turns)",
+ "reflected_sentence": "The formula is kept and the reading turns around: where the physical spread narrows as mass grows, rise per Expansion opens wider as Movement M stands in alignment — the warmth that pushes from the numerator has no partner and remains in plain words.",
+ "shape": "turns around",
+ "rule_reason": "one limit caused by resistance: the spread shrinks as molecular mass grows, and inertial mass is pre-decided as opposition to change in motion; one resistance-cost is an odd count, so the reading turns around while the formula is kept",
+ "rule_trace": [
+  "resistance-cost"
+ ],
+ "forced": false,
+ "unmapped_terms": [
+  "temperature",
+  "Boltzmann constant",
+  "the square root",
+  "spread as a width (only velocity has a partner)"
+ ],
+ "new_words": [],
+ "monotone_claims": [
+  {
+   "rises": "rise per Expansion",
+   "with": "alignment",
+   "sign": 1
+  }
+ ],
+ "interpretation": "Movement M reflected: as alignment grows, rise per Expansion opens wider. Temperature and the constant have no partner; that half of the relation stays silent.",
+ "conflicts": "none",
+ "sense": 4,
+ "confidence": 4,
+ "closing": "This was a judgment call, so forced is false. The costs field was empty, which by the letter of the even-count clause would mean keeps; but the statement itself says the spread shrinks with molecular mass, mass is pre-decided resistance, and a limit that tightens with resistance is exactly what the rule says turns. I counted that shrink-with-mass as one resistance-cost (odd) and turned the reading while keeping the formula. Reasonable strictness could also report keeps with confidence; log that as the live ambiguity.",
+ "knew_tsr": false
+}

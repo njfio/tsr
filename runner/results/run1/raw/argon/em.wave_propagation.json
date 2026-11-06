@@ -1,0 +1,36 @@
+{
+ "id": "em.wave_propagation",
+ "physical": "A changing electric field makes a magnetic field and a changing magnetic field makes an electric field; the pair regenerates itself and travels at a speed fixed by the permittivity and permeability of free space. (c = 1 ÷ √(ε0 × μ0))",
+ "reflected_formula": "Current = 1 ÷ √(ε0 × μ0)",
+ "reflected_sentence": "A changing Idle partner makes a Reflected partner and a changing Reflected partner makes an Idle partner; the co-creating pair regenerates itself in the Current fixed by the medium constants.",
+ "shape": "keeps",
+ "rule_reason": "Identity form with zero resistance or separation costs keeps its shape.",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "permittivity ε0",
+  "permeability μ0",
+  "field"
+ ],
+ "new_words": [],
+ "monotone_claims": [
+  {
+   "rises": "Idle",
+   "with": "Reflected",
+   "sign": 1
+  },
+  {
+   "rises": "Reflected",
+   "with": "Idle",
+   "sign": 1
+  }
+ ],
+ "interpretation": "Idle and Reflected co-create each other and establish the Current without travel or speed. As an identity with no resistance costs, the relationship keeps its shape.",
+ "conflicts": "Trap: The physical statement uses 'travels' and 'speed', which are forbidden on the nonphysical side ('speed of light c' maps to 'Current', not a speed or travel).",
+ "sense": 5,
+ "confidence": 7,
+ "closing": "The rule cleanly decides that this identity keeps its shape, and the mutual regeneration of Idle (electric) and Reflected (magnetic) in the Current (c) fits TSR's co-creating partner vocabulary well, with permittivity ε0 and permeability μ0 placed in unmapped_terms.",
+ "knew_tsr": false
+}

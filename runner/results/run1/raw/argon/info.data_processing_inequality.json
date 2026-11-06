@@ -1,0 +1,25 @@
+{
+ "id": "info.data_processing_inequality",
+ "physical": "Processing cannot increase information: if Z depends on X only through Y, then the information Z carries about X is at most what Y carries. (I(X;Z) ≤ I(X;Y))",
+ "reflected_formula": "[unmapped: mutual information I](X;Z) ≤ [unmapped: mutual information I](X;Y)",
+ "reflected_sentence": "If Z Tune-s to X only through Y, then the [unmapped: mutual information I] that Z holds with X is at most what Y holds with X.",
+ "shape": "keeps",
+ "rule_reason": "inequality with zero costs caused by resistance and no separation made by distance",
+ "rule_trace": [
+  "none"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "mutual information I",
+  "information",
+  "processing"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "No variable in this inequality has a partner in the frozen vocabulary. Because mutual information carries no gap and no Vibration separation, the inequality keeps its direction under the rule. Without a partner for mutual information or processing, the reflection cannot state what is preserved or lost in Vibrational Reality.",
+ "conflicts": "none",
+ "sense": 1,
+ "confidence": 6,
+ "closing": "The rule decided mechanically from the pre-fixed inputs because costs is empty, mutual information does not carry resistance, and carries_distance is false. A mild ambiguity remains in the prose statement: 'cannot increase' is phrased as a ceiling across the Markov chain X -> Y -> Z, which resembles a mediation separation, but it is neither caused by resistance nor a spatial distance.",
+ "knew_tsr": false
+}

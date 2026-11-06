@@ -1,0 +1,17 @@
+id: thermo.latent_heat_cost
+domain: thermodynamics
+title: "Latent heat (the cost reading)"
+statement: "Changing a body's phase takes heat in proportion to its mass, with no rise in temperature while it happens."
+formula: "Q = m × L"
+form: equation
+variables:
+  - {name: latent heat L, quantity: latent heat}
+  - {name: heat Q, quantity: heat}
+  - {name: mass m, quantity: mass m}
+costs:
+  - {what_gets_harder: "changing the body's phase; the heat it takes", rises_with: [mass m]}
+derived_from: [thermo.latent_heat_definition]
+standard_sources: ["Fermi, Thermodynamics, ch. 4"]
+book_status: unreflected
+review: pending
+notes: "A thermodynamic row that turns under the procedure because mass is the resistance in it. Reflected reading, in frozen words: the more Movement, the less a change of state takes."

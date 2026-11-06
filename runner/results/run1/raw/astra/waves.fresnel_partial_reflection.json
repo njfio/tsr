@@ -1,0 +1,33 @@
+{
+ "id": "waves.fresnel_partial_reflection",
+ "physical": "At an interface between two media part of the light reflects and part transmits; the reflected fraction grows with the index contrast and the two fractions sum to one.",
+ "reflected_formula": "no partner",
+ "reflected_sentence": "With receptivity, what was harder becomes easier, while conscious energy is conserved.",
+ "shape": "turns around",
+ "rule_reason": "The getting-through cost rises with index contrast, whose resistance status is explicitly undetermined. If it carries resistance, one resistance-cost turns the transmission-cost reading; if not, that reading keeps. The conservation clause keeps independently. Reflected fraction and refractive indices have no partners for R = ((n1 − n2) ÷ (n1 + n2))².",
+ "rule_trace": [
+  "resistance-cost",
+  "identity"
+ ],
+ "forced": false,
+ "unmapped_terms": [
+  "interface",
+  "media",
+  "light",
+  "reflected fraction R",
+  "transmitted fraction",
+  "probability",
+  "index contrast",
+  "refractive index n",
+  "optical reflection",
+  "transmission"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "No partner. No partner.",
+ "conflicts": "none",
+ "sense": 1,
+ "confidence": 1,
+ "closing": "The rule cannot settle the resistance-cost branch without the expressly acknowledged index-contrast judgment call. To provide the requested shape call, I provisionally choose the prompt's resistant-medium reading, so resistance-cost fires and turns that reading; the conservation branch keeps. This is not forced, and the alternative nonresistant classification would keep. Optical reflection is not automatically Reflected, the partner of magnetic. Keeping conservation does not supply numerical fractions on the nonphysical side, and no vocabulary-complete formula is available.",
+ "knew_tsr": false
+}

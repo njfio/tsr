@@ -1,0 +1,24 @@
+{
+ "id": "thermo.temperature_mean_kinetic_energy",
+ "physical": "In an ideal gas the average translational kinetic energy per molecule is three halves of k times the temperature: temperature measures mean molecular kinetic energy. ½ × m × ⟨v²⟩ = 3/2 × k × T",
+ "reflected_formula": "",
+ "reflected_sentence": "The identity keeps its shape: Movement M with rise per Expansion squared balances an unnamed steadiness times an unnamed warmth, number for number, though the numbers themselves do not cross.",
+ "shape": "keeps",
+ "rule_reason": "Identity; identities keep their shape, and the cost list is empty.",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "temperature",
+  "Boltzmann constant"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "Half of the left side has frozen words: mass as Movement M and velocity as rise per Expansion. But numbers do not cross the mirror, and the two remaining symbols have no partner, so no image formula can be written.",
+ "conflicts": "none",
+ "sense": 2,
+ "confidence": 7,
+ "closing": "Fully decided by the rule: identity, no costs, keeps. The numeric factors and the two unmapped symbols fail the vocabulary test, which I report rather than rescue.",
+ "knew_tsr": false
+}

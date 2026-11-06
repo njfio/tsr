@@ -1,0 +1,32 @@
+{
+ "id": "thermo.free_energy",
+ "physical": "Gibbs free energy is enthalpy minus temperature times entropy; at fixed temperature and pressure a process is spontaneous when it lowers the free energy.",
+ "reflected_formula": "",
+ "reflected_sentence": "The energy available for use equals the total energy less the product of thermal intensity and Culmination (provisional), and this definition keeps its shape.",
+ "shape": "keeps",
+ "rule_reason": "Definition (form is definition and no quantity carries resistance), which would keep its shape, but free energy, enthalpy, temperature, and pressure are unmapped in the frozen vocabulary.",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "free energy G",
+  "enthalpy H",
+  "temperature T",
+  "pressure"
+ ],
+ "new_words": [],
+ "monotone_claims": [
+  {
+   "rises": "E",
+   "with": "Culmination (provisional)",
+   "sign": -1
+  }
+ ],
+ "interpretation": "Entropy reflects as Culmination (provisional). Free energy, enthalpy, and temperature have no partners in the frozen vocabulary, so the relationship cannot be completed.",
+ "conflicts": "No sums where the book has products.",
+ "sense": 1,
+ "confidence": 7,
+ "closing": "The rule decided on its own that a definition with no resistance quantities keeps its shape. However, three of the four variables in the formula (free energy, enthalpy, temperature) are missing from the frozen vocabulary.",
+ "knew_tsr": false
+}

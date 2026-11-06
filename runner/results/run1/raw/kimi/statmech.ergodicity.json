@@ -1,0 +1,26 @@
+{
+ "id": "statmech.ergodicity",
+ "physical": "Ergodic hypothesis — For an ergodic system the long-time average of an observable equals its average over the ensemble of accessible states. No formula. Form: identity.",
+ "reflected_formula": "",
+ "reflected_sentence": "The identity keeps its shape: with time reflected as Expansion, the average taken along Expansion and the average taken across all reachable states remain one and the same — what is averaged, and the reachable states themselves, have no partner and are described in plain words.",
+ "shape": "keeps",
+ "rule_reason": "the statement asserts the equality of two averages, an identity, and identities keep their shape; no cost and no resistance-carrier appears",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "observable",
+  "ensemble",
+  "accessible states",
+  "average as a number"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "Expansion crosses where time stood. The two averages stay one. What is averaged has no partner and stays behind.",
+ "conflicts": "none",
+ "sense": 2,
+ "confidence": 6,
+ "closing": "The identity clause decided the shape on its own. The small discretion was letting the time -> Expansion row apply to the phrase 'long-time average'; that is a direct row application and does not bear on keeps. Confidence is 6 because the reflection is thin, not because the shape was in doubt.",
+ "knew_tsr": false
+}

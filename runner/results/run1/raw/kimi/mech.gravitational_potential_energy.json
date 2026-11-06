@@ -1,0 +1,34 @@
+{
+ "id": "mech.gravitational_potential_energy",
+ "physical": "Lifting a body against gravity costs energy in proportion to its mass and the height gained. U = m × g × h",
+ "reflected_formula": "[potential energy U] = Movement × Attraction × Vibration",
+ "reflected_sentence": "The lift that cost more the more mass a body had now comes easier: E gathers through Attraction and Vibration with less asked of it as Movement grows.",
+ "shape": "turns around",
+ "rule_reason": "One listed cost: lifting gets harder and rises with mass m, a resistance quantity; one cost is odd, so the reading turns around while the product keeps its form.",
+ "rule_trace": [
+  "resistance-cost"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "potential energy U"
+ ],
+ "new_words": [],
+ "monotone_claims": [
+  {
+   "rises": "E",
+   "with": "Movement",
+   "sign": -1
+  },
+  {
+   "rises": "E",
+   "with": "receptivity",
+   "sign": -1
+  }
+ ],
+ "interpretation": "Movement meets Attraction through Vibration, in a product that keeps its shape. The cost reading turns: what rose with mass falls with receptivity. More Movement means less is asked; the formula is unchanged, only its reading reverses.",
+ "conflicts": "none",
+ "sense": 4,
+ "confidence": 7,
+ "closing": "The rule decided without help: the relation lists exactly one cost, rising with mass, which carries resistance, so odd-count says turn. The formula's terms mapped cleanly through the given physical_terms (mass m to Movement, space to Vibration, gravitational pull to Attraction); only potential energy U has no frozen row, so I used the legal word E in the reading and left U unmapped.",
+ "knew_tsr": false
+}

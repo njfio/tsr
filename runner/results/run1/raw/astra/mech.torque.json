@@ -1,0 +1,25 @@
+{
+ "id": "mech.torque",
+ "physical": "Torque equals moment of inertia times angular acceleration: the rotational form of Newton's second law, read as the definition of torque's effect.",
+ "reflected_formula": "∅ = ∅ × ∅",
+ "reflected_sentence": "The rotational definition has no complete partner in the frozen vocabulary.",
+ "shape": "keeps",
+ "rule_reason": "The primary statement is a definition and keeps; the alternate cost statement turns because its single required-torque cost rises with resistance-bearing moment of inertia.",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "torque",
+  "moment of inertia",
+  "angular acceleration"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "Receptivity. Collection.",
+ "conflicts": "none",
+ "sense": 1,
+ "confidence": 7,
+ "closing": "The primary rule call is keeps, while the explicitly supplied alternate wording produces turns around with resistance-cost as its trace. The form annotation decides between those readings; the same formula alone does not. Neither reading acquires a vocabulary partner, and angular acceleration cannot silently be reduced to the unqualified acceleration mapping.",
+ "knew_tsr": false
+}

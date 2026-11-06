@@ -1,0 +1,30 @@
+{
+ "id": "info.landauer",
+ "physical": "E ≥ k × T × ln 2: erasing one bit dissipates at least k T ln 2 of energy as heat; logically irreversible operations have a thermodynamic cost that rises with temperature.",
+ "reflected_formula": "E ≥ [Boltzmann constant k: no partner] × [temperature T: no partner] × [ln 2: a number, does not cross]",
+ "reflected_sentence": "The relationship keeps: E has a floor set by a fixed constant times the mean kinetic energy per degree of freedom times a number, and only E itself has a frozen partner.",
+ "shape": "keeps",
+ "rule_reason": "the relation's one cost (heat that must be dissipated) rises with temperature, and temperature is fixed as not carrying resistance, so it is not a resistance-cost; zero resistance-costs, shape keeps",
+ "rule_trace": [
+  "none"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "temperature T",
+  "Boltzmann constant k",
+  "ln 2",
+  "erasing",
+  "bit",
+  "heat",
+  "dissipates",
+  "logically irreversible operation"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "The one E is shared by both sides, so E is the only word that crosses. What bounds E from below has no partner, so the nonphysical side receives a floor under E with nothing to name the floor.",
+ "conflicts": "none",
+ "sense": 1,
+ "confidence": 5,
+ "closing": "The rule decided without a judgment call because temperature was fixed beforehand as not carrying resistance; that pre-decision is doing all the work. Read naively, this is the textbook shape of a cost that rises with something, and if temperature had been read as opposition the row would have turned around. The relation's cost list names temperature as what the cost rises with, so by the fixed table it is not a resistance-cost and the shape keeps. Nothing but E can be written in frozen words.",
+ "knew_tsr": false
+}

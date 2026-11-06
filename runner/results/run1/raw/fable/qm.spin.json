@@ -1,0 +1,25 @@
+{
+ "id": "qm.spin",
+ "physical": "Particles carry an intrinsic angular momentum that is quantized in half-integer or integer multiples of the reduced Planck constant and is not a rotation in space.",
+ "reflected_formula": "",
+ "reflected_sentence": "An E carries an intrinsic angular momentum that comes only in fixed steps and is not a rotation in Vibration, unchanged.",
+ "shape": "keeps",
+ "rule_reason": "definition; it keeps its shape. Spin and the Planck constant are unmapped but that does not change the shape.",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "spin",
+  "Planck constant",
+  "half-integer and integer multiples"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "A definition keeps. Spin is declared not to carry the gap and has no row. The multiples are numbers and cannot cross, so the kept definition says only that the steps are fixed and that it is not a rotation in Vibration.",
+ "conflicts": "none",
+ "sense": 1,
+ "confidence": 6,
+ "closing": "Forced keeps. The only mappable fragment is space to Vibration inside a negation, which is not a relationship. Momentum is in the table but spin is intrinsic angular momentum, and the quantity list separates them, so I did not use the momentum row. Under Amendment 1 this is keeps with spin and the Planck constant unmapped.",
+ "knew_tsr": false
+}

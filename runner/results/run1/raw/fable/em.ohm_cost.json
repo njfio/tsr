@@ -1,0 +1,30 @@
+{
+ "id": "em.ohm_cost",
+ "physical": "Ohm's law (the cost reading): For a given voltage, the current that flows falls as the resistance rises. I = V ÷ R",
+ "reflected_formula": "[electric current: unmapped] = [voltage: unmapped] ÷ the gap",
+ "reflected_sentence": "For a given push, the flow rises as receptivity rises, that is, as the gap closes.",
+ "shape": "turns around",
+ "rule_reason": "resistance-cost: current flowing for a given voltage gets harder as electrical resistance rises; one cost, odd, so it turns around",
+ "rule_trace": [
+  "resistance-cost"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "electric current I",
+  "voltage V"
+ ],
+ "new_words": [],
+ "monotone_claims": [
+  {
+   "rises": "the gap",
+   "with": "alignment",
+   "sign": -1
+  }
+ ],
+ "interpretation": "Resistance crosses as the gap, and the cost it imposes turns around: what is harder with more resistance is easier with more receptivity. For a given [voltage], the flow is greater the smaller the gap, which is to say the greater the alignment. The formula stands as written; the reading turns from a flow throttled by opposition to a flow opened by receptivity.",
+ "conflicts": "none",
+ "sense": 3,
+ "confidence": 7,
+ "closing": "The rule decided on its own: one listed cost rising with electrical resistance, which is fixed as carrying resistance. The turned reading is coherent in the framework's terms and agrees with the table's gloss of alignment as how little you resist. The weakness is that neither the flow nor the voltage has a partner, so the only frozen monotone claim is the gap falling with alignment, which the table already states by definition rather than something the reflection adds. (Amendment 1 applied: shape is the rule's call on the relationship; unmapped terms are listed separately and described in plain words in the sentence.)",
+ "knew_tsr": false
+}

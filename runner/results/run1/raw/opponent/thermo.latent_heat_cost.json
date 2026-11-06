@@ -1,0 +1,8 @@
+{
+ "id": "thermo.latent_heat_cost",
+ "alternative_shape": null,
+ "rule_compliant": false,
+ "argument": "The strongest keeps reading would call the heat taken a mere scaling with how much body there is, but the fixed table decides mass m as carrying resistance and flags latent heat's rise with mass as exactly this relation-level cost; Q = m × L is a proportionality, not an equivalence or definition, so no rule-compliant keeps reading exists.",
+ "reflected_sentence": "",
+ "knew_tsr": false
+}

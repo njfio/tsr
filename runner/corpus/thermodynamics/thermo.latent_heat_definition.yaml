@@ -1,0 +1,14 @@
+id: thermo.latent_heat_definition
+domain: thermodynamics
+title: "Latent heat (the definition)"
+statement: "Latent heat is the heat absorbed per unit mass in a phase change at constant temperature."
+formula: "L = Q ÷ m"
+form: definition
+variables:
+  - {name: latent heat L, quantity: latent heat}
+  - {name: heat Q, quantity: heat}
+  - {name: mass m, quantity: mass m}
+costs: []
+standard_sources: ["Fermi, Thermodynamics, ch. 4"]
+book_status: unreflected
+review: pending

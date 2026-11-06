@@ -1,0 +1,30 @@
+{
+ "id": "qm.bound_state_quantization",
+ "physical": "A particle confined to a region has only discrete allowed energies; the spacing grows as the region shrinks and falls as the particle's mass rises.",
+ "reflected_formula": "",
+ "reflected_sentence": "With receptivity, what was limited becomes limitless, turning the reading around.",
+ "shape": "turns around",
+ "rule_reason": "The single listed cost has separation_made_by_distance true, so its reading turns around. Its fall with mass is not an additional cost that rises with resistance. Energy maps to conscious energy and mass to Movement M, but the other required terms lack partners.",
+ "rule_trace": [
+  "separation"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "particle",
+  "confinement",
+  "region",
+  "discrete allowed energy levels",
+  "quantum number n",
+  "confinement length L",
+  "Planck constant ħ",
+  "energy spacing"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "",
+ "conflicts": "none",
+ "sense": 1,
+ "confidence": 7,
+ "closing": "The supplied separation flag decides turns around without counting the inverse mass dependence as a second resistance cost. A length is not automatically space, and quantization has no frozen partner. A complete mapped formula and two frozen-vocabulary interpretive sentences cannot be supplied without additions, so those fields are empty.",
+ "knew_tsr": false
+}

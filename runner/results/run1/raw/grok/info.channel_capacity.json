@@ -1,0 +1,27 @@
+{
+ "id": "info.channel_capacity",
+ "physical": "The greatest rate at which information can be sent reliably through a noisy channel is the bandwidth times the log of one plus the signal-to-noise ratio.",
+ "reflected_formula": "",
+ "reflected_sentence": "The greatest rate of a reliable message stays an extent times the log of one plus the ratio of one strength to another.",
+ "shape": "keeps",
+ "rule_reason": "Definition; cost block empty; no listed quantity carries resistance, so the ceiling is not a limit caused by resistance.",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "channel capacity",
+  "bandwidth",
+  "power",
+  "noise power",
+  "information"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "The definition keeps, and no frozen word is in it. Receptivity does not flip a rate the table does not name. E, Movement, and the gap do not enter.",
+ "conflicts": "none",
+ "sense": 2,
+ "confidence": 6,
+ "closing": "The rule decided the shape on its own: the form is a definition and the cost block is empty, and none of the listed quantities carries resistance. 'Greatest' is a ceiling, but not a limit caused by resistance, so it does not turn. No formula term has a frozen partner, so I left the formula blank rather than invent one; the trace token identity is the keep-class, which covers definitions.",
+ "knew_tsr": false
+}

@@ -1,0 +1,25 @@
+{
+ "id": "thermo.latent_heat_definition",
+ "physical": "Latent heat is the heat absorbed per unit mass in a phase change at constant temperature. L = Q ÷ m",
+ "reflected_formula": "",
+ "reflected_sentence": "The definition keeps its shape: an unnamed change-over measure is an unnamed gift of conscious energy per unit of Movement M.",
+ "shape": "keeps",
+ "rule_reason": "Definition with no costs; definitions keep their shape. The fixed list's note that latent heat's rise with mass is relation-level makes this consistent with the cost reading turning while the definition keeps.",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "latent heat",
+  "heat",
+  "temperature"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "The per-unit-mass form acquires one frozen word, Movement M, but the rest cannot cross. The definition and its cost twin landing on opposite shapes is exactly what the rule predicts, not a contradiction.",
+ "conflicts": "none",
+ "sense": 1,
+ "confidence": 7,
+ "closing": "Decided by the rule alone. The pairing with the cost reading is handled by the relation-level note in the fixed list, so no judgment was needed to keep this row and turn its twin.",
+ "knew_tsr": false
+}

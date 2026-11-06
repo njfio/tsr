@@ -1,0 +1,25 @@
+{
+ "id": "thermo.heat_capacity_cost",
+ "physical": "Warming a body by a given amount takes more heat the larger its heat capacity: thermal inertia.",
+ "reflected_formula": "",
+ "reflected_sentence": "Read as thermal inertia, where warming a body takes more energy the more it holds back, here the warming comes more easily the more receptive the body is.",
+ "shape": "turns around",
+ "rule_reason": "Heat capacity is UNDETERMINED as to whether it carries resistance, requiring a judgment call on whether the cost turns around; in addition, heat capacity, heat, and temperature are unmapped in the frozen vocabulary.",
+ "rule_trace": [
+  "resistance-cost"
+ ],
+ "forced": false,
+ "unmapped_terms": [
+  "heat capacity C",
+  "heat Q",
+  "temperature change ΔT"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "If thermal inertia is treated as resistance, what gets harder with more resistance gets easier with more receptivity. Because heat capacity, heat, and temperature have no partners in the frozen vocabulary, the reflection cannot be expressed.",
+ "conflicts": "none",
+ "sense": 1,
+ "confidence": 3,
+ "closing": "The rule did not decide on its own: the prompt explicitly marks heat capacity as UNDETERMINED (a judgment call) between thermal inertia (carrying resistance, which turns the relation around) and a plain ratio (not carrying resistance, which keeps its shape). Regardless of that call, none of the variables have partners in the frozen vocabulary. Under the amendment I made the call as turns around, taking the statement's own 'thermal inertia' reading (clause a); under the plain-ratio reading it would keep.",
+ "knew_tsr": false
+}

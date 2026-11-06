@@ -1,0 +1,28 @@
+{
+ "id": "info.shannon_entropy",
+ "physical": "The uncertainty of a source is minus the sum over outcomes of probability times log probability; it is the least average number of bits needed to encode it. (H = −Σ p × log p)",
+ "reflected_formula": "[unmapped: Shannon entropy H] = −Σ [unmapped: probability p] × log [unmapped: probability p]",
+ "reflected_sentence": "[unmapped: Shannon entropy H] is minus the sum over [unmapped: outcomes] of [unmapped: probability p] times the logarithm of [unmapped: probability p].",
+ "shape": "keeps",
+ "rule_reason": "definition with zero costs caused by resistance and no separation made by distance",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "Shannon entropy H",
+  "probability p",
+  "uncertainty",
+  "source",
+  "outcomes",
+  "bits"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "Shannon entropy and probability have no partners in the frozen table, even if thermodynamic entropy provisionally maps to Culmination. Moreover, the formula sums over outcomes to count a number of bits, whereas the nonphysical side excludes numbers and sums. The definition keeps its shape by rule, but yields no statement in Vibrational Reality.",
+ "conflicts": "\"Nothing on the nonphysical side has a number, a unit or a distance.\" and \"No sums where the book has products.\"",
+ "sense": 1,
+ "confidence": 7,
+ "closing": "The keeps-or-turns call is mechanically decided because the relation is a definition with no resistance-bearing quantities or distance separations. The only slight vocabulary ambiguity is whether 'Shannon entropy' should borrow 'Culmination (provisional)' from 'entropy', but the resistance list separates 'Shannon entropy' from 'entropy' and all remaining terms (probability, uncertainty, outcomes, bits) are unmapped regardless.",
+ "knew_tsr": false
+}

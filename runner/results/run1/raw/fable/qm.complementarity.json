@@ -1,0 +1,24 @@
+{
+ "id": "qm.complementarity",
+ "physical": "The more which-path information an interferometer records, the less visible its interference fringes; the two trade off so that distinguishability squared plus visibility squared is at most one. D² + V² ≤ 1",
+ "reflected_formula": "",
+ "reflected_sentence": "The more an E's path is told apart, the less its fringes show; the two trade off and together stay within one whole, unchanged.",
+ "shape": "keeps",
+ "rule_reason": "no costs and no resistant quantity; an inequality not caused by resistance keeps. Both variables are unmapped but that does not change the shape.",
+ "rule_trace": [
+  "none"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "which-path information",
+  "interference visibility"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "The trade-off is a limit, but not one made by the gap, so the rule keeps it. The table offers no partner for either side of the trade-off and the bound of one is a number that cannot cross. What remains is a trade-off stated in plain words.",
+ "conflicts": "none",
+ "sense": 1,
+ "confidence": 5,
+ "closing": "Keeps was the forced verdict (zero costs). The relation is a sum of squares bounded by a number; neither the sum nor the number can cross, and both variables are unmapped. Focus/Tune tempts as a partner for which-path information but the table does not license it. Mild ambiguity: this is a limit, and the property row says limited becomes limitless, yet the deciding question only turns limits caused by resistance. I followed the deciding question. Under Amendment 1 this is keeps with both terms unmapped.",
+ "knew_tsr": false
+}

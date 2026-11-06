@@ -1,0 +1,28 @@
+{
+ "id": "field.cp_violation",
+ "physical": "The weak interaction treats matter and antimatter slightly differently: the combined operation of charge conjugation and parity is not an exact symmetry.",
+ "reflected_formula": "",
+ "reflected_sentence": "No complete reflection has frozen vocabulary partners.",
+ "shape": "keeps",
+ "rule_reason": "There are no resistance costs or separations; the asymmetric relationship keeps rather than becoming a symmetry.",
+ "rule_trace": [
+  "none"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "weak interaction",
+  "matter",
+  "antimatter",
+  "charge conjugation",
+  "parity",
+  "combined CP operation"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "No partner. No complete reflection.",
+ "conflicts": "none",
+ "sense": 1,
+ "confidence": 7,
+ "closing": "The zero-cost rule decides keeps without a judgment call, but no substantive term has the required partner. Weak frequency is not a supplied partner for the weak interaction. Preserving a broken symmetry does not authorize repairing it.",
+ "knew_tsr": false
+}

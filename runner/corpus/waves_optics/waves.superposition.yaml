@@ -1,0 +1,13 @@
+id: waves.superposition
+domain: waves_optics
+title: "Superposition"
+statement: "In a linear medium the net displacement at any point is the sum of the displacements each wave would produce alone."
+formula: "y = y1 + y2"
+form: identity
+variables:
+  - {name: amplitude, quantity: amplitude}
+costs: []
+standard_sources: ["Hecht, Optics, ch. 7"]
+book_status: unreflected
+review: pending
+notes: "Keeps as an identity. The book says of two vibrations without a point: 'it isn't cancel, and it isn't add either; it's culminate.' Layer B should test this row's sentence against that ruling; Layer C should find that the book's claim is about the point (waves.interference_cancellation), not about linearity."

@@ -1,0 +1,26 @@
+{
+ "id": "qm.complementarity",
+ "physical": "The more which-path information an interferometer records, the less visible its interference fringes; D² + V² ≤ 1",
+ "reflected_formula": "[which-path information: no partner]² + [interference visibility: no partner]² ≤ 1",
+ "reflected_sentence": "The trade-off between telling two ways apart and seeing how they culminate together keeps its shape.",
+ "shape": "keeps",
+ "rule_reason": "an inequality between two measures; there is no cost caused by resistance and no separation",
+ "rule_trace": [
+  "none"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "which-path information",
+  "interference visibility",
+  "interferometer",
+  "fringes"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "Nothing in it carries resistance, so it keeps its shape. It is a sum of squares bounded by a number, and none of that can cross the mirror.",
+ "conflicts": "\"Nothing on the nonphysical side has a number\"; it is also a sum, which the traps warn against wherever the book has products (here physics itself has the sum)",
+ "sense": 1,
+ "confidence": 6,
+ "closing": "The rule decided the shape: no resistance and no distance, so it keeps. The trade-off looks like a limit, but nothing that carries resistance causes it. Both terms are unmapped, so the reflection is empty.",
+ "knew_tsr": false
+}

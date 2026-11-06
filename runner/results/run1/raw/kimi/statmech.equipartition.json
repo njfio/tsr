@@ -1,0 +1,28 @@
+{
+ "id": "statmech.equipartition",
+ "physical": "Equipartition — In thermal equilibrium every quadratic degree of freedom carries an average energy of half k times the temperature. ⟨E⟩ = ½ × k × T per degree of freedom. Form: identity.",
+ "reflected_formula": "⟨E⟩ = ½ × k × T (shape kept; only E crosses; ½, k, T and per-degree have no partner)",
+ "reflected_sentence": "The identity keeps its shape: E is shared by both sides, and every open way a system can hold E receives an equal share — the size of that share, a half of a constant times the warmth, has no partner and its number does not cross, so it is said in plain words.",
+ "shape": "keeps",
+ "rule_reason": "an identity with no cost and no resistance-carrier (energy, temperature, degrees of freedom, Boltzmann constant all non-resistance); identities keep their shape",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "Boltzmann constant",
+  "temperature",
+  "degrees of freedom",
+  "the factor ½",
+  "thermal equilibrium",
+  "average"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "E crosses, being the one energy. The equal sharing keeps its shape. The size of each share stays behind, having no partner.",
+ "conflicts": "none",
+ "sense": 2,
+ "confidence": 7,
+ "closing": "The rule's first clause names identities explicitly as keepers, so the shape was decided without judgment. The reflection is nearly empty only because every term except E lacks a partner.",
+ "knew_tsr": false
+}

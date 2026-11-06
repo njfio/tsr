@@ -1,0 +1,29 @@
+{
+ "id": "thermo.second_law_clausius",
+ "physical": "Second law (Clausius): Heat does not spontaneously flow from a colder body to a hotter body; the entropy of an isolated system never decreases. ΔS_universe ≥ 0. Alternate (Kelvin-Planck): no cyclic process can convert heat entirely into work.",
+ "reflected_formula": "Δ Culmination (provisional) ≥ 0",
+ "reflected_sentence": "The relationship keeps its shape: Culmination never lessens; what flows, and the hotter and colder it flows between, have no partners.",
+ "shape": "keeps",
+ "rule_reason": "The main cost (undoing a spontaneous flow) rises with entropy and the alternate's cost (turning all heat into work) rises with heat; the fixed table says neither carries resistance. Zero resistance-costs, no separation made by distance, so the relation keeps its shape. It is an inequality and a limit, but not one caused by resistance.",
+ "rule_trace": [
+  "none"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "heat",
+  "temperature",
+  "colder body",
+  "hotter body",
+  "isolated system",
+  "work (alternate)",
+  "cyclic process (alternate)"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "Culmination only gathers; it does not lessen. Where two vibrations meet they culminate rather than cancel, and the table's provisional word carries that one direction across. What flows has no partner, and neither do the hotter and the colder.",
+ "conflicts": "none",
+ "sense": 3,
+ "confidence": 6,
+ "closing": "The rule decided on its own: entropy and heat were fixed as not carrying resistance before this run, so the count is zero and the row keeps. The ambiguity is that this is a one-way limit, which the rule's gloss ('unreachable becomes already there') seems to want to turn, but the deciding question is resistance and there is none. The reflected formula keeps the number 0, which the rule says should not cross; I kept it only because the formula is not to be rewritten. The first clause (the direction of flow) has no frozen words, so only the second clause reflects.",
+ "knew_tsr": false
+}

@@ -1,0 +1,17 @@
+id: em.ohm_cost
+domain: electromagnetism
+title: "Ohm's law (the cost reading)"
+statement: "For a given voltage, the current that flows falls as the resistance rises."
+formula: "I = V ÷ R"
+form: equation
+variables:
+  - {name: resistance R, quantity: electrical resistance}
+  - {name: voltage V, quantity: voltage}
+  - {name: current I, quantity: current (electric)}
+costs:
+  - {what_gets_harder: "current flowing for a given voltage", rises_with: [electrical resistance]}
+derived_from: [em.ohm_definition]
+standard_sources: ["Purcell, Electricity and Magnetism, ch. 4"]
+book_status: unreflected
+review: pending
+notes: "Electrical resistance is the paradigm clause-(a) quantity. Turns under C0."

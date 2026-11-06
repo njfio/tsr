@@ -1,0 +1,26 @@
+{
+ "id": "qm.uncertainty_position_momentum",
+ "physical": "The spreads of position and momentum cannot both be made small. Δx × Δp ≥ ħ ÷ 2",
+ "reflected_formula": "Δ[length: no partner] × Δmomentum ≥ [Planck constant: no partner] ÷ 2",
+ "reflected_sentence": "The product keeps its shape: how wide the extent is and how wide momentum is cannot both be narrow at once.",
+ "shape": "keeps",
+ "rule_reason": "an inequality with no cost caused by resistance and no separation (the position spread is marked as not carrying distance)",
+ "rule_trace": [
+  "none"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "length",
+  "Planck constant",
+  "position",
+  "spread"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "It keeps its shape. Position could only map to Vibration, the partner of space, but the table gives length no partner, and on the nonphysical side there is no location.",
+ "conflicts": "\"No distance, time, location... on the nonphysical side\" (position is a location); \"Nothing on the nonphysical side has a number\"",
+ "sense": 1,
+ "confidence": 6,
+ "closing": "The rule decided the shape (keeps). It is a bound on quantities and on position, which is a location, so the reflection is nearly empty. I did not map position to Vibration, because the table says length is extent and has no partner.",
+ "knew_tsr": false
+}

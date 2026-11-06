@@ -1,0 +1,8 @@
+{
+ "id": "info.channel_capacity",
+ "alternative_shape": null,
+ "rule_compliant": false,
+ "argument": "The relation is a definition of a rate from bandwidth and a power ratio. Channel capacity, bandwidth, power and noise power are all fixed before this run as not carrying resistance, so the statement contains no resistance-caused cost and no distance-made separation that could turn around; reading the noisy channel's noise as resistance would contradict the fixed ruling.",
+ "reflected_sentence": "",
+ "knew_tsr": false
+}

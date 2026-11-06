@@ -1,0 +1,15 @@
+id: rel.row10_spacetime_one_continuum
+domain: calibration
+title: "Row 10: space and time form one continuum"
+statement: "Space and time are components of one four-dimensional continuum; the invariant interval mixes them."
+formula: "s² = c² t² − x²"
+form: identity
+variables:
+  - {name: time t, quantity: time}
+  - {name: length x, quantity: length}
+  - {name: speed of light c, quantity: speed of light c}
+costs: []
+standard_sources: ["Minkowski 1908"]
+book_status: ruled
+ruling: {shape: keeps, words: "Vibration-Expansion", source: "Ch16 #10"}
+review: "reviewed:spec-port"

@@ -1,0 +1,25 @@
+{
+ "id": "em.poynting",
+ "physical": "The energy carried by an electromagnetic field per unit area per unit time is the cross product of the electric and magnetic fields over the permeability. S = E × B ÷ μ0",
+ "reflected_formula": "S = Idle × Reflected ÷ μ0",
+ "reflected_sentence": "The conscious energy the pair carries is Idle meeting Reflected, taken over a medium constant, and the definition keeps its shape.",
+ "shape": "keeps",
+ "rule_reason": "A definition of an energy flux with no cost or limit caused by resistance; the fixed table assigns no resistance to the Poynting vector, the fields or permeability, so it keeps.",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "Poynting vector S",
+  "permeability μ0",
+  "per unit area per unit time"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "Idle and Reflected are co-creating partners; their meeting carries conscious energy. The product stays a product, the division stays a division. Nothing opposed anything here.",
+ "conflicts": "none",
+ "sense": 4,
+ "confidence": 7,
+ "closing": "The rule decided: definition, zero costs, no resistance-bearing quantity, so keeps. The partners map read almost naturally in the frozen vocabulary since electric and magnetic are given as co-creating partners; only the Poynting vector and the per-area-per-time unit structure lack any partner, as those words cannot cross at all.",
+ "knew_tsr": false
+}

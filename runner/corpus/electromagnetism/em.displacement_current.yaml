@@ -1,0 +1,14 @@
+id: em.displacement_current
+domain: electromagnetism
+title: "Maxwell's displacement current"
+statement: "A changing electric field acts as a source of magnetic field just as a current does, which closes the symmetry between the two fields and makes electromagnetic waves possible."
+formula: "∇ × B = μ0 × J + μ0 × ε0 × dE ÷ dt"
+form: symmetry
+variables:
+  - {name: electric field E, quantity: electric field}
+  - {name: magnetic field B, quantity: magnetic field}
+  - {name: time t, quantity: time}
+costs: []
+standard_sources: ["Maxwell 1865; Purcell, Electricity and Magnetism, ch. 9"]
+book_status: unreflected
+review: pending

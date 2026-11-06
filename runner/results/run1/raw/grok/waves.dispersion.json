@@ -1,0 +1,25 @@
+{
+ "id": "waves.dispersion",
+ "physical": "In a dispersive medium the phase velocity depends on wavelength, so a pulse made of many wavelengths spreads as it travels.",
+ "reflected_formula": "",
+ "reflected_sentence": "A dependence of a rate on an extent keeps, so a pulse of many extents still loses a single form as that dependence grows.",
+ "shape": "keeps",
+ "rule_reason": "The listed cost rises with dispersion, which does not carry resistance, and no separation is flagged, so no turning cost fires.",
+ "rule_trace": [
+  "none"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "phase velocity v_p",
+  "wavelength λ",
+  "dispersion"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "A dependence keeps. The gap does not enter, and alignment does not flip it. No frozen word names the rate or the extent.",
+ "conflicts": "none",
+ "sense": 2,
+ "confidence": 6,
+ "closing": "Dispersion is listed as a dependence, not an opposition, and the cost block sets separation_made_by_distance to false. The cost therefore does not turn the relation. The statement's travel cannot cross and is dropped rather than rewritten into a separation the block did not flag.",
+ "knew_tsr": false
+}

@@ -1,0 +1,24 @@
+{
+ "id": "statmech.maxwell_boltzmann_width",
+ "physical": "The spread of molecular speeds in a gas grows with the square root of temperature and shrinks with the square root of molecular mass.",
+ "reflected_formula": "",
+ "reflected_sentence": "The spread of rise per Expansion still grows with the square root of how warm it is and still shrinks with the square root of Movement.",
+ "shape": "keeps",
+ "rule_reason": "Equation with an empty cost block. Mass carries resistance, but the spread shrinking with mass is not a recorded cost that gets harder with resistance, so the count of such costs is zero.",
+ "rule_trace": [
+  "none"
+ ],
+ "forced": false,
+ "unmapped_terms": [
+  "temperature",
+  "Boltzmann constant"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "The equation keeps: the spread of rise per Expansion still shrinks as Movement grows. How warm it is does not flip that growth. The gap does not enter.",
+ "conflicts": "none",
+ "sense": 3,
+ "confidence": 5,
+ "closing": "Judgment call. Mass is resistance and it sits in the formula, so a reading that counts every dependence on mass as a resistance-cost would turn the relation. I kept it, because the cost block is empty and the rule turns a cost that gets harder with resistance, not every appearance of mass. The spread getting smaller is not something getting harder. Term reflection still replaces mass with Movement and velocity with rise per Expansion; I did not invert the reading, and I did not rewrite the formula by dropping the constant and the warmth.",
+ "knew_tsr": false
+}

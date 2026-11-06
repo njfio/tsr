@@ -1,0 +1,15 @@
+id: rel.relativistic_doppler
+domain: relativity
+title: "Relativistic Doppler effect"
+statement: "Light from a source receding at speed v is received at a lower frequency by the factor square root of (1 − β) over (1 + β); approaching, higher. No medium is involved and only the relative velocity matters."
+formula: "f' = f × √((1 − β) ÷ (1 + β))"
+form: equation
+variables:
+  - {name: emitted frequency f, quantity: frequency (physical)}
+  - {name: relative velocity v, quantity: velocity}
+  - {name: speed of light c, quantity: speed of light c}
+costs: []
+derived_from: [rel.row05_time_dilation, waves.doppler]
+standard_sources: ["Einstein 1905; Taylor & Wheeler, ch. 8"]
+book_status: unreflected
+review: pending

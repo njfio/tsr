@@ -1,0 +1,25 @@
+{
+ "id": "mech.resonance_width",
+ "physical": "A driven oscillator responds most strongly near its natural frequency; the width of that response grows with the damping, and the peak height falls with it (Q = ω0/Δω).",
+ "reflected_formula": "",
+ "reflected_sentence": "The reading turns around: a sharp response near a natural rate is easier with receptivity, where a drain had broadened it and lowered its peak.",
+ "shape": "turns around",
+ "rule_reason": "One resistance-cost in the block, rising with the damping coefficient; odd count, so the reading turns around.",
+ "rule_trace": [
+  "resistance-cost"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "frequency (physical)",
+  "damping coefficient",
+  "resonance width"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "One cost in the block turns the reading: harder becomes easier with receptivity. Frequency is not a rate, so it is not used for the width. Movement is the only frozen partner in the formula, and it does not name the width.",
+ "conflicts": "none",
+ "sense": 3,
+ "confidence": 6,
+ "closing": "One listed cost rises with the damping coefficient, an odd count, so the reading turns. Mass in the denominator was not added as a second cost. Physical frequency was not mapped to Frequency. No new word was introduced.",
+ "knew_tsr": false
+}

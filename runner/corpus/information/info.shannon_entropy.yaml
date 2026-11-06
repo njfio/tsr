@@ -1,0 +1,13 @@
+id: info.shannon_entropy
+domain: information
+title: "Shannon entropy"
+statement: "The uncertainty of a source is minus the sum over outcomes of probability times log probability; it is the least average number of bits needed to encode it."
+formula: "H = −Σ p × log p"
+form: definition
+variables:
+  - {name: Shannon entropy H, quantity: Shannon entropy}
+  - {name: probability p, quantity: probability}
+costs: []
+standard_sources: ["Shannon 1948"]
+book_status: unreflected
+review: pending

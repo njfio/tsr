@@ -1,0 +1,31 @@
+{
+ "id": "em.coulomb",
+ "physical": "Two charges push or pull with a force proportional to the product of the charges and inversely proportional to the square of their separation. (F = k × q1 × q2 ÷ r²)",
+ "reflected_formula": "Frequency = k × q1 × q2 ÷ Vibration²",
+ "reflected_sentence": "Two sources interact with a Frequency proportional to the product of their strengths that rises with alignment as separation turns around.",
+ "shape": "turns around",
+ "rule_reason": "A separation made by distance (r has carries_distance: true, and the separation-cost reading has separation_made_by_distance: true) turns the relationship around so what was weakened by separation grows stronger with alignment.",
+ "rule_trace": [
+  "separation"
+ ],
+ "forced": false,
+ "unmapped_terms": [
+  "charge q",
+  "Coulomb constant k",
+  "separation r"
+ ],
+ "new_words": [],
+ "monotone_claims": [
+  {
+   "rises": "Frequency",
+   "with": "alignment",
+   "sign": 1
+  }
+ ],
+ "interpretation": "Frequency reflects force, and separation made by distance turns around into alignment. What was weakened by separation now rises with alignment between the two sources.",
+ "conflicts": "none",
+ "sense": 3,
+ "confidence": 6,
+ "closing": "The rule indicates that separation made by distance turns the relation around (marked by carries_distance: true on r and separation_made_by_distance: true in the alternate statement, though the primary costs array is empty). Charge q and constant k have no partners in the frozen vocabulary and are recorded in unmapped_terms.",
+ "knew_tsr": false
+}

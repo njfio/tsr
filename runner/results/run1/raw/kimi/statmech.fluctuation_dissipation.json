@@ -1,0 +1,27 @@
+{
+ "id": "statmech.fluctuation_dissipation",
+ "physical": "Fluctuation-dissipation theorem — The way a system in equilibrium dissipates a small push is fixed by the spectrum of its own spontaneous fluctuations: friction and thermal noise are two faces of one quantity. No formula. Form: identity.",
+ "reflected_formula": "",
+ "reflected_sentence": "The identity keeps its shape: friction reflects as resonance, and resonance and a system's own spontaneous trembling remain two faces of one quantity, as the drain on a nudge and the hiss of equilibrium were on the physical side — drain, nudge and hiss having no partners, they stand in plain words.",
+ "shape": "keeps",
+ "rule_reason": "the statement is an identity — 'two faces of one quantity' — and the rule's first clause says identities keep their shape regardless of the resistance their terms carry",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "damping coefficient (a resistance-carrier, but the identity keeps its shape over it)",
+  "temperature",
+  "noise spectrum",
+  "push",
+  "fluctuation"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "resonance crosses where friction stood. One quantity keeps two faces on both sides of the mirror. The shape keeps.",
+ "conflicts": "none",
+ "sense": 3,
+ "confidence": 6,
+ "closing": "The damping coefficient is pre-decided as carrying resistance, which could tempt a turn, but the rule states plainly that identities keep their shape, and the statement is explicitly an identity; no judgment call was required. This is one of the few reflections here that reads as more than a bare name, although 'fluctuation' itself had no partner.",
+ "knew_tsr": false
+}

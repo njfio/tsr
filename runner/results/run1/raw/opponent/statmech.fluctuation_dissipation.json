@@ -1,0 +1,8 @@
+{
+ "id": "statmech.fluctuation_dissipation",
+ "alternative_shape": "turns around",
+ "rule_compliant": true,
+ "argument": "The damping coefficient is fixed as carrying resistance ('the opposition to velocity that drains an oscillation'), and the statement itself names that resistance's cost: a system 'dissipates a small push', with 'friction' named outright. That is one resistance-caused cost actually present in the physics statement, and an odd number of such costs turns around: the drain of the push becomes the collection of the Frequency, while the identity 'two faces of one quantity' keeps its shape within the sentence.",
+ "reflected_sentence": "The way a system in [unmapped: equilibrium] collects a small Frequency is fixed by the [unmapped: spectrum] of its own [unmapped: spontaneous fluctuations]: resonance and [unmapped: thermal noise] are two faces of one quantity.",
+ "knew_tsr": false
+}

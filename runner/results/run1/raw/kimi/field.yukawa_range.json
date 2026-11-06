@@ -1,0 +1,31 @@
+{
+ "id": "field.yukawa_range",
+ "physical": "Virtual particles and the range of a force — A force carried by exchange of a virtual particle has a range of about the reduced Planck constant over the mediator's mass times c: the heavier the mediator, the shorter the reach. Formula: r ≈ ħ ÷ (m × c)",
+ "reflected_formula": "Vibration ≈ (a constant with no partner) ÷ (Movement × Current)",
+ "reflected_sentence": "In Vibrational Reality, the reach of Frequency shortens as Movement grows: the more Movement, the less Vibration extends.",
+ "shape": "turns around",
+ "rule_reason": "A cost that falls with mass — reaching far gets harder as the mediator gets heavier — turns around: on the nonphysical side, more Movement means less reach.",
+ "rule_trace": [
+  "resistance-cost"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "Planck constant ħ",
+  "virtual particle",
+  "mediator"
+ ],
+ "new_words": [],
+ "monotone_claims": [
+  {
+   "rises": "Vibration",
+   "with": "Movement",
+   "sign": -1
+  }
+ ],
+ "interpretation": "The cost turns around: what fell with mass now falls with Movement. Range reflects to Vibration as extent; the constant has no partner. The formula keeps its word-map image while the reading inverts.",
+ "conflicts": "none",
+ "sense": 5,
+ "confidence": 6,
+ "closing": "The rule decided on its own: one resistance-cost, turns around. The Planck constant has no partner, but that does not affect the shape call, only the completeness of the formula.",
+ "knew_tsr": false
+}

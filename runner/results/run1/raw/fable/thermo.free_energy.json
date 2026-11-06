@@ -1,0 +1,28 @@
+{
+ "id": "thermo.free_energy",
+ "physical": "Free energy: Gibbs free energy is enthalpy minus temperature times entropy; at fixed temperature and pressure a process is spontaneous when it lowers the free energy. G = H − T × S",
+ "reflected_formula": "[no partner: free energy G] = [no partner: enthalpy H] − [no partner: temperature T] × Culmination (provisional)",
+ "reflected_sentence": "The definition keeps its shape: an unnamed usable store equals an unnamed total minus an unnamed hotness multiplied by Culmination; only entropy crosses, as Culmination.",
+ "shape": "keeps",
+ "rule_reason": "Definition (an equivalence); no costs listed and none caused by resistance; keeps its shape.",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "free energy",
+  "enthalpy",
+  "temperature",
+  "pressure",
+  "spontaneous",
+  "process"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "Culmination is the one frozen word here, and it is subtracted after being multiplied by a term with no partner. The second clause, about what happens on its own, has no frozen words at all.",
+ "conflicts": "none",
+ "sense": 1,
+ "confidence": 7,
+ "closing": "The rule decided without a judgment call: a definition keeps. The 'spontaneous when it lowers the free energy' clause looks like it wants to say something about Culmination rising, but free energy and temperature have no partners, so I did not build that claim. The provisional status of Culmination is noted; I used the word as the table gives it.",
+ "knew_tsr": false
+}

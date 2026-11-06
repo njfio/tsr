@@ -1,0 +1,36 @@
+{
+ "id": "mech.terminal_velocity",
+ "physical": "A falling body stops accelerating when drag balances weight; that terminal speed rises with the body's mass and falls with the drag coefficient, the fluid's density and the cross-section. v_t = √(2 × m × g ÷ (ρ × C_d × A))",
+ "reflected_formula": "rise per Expansion = √(2 × Movement × [gravitational field g] ÷ (Desire × the gap × [area A]))",
+ "reflected_sentence": "The fall settles where drag and density once set the terms; on this side only the gap and Desire mark them, and the settling comes easier as receptivity rises.",
+ "shape": "turns around",
+ "rule_reason": "One listed cost: the settled fall-speed rises with mass m, a resistance quantity; one odd cost turns the reading around.",
+ "rule_trace": [
+  "resistance-cost"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "drag coefficient C_d (reflected only as the gap)",
+  "gravitational field g",
+  "area A"
+ ],
+ "new_words": [],
+ "monotone_claims": [
+  {
+   "rises": "rise per Expansion",
+   "with": "Movement",
+   "sign": 1
+  },
+  {
+   "rises": "rise per Expansion",
+   "with": "the gap",
+   "sign": -1
+  }
+ ],
+ "interpretation": "rise per Expansion comes from Movement over Desire, the gap and an unmapped extent, all under the root. The cost turns: stopping the fall gets easier as receptivity replaces opposition. The formula keeps its shape; only the drag coefficient's appearance as the gap is a rule-driven substitution.",
+ "conflicts": "none",
+ "sense": 3,
+ "confidence": 7,
+ "closing": "The turn was decided by the rule: exactly one cost, rising with mass. The formula required treating both drag coefficient and density in the denominator; density maps to Desire by the table, drag coefficient has no row and was given its only legal appearance as the gap, which is on record in unmapped_terms.",
+ "knew_tsr": false
+}

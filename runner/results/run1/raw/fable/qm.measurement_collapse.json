@@ -1,0 +1,27 @@
+{
+ "id": "qm.measurement_collapse",
+ "physical": "A measurement yields one of the observable's eigenvalues, and afterwards the system is in the corresponding eigenstate; which value appears is not determined by the prior state.",
+ "reflected_formula": "",
+ "reflected_sentence": "A reading of an E yields one of the values it allows, and afterwards the E is in the matching state; which value appears is not fixed by the state before, unchanged.",
+ "shape": "keeps",
+ "rule_reason": "no costs and no resistant quantity; keeps. Probability and amplitude are unmapped but that does not change the shape.",
+ "rule_trace": [
+  "none"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "probability",
+  "wavefunction amplitude",
+  "measurement",
+  "eigenvalue",
+  "eigenstate"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "The rule keeps the shape, since there is no cost and no resistant quantity. Nothing in the frozen table names a reading or what comes out of one, so the kept shape is stated in plain words. It says nothing the table does not.",
+ "conflicts": "none",
+ "sense": 1,
+ "confidence": 5,
+ "closing": "Keeps was forced by the empty cost list. The vocabulary is where this is weak: Focus/Tune, actualization/realization and manifestation/imagination all look like they want to be the partner of measurement, and using any of them would be exactly the creative rescue the ground rules forbid. Under Amendment 1 this is keeps with the terms unmapped.",
+ "knew_tsr": false
+}

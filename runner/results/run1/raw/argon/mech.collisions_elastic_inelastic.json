@@ -1,0 +1,26 @@
+{
+ "id": "mech.collisions_elastic_inelastic",
+ "physical": "Momentum is conserved in every collision; kinetic energy is conserved in an elastic collision and partly converted to internal energy in an inelastic one, the fraction set by the coefficient of restitution.",
+ "reflected_formula": "",
+ "reflected_sentence": "Momentum is conserved in every meeting; conscious energy of motion is conserved when fully preserved and partly converted when not, in proportion to the ratio of rise per Expansion.",
+ "shape": "keeps",
+ "rule_reason": "conservation law with 0 costs",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "coefficient of restitution",
+  "kinetic energy",
+  "internal energy",
+  "collision"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "Momentum is conserved across the reflection and the conservation relation keeps its shape. Because kinetic energy and coefficient of restitution have no partners in the frozen vocabulary, they are recorded as unmapped terms.",
+ "conflicts": "none",
+ "sense": 1,
+ "confidence": 7,
+ "closing": "The rule directly identifies this as a conservation law with zero costs, so the shape keeps, while the vocabulary table lacks coefficient of restitution and collision terms.",
+ "knew_tsr": false
+}

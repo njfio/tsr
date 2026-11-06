@@ -1,0 +1,9 @@
+{
+  "id": "mech.hooke",
+  "reflected_formula": "Pitch = k × Tone",
+  "reflected_sentence": "A spring pushes back in proportion to Tone; stretching it further takes more Pitch, more so the stiffer the spring.",
+  "shape": "keeps",
+  "rule_reason": "The form is an equation, so the relation is an equivalence and keeps its shape; the formula is not rewritten. The only cost rises with spring constant. Only mass carries density, and spring constant is not mass, so this cost does not rise with density. A statement turns around only with an odd number of costs that rise with density; that number is 0, which is not odd. Dense, bounded, and emitting are not stated conditions, so none of those flips apply. Force maps to Pitch and the stretch, given as space, maps to Tone; spring constant has no lateral name and stays k.",
+  "new_words": [],
+  "knew_framework": false
+}

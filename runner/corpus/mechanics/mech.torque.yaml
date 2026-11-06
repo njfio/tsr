@@ -1,0 +1,22 @@
+id: mech.torque
+domain: mechanics
+title: "Torque and angular acceleration"
+statement: "Torque equals moment of inertia times angular acceleration: the rotational form of Newton's second law, read as the definition of torque's effect."
+formula: "τ = I × α"
+form: definition
+variables:
+  - {name: torque τ, quantity: torque}
+  - {name: moment of inertia I, quantity: moment of inertia}
+  - {name: angular acceleration α, quantity: angular acceleration}
+costs: []
+alternate_statements:
+  - statement: "Read as a law: for a given angular acceleration, the torque required rises with the moment of inertia."
+    form: equation
+    costs:
+      - {what_gets_harder: "the torque required for a given angular acceleration", rises_with: [moment of inertia]}
+    note: "Same form_call as F = ma (C6)."
+derived_from: [mech.newtons_second_law]
+derivation: "F = ma summed over a rigid body about an axis"
+standard_sources: ["Kleppner & Kolenkow, ch. 7"]
+book_status: unreflected
+review: pending

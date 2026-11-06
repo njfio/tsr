@@ -1,0 +1,17 @@
+id: em.poynting
+domain: electromagnetism
+title: "Poynting flux"
+statement: "The energy carried by an electromagnetic field per unit area per unit time is the cross product of the electric and magnetic fields over the permeability."
+formula: "S = E × B ÷ μ0"
+form: definition
+variables:
+  - {name: Poynting vector S, quantity: Poynting vector}
+  - {name: electric field E, quantity: electric field}
+  - {name: magnetic field B, quantity: magnetic field}
+  - {name: permeability μ0, quantity: permeability}
+physical_terms: {S: "Poynting vector", E: "electric", B: "magnetic", μ0: "permeability"}
+costs: []
+standard_sources: ["Poynting 1884; Purcell, Electricity and Magnetism, ch. 9"]
+book_status: unreflected
+review: pending
+notes: "Electric and magnetic have partners (Idle, Reflected); the flux and the medium constant do not. The reflected product Idle × Reflected is what the generators will reach for; whether an energy flux 'radiates' is a trap on the nonphysical side."

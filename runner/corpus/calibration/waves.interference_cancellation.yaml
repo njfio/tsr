@@ -1,0 +1,20 @@
+id: waves.interference_cancellation
+domain: calibration
+title: "Destructive interference at a point"
+statement: "Two waves in opposite phase cancel at a point; the cancellation is located, and energy is conserved overall."
+formula: ""
+form: equation
+variables:
+  - {name: phase difference, quantity: phase}
+  - {name: location of the point, quantity: length, carries_distance: true}
+  - {name: amplitude, quantity: amplitude}
+costs:
+  - what_gets_harder: "two vibrations coexisting at one location"
+    rises_with: []
+    separation_made_by_distance: true
+distance_dependence: true
+standard_sources: ["Young 1801; Hecht, Optics, ch. 7"]
+book_status: ruled
+ruling: {shape: turns around, words: "what two vibrations do there isn't cancel, and it isn't add either; it's culminate, which is resonance again", source: "Ch16 (extension-test-key.md item 12)"}
+review: "reviewed:spec-port"
+notes: "'Cancellation happens at a point... A location is a distance from somewhere, and distance is what resistance makes.'"

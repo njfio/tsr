@@ -1,0 +1,23 @@
+{
+ "id": "mech.newton_gravitation",
+ "physical": "Two masses attract with a force proportional to the product of the masses and inversely proportional to the square of their separation.",
+ "reflected_formula": "Frequency = Movement M × Movement M ÷ Vibration²",
+ "reflected_sentence": "The equation keeps: Frequency stays in fixed proportion to Movement M × Movement M ÷ Vibration².",
+ "shape": "keeps",
+ "rule_reason": "Equation with an empty cost block: no listed resistance-cost and no listed separation, so the relationship keeps.",
+ "rule_trace": [
+  "none"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "gravitational constant G"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "The cost block is empty, so the relationship keeps rather than turning. Frequency, Movement M, and Vibration are the frozen partners, and the square stays in the product. No frozen word names the fixed proportion, so it is not given a symbol.",
+ "conflicts": "none",
+ "sense": 4,
+ "confidence": 6,
+ "closing": "The record's form is an equation and its cost block is empty, so the count is none and the relationship keeps. An alternate reading treats the separation as a cost and would turn; that block was not the record's cost block, so it was not applied. Both masses map to Movement M. The constant has no partner and is omitted from the formula image because no frozen word names it and units do not cross. No new word was introduced.",
+ "knew_tsr": false
+}

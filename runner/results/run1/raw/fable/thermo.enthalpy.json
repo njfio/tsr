@@ -1,0 +1,27 @@
+{
+ "id": "thermo.enthalpy",
+ "physical": "Enthalpy: Enthalpy is internal energy plus pressure times volume; at constant pressure the heat absorbed equals the change in enthalpy. H = U + P × V",
+ "reflected_formula": "[no partner: enthalpy H] = [no partner: internal energy U] + [no partner: pressure P] × Vibrance",
+ "reflected_sentence": "The definition keeps its shape: an unnamed total equals an unnamed inner store plus an unnamed pressing term multiplied by Vibrance; only volume crosses, as Vibrance.",
+ "shape": "keeps",
+ "rule_reason": "Definition (an equivalence); no costs listed and none caused by resistance; keeps its shape.",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "enthalpy",
+  "internal energy",
+  "pressure",
+  "heat",
+  "constant pressure"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "Vibrance is the one frozen word that survives, multiplied by a term that has no partner and added to another that has none. The shape holds, but it holds around holes.",
+ "conflicts": "none",
+ "sense": 1,
+ "confidence": 7,
+ "closing": "The rule decided without a judgment call: a definition keeps. The resistance table notes that the book places pressure 'at the crossing', but the frozen vocabulary gives it no row, so I left it unmapped rather than borrow 'Point of Reflection' for it. Three of four terms have no partner, so the reflected formula is a shape with almost no content.",
+ "knew_tsr": false
+}

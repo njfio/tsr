@@ -1,0 +1,28 @@
+{
+ "id": "waves.total_internal_reflection",
+ "physical": "Total internal reflection — Going from a higher to a lower index, beyond the critical angle no light crosses the boundary; all of it is reflected, while an evanescent field reaches past the surface without carrying energy across. sin θ_c = n2 ÷ n1 (limit)",
+ "reflected_formula": "(tilt at which crossing stops) = (lesser slowing) ÷ (greater slowing) — neither quantity has a frozen partner; the shape is kept",
+ "reflected_sentence": "Going from a medium that slows it more to one that slows it less, beyond a certain tilt none of the Current's light crosses; all of it turns back, while a fading trace reaches past without carrying conscious energy across.",
+ "shape": "keeps",
+ "rule_reason": "Form: limit. The one cost ('crossing the boundary; impossible past the critical angle') rises with refractive index, whose resistance status the fixed list leaves UNDETERMINED; the separation flag is false. Strictly, a cost not established as caused by resistance does not fire, so zero resistance-costs = keeps and the limit stays a limit. If refractive index is ruled to carry resistance, one cost = odd = turns around: crossing is already there and nothing turns back. The rule cannot decide; I took the strict reading.",
+ "rule_trace": [
+  "none"
+ ],
+ "forced": false,
+ "unmapped_terms": [
+  "critical angle θ_c",
+  "refractive index n",
+  "light (carried as 'the Current's light'; a stretch)",
+  "boundary / surface (banned word; rendered 'past')",
+  "evanescent field",
+  "reflected"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "Kept as read, the relation says that past a certain tilt nothing crosses and all turns back, with a fading trace that carries no conscious energy. If the slowing is counted as the gap, the reading turns: nothing is held back and crossing is already there. The table does not say which, and the share that turns back has no partner either way.",
+ "conflicts": "The fixed list: 'refractive index: UNDETERMINED (a judgment call; say so) ... R does not decide it.' Also the rule's two halves pull apart here: the property flip 'limited → limitless' says a limit becomes no limit, while the shape rule says a limit keeps unless caused by resistance — and whether this one is caused by resistance is exactly what is undetermined.",
+ "sense": 1,
+ "confidence": 2,
+ "closing": "This needed a judgment call and I am not confident in it. Everything hangs on whether refractive index carries resistance; the fixed list refuses to say. I chose keeps on the strict ground that the rule turns a cost only when it is caused by resistance and that cause was not established. The opposite call is at least as natural in TSR's own terms: a hard limit on crossing, caused by the medium, is the picture of 'where the Current meets resistance', and under that reading it turns around into 'nothing is held back'. 'Light', 'boundary', 'surface' and 'evanescent field' have no partners; 'the Current's light' is a stretch on c → Current. The physical 'reflection' again invites a pun with TSR's reflection, refused.",
+ "knew_tsr": false
+}

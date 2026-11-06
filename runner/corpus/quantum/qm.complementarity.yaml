@@ -1,0 +1,14 @@
+id: qm.complementarity
+domain: quantum
+title: "Wave-particle complementarity"
+statement: "The more which-path information an interferometer records, the less visible its interference fringes; the two trade off so that distinguishability squared plus visibility squared is at most one."
+formula: "D² + V² ≤ 1"
+form: inequality
+variables:
+  - {name: which-path distinguishability D, quantity: which-path information}
+  - {name: fringe visibility V, quantity: interference visibility}
+costs: []
+standard_sources: ["Bohr 1928; Englert 1996"]
+book_status: unreflected
+review: pending
+notes: "A trade-off with no resistance-carrying quantity: keeps. The generators have Focus and Tune to reach for; whether that is a connection or a reading is not this system's job."

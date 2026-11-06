@@ -1,0 +1,28 @@
+{
+ "id": "field.higgs_mechanism",
+ "physical": "The masses of the W and Z bosons and of the fundamental fermions arise from their coupling to the Higgs field's nonzero vacuum value; a particle's mass is its coupling strength times that value.",
+ "reflected_formula": "",
+ "reflected_sentence": "No complete reflection has frozen vocabulary partners.",
+ "shape": "keeps",
+ "rule_reason": "The multiplicative equivalence has no listed costs and therefore keeps; the presence of mass alone is not a resistance-cost.",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "Yukawa coupling y_f",
+  "vacuum expectation value v",
+  "Higgs field",
+  "W boson",
+  "Z boson",
+  "fundamental fermions"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "No partner. No complete reflection.",
+ "conflicts": "none",
+ "sense": 1,
+ "confidence": 7,
+ "closing": "Yukawa coupling's resistance status is explicitly undetermined, so assigning it a status would require judgment. No such assignment is necessary for this cost-free equivalence. Mass maps to Movement M, but neither the coupling nor the vacuum value has a partner, and the normalization cannot become a nonphysical numerical quantity.",
+ "knew_tsr": false
+}

@@ -1,0 +1,42 @@
+{
+  "contradictions": [
+    {
+      "a": "S040",
+      "b": "S083",
+      "situation": "For the same positive conscious energy per source across a path, increasing its positive receptivity increases the flow according to S040 but decreases the flow according to S083's definition of receptivity as that fixed conscious energy per source divided by flow."
+    },
+    {
+      "a": "S041",
+      "b": "S075",
+      "situation": "For one state with nonzero momentum and nonzero Current C, S075 makes E squared equal to the square of Movement M times Current squared, whereas S041 adds a nonzero momentum term to that same squared quantity."
+    }
+  ],
+  "underdetermined": [
+    {
+      "a": "S017",
+      "b": "S055",
+      "meaning_not_fixed": "S055 does not specify the relationship allowing combinations or whether its combinations mean the addition that S017 excludes rather than culmination."
+    },
+    {
+      "a": "S029",
+      "b": "S079",
+      "meaning_not_fixed": "S029 does not define what falling short of a Movement measures, so it is not fixed whether partial conversion of conscious energy of motion in S079 would count as falling short."
+    },
+    {
+      "a": "S035",
+      "b": "S056",
+      "meaning_not_fixed": "The vocabulary does not fix whether the rise per Expansion of a single Vibration and the overall rise per Expansion of a packet are the same quantity, nor the dependence needed to compare their two formulas."
+    },
+    {
+      "a": "S045",
+      "b": "S079",
+      "meaning_not_fixed": "Building each other up in S045 has no specified quantitative meaning, so it is not fixed whether it excludes the partial conversion of conscious energy of motion allowed by S079."
+    },
+    {
+      "a": "S046",
+      "b": "S090",
+      "meaning_not_fixed": "Sharing the Current's now in S046 does not specify a shared elapsed Expansion or observer-independent energy, so its relationship to the Current having no Expansion of its own in S090 is not fixed."
+    }
+  ],
+  "knew_tsr": false
+}

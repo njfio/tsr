@@ -1,0 +1,19 @@
+id: rel.gravitational_time_dilation
+domain: relativity
+title: "Gravitational time dilation"
+statement: "A clock deeper in a gravitational well runs slower than one higher up; the effect depends on depth in the well, not on the clock's own mass."
+formula: "Δt = Δτ ÷ √(1 − 2 × G × M ÷ (r × c²))"
+form: equation
+variables:
+  - {name: proper time Δτ, quantity: time}
+  - {name: central mass M, quantity: mass m}
+  - {name: radius r, quantity: radius}
+  - {name: gravitational constant G, quantity: gravitational constant G}
+  - {name: speed of light c, quantity: speed of light c}
+costs: []
+depends_on: [gravity_call]
+derived_from: [rel.row05_time_dilation, rel.row11_mass_energy_warps_spacetime]
+standard_sources: ["Einstein 1911; Pound & Rebka 1960; Hafele & Keating 1972"]
+book_status: reflected
+review: pending
+notes: "deep-read.md Pass 6: 'gravity's dilation goes with depth in a well ... they aren't a cost of resistance, so they keep their shape.' The central mass is the thing that curves, so the row inherits the gravity call and is not forced. Under reading A it keeps (Expansion Dilation); under reading B it would be a cost rising with M."

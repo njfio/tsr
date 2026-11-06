@@ -1,0 +1,24 @@
+{
+ "id": "qm.uncertainty_position_momentum",
+ "physical": "The spreads of position and momentum in any state cannot both be made small: their product is at least half the reduced Planck constant. Δx × Δp ≥ ħ ÷ 2",
+ "reflected_formula": "(extent, no partner) × momentum ≥ (constant, no partner)",
+ "reflected_sentence": "Momentum trades against an extent that has no partner; the product keeps its floor, but with one leg unspoken.",
+ "shape": "keeps",
+ "rule_reason": "A floor set by a constant; neither spread carries resistance (length is extent, momentum is conserved, and the relation claims no separation); the count is none, so the shape keeps.",
+ "rule_trace": [
+  "none"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "position spread Δx (length)",
+  "Planck constant ħ"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "The extent it trades against has no partner, so one leg of the product does not cross. momentum carries the kept shape alone. The floor, like the constant, has no name here.",
+ "conflicts": "none",
+ "sense": 2,
+ "confidence": 6,
+ "closing": "Decided by the rule alone: no costs, keeps. The reflection is one-legged: momentum maps onto itself, but position spread is a length, which the vocabulary does not carry (only length contraction, a named reflection, exists, and this is no contraction claim). I left the monotone claim empty rather than fake a frozen partner for the with-slot.",
+ "knew_tsr": false
+}

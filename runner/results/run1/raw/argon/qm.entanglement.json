@@ -1,0 +1,29 @@
+{
+ "id": "qm.entanglement",
+ "physical": "Measurements on two entangled particles are correlated more strongly than any local account allows, and the correlation does not weaken with their separation.",
+ "reflected_formula": "",
+ "reflected_sentence": "The link between two realizations keeps its shape: what was already untouched by being apart stays untouched on the side where nothing is apart.",
+ "shape": "keeps",
+ "rule_reason": "a statistical correlation that does not depend on the separation; no cost caused by resistance; the separation is present but does not cause a cost",
+ "rule_trace": [
+  "none"
+ ],
+ "forced": false,
+ "unmapped_terms": [
+  "probability",
+  "length",
+  "entanglement",
+  "correlation",
+  "measurement",
+  "particle",
+  "local account"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "A separation appears in the statement but limits nothing, so nothing turns. On the nonphysical side there is no separation at all, so the reflection keeps the shape and is trivial.",
+ "conflicts": "none",
+ "sense": 3,
+ "confidence": 4,
+ "closing": "Judgment call. The rule says 'a separation made by distance also turns around', and a distance-carrying separation is in the statement. But the cost list is empty, and the relation says the separation makes no difference. I read the rule as applying only to separations that impose a cost, so the relation keeps its shape. A strict literal reading would turn it around, and then the result says the correlation weakens with receptivity, which is nonsense.",
+ "knew_tsr": false
+}

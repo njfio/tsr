@@ -1,0 +1,17 @@
+id: em.mutual_induction
+domain: electromagnetism
+title: "Mutual induction"
+statement: "A changing current in one coil induces an EMF in a nearby coil in proportion to their mutual inductance, which depends on their geometry and how much flux they share."
+formula: "EMF_2 = M × dI_1 ÷ dt"
+form: equation
+variables:
+  - {name: induced EMF, quantity: voltage}
+  - {name: mutual inductance M, quantity: inductance}
+  - {name: current I_1, quantity: current (electric)}
+  - {name: time t, quantity: time}
+costs: []
+derived_from: [em.faraday]
+standard_sources: ["Purcell, Electricity and Magnetism, ch. 7"]
+book_status: unreflected
+review: pending
+notes: "Inductance appears but no difficulty is asserted: the statement is about coupling, not opposition. Keeps. (The opposition reading is em.lenz_inductance.)"

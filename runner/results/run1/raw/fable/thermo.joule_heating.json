@@ -1,0 +1,27 @@
+{
+ "id": "thermo.joule_heating",
+ "physical": "Joule heating: A current through a resistance dissipates power as heat in proportion to the resistance and the square of the current. P = I² × R",
+ "reflected_formula": "[no partner: power P] = [no partner: current I]² × [electrical resistance R → the gap]",
+ "reflected_sentence": "The relationship turns around: the loss that grew with the gap shrinks as receptivity grows; the rate of loss and the flow that carries it have no partners, so only the direction crosses.",
+ "shape": "turns around",
+ "rule_reason": "One cost (carrying the current without loss) rises with electrical resistance, which the fixed table says carries resistance. One resistance-cost is an odd number, so the reading turns: what is lost under more resistance is kept under more receptivity.",
+ "rule_trace": [
+  "resistance-cost"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "power",
+  "current (electric) (the bare word 'electric' has the partner Idle, but the quantity current has no row and I did not compose one)",
+  "electrical resistance (no table row; only the flipped condition 'receptivity' and 'the gap' are legal for it)",
+  "heat",
+  "dissipates"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "Where the gap is wide, more is lost; where receptivity is full, less is. The flow that carries it, and the loss itself, have no partners.",
+ "conflicts": "none",
+ "sense": 2,
+ "confidence": 7,
+ "closing": "The rule decided on its own: electrical resistance is fixed as carrying resistance, the one cost rises with it, the row turns. The ambiguity is in the vocabulary: 'electric' maps to Idle as a co-creating partner, but electric current is a flow with no row, and electrical resistance has no row beyond the rule's own flip to receptivity and 'the gap'. I used only those legal words. The square of the current has no frozen image, so the monotone claim could not be written in frozen words.",
+ "knew_tsr": false
+}

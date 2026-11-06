@@ -1,0 +1,20 @@
+id: rel.row02_no_shared_now
+domain: calibration
+title: "Row 2: relativity of simultaneity"
+statement: "Two observers in relative motion do not agree on which spatially separated events are simultaneous."
+formula: "Δt' = γ (Δt − v Δx ÷ c²)"
+form: equation
+variables:
+  - {name: separation Δx, quantity: length, carries_distance: true}
+  - {name: relative velocity v, quantity: velocity}
+  - {name: speed of light c, quantity: speed of light c}
+costs:
+  - what_gets_harder: "agreement on a shared now, lost in proportion to the spatial separation of the events"
+    rises_with: []
+    separation_made_by_distance: true
+distance_dependence: true
+standard_sources: ["Taylor & Wheeler, Spacetime Physics, ch. 3 (Lorentz transformation)"]
+book_status: ruled
+ruling: {shape: turns around, words: "every Movement shares the Current's now", source: "Ch16 #2: distance is what resistance makes"}
+review: "reviewed:spec-port"
+notes: "The term that splits observers is v·Δx; with Δx = 0 there is no disagreement. That is the separation the book names."

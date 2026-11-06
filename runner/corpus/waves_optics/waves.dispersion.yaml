@@ -1,0 +1,16 @@
+id: waves.dispersion
+domain: waves_optics
+title: "Dispersion"
+statement: "In a dispersive medium the phase velocity depends on wavelength, so a pulse made of many wavelengths spreads as it travels."
+formula: "v_p = v_p(λ)"
+form: equation
+variables:
+  - {name: phase velocity v_p, quantity: phase velocity}
+  - {name: wavelength λ, quantity: wavelength}
+  - {name: dispersion, quantity: dispersion}
+costs:
+  - {what_gets_harder: "a pulse keeping its shape", rises_with: [dispersion]}
+standard_sources: ["Hecht, Optics, ch. 7"]
+book_status: unreflected
+review: pending
+notes: "Dispersion is not resistance under R1: keeps."

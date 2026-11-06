@@ -1,0 +1,26 @@
+{
+ "id": "mech.angular_momentum",
+ "physical": "Angular momentum is moment of inertia times angular velocity (the rotational definition), and is conserved when no external torque acts. L = I × ω",
+ "reflected_formula": "L = I × ω (angular momentum, moment of inertia and angular velocity have no partner; nothing in the formula crosses)",
+ "reflected_sentence": "The definition keeps its shape: the turning quantity that is kept when nothing twists it from without equals how the body's mass is spread about its axis times how fast it turns, but none of these three has a partner, so the kept frame arrives with every position blank.",
+ "shape": "keeps",
+ "rule_reason": "A definition and a conservation law with no cost listed: identity, keeps. No term has a partner, but that does not change the shape.",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "angular momentum",
+  "moment of inertia",
+  "angular velocity",
+  "torque"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "The frame of a definition crosses, but every term in it is unpaired. The spread of mass about an axis is said to carry the condition that flips, yet the vocabulary gives no word for it, so even the flip has nothing to act on. The nonphysical side receives a kept equation with blanks in every position.",
+ "conflicts": "none",
+ "sense": 1,
+ "confidence": 6,
+ "closing": "The rule decided on its own: definition plus conservation with an empty cost block is keeps, and under the amendment the three unpaired terms do not change that. I refused two tempting rescues: reading moment of inertia as mass (Movement M) because the fixed list calls it 'mass redistributed about an axis', and reading angular momentum as momentum because the table maps momentum to itself. Both are distinct quantities in the fixed list and neither has a row. The result is a kept relationship with nothing in it.",
+ "knew_tsr": false
+}

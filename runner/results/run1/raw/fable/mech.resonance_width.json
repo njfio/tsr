@@ -1,0 +1,27 @@
+{
+ "id": "mech.resonance_width",
+ "physical": "A driven oscillator responds most strongly near its natural frequency; the width of that response grows with the damping, and the peak height falls with it (Q = ω0/Δω). Δω = b ÷ m",
+ "reflected_formula": "Δω = b ÷ Movement M (Δω and b have no partner; Δω is physical frequency, not Frequency)",
+ "reflected_sentence": "The breadth of a driven response equals the damping that drains it divided by Movement M, and the reading turns: where the physical response broadens and lowers as the damping rises, on the nonphysical side the response sharpens and strengthens as receptivity rises, and with alignment the answer is full.",
+ "shape": "turns around",
+ "rule_reason": "One cost caused by resistance: the sharp response is lost as the damping coefficient rises, and damping carries resistance. One cost, odd, turns.",
+ "rule_trace": [
+  "resistance-cost"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "frequency (physical) / resonance width Δω",
+  "damping coefficient",
+  "natural frequency",
+  "driven oscillator",
+  "Q"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "Only Movement M crosses, and it sits in the denominator of something unpaired. The turned reading says that what damping blurs on the physical side comes sharp on this side with receptivity. The relation is about resonance, and resonance is already taken on this side as friction's partner, so the physical topic arrives with its name already in use for something else.",
+ "conflicts": "'friction | resonance | named reflection': the physical relation is about resonance, which has no partner of its own, while the nonphysical word resonance is reserved for friction's image.",
+ "sense": 2,
+ "confidence": 6,
+ "closing": "The rule decided on its own: one cost rising with the damping coefficient, odd, turns. Almost nothing crosses: the width is a physical frequency, which the prompt says is not Frequency, and damping has no partner, so the only mapped word is Movement M in the denominator. The name collision is the most useful finding here: the physical side's resonance and the nonphysical side's resonance (friction's partner) are different things sharing a word, and the vocabulary offers no way to say the physical one on the nonphysical side without a pun. I refused the pun.",
+ "knew_tsr": false
+}

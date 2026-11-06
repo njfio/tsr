@@ -1,0 +1,24 @@
+{
+ "id": "mech.gravitational_potential_energy",
+ "physical": "Lifting a body against gravity costs energy in proportion to its mass and the height gained.",
+ "reflected_formula": "∅ = Movement M × Attraction × Vibration",
+ "reflected_sentence": "Receptivity turns the cost reading toward easier realization, but the complete energy relation has no partner.",
+ "shape": "turns around",
+ "rule_reason": "One cost rises with mass m, which carries resistance, so the reading turns around while its product structure remains.",
+ "rule_trace": [
+  "resistance-cost"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "potential energy",
+  "lifting a body"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "Movement M × Attraction × Vibration. Receptivity.",
+ "conflicts": "none",
+ "sense": 1,
+ "confidence": 7,
+ "closing": "The rule forces turns around. The supplied physical_terms explicitly licenses Vibration for h and Attraction for g, but potential energy has no exact frozen partner. Easier realization expresses only the required direction, not a claim that lifting is actualization or that potential energy is a newly identified kind of conscious energy. A complete reflection would require that additional judgment, which I decline.",
+ "knew_tsr": false
+}

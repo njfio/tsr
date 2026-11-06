@@ -1,0 +1,27 @@
+{
+ "id": "mech.damping",
+ "physical": "A damping force opposing velocity drains an oscillation: the amplitude decays exponentially, faster the larger the damping coefficient.",
+ "reflected_formula": "∅(Expansion) = ∅ × exp(−∅ × Expansion ÷ (2 × Movement M))",
+ "reflected_sentence": "The survival cost reading turns with receptivity, but amplitude and damping remain without partners.",
+ "shape": "turns around",
+ "rule_reason": "One oscillation-survival cost rises with damping coefficient, which carries resistance, so its reading turns around.",
+ "rule_trace": [
+  "resistance-cost"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "damping coefficient",
+  "amplitude",
+  "initial amplitude",
+  "oscillation",
+  "exponential decay"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "Expansion. Movement M.",
+ "conflicts": "none",
+ "sense": 1,
+ "confidence": 7,
+ "closing": "The rule decides turns around without changing the negative exponent to a positive one. Expansion maps t, but it is not permission to interpret Expansion as elapsed time. The exponential and coefficient are retained formula syntax, not nonphysical numerical claims. Missing amplitude and damping partners prevent a complete qualitative reading.",
+ "knew_tsr": false
+}

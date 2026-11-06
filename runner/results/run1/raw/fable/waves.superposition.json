@@ -1,0 +1,25 @@
+{
+ "id": "waves.superposition",
+ "physical": "Superposition — In a linear medium the net displacement at any point is the sum of the displacements each wave would produce alone. y = y1 + y2 (identity)",
+ "reflected_formula": "(what is there where two vibrations meet) = (the first as it would be alone) + (the second as it would be alone) — the amplitude has no frozen partner; the shape is kept",
+ "reflected_sentence": "Where two vibrations meet, what is there is each of them as it would be alone, together.",
+ "shape": "keeps",
+ "rule_reason": "Form: identity. No cost or separation listed. Identities keep their shape.",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "amplitude / displacement",
+  "point (a location; banned on the nonphysical side and dropped)",
+  "linear medium"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "An identity keeps its shape: two vibrations met are both fully there, neither diminished by the other. This sits beside the table's own claim that two vibrations culminate instead of cancel. The amplitude has no partner, so the sum has no frozen image.",
+ "conflicts": "Possible tension with the trap 'No sums where the book has products': the physical formula is a sum, and the legal words say two vibrations 'culminate' rather than add or cancel; the prompt does not say whether the book has a product here.",
+ "sense": 3,
+ "confidence": 6,
+ "closing": "The rule decided on its own: identity, keeps. No judgment on shape. The one judgment was what to do with 'at any point': a point is a location, which is banned, so the kept identity lost its 'where' and became 'where two vibrations meet'. I also could not tell whether writing the kept sum violates the no-sums trap, because the prompt does not say what the book does with superposition; I kept the '+' since the rule says not to rewrite the formula.",
+ "knew_tsr": false
+}

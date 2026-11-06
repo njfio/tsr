@@ -1,0 +1,30 @@
+{
+ "id": "statmech.fluctuation_dissipation",
+ "physical": "The way a system in equilibrium dissipates a small push is fixed by the spectrum of its own spontaneous fluctuations: friction and thermal noise are two faces of one quantity.",
+ "reflected_formula": "",
+ "reflected_sentence": "Resonance has a partner, but the complete relation does not.",
+ "shape": "keeps",
+ "rule_reason": "An identity keeps its shape; the resistance-bearing damping coefficient does not by itself constitute a listed cost, and friction maps to resonance without supplying partners for the remaining terms.",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "damping coefficient",
+  "temperature",
+  "equilibrium",
+  "dissipation",
+  "small push",
+  "spectrum",
+  "spontaneous fluctuations",
+  "thermal noise"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "",
+ "conflicts": "none",
+ "sense": 1,
+ "confidence": 7,
+ "closing": "The identity classification decides keeps even though one quantity carries resistance. The prompt does not license equating damping coefficient with friction or treating thermal noise as resonance, so the friction-to-resonance entry is insufficient for a complete reflection.",
+ "knew_tsr": false
+}

@@ -1,0 +1,24 @@
+{
+ "id": "waves.snell_refraction",
+ "physical": "Crossing into a medium with a different refractive index, a ray bends so that index times the sine of the angle is the same on both sides.",
+ "reflected_formula": "",
+ "reflected_sentence": "The product of each medium's factor and the sine of how far it bends stays the same, and the equivalence keeps.",
+ "shape": "keeps",
+ "rule_reason": "An equivalence with no costs; refractive index is undetermined, but nothing rises with it.",
+ "rule_trace": [
+  "none"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "refractive index n",
+  "angle θ"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "An equivalence keeps. The gap is not decided by the undetermined factor, and alignment does not flip a product with no cost. Receptivity is not applied.",
+ "conflicts": "none",
+ "sense": 2,
+ "confidence": 6,
+ "closing": "The formula is an equivalence and the cost list is empty, so the relation keeps. Refractive index is undetermined, but no cost rises with it, so that open question does not change the shape and the call is forced. No separation is flagged, and crossing in the prose is not added as one.",
+ "knew_tsr": false
+}

@@ -1,0 +1,15 @@
+id: mech.angular_momentum
+domain: mechanics
+title: "Angular momentum"
+statement: "Angular momentum is moment of inertia times angular velocity (the rotational definition), and is conserved when no external torque acts."
+formula: "L = I × ω"
+form: definition
+variables:
+  - {name: angular momentum L, quantity: angular momentum}
+  - {name: moment of inertia I, quantity: moment of inertia}
+  - {name: angular velocity ω, quantity: angular velocity}
+costs: []
+standard_sources: ["Kleppner & Kolenkow, An Introduction to Mechanics, ch. 7"]
+book_status: unreflected
+review: pending
+notes: "Partners for I and ω do not exist in the frozen vocabulary; the LHS is unmapped. Shape only."

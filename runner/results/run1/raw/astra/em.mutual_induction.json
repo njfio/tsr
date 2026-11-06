@@ -1,0 +1,30 @@
+{
+ "id": "em.mutual_induction",
+ "physical": "A changing current in one coil induces an EMF in a nearby coil in proportion to their mutual inductance, which depends on their geometry and how much flux they share. EMF_2 = M × dI_1 ÷ dt",
+ "reflected_formula": "? = ? × d? ÷ dExpansion",
+ "reflected_sentence": "The relationship involving Expansion keeps its shape, with what changes and what it produces unnamed.",
+ "shape": "keeps",
+ "rule_reason": "No cost or separation-dependent weakening is stated, so the zero-cost rule keeps the relation. A resistance-bearing inductance variable alone is not a stated cost.",
+ "rule_trace": [
+  "none"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "induced EMF_2 (voltage)",
+  "mutual inductance M",
+  "electric current I_1",
+  "coil",
+  "nearby",
+  "geometry",
+  "shared flux",
+  "rate of change of current"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "Expansion does not supply the missing partners. Alignment does not complete the reflection.",
+ "conflicts": "none",
+ "sense": 1,
+ "confidence": 6,
+ "closing": "The supplied statement has no opposition cost and says nothing about weakening with separation, so the rule yields keeps without importing either feature. Nearby and geometry still lack usable nonphysical partners; treating them as an unstated separation cost would require an extra judgment. Mutual inductance M is not mass m and cannot inherit Movement.",
+ "knew_tsr": false
+}

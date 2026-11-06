@@ -1,0 +1,29 @@
+{
+ "id": "waves.doppler",
+ "physical": "Doppler effect (waves in a medium) — A receiver moving toward a source, or a source moving toward a receiver, measures a higher frequency than the one emitted; moving apart, a lower one. f' = f × (v + v_r) ÷ (v − v_s) (equation)",
+ "reflected_formula": "(received rate) = (given rate) × ((pace of the wave) + rise per Expansion of the one receiving) ÷ ((pace of the wave) − rise per Expansion of the one giving) — the two rates and the wave's pace have no frozen partners",
+ "reflected_sentence": "One receiving with rise per Expansion toward one giving, or one giving with rise per Expansion toward one receiving, meets a quicker beat than was given; drawing apart, a slower one.",
+ "shape": "keeps",
+ "rule_reason": "No cost and no separation are listed; the record is an equation with no resistance-carrying quantity (both moving parties' speeds are 'velocity', which carries no resistance). Zero costs = even = keeps.",
+ "rule_trace": [
+  "none"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "emitted frequency f (physical frequency; explicitly not TSR Frequency)",
+  "received frequency f'",
+  "wave speed v",
+  "source",
+  "receiver",
+  "medium",
+  "emitted"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "The relation keeps its shape: rise per Expansion toward one another raises the beat met, rise per Expansion apart lowers it. The beat itself has no partner; the table's Frequency is the reflection of force, not of a rate, so it must not be used here. What crosses is only that drawing together and drawing apart change what is met.",
+ "conflicts": "Frozen 'force → Frequency' together with the trap 'Frequency is not a rate and not cycles per second' blocks the obvious pun; physical frequency has no partner, so 'Every term reflects; that part always happens' fails on the relation's central quantity.",
+ "sense": 1,
+ "confidence": 5,
+ "closing": "The rule decided on its own (no cost block, keeps). The difficulty was entirely in the vocabulary: the quantity the whole relation is about, physical frequency, has no partner and is explicitly forbidden from becoming TSR Frequency, so the reflected sentence had to say 'beat' in plain words, which is a rate in disguise. 'Toward' and 'apart' are nearness relations that the legal word 'alignment' might cover, but using it would be a creative rescue, so I did not. The result keeps its shape and says nothing in TSR's terms.",
+ "knew_tsr": false
+}

@@ -1,0 +1,8 @@
+{
+ "id": "field.gauge_invariance",
+ "alternative_shape": "null",
+ "rule_compliant": false,
+ "argument": "This is a symmetry, and the rule says symmetries keep their shape; the forcing of the gauge fields into existence is a requirement, not a cost caused by resistance, and no quantity in the statement carries resistance. No rule-compliant turn exists.",
+ "reflected_sentence": "",
+ "knew_tsr": false
+}

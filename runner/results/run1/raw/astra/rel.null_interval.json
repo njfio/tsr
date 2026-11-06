@@ -1,0 +1,27 @@
+{
+ "id": "rel.null_interval",
+ "physical": "Along a light ray the space-time interval is zero: no proper time passes for light, and its energy depends on who measures it.",
+ "reflected_formula": "",
+ "reflected_sentence": "No complete reflection has frozen vocabulary partners.",
+ "shape": "keeps",
+ "rule_reason": "The identity keeps with no cost or separation listed; a zero interval is not automatically a resistance-made separation.",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "light ray",
+  "space-time interval ds²",
+  "proper time distinction",
+  "measuring observer",
+  "observer-dependent energy"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "Vibration-Expansion. Expansion; Current; E.",
+ "conflicts": "none",
+ "sense": 1,
+ "confidence": 7,
+ "closing": "The identity clause decides keeps. Space-Time maps to Vibration-Expansion, but its metric interval has no supplied partner, and Current is a partner for c rather than for a light ray. Writing a zero-valued nonphysical interval would both invent that partner and cross a numerical quantity.",
+ "knew_tsr": false
+}

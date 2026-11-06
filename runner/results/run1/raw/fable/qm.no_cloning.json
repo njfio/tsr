@@ -1,0 +1,25 @@
+{
+ "id": "qm.no_cloning",
+ "physical": "No physical operation can make an independent copy of an arbitrary unknown quantum state.",
+ "reflected_formula": "",
+ "reflected_sentence": "No operation can make a separate copy of an arbitrary unknown state of an E, unchanged.",
+ "shape": "keeps",
+ "rule_reason": "a limit, but not one caused by resistance; no costs, so it keeps. Amplitude is unmapped but that does not change the shape.",
+ "rule_trace": [
+  "none"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "wavefunction amplitude",
+  "copy",
+  "operation"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "The limit is not made by the gap, so by the deciding question it keeps. The only term, amplitude, has no partner, so the kept limit is stated in plain words. It says nothing the table does not.",
+ "conflicts": "none",
+ "sense": 1,
+ "confidence": 4,
+ "closing": "The deciding question gives keeps (zero costs, no resistant quantity). But the form is a limit, and the property row says limited becomes limitless, so a term-level reading would flip it to 'any state can be copied', which is the opposite verdict. I followed the relation-level rule as instructed and note the tension here rather than in the reflection. Under Amendment 1 this is keeps with amplitude unmapped.",
+ "knew_tsr": false
+}

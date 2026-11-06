@@ -1,0 +1,27 @@
+{
+ "id": "field.higgs_mechanism",
+ "physical": "The masses of the W and Z bosons and of the fundamental fermions arise from their coupling to the Higgs field's nonzero vacuum value; a particle's mass is its coupling strength times that value.",
+ "reflected_formula": "Movement M = Yukawa coupling y_f × vacuum expectation value v ÷ √2",
+ "reflected_sentence": "Movement M arises from how receptivity Tunes to the underlying Vibration; Movement M is that Tune times that Vibration.",
+ "shape": "keeps",
+ "rule_reason": "Equation with empty costs block keeps its shape, though Higgs coupling (Yukawa) is marked UNDETERMINED and mass m carries resistance.",
+ "rule_trace": [
+  "none"
+ ],
+ "forced": false,
+ "unmapped_terms": [
+  "W and Z bosons",
+  "fermions",
+  "Yukawa coupling y_f",
+  "Higgs field",
+  "vacuum expectation value v"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "Mass m reflects to Movement M on the nonphysical side, and the equation keeps its shape when read from the empty cost block. The remaining terms in the formula have no partners in the table.",
+ "conflicts": "Nothing on the nonphysical side has a number, a unit or a distance.",
+ "sense": 1,
+ "confidence": 2,
+ "closing": "The prompt explicitly marks Higgs coupling (Yukawa) as UNDETERMINED and a judgment call, and although mass m carries resistance, the YAML lists costs as empty and form as equation. Under the record's empty cost block it keeps its shape, while the Yukawa coupling and vacuum expectation value remain unmapped.",
+ "knew_tsr": false
+}

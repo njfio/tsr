@@ -1,0 +1,27 @@
+{
+ "id": "statmech.fluctuation_dissipation",
+ "physical": "The way a system in equilibrium dissipates a small push is fixed by the spectrum of its own spontaneous fluctuations: friction and thermal noise are two faces of one quantity.",
+ "reflected_formula": "",
+ "reflected_sentence": "The way a settled system gives up a small push stays fixed by the pattern of its own wavering: resonance and a disturbance tied to how warm it is are two faces of one quantity.",
+ "shape": "keeps",
+ "rule_reason": "Identity, an equivalence of two faces of one quantity; cost block empty. Damping carries resistance, but no cost that rises with resistance is recorded, so the count of such costs is zero.",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "damping coefficient",
+  "temperature",
+  "noise",
+  "fluctuation",
+  "spectrum"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "The identity keeps, and resonance stays one face of one quantity. The gap does not turn the equality. Movement does not enter.",
+ "conflicts": "none",
+ "sense": 4,
+ "confidence": 6,
+ "closing": "The shape was decided by the form: an identity keeps, and the cost block is empty. Damping is listed as carrying resistance, which looked like a reason to turn the relation; I did not, because no cost that rises with that resistance is recorded, and the statement is an equivalence. Friction's partner is resonance. Damping has no row of its own, so I left it unmapped rather than forcing it onto resonance.",
+ "knew_tsr": false
+}

@@ -1,0 +1,296 @@
+[
+  {
+    "id": "info.channel_capacity",
+    "physical": "C = B × log(1 + S ÷ N): the greatest rate at which information can be sent reliably through a noisy channel is the bandwidth times the log of one plus the signal-to-noise ratio.",
+    "reflected_formula": "[channel capacity: no partner] = [bandwidth: no partner] × log(1 + [signal power: no partner] ÷ [noise power: no partner])",
+    "reflected_sentence": "The relationship keeps: the greatest reliable rate through a noisy channel is set by the extent in frequency times the log of one plus the ratio of the wanted power to the unwanted power, and none of these four quantities has a frozen partner.",
+    "shape": "keeps",
+    "rule_reason": "definition; no quantity in it carries resistance (power, noise power, bandwidth, channel capacity are all fixed as non-resistance), so zero resistance-costs and the shape keeps",
+    "rule_trace": [
+      "identity"
+    ],
+    "forced": true,
+    "unmapped_terms": [
+      "channel capacity C",
+      "bandwidth B",
+      "signal power S",
+      "noise power N",
+      "information",
+      "noisy channel",
+      "log",
+      "the number 1"
+    ],
+    "new_words": [],
+    "monotone_claims": [],
+    "interpretation": "Nothing in this relation reaches the nonphysical side. The shape is kept but it is the shape of an empty sentence. No frozen word is touched.",
+    "conflicts": "none",
+    "sense": 1,
+    "confidence": 7,
+    "closing": "The rule decided on its own: the form is a definition and none of the fixed quantities carries resistance, so keeps. The limit it states (a greatest reliable rate) is caused by noise, not resistance, so the turn-around clause does not fire. The result is still empty, because the frozen vocabulary has no words for capacity, bandwidth, signal or noise; I did not borrow strong frequency or weak frequency for signal and noise, since that would be a rescue.",
+    "knew_tsr": false
+  },
+  {
+    "id": "info.data_processing_inequality",
+    "physical": "I(X;Z) ≤ I(X;Y): processing cannot increase information; if Z depends on X only through Y, the information Z carries about X is at most what Y carries.",
+    "reflected_formula": "[mutual information: no partner](X;Z) ≤ [mutual information: no partner](X;Y)",
+    "reflected_sentence": "The relationship keeps: what the far end carries about the source is at most what the middle carries, a measure of shared knowing that has no frozen partner on either side of the inequality.",
+    "shape": "keeps",
+    "rule_reason": "no cost or limit caused by resistance (mutual information is fixed as a measure, not an opposition); zero resistance-costs, so the shape keeps by the parity clause",
+    "rule_trace": [
+      "none"
+    ],
+    "forced": true,
+    "unmapped_terms": [
+      "mutual information I",
+      "processing",
+      "information",
+      "depends on X only through Y (Markov chain)"
+    ],
+    "new_words": [],
+    "monotone_claims": [],
+    "interpretation": "Nothing of this relation reaches the nonphysical side. An inequality with no frozen word on either side says nothing in TSR's terms.",
+    "conflicts": "none",
+    "sense": 1,
+    "confidence": 6,
+    "closing": "The rule decided by the parity clause rather than by a positive match: this is neither an equivalence nor a cost that rises with resistance, and the rule says none-or-even keeps. The deciding question offers only two kinds, so an inequality that is a limit not caused by resistance falls through to keeps by default; that is the only soft spot. The content cannot cross because mutual information has no partner.",
+    "knew_tsr": false
+  },
+  {
+    "id": "info.landauer",
+    "physical": "E ≥ k × T × ln 2: erasing one bit dissipates at least k T ln 2 of energy as heat; logically irreversible operations have a thermodynamic cost that rises with temperature.",
+    "reflected_formula": "E ≥ [Boltzmann constant k: no partner] × [temperature T: no partner] × [ln 2: a number, does not cross]",
+    "reflected_sentence": "The relationship keeps: E has a floor set by a fixed constant times the mean kinetic energy per degree of freedom times a number, and only E itself has a frozen partner.",
+    "shape": "keeps",
+    "rule_reason": "the relation's one cost (heat that must be dissipated) rises with temperature, and temperature is fixed as not carrying resistance, so it is not a resistance-cost; zero resistance-costs, shape keeps",
+    "rule_trace": [
+      "none"
+    ],
+    "forced": true,
+    "unmapped_terms": [
+      "temperature T",
+      "Boltzmann constant k",
+      "ln 2",
+      "erasing",
+      "bit",
+      "heat",
+      "dissipates",
+      "logically irreversible operation"
+    ],
+    "new_words": [],
+    "monotone_claims": [],
+    "interpretation": "The one E is shared by both sides, so E is the only word that crosses. What bounds E from below has no partner, so the nonphysical side receives a floor under E with nothing to name the floor.",
+    "conflicts": "none",
+    "sense": 1,
+    "confidence": 5,
+    "closing": "The rule decided without a judgment call because temperature was fixed beforehand as not carrying resistance; that pre-decision is doing all the work. Read naively, this is the textbook shape of a cost that rises with something, and if temperature had been read as opposition the row would have turned around. The relation's cost list names temperature as what the cost rises with, so by the fixed table it is not a resistance-cost and the shape keeps. Nothing but E can be written in frozen words.",
+    "knew_tsr": false
+  },
+  {
+    "id": "info.shannon_entropy",
+    "physical": "H = −Σ p × log p: the uncertainty of a source is minus the sum over outcomes of probability times log probability; the least average number of bits needed to encode it.",
+    "reflected_formula": "[Shannon entropy H: no partner] = −Σ [probability p: no partner] × log [probability p: no partner]",
+    "reflected_sentence": "The relationship keeps: the measure of uncertainty of a source is minus the sum over outcomes of each chance times the log of that chance, and neither the measure nor the chance has a frozen partner.",
+    "shape": "keeps",
+    "rule_reason": "definition; Shannon entropy and probability are both fixed as measures that do not carry resistance, so zero resistance-costs and the shape keeps",
+    "rule_trace": [
+      "identity"
+    ],
+    "forced": true,
+    "unmapped_terms": [
+      "Shannon entropy H",
+      "probability p",
+      "source",
+      "outcome",
+      "bit",
+      "log",
+      "sum Σ"
+    ],
+    "new_words": [],
+    "monotone_claims": [],
+    "interpretation": "Nothing in this relation reaches the nonphysical side. Culmination is the partner of entropy, but the fixed list names Shannon entropy as a separate quantity, a measure of uncertainty, so I did not borrow Culmination for it.",
+    "conflicts": "none",
+    "sense": 1,
+    "confidence": 7,
+    "closing": "The rule decided on its own (definition, keeps). The one temptation was to map Shannon entropy onto Culmination through the entropy row; the fixed list treats them as different quantities, and being strict I left it unmapped. The formula is a sum; the trap about sums concerns introducing sums where the book has products, so keeping the physical sum is not a violation, but it also means a sum would be sitting on the nonphysical side if anything had crossed.",
+    "knew_tsr": false
+  },
+  {
+    "id": "statmech.boltzmann_entropy",
+    "physical": "S = k × ln W: the entropy of a macrostate is Boltzmann's constant times the logarithm of the number of microstates that realize it.",
+    "reflected_formula": "Culmination = [Boltzmann constant k: no partner] × ln [number of microstates W: no partner]",
+    "reflected_sentence": "The relationship keeps: Culmination is a fixed constant times the logarithm of a count of ways, and the constant and the count have no frozen partner; a count is a number, which does not cross.",
+    "shape": "keeps",
+    "rule_reason": "definition; entropy is fixed as a count of microstates that does not carry resistance, so zero resistance-costs and the shape keeps",
+    "rule_trace": [
+      "identity"
+    ],
+    "forced": true,
+    "unmapped_terms": [
+      "Boltzmann constant k",
+      "number of microstates W",
+      "macrostate",
+      "microstate",
+      "logarithm"
+    ],
+    "new_words": [],
+    "monotone_claims": [],
+    "interpretation": "Culmination crosses, but it crosses alone. The definition says Culmination is the logarithm of a count, and on the nonphysical side nothing has a number, so the definition that gave Culmination its content is what cannot be carried over.",
+    "conflicts": "\"Nothing on the nonphysical side has a number, a unit or a distance\" against a definition of Culmination as k × ln of a number of microstates; and the table's gloss \"culminate (verb of Culmination; what two vibrations do instead of cancel)\" is not what S = k ln W is about.",
+    "sense": 2,
+    "confidence": 7,
+    "closing": "The rule decided on its own: a definition keeps. The left side has a frozen partner, Culmination, marked provisional; the right side has none, and its core is a count, which the rule forbids from crossing. So the reflection is a named thing with its definition removed. I did not try to re-express the count as vibrations culminating; that would be a rescue.",
+    "knew_tsr": false
+  },
+  {
+    "id": "statmech.equipartition",
+    "physical": "⟨E⟩ = ½ × k × T per degree of freedom: in thermal equilibrium every quadratic degree of freedom carries an average energy of half k times the temperature.",
+    "reflected_formula": "⟨E⟩ = [½: a number, does not cross] × [Boltzmann constant k: no partner] × [temperature T: no partner] per [degree of freedom: no partner]",
+    "reflected_sentence": "The relationship keeps: the average E on each independent way of holding it is a number times a fixed constant times the mean kinetic energy per such way, and only E has a frozen partner.",
+    "shape": "keeps",
+    "rule_reason": "identity; energy, temperature, Boltzmann constant and degrees of freedom are all fixed as not carrying resistance, so zero resistance-costs and the shape keeps",
+    "rule_trace": [
+      "identity"
+    ],
+    "forced": true,
+    "unmapped_terms": [
+      "temperature T",
+      "Boltzmann constant k",
+      "degrees of freedom",
+      "½",
+      "thermal equilibrium",
+      "quadratic",
+      "average"
+    ],
+    "new_words": [],
+    "monotone_claims": [],
+    "interpretation": "The one E is shared, so E crosses. What it is shared out over, and what sets its share, have no partners. The nonphysical side receives a statement that E is divided equally among things it cannot name.",
+    "conflicts": "none",
+    "sense": 1,
+    "confidence": 7,
+    "closing": "The rule decided on its own: identity, keeps. There was no ambiguity in the shape, only emptiness in the vocabulary; temperature and degrees of freedom have no partners and ½ is a number.",
+    "knew_tsr": false
+  },
+  {
+    "id": "statmech.ergodicity",
+    "physical": "For an ergodic system the long-time average of an observable equals its average over the ensemble of accessible states.",
+    "reflected_formula": "",
+    "reflected_sentence": "The relationship keeps: the average over long Expansion of a measurable quantity equals its average over the collection of reachable states, and only Expansion has a frozen partner.",
+    "shape": "keeps",
+    "rule_reason": "identity (two averages declared equal); no quantity carries resistance, zero resistance-costs, shape keeps",
+    "rule_trace": [
+      "identity"
+    ],
+    "forced": true,
+    "unmapped_terms": [
+      "ergodic system",
+      "observable",
+      "average",
+      "ensemble",
+      "accessible states",
+      "long (an extent of time)"
+    ],
+    "new_words": [],
+    "monotone_claims": [],
+    "interpretation": "Time becomes Expansion, so the average over long time becomes an average over Expansion. Everything the averages are of, and the ensemble they are over, has no partner. The statement crosses as an equality between two averages of nothing frozen.",
+    "conflicts": "none",
+    "sense": 1,
+    "confidence": 7,
+    "closing": "The rule decided on its own: an identity keeps. One wrinkle is that time maps to Expansion while 'time' is a forbidden word, so 'long-time average' becomes 'average over long Expansion', and 'long' is an extent, which smuggles a quantity onto the nonphysical side; I left it in the sentence and flagged it as unmapped rather than inventing a word for it. Without a formula there is nothing else to reflect.",
+    "knew_tsr": false
+  },
+  {
+    "id": "statmech.fluctuation_dissipation",
+    "physical": "The way a system in equilibrium dissipates a small push is fixed by the spectrum of its own spontaneous fluctuations: friction and thermal noise are two faces of one quantity.",
+    "reflected_formula": "",
+    "reflected_sentence": "The relationship keeps: resonance and the system's own random jitter are two faces of one quantity, fixed by the pattern of its spontaneous wavering; only friction's partner, resonance, crosses.",
+    "shape": "keeps",
+    "rule_reason": "identity (two faces of one quantity); the damping coefficient carries resistance but the relation lists no cost that rises with it, and an identity keeps regardless, so zero resistance-costs and the shape keeps",
+    "rule_trace": [
+      "identity"
+    ],
+    "forced": true,
+    "unmapped_terms": [
+      "damping coefficient",
+      "temperature T",
+      "thermal noise",
+      "spectrum",
+      "fluctuations",
+      "equilibrium",
+      "dissipates",
+      "small push"
+    ],
+    "new_words": [],
+    "monotone_claims": [],
+    "interpretation": "Friction crosses as resonance, so the nonphysical side hears that resonance and the system's own fluctuations are one thing. What the fluctuations are, and what the noise is, has no partner. The equality survives; its content does not.",
+    "conflicts": "\"friction | resonance\" (named reflection) against \"Resistant becomes receptive\" and \"receptivity (the flipped condition)\": the damping coefficient, defined as opposition, would flip to receptivity, while the friction it measures is named resonance, so the same dissipative thing has two images.",
+    "sense": 2,
+    "confidence": 7,
+    "closing": "The keeps-or-turns call was forced: the form is an identity and the relation lists no cost. The term mapping was not: the damping coefficient carries resistance, and the rule's own clause 'resistant becomes receptive' would send it to receptivity, while the table sends friction to resonance; I used the table row for the word 'friction' and left 'damping coefficient' unmapped rather than pick. I also did not read 'dissipates' as radiation and flip it to collection, since dissipation is not in the table.",
+    "knew_tsr": false
+  },
+  {
+    "id": "statmech.maxwell_boltzmann_width",
+    "physical": "σ_v ∝ √(k × T ÷ m): the spread of molecular speeds in a gas grows with the square root of temperature and shrinks with the square root of molecular mass.",
+    "reflected_formula": "rise per Expansion (spread) ∝ √([Boltzmann constant k: no partner] × [temperature T: no partner] ÷ Movement M)",
+    "reflected_sentence": "The relationship keeps: the spread of rise per Expansion goes as the square root of the mean kinetic energy per degree of freedom over Movement M, so the spread falls as Movement M rises; the constant and the mean kinetic energy have no frozen partner.",
+    "shape": "keeps",
+    "rule_reason": "form is 'equation' and the record's cost block is empty; no cost or limit caused by resistance is recorded, so zero resistance-costs and by the parity clause the shape keeps, even though mass (resistance) appears in the formula",
+    "rule_trace": [
+      "none"
+    ],
+    "forced": false,
+    "unmapped_terms": [
+      "temperature T",
+      "Boltzmann constant k",
+      "gas",
+      "molecular",
+      "square root",
+      "spread (a statistical width)"
+    ],
+    "new_words": [],
+    "monotone_claims": [
+      {
+        "rises": "rise per Expansion",
+        "with": "Movement M",
+        "sign": -1
+      }
+    ],
+    "interpretation": "In the table's terms the formula is unchanged: the spread of rise per Expansion falls as Movement M rises. Since the record lists no cost, the reading does not turn, and more Movement M still means less spread. The quantity that sets the other side of the proportion has no partner.",
+    "conflicts": "\"mass m | Movement M\" (symbol row) against \"Mass is resistance\" and \"Resistant becomes receptive\": mass has two images, Movement M by the table and receptivity by the flip, and the turned reading needs the second while the formula is written in the first.",
+    "sense": 2,
+    "confidence": 4,
+    "closing": "Decided from the record's form and cost block as the amendment directs: 'equation' with an empty cost block gives zero resistance-costs, so keeps. I mark it not forced because the rule text alone would point the other way: the rule says mass is resistance, and the statement says the spread shrinks with mass, which reads as 'what gets harder with more resistance', one cost, odd, turns around. A reader applying the rule to the statement rather than to the cost block would turn this row; I followed the cost block and record the disagreement here. The row also exposes mass having two images (Movement M by the table, receptivity by the flip), and 'spread' is a width, a quantity the nonphysical side is not supposed to carry.",
+    "knew_tsr": false
+  },
+  {
+    "id": "statmech.phase_transition_critical_point",
+    "physical": "ξ → ∞ as T → T_c: at a continuous phase transition the order parameter vanishes and the correlation length diverges; fluctuations at every scale, and no characteristic size.",
+    "reflected_formula": "[correlation length ξ: no partner] → ∞ as [temperature T: no partner] → [T_c: no partner]",
+    "reflected_sentence": "The relationship keeps: as the mean kinetic energy per degree of freedom nears its critical value the measure of order vanishes and the extent over which parts move together grows without bound, and none of these quantities has a frozen partner.",
+    "shape": "keeps",
+    "rule_reason": "a limit, but not one caused by resistance (order parameter, correlation length and temperature are all fixed as not carrying resistance); zero resistance-costs, shape keeps",
+    "rule_trace": [
+      "none"
+    ],
+    "forced": true,
+    "unmapped_terms": [
+      "order parameter",
+      "correlation length ξ",
+      "temperature T",
+      "critical temperature T_c",
+      "phase transition",
+      "fluctuations",
+      "scale",
+      "characteristic size",
+      "∞"
+    ],
+    "new_words": [],
+    "monotone_claims": [],
+    "interpretation": "Nothing in this relation reaches the nonphysical side. The divergence to the limitless is the one place a frozen word nearly fits, but the thing that becomes limitless has no partner, so the word has nothing to attach to.",
+    "conflicts": "none",
+    "sense": 1,
+    "confidence": 6,
+    "closing": "The rule decided by the parity clause: this is a limit, and the rule turns only limits caused by resistance; none of the fixed quantities carries resistance, so keeps. Two soft spots: the form 'limit' sits awkwardly between the rule's two kinds, and the correlation length is a length yet is fixed as not carrying distance, so I did not treat 'no characteristic size' as a separation made by distance. 'Limited becomes limitless' tempts a reading of ξ → ∞ but it would be a word-play, not the rule, so I refused it.",
+    "knew_tsr": false
+  }
+]

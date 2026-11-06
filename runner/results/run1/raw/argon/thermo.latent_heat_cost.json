@@ -1,0 +1,37 @@
+{
+ "id": "thermo.latent_heat_cost",
+ "physical": "Changing a body's phase takes heat in proportion to its mass, with no rise in temperature while it happens.",
+ "reflected_formula": "E = Movement M × E",
+ "reflected_sentence": "Where changing a body's form takes energy in proportion to its mass, here the change takes less the more receptive the Movement M, with no warming while it happens.",
+ "shape": "turns around",
+ "rule_reason": "A cost caused by resistance: changing the body's phase gets harder as mass m rises, and mass m carries resistance; however, latent heat, heat, phase, and temperature are unmapped in the frozen vocabulary.",
+ "rule_trace": [
+  "resistance-cost"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "latent heat L",
+  "heat Q",
+  "temperature",
+  "phase"
+ ],
+ "new_words": [],
+ "monotone_claims": [
+  {
+   "rises": "conscious energy",
+   "with": "Movement M",
+   "sign": -1
+  },
+  {
+   "rises": "conscious energy",
+   "with": "receptivity",
+   "sign": -1
+  }
+ ],
+ "interpretation": "Mass m reflects as Movement M, and what gets harder with more resistance gets easier with more receptivity. Because latent heat, heat, and temperature have no partners in the frozen vocabulary, the full relation cannot be stated.",
+ "conflicts": "none",
+ "sense": 2,
+ "confidence": 7,
+ "closing": "The rule decided the turnaround on its own because mass m carries resistance and there is one cost rising with mass m. However, only mass m (Movement M) is mapped; latent heat, heat, and temperature have no partners in the frozen vocabulary.",
+ "knew_tsr": false
+}

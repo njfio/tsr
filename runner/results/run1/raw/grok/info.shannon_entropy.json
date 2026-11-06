@@ -1,0 +1,25 @@
+{
+ "id": "info.shannon_entropy",
+ "physical": "The uncertainty of a source is minus the sum over outcomes of probability times log probability; it is the least average number of bits needed to encode it.",
+ "reflected_formula": "",
+ "reflected_sentence": "A measure of uncertainty stays minus the sum over outcomes of a likelihood times the log of that likelihood, and it stays the least average count needed to encode a source.",
+ "shape": "keeps",
+ "rule_reason": "Definition; cost block empty; Shannon entropy does not carry resistance.",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "Shannon entropy",
+  "probability",
+  "bit"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "The definition keeps. This measure is not Culmination, and the provisional row is not used. Movement and the gap do not enter.",
+ "conflicts": "none",
+ "sense": 3,
+ "confidence": 7,
+ "closing": "The rule decided the shape on its own: a definition with an empty cost block keeps. The separate vocabulary question was whether Shannon entropy should take the entropy row. The prompt lists Shannon entropy apart from entropy, and the table names only entropy, so I left it unmapped and did not call it Culmination. That did not change the shape. The sum of products is the given relation, so I kept the sum rather than rewriting it.",
+ "knew_tsr": false
+}

@@ -1,0 +1,16 @@
+id: mech.buoyancy
+domain: mechanics
+title: "Buoyancy (Archimedes)"
+statement: "A body immersed in a fluid is pushed up by a force equal to the weight of the fluid it displaces; it floats if it is less dense than the fluid."
+formula: "F_b = ρ_fluid × g × V"
+form: equation
+variables:
+  - {name: buoyant force F_b, quantity: force}
+  - {name: fluid density ρ_fluid, quantity: density}
+  - {name: displaced volume V, quantity: volume}
+  - {name: gravitational field g, quantity: gravitational field g}
+costs: []
+standard_sources: ["Archimedes; any mechanics text"]
+book_status: unreflected
+review: pending
+notes: "An equality derived from the pressure gradient; no difficulty is named. Floating versus sinking compares two densities (two Desires, in the frozen words): a reading for the generators, not a feature."

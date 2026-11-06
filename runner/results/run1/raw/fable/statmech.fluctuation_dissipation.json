@@ -1,0 +1,30 @@
+{
+ "id": "statmech.fluctuation_dissipation",
+ "physical": "The way a system in equilibrium dissipates a small push is fixed by the spectrum of its own spontaneous fluctuations: friction and thermal noise are two faces of one quantity.",
+ "reflected_formula": "",
+ "reflected_sentence": "The relationship keeps: resonance and the system's own random jitter are two faces of one quantity, fixed by the pattern of its spontaneous wavering; only friction's partner, resonance, crosses.",
+ "shape": "keeps",
+ "rule_reason": "identity (two faces of one quantity); the damping coefficient carries resistance but the relation lists no cost that rises with it, and an identity keeps regardless, so zero resistance-costs and the shape keeps",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "damping coefficient",
+  "temperature T",
+  "thermal noise",
+  "spectrum",
+  "fluctuations",
+  "equilibrium",
+  "dissipates",
+  "small push"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "Friction crosses as resonance, so the nonphysical side hears that resonance and the system's own fluctuations are one thing. What the fluctuations are, and what the noise is, has no partner. The equality survives; its content does not.",
+ "conflicts": "\"friction | resonance\" (named reflection) against \"Resistant becomes receptive\" and \"receptivity (the flipped condition)\": the damping coefficient, defined as opposition, would flip to receptivity, while the friction it measures is named resonance, so the same dissipative thing has two images.",
+ "sense": 2,
+ "confidence": 7,
+ "closing": "The keeps-or-turns call was forced: the form is an identity and the relation lists no cost. The term mapping was not: the damping coefficient carries resistance, and the rule's own clause 'resistant becomes receptive' would send it to receptivity, while the table sends friction to resonance; I used the table row for the word 'friction' and left 'damping coefficient' unmapped rather than pick. I also did not read 'dissipates' as radiation and flip it to collection, since dissipation is not in the table.",
+ "knew_tsr": false
+}

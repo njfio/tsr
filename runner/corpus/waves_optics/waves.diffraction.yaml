@@ -1,0 +1,23 @@
+id: waves.diffraction
+domain: waves_optics
+title: "Diffraction"
+statement: "A wave passing through an aperture spreads; the narrower the aperture compared with the wavelength, the wider the spread."
+formula: "sin θ ≈ λ ÷ a"
+form: equation
+variables:
+  - {name: spreading angle θ, quantity: angle}
+  - {name: wavelength λ, quantity: wavelength}
+  - {name: aperture width a, quantity: aperture width, carries_distance: true}
+costs:
+  - {what_gets_harder: "passing through without spreading", separation_made_by_distance: true}
+alternate_statements:
+  - statement: "Read as a plain relation between spread, wavelength and aperture, with no difficulty named."
+    form: equation
+    costs: []
+    note: "separation_call joint: is an aperture (two edges a distance apart) 'a separation made by distance'?"
+    joint: separation_call
+distance_dependence: true
+standard_sources: ["Hecht, Optics, ch. 10"]
+book_status: reflected
+review: pending
+notes: "The book uses diffraction in Ch 15 ('where the Current meets resistance, it diffracts': Convergence). The procedure cannot force it: primary turns (aperture as separation), alternate keeps."

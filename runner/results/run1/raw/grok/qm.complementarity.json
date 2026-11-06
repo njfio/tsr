@@ -1,0 +1,24 @@
+{
+ "id": "qm.complementarity",
+ "physical": "The more which-path information an interferometer records, the less visible its interference fringes; the two trade off so that distinguishability squared plus visibility squared is at most one.",
+ "reflected_formula": "D² + V² ≤ 1",
+ "reflected_sentence": "This keeps: the more a record tells outcomes apart, the less their overlap shows, and the two together remain at most one.",
+ "shape": "keeps",
+ "rule_reason": "inequality with an empty cost block; not a resistance-caused limit and not a separation",
+ "rule_trace": [
+  "none"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "which-path information",
+  "interference visibility"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "This keeps. It is not Desire, not Intuition, and not E.",
+ "conflicts": "none",
+ "sense": 1,
+ "confidence": 7,
+ "closing": "The rule decided on its own. The form is an inequality and the cost block is empty, so nothing turns and the shape keeps. Neither measure has a partner. The formula is a sum bounded by a number; I did not rewrite the sum into a product, and the number does not cross. No judgment call.",
+ "knew_tsr": false
+}

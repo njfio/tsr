@@ -1,0 +1,27 @@
+{
+ "id": "field.cp_violation",
+ "physical": "The weak interaction treats matter and antimatter slightly differently: the combined operation of charge conjugation and parity is not an exact symmetry.",
+ "reflected_formula": "",
+ "reflected_sentence": "A slight difference between two kinds keeps, and neither kind has a frozen partner.",
+ "shape": "keeps",
+ "rule_reason": "No cost or separation is given. Zero such costs keep the relationship. It is not itself an identity or a symmetry; it says a symmetry is inexact. Nothing in it has a frozen partner.",
+ "rule_trace": [
+  "none"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "weak interaction",
+  "matter",
+  "antimatter",
+  "charge conjugation",
+  "parity"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "The Current is not this relationship. Movement is not in it. The relationship does not turn.",
+ "conflicts": "none",
+ "sense": 1,
+ "confidence": 6,
+ "closing": "The rule decides the keep on its own: no costs, so the count is even and the reading does not turn. I did not treat a broken symmetry as a resistance-cost. Every operative term lacks a frozen partner, and I introduced none, so the keep has almost no content to state. That is a vocabulary failure, not a shape change. Charge was not mapped to Idle; that would be a reinterpretation.",
+ "knew_tsr": false
+}

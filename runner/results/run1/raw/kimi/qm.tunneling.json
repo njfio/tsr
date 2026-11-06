@@ -1,0 +1,32 @@
+{
+ "id": "qm.tunneling",
+ "physical": "A particle can cross a barrier higher than its energy; the chance falls exponentially with the barrier's width, with the square root of its height above the particle's energy, and with the square root of the particle's mass. T ≈ exp(−2 × κ × d), κ = √(2 × m × (V − E)) ÷ ħ",
+ "reflected_formula": "(chance, no partner) ≈ exp of (−(width, no partner) × √(Movement M × (height, no partner)) ÷ (constant, no partner))",
+ "reflected_sentence": "The gap widens as Movement M grows, and the crossing thins as the gap widens.",
+ "shape": "keeps",
+ "rule_reason": "One cost, getting through the barrier, fed by two words of opposition: mass (fixed as resistance) and barrier height, which I judge to carry resistance here since the relation treats it as what must be overcome. Even count, so the shape keeps.",
+ "rule_trace": [
+  "resistance-cost"
+ ],
+ "forced": false,
+ "unmapped_terms": [
+  "transmission T (probability)",
+  "barrier height V",
+  "barrier width d",
+  "Planck constant ħ"
+ ],
+ "new_words": [],
+ "monotone_claims": [
+  {
+   "rises": "the gap",
+   "with": "Movement M",
+   "sign": 1
+  }
+ ],
+ "interpretation": "Through the Point of Reflection, the gap widens as Movement M grows, and what crosses thins as the gap widens. Height and width have no partner, and numbers do not cross. The shape keeps because two words of opposition feed the one cost.",
+ "conflicts": "none",
+ "sense": 4,
+ "confidence": 4,
+ "closing": "This row hangs on the undetermined term, exactly as the fixed list warned. Barrier height is energy by physics but is what must be overcome in this relation; I judged opposition as the mark of resistance and counted it, giving an even tally (mass plus height) and a keeps. Had I judged it energy-like, the count would be one and the shape would turn around. The width is extent and was not counted, and the table's separation flag is false, so no separation fired.",
+ "knew_tsr": false
+}

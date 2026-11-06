@@ -1,0 +1,28 @@
+{
+ "id": "thermo.fourier_conduction",
+ "physical": "The heat flowing through a slab for a given temperature difference falls as the slab's thermal resistance (thickness over conductivity times area) rises. q = ΔT ÷ R_th",
+ "reflected_formula": "unmatched transit = unmatched condition-difference ÷ the gap",
+ "reflected_sentence": "The formula image stays an unmatched transit divided by the gap, and the reading turns around: getting that transit through gets easier with more receptivity.",
+ "shape": "turns around",
+ "rule_reason": "One cost: getting the transit through for a given condition-difference gets harder as thermal resistance rises, and thermal resistance carries resistance. Odd count. The record says the separation is not made by distance. The reading turns; the formula is not rewritten.",
+ "rule_trace": [
+  "resistance-cost"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "heat",
+  "temperature",
+  "thermal resistance",
+  "thickness",
+  "conductivity",
+  "area"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "The relationship turns around. The gap is the only appearance of the opposition, and getting the transit through gets easier with receptivity. No frozen word names the transit or the condition-difference, so this is not Culmination or Movement.",
+ "conflicts": "none",
+ "sense": 3,
+ "confidence": 7,
+ "closing": "The rule decided on its own. One cost rises with thermal resistance, which carries resistance, so the odd count turns the reading. The record marks separation made by distance as false, so thickness inside the definition was not counted as a second cost. Thermal resistance has no table row; the sentence uses the gap as resistance's legal appearance and adds no new word.",
+ "knew_tsr": false
+}

@@ -1,0 +1,25 @@
+{
+ "id": "mech.torque",
+ "physical": "Torque equals moment of inertia times angular acceleration: the rotational form of Newton's second law, read as the definition of torque's effect.",
+ "reflected_formula": "",
+ "reflected_sentence": "The definition keeps: a twist equals a redistributed quantity times how fast a turning rate changes.",
+ "shape": "keeps",
+ "rule_reason": "Definition of torque's effect; primary cost block empty, so the relationship keeps.",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "torque",
+  "moment of inertia",
+  "angular acceleration"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "The given form is a definition, so the relationship keeps. Frequency, Appreciation, and Movement are not partners for its terms. No formula is written.",
+ "conflicts": "none",
+ "sense": 2,
+ "confidence": 6,
+ "closing": "The statement says to read it as a definition, the form is definition, and the primary cost block is empty, so it keeps. The alternate cost reading would turn and was not applied. Torque, moment of inertia, and angular acceleration were not mapped to Frequency, Movement, or Appreciation. No new word was introduced.",
+ "knew_tsr": false
+}

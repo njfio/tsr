@@ -1,0 +1,27 @@
+{
+ "id": "field.noether",
+ "physical": "Noether's theorem — Every continuous symmetry of the action corresponds to a conserved quantity: time translation to energy, space translation to momentum, rotation to angular momentum, phase to charge.",
+ "reflected_formula": "",
+ "reflected_sentence": "In Vibrational Reality, every symmetry corresponds to a quantity that stays: Expansion to conscious energy, Vibration to momentum, turning to angular momentum, and phase to charge.",
+ "shape": "keeps",
+ "rule_reason": "An identity between symmetries and conserved quantities keeps its shape; no cost, no resistance, no separation appears.",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "action",
+  "rotation",
+  "angular momentum",
+  "phase",
+  "charge"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "The correspondence keeps its shape. Time reflects to Expansion and space to Vibration; energy becomes conscious energy while momentum stays momentum. The other conserved quantities have no partner.",
+ "conflicts": "none",
+ "sense": 5,
+ "confidence": 7,
+ "closing": "The rule decided on its own: an identity with no costs keeps shape. The missing partners for rotation, angular momentum, phase, and charge are vocabulary gaps, not rule gaps.",
+ "knew_tsr": false
+}

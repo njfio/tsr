@@ -1,0 +1,25 @@
+{
+ "id": "thermo.thermal_equilibrium",
+ "physical": "Two bodies in thermal contact exchange heat from the hotter to the colder until they reach a common temperature.",
+ "reflected_formula": "",
+ "reflected_sentence": "Two bodies in contact pass energy from the warmer to the cooler until they share one thermal intensity, and the relation keeps its shape.",
+ "shape": "keeps",
+ "rule_reason": "No costs and neither temperature nor heat carries resistance, so it would keep its shape, but temperature and heat are unmapped in the frozen vocabulary.",
+ "rule_trace": [
+  "none"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "temperature T",
+  "heat Q",
+  "thermal contact"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "Neither heat nor temperature carries resistance, and there is no separation made by distance. Because heat and temperature have no partners in the frozen vocabulary, the statement has no reflection.",
+ "conflicts": "none",
+ "sense": 1,
+ "confidence": 7,
+ "closing": "The rule decided on its own: there are no costs and no quantities that carry resistance or distance. Neither variable (temperature T, heat Q) has a partner in the frozen vocabulary.",
+ "knew_tsr": false
+}

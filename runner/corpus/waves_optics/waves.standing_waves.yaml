@@ -1,0 +1,17 @@
+id: waves.standing_waves
+domain: waves_optics
+title: "Standing waves"
+statement: "Between two fixed ends only wavelengths that fit a whole number of half-waves into the length persist; the ends force nodes and the allowed modes are set by the separation."
+formula: "λ_n = 2 × L ÷ n"
+form: limit
+variables:
+  - {name: wavelength λ, quantity: wavelength}
+  - {name: length L between the ends, quantity: length, carries_distance: true}
+  - {name: mode number n, quantity: quantum number}
+costs:
+  - {what_gets_harder: "which vibrations can persist: only those that fit between the two ends", separation_made_by_distance: true}
+distance_dependence: true
+standard_sources: ["French, Vibrations and Waves, ch. 6"]
+book_status: unreflected
+review: pending
+notes: "A limit made by two locations: the clearest 'separation' case after row 2. Turns under C0. Reflected reading: without the two ends, no vibration is excluded."

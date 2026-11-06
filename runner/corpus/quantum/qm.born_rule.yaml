@@ -1,0 +1,14 @@
+id: qm.born_rule
+domain: quantum
+title: "Born rule"
+statement: "The probability of an outcome is the squared magnitude of its amplitude."
+formula: "P = |ψ|²"
+form: definition
+variables:
+  - {name: probability P, quantity: probability}
+  - {name: amplitude ψ, quantity: wavefunction amplitude}
+costs: []
+standard_sources: ["Born 1926"]
+book_status: unreflected
+review: pending
+notes: "A square on the physical side, as in m c² and C² × M. Generators may note the rhyme; the procedure does not."

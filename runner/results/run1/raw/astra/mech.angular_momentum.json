@@ -1,0 +1,26 @@
+{
+ "id": "mech.angular_momentum",
+ "physical": "Angular momentum is moment of inertia times angular velocity (the rotational definition), and is conserved when no external torque acts.",
+ "reflected_formula": "∅ = ∅ × ∅",
+ "reflected_sentence": "The frozen vocabulary supplies no complete reflection of this definition.",
+ "shape": "keeps",
+ "rule_reason": "The definition and conservation statement keep their shape; the resistance carried by moment of inertia is not itself a stated cost.",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "angular momentum",
+  "moment of inertia",
+  "angular velocity",
+  "external torque"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "Receptivity. Collection.",
+ "conflicts": "none",
+ "sense": 1,
+ "confidence": 7,
+ "closing": "The rule decides keeps without a judgment call, but the vocabulary cannot express the relation. In this file ∅ marks an absent partner, not a proposed nonphysical quantity; formula operators are retained without inventing partners. The interpretation fragments identify only legal condition words and do not constitute a successful relational interpretation. Angular momentum cannot silently be replaced by momentum.",
+ "knew_tsr": false
+}

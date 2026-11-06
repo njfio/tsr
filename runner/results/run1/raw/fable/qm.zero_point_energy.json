@@ -1,0 +1,25 @@
+{
+ "id": "qm.zero_point_energy",
+ "physical": "The lowest energy of a bound system is not zero; an oscillator's ground state keeps half a quantum of energy. E0 = ½ × ħ × ω",
+ "reflected_formula": "",
+ "reflected_sentence": "The lowest E of a held system is not nothing; its ground state keeps a share of E set by how fast it swings, unchanged.",
+ "shape": "keeps",
+ "rule_reason": "a limit not caused by resistance, no costs; it keeps. Physical frequency and the Planck constant are unmapped but that does not change the shape.",
+ "rule_trace": [
+  "none"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "frequency (physical)",
+  "Planck constant",
+  "½"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "The rule keeps. E is the one energy on both sides, so it crosses as itself. The angular frequency is explicitly not TSR Frequency, and the half is a number, so the kept limit is stated in plain words.",
+ "conflicts": "none",
+ "sense": 1,
+ "confidence": 5,
+ "closing": "Forced keeps by the empty cost list. The nearest-looking partner, frequency to Frequency, is explicitly forbidden by the quantity list (physical frequency is a rate, not TSR Frequency), and honoring that leaves the formula with only a shared E and two unmappable constants. The 'lowest is not zero' reading would tempt a limited-to-limitless flip; the deciding question does not turn it. Under Amendment 1 this is keeps with frequency and the Planck constant unmapped.",
+ "knew_tsr": false
+}

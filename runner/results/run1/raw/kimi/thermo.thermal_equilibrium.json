@@ -1,0 +1,25 @@
+{
+ "id": "thermo.thermal_equilibrium",
+ "physical": "Two bodies in thermal contact exchange heat from the hotter to the colder until they reach a common temperature.",
+ "reflected_formula": "",
+ "reflected_sentence": "The evening-out keeps its shape: two vibrations in contact pass conscious energy between them until their unnamed warmths agree and the passing stops.",
+ "shape": "keeps",
+ "rule_reason": "No costs are listed, so there is nothing caused by resistance to turn; with zero resistance-costs the relation keeps its shape.",
+ "rule_trace": [
+  "none"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "heat",
+  "temperature",
+  "body (no frozen partner)"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "Equalizing-until-agreement reads naturally as two vibrations settling, and that reading keeps rather than turns. None of the named quantities cross, so the sentence is a gesture, not a reflection.",
+ "conflicts": "none",
+ "sense": 1,
+ "confidence": 6,
+ "closing": "The rule decided: no costs, keeps. I considered whether the hotter-to-colder direction hides a cost, but the entry's own cost list is empty and the rule says zero is an even count; I did not invent a cost.",
+ "knew_tsr": false
+}

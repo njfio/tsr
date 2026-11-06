@@ -1,0 +1,25 @@
+{
+ "id": "mech.torque",
+ "physical": "Torque equals moment of inertia times angular acceleration: the rotational form of Newton's second law, read as the definition of torque's effect. τ = I × α",
+ "reflected_formula": "τ = I × α (torque, moment of inertia and angular acceleration have no partner; nothing in the formula crosses)",
+ "reflected_sentence": "The definition keeps its shape: the twist applied to a body equals how its mass is spread about its axis times how quickly its turning quickens, but none of the three has a partner, so the kept frame arrives with every position blank; read as a law instead it would turn, with the twist required coming easier with receptivity, and still nothing would cross.",
+ "shape": "keeps",
+ "rule_reason": "The primary record is a definition with an empty cost block: identity, keeps. The alternate record reads it as a law with one cost rising with moment of inertia, which carries resistance, and would turn. Following the amendment, the shape is decided from the primary record's form and cost block.",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": false,
+ "unmapped_terms": [
+  "torque",
+  "moment of inertia",
+  "angular acceleration"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "Every term is unpaired, so the relation crosses as a kept but blank equation. The vocabulary pairs acceleration with Appreciation, but the quickening of turning is a different quantity in the fixed list and has no row. Nothing can be said in frozen words.",
+ "conflicts": "none",
+ "sense": 1,
+ "confidence": 5,
+ "closing": "One judgment call: the relation carries two readings with opposite outcomes (definition keeps, law turns), and the report allows one shape. I followed the primary record, which is marked as the definition, and noted the alternate. I refused to read angular acceleration as acceleration (Appreciation) or moment of inertia as mass (Movement M); both are separate quantities in the fixed list. With no term mapped, the kept shape is a frame with nothing in it.",
+ "knew_tsr": false
+}

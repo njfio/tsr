@@ -1,0 +1,26 @@
+{
+ "id": "thermo.latent_heat_definition",
+ "physical": "Latent heat (the definition): Latent heat is the heat absorbed per unit mass in a phase change at constant temperature. L = Q ÷ m",
+ "reflected_formula": "[no partner: latent heat L] = [no partner: heat Q] ÷ Movement M",
+ "reflected_sentence": "The definition keeps its shape: an unnamed per-unit term equals what is taken in divided by Movement M; only mass crosses, as Movement M.",
+ "shape": "keeps",
+ "rule_reason": "Definition (an equivalence); no costs listed; keeps its shape even though mass m carries resistance, since the rule turns only costs, not definitions.",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "latent heat",
+  "heat",
+  "phase",
+  "temperature"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "An unnamed term divided by Movement M, equal to another unnamed term. The shape keeps and little is said.",
+ "conflicts": "none",
+ "sense": 1,
+ "confidence": 7,
+ "closing": "The rule decided on its own: a definition keeps. The companion cost row turns while this definition keeps, which follows the rule as written (same formula, different form), but it means the same three symbols read two ways depending on the label; I note this without resisting it. Two of three terms have no partner.",
+ "knew_tsr": false
+}

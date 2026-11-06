@@ -1,0 +1,8 @@
+{
+ "id": "mech.moment_of_inertia",
+ "alternative_shape": null,
+ "rule_compliant": false,
+ "argument": "The statement is a definition, and definitions keep their shape; nothing in it gets harder. The only candidate for a turn — the square of the distance from the axis — is marked carries_distance false, so no separation made by distance is present, and the mass element's resistance enters only through the definition itself.",
+ "reflected_sentence": "",
+ "knew_tsr": false
+}

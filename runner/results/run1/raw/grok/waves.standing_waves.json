@@ -1,0 +1,31 @@
+{
+ "id": "waves.standing_waves",
+ "physical": "Between two fixed ends only wavelengths that fit a whole number of half-waves into the length persist; the ends force nodes and the allowed modes are set by the separation.",
+ "reflected_formula": "",
+ "reflected_sentence": "Which vibrations can persist gets easier with receptivity, and alignment leaves the fitting limit already met.",
+ "shape": "turns around",
+ "rule_reason": "One separation made by distance, form limit, odd count.",
+ "rule_trace": [
+  "separation"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "wavelength λ",
+  "length L",
+  "mode number n"
+ ],
+ "new_words": [],
+ "monotone_claims": [
+  {
+   "rises": "limitless",
+   "with": "alignment",
+   "sign": 1
+  }
+ ],
+ "interpretation": "A limit set by the gap turns around. Alignment makes persistence easier, and the condition is limitless. No count crosses, and receptivity is the flipped condition.",
+ "conflicts": "none",
+ "sense": 3,
+ "confidence": 6,
+ "closing": "The cost block flags one separation made by distance, and the form is a limit, so the relation turns around without a call on whether length carries resistance. Wavelength, length, and mode number have no partners, and the number in the formula does not cross. I did not map the vibrations to space's Vibration.",
+ "knew_tsr": false
+}

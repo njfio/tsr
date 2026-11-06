@@ -1,0 +1,24 @@
+{
+ "id": "waves.doppler",
+ "physical": "A receiver moving toward a source, or a source moving toward a receiver, measures a higher frequency than the one emitted; moving apart, a lower one. f' = f × (v + v_r) ÷ (v − v_s)",
+ "reflected_formula": "f' = f × (rise per Expansion + rise per Expansion) ÷ (rise per Expansion − rise per Expansion) (f and f' kept as symbols with no partner)",
+ "reflected_sentence": "With no cost named, the relation keeps its shape: an approach still raises and a parting still lowers, only now it is rises per Expansion trading against rises per Expansion while the counted rate has no partner and stays a symbol.",
+ "shape": "keeps",
+ "rule_reason": "No costs at all; an equation among rates and a physical frequency, none of which carry resistance; zero resistance-costs, even parity, keeps.",
+ "rule_trace": [
+  "none"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "emitted frequency f",
+  "received frequency f'"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "Every rate crosses as rise per Expansion and the formula survives verbatim. But the physical frequency has no partner, so the equation no longer says anything countable. The shape holds; the content thins to near-nothing.",
+ "conflicts": "none",
+ "sense": 2,
+ "confidence": 7,
+ "closing": "The rule decided alone: no costs, even parity, keeps. Nothing was ambiguous; the reflection is simply thin because physical frequency, wave speed and the two velocities collapse onto one frozen phrase, leaving a formula that adds and subtracts the same words.",
+ "knew_tsr": false
+}

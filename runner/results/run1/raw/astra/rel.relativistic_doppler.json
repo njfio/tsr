@@ -1,0 +1,31 @@
+{
+ "id": "rel.relativistic_doppler",
+ "physical": "Light from a source receding at speed v is received at a lower frequency by the factor square root of (1 − β) over (1 + β); approaching, higher. No medium is involved and only the relative velocity matters.",
+ "reflected_formula": "",
+ "reflected_sentence": "No complete reflection has frozen vocabulary partners.",
+ "shape": "keeps",
+ "rule_reason": "Velocity and physical frequency do not carry resistance, and no cost or distance-made separation is listed, so the relation keeps.",
+ "rule_trace": [
+  "none"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "physical frequency f",
+  "received physical frequency f'",
+  "β",
+  "light",
+  "emitting source",
+  "receiver",
+  "recession",
+  "approach",
+  "medium"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "rise per Expansion. Current.",
+ "conflicts": "none",
+ "sense": 1,
+ "confidence": 7,
+ "closing": "The zero-cost reading keeps, even though recession might tempt a separate distance-based story. Physical frequency has no partner and must not be translated as Frequency, which is the partner of force. The supplied material also does not explicitly define β, and deriving a numerical nonphysical ratio would not supply the missing frequency mapping.",
+ "knew_tsr": false
+}

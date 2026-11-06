@@ -1,0 +1,11 @@
+id: field.cp_violation
+domain: field_theory
+title: "CP violation"
+statement: "The weak interaction treats matter and antimatter slightly differently: the combined operation of charge conjugation and parity is not an exact symmetry."
+form: equation
+variables: []
+costs: []
+standard_sources: ["Cronin & Fitch 1964; Kobayashi & Maskawa 1973"]
+book_status: unreflected
+review: pending
+notes: "A measured asymmetry, not a symmetry (form: equation). No resistance, no separation: keeps. tsr.wtf/holds already rejects 'parity violation grounds the filter' as going too far; generators that reach for it are producing a connection, which is not scored."

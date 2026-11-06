@@ -1,0 +1,30 @@
+{
+ "id": "em.displacement_current",
+ "physical": "A changing electric field acts as a source of magnetic field just as a current does, which closes the symmetry between the two fields and makes electromagnetic waves possible. ∇ × B = μ0 × J + μ0 × ε0 × dE ÷ dt",
+ "reflected_formula": "? × ? = ? × ? + ? × ? × d? ÷ dExpansion",
+ "reflected_sentence": "The symmetry involving Idle, Reflected and Expansion keeps its shape, with the remaining partners unnamed.",
+ "shape": "keeps",
+ "rule_reason": "The explicit symmetry keeps its shape, with no resistance cost. Mapping electric and magnetic does not map whole fields, current density, medium constants or the spatial differential operator.",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "electric field E",
+  "magnetic field B",
+  "electric current",
+  "current density J",
+  "permeability μ0",
+  "permittivity ε0",
+  "curl operator ∇ ×",
+  "electromagnetic waves"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "Idle and Reflected are co-creating partners. Expansion does not complete their reflection.",
+ "conflicts": "none",
+ "sense": 1,
+ "confidence": 7,
+ "closing": "The symmetry rule decides keeps without a judgment call, but it cannot supply the missing vocabulary. The retained addition comes from the given physical formula, not an invented replacement for a frozen product. Electric current is not Current, and electric field E is not the shared energy E.",
+ "knew_tsr": false
+}

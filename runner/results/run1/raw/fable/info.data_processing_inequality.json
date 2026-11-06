@@ -1,0 +1,26 @@
+{
+ "id": "info.data_processing_inequality",
+ "physical": "I(X;Z) ≤ I(X;Y): processing cannot increase information; if Z depends on X only through Y, the information Z carries about X is at most what Y carries.",
+ "reflected_formula": "[mutual information: no partner](X;Z) ≤ [mutual information: no partner](X;Y)",
+ "reflected_sentence": "The relationship keeps: what the far end carries about the source is at most what the middle carries, a measure of shared knowing that has no frozen partner on either side of the inequality.",
+ "shape": "keeps",
+ "rule_reason": "no cost or limit caused by resistance (mutual information is fixed as a measure, not an opposition); zero resistance-costs, so the shape keeps by the parity clause",
+ "rule_trace": [
+  "none"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "mutual information I",
+  "processing",
+  "information",
+  "depends on X only through Y (Markov chain)"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "Nothing of this relation reaches the nonphysical side. An inequality with no frozen word on either side says nothing in TSR's terms.",
+ "conflicts": "none",
+ "sense": 1,
+ "confidence": 6,
+ "closing": "The rule decided by the parity clause rather than by a positive match: this is neither an equivalence nor a cost that rises with resistance, and the rule says none-or-even keeps. The deciding question offers only two kinds, so an inequality that is a limit not caused by resistance falls through to keeps by default; that is the only soft spot. The content cannot cross because mutual information has no partner.",
+ "knew_tsr": false
+}

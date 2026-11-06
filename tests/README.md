@@ -48,6 +48,10 @@ Run on 22 October 2026 with five AIs (Astra, Kimi K3, Fable 5.1, Argon, Grok 4.7
 4. Kinetic energy kept as a definition clashes with row 8.
 5. Escape velocity may not have a reflection at all.
 
+## The Rule Runner
+
+`../runner/` turns these tests into a procedure: the rule as a decision procedure over structured physics records, the judgment calls written as criteria (closed or marked open), a corpus of 88 unreflected relations across nine domains, blind multi-model generation with an opponent, formal and judged collision detection between forced rows, and the round-2 decoy control. See `runner/README.md` and `runner/STATUS.md`.
+
 ## Run it yourself
 
 Paste a prompt into a fresh chat with web search off. Don't give it the book, the site or the key. If your results differ, or you find a sixth open question, [open an issue](https://github.com/njfio/tsr/issues).

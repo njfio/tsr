@@ -1,0 +1,15 @@
+id: waves.phase_velocity
+domain: waves_optics
+title: "Phase and phase velocity"
+statement: "A wave's phase advances by one cycle per wavelength; the phase velocity is wavelength times frequency, or angular frequency over wavenumber."
+formula: "v_p = ω ÷ k"
+form: definition
+variables:
+  - {name: phase velocity v_p, quantity: phase velocity}
+  - {name: angular frequency ω, quantity: frequency (physical)}
+  - {name: wavenumber k, quantity: wavenumber}
+costs: []
+standard_sources: ["Hecht, Optics, ch. 2"]
+book_status: unreflected
+review: pending
+notes: "Physical frequency is not TSR Frequency (trap). The frozen vocabulary has no partner for phase; shape only."

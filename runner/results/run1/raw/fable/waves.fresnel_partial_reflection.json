@@ -1,0 +1,28 @@
+{
+ "id": "waves.fresnel_partial_reflection",
+ "physical": "Fresnel partial reflection and transmission — At an interface between two media part of the light reflects and part transmits; the reflected fraction grows with the index contrast and the two fractions sum to one. R = ((n1 − n2) ÷ (n1 + n2))² (equation)",
+ "reflected_formula": "(share turned back) = ((slowing of one medium − slowing of the other) ÷ (slowing of one + slowing of the other))² — the share and the two slowings have no frozen partners; the shape is kept",
+ "reflected_sentence": "Where the Current's light meets a change in how much it is slowed, part turns back and part goes on; the greater the change, the more turns back, and the two parts together are the whole.",
+ "shape": "keeps",
+ "rule_reason": "The one cost ('getting through the boundary') rises with index contrast, whose resistance status the fixed list leaves UNDETERMINED; the separation flag is false. Strictly, a cost not established as caused by resistance does not fire, so zero resistance-costs = keeps; 'the two fractions sum to one' is a conservation and also keeps. If index contrast is ruled to carry resistance, one cost = odd = turns around (getting through becomes easier with receptivity). The rule cannot decide this; I took the strict reading.",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": false,
+ "unmapped_terms": [
+  "reflected fraction R (probability)",
+  "index contrast",
+  "refractive index n",
+  "light (carried as 'the Current's light' only because c maps to Current; a stretch)",
+  "interface / boundary (banned word; rendered 'a change')",
+  "media"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "Kept as read, the relation says that where what carries the Current meets a change, some turns back and some goes on, and the whole is conserved. The table gives no partner for the share that turns back or for the slowing of a medium. If the slowing is counted as the gap, the reading turns: the more receptive the change, the more goes on; the table does not say which.",
+ "conflicts": "The fixed list: 'refractive index: UNDETERMINED (a judgment call; say so) ... R does not decide it' and 'index contrast: UNDETERMINED ... inherits the refractive index joint' — so the rule's deciding question has no input. The frozen word 'Reflected' (for magnetic) collides with the physical 'reflected fraction' and must not be used for it.",
+ "sense": 1,
+ "confidence": 2,
+ "closing": "This needed a judgment call. The whole keeps-or-turns decision hangs on whether index contrast carries resistance, which the fixed list declines to decide. I chose keeps because the rule says a cost turns only when caused by resistance, and that cause was not established; the opposite call (turns around, with 'getting through' easier under receptivity) is equally defensible and arguably closer to the Ch 16 'medium as resistance' reading. 'Light' has no partner; I wrote 'the Current's light', which leans on c → Current and is a stretch I would not defend. 'Interface' had to be paraphrased because 'boundary' is banned. The physical word 'reflection' in the title invites a pun with TSR's own 'reflection'; I refused it.",
+ "knew_tsr": false
+}

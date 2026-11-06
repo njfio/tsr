@@ -1,0 +1,15 @@
+id: em.gauss
+domain: electromagnetism
+title: "Gauss's law"
+statement: "The electric flux through any closed surface equals the enclosed charge divided by the permittivity of free space."
+formula: "Φ_E = Q ÷ ε0"
+form: identity
+variables:
+  - {name: electric flux Φ_E, quantity: electric flux}
+  - {name: enclosed charge Q, quantity: charge}
+  - {name: permittivity ε0, quantity: permittivity}
+costs: []
+standard_sources: ["Purcell, Electricity and Magnetism, ch. 1"]
+book_status: unreflected
+review: pending
+notes: "A closed surface is a boundary (trap for the generators: on the nonphysical side find what it does, not where it is)."

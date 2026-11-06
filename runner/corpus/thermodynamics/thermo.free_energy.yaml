@@ -1,0 +1,15 @@
+id: thermo.free_energy
+domain: thermodynamics
+title: "Free energy"
+statement: "Gibbs free energy is enthalpy minus temperature times entropy; at fixed temperature and pressure a process is spontaneous when it lowers the free energy."
+formula: "G = H − T × S"
+form: definition
+variables:
+  - {name: free energy G, quantity: free energy}
+  - {name: enthalpy H, quantity: enthalpy}
+  - {name: temperature T, quantity: temperature}
+  - {name: entropy S, quantity: entropy}
+costs: []
+standard_sources: ["Gibbs 1876; Fermi, Thermodynamics, ch. 5"]
+book_status: unreflected
+review: pending

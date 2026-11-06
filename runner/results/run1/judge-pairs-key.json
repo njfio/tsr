@@ -1,0 +1,28 @@
+{
+  "pairs": {
+    "P001": {
+      "a": "S056",
+      "b": "S068",
+      "flagged_by": [
+        {
+          "judge": "opus-screen",
+          "situation": "The sentence C^2 x M = E is itself a complete reflected sentence built from the vocabulary (Current, Movement M, E), so S068 exhibits exactly what S056 says is unavailable."
+        }
+      ]
+    },
+    "P002": {
+      "a": "S068",
+      "b": "S079",
+      "flagged_by": [
+        {
+          "judge": "opus-screen",
+          "situation": "For an entity with zero momentum and Movement M not equal to 1, S068 gives E = C^2 x M while S079 read literally gives E^2 = M x C^4, i.e. E = sqrt(M) x C^2, so the two assign different E to the same entity."
+        },
+        {
+          "judge": "sol-screen",
+          "situation": "For a Movement with Current C = 1, Movement M = 1, and momentum = 1, S068 gives E = 1 whereas S079 requires E squared = 2."
+        }
+      ]
+    }
+  }
+}

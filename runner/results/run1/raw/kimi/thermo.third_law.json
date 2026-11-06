@@ -1,0 +1,23 @@
+{
+ "id": "thermo.third_law",
+ "physical": "As temperature approaches absolute zero the entropy approaches a constant, and absolute zero cannot be reached in a finite number of steps. lim T→0 S = S0",
+ "reflected_formula": "",
+ "reflected_sentence": "The settling keeps its shape: as an unnamed warmth sinks toward its lowest, Culmination (provisional) comes to rest at its own constant, and that lowest is approached endlessly, never arrived at.",
+ "shape": "keeps",
+ "rule_reason": "The listed cost (reaching the zero gets harder, each step removing a smaller fraction) rises with temperature, and the fixed list says temperature does not carry resistance; zero resistance-costs, so the limit keeps its shape and the unreachable stays unreachable. The rule's unreachable-becomes-already-there reading applies only to relations that turn, which this one does not.",
+ "rule_trace": [
+  "none"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "temperature"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "Entropy crosses as Culmination (provisional), so the approach-to-rest survives as an image. The unreachability clause cannot be named without the forbidden vocabulary, and per the rule it stays put because the relation keeps.",
+ "conflicts": "none",
+ "sense": 3,
+ "confidence": 6,
+ "closing": "Decided by the rule: the cost driver is fixed as non-resistance, so the limit keeps even though its unreachable flavor reads like something the rule might flip. That the flip is reserved for turned relations is the rule's call, which I followed and note here.",
+ "knew_tsr": false
+}

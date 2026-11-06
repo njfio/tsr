@@ -1,0 +1,24 @@
+{
+ "id": "thermo.temperature_mean_kinetic_energy",
+ "physical": "In an ideal gas the average translational kinetic energy per molecule is three halves of k times the temperature: temperature measures mean molecular kinetic energy. ½ × m × ⟨v²⟩ = 3/2 × k × T",
+ "reflected_formula": "Movement × rise per Expansion × rise per Expansion = unmatched constant × unmatched condition",
+ "reflected_sentence": "The identity keeps: Movement times rise per Expansion times rise per Expansion stays the same relation as an unmatched constant times an unmatched condition.",
+ "shape": "keeps",
+ "rule_reason": "Identity, and the cost block is empty. Identities keep. Mass maps to Movement and velocity maps to rise per Expansion. Temperature and the Boltzmann constant do not carry resistance and have no partners.",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "temperature",
+  "Boltzmann constant"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "The identity keeps: Movement and rise per Expansion stay in the product. The condition they are set with has no frozen partner. This is not Frequency and not Culmination.",
+ "conflicts": "none",
+ "sense": 4,
+ "confidence": 7,
+ "closing": "The rule decided on its own. It is an identity with an empty cost block, so it keeps. The numerical coefficients do not cross; the product identity is what crosses. I used rise per Expansion for the velocity term and did not put a forbidden rate-word on the nonphysical side.",
+ "knew_tsr": false
+}

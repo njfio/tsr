@@ -1,0 +1,26 @@
+{
+ "id": "thermo.free_energy",
+ "physical": "Gibbs free energy is enthalpy minus temperature times entropy; at fixed temperature and pressure a process is spontaneous when it lowers the free energy. G = H − T × S",
+ "reflected_formula": "",
+ "reflected_sentence": "The definition keeps its shape: an unnamed available store is an unnamed fullness minus an unnamed warmth times Culmination (provisional).",
+ "shape": "keeps",
+ "rule_reason": "Definition with no costs; definitions keep their shape.",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "free energy",
+  "enthalpy",
+  "temperature",
+  "pressure"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "The minus-times form survives as a reading about what remains after Culmination (provisional) takes its share, but three of four terms have no partner. The spontaneity clause adds an alignment-flavored condition the frozen words can only gesture at.",
+ "conflicts": "none",
+ "sense": 2,
+ "confidence": 7,
+ "closing": "Decided by the rule alone: definition, zero costs, keeps. The spontaneity remark tempts a resistance reading of entropy, but the fixed list settled entropy as non-resistance before this batch, and I held to it.",
+ "knew_tsr": false
+}

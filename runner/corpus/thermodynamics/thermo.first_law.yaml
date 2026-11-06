@@ -1,0 +1,14 @@
+id: thermo.first_law
+domain: thermodynamics
+title: "First law"
+statement: "The change in a system's internal energy equals the heat added minus the work it does: energy is conserved."
+formula: "ΔU = Q − W"
+form: conservation
+variables:
+  - {name: internal energy U, quantity: internal energy}
+  - {name: heat Q, quantity: heat}
+  - {name: work W, quantity: work}
+costs: []
+standard_sources: ["Fermi, Thermodynamics, ch. 2"]
+book_status: unreflected
+review: pending

@@ -1,0 +1,27 @@
+{
+ "id": "waves.phase_velocity",
+ "physical": "A wave's phase advances by one cycle per wavelength; the phase velocity is wavelength times frequency, or angular frequency over wavenumber.",
+ "reflected_formula": "",
+ "reflected_sentence": "The definition keeps: a rate remains a rate divided by an inverse extent, and the advance still tracks each extent.",
+ "shape": "keeps",
+ "rule_reason": "A definition with no costs, and no quantity that carries resistance.",
+ "rule_trace": [
+  "none"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "phase velocity v_p",
+  "angular frequency ω",
+  "wavenumber k",
+  "phase",
+  "wavelength"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "The definition keeps. Frequency is not this rate. The gap and alignment do not enter a definition with no cost.",
+ "conflicts": "none",
+ "sense": 2,
+ "confidence": 7,
+ "closing": "Form is definition and the cost list is empty, so the relation keeps. Phase velocity is not mapped to rise per Expansion, and the physical rate is not Frequency. The count in the statement does not cross, so the sentence states the advance without a number.",
+ "knew_tsr": false
+}

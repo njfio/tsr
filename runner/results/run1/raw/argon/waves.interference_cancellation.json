@@ -1,0 +1,31 @@
+{
+ "id": "waves.interference_cancellation",
+ "physical": "Two waves in opposite phase cancel at a point; the cancellation is located, and energy is conserved overall.",
+ "reflected_formula": "",
+ "reflected_sentence": "Without separation, two Vibrations in opposite phase do not cancel but culminate while conscious energy E is preserved.",
+ "shape": "turns around",
+ "rule_reason": "Separation made by distance: location of the point carries distance and makes two vibrations coexisting at one location a separation cost.",
+ "rule_trace": [
+  "separation"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "phase difference",
+  "opposite phase",
+  "amplitude"
+ ],
+ "new_words": [],
+ "monotone_claims": [
+  {
+   "rises": "Culmination (provisional)",
+   "with": "Vibration",
+   "sign": 1
+  }
+ ],
+ "interpretation": "In Vibrational Reality, there is no separation to set one Vibration against another. Instead of canceling, two Vibrations culminate in collection and resonance. Conscious energy E remains whole across the Present.",
+ "conflicts": "none",
+ "sense": 5,
+ "confidence": 7,
+ "closing": "The rule decided turns around without a judgment call because the cost has separation_made_by_distance set to true and location of the point carries distance, while the frozen vocabulary explicitly supplies culminate as what two vibrations do instead of cancel.",
+ "knew_tsr": false
+}

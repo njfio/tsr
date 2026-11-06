@@ -1,0 +1,32 @@
+{
+ "id": "field.asymptotic_freedom",
+ "physical": "The strong coupling becomes weak at short distances and high energies: quarks close together interact almost freely, and the interaction grows as they are pulled apart.",
+ "reflected_formula": "",
+ "reflected_sentence": "The Frequency grows with alignment and high E: in alignment the Frequency is strong, and the Frequency falls as the gap grows.",
+ "shape": "turns around",
+ "rule_reason": "Separation made by distance turns around (1 cost).",
+ "rule_trace": [
+  "separation"
+ ],
+ "forced": false,
+ "unmapped_terms": [
+  "strong coupling α_s",
+  "running coupling",
+  "quark",
+  "momentum transfer Q"
+ ],
+ "new_words": [],
+ "monotone_claims": [
+  {
+   "rises": "Frequency",
+   "with": "alignment",
+   "sign": 1
+  }
+ ],
+ "interpretation": "In Vibration, the gap turns around into alignment. Where there is alignment and E, the Frequency rises instead of falling. What grew with separation now grows with alignment.",
+ "conflicts": "none",
+ "sense": 2,
+ "confidence": 4,
+ "closing": "The primary statement frames the interaction growing with separation made by distance, which triggers the separation rule to turn around, whereas the alternate statement reads as a running with energy scale with no costs. In addition, core terms like strong coupling, quark, and momentum scale Q lack partners in the frozen vocabulary.",
+ "knew_tsr": false
+}

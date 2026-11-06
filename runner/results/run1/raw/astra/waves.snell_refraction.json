@@ -1,0 +1,27 @@
+{
+ "id": "waves.snell_refraction",
+ "physical": "Crossing into a medium with a different refractive index, a ray bends so that index times the sine of the angle is the same on both sides.",
+ "reflected_formula": "no partner",
+ "reflected_sentence": "The equality of the products keeps its shape.",
+ "shape": "keeps",
+ "rule_reason": "The equality of the two products keeps, with no listed costs or separation. The undetermined resistance status of refractive index cannot activate a cost absent from this relation. Neither refractive index nor angle has a partner for n1 × sin θ1 = n2 × sin θ2.",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "medium",
+  "refractive index n",
+  "ray",
+  "angle θ",
+  "refraction"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "No partner. No partner.",
+ "conflicts": "none",
+ "sense": 1,
+ "confidence": 7,
+ "closing": "Refractive index remains explicitly undetermined as a resistance carrier, but no judgment about it is needed to preserve this cost-free equality. Introducing a resistance cost from another optical relation would violate the instruction to judge each relation independently. The missing partners still prevent a reflected formula or substantive interpretation.",
+ "knew_tsr": false
+}

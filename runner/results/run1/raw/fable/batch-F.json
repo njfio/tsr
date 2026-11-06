@@ -1,0 +1,381 @@
+[
+  {
+    "id": "qm.born_rule",
+    "physical": "The probability of an outcome is the squared magnitude of its amplitude. P = |ψ|²",
+    "reflected_formula": "",
+    "reflected_sentence": "The chance of an outcome is the squared magnitude of its amplitude, unchanged; the chance and the amplitude have no frozen names.",
+    "shape": "keeps",
+    "rule_reason": "definition; it keeps its shape. Both terms are unmapped but that does not change the shape.",
+    "rule_trace": [
+      "identity"
+    ],
+    "forced": true,
+    "unmapped_terms": [
+      "probability",
+      "wavefunction amplitude"
+    ],
+    "new_words": [],
+    "monotone_claims": [],
+    "interpretation": "A definition keeps its shape. The table has no word for the chance of an outcome and no word for its amplitude, so the kept shape is stated in plain words. It says nothing the table does not.",
+    "conflicts": "none",
+    "sense": 1,
+    "confidence": 7,
+    "closing": "The keeps-or-turns call was forced: the form is a definition with no costs, so it keeps. The weakness is in the vocabulary, not the rule. Neither variable has a partner and I refused to invent one (Belief, Expectation and manifestation all tempt as a stand-in for probability or amplitude, but the table does not say that). Under Amendment 1 this is keeps with both terms unmapped.",
+    "knew_tsr": false
+  },
+  {
+    "id": "qm.bound_state_quantization",
+    "physical": "A particle confined to a region has only discrete allowed energies; the spacing grows as the region shrinks and falls as the particle's mass rises. E_n = n² × π² × ħ² ÷ (2 × m × L²)",
+    "reflected_formula": "E = n² × π² × ħ² ÷ (2 × Movement M × Vibration²)",
+    "reflected_sentence": "An E held in Vibration is not limited to a few allowed E; the E that seemed unreachable between the levels are already there, and the holding eases rather than tightens as Vibration narrows and Movement M grows.",
+    "shape": "turns around",
+    "rule_reason": "one cost (which energies are allowed) marked as a separation made by distance; it also falls with mass m. One cost entry is odd, so it turns.",
+    "rule_trace": [
+      "separation",
+      "resistance-cost"
+    ],
+    "forced": false,
+    "unmapped_terms": [
+      "quantum number",
+      "Planck constant"
+    ],
+    "new_words": [],
+    "monotone_claims": [
+      {
+        "rises": "E",
+        "with": "Movement M",
+        "sign": -1
+      },
+      {
+        "rises": "E",
+        "with": "Vibration",
+        "sign": -1
+      }
+    ],
+    "interpretation": "The formula keeps its terms: E falls as Movement M rises and falls as Vibration widens. The reading turns: what the physical side calls a limited set of allowed E is limitless on the nonphysical side. The gap between levels is the only trace of what held them apart.",
+    "conflicts": "\"Nothing on the nonphysical side has a number\" is contradicted by n², π² and 2 remaining in the reflected formula; without them the formula is rewritten, which is forbidden.",
+    "sense": 2,
+    "confidence": 3,
+    "closing": "Needed two judgment calls. First, the cost falls with mass m rather than rising, so it is not literally 'a cost that rises with resistance'; the separation flag is what actually fired. Second, the cost entry contains both a resistance term and a separation flag, and the parity rule counts 'costs', not triggers: one entry gives odd and turns, two triggers would give even and keep. I counted entries. The reflected formula also cannot shed its numbers without being rewritten, so the units-don't-cross rule is violated either way.",
+    "knew_tsr": false
+  },
+  {
+    "id": "qm.complementarity",
+    "physical": "The more which-path information an interferometer records, the less visible its interference fringes; the two trade off so that distinguishability squared plus visibility squared is at most one. D² + V² ≤ 1",
+    "reflected_formula": "",
+    "reflected_sentence": "The more an E's path is told apart, the less its fringes show; the two trade off and together stay within one whole, unchanged.",
+    "shape": "keeps",
+    "rule_reason": "no costs and no resistant quantity; an inequality not caused by resistance keeps. Both variables are unmapped but that does not change the shape.",
+    "rule_trace": [
+      "none"
+    ],
+    "forced": true,
+    "unmapped_terms": [
+      "which-path information",
+      "interference visibility"
+    ],
+    "new_words": [],
+    "monotone_claims": [],
+    "interpretation": "The trade-off is a limit, but not one made by the gap, so the rule keeps it. The table offers no partner for either side of the trade-off and the bound of one is a number that cannot cross. What remains is a trade-off stated in plain words.",
+    "conflicts": "none",
+    "sense": 1,
+    "confidence": 5,
+    "closing": "Keeps was the forced verdict (zero costs). The relation is a sum of squares bounded by a number; neither the sum nor the number can cross, and both variables are unmapped. Focus/Tune tempts as a partner for which-path information but the table does not license it. Mild ambiguity: this is a limit, and the property row says limited becomes limitless, yet the deciding question only turns limits caused by resistance. I followed the deciding question. Under Amendment 1 this is keeps with both terms unmapped.",
+    "knew_tsr": false
+  },
+  {
+    "id": "qm.decoherence",
+    "physical": "Interaction with an environment spreads a system's phase relations into degrees of freedom no one can recover, suppressing interference; two branches of a superposition lose coherence faster the more strongly they couple to the environment and the farther apart in position they are. Γ ∝ Λ × (Δx)²",
+    "reflected_formula": "Γ ∝ Λ × Vibration²",
+    "reflected_sentence": "Two branches of one E that are apart in Vibration are not lost to each other; the more they are joined to what is around them, the more readily they culminate rather than cancel.",
+    "shape": "turns around",
+    "rule_reason": "one cost (keeping two branches coherent) marked as a separation made by distance; environment coupling does not carry resistance, so only the separation fired. One cost is odd, so it turns.",
+    "rule_trace": [
+      "separation"
+    ],
+    "forced": true,
+    "unmapped_terms": [
+      "decoherence rate",
+      "environment coupling"
+    ],
+    "new_words": [],
+    "monotone_claims": [
+      {
+        "rises": "Vibration",
+        "with": "alignment",
+        "sign": -1
+      }
+    ],
+    "interpretation": "On the physical side the separation in Vibration is what makes the branches fall apart. Turned around, the separation is already closed: the branches culminate. What was a cost of keeping them together becomes something that is simply so.",
+    "conflicts": "none",
+    "sense": 3,
+    "confidence": 5,
+    "closing": "The rule decided on its own: the only trigger was the separation flag, since environment coupling is declared non-resistant. The reflected sentence is the one in this batch where a frozen word (culminate, what two vibrations do instead of cancel) lands on the physical content without stretching. Weaknesses: the rate Γ and the coupling Λ have no partners, so the formula only half crosses, and the monotone claim had to be expressed against alignment because the rate itself is unmapped.",
+    "knew_tsr": false
+  },
+  {
+    "id": "qm.entanglement",
+    "physical": "Measurements on two entangled particles are correlated more strongly than any local account allows (Bell), and the correlation does not weaken with their separation.",
+    "reflected_formula": "",
+    "reflected_sentence": "Two E that have met stay joined more strongly than any account made of separate parts allows, and the joining does not weaken with the Vibration between them.",
+    "shape": "keeps",
+    "rule_reason": "no costs; the separation is named only to say it makes no difference, so no separation made by distance fired",
+    "rule_trace": [
+      "none"
+    ],
+    "forced": false,
+    "unmapped_terms": [
+      "probability"
+    ],
+    "new_words": [],
+    "monotone_claims": [
+      {
+        "rises": "Vibration",
+        "with": "alignment",
+        "sign": 0
+      }
+    ],
+    "interpretation": "The relation already says that Vibration between the two does not weaken what joins them. Kept, it says the same on the nonphysical side. It adds nothing the table does not already assume.",
+    "conflicts": "none",
+    "sense": 3,
+    "confidence": 5,
+    "closing": "One judgment call: the variable list flags separation as carrying distance, but the costs list is empty and the statement is that separation does not matter. I read that as no separation-cost, so the parity count is zero and the relation keeps. Had I counted the flagged variable, it would have turned around, which would make a relation that already ignores distance say the opposite. The correlation strength itself (probability) has no partner.",
+    "knew_tsr": false
+  },
+  {
+    "id": "qm.measurement_collapse",
+    "physical": "A measurement yields one of the observable's eigenvalues, and afterwards the system is in the corresponding eigenstate; which value appears is not determined by the prior state.",
+    "reflected_formula": "",
+    "reflected_sentence": "A reading of an E yields one of the values it allows, and afterwards the E is in the matching state; which value appears is not fixed by the state before, unchanged.",
+    "shape": "keeps",
+    "rule_reason": "no costs and no resistant quantity; keeps. Probability and amplitude are unmapped but that does not change the shape.",
+    "rule_trace": [
+      "none"
+    ],
+    "forced": true,
+    "unmapped_terms": [
+      "probability",
+      "wavefunction amplitude",
+      "measurement",
+      "eigenvalue",
+      "eigenstate"
+    ],
+    "new_words": [],
+    "monotone_claims": [],
+    "interpretation": "The rule keeps the shape, since there is no cost and no resistant quantity. Nothing in the frozen table names a reading or what comes out of one, so the kept shape is stated in plain words. It says nothing the table does not.",
+    "conflicts": "none",
+    "sense": 1,
+    "confidence": 5,
+    "closing": "Keeps was forced by the empty cost list. The vocabulary is where this is weak: Focus/Tune, actualization/realization and manifestation/imagination all look like they want to be the partner of measurement, and using any of them would be exactly the creative rescue the ground rules forbid. Under Amendment 1 this is keeps with the terms unmapped.",
+    "knew_tsr": false
+  },
+  {
+    "id": "qm.no_cloning",
+    "physical": "No physical operation can make an independent copy of an arbitrary unknown quantum state.",
+    "reflected_formula": "",
+    "reflected_sentence": "No operation can make a separate copy of an arbitrary unknown state of an E, unchanged.",
+    "shape": "keeps",
+    "rule_reason": "a limit, but not one caused by resistance; no costs, so it keeps. Amplitude is unmapped but that does not change the shape.",
+    "rule_trace": [
+      "none"
+    ],
+    "forced": true,
+    "unmapped_terms": [
+      "wavefunction amplitude",
+      "copy",
+      "operation"
+    ],
+    "new_words": [],
+    "monotone_claims": [],
+    "interpretation": "The limit is not made by the gap, so by the deciding question it keeps. The only term, amplitude, has no partner, so the kept limit is stated in plain words. It says nothing the table does not.",
+    "conflicts": "none",
+    "sense": 1,
+    "confidence": 4,
+    "closing": "The deciding question gives keeps (zero costs, no resistant quantity). But the form is a limit, and the property row says limited becomes limitless, so a term-level reading would flip it to 'any state can be copied', which is the opposite verdict. I followed the relation-level rule as instructed and note the tension here rather than in the reflection. Under Amendment 1 this is keeps with amplitude unmapped.",
+    "knew_tsr": false
+  },
+  {
+    "id": "qm.pauli_exclusion",
+    "physical": "No two identical fermions can occupy the same quantum state; the many-body state is antisymmetric under exchange.",
+    "reflected_formula": "",
+    "reflected_sentence": "No two E of the same kind can hold the same state; the state of the many is antisymmetric under exchange, unchanged.",
+    "shape": "keeps",
+    "rule_reason": "symmetry; it keeps its shape. Spin is unmapped but that does not change the shape.",
+    "rule_trace": [
+      "identity"
+    ],
+    "forced": true,
+    "unmapped_terms": [
+      "spin",
+      "fermion",
+      "exchange antisymmetry"
+    ],
+    "new_words": [],
+    "monotone_claims": [],
+    "interpretation": "A symmetry keeps its shape. The table has no word for spin or for two things being the same kind, so the kept symmetry is stated in plain words. It says nothing the table does not.",
+    "conflicts": "none",
+    "sense": 1,
+    "confidence": 6,
+    "closing": "Forced keeps by form (symmetry). No ambiguity about shape; the vocabulary offers nothing for spin. The statement 'no two can occupy the same' is also a limit and would tempt a limited-to-limitless flip, but the deciding question does not turn it. Under Amendment 1 this is keeps with spin unmapped.",
+    "knew_tsr": false
+  },
+  {
+    "id": "qm.spin",
+    "physical": "Particles carry an intrinsic angular momentum that is quantized in half-integer or integer multiples of the reduced Planck constant and is not a rotation in space.",
+    "reflected_formula": "",
+    "reflected_sentence": "An E carries an intrinsic angular momentum that comes only in fixed steps and is not a rotation in Vibration, unchanged.",
+    "shape": "keeps",
+    "rule_reason": "definition; it keeps its shape. Spin and the Planck constant are unmapped but that does not change the shape.",
+    "rule_trace": [
+      "identity"
+    ],
+    "forced": true,
+    "unmapped_terms": [
+      "spin",
+      "Planck constant",
+      "half-integer and integer multiples"
+    ],
+    "new_words": [],
+    "monotone_claims": [],
+    "interpretation": "A definition keeps. Spin is declared not to carry the gap and has no row. The multiples are numbers and cannot cross, so the kept definition says only that the steps are fixed and that it is not a rotation in Vibration.",
+    "conflicts": "none",
+    "sense": 1,
+    "confidence": 6,
+    "closing": "Forced keeps. The only mappable fragment is space to Vibration inside a negation, which is not a relationship. Momentum is in the table but spin is intrinsic angular momentum, and the quantity list separates them, so I did not use the momentum row. Under Amendment 1 this is keeps with spin and the Planck constant unmapped.",
+    "knew_tsr": false
+  },
+  {
+    "id": "qm.superposition",
+    "physical": "Any linear combination of allowed states is an allowed state; the state space is linear.",
+    "reflected_formula": "",
+    "reflected_sentence": "Any combination of allowed states of an E is an allowed state; the states form a linear whole, unchanged.",
+    "shape": "keeps",
+    "rule_reason": "identity; it keeps its shape. Amplitude is unmapped but that does not change the shape.",
+    "rule_trace": [
+      "identity"
+    ],
+    "forced": true,
+    "unmapped_terms": [
+      "wavefunction amplitude",
+      "linear combination",
+      "state"
+    ],
+    "new_words": [],
+    "monotone_claims": [],
+    "interpretation": "An identity keeps. The physical side adds states; the table has no word for a state and its only word about two things meeting is culminate, which is about vibrations, not states. The kept identity is stated in plain words.",
+    "conflicts": "none",
+    "sense": 1,
+    "confidence": 6,
+    "closing": "Forced keeps. Two traps sit close: the relation is a sum, and the only nearby frozen word is culminate (what two vibrations do instead of cancel). Mapping a state to a vibration would be an invention, so I did not. Under Amendment 1 this is keeps with amplitude unmapped.",
+    "knew_tsr": false
+  },
+  {
+    "id": "qm.tunneling",
+    "physical": "A particle can cross a barrier higher than its energy; the chance falls exponentially with the barrier's width, with the square root of its height above the particle's energy, and with the square root of the particle's mass. T ≈ exp(−2 × κ × d), κ = √(2 × Movement M × (V − E)) ÷ ħ",
+    "reflected_formula": "T ≈ exp(−2 × κ × d), κ = √(2 × Movement M × (V − E)) ÷ ħ",
+    "reflected_sentence": "An E that meets what stands higher than it is already through; the passing eases rather than tightens as Movement M grows and as what stands above E grows.",
+    "shape": "turns around",
+    "rule_reason": "one cost (getting through the barrier) rises with mass m, which carries resistance; barrier height is undetermined but sits in the same cost entry. One cost is odd, so it turns.",
+    "rule_trace": [
+      "resistance-cost"
+    ],
+    "forced": false,
+    "unmapped_terms": [
+      "probability",
+      "barrier height",
+      "barrier width",
+      "Planck constant"
+    ],
+    "new_words": [],
+    "monotone_claims": [],
+    "interpretation": "The formula keeps its terms, so the chance still falls with Movement M. The reading turns, so the passing gets easier. The two say opposite things about the same relation.",
+    "conflicts": "\"Do not rewrite the formula\" together with \"what turns is its reading\" leaves the reflected formula saying the chance falls with Movement M while the reflected reading says the passing eases with it.",
+    "sense": 2,
+    "confidence": 4,
+    "closing": "Resistance-cost fired cleanly through mass m. The judgment calls: barrier height is undetermined, and if it counted as a second resistance and the parity rule counted triggers rather than cost entries, the count would be even and the relation would keep. I counted entries (one) and turned it. The deeper problem is that a turned relation keeps its formula but flips its reading, and here the formula's monotone direction and the flipped reading contradict each other outright. Transmission, height and width have no partners, so no monotone claim could be stated in frozen words.",
+    "knew_tsr": false
+  },
+  {
+    "id": "qm.uncertainty_energy_time",
+    "physical": "A state that lasts only a short time has a correspondingly broad energy; the product of the energy spread and the lifetime is at least half the reduced Planck constant. ΔE × Δt ≥ ħ ÷ 2",
+    "reflected_formula": "ΔE × ΔExpansion ≥ ħ ÷ 2",
+    "reflected_sentence": "An E that spans little Expansion has a correspondingly broad E; the spread of E and the span of Expansion cannot both be small.",
+    "shape": "keeps",
+    "rule_reason": "no costs and no resistant quantity; an inequality not caused by resistance keeps",
+    "rule_trace": [
+      "none"
+    ],
+    "forced": true,
+    "unmapped_terms": [
+      "Planck constant"
+    ],
+    "new_words": [],
+    "monotone_claims": [
+      {
+        "rises": "E",
+        "with": "Expansion",
+        "sign": -1
+      }
+    ],
+    "interpretation": "E is shared by both sides and Expansion is the partner of its spread. The product keeps its shape: narrow in one, broad in the other. The lower bound is a number and does not cross, so what remains is a trade-off with no floor.",
+    "conflicts": "\"Nothing on the nonphysical side has a number\" against the ħ ÷ 2 that the unrewritten formula carries.",
+    "sense": 3,
+    "confidence": 5,
+    "closing": "Forced keeps: empty cost list, nothing resistant. The reflection is legible because both variables cross (E is shared, time goes to Expansion). Two weaknesses: the bound is a number and cannot cross, which strips the inequality of what makes it an inequality; and as a limit it tempts the limited-to-limitless flip, which the deciding question does not authorize. Note also that the reflected sentence had to avoid the word time entirely while describing a lifetime.",
+    "knew_tsr": false
+  },
+  {
+    "id": "qm.uncertainty_position_momentum",
+    "physical": "The spreads of position and momentum in any state cannot both be made small: their product is at least half the reduced Planck constant. Δx × Δp ≥ ħ ÷ 2",
+    "reflected_formula": "ΔVibration × Δmomentum ≥ ħ ÷ 2",
+    "reflected_sentence": "The spreads of Vibration and of momentum in any state cannot both be made small.",
+    "shape": "keeps",
+    "rule_reason": "no costs and no resistant quantity (momentum is declared non-resistant; the spread does not carry distance); an inequality not caused by resistance keeps",
+    "rule_trace": [
+      "none"
+    ],
+    "forced": true,
+    "unmapped_terms": [
+      "Planck constant"
+    ],
+    "new_words": [],
+    "monotone_claims": [
+      {
+        "rises": "Vibration",
+        "with": "momentum",
+        "sign": -1
+      }
+    ],
+    "interpretation": "Vibration is the partner of space and momentum crosses as itself. The product keeps: narrow Vibration means broad momentum. Without the number the floor is gone, so it says only that the two spreads trade.",
+    "conflicts": "\"Nothing on the nonphysical side has a number\" against the ħ ÷ 2 that the unrewritten formula carries.",
+    "sense": 2,
+    "confidence": 5,
+    "closing": "Forced keeps. Both variables cross by the table, which is rare in this batch, but the result is thin: momentum crossing as itself and Vibration standing in for a spread of position produces a sentence that says nothing the table did not already say. The trap about Momentum as an entity property was avoided by keeping momentum lowercase as a quantity.",
+    "knew_tsr": false
+  },
+  {
+    "id": "qm.zero_point_energy",
+    "physical": "The lowest energy of a bound system is not zero; an oscillator's ground state keeps half a quantum of energy. E0 = ½ × ħ × ω",
+    "reflected_formula": "",
+    "reflected_sentence": "The lowest E of a held system is not nothing; its ground state keeps a share of E set by how fast it swings, unchanged.",
+    "shape": "keeps",
+    "rule_reason": "a limit not caused by resistance, no costs; it keeps. Physical frequency and the Planck constant are unmapped but that does not change the shape.",
+    "rule_trace": [
+      "none"
+    ],
+    "forced": true,
+    "unmapped_terms": [
+      "frequency (physical)",
+      "Planck constant",
+      "½"
+    ],
+    "new_words": [],
+    "monotone_claims": [],
+    "interpretation": "The rule keeps. E is the one energy on both sides, so it crosses as itself. The angular frequency is explicitly not TSR Frequency, and the half is a number, so the kept limit is stated in plain words.",
+    "conflicts": "none",
+    "sense": 1,
+    "confidence": 5,
+    "closing": "Forced keeps by the empty cost list. The nearest-looking partner, frequency to Frequency, is explicitly forbidden by the quantity list (physical frequency is a rate, not TSR Frequency), and honoring that leaves the formula with only a shared E and two unmappable constants. The 'lowest is not zero' reading would tempt a limited-to-limitless flip; the deciding question does not turn it. Under Amendment 1 this is keeps with frequency and the Planck constant unmapped.",
+    "knew_tsr": false
+  }
+]

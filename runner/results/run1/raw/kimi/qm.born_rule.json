@@ -1,0 +1,24 @@
+{
+ "id": "qm.born_rule",
+ "physical": "The probability of an outcome is the squared magnitude of its amplitude. P = |ψ|²",
+ "reflected_formula": "",
+ "reflected_sentence": "The chance of an outcome is the square of its amplitude, on this side as on that one.",
+ "shape": "keeps",
+ "rule_reason": "A definition with no costs; equivalences and definitions keep their shape. Probability and amplitude have no partner and are listed in unmapped_terms; that does not change the shape.",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "probability P",
+  "amplitude ψ"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "The rule's call is keeps, since a definition carries no cost. Probability and amplitude have no partner, so the kept sentence can only describe them in plain words. The squaring keeps its shape on this side.",
+ "conflicts": "none",
+ "sense": 2,
+ "confidence": 7,
+ "closing": "Amended reading applied: the rule decided keeps on its own (definition, no costs). The missing partners for probability and amplitude sit in unmapped_terms, and the reflected sentence describes them in plain words rather than inventing vocabulary. No new words were needed.",
+ "knew_tsr": false
+}

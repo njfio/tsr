@@ -1,0 +1,29 @@
+{
+ "id": "qm.uncertainty_energy_time",
+ "physical": "A state that lasts only a short time has a correspondingly broad energy; the product of the energy spread and the lifetime is at least half the reduced Planck constant.",
+ "reflected_formula": "E × Expansion ≥ ħ ÷ 2",
+ "reflected_sentence": "This keeps: broad E goes with brief Expansion, and their product remains at least half the unmapped constant.",
+ "shape": "keeps",
+ "rule_reason": "inequality with an empty cost block; not a resistance-cost and not a separation. Energy and time do not carry resistance",
+ "rule_trace": [
+  "none"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "Planck constant"
+ ],
+ "new_words": [],
+ "monotone_claims": [
+  {
+   "rises": "E",
+   "with": "Expansion",
+   "sign": -1
+  }
+ ],
+ "interpretation": "This keeps. E and Expansion stay in a product. This is not the Present and not Frequency.",
+ "conflicts": "none",
+ "sense": 3,
+ "confidence": 6,
+ "closing": "The rule decided: inequality, empty costs, no resistance-cost and no separation, so the shape keeps. Energy stays the shared E, and time maps to Expansion by the table; I used that map for the lifetime and did not treat the bound as a turn. The constant and the factor one-half do not cross. No judgment call changed the shape.",
+ "knew_tsr": false
+}

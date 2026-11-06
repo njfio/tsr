@@ -1,0 +1,23 @@
+{
+ "id": "mech.hooke",
+ "physical": "A spring pushes back in proportion to how far it is stretched; stretching it further takes more force, more so the stiffer the spring.",
+ "reflected_formula": "",
+ "reflected_sentence": "The reading turns around: further Vibration is easier with receptivity, while Frequency stays the product of a stiffness and Vibration.",
+ "shape": "turns around",
+ "rule_reason": "One resistance-cost in the block, rising with the spring constant; odd count, so the reading turns around.",
+ "rule_trace": [
+  "resistance-cost"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "spring constant"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "One cost in the block turns the reading: harder becomes easier with receptivity. Frequency and Vibration are the frozen partners. No frozen word names the stiffness, so no formula is written, and receptivity is the flipped condition rather than a name for that stiffness.",
+ "conflicts": "none",
+ "sense": 3,
+ "confidence": 7,
+ "closing": "One listed cost rises with the spring constant, an odd count, so the reading turns and the product is not rewritten. Force and the extent have partners; the spring constant does not. receptivity is the condition flip required by the rule, not a new word for the spring constant, so new_words stays empty. No shape judgment call.",
+ "knew_tsr": false
+}

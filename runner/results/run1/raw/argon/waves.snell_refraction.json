@@ -1,0 +1,27 @@
+{
+ "id": "waves.snell_refraction",
+ "physical": "Crossing into a medium with a different refractive index, a ray bends so that index times the sine of the angle is the same on both sides.",
+ "reflected_formula": "the gap_1 × Vibration_1 = the gap_2 × Vibration_2",
+ "reflected_sentence": "Crossing the Point of Reflection into a different gap, the product of the gap and the angle of Vibration remains the same on both sides.",
+ "shape": "keeps",
+ "rule_reason": "Equivalence across an interface with zero costs listed; even though refractive index is undetermined, no cost rises with it in this relation.",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": false,
+ "unmapped_terms": [
+  "medium",
+  "refractive index n",
+  "ray",
+  "angle θ",
+  "sin"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "At the Point of Reflection, the product of Vibration and the gap is preserved on both sides. The relation keeps its shape as an equivalence in Vibration-Expansion. Because neither refractive index nor angle has a partner in the frozen table, the geometric bending of a ray cannot be expressed in frozen words.",
+ "conflicts": "none",
+ "sense": 1,
+ "confidence": 5,
+ "closing": "Although costs is empty so the equality keeps its shape, refractive index is explicitly marked UNDETERMINED (a judgment call), making forced false. Moreover, neither refractive index nor angle maps to the frozen vocabulary.",
+ "knew_tsr": false
+}

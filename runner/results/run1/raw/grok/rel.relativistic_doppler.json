@@ -1,0 +1,27 @@
+{
+ "id": "rel.relativistic_doppler",
+ "physical": "Light from a source receding at speed v is received at a lower frequency by the factor square root of (1 − β) over (1 + β); approaching, higher. No medium is involved and only the relative velocity matters.",
+ "reflected_formula": "",
+ "reflected_sentence": "A received rate keeps changed with rise per Expansion against the Current, and that rate is not Frequency.",
+ "shape": "keeps",
+ "rule_reason": "No cost or separation is given. Frequency (physical) does not carry resistance, velocity does not, and c does not. Zero such costs, so the relationship keeps. Physical frequency is not Frequency.",
+ "rule_trace": [
+  "none"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "frequency f",
+  "emitted frequency",
+  "received frequency",
+  "medium",
+  "source"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "Rise per Expansion keeps with the Current. Frequency is not this relationship. Alignment is not claimed.",
+ "conflicts": "none",
+ "sense": 2,
+ "confidence": 6,
+ "closing": "The rule decides the keep: no costs. The trap is the vocabulary, not the shape. Physical frequency has no partner and must not be written as Frequency, which is force's partner and is not a rate. Velocity's partner is rise per Expansion and c's partner is the Current, so only the relative-velocity dependence maps. Receding and approaching would be travel, and the square-root factor is a number, so the formula has no image. I did not turn lower into higher; the reading keeps. No shape judgment. Missing partners do not change the keep.",
+ "knew_tsr": false
+}

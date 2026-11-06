@@ -1,0 +1,25 @@
+{
+ "id": "mech.bernoulli",
+ "physical": "Along a streamline of steady, inviscid, incompressible flow, pressure plus kinetic energy per volume plus gravitational energy per volume is constant. P + ½ × ρ × v² + ρ × g × h = const",
+ "reflected_formula": "[pressure] + ½ × Desire × (rise per Expansion)² + Desire × [gravitational field g] × [height] = const",
+ "reflected_sentence": "Along a steady flow, Desire and rise per Expansion and the remaining shares sum to a constant; what is gained in one term is given up by another.",
+ "shape": "keeps",
+ "rule_reason": "Conservation statement with no costs listed; conservation laws keep their shape, and the sum of the shares stays a sum.",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "pressure P",
+  "height h",
+  "gravitational field g"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "Desire and rise per Expansion trade shares that sum to a fixed whole. The conservation keeps its shape across the mirror, but half the terms have no frozen partner, so the sum cannot be spoken fully. No product was turned into anything else; the book's sums stay sums.",
+ "conflicts": "none",
+ "sense": 2,
+ "confidence": 7,
+ "closing": "Shape was rule-decided: conservation, zero costs, identity trace, keeps. No judgment call was needed for the turn. The ambiguity is only that pressure, height and g have no frozen vocabulary rows, so the reflection is structurally correct and lexically hollow; I recorded them rather than inventing partners.",
+ "knew_tsr": false
+}

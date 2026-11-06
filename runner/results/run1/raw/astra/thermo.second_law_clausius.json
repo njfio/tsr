@@ -1,0 +1,29 @@
+{
+ "id": "thermo.second_law_clausius",
+ "physical": "Heat does not spontaneously flow from a colder body to a hotter body; the entropy of an isolated system never decreases.",
+ "reflected_formula": "ΔCulmination_? ≥ 0",
+ "reflected_sentence": "Culmination never decreases.",
+ "shape": "keeps",
+ "rule_reason": "The underlying shape keeps: the listed cost rises with entropy, which explicitly does not carry resistance. The alternate Kelvin-Planck statement also keeps because its cost rises with heat, likewise explicitly non-resistant.",
+ "rule_trace": [
+  "none"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "heat",
+  "temperature",
+  "body",
+  "isolated system",
+  "universe",
+  "work",
+  "cyclic process"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "Culmination never decreases. Culmination is Culmination.",
+ "conflicts": "none",
+ "sense": 1,
+ "confidence": 7,
+ "closing": "The rule decides keeps for both supplied formulations; neither irreversibility nor a prohibition alone licenses a turn. The sentence is only the provisional entropy clause's partial reflection, not a translation of heat flow or system isolation. Its qualitative nondecrease does not assign a number to Culmination, but the vocabulary still supplies no complete relationship.",
+ "knew_tsr": false
+}

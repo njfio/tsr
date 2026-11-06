@@ -1,0 +1,19 @@
+id: mech.terminal_velocity
+domain: mechanics
+title: "Terminal velocity"
+statement: "A falling body stops accelerating when drag balances weight; that terminal speed rises with the body's mass and falls with the drag coefficient, the fluid's density and the cross-section."
+formula: "v_t = √(2 × m × g ÷ (ρ × C_d × A))"
+form: equation
+variables:
+  - {name: terminal speed v_t, quantity: velocity}
+  - {name: mass m, quantity: mass m}
+  - {name: drag coefficient C_d, quantity: drag coefficient}
+  - {name: fluid density ρ, quantity: density}
+  - {name: cross-section A, quantity: area}
+  - {name: gravitational field g, quantity: gravitational field g}
+costs:
+  - {what_gets_harder: "stopping the fall: the speed the fall settles at", rises_with: [mass m], falls_with: [drag coefficient, density]}
+standard_sources: ["any mechanics text"]
+book_status: unreflected
+review: pending
+notes: "Resistance on both sides of the difficulty (mass raises it; drag and fluid density lower it). reverse_cost joint: not forced."

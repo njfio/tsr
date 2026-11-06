@@ -1,0 +1,8 @@
+{
+ "id": "mech.damping",
+ "alternative_shape": null,
+ "rule_compliant": false,
+ "argument": "The damping force opposing velocity drains the oscillation — one resistance-caused cost (the amplitude lost per cycle rises with the damping), an odd count, so the mirror turns it around. Opposing velocity is the damping's own definition rather than a second cost, and the decay law is not an equivalence that could keep the shape.",
+ "reflected_sentence": "",
+ "knew_tsr": false
+}

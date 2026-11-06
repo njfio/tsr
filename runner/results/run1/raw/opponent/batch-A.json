@@ -1,0 +1,82 @@
+[
+  {
+    "id": "mech.angular_momentum",
+    "alternative_shape": null,
+    "rule_compliant": false,
+    "argument": "The statement is a definition plus a conservation law, both of which keep their shape; it names no cost that gets harder and no separation made by distance (the cost list is empty and every variable is marked carries_distance false). Moment of inertia carries resistance, but it enters only through the definition, and the fixed list records angular momentum's rise with it in rises_with rather than as a cost, so no rule-compliant turn exists.",
+    "reflected_sentence": "",
+    "knew_tsr": false
+  },
+  {
+    "id": "mech.bernoulli",
+    "alternative_shape": null,
+    "rule_compliant": false,
+    "argument": "The statement is a conservation law — the sum is constant along the streamline — and conservation laws keep their shape; no cost gets harder and no separation is made by distance. Density carries resistance but appears only inside the conserved sum, which cannot turn without rewriting the formula.",
+    "reflected_sentence": "",
+    "knew_tsr": false
+  },
+  {
+    "id": "mech.buoyancy",
+    "alternative_shape": "turns around",
+    "rule_compliant": true,
+    "argument": "The statement carries a limit caused by resistance: the body floats only if it is less dense than the fluid, and density carries resistance, so the body's own density limits its rising. The rule flips the condition and turns a resistance-caused limit around, while the equivalence — the lift equals the weight of the displaced fluid — keeps as the relationship.",
+    "reflected_sentence": "A body in a medium is lifted by a Frequency equal to the Desire times Attraction times Vibrance it displaces; the limit on its rising, made by its own Desire against the medium's, turns around — it rises as receptivity and alignment rise.",
+    "knew_tsr": false
+  },
+  {
+    "id": "mech.collisions_elastic_inelastic",
+    "alternative_shape": null,
+    "rule_compliant": false,
+    "argument": "Both clauses are conservation statements, which keep their shape. The inelastic conversion is set by the coefficient of restitution, which the fixed list says does not carry resistance (a ratio of speeds), so no resistance-caused cost or distance-made separation is present in the statement.",
+    "reflected_sentence": "",
+    "knew_tsr": false
+  },
+  {
+    "id": "mech.gravitational_potential_energy",
+    "alternative_shape": null,
+    "rule_compliant": false,
+    "argument": "The statement is explicitly the cost reading: the lift costs energy in proportion to mass m, which carries resistance — a single resistance-caused cost, an odd count, so the mirror must turn it around. The formula U = m × g × h only measures that cost; it is not an equivalence, conservation law or symmetry that could keep the shape, so no rule-compliant keeps reading exists.",
+    "reflected_sentence": "",
+    "knew_tsr": false
+  },
+  {
+    "id": "mech.hooke",
+    "alternative_shape": null,
+    "rule_compliant": false,
+    "argument": "Stretching the spring further gets harder in proportion to the spring constant, and stiffness carries resistance — one resistance-caused cost, an odd count, so the mirror turns it around. F = k × x is that cost's proportionality, not an identity or conservation law, and nothing else in the statement can keep the shape.",
+    "reflected_sentence": "",
+    "knew_tsr": false
+  },
+  {
+    "id": "mech.moment_of_inertia",
+    "alternative_shape": null,
+    "rule_compliant": false,
+    "argument": "The statement is a definition, and definitions keep their shape; nothing in it gets harder. The only candidate for a turn — the square of the distance from the axis — is marked carries_distance false, so no separation made by distance is present, and the mass element's resistance enters only through the definition itself.",
+    "reflected_sentence": "",
+    "knew_tsr": false
+  },
+  {
+    "id": "mech.resonance_width",
+    "alternative_shape": "keeps",
+    "rule_compliant": true,
+    "argument": "The statement carries the equivalence Q = ω0/Δω and names two distinct limits caused by the damping: the width of the response grows with it and the peak height falls with it. Two is an even number of such costs, so the mirror keeps the shape rather than turning it around.",
+    "reflected_sentence": "An oscillator responds most strongly near its natural frequency; the width of that response grows with the draining, and the peak height falls with it.",
+    "knew_tsr": false
+  },
+  {
+    "id": "mech.damping",
+    "alternative_shape": null,
+    "rule_compliant": false,
+    "argument": "The damping force opposing velocity drains the oscillation — one resistance-caused cost (the amplitude lost per cycle rises with the damping), an odd count, so the mirror turns it around. Opposing velocity is the damping's own definition rather than a second cost, and the decay law is not an equivalence that could keep the shape.",
+    "reflected_sentence": "",
+    "knew_tsr": false
+  },
+  {
+    "id": "mech.friction",
+    "alternative_shape": "keeps",
+    "rule_compliant": true,
+    "argument": "The statement names two resistance-caused costs actually present: keeping the surfaces moving past each other gets harder, rising with the coefficient of friction, and the motion is turned into heat. Two is an even number of such costs, so the mirror keeps the shape; F = μ × N stands unrewritten.",
+    "reflected_sentence": "Where two surfaces meet in resonance, the Frequency rises with the resonance, and motion is still turned into heat; keeping the surfaces moving past each other still gets harder as the resonance rises.",
+    "knew_tsr": false
+  }
+]

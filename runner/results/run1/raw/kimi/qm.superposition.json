@@ -1,0 +1,24 @@
+{
+ "id": "qm.superposition",
+ "physical": "Any linear combination of allowed states is an allowed state; the state space is linear.",
+ "reflected_formula": "",
+ "reflected_sentence": "Any weaving-together of allowed states is an allowed state, and the whole holds every part woven in.",
+ "shape": "keeps",
+ "rule_reason": "An identity; identities keep their shape. Amplitude and state-space linearity are unmapped.",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "wavefunction amplitude",
+  "state space / linearity"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "An identity keeps its shape with no cost. Amplitude and linearity have no partner and appear as plain descriptions. The kept sentence says the whole holds every part woven in.",
+ "conflicts": "none",
+ "sense": 2,
+ "confidence": 7,
+ "closing": "Amended reading applied: the cleanest keeps in the set on rule grounds (a bare identity, no costs), with the unmapped terms listed. The sentence describes the weave in plain words; no new words were introduced.",
+ "knew_tsr": false
+}

@@ -1,0 +1,24 @@
+{
+ "id": "rel.equivalence_principle",
+ "physical": "Gravitational mass equals inertial mass, so a freely falling observer feels no gravity: locally, free fall is indistinguishable from the absence of gravitation.",
+ "reflected_formula": "",
+ "reflected_sentence": "Movement M in Attraction equals Movement M, so in receptive alignment there is no gap from Attraction.",
+ "shape": "keeps",
+ "rule_reason": "Identity/equivalence with no costs keeps its shape.",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": false,
+ "unmapped_terms": [
+  "free fall",
+  "observer"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "Movement M is one equivalence across Attraction and Appreciation. Where there is no resistance, only alignment and Attraction remain.",
+ "conflicts": "none",
+ "sense": 3,
+ "confidence": 5,
+ "closing": "The rule specifies that equivalences and identities keep their shape, and costs are empty. A judgment call arises because mass m is defined as carrying resistance (inertial mass as opposition to a change in motion), and terms like 'freely falling' and 'observer' do not have direct entries in the frozen vocabulary.",
+ "knew_tsr": false
+}

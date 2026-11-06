@@ -1,0 +1,33 @@
+{
+ "id": "waves.diffraction",
+ "physical": "A wave passing through an aperture spreads; the narrower the aperture compared with the wavelength, the wider the spread.",
+ "reflected_formula": "Vibration ≈ Vibration ÷ the gap",
+ "reflected_sentence": "Where the Current meets a narrow opening in the gap, Vibration opens into limitless collection rather than being held back by separation.",
+ "shape": "turns around",
+ "rule_reason": "Separation made by distance: aperture width carries distance and makes passing through without spreading harder.",
+ "rule_trace": [
+  "separation"
+ ],
+ "forced": false,
+ "unmapped_terms": [
+  "wave",
+  "aperture width a",
+  "wavelength λ",
+  "spreading angle θ",
+  "sin"
+ ],
+ "new_words": [],
+ "monotone_claims": [
+  {
+   "rises": "Vibration",
+   "with": "alignment",
+   "sign": 1
+  }
+ ],
+ "interpretation": "In Vibration-Expansion, Vibration and the Current are limitless and receptive. What was narrowed by the gap opens into collection across Vibration. More alignment removes the gap so Vibration does not need to squeeze through.",
+ "conflicts": "none",
+ "sense": 2,
+ "confidence": 4,
+ "closing": "The rule does not decide cleanly on its own because the prompt provides both a primary framing with a separation cost (aperture width carries distance) and an alternate statement with no cost, and none of angle, wavelength, or aperture width has a partner in the frozen vocabulary.",
+ "knew_tsr": false
+}

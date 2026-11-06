@@ -1,0 +1,26 @@
+{
+ "id": "thermo.enthalpy",
+ "physical": "Enthalpy is internal energy plus pressure times volume; at constant pressure the heat absorbed equals the change in enthalpy. H = U + P × V",
+ "reflected_formula": "unmatched energy-form = unmatched energy-form + unmatched quantity × Vibrance",
+ "reflected_sentence": "The definition keeps: one unmatched energy-form is another unmatched energy-form together with an unmatched quantity times Vibrance, and when that quantity does not change, the unmatched transit equals the change in the first form.",
+ "shape": "keeps",
+ "rule_reason": "Definition, and the cost block is empty. Definitions keep their shape. Volume maps to Vibrance; nothing else in the relation carries resistance.",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "enthalpy",
+  "internal energy",
+  "pressure",
+  "heat"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "Vibrance stays in the product, and the definition keeps. The sum is not rewritten into a product of E. Conscious energy, Movement, and Culmination are not names for the other forms.",
+ "conflicts": "none",
+ "sense": 2,
+ "confidence": 7,
+ "closing": "The rule decided on its own. It is a definition with an empty cost block, so it keeps. I did not rewrite the sum as a product, and I did not place pressure at the Point of Reflection, because that note only says pressure is not a resistance quantity.",
+ "knew_tsr": false
+}

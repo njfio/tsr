@@ -1,0 +1,24 @@
+{
+ "id": "qm.entanglement",
+ "physical": "Measurements on two entangled particles are correlated more strongly than any local account allows (Bell), and the correlation does not weaken with their separation.",
+ "reflected_formula": "",
+ "reflected_sentence": "This keeps: paired outcomes stay correlated beyond what either outcome's own account allows, and that correlation does not weaken with the unmapped extent.",
+ "shape": "keeps",
+ "rule_reason": "statistical form and an empty cost block. Separation is named, but the correlation does not weaken with it, and no cost flags separation_made_by_distance",
+ "rule_trace": [
+  "none"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "probability",
+  "length"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "This keeps. It is not Attraction and not Momentum. It is not a claim about the Current.",
+ "conflicts": "none",
+ "sense": 2,
+ "confidence": 6,
+ "closing": "The rule decided from the form and the empty cost block: zero turning costs, so the shape keeps. The variable carries distance and the statement mentions separation, but the cost block does not flag a separation-made cost, and the correlation does not rise with that separation, so separation did not fire. Probability and length are unmapped. I did not map the correlation to Attraction.",
+ "knew_tsr": false
+}

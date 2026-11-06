@@ -1,0 +1,349 @@
+[
+  {
+    "id": "waves.diffraction",
+    "physical": "A wave passing through an aperture spreads; the narrower the aperture compared with the wavelength, the wider the spread.",
+    "reflected_formula": "Vibration ≈ Vibration ÷ the gap",
+    "reflected_sentence": "Where the Current meets a narrow opening in the gap, Vibration opens into limitless collection rather than being held back by separation.",
+    "shape": "turns around",
+    "rule_reason": "Separation made by distance: aperture width carries distance and makes passing through without spreading harder.",
+    "rule_trace": [
+      "separation"
+    ],
+    "forced": false,
+    "unmapped_terms": [
+      "wave",
+      "aperture width a",
+      "wavelength λ",
+      "spreading angle θ",
+      "sin"
+    ],
+    "new_words": [],
+    "monotone_claims": [
+      {
+        "rises": "Vibration",
+        "with": "alignment",
+        "sign": 1
+      }
+    ],
+    "interpretation": "In Vibration-Expansion, Vibration and the Current are limitless and receptive. What was narrowed by the gap opens into collection across Vibration. More alignment removes the gap so Vibration does not need to squeeze through.",
+    "conflicts": "none",
+    "sense": 2,
+    "confidence": 4,
+    "closing": "The rule does not decide cleanly on its own because the prompt provides both a primary framing with a separation cost (aperture width carries distance) and an alternate statement with no cost, and none of angle, wavelength, or aperture width has a partner in the frozen vocabulary.",
+    "knew_tsr": false
+  },
+  {
+    "id": "waves.dispersion",
+    "physical": "In a dispersive medium the phase velocity depends on wavelength, so a pulse made of many wavelengths spreads as it travels.",
+    "reflected_formula": "rise per Expansion = rise per Expansion(Vibration)",
+    "reflected_sentence": "Rise per Expansion varies with the extent of each Vibration, so a collection of many Vibrations spreads across Expansion.",
+    "shape": "keeps",
+    "rule_reason": "The cost rises with dispersion, which is fixed as a dependence that does not carry resistance, and separation_made_by_distance is false.",
+    "rule_trace": [
+      "none"
+    ],
+    "forced": true,
+    "unmapped_terms": [
+      "dispersive medium",
+      "phase velocity v_p",
+      "wavelength λ",
+      "dispersion",
+      "pulse"
+    ],
+    "new_words": [],
+    "monotone_claims": [
+      {
+        "rises": "Vibration",
+        "with": "Expansion",
+        "sign": 1
+      }
+    ],
+    "interpretation": "Rise per Expansion depends on Vibration across Vibration-Expansion. When many Vibrations move together, their rise per Expansion differs across Expansion. Without the gap, the dependence keeps its shape in Vibrational Reality.",
+    "conflicts": "none",
+    "sense": 2,
+    "confidence": 6,
+    "closing": "The rule decided the shape on its own because dispersion, phase velocity, and wavelength are all explicitly marked as not carrying resistance and carries_distance is false, leaving zero qualifying costs. However, almost none of the wave-specific terms have exact partners in the frozen table.",
+    "knew_tsr": false
+  },
+  {
+    "id": "waves.doppler",
+    "physical": "A receiver moving toward a source, or a source moving toward a receiver, measures a higher frequency than the one emitted; moving apart, a lower one.",
+    "reflected_formula": "Frequency' = Frequency × (rise per Expansion + rise per Expansion_r) ÷ (rise per Expansion − rise per Expansion_s)",
+    "reflected_sentence": "When receptive and collecting Movement come into alignment, the rate of Vibration per Expansion increases; when out of alignment, it decreases.",
+    "shape": "keeps",
+    "rule_reason": "No costs are listed and none of physical frequency, wave speed, or velocity carries resistance or distance.",
+    "rule_trace": [
+      "none"
+    ],
+    "forced": true,
+    "unmapped_terms": [
+      "emitted frequency f",
+      "measured frequency f'",
+      "wave speed v",
+      "receiver",
+      "source"
+    ],
+    "new_words": [],
+    "monotone_claims": [
+      {
+        "rises": "rise per Expansion",
+        "with": "alignment",
+        "sign": 1
+      }
+    ],
+    "interpretation": "In Vibration-Expansion, rise per Expansion combines with the rise per Expansion of each Movement. Because physical frequency is a rate rather than TSR Frequency, the frozen vocabulary lacks a partner for emitted rate and collapses all three velocities into rise per Expansion. The relation keeps its shape in form only.",
+    "conflicts": "\"frequency (physical): does not carry resistance — a rate; NB: not TSR Frequency\" and \"Frequency is not a rate and not cycles per second.\"",
+    "sense": 1,
+    "confidence": 6,
+    "closing": "The rule decided keeps without a judgment call because costs is empty and none of the variables carries resistance or distance. The reflection fails in sense because physical frequency is explicitly barred from mapping to TSR Frequency and the nonphysical side forbids travel and separation.",
+    "knew_tsr": false
+  },
+  {
+    "id": "waves.fresnel_partial_reflection",
+    "physical": "At an interface between two media part of the light reflects and part transmits; the reflected fraction grows with the index contrast and the two fractions sum to one.",
+    "reflected_formula": "Reflected = ((the gap_1 − the gap_2) ÷ (the gap_1 + the gap_2))²",
+    "reflected_sentence": "Where the Current meets receptivity instead of a contrast in the gap, collection flows through completely rather than splitting at the Point of Reflection.",
+    "shape": "turns around",
+    "rule_reason": "Judgment call on undetermined index contrast: treating the medium contrast as resistance (the gap) makes getting through a resistance-cost that turns around.",
+    "rule_trace": [
+      "resistance-cost"
+    ],
+    "forced": false,
+    "unmapped_terms": [
+      "interface",
+      "media",
+      "reflected fraction R",
+      "transmitted fraction",
+      "index contrast",
+      "refractive index n"
+    ],
+    "new_words": [],
+    "monotone_claims": [
+      {
+        "rises": "Current",
+        "with": "alignment",
+        "sign": 1
+      }
+    ],
+    "interpretation": "In Vibrational Reality, the Current is limitless and receptive. As alignment increases and the gap vanishes, the Current does not split into separate parts at the Point of Reflection. Receptivity receives the whole Current in conscious energy.",
+    "conflicts": "\"No sums where the book has products.\"",
+    "sense": 2,
+    "confidence": 3,
+    "closing": "A judgment call was required because index contrast and refractive index are explicitly marked UNDETERMINED: reading the medium as opposition gives one resistance-cost (turns around), whereas reading index as a pure ratio of speeds gives zero resistance-costs (keeps). In addition, boundary is a forbidden word on the nonphysical side and none of the optical variables has a frozen partner.",
+    "knew_tsr": false
+  },
+  {
+    "id": "waves.group_velocity",
+    "physical": "The envelope of a wave packet travels at the group velocity, the derivative of angular frequency with respect to wavenumber; it is the speed at which energy and signal travel.",
+    "reflected_formula": "rise per Expansion = d(Expansion) ÷ d(Vibration)",
+    "reflected_sentence": "The overall rise per Expansion of a packet of Vibration is the change of Expansion with inverse Vibration, which is how conscious energy E moves.",
+    "shape": "keeps",
+    "rule_reason": "Definition with no costs and no quantities carrying resistance or distance.",
+    "rule_trace": [
+      "identity"
+    ],
+    "forced": true,
+    "unmapped_terms": [
+      "envelope",
+      "wave packet",
+      "group velocity v_g",
+      "angular frequency ω",
+      "wavenumber k",
+      "derivative",
+      "signal"
+    ],
+    "new_words": [],
+    "monotone_claims": [],
+    "interpretation": "Rise per Expansion defines how conscious energy E moves in Vibration-Expansion. Both Vibration and Expansion are limitless on the receptive side. Because physical angular frequency and wavenumber have no partners in the frozen table, the definition cannot be stated without losing the wave packet distinction.",
+    "conflicts": "\"Frequency is not a rate and not cycles per second.\"",
+    "sense": 1,
+    "confidence": 7,
+    "closing": "The rule decided keeps on its own because the relation is a definition with zero costs and no resistance-carrying or distance-carrying quantities. However, group velocity, angular frequency, and wavenumber are all unmapped in the frozen vocabulary, and travel and speed are forbidden on the nonphysical side.",
+    "knew_tsr": false
+  },
+  {
+    "id": "waves.phase_velocity",
+    "physical": "A wave's phase advances by one cycle per wavelength; the phase velocity is wavelength times frequency, or angular frequency over wavenumber.",
+    "reflected_formula": "rise per Expansion = Expansion ÷ Vibration",
+    "reflected_sentence": "A Vibration advances by one cycle per extent of Vibration, and its rise per Expansion is the ratio of rate in Expansion to inverse extent of Vibration.",
+    "shape": "keeps",
+    "rule_reason": "Definition with no costs and no quantities carrying resistance or distance.",
+    "rule_trace": [
+      "identity"
+    ],
+    "forced": true,
+    "unmapped_terms": [
+      "phase",
+      "cycle",
+      "wavelength",
+      "phase velocity v_p",
+      "angular frequency ω",
+      "wavenumber k"
+    ],
+    "new_words": [],
+    "monotone_claims": [],
+    "interpretation": "In Vibration-Expansion, rise per Expansion relates Vibration and Expansion directly. Without partners for phase, cycle, wavelength, physical frequency, or wavenumber, the reflected definition collapses into the same generic rise per Expansion as every other velocity. Nothing distinguishes phase velocity from group velocity in the frozen words.",
+    "conflicts": "\"Frequency is not a rate and not cycles per second.\"",
+    "sense": 1,
+    "confidence": 7,
+    "closing": "The rule forced keeps without ambiguity because this is a definition with no costs and no resistance or distance flags. The result reads as degenerate in TSR's terms because all wave-kinematic variables lack partners in the frozen vocabulary.",
+    "knew_tsr": false
+  },
+  {
+    "id": "waves.snell_refraction",
+    "physical": "Crossing into a medium with a different refractive index, a ray bends so that index times the sine of the angle is the same on both sides.",
+    "reflected_formula": "the gap_1 × Vibration_1 = the gap_2 × Vibration_2",
+    "reflected_sentence": "Crossing the Point of Reflection into a different gap, the product of the gap and the angle of Vibration remains the same on both sides.",
+    "shape": "keeps",
+    "rule_reason": "Equivalence across an interface with zero costs listed; even though refractive index is undetermined, no cost rises with it in this relation.",
+    "rule_trace": [
+      "identity"
+    ],
+    "forced": false,
+    "unmapped_terms": [
+      "medium",
+      "refractive index n",
+      "ray",
+      "angle θ",
+      "sin"
+    ],
+    "new_words": [],
+    "monotone_claims": [],
+    "interpretation": "At the Point of Reflection, the product of Vibration and the gap is preserved on both sides. The relation keeps its shape as an equivalence in Vibration-Expansion. Because neither refractive index nor angle has a partner in the frozen table, the geometric bending of a ray cannot be expressed in frozen words.",
+    "conflicts": "none",
+    "sense": 1,
+    "confidence": 5,
+    "closing": "Although costs is empty so the equality keeps its shape, refractive index is explicitly marked UNDETERMINED (a judgment call), making forced false. Moreover, neither refractive index nor angle maps to the frozen vocabulary.",
+    "knew_tsr": false
+  },
+  {
+    "id": "waves.standing_waves",
+    "physical": "Between two fixed ends only wavelengths that fit a whole number of half-waves into the length persist; the ends force nodes and the allowed modes are set by the separation.",
+    "reflected_formula": "Vibration_n = Vibration ÷ n",
+    "reflected_sentence": "Without separation between fixed ends, all Vibrations persist in limitless resonance rather than only discrete modes that fit.",
+    "shape": "turns around",
+    "rule_reason": "Limit caused by separation made by distance: length L between the ends carries distance and restricts which vibrations can persist.",
+    "rule_trace": [
+      "separation"
+    ],
+    "forced": true,
+    "unmapped_terms": [
+      "fixed ends",
+      "wavelength λ",
+      "half-waves",
+      "length L",
+      "nodes",
+      "mode number n"
+    ],
+    "new_words": [],
+    "monotone_claims": [
+      {
+        "rises": "Vibration",
+        "with": "alignment",
+        "sign": 1
+      }
+    ],
+    "interpretation": "In Vibrational Reality, Vibration is limitless and receptive rather than confined between ends. Turning the limit around removes the restriction that only certain Vibrations can persist. Every Vibration is already in resonance without numbers or separation.",
+    "conflicts": "none",
+    "sense": 3,
+    "confidence": 6,
+    "closing": "The rule decided turns around on its own because the relation is a limit with one cost where separation_made_by_distance is true and length L carries distance. Still, wavelength, nodes, and mode number have no partners in the frozen vocabulary, and numbers do not cross the mirror.",
+    "knew_tsr": false
+  },
+  {
+    "id": "waves.superposition",
+    "physical": "In a linear medium the net displacement at any point is the sum of the displacements each wave would produce alone.",
+    "reflected_formula": "Vibration = Vibration_1 + Vibration_2",
+    "reflected_sentence": "Two Vibrations met in receptivity culminate together into the whole extent of Vibration.",
+    "shape": "keeps",
+    "rule_reason": "Identity with zero costs and no quantities carrying resistance or distance.",
+    "rule_trace": [
+      "identity"
+    ],
+    "forced": true,
+    "unmapped_terms": [
+      "linear medium",
+      "net displacement y",
+      "point",
+      "amplitude"
+    ],
+    "new_words": [],
+    "monotone_claims": [
+      {
+        "rises": "Vibration",
+        "with": "Vibration",
+        "sign": 1
+      }
+    ],
+    "interpretation": "In Vibrational Reality, each Vibration contributes to the whole Vibration and they culminate in collection. The identity keeps its shape because amplitude carries no gap. However, the formula is a sum while the traps forbid sums where the book has products.",
+    "conflicts": "\"No sums where the book has products.\"",
+    "sense": 3,
+    "confidence": 7,
+    "closing": "The rule forced keeps without a judgment call because superposition is an identity with no costs and amplitude does not carry resistance or distance. The formula y = y1 + y2 retains a sum because the ground rules forbid rewriting the formula, which sits in tension with the trap against sums.",
+    "knew_tsr": false
+  },
+  {
+    "id": "waves.total_internal_reflection",
+    "physical": "Going from a higher to a lower index, beyond the critical angle no light crosses the boundary; all of it is reflected, while an evanescent field reaches past the surface without carrying energy across.",
+    "reflected_formula": "Vibration_c = the gap_2 ÷ the gap_1",
+    "reflected_sentence": "Where receptivity replaces the gap, the Current and conscious energy E are already across the Point of Reflection in full collection rather than blocked past a critical angle.",
+    "shape": "turns around",
+    "rule_reason": "Judgment call on undetermined refractive index: treating refractive index as resistance makes the critical-angle barrier a limit caused by resistance that turns around.",
+    "rule_trace": [
+      "resistance-cost"
+    ],
+    "forced": false,
+    "unmapped_terms": [
+      "critical angle θ_c",
+      "refractive index n",
+      "evanescent field",
+      "surface",
+      "sin"
+    ],
+    "new_words": [],
+    "monotone_claims": [
+      {
+        "rises": "Current",
+        "with": "alignment",
+        "sign": 1
+      }
+    ],
+    "interpretation": "In Vibrational Reality, the Current is limitless and receptive. Turning the limit around means conscious energy E is never blocked from collection at the Point of Reflection. With alignment and receptivity, what was unreachable past the gap is already received.",
+    "conflicts": "none",
+    "sense": 2,
+    "confidence": 3,
+    "closing": "The rule did not decide on its own because the single cost rises with refractive index, which the prompt marks as UNDETERMINED (a judgment call). If refractive index carries resistance, the limit turns around; if it is a pure ratio of speeds, the cost is not caused by resistance and the relation keeps its shape.",
+    "knew_tsr": false
+  },
+  {
+    "id": "waves.interference_cancellation",
+    "physical": "Two waves in opposite phase cancel at a point; the cancellation is located, and energy is conserved overall.",
+    "reflected_formula": "",
+    "reflected_sentence": "Without separation, two Vibrations in opposite phase do not cancel but culminate while conscious energy E is preserved.",
+    "shape": "turns around",
+    "rule_reason": "Separation made by distance: location of the point carries distance and makes two vibrations coexisting at one location a separation cost.",
+    "rule_trace": [
+      "separation"
+    ],
+    "forced": true,
+    "unmapped_terms": [
+      "phase difference",
+      "opposite phase",
+      "amplitude"
+    ],
+    "new_words": [],
+    "monotone_claims": [
+      {
+        "rises": "Culmination (provisional)",
+        "with": "Vibration",
+        "sign": 1
+      }
+    ],
+    "interpretation": "In Vibrational Reality, there is no separation to set one Vibration against another. Instead of canceling, two Vibrations culminate in collection and resonance. Conscious energy E remains whole across the Present.",
+    "conflicts": "none",
+    "sense": 5,
+    "confidence": 7,
+    "closing": "The rule decided turns around without a judgment call because the cost has separation_made_by_distance set to true and location of the point carries distance, while the frozen vocabulary explicitly supplies culminate as what two vibrations do instead of cancel.",
+    "knew_tsr": false
+  }
+]

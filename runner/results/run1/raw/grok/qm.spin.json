@@ -1,0 +1,24 @@
+{
+ "id": "qm.spin",
+ "physical": "Particles carry an intrinsic angular momentum that is quantized in half-integer or integer multiples of the reduced Planck constant and is not a rotation in space.",
+ "reflected_formula": "",
+ "reflected_sentence": "This definition keeps: the carried intrinsic quantity stays unmapped and is not a rotation in Vibration, and the multiples of the constant do not cross.",
+ "shape": "keeps",
+ "rule_reason": "definition; empty cost block",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "spin",
+  "Planck constant"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "This keeps. It is not momentum and not Momentum. Vibration enters only in the negation.",
+ "conflicts": "none",
+ "sense": 2,
+ "confidence": 7,
+ "closing": "The rule decided: definition, empty costs, shape keeps. The only table partner in the statement is space to Vibration, used in the negation. Spin and the Planck constant are unmapped; I did not send spin to momentum. Half-integer multiples are numbers and do not cross. No judgment call on the shape.",
+ "knew_tsr": false
+}

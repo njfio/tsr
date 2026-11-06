@@ -1,0 +1,28 @@
+{
+ "id": "field.weak_flavor_change",
+ "physical": "Only the weak interaction changes one kind of quark or lepton into another (through the charged W boson); the strong and electromagnetic interactions never do.",
+ "reflected_formula": "",
+ "reflected_sentence": "Only weak Frequency gives realization from one form into another; strong Frequency and Idle and Reflected Frequency never do.",
+ "shape": "keeps",
+ "rule_reason": "Identity with no costs keeps its shape.",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "weak interaction",
+  "quark",
+  "lepton",
+  "charged W boson",
+  "strong interaction",
+  "coupling constant"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "Electric and magnetic reflect to Idle and Reflected, and transmutation has realization as its reflection. None of the particle types or the weak and strong interactions have partners in the frozen vocabulary, though the identity keeps its shape.",
+ "conflicts": "none",
+ "sense": 1,
+ "confidence": 7,
+ "closing": "As an identity with no resistance or separation costs, the rule forces the shape to keep, while almost all of the domain-specific nouns go into unmapped_terms.",
+ "knew_tsr": false
+}

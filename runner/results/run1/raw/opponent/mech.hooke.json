@@ -1,0 +1,8 @@
+{
+ "id": "mech.hooke",
+ "alternative_shape": null,
+ "rule_compliant": false,
+ "argument": "Stretching the spring further gets harder in proportion to the spring constant, and stiffness carries resistance — one resistance-caused cost, an odd count, so the mirror turns it around. F = k × x is that cost's proportionality, not an identity or conservation law, and nothing else in the statement can keep the shape.",
+ "reflected_sentence": "",
+ "knew_tsr": false
+}

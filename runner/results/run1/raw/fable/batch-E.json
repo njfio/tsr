@@ -1,0 +1,348 @@
+[
+  {
+    "id": "em.coulomb",
+    "physical": "Coulomb's law: Two charges push or pull with a force proportional to the product of the charges and inversely proportional to the square of their separation. F = k × q1 × q2 ÷ r²",
+    "reflected_formula": "Frequency = [k: unmapped] × [charge: unmapped] × [charge: unmapped] ÷ [separation r: unmapped]²",
+    "reflected_sentence": "Two sources meet with a Frequency that is the product of the two, and that Frequency rises with alignment rather than falling with separation.",
+    "shape": "turns around",
+    "rule_reason": "separation made by distance: the interaction is weakened by the separation r (carries_distance true); one such cost, odd, so the reading turns around",
+    "rule_trace": [
+      "separation"
+    ],
+    "forced": false,
+    "unmapped_terms": [
+      "charge q",
+      "Coulomb constant k",
+      "separation r (length)",
+      "square (inverse-square dependence)"
+    ],
+    "new_words": [],
+    "monotone_claims": [
+      {
+        "rises": "Frequency",
+        "with": "alignment",
+        "sign": 1
+      }
+    ],
+    "interpretation": "Force crosses as Frequency, so the product of two [charges] gives a Frequency. The weakening by separation turns around: the Frequency grows as the gap closes, that is, with alignment. Nothing in the frozen words says what a [charge] is on the other side, so the product itself has no reading.",
+    "conflicts": "none",
+    "sense": 2,
+    "confidence": 5,
+    "closing": "The rule did not decide cleanly. The main statement lists no costs, which would make it keep, while the variable r is flagged carries_distance and the alternate statement names a separation cost; the rule's line that a separation made by distance turns around settled it, but that was my call between two readings of the same data. Charge has no partner in the table, and the table's electric/Idle pairing is not the same thing as charge, so the central terms cannot cross and the result says little. (Amendment 1 applied: shape is the rule's call on the relationship; unmapped terms are listed separately and described in plain words in the sentence.)",
+    "knew_tsr": false
+  },
+  {
+    "id": "em.displacement_current",
+    "physical": "Maxwell's displacement current: A changing electric field acts as a source of magnetic field just as a current does, which closes the symmetry between the two fields and makes electromagnetic waves possible. ∇ × B = μ0 × J + μ0 × ε0 × dE ÷ dt",
+    "reflected_formula": "[curl: unmapped] Reflected = [permeability: unmapped] × [electric current J: unmapped] + [permeability: unmapped] × [permittivity: unmapped] × dIdle ÷ dExpansion",
+    "reflected_sentence": "A change in the Idle gives rise to the Reflected just as a flow of sources does, and the two co-create each other.",
+    "shape": "keeps",
+    "rule_reason": "symmetry: no cost and no separation, so the relationship keeps its shape",
+    "rule_trace": [
+      "identity"
+    ],
+    "forced": true,
+    "unmapped_terms": [
+      "curl ∇×",
+      "electric current J",
+      "permeability μ0",
+      "permittivity ε0",
+      "field (as in electric field, magnetic field)",
+      "electromagnetic wave"
+    ],
+    "new_words": [],
+    "monotone_claims": [
+      {
+        "rises": "Reflected",
+        "with": "Idle",
+        "sign": 1
+      }
+    ],
+    "interpretation": "A change in the Idle across Expansion gives rise to the Reflected. The table already calls electric and magnetic co-creating partners, and this symmetry reads the same way: each change in one brings the other. The formula's sum is kept as given, since the physical side has it.",
+    "conflicts": "none",
+    "sense": 3,
+    "confidence": 6,
+    "closing": "The rule decided on its own: the relation is labelled a symmetry, lists no costs, and nothing carries distance, so it keeps. The judgment I had to make was lexical, not structural: mapping electric field to Idle and magnetic field to Reflected relies on the table's electric/magnetic rows, since 'field' itself has no partner, and electric current J must stay unmapped because the nonphysical 'Current' is the partner of Past and c, not of electric current. The reflected formula is mostly placeholders. (Amendment 1 applied: shape is the rule's call on the relationship; unmapped terms are listed separately and described in plain words in the sentence.)",
+    "knew_tsr": false
+  },
+  {
+    "id": "em.faraday",
+    "physical": "Faraday's law: A changing magnetic flux through a loop induces an electromotive force equal to the rate of change of the flux. EMF = dΦ_B ÷ dt",
+    "reflected_formula": "[voltage: unmapped] = d[Reflected flux: flux unmapped] ÷ dExpansion",
+    "reflected_sentence": "A change in the Reflected across Expansion gives rise to a push on sources.",
+    "shape": "keeps",
+    "rule_reason": "equation with no cost and no separation; none fired, so it keeps",
+    "rule_trace": [
+      "none"
+    ],
+    "forced": true,
+    "unmapped_terms": [
+      "electromotive force (voltage)",
+      "magnetic flux (flux)",
+      "loop",
+      "rate of change"
+    ],
+    "new_words": [],
+    "monotone_claims": [],
+    "interpretation": "A change in the Reflected, read across Expansion, gives rise to something the table has no word for. The relationship keeps its shape, but with the left side unmapped the sentence names a cause and no effect. Only the Reflected and Expansion cross.",
+    "conflicts": "none",
+    "sense": 1,
+    "confidence": 6,
+    "closing": "The rule decided on its own: no cost, no separation, so keeps. The problem is vocabulary, not shape. Voltage and flux have no partners, and 'rate of change' is a quantity per time, which the mirror forbids; writing d ÷ dExpansion reads as a rate in disguise even though Expansion is the frozen partner of time. I could state no monotone claim in frozen words. (Amendment 1 applied: shape is the rule's call on the relationship; unmapped terms are listed separately and described in plain words in the sentence.)",
+    "knew_tsr": false
+  },
+  {
+    "id": "em.gauss",
+    "physical": "Gauss's law: The electric flux through any closed surface equals the enclosed charge divided by the permittivity of free space. Φ_E = Q ÷ ε0",
+    "reflected_formula": "[Idle flux: flux unmapped] = [charge: unmapped] ÷ [permittivity: unmapped]",
+    "reflected_sentence": "The Idle gathered over any closed surface equals the enclosed source over the medium constant.",
+    "shape": "keeps",
+    "rule_reason": "identity: no cost and no separation, so it keeps",
+    "rule_trace": [
+      "identity"
+    ],
+    "forced": true,
+    "unmapped_terms": [
+      "electric flux (flux)",
+      "charge Q",
+      "permittivity ε0",
+      "closed surface",
+      "enclosed"
+    ],
+    "new_words": [],
+    "monotone_claims": [],
+    "interpretation": "The relationship keeps its shape, but only one of its three terms has even a partial partner. The Idle is in proportion to an enclosed [charge], which the table does not name. 'Closed surface' and 'enclosed' are spatial separations of inside from outside, which the mirror forbids, and the table offers no replacement.",
+    "conflicts": "none",
+    "sense": 1,
+    "confidence": 7,
+    "closing": "The rule decided on its own: an identity keeps. There was nothing to weigh. But the statement is built on inside-versus-outside of a closed surface, and both of those words are banned on the nonphysical side with no frozen substitute, so what keeps its shape is a shape with no content. Charge again has no partner. (Amendment 1 applied: shape is the rule's call on the relationship; unmapped terms are listed separately and described in plain words in the sentence.)",
+    "knew_tsr": false
+  },
+  {
+    "id": "em.impedance",
+    "physical": "Impedance: In an alternating-current circuit the ratio of voltage to current is the impedance, whose magnitude combines resistance with the inductive and capacitive reactances. |Z| = √(R² + (X_L − X_C)²)",
+    "reflected_formula": "[impedance: unmapped] = √(the gap² + ([reactance_L: unmapped] − [reactance_C: unmapped])²)",
+    "reflected_sentence": "The whole opposition met by an alternating flow combines the gap with the opposition to change, and, read receptively, the whole receptivity combines the same way.",
+    "shape": "keeps",
+    "rule_reason": "definition: it keeps its shape",
+    "rule_trace": [
+      "identity"
+    ],
+    "forced": true,
+    "unmapped_terms": [
+      "impedance Z",
+      "reactance X_L",
+      "reactance X_C",
+      "voltage",
+      "electric current",
+      "alternating-current circuit",
+      "magnitude",
+      "square root"
+    ],
+    "new_words": [],
+    "monotone_claims": [
+      {
+        "rises": "the gap",
+        "with": "alignment",
+        "sign": -1
+      }
+    ],
+    "interpretation": "Every term in this definition carries resistance, and resistance has only one appearance on the other side, the gap. The definition keeps its shape, so the gap is combined with two more oppositions that the table does not name. 'Resistant becomes receptive' flips the condition of each term, but a definition that is nothing but oppositions has no frozen content once flipped.",
+    "conflicts": "none",
+    "sense": 1,
+    "confidence": 6,
+    "closing": "The rule decided on its own: definitions keep. The ambiguity is what the terms become. Resistance crosses as the gap; impedance and reactance also carry resistance, but the table gives the gap as resistance's only appearance, so either all three collapse into one word or two stay unmapped. I left them unmapped rather than collapse them. Either way the formula on the far side is the gap combined with itself, which is nonsense in TSR's own terms. (Amendment 1 applied: shape is the rule's call on the relationship; unmapped terms are listed separately and described in plain words in the sentence.)",
+    "knew_tsr": false
+  },
+  {
+    "id": "em.lenz_inductance",
+    "physical": "Lenz's law and self-inductance: An induced current flows so as to oppose the change that produced it; a coil opposes a change in its own current with a back-EMF proportional to its inductance. EMF = L × dI ÷ dt",
+    "reflected_formula": "[voltage: unmapped] = [inductance: unmapped] × d[electric current: unmapped] ÷ dExpansion",
+    "reflected_sentence": "A change is received rather than opposed: a change in the flow comes about more easily the more receptive the coil is, across Expansion.",
+    "shape": "turns around",
+    "rule_reason": "resistance-cost: changing the current gets harder as inductance rises, and inductance carries resistance; one cost, odd, so it turns around",
+    "rule_trace": [
+      "resistance-cost"
+    ],
+    "forced": true,
+    "unmapped_terms": [
+      "back-EMF (voltage)",
+      "inductance L",
+      "electric current I",
+      "coil",
+      "induced",
+      "rate of change"
+    ],
+    "new_words": [],
+    "monotone_claims": [
+      {
+        "rises": "receptivity",
+        "with": "alignment",
+        "sign": 1
+      }
+    ],
+    "interpretation": "On the physical side a change is opposed in proportion to the opposition built in. Turned around, a change is received in proportion to receptivity: the more receptive, the more easily the change comes about. The formula is unchanged; only the reading turns, from opposing to receiving.",
+    "conflicts": "none",
+    "sense": 3,
+    "confidence": 7,
+    "closing": "The rule decided on its own: the prompt lists one cost rising with inductance, inductance is fixed as carrying resistance, and one is odd. The turned reading ('opposition to change becomes receptivity to change') is at least coherent as a sentence. But no term in the formula other than time has a partner, and the only monotone claim I could state in frozen words is close to a tautology from the table's own definition of alignment. The specific physical content, that the induced flow is directed against its cause, has no image. (Amendment 1 applied: shape is the rule's call on the relationship; unmapped terms are listed separately and described in plain words in the sentence.)",
+    "knew_tsr": false
+  },
+  {
+    "id": "em.mutual_induction",
+    "physical": "Mutual induction: A changing current in one coil induces an EMF in a nearby coil in proportion to their mutual inductance, which depends on their geometry and how much flux they share. EMF_2 = M × dI_1 ÷ dt",
+    "reflected_formula": "[voltage_2: unmapped] = [mutual inductance: unmapped] × d[electric current_1: unmapped] ÷ dExpansion",
+    "reflected_sentence": "A change in the flow of one gives rise to a push in another in proportion to how much they share.",
+    "shape": "keeps",
+    "rule_reason": "equation with no listed cost and no variable carrying distance; none fired, so it keeps",
+    "rule_trace": [
+      "none"
+    ],
+    "forced": false,
+    "unmapped_terms": [
+      "induced EMF (voltage)",
+      "mutual inductance M",
+      "electric current I_1",
+      "coil",
+      "nearby",
+      "geometry",
+      "flux"
+    ],
+    "new_words": [],
+    "monotone_claims": [],
+    "interpretation": "The relationship keeps its shape: a change in one gives rise to a response in the other, in proportion to what they share. 'Nearby' and 'geometry' are separations made by distance and have no frozen partner; the nearest legal reading would be alignment, but the table does not license that substitution. Without partners for either side of the equation the sentence says only that sharing couples them.",
+    "conflicts": "none",
+    "sense": 2,
+    "confidence": 4,
+    "closing": "This needed a judgment call. The prompt lists no cost, so by the count rule it keeps. But mutual inductance is fixed as carrying resistance and the induced EMF rises with it, and the statement's 'nearby' and 'geometry' are distance-made separations that were not flagged carries_distance. I applied the rule to the data as given rather than reading a cost or a separation into it, which is why confidence is low. Note that the symbol M here is mutual inductance, not the table's Movement M. (Amendment 1 applied: shape is the rule's call on the relationship; unmapped terms are listed separately and described in plain words in the sentence.)",
+    "knew_tsr": false
+  },
+  {
+    "id": "em.ohm_cost",
+    "physical": "Ohm's law (the cost reading): For a given voltage, the current that flows falls as the resistance rises. I = V ÷ R",
+    "reflected_formula": "[electric current: unmapped] = [voltage: unmapped] ÷ the gap",
+    "reflected_sentence": "For a given push, the flow rises as receptivity rises, that is, as the gap closes.",
+    "shape": "turns around",
+    "rule_reason": "resistance-cost: current flowing for a given voltage gets harder as electrical resistance rises; one cost, odd, so it turns around",
+    "rule_trace": [
+      "resistance-cost"
+    ],
+    "forced": true,
+    "unmapped_terms": [
+      "electric current I",
+      "voltage V"
+    ],
+    "new_words": [],
+    "monotone_claims": [
+      {
+        "rises": "the gap",
+        "with": "alignment",
+        "sign": -1
+      }
+    ],
+    "interpretation": "Resistance crosses as the gap, and the cost it imposes turns around: what is harder with more resistance is easier with more receptivity. For a given [voltage], the flow is greater the smaller the gap, which is to say the greater the alignment. The formula stands as written; the reading turns from a flow throttled by opposition to a flow opened by receptivity.",
+    "conflicts": "none",
+    "sense": 3,
+    "confidence": 7,
+    "closing": "The rule decided on its own: one listed cost rising with electrical resistance, which is fixed as carrying resistance. The turned reading is coherent in the framework's terms and agrees with the table's gloss of alignment as how little you resist. The weakness is that neither the flow nor the voltage has a partner, so the only frozen monotone claim is the gap falling with alignment, which the table already states by definition rather than something the reflection adds. (Amendment 1 applied: shape is the rule's call on the relationship; unmapped terms are listed separately and described in plain words in the sentence.)",
+    "knew_tsr": false
+  },
+  {
+    "id": "em.ohm_definition",
+    "physical": "Ohm's law (the definition of resistance): Resistance is the ratio of the voltage across a conductor to the current through it. R = V ÷ I",
+    "reflected_formula": "the gap = [voltage: unmapped] ÷ [electric current: unmapped]",
+    "reflected_sentence": "The gap is the ratio of the push across a conductor to the flow through it.",
+    "shape": "keeps",
+    "rule_reason": "definition: it keeps its shape",
+    "rule_trace": [
+      "identity"
+    ],
+    "forced": true,
+    "unmapped_terms": [
+      "voltage V",
+      "electric current I",
+      "conductor"
+    ],
+    "new_words": [],
+    "monotone_claims": [],
+    "interpretation": "Resistance crosses as the gap and the definition keeps its shape, so the gap is defined as a ratio of two things the table does not name. Nothing turns, because nothing is said to get harder. A definition of the gap in terms of unmapped quantities adds nothing to the table.",
+    "conflicts": "none",
+    "sense": 1,
+    "confidence": 7,
+    "closing": "The rule decided on its own: definitions keep. The pairing with em.ohm_cost is worth noting: the same formula keeps here and turns around there, which is exactly what the prompt says should happen (the formula stays, the reading turns), so this is not a contradiction. But a definition whose defining terms have no partners is empty on the far side. 'Ratio' also edges toward a number, which the mirror forbids. (Amendment 1 applied: shape is the rule's call on the relationship; unmapped terms are listed separately and described in plain words in the sentence.)",
+    "knew_tsr": false
+  },
+  {
+    "id": "em.poynting",
+    "physical": "Poynting flux: The energy carried by an electromagnetic field per unit area per unit time is the cross product of the electric and magnetic fields over the permeability. S = E × B ÷ μ0",
+    "reflected_formula": "[Poynting vector: unmapped] = Idle × Reflected ÷ [permeability: unmapped]",
+    "reflected_sentence": "The conscious energy collected by the Idle and the Reflected together is their product over the medium constant.",
+    "shape": "keeps",
+    "rule_reason": "definition: it keeps its shape; radiation reflects as collection but that is a term reflecting, not the shape turning",
+    "rule_trace": [
+      "identity"
+    ],
+    "forced": true,
+    "unmapped_terms": [
+      "Poynting vector S",
+      "permeability μ0",
+      "cross product",
+      "per unit area",
+      "per unit time"
+    ],
+    "new_words": [],
+    "monotone_claims": [
+      {
+        "rises": "conscious energy",
+        "with": "Idle",
+        "sign": 1
+      },
+      {
+        "rises": "conscious energy",
+        "with": "Reflected",
+        "sign": 1
+      }
+    ],
+    "interpretation": "Physical energy crosses as conscious energy, and the outward flux of the physical side reflects as collection. The Idle and the Reflected, the co-creating partners, yield that energy as a product, which is consistent with the table's insistence on products. The 'per area per time' of the physical side does not cross at all; only the product relationship does.",
+    "conflicts": "none",
+    "sense": 3,
+    "confidence": 6,
+    "closing": "The rule decided on its own: a definition keeps. The prompt's physical_terms gave E and B as electric and magnetic, so the Idle and Reflected mapping was provided rather than chosen. The judgment call was reading 'energy carried per area per time' as radiation so that it crosses as collection; that follows from 'radiating becomes collecting' but the prompt did not flag the term. Permeability has no partner, and a vector quantity has no frozen image. (Amendment 1 applied: shape is the rule's call on the relationship; unmapped terms are listed separately and described in plain words in the sentence.)",
+    "knew_tsr": false
+  },
+  {
+    "id": "em.wave_propagation",
+    "physical": "Electromagnetic wave propagation: A changing electric field makes a magnetic field and a changing magnetic field makes an electric field; the pair regenerates itself and travels at a speed fixed by the permittivity and permeability of free space. c = 1 ÷ √(ε0 × μ0)",
+    "reflected_formula": "Current = 1 ÷ √([permittivity: unmapped] × [permeability: unmapped])",
+    "reflected_sentence": "A change in the Idle makes the Reflected and a change in the Reflected makes the Idle; the pair regenerates itself as the Current, set by the two medium constants.",
+    "shape": "keeps",
+    "rule_reason": "identity: no cost and no separation, so it keeps; c is fixed as the limit, not an opposition",
+    "rule_trace": [
+      "identity"
+    ],
+    "forced": true,
+    "unmapped_terms": [
+      "permittivity ε0",
+      "permeability μ0",
+      "free space",
+      "travels",
+      "speed",
+      "wave",
+      "field"
+    ],
+    "new_words": [],
+    "monotone_claims": [
+      {
+        "rises": "Idle",
+        "with": "Reflected",
+        "sign": 1
+      }
+    ],
+    "interpretation": "The Idle and the Reflected co-create each other, each change in one bringing the other, and their self-regeneration is the Current. The speed of light crosses as the Current by the table, so the limit of the physical side is the Current of the nonphysical side. Limited becomes limitless: what is a fixed ceiling on one side is the flow itself on the other.",
+    "conflicts": "none",
+    "sense": 4,
+    "confidence": 7,
+    "closing": "The rule decided on its own: an identity keeps, and c is fixed in the prompt as the limit rather than an opposition, so no cost fires. The mutual regeneration of the Idle and the Reflected is the part of this batch that reads most like the table's own claim that electric and magnetic are co-creating partners, and the image of c as the Current adds a reading the table does not spell out. 'Travels at a speed' cannot cross and was dropped rather than paraphrased; the right-hand side of the formula is entirely unmapped, so the equation says only that the Current is set by two things with no names. (Amendment 1 applied: shape is the rule's call on the relationship; unmapped terms are listed separately and described in plain words in the sentence.)",
+    "knew_tsr": false
+  }
+]

@@ -1,0 +1,25 @@
+{
+ "id": "thermo.latent_heat_definition",
+ "physical": "Latent heat is the heat absorbed per unit mass in a phase change at constant temperature. L = Q ÷ m",
+ "reflected_formula": "unmatched per-amount = unmatched transit ÷ Movement",
+ "reflected_sentence": "The definition keeps: the unmatched per-amount is the unmatched transit taken per Movement in a change of form, while an unmatched condition stays as it is.",
+ "shape": "keeps",
+ "rule_reason": "Definition, and the cost block is empty. Definitions keep even though mass, which carries resistance, is in the ratio. Mass maps to Movement. Latent heat does not carry resistance.",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "latent heat",
+  "heat",
+  "temperature"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "The definition keeps, so the ratio with Movement does not turn into ease with receptivity. The other terms have no frozen names. This is not Culmination.",
+ "conflicts": "none",
+ "sense": 3,
+ "confidence": 7,
+ "closing": "The rule decided on its own. A definition with an empty cost block keeps even though mass is in the ratio. I did not import the cost reading from the other relation, and I did not treat latent heat itself as resistance.",
+ "knew_tsr": false
+}

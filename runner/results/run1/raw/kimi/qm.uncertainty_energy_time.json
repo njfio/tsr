@@ -1,0 +1,29 @@
+{
+ "id": "qm.uncertainty_energy_time",
+ "physical": "A state that lasts only a short time has a correspondingly broad energy; the product of the energy spread and the lifetime is at least half the reduced Planck constant. ΔE × Δt ≥ ħ ÷ 2",
+ "reflected_formula": "E × Expansion ≥ (constant, no partner)",
+ "reflected_sentence": "Broad Expansion goes with narrow E, and narrow Expansion with broad E; their product keeps a floor that has no name here.",
+ "shape": "keeps",
+ "rule_reason": "A floor set by a constant; no variable carries resistance and no separation is claimed; the count is none, so the shape keeps.",
+ "rule_trace": [
+  "none"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "Planck constant ħ"
+ ],
+ "new_words": [],
+ "monotone_claims": [
+  {
+   "rises": "E",
+   "with": "Expansion",
+   "sign": -1
+  }
+ ],
+ "interpretation": "Both legs cross: E and Expansion. The product keeps its shape, since no opposition drives the limit. The constant that sets the floor has no partner.",
+ "conflicts": "none",
+ "sense": 5,
+ "confidence": 6,
+ "closing": "The rule decided without help: the limit is not a resistance cost, so none in the count and the shape keeps, product intact (no sum substituted for the product). Energy and time both map (E, Expansion), and only ħ is left partnerless; numbers, including the half, do not cross by the rule's own clause.",
+ "knew_tsr": false
+}

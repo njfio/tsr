@@ -1,0 +1,24 @@
+{
+ "id": "mech.resonance_width",
+ "physical": "A driven oscillator responds most strongly near its natural frequency; the width of that response grows with the damping, and the peak height falls with it (Q = ω0/Δω). Δω = b ÷ m",
+ "reflected_formula": "[resonance width Δω] = [damping coefficient b] ÷ Movement",
+ "reflected_sentence": "The response that broadened and weakened as damping grew now sharpens as receptivity rises and Movement deepens: what got harder with more opposition gets easier without it.",
+ "shape": "turns around",
+ "rule_reason": "One listed cost: a sharp strong response gets harder and rises with the damping coefficient, which carries resistance; one odd cost turns the reading around.",
+ "rule_trace": [
+  "resistance-cost"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "resonance width Δω (physical frequency, not TSR Frequency)",
+  "damping coefficient b"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "Movement sits in the denominator and deepens the response as the gap closes. The turn is clean; the words are not there. Physical frequency is explicitly not TSR Frequency, and damping has no partner, so the reflected sentence stands on the flipped condition alone.",
+ "conflicts": "none",
+ "sense": 2,
+ "confidence": 7,
+ "closing": "The turn was rule-decided: one cost, rising with a resistance quantity, odd count, turns. The trap about Frequency not being a rate was respected by refusing to map Δω to Frequency; that refusal leaves the row lexically thin, which is reported rather than patched.",
+ "knew_tsr": false
+}

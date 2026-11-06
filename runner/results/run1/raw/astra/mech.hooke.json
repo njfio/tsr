@@ -1,0 +1,25 @@
+{
+ "id": "mech.hooke",
+ "physical": "A spring pushes back in proportion to how far it is stretched; stretching it further takes more force, more so the stiffer the spring.",
+ "reflected_formula": "Frequency = ∅ × Vibration",
+ "reflected_sentence": "Receptivity turns the cost reading toward easier realization, but the spring constant has no partner.",
+ "shape": "turns around",
+ "rule_reason": "One stretching cost rises with spring constant, which carries resistance, so its reading turns around.",
+ "rule_trace": [
+  "resistance-cost"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "spring constant",
+  "spring",
+  "stretching"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "Frequency. Vibration.",
+ "conflicts": "none",
+ "sense": 1,
+ "confidence": 7,
+ "closing": "The rule decides turns around without changing the product into a quotient. The supplied map licenses Vibration for x but offers no partner for k. Calling k receptivity would conflate the flipped condition with a new quantity mapping. The directional sentence does not identify stretching with realization, and the missing partner prevents a full reflection.",
+ "knew_tsr": false
+}

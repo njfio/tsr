@@ -1,0 +1,34 @@
+{
+ "id": "em.lenz_inductance",
+ "physical": "Lenz's law and self-inductance: An induced current flows so as to oppose the change that produced it; a coil opposes a change in its own current with a back-EMF proportional to its inductance. EMF = L × dI ÷ dt",
+ "reflected_formula": "[voltage: unmapped] = [inductance: unmapped] × d[electric current: unmapped] ÷ dExpansion",
+ "reflected_sentence": "A change is received rather than opposed: a change in the flow comes about more easily the more receptive the coil is, across Expansion.",
+ "shape": "turns around",
+ "rule_reason": "resistance-cost: changing the current gets harder as inductance rises, and inductance carries resistance; one cost, odd, so it turns around",
+ "rule_trace": [
+  "resistance-cost"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "back-EMF (voltage)",
+  "inductance L",
+  "electric current I",
+  "coil",
+  "induced",
+  "rate of change"
+ ],
+ "new_words": [],
+ "monotone_claims": [
+  {
+   "rises": "receptivity",
+   "with": "alignment",
+   "sign": 1
+  }
+ ],
+ "interpretation": "On the physical side a change is opposed in proportion to the opposition built in. Turned around, a change is received in proportion to receptivity: the more receptive, the more easily the change comes about. The formula is unchanged; only the reading turns, from opposing to receiving.",
+ "conflicts": "none",
+ "sense": 3,
+ "confidence": 7,
+ "closing": "The rule decided on its own: the prompt lists one cost rising with inductance, inductance is fixed as carrying resistance, and one is odd. The turned reading ('opposition to change becomes receptivity to change') is at least coherent as a sentence. But no term in the formula other than time has a partner, and the only monotone claim I could state in frozen words is close to a tautology from the table's own definition of alignment. The specific physical content, that the induced flow is directed against its cause, has no image. (Amendment 1 applied: shape is the rule's call on the relationship; unmapped terms are listed separately and described in plain words in the sentence.)",
+ "knew_tsr": false
+}

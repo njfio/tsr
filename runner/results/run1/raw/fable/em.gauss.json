@@ -1,0 +1,27 @@
+{
+ "id": "em.gauss",
+ "physical": "Gauss's law: The electric flux through any closed surface equals the enclosed charge divided by the permittivity of free space. Φ_E = Q ÷ ε0",
+ "reflected_formula": "[Idle flux: flux unmapped] = [charge: unmapped] ÷ [permittivity: unmapped]",
+ "reflected_sentence": "The Idle gathered over any closed surface equals the enclosed source over the medium constant.",
+ "shape": "keeps",
+ "rule_reason": "identity: no cost and no separation, so it keeps",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "electric flux (flux)",
+  "charge Q",
+  "permittivity ε0",
+  "closed surface",
+  "enclosed"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "The relationship keeps its shape, but only one of its three terms has even a partial partner. The Idle is in proportion to an enclosed [charge], which the table does not name. 'Closed surface' and 'enclosed' are spatial separations of inside from outside, which the mirror forbids, and the table offers no replacement.",
+ "conflicts": "none",
+ "sense": 1,
+ "confidence": 7,
+ "closing": "The rule decided on its own: an identity keeps. There was nothing to weigh. But the statement is built on inside-versus-outside of a closed surface, and both of those words are banned on the nonphysical side with no frozen substitute, so what keeps its shape is a shape with no content. Charge again has no partner. (Amendment 1 applied: shape is the rule's call on the relationship; unmapped terms are listed separately and described in plain words in the sentence.)",
+ "knew_tsr": false
+}

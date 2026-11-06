@@ -1,0 +1,29 @@
+{
+ "id": "waves.group_velocity",
+ "physical": "Group velocity — The envelope of a wave packet travels at the group velocity, the derivative of angular frequency with respect to wavenumber; it is the speed at which energy and signal travel. v_g = dω ÷ dk (definition)",
+ "reflected_formula": "(pace of the whole bundle) = d(rate of turning) ÷ d(crests per extent) — none of the three has a frozen partner; the shape of a definition is kept",
+ "reflected_sentence": "The outline of a bundle of vibrations advances as the rate of turning changes with the crests per extent, and that is how conscious energy and what is meant to be received advance.",
+ "shape": "keeps",
+ "rule_reason": "Form: definition. No cost or separation listed. Definitions keep their shape.",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "group velocity v_g",
+  "angular frequency ω (physical frequency; not TSR Frequency)",
+  "wavenumber k",
+  "envelope",
+  "wave packet",
+  "signal",
+  "speed, travel (banned words; paraphrased)"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "A definition keeps its shape, so the nonphysical side has the same definition with nothing in it named. Only 'physical energy → conscious energy' crosses, and 'conscious energy advancing at a pace' is a moving picture the nonphysical side is not allowed. The relation keeps and says nothing.",
+ "conflicts": "'Units don't cross the mirror, only relationships do' — a definition that is a ratio of two rates is nothing but units; 'Every term reflects' fails for all three terms.",
+ "sense": 1,
+ "confidence": 6,
+ "closing": "The rule decided on its own: it is a definition, it keeps. No ambiguity in shape. The ambiguity is that nothing in the definition survives the crossing: group velocity, angular frequency and wavenumber have no partners, and the two banned words 'speed' and 'travel' are the statement's own verbs. The reflected sentence is a paraphrase of physics with 'conscious energy' pasted in, not a reflection.",
+ "knew_tsr": false
+}

@@ -1,0 +1,29 @@
+{
+ "id": "thermo.thermal_equilibrium",
+ "physical": "Approach to thermal equilibrium: Two bodies in thermal contact exchange heat from the hotter to the colder until they reach a common temperature. (no formula)",
+ "reflected_formula": "",
+ "reflected_sentence": "The relationship keeps its shape: two meet, what passes between them passes from the hotter to the colder until they share one measure; neither the measure nor what passes has a partner.",
+ "shape": "keeps",
+ "rule_reason": "No costs listed, no resistance-cost, no separation made by distance; by the count (zero) the relation keeps its shape. It is not an equivalence either, so 'keeps' here is the default of nothing firing.",
+ "rule_trace": [
+  "none"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "temperature",
+  "heat",
+  "body",
+  "thermal contact",
+  "hotter",
+  "colder",
+  "common temperature"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "Nothing here has a partner. The shape keeps by default and says nothing.",
+ "conflicts": "none",
+ "sense": 1,
+ "confidence": 5,
+ "closing": "The rule decided by default rather than by firing: nothing in the relation is a resistance-cost or a distance-made separation, so the count is zero and it keeps. I did not apply the property row 'radiation → collection' to the hotter body giving off heat, because the relation names heat flow, not radiation, and that would be a reinterpretation. Confidence is middling because 'keeps' for a relation with no formula and no frozen term is a formality.",
+ "knew_tsr": false
+}

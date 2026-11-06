@@ -1,0 +1,16 @@
+id: waves.fresnel_partial_reflection
+domain: waves_optics
+title: "Fresnel partial reflection and transmission"
+statement: "At an interface between two media part of the light reflects and part transmits; the reflected fraction grows with the index contrast and the two fractions sum to one."
+formula: "R = ((n1 − n2) ÷ (n1 + n2))²"
+form: equation
+variables:
+  - {name: reflected fraction R, quantity: probability}
+  - {name: index contrast, quantity: index contrast}
+  - {name: refractive index n, quantity: refractive index}
+costs:
+  - {what_gets_harder: "getting through the boundary", rises_with: [index contrast]}
+standard_sources: ["Fresnel 1823; Hecht, Optics, ch. 4"]
+book_status: unreflected
+review: pending
+notes: "'No difference, no reflection' (deep read Pass 5). JUDGMENT under R1 (index contrast inherits the refractive-index joint). R + T = 1 is conservation and keeps on its own."

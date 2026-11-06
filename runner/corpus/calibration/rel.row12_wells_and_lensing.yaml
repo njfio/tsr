@@ -1,0 +1,16 @@
+id: rel.row12_wells_and_lensing
+domain: calibration
+title: "Row 12: gravity wells and lensing"
+statement: "Light and matter follow geodesics of curved space-time: paths bend toward mass (lensing) and bodies fall into wells."
+formula: ""
+form: equation
+variables:
+  - {name: mass-energy (stress-energy), quantity: energy}
+costs: []
+depends_on: [gravity_call]
+derived_from: [rel.row11_mass_energy_warps_spacetime]
+derivation: "geodesic motion in the curvature of row 11"
+standard_sources: ["Misner, Thorne & Wheeler, Gravitation, ch. 25"]
+book_status: ruled
+ruling: {shape: keeps, words: "Vortex and Convergence", source: "Ch16 #12"}
+review: "reviewed:spec-port"

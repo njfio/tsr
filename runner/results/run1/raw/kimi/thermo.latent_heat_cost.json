@@ -1,0 +1,31 @@
+{
+ "id": "thermo.latent_heat_cost",
+ "physical": "Changing a body's phase takes heat in proportion to its mass, with no rise in temperature while it happens. Q = m × L",
+ "reflected_formula": "",
+ "reflected_sentence": "The cost turns around: the change of one form into the next grew harder as Movement M grew, and now it eases as Movement M grows, each form culminating into the next with less and less held back.",
+ "shape": "turns around",
+ "rule_reason": "One cost and it rises with mass m, which the fixed list says carries resistance (opposition to change of motion); an odd count, so the relation turns around and its reading flips harder to easier while the formula keeps its terms.",
+ "rule_trace": [
+  "resistance-cost"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "heat",
+  "latent heat",
+  "temperature"
+ ],
+ "new_words": [],
+ "monotone_claims": [
+  {
+   "rises": "ease of culminating",
+   "with": "Movement M",
+   "sign": 1
+  }
+ ],
+ "interpretation": "Mass crosses as Movement M, so part of the formula has an image, but the two heat quantities stay unmapped. The turned reading says greater Movement M makes the change easier, which reads strangely in TSR's own terms and is recorded as such.",
+ "conflicts": "none",
+ "sense": 2,
+ "confidence": 6,
+ "closing": "The rule decided the turn: mass carries resistance, count is one. The fixed list's note that latent heat's rise with mass is relation-level confirms L itself does not carry resistance, so only the mass-driven cost fires; my discomfort with how the flipped reading sounds is recorded here, not in the reflection.",
+ "knew_tsr": false
+}

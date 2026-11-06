@@ -1,0 +1,8 @@
+{
+ "id": "em.impedance",
+ "alternative_shape": "turns around",
+ "rule_compliant": true,
+ "argument": "Impedance is not read here as a bare ratio: the statement builds its magnitude out of resistance and the two reactances, three resistance-carrying oppositions (an odd number) combining into the total limit an alternating flow meets. A limit caused by resistance turns around, so the definition's opposition content flips into receptivity even though the formula is untouched.",
+ "reflected_sentence": "Read receptively, the whole receptivity met by an alternating flow combines alignment with receptivity to change; as the gap narrows, the flow that moves rises.",
+ "knew_tsr": false
+}

@@ -1,0 +1,27 @@
+{
+ "id": "em.mutual_induction",
+ "physical": "A changing current in one coil induces an EMF in a nearby coil in proportion to their mutual inductance, which depends on their geometry and how much flux they share. (EMF_2 = M × dI_1 ÷ dt)",
+ "reflected_formula": "EMF_2 = M × dI_1 ÷ dExpansion",
+ "reflected_sentence": "A changing flow across Expansion in one loop induces conscious energy per source in another loop in proportion to their shared coupling.",
+ "shape": "keeps",
+ "rule_reason": "Equation with an empty costs array (`costs: []`) and no separation cost keeps its shape.",
+ "rule_trace": [
+  "none"
+ ],
+ "forced": false,
+ "unmapped_terms": [
+  "induced EMF (voltage)",
+  "mutual inductance M",
+  "current I_1 (electric)",
+  "flux",
+  "coil"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "Across Expansion, a changing flow in one loop couples directly to another in proportion to what they share. With zero costs in the record, the proportionality keeps its shape.",
+ "conflicts": "Symbol collision: M in the formula stands for mutual inductance, whereas M in the frozen vocabulary stands for Movement (partner of mass m).",
+ "sense": 2,
+ "confidence": 5,
+ "closing": "From the record's `form: equation` and `costs: []`, the relationship has zero costs and therefore keeps its shape, though there is a slight ambiguity because the variable `mutual inductance M` has quantity `inductance` (which is marked as carrying resistance in the general quantity list, even though mutual induction is stated here as shared coupling rather than opposition).",
+ "knew_tsr": false
+}

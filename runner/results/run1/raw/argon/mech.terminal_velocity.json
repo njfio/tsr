@@ -1,0 +1,36 @@
+{
+ "id": "mech.terminal_velocity",
+ "physical": "A falling body stops accelerating when drag balances weight; that terminal speed rises with the body's mass and falls with the drag coefficient, the fluid's density and the cross-section.",
+ "reflected_formula": "rise per Expansion = √(2 × Movement M × Attraction ÷ (Desire × C_d × A))",
+ "reflected_sentence": "A body stops changing its rise per Expansion in Appreciation when fluid opposition balances Movement M and Attraction, and settling into that balance becomes easier with receptivity and alignment as Desire rises.",
+ "shape": "turns around",
+ "rule_reason": "1 cost object in costs array (stopping the fall rises with mass m, falls with drag coefficient and density)",
+ "rule_trace": [
+  "resistance-cost"
+ ],
+ "forced": false,
+ "unmapped_terms": [
+  "drag coefficient",
+  "area",
+  "gravitational field g"
+ ],
+ "new_words": [],
+ "monotone_claims": [
+  {
+   "rises": "rise per Expansion",
+   "with": "Movement M",
+   "sign": 1
+  },
+  {
+   "rises": "rise per Expansion",
+   "with": "Desire",
+   "sign": -1
+  }
+ ],
+ "interpretation": "Velocity reflects to rise per Expansion, mass m to Movement M, and density to Desire, while drag coefficient and area have no partners. Because there is one cost block in the record, the difficulty of stopping the fall turns around with receptivity and alignment.",
+ "conflicts": "none",
+ "sense": 1,
+ "confidence": 5,
+ "closing": "There is one cost object in the specification, which formally triggers turns around, though three different resistance-carrying quantities (mass, drag coefficient, density) act in opposing directions in the formula.",
+ "knew_tsr": false
+}

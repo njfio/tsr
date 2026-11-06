@@ -1,0 +1,19 @@
+id: mech.escape_velocity
+domain: calibration
+title: "Escape velocity"
+statement: "The speed needed to leave a body's gravity entirely rises with the body's mass and falls with the starting radius."
+formula: "v = √(2 G M ÷ r)"
+form: equation
+variables:
+  - {name: central mass M, quantity: mass m}
+  - {name: radius r, quantity: radius}
+  - {name: gravitational constant G, quantity: gravitational constant G}
+  - {name: escape speed v, quantity: velocity}
+costs:
+  - what_gets_harder: "leaving; the speed required rises with the central mass"
+    rises_with: [mass m]
+standard_sources: ["any mechanics text"]
+book_status: ruled
+ruling: {shape: null, source: "Author's ruling, October 2026, cited in the spec but not published; tsr.wtf/test: 'may not have a reflection at all'. PENDING: enter shape (turns around | no partner) here."}
+review: "reviewed:spec-port"
+notes: "Round 1: five of five turned it around. Round 2: weakest row. In TSR a pull draws you toward what you've expanded into, so there's nothing to escape."

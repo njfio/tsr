@@ -1,0 +1,26 @@
+{
+ "id": "qm.no_cloning",
+ "physical": "No physical operation can make an independent copy of an arbitrary unknown quantum state.",
+ "reflected_formula": "",
+ "reflected_sentence": "The limit keeps its shape: nothing can make a second independent state out of an unknown one, because that limit does not come from the gap.",
+ "shape": "keeps",
+ "rule_reason": "a limit, but not one caused by resistance (no term carries resistance); no separation",
+ "rule_trace": [
+  "none"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "wavefunction amplitude",
+  "quantum state",
+  "copy",
+  "operation"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "Only limits caused by resistance turn around, and this one comes from the linear structure, so it keeps its shape. Limited does not become limitless here.",
+ "conflicts": "none",
+ "sense": 2,
+ "confidence": 5,
+ "closing": "Mostly forced. The property row 'limited becomes limitless' pulls toward turning every limit around, but the deciding question looks at the cause, and nothing here carries resistance. So it keeps its shape.",
+ "knew_tsr": false
+}

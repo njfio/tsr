@@ -1,0 +1,32 @@
+{
+ "id": "rel.energy_momentum_relation",
+ "physical": "A body's energy squared equals its momentum times c squared plus its rest energy squared; for a massless particle the energy is momentum times c.",
+ "reflected_formula": "E² = (momentum × Current)² + (Movement M × Current²)²",
+ "reflected_sentence": "E squared equals momentum times Current squared plus Movement M times Current squared squared; without Movement M, E is momentum times Current.",
+ "shape": "keeps",
+ "rule_reason": "Identity with no costs keeps its shape (despite mass m appearing in the formula, it is an equivalence/identity with zero costs).",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": false,
+ "unmapped_terms": [],
+ "new_words": [],
+ "monotone_claims": [
+  {
+   "rises": "E",
+   "with": "momentum",
+   "sign": 1
+  },
+  {
+   "rises": "E",
+   "with": "Movement M",
+   "sign": 1
+  }
+ ],
+ "interpretation": "In the Present, E relates momentum, Movement M, and Current as an equivalence. When Movement M is absent, E is momentum times Current.",
+ "conflicts": "No sums where the book has products.",
+ "sense": 3,
+ "confidence": 5,
+ "closing": "The form is an identity with no costs listed, so under the rule it keeps its shape even though mass m (which carries resistance) appears in the equation. However, the formula contains a sum (+) on the nonphysical side, which conflicts with the trap rule 'No sums where the book has products' alongside the Present (C^2 x M = E = m x c^2).",
+ "knew_tsr": false
+}

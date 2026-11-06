@@ -1,0 +1,29 @@
+{
+ "id": "info.shannon_entropy",
+ "physical": "The uncertainty of a source is minus the sum over outcomes of probability times log probability; it is the least average number of bits needed to encode it.",
+ "reflected_formula": "",
+ "reflected_sentence": "No complete reflected sentence is available from the frozen vocabulary.",
+ "shape": "keeps",
+ "rule_reason": "A definition keeps its shape; Shannon entropy and probability are explicitly not resistance-bearing and lack specified partners.",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "Shannon entropy",
+  "probability",
+  "uncertainty",
+  "source",
+  "outcomes",
+  "bits",
+  "encoding"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "",
+ "conflicts": "none",
+ "sense": 1,
+ "confidence": 7,
+ "closing": "The definition determines keeps, independently of the missing vocabulary. I do not extend the provisional entropy-to-Culmination entry to the separately named Shannon entropy without authorization, and even that extension would leave probability and the encoding interpretation unmapped. I have not replaced the sum with a product or reinterpreted a bit count as a nonphysical quantity.",
+ "knew_tsr": false
+}

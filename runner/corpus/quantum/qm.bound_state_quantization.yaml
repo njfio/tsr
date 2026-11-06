@@ -1,0 +1,21 @@
+id: qm.bound_state_quantization
+domain: quantum
+title: "Quantization of bound states"
+statement: "A particle confined to a region has only discrete allowed energies; the spacing grows as the region shrinks and falls as the particle's mass rises."
+formula: "E_n = n² × π² × ħ² ÷ (2 × m × L²)"
+form: equation
+variables:
+  - {name: energy level E_n, quantity: energy}
+  - {name: quantum number n, quantity: quantum number}
+  - {name: mass m, quantity: mass m}
+  - {name: confinement length L, quantity: length, carries_distance: true}
+  - {name: Planck constant ħ, quantity: Planck constant}
+costs:
+  - {what_gets_harder: "which energies are allowed: only those that fit the confinement", falls_with: [mass m], separation_made_by_distance: true}
+distance_dependence: true
+derived_from: [waves.standing_waves]
+derivation: "matter-wave standing waves between the walls"
+standard_sources: ["Griffiths, Introduction to Quantum Mechanics, ch. 2"]
+book_status: unreflected
+review: pending
+notes: "The separation (the walls) would turn it, as for standing waves; but the energy cost falls with mass, which is the reverse_cost joint. JUDGMENT."

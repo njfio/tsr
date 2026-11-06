@@ -1,0 +1,29 @@
+{
+ "id": "thermo.fourier_conduction",
+ "physical": "The heat flowing through a slab for a given temperature difference falls as the slab's thermal resistance (thickness over conductivity times area) rises.",
+ "reflected_formula": "? = Δ? ÷ ?",
+ "reflected_sentence": "What is exchanged by warming becomes easier with receptivity.",
+ "shape": "turns around",
+ "rule_reason": "The underlying reading turns around: one cost, heat getting through, rises with thermal resistance, which explicitly carries resistance.",
+ "rule_trace": [
+  "resistance-cost"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "heat flow",
+  "temperature",
+  "thermal resistance",
+  "slab",
+  "thickness",
+  "conductivity",
+  "area"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "No complete reflection is available. Missing partners prevent a nonphysical interpretation.",
+ "conflicts": "none",
+ "sense": 1,
+ "confidence": 7,
+ "closing": "The single qualifying cost decides reversal without a judgment call, while the division in the formula stays unchanged. The condition can flip to receptivity, but this does not provide named partners for heat flow, temperature, or the thermal-resistance quantity. No extra separation cost is inferred from the slab description.",
+ "knew_tsr": false
+}

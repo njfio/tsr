@@ -1,0 +1,25 @@
+{
+ "id": "field.gauge_invariance",
+ "physical": "Requiring the laws to be unchanged under local phase changes of the matter fields forces the existence of the gauge fields that carry the forces.",
+ "reflected_formula": "",
+ "reflected_sentence": "Requiring the laws to be unchanged under changes of Vibration gives rise to what carries Frequency.",
+ "shape": "keeps",
+ "rule_reason": "Symmetry with no costs keeps its shape.",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "local phase",
+  "matter fields",
+  "gauge fields"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "A symmetry keeps its shape across the Point of Reflection, and force reflects to Frequency. Because phase, matter fields, and gauge fields have no partners in the table, only the symmetry and Frequency cross over in frozen words.",
+ "conflicts": "none",
+ "sense": 1,
+ "confidence": 7,
+ "closing": "The rule cleanly identifies this as a symmetry with zero costs, so the keeps decision is forced, even though the field-theoretic terms are unmapped.",
+ "knew_tsr": false
+}

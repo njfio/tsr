@@ -1,0 +1,8 @@
+{
+ "id": "qm.measurement_collapse",
+ "alternative_shape": null,
+ "rule_compliant": false,
+ "argument": "The statement only says that one realization appears and the state matches it, with the prior state not fixing which; probability and amplitude carry no resistance, and no cost or distance is present, so nothing can turn.",
+ "reflected_sentence": "",
+ "knew_tsr": false
+}

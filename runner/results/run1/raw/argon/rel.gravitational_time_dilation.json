@@ -1,0 +1,31 @@
+{
+ "id": "rel.gravitational_time_dilation",
+ "physical": "A clock deeper in a gravitational well runs slower than one higher up; the effect depends on depth in the well, not on the clock's own mass.",
+ "reflected_formula": "ΔExpansion = ΔExpansion ÷ √(1 − 2 × G × Movement M ÷ (r × Current²))",
+ "reflected_sentence": "Deeper in a Vortex, Expansion Dilation is greater than further out; the Expansion Dilation depends on the Vortex, not on one's own Movement M.",
+ "shape": "keeps",
+ "rule_reason": "Equation with an empty costs block in the record keeps its shape.",
+ "rule_trace": [
+  "none"
+ ],
+ "forced": false,
+ "unmapped_terms": [
+  "gravitational constant G",
+  "radius r",
+  "clock"
+ ],
+ "new_words": [],
+ "monotone_claims": [
+  {
+   "rises": "Expansion Dilation",
+   "with": "Movement M",
+   "sign": 1
+  }
+ ],
+ "interpretation": "A gravity well reflects to a Vortex, and time dilation reflects to Expansion Dilation. In the Vortex, Expansion Dilation rises with the central Movement M and Current, independent of one's own Movement M.",
+ "conflicts": "Nothing on the nonphysical side has a number, a unit or a distance.",
+ "sense": 3,
+ "confidence": 3,
+ "closing": "There is an ambiguity between the YAML specification (which lists zero costs and `carries_distance: false` for radius r, yielding `keeps`) and the general rule (which states mass M carries resistance and slower clock rates in a well could be read as a cost). Following the record's form and empty cost block gives `keeps`, while gravitational constant G and radius r go in unmapped_terms.",
+ "knew_tsr": false
+}

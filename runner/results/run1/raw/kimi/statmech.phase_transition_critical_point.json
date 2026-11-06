@@ -1,0 +1,28 @@
+{
+ "id": "statmech.phase_transition_critical_point",
+ "physical": "Phase transition and critical point — At a continuous phase transition the order parameter vanishes and the correlation length diverges: fluctuations at every scale, and no characteristic size. ξ → ∞ as T → T_c. Form: limit.",
+ "reflected_formula": "",
+ "reflected_sentence": "The relation keeps its shape: a measure of order falls to nothing while an extent of mutual influence grows without end — said in plain words only, since neither has a partner and no resistance caused the limit.",
+ "shape": "keeps",
+ "rule_reason": "no variable carries resistance (order parameter, correlation length and temperature are all fixed as non-resistance) and no cost or separation is listed; the divergence of an extent is not a cost caused by resistance, so the even (zero) count keeps the shape",
+ "rule_trace": [
+  "none"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "order parameter",
+  "correlation length",
+  "temperature",
+  "critical point",
+  "fluctuations at every scale",
+  "divergence"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "Nothing crosses. The shape keeps in silence.",
+ "conflicts": "none",
+ "sense": 1,
+ "confidence": 6,
+ "closing": "The rule decided alone: no resistance-carrier among the variables and no listed cost, so the count is even and the relation keeps. The English echo of 'limitless' in a divergence was tempting, but the vocabulary supplies no partner for any term here, so there was nothing to hang a reflection on, and I refused to supply one.",
+ "knew_tsr": false
+}

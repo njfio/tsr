@@ -1,0 +1,34 @@
+{
+ "id": "mech.newton_gravitation",
+ "physical": "Two masses attract with a force proportional to the product of the masses and inversely proportional to the square of their separation. F = G × M × m ÷ r²",
+ "reflected_formula": "Frequency = [gravitational constant G] × Movement × Movement ÷ Vibration²",
+ "reflected_sentence": "Attraction between two Movements is not thinned by Vibration: what separation weakened is already there, and nearness is measured by alignment, not by what the gap once made hard.",
+ "shape": "turns around",
+ "rule_reason": "Separation made by distance: variable r carries_distance is true and the alternate statement reads the pull as weakened by separation; a separation made by distance turns around per the rule.",
+ "rule_trace": [
+  "separation"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "gravitational constant G"
+ ],
+ "new_words": [],
+ "monotone_claims": [
+  {
+   "rises": "Frequency",
+   "with": "Movement",
+   "sign": 1
+  },
+  {
+   "rises": "Frequency",
+   "with": "alignment",
+   "sign": 1
+  }
+ ],
+ "interpretation": "Frequency is Movement meeting Movement through Vibration's square, the strongest reflection in the batch because Attraction is gravity's frozen partner. The separation cost turns: nearness is not earned across Vibration; alignment measures it instead. The formula keeps its inverse square; only its reading reverses.",
+ "conflicts": "none",
+ "sense": 5,
+ "confidence": 6,
+ "closing": "The rule decided the turn on its own: r is marked carries_distance and the rule states a separation made by distance turns around, with the alternate statement confirming the cost reading. My only hesitation was whether the empty main costs list should have meant keeps; the explicit separation clause and the flagged variable settled it, so confidence is high but not absolute.",
+ "knew_tsr": false
+}

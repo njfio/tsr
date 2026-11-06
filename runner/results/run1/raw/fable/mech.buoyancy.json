@@ -1,0 +1,36 @@
+{
+ "id": "mech.buoyancy",
+ "physical": "A body immersed in a fluid is pushed up by a force equal to the weight of the fluid it displaces; it floats if it is less dense than the fluid. F_b = ρ_fluid × g × V",
+ "reflected_formula": "Frequency_b = Desire × g × Vibrance (g has no partner)",
+ "reflected_sentence": "What is immersed receives a Frequency equal to the surrounding Desire times the Vibrance it takes up times the pull of the ground, and it rises when its own Desire is less than the surrounding Desire; the relationship keeps its shape.",
+ "shape": "keeps",
+ "rule_reason": "An equation with no cost or separation listed: zero costs, even, keeps.",
+ "rule_trace": [
+  "none"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "gravitational field g",
+  "weight",
+  "fluid"
+ ],
+ "new_words": [],
+ "monotone_claims": [
+  {
+   "rises": "Frequency",
+   "with": "Desire",
+   "sign": 1
+  },
+  {
+   "rises": "Frequency",
+   "with": "Vibrance",
+   "sign": 1
+  }
+ ],
+ "interpretation": "Frequency rises with Desire and with Vibrance, a product and not a sum, which reads cleanly in frozen words. The second half of the statement reads less cleanly: a thing rises when it holds less Desire than what surrounds it. In the vocabulary Desire is the strong frequency, so having less of it being what lifts is a result the table does not prepare one for.",
+ "conflicts": "'strong frequency (Desire)': the floating clause makes less Desire the condition for rising, which reads against Desire being the strong frequency, though it is a tension rather than a flat contradiction.",
+ "sense": 3,
+ "confidence": 5,
+ "closing": "The count decided: no cost, no separation, keeps. The judgment I had to hold back was that density carries the flipping condition and the Frequency rises with it, which looks like a cost rising with mass redistributed by geometry; but the cost block was fixed empty and the rule counts costs, so I left the row as keeps. g has no partner here even though the table pairs gravitational pull with Attraction, because the fixed list calls g an acceleration rather than a pull and this record gives no instruction to read it as one.",
+ "knew_tsr": false
+}

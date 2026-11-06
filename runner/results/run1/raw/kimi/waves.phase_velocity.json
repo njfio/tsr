@@ -1,0 +1,25 @@
+{
+ "id": "waves.phase_velocity",
+ "physical": "A wave's phase advances by one cycle per wavelength; the phase velocity is wavelength times frequency, or angular frequency over wavenumber. v_p = ω ÷ k",
+ "reflected_formula": "rise per Expansion = ω ÷ k (ω and k kept as symbols with no partners)",
+ "reflected_sentence": "As a definition it keeps its shape: one cycle per extent still advances the phase, and the rise per Expansion is the counted rate divided by the inverse extent.",
+ "shape": "keeps",
+ "rule_reason": "It is a definition; definitions keep their shape; no costs named.",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "angular frequency ω",
+  "wavenumber k",
+  "phase"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "The definition crosses whole: a counted rate over an inverse extent is a rise per Expansion. Both right-side symbols lack partners, so the sentence carries the shape and nothing more.",
+ "conflicts": "none",
+ "sense": 3,
+ "confidence": 7,
+ "closing": "Definitions keep, so no judgment was needed; the reflection is shape without content because ω, k and phase all lack partners.",
+ "knew_tsr": false
+}

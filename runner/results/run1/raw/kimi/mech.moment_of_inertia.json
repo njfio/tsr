@@ -1,0 +1,24 @@
+{
+ "id": "mech.moment_of_inertia",
+ "physical": "A body's moment of inertia about an axis is the sum of each mass element times the square of its distance from the axis. I = Σ m × r²",
+ "reflected_formula": "[moment of inertia] = Σ Movement × [distance from axis r]²",
+ "reflected_sentence": "The sum keeps its shape: Movement counted piece by piece, squared in its spread about the axis, though the spread itself has no partner across the mirror.",
+ "shape": "keeps",
+ "rule_reason": "A definition with an empty costs list; definitions keep their shape.",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "moment of inertia I",
+  "distance from axis r"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "A sum of Movement, squared in spread, keeps its definitional shape. Only Movement crosses; the quantity defined and its spread have no frozen partners. The structure survives, the content does not.",
+ "conflicts": "none",
+ "sense": 2,
+ "confidence": 7,
+ "closing": "The keeps call was automatic: definition, zero costs, identity trace. I deliberately did not map r to Vibration, because the frozen table gives space, not radius, a partner, and this relation supplies no physical_terms sanctioning the extension; naming that refusal is the point of the unmapped_terms field.",
+ "knew_tsr": false
+}

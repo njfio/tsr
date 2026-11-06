@@ -1,0 +1,26 @@
+{
+ "id": "mech.moment_of_inertia",
+ "physical": "A body's moment of inertia about an axis is the sum of each mass element times the square of its distance from the axis.",
+ "reflected_formula": "∅ = Σ Movement M × ∅²",
+ "reflected_sentence": "Movement has a partner, but the rotational definition lacks the remaining partners.",
+ "shape": "keeps",
+ "rule_reason": "The definition keeps its shape; its geometric coordinate is not a stated separation cost and its costs list is empty.",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "moment of inertia",
+  "radius",
+  "axis",
+  "mass element decomposition"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "Movement M. Receptivity.",
+ "conflicts": "none",
+ "sense": 1,
+ "confidence": 7,
+ "closing": "The rule decides keeps because this is a definition, not a cost reading. Radius has no frozen partner and no explicit physical_terms alias to space. The summation and square remain formal syntax only; I neither replace the sum with a product nor import a numerical geometric decomposition into the nonphysical side.",
+ "knew_tsr": false
+}

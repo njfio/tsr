@@ -1,0 +1,24 @@
+{
+ "id": "em.faraday",
+ "physical": "A changing magnetic flux through a loop induces an electromotive force equal to the rate of change of the flux. EMF = dΦ_B ÷ dt",
+ "reflected_formula": "EMF = dΦ_Reflected ÷ dExpansion",
+ "reflected_sentence": "The induced push equals the change of the Reflected flux taken with Expansion, and the equality keeps its shape.",
+ "shape": "keeps",
+ "rule_reason": "An equation with no cost or limit caused by resistance: zero such costs, an even count, so it keeps its shape.",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "voltage (EMF)",
+  "magnetic flux Φ_B"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "The push and the changing Reflected are one equality. Expansion carries the change. Nothing resists, so nothing flips.",
+ "conflicts": "none",
+ "sense": 3,
+ "confidence": 6,
+ "closing": "The form field says equation rather than identity, which invited a judgment call, but the deciding rule is the cost count: none are listed, and the fixed table assigns no resistance to flux, voltage or time, so keeps followed mechanically once the count was made.",
+ "knew_tsr": false
+}

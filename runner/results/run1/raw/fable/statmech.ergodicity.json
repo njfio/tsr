@@ -1,0 +1,28 @@
+{
+ "id": "statmech.ergodicity",
+ "physical": "For an ergodic system the long-time average of an observable equals its average over the ensemble of accessible states.",
+ "reflected_formula": "",
+ "reflected_sentence": "The relationship keeps: the average over long Expansion of a measurable quantity equals its average over the collection of reachable states, and only Expansion has a frozen partner.",
+ "shape": "keeps",
+ "rule_reason": "identity (two averages declared equal); no quantity carries resistance, zero resistance-costs, shape keeps",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "ergodic system",
+  "observable",
+  "average",
+  "ensemble",
+  "accessible states",
+  "long (an extent of time)"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "Time becomes Expansion, so the average over long time becomes an average over Expansion. Everything the averages are of, and the ensemble they are over, has no partner. The statement crosses as an equality between two averages of nothing frozen.",
+ "conflicts": "none",
+ "sense": 1,
+ "confidence": 7,
+ "closing": "The rule decided on its own: an identity keeps. One wrinkle is that time maps to Expansion while 'time' is a forbidden word, so 'long-time average' becomes 'average over long Expansion', and 'long' is an extent, which smuggles a quantity onto the nonphysical side; I left it in the sentence and flagged it as unmapped rather than inventing a word for it. Without a formula there is nothing else to reflect.",
+ "knew_tsr": false
+}

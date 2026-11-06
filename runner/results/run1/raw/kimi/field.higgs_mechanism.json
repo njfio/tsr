@@ -1,0 +1,35 @@
+{
+ "id": "field.higgs_mechanism",
+ "physical": "Higgs mechanism — The masses of the W and Z bosons and of the fundamental fermions arise from their coupling to the Higgs field's nonzero vacuum value; a particle's mass is its coupling strength times that value. Formula: m_f = y_f × v ÷ √2",
+ "reflected_formula": "Movement = wanting × Vibrance ÷ (a factor with no partner)",
+ "reflected_sentence": "In Vibrational Reality, Movement arises as wanting meets Vibrance, giving form to what would otherwise be without weight.",
+ "shape": "keeps",
+ "rule_reason": "An equivalence of definition keeps its shape; the formula assigns mass from a coupling and a vacuum value, with no cost and no separation.",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "Higgs coupling (Yukawa)",
+  "vacuum expectation value",
+  "Higgs field",
+  "W boson",
+  "Z boson",
+  "fermion",
+  "√2"
+ ],
+ "new_words": [],
+ "monotone_claims": [
+  {
+   "rises": "Movement",
+   "with": "wanting",
+   "sign": 1
+  }
+ ],
+ "interpretation": "The equivalence keeps its shape. Movement is mass reflected; wanting is Desire in plain speech; Vibrance stands for the vacuum value by stretching volume into Vibrance. The coupling itself is undetermined and unmapped, but that does not change the shape.",
+ "conflicts": "none",
+ "sense": 4,
+ "confidence": 5,
+ "closing": "The rule decided the shape on its own: an identity with no costs keeps. The Yukawa coupling's undetermined status is a judgment call about resistance, not about shape, and I left it unmapped rather than forcing it either way.",
+ "knew_tsr": false
+}

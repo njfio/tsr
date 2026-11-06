@@ -1,0 +1,18 @@
+id: field.yukawa_range
+domain: field_theory
+title: "Virtual particles and the range of a force"
+statement: "A force carried by exchange of a virtual particle has a range of about the reduced Planck constant over the mediator's mass times c: the heavier the mediator, the shorter the reach."
+formula: "r ≈ ħ ÷ (m × c)"
+form: equation
+variables:
+  - {name: range r, quantity: length}
+  - {name: mediator mass m, quantity: mass m}
+  - {name: speed of light c, quantity: speed of light c}
+  - {name: Planck constant ħ, quantity: Planck constant}
+costs:
+  - {what_gets_harder: "reaching far; the force's range", falls_with: [mass m]}
+derived_from: [qm.uncertainty_energy_time]
+standard_sources: ["Yukawa 1935"]
+book_status: unreflected
+review: pending
+notes: "reverse_cost joint: a reach that falls with mass. JUDGMENT."

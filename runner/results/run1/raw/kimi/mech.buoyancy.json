@@ -1,0 +1,34 @@
+{
+ "id": "mech.buoyancy",
+ "physical": "A body immersed in a fluid is pushed up by a force equal to the weight of the fluid it displaces; it floats if it is less dense than the fluid. F_b = ρ_fluid × g × V",
+ "reflected_formula": "Frequency = Desire × [gravitational field g] × Vibrance",
+ "reflected_sentence": "A body's upward Frequency equals the Desire and Vibrance it displaces; it floats when its own Desire is the lesser.",
+ "shape": "keeps",
+ "rule_reason": "An equivalence for the buoyant force with an empty costs list; no resistance-cost and no separation, so it keeps.",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "gravitational field g"
+ ],
+ "new_words": [],
+ "monotone_claims": [
+  {
+   "rises": "Frequency",
+   "with": "Desire",
+   "sign": 1
+  },
+  {
+   "rises": "Frequency",
+   "with": "Vibrance",
+   "sign": 1
+  }
+ ],
+ "interpretation": "Frequency is the product of Desire and Vibrance, and the comparison of two Desires decides floating. The product keeps its shape across the mirror; only g goes unspoken. Desire doing the work of density is odd but it is the frozen row, so it stands as written.",
+ "conflicts": "none",
+ "sense": 4,
+ "confidence": 6,
+ "closing": "The shape call was automatic: an equation with no listed costs keeps. The only awkwardness is lexical: density maps to Desire by the frozen table, which makes the sentence read like the table rather than like physics, but the instructions forbid rescuing it with reinterpretation, so the oddity is reported as found.",
+ "knew_tsr": false
+}

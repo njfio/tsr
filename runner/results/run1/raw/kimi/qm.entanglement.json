@@ -1,0 +1,25 @@
+{
+ "id": "qm.entanglement",
+ "physical": "Measurements on two entangled particles are correlated more strongly than any local account allows (Bell), and the correlation does not weaken with their separation.",
+ "reflected_formula": "",
+ "reflected_sentence": "Two vibrations that share one measure answer alike, and the nearness of their answering does not thin as the gap widens.",
+ "shape": "keeps",
+ "rule_reason": "No costs: the statement asserts the correlation does not weaken with separation, so nothing in it is a cost caused by resistance. The count is none and the shape keeps; correlation, probability and extent are unmapped.",
+ "rule_trace": [
+  "none"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "measurement correlation",
+  "probability",
+  "separation (length)"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "Correlation, probability and extent have no partner and are described in plain words. The kept reading: the shared answering does not thin as the gap widens. Alignment tempted as a named image, but the map does not give it and the rule forbids rescue, so it stays a plain description.",
+ "conflicts": "none",
+ "sense": 2,
+ "confidence": 6,
+ "closing": "Amended reading applied: with no costs the shape keeps, full stop. The vocabulary gaps are recorded, not allowed to turn the call. I still refuse to map correlation onto alignment, since that mapping is not in the frozen table.",
+ "knew_tsr": false
+}

@@ -1,0 +1,36 @@
+{
+ "id": "qm.decoherence",
+ "physical": "Interaction with an environment spreads a system's phase relations, suppressing interference; two branches lose coherence faster the more strongly they couple to the environment and the farther apart in position they are. Γ ∝ Λ × (Δx)²",
+ "reflected_formula": "(rate, no partner) rises with (coupling, no partner) × the gap²",
+ "reflected_sentence": "Two vibrations culminate more easily as the gap closes.",
+ "shape": "turns around",
+ "rule_reason": "Keeping two branches coherent is a cost driven by a separation made by distance; environment coupling is fixed as not carrying resistance, so only the separation fires: odd count, turns around.",
+ "rule_trace": [
+  "separation"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "decoherence rate Γ",
+  "environment coupling Λ",
+  "branch separation Δx (length)"
+ ],
+ "new_words": [],
+ "monotone_claims": [
+  {
+   "rises": "culminate",
+   "with": "the gap",
+   "sign": -1
+  },
+  {
+   "rises": "culminate",
+   "with": "alignment",
+   "sign": 1
+  }
+ ],
+ "interpretation": "A rate and a coupling carry this law, and neither has a partner; only the separation crosses, as the gap. Turned around, holding together eases as the gap closes and wears thin as the gap widens.",
+ "conflicts": "none",
+ "sense": 4,
+ "confidence": 6,
+ "closing": "The rule decided on its own. The fixed resistance list explicitly excludes both the rate and the coupling, which blocks the generous reading that strong coupling is resistance; what remains is one separation made by distance, and separations turn around. The subject of the relation (the decoherence rate) has no frozen partner, so the reflection lives on the gap alone, which is exactly where the vocabulary says a separation may appear.",
+ "knew_tsr": false
+}

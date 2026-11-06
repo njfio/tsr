@@ -1,0 +1,36 @@
+{
+ "id": "field.confinement",
+ "physical": "Confinement: The force between two quarks does not weaken with separation; the energy stored in the color flux tube grows linearly with distance until it is enough to make a new quark-antiquark pair, so no quark is ever found free. Formula: V(r) ≈ σ × r",
+ "reflected_formula": "E ≈ σ × r (σ, the energy per extent of the tube, and r, the separation, have no partner; V is E)",
+ "reflected_sentence": "What on the physical side could never be finished, pulling the pair apart, is turned into what needs no finishing: the Frequency between the two does not fade, the E it holds is already there, and neither of the two is ever met alone.",
+ "shape": "turns around",
+ "rule_reason": "one cost (pulling the pair apart; impossible to finish) that is a separation made by distance; one (odd) → turns around. String tension is UNDETERMINED as a resistance carrier, but it sits inside the same single cost and does not change the count.",
+ "rule_trace": [
+  "separation"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "quark",
+  "antiquark",
+  "color flux tube",
+  "string tension σ",
+  "separation r",
+  "length",
+  "free (quark)",
+  "linearly"
+ ],
+ "new_words": [],
+ "monotone_claims": [
+  {
+   "rises": "E",
+   "with": "Frequency",
+   "sign": 1
+  }
+ ],
+ "interpretation": "The Frequency between the two does not weaken and the E held between them only grows; turned, that is not a cost but a given. No one of the two is ever met alone; they are always together, and the E stored between them is already there rather than paid for. The factor that sets how fast E grows has no frozen word.",
+ "conflicts": "none",
+ "sense": 2,
+ "confidence": 5,
+ "closing": "The count was decided by the separation flag alone, so no judgment call was needed for the shape; the string tension's resistance status is flagged UNDETERMINED by the prompt and I left it so, since it lives inside the one cost already counted. The vocabulary carries only 'force → Frequency' and 'energy → E'; the pair, the tube and the tension are unmapped and are described in plain words. 'Pulling apart' is a distance-made separation and the turned reading (unreachable becomes already there) reads as 'never alone', which is at least sayable, if thin.",
+ "knew_tsr": false
+}

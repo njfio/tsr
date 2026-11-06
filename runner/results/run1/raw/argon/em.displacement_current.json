@@ -1,0 +1,33 @@
+{
+ "id": "em.displacement_current",
+ "physical": "A changing electric field acts as a source of magnetic field just as a current does, which closes the symmetry between the two fields and makes electromagnetic waves possible. (∇ × B = μ0 × J + μ0 × ε0 × dE ÷ dt)",
+ "reflected_formula": "∇ × Reflected = μ0 × J + μ0 × ε0 × dIdle ÷ dExpansion",
+ "reflected_sentence": "A changing Idle partner across Expansion acts as a source of the Reflected partner just as a flow does, keeping the symmetry between the Idle and Reflected co-creating partners.",
+ "shape": "keeps",
+ "rule_reason": "Symmetries keep their shape and no quantity in this relation carries resistance or distance.",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "permeability μ0",
+  "permittivity ε0",
+  "current density J",
+  "curl operator ∇ ×",
+  "field"
+ ],
+ "new_words": [],
+ "monotone_claims": [
+  {
+   "rises": "Reflected",
+   "with": "Idle",
+   "sign": 1
+  }
+ ],
+ "interpretation": "Idle and Reflected are co-creating partners across Expansion. Change in Idle over Expansion generates the Reflected partner, keeping the symmetry between the pair.",
+ "conflicts": "Trap: 'No sums where the book has products' may conflict with the addition in ∇ × B = μ0 × J + μ0 × ε0 × dE ÷ dt.",
+ "sense": 3,
+ "confidence": 7,
+ "closing": "The keeps-or-turns decision is completely forced by the symmetry form and zero resistance/separation costs. Meanwhile, μ0, ε0, J, and curl have no partners in the frozen vocabulary and are listed in unmapped_terms.",
+ "knew_tsr": false
+}

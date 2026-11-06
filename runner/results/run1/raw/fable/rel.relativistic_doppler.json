@@ -1,0 +1,29 @@
+{
+ "id": "rel.relativistic_doppler",
+ "physical": "Relativistic Doppler effect: Light from a source receding at speed v is received at a lower frequency by the factor square root of (1 − β) over (1 + β); approaching, higher. No medium is involved and only the relative velocity matters. Formula: f' = f × √((1 − β) ÷ (1 + β))",
+ "reflected_formula": "f' = f × √((1 − β) ÷ (1 + β)), β = (rise per Expansion) ÷ Current (f, a physical rate, has no partner)",
+ "reflected_sentence": "What comes from a source whose rise per Expansion is away from the one meeting it is met at a lower rate, by that factor; toward, higher; nothing in between is involved and only the relative rise per Expansion matters; the shape keeps.",
+ "shape": "keeps",
+ "rule_reason": "equation with no cost named; the dependence on velocity is not a cost caused by resistance; zero costs → keeps",
+ "rule_trace": [
+  "none"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "emitted frequency f",
+  "received frequency f'",
+  "frequency (physical)",
+  "light",
+  "source",
+  "receding / approaching (separation words)",
+  "medium"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "The relative rise per Expansion and the Current cross; what changes with them, a physical rate, does not. The table has no word for a rate, and Frequency is force's partner, not this. The relation keeps but has almost nothing to say in frozen words.",
+ "conflicts": "none",
+ "sense": 1,
+ "confidence": 6,
+ "closing": "The rule decided without a judgment call. The trap was mapping physical frequency onto TSR Frequency; the prompt forbids it and I refused, leaving the received and emitted rates in plain words. 'Receding' and 'approaching' are separation words and were rendered as rise per Expansion away from or toward the one meeting it; that is as close to a distance word as I came.",
+ "knew_tsr": false
+}

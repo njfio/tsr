@@ -1,0 +1,29 @@
+{
+ "id": "qm.uncertainty_energy_time",
+ "physical": "A state that lasts only a short time has a correspondingly broad energy; the product of the energy spread and the lifetime is at least half the reduced Planck constant. ΔE × Δt ≥ ħ ÷ 2",
+ "reflected_formula": "ΔE × ΔExpansion ≥ ħ ÷ 2",
+ "reflected_sentence": "An E that spans little Expansion has a correspondingly broad E; the spread of E and the span of Expansion cannot both be small.",
+ "shape": "keeps",
+ "rule_reason": "no costs and no resistant quantity; an inequality not caused by resistance keeps",
+ "rule_trace": [
+  "none"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "Planck constant"
+ ],
+ "new_words": [],
+ "monotone_claims": [
+  {
+   "rises": "E",
+   "with": "Expansion",
+   "sign": -1
+  }
+ ],
+ "interpretation": "E is shared by both sides and Expansion is the partner of its spread. The product keeps its shape: narrow in one, broad in the other. The lower bound is a number and does not cross, so what remains is a trade-off with no floor.",
+ "conflicts": "\"Nothing on the nonphysical side has a number\" against the ħ ÷ 2 that the unrewritten formula carries.",
+ "sense": 3,
+ "confidence": 5,
+ "closing": "Forced keeps: empty cost list, nothing resistant. The reflection is legible because both variables cross (E is shared, time goes to Expansion). Two weaknesses: the bound is a number and cannot cross, which strips the inequality of what makes it an inequality; and as a limit it tempts the limited-to-limitless flip, which the deciding question does not authorize. Note also that the reflected sentence had to avoid the word time entirely while describing a lifetime.",
+ "knew_tsr": false
+}

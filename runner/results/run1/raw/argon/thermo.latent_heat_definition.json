@@ -1,0 +1,32 @@
+{
+ "id": "thermo.latent_heat_definition",
+ "physical": "Latent heat is the heat absorbed per unit mass in a phase change at constant temperature.",
+ "reflected_formula": "E = E ÷ Movement M",
+ "reflected_sentence": "The energy for a change of form, for each portion of Movement M, equals the energy taken in divided by Movement M, and this definition keeps its shape.",
+ "shape": "keeps",
+ "rule_reason": "Definition (form is definition with no costs), so it keeps its shape, even though mass m carries resistance; however, latent heat, heat, phase, and temperature are unmapped in the frozen vocabulary.",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "latent heat L",
+  "heat Q",
+  "temperature",
+  "phase"
+ ],
+ "new_words": [],
+ "monotone_claims": [
+  {
+   "rises": "conscious energy",
+   "with": "Movement M",
+   "sign": -1
+  }
+ ],
+ "interpretation": "Definitions keep their shape, and mass m reflects as Movement M. Because latent heat, heat, and temperature have no partners in the frozen vocabulary, the definition cannot be completed.",
+ "conflicts": "none",
+ "sense": 1,
+ "confidence": 7,
+ "closing": "The rule decided on its own that a definition with no cost clauses keeps its shape. Only mass m has a partner (Movement M); latent heat, heat, and temperature are unmapped.",
+ "knew_tsr": false
+}

@@ -1,0 +1,37 @@
+{
+ "id": "thermo.temperature_mean_kinetic_energy",
+ "physical": "In an ideal gas the average translational kinetic energy per molecule is three halves of k times the temperature: temperature measures mean molecular kinetic energy.",
+ "reflected_formula": "Movement M × (rise per Expansion)²",
+ "reflected_sentence": "Movement M times the square of rise per Expansion equals a fixed constant times the thermal intensity, and this identity keeps its shape.",
+ "shape": "keeps",
+ "rule_reason": "Identity (form is identity with no costs), which keeps its shape, but Boltzmann constant and temperature have no partners in the frozen vocabulary.",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "temperature T",
+  "Boltzmann constant k",
+  "ideal gas",
+  "molecule"
+ ],
+ "new_words": [],
+ "monotone_claims": [
+  {
+   "rises": "conscious energy",
+   "with": "Movement M",
+   "sign": 1
+  },
+  {
+   "rises": "conscious energy",
+   "with": "rise per Expansion",
+   "sign": 1
+  }
+ ],
+ "interpretation": "Identities keep their shape, and numbers do not cross the Point of Reflection. Mass m reflects as Movement M and velocity reflects as rise per Expansion, while temperature and the Boltzmann constant have no partners in the frozen vocabulary.",
+ "conflicts": "none",
+ "sense": 2,
+ "confidence": 7,
+ "closing": "The rule decided on its own that an identity with no costs keeps its shape and that numerical factors (1/2, 3/2) drop out. While the left-hand side maps mass m to Movement M and velocity to rise per Expansion, the right-hand side is completely unmapped because k and T are not in the frozen vocabulary.",
+ "knew_tsr": false
+}

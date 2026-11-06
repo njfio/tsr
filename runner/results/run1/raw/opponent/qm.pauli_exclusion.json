@@ -1,0 +1,8 @@
+{
+ "id": "qm.pauli_exclusion",
+ "alternative_shape": null,
+ "rule_compliant": false,
+ "argument": "The relation is a symmetry under exchange, and the rule itself says symmetries keep their shape; no cost, resistant quantity, or distance appears in the statement, so no rule-compliant alternative exists.",
+ "reflected_sentence": "",
+ "knew_tsr": false
+}

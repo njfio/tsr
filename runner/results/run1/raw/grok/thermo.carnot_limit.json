@@ -1,0 +1,24 @@
+{
+ "id": "thermo.carnot_limit",
+ "physical": "No heat engine between two reservoirs can be more efficient than a reversible one; the limit is one minus the ratio of the cold to the hot temperature. η ≤ 1 − T_c ÷ T_h",
+ "reflected_formula": "kept cap ≤ shortfall of colder-condition ÷ hotter-condition",
+ "reflected_sentence": "The cap keeps: how fully an exchange between a colder condition and a hotter one can complete is still the shortfall of their ratio, and it does not become already reached.",
+ "shape": "keeps",
+ "rule_reason": "Inequality, not an equivalence. The listed cost rises with temperature, which does not carry resistance, so it is not a cost or limit caused by resistance. No separation. Zero such costs, so the relationship keeps.",
+ "rule_trace": [
+  "none"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "efficiency",
+  "temperature"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "The relationship keeps. No frozen word names either condition in the ratio, so the cap does not become limitless, Culmination, or Movement. Receptivity does not enter.",
+ "conflicts": "none",
+ "sense": 1,
+ "confidence": 6,
+ "closing": "The rule decided on its own. The form is an inequality, but the listed cost rises with temperature, and the fixed list says temperature does not carry resistance, so the word limit did not turn the reading. Missing partners did not change the shape. The numeral in the formula does not cross, so the image states the shortfall of the ratio without it.",
+ "knew_tsr": false
+}

@@ -1,0 +1,25 @@
+{
+ "id": "thermo.zeroth_law",
+ "physical": "If two bodies are each in thermal equilibrium with a third, they are in thermal equilibrium with each other; this is what makes temperature a well-defined property.",
+ "reflected_formula": "",
+ "reflected_sentence": "If each is equally warm with another, they remain equally warm with each other.",
+ "shape": "keeps",
+ "rule_reason": "The underlying shape keeps because this is a definition and an equivalence structure without listed resistance-caused costs.",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "temperature",
+  "body",
+  "thermal equilibrium"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "No complete reflection is available. Missing partners prevent a nonphysical interpretation.",
+ "conflicts": "none",
+ "sense": 1,
+ "confidence": 7,
+ "closing": "The definition and equivalence structure decide keeps on their own. Calling thermal equilibrium alignment would introduce an unsupported partner; no such repair is made.",
+ "knew_tsr": false
+}

@@ -1,0 +1,36 @@
+{
+ "id": "qm.bound_state_quantization",
+ "physical": "A particle confined to a region has only discrete allowed energies; the spacing grows as the region shrinks and falls as the particle's mass rises. E_n = n² × π² × ħ² ÷ (2 × m × L²)",
+ "reflected_formula": "E ÷ (Movement M × the gap²) = counts and constants with no partner",
+ "reflected_sentence": "The steps of E open as the gap closes and as Movement M turns receptive.",
+ "shape": "turns around",
+ "rule_reason": "One separation made by distance (confinement) drives which energies are allowed; an odd number of turn-triggers turns the shape around. The mass dependence is falls-with, not a rising resistance-cost, so I did not count it.",
+ "rule_trace": [
+  "separation"
+ ],
+ "forced": false,
+ "unmapped_terms": [
+  "Planck constant ħ",
+  "quantum number n",
+  "confinement length L"
+ ],
+ "new_words": [],
+ "monotone_claims": [
+  {
+   "rises": "E",
+   "with": "alignment",
+   "sign": 1
+  },
+  {
+   "rises": "E",
+   "with": "receptivity",
+   "sign": 1
+  }
+ ],
+ "interpretation": "E stands over Movement M and the square of the gap; the count and the constant have no partner, and no number crosses. A separation drives the limit, so the shape turns: the steps of E open as the gap closes.",
+ "conflicts": "none",
+ "sense": 3,
+ "confidence": 4,
+ "closing": "Judgment call on parity. The costs array holds one entry, but it names both a separation (confinement, distance-made, turns) and a mass dependence that runs backwards: the spacing falls as mass rises, so it is not a cost that gets harder with more resistance, and I excluded it from the count. Had it counted, the tally would be even and the shape would keep. Either way the formula keeps its shape in the table's own terms (E over Movement M times the gap squared); only the reading turns.",
+ "knew_tsr": false
+}

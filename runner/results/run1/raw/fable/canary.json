@@ -1,0 +1,9 @@
+{
+  "id": "mech.hooke",
+  "reflected_formula": "Pitch = k × Tone",
+  "reflected_sentence": "A spring pushes back with a Pitch in proportion to how far it is stretched through Tone; stretching it further takes more Pitch, more so the stiffer the spring.",
+  "shape": "keeps",
+  "rule_reason": "The relation is an equation, and an equivalence keeps its shape. Its one cost (stretching the spring further) rises with the spring constant, which is not a density-carrying quantity (only mass carries density), so the cost does not turn around; with zero turning costs (an even number) the statement does not turn around. The formula is left unrewritten, with F read as Pitch and x as Tone per the frozen vocabulary and physical_terms; k has no frozen lateral partner and is kept as the spring constant.",
+  "new_words": ["spring constant", "spring", "stretch", "stiff"],
+  "knew_framework": false
+}

@@ -1,0 +1,17 @@
+id: mech.hooke
+domain: mechanics
+title: "Hooke's law"
+statement: "A spring pushes back in proportion to how far it is stretched; stretching it further takes more force, more so the stiffer the spring."
+formula: "F = k × x"
+form: equation
+variables:
+  - {name: restoring force F, quantity: force}
+  - {name: spring constant k, quantity: spring constant}
+  - {name: stretch x, quantity: length}
+physical_terms: {F: "force", k: "spring constant", x: "space"}
+costs:
+  - {what_gets_harder: "stretching the spring further", rises_with: [spring constant]}
+standard_sources: ["Hooke 1678; any mechanics text"]
+book_status: unreflected
+review: pending
+notes: "Round 1: unanimous turns around, and five different rewritings of the formula. Under C1 the formula is not rewritten; A2 will catch a rewrite. The sign is dropped (direction, not magnitude)."

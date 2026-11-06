@@ -1,0 +1,31 @@
+{
+ "id": "thermo.heat_capacity_cost",
+ "physical": "Warming a body by a given amount takes more heat the larger its heat capacity: thermal inertia. Q = C × ΔT",
+ "reflected_formula": "",
+ "reflected_sentence": "Read as thermal inertia, the cost turns around: what grew harder as the unnamed holding-in of warmth grew, now eases as receptivity rises; read as a plain ratio, the relation simply keeps its shape.",
+ "shape": "turns around",
+ "rule_reason": "There is one cost and it rises with heat capacity, which the fixed list leaves UNDETERMINED: as thermal inertia it carries resistance and the single cost turns the relation; as a plain ratio it carries nothing and the relation keeps. I recorded the inertia reading because this relation is stated as the cost reading.",
+ "rule_trace": [
+  "resistance-cost"
+ ],
+ "forced": false,
+ "unmapped_terms": [
+  "heat capacity",
+  "heat",
+  "temperature"
+ ],
+ "new_words": [],
+ "monotone_claims": [
+  {
+   "rises": "conscious energy needed",
+   "with": "alignment",
+   "sign": -1
+  }
+ ],
+ "interpretation": "On the inertia reading the reflection says warming eases as receptivity grows; on the ratio reading nothing turns at all. Either way the terms have no partners, so no formula image exists on the other side.",
+ "conflicts": "none",
+ "sense": 2,
+ "confidence": 3,
+ "closing": "This is the one row the rule could not decide on its own: the fixed list explicitly punts on heat capacity, and the two readings give opposite shapes. I chose turns around to match this entry's stated cost reading, and confidence is correspondingly low.",
+ "knew_tsr": false
+}

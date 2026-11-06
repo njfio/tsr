@@ -1,0 +1,29 @@
+{
+ "id": "qm.entanglement",
+ "physical": "Measurements on two entangled particles are correlated more strongly than any local account allows (Bell), and the correlation does not weaken with their separation.",
+ "reflected_formula": "",
+ "reflected_sentence": "Two E that have met stay joined more strongly than any account made of separate parts allows, and the joining does not weaken with the Vibration between them.",
+ "shape": "keeps",
+ "rule_reason": "no costs; the separation is named only to say it makes no difference, so no separation made by distance fired",
+ "rule_trace": [
+  "none"
+ ],
+ "forced": false,
+ "unmapped_terms": [
+  "probability"
+ ],
+ "new_words": [],
+ "monotone_claims": [
+  {
+   "rises": "Vibration",
+   "with": "alignment",
+   "sign": 0
+  }
+ ],
+ "interpretation": "The relation already says that Vibration between the two does not weaken what joins them. Kept, it says the same on the nonphysical side. It adds nothing the table does not already assume.",
+ "conflicts": "none",
+ "sense": 3,
+ "confidence": 5,
+ "closing": "One judgment call: the variable list flags separation as carrying distance, but the costs list is empty and the statement is that separation does not matter. I read that as no separation-cost, so the parity count is zero and the relation keeps. Had I counted the flagged variable, it would have turned around, which would make a relation that already ignores distance say the opposite. The correlation strength itself (probability) has no partner.",
+ "knew_tsr": false
+}

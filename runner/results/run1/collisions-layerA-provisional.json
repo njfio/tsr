@@ -1,0 +1,136 @@
+[
+  {
+    "layer": "A4-reading",
+    "rows": [
+      "rel.row08_cost_of_more_speed",
+      "rel.row05_time_dilation",
+      "rel.row07_mass_energy_equivalence"
+    ],
+    "detail": {
+      "child": "rel.row08_cost_of_more_speed",
+      "parents": [
+        "rel.row05_time_dilation",
+        "rel.row07_mass_energy_equivalence"
+      ],
+      "expected": "keeps",
+      "got": "turns around",
+      "level": "reading",
+      "collision": false,
+      "note": "informational: reading parity is not compositional by the book's own row 8"
+    },
+    "status": "informational",
+    "book_ref": "",
+    "upstream_judgments": [],
+    "minimal_change": ""
+  },
+  {
+    "layer": "A4-reading",
+    "rows": [
+      "em.lenz_inductance",
+      "em.faraday"
+    ],
+    "detail": {
+      "child": "em.lenz_inductance",
+      "parents": [
+        "em.faraday"
+      ],
+      "expected": "keeps",
+      "got": "turns around",
+      "level": "reading",
+      "collision": false,
+      "note": "informational: reading parity is not compositional by the book's own row 8"
+    },
+    "status": "informational",
+    "book_ref": "",
+    "upstream_judgments": [],
+    "minimal_change": ""
+  },
+  {
+    "layer": "A4-reading",
+    "rows": [
+      "em.ohm_cost",
+      "em.ohm_definition"
+    ],
+    "detail": {
+      "child": "em.ohm_cost",
+      "parents": [
+        "em.ohm_definition"
+      ],
+      "expected": "keeps",
+      "got": "turns around",
+      "level": "reading",
+      "collision": false,
+      "note": "informational: reading parity is not compositional by the book's own row 8"
+    },
+    "status": "informational",
+    "book_ref": "",
+    "upstream_judgments": [],
+    "minimal_change": ""
+  },
+  {
+    "layer": "A4-reading",
+    "rows": [
+      "mech.gravitational_potential_energy",
+      "mech.work"
+    ],
+    "detail": {
+      "child": "mech.gravitational_potential_energy",
+      "parents": [
+        "mech.work"
+      ],
+      "expected": "keeps",
+      "got": "turns around",
+      "level": "reading",
+      "collision": false,
+      "note": "informational: reading parity is not compositional by the book's own row 8"
+    },
+    "status": "informational",
+    "book_ref": "",
+    "upstream_judgments": [],
+    "minimal_change": ""
+  },
+  {
+    "layer": "A4-reading",
+    "rows": [
+      "thermo.joule_heating",
+      "em.ohm_definition"
+    ],
+    "detail": {
+      "child": "thermo.joule_heating",
+      "parents": [
+        "em.ohm_definition"
+      ],
+      "expected": "keeps",
+      "got": "turns around",
+      "level": "reading",
+      "collision": false,
+      "note": "informational: reading parity is not compositional by the book's own row 8"
+    },
+    "status": "informational",
+    "book_ref": "",
+    "upstream_judgments": [],
+    "minimal_change": ""
+  },
+  {
+    "layer": "A4-reading",
+    "rows": [
+      "thermo.latent_heat_cost",
+      "thermo.latent_heat_definition"
+    ],
+    "detail": {
+      "child": "thermo.latent_heat_cost",
+      "parents": [
+        "thermo.latent_heat_definition"
+      ],
+      "expected": "keeps",
+      "got": "turns around",
+      "level": "reading",
+      "collision": false,
+      "note": "informational: reading parity is not compositional by the book's own row 8"
+    },
+    "status": "informational",
+    "book_ref": "",
+    "upstream_judgments": [],
+    "minimal_change": ""
+  }
+]

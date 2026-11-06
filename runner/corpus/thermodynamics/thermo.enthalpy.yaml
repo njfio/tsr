@@ -1,0 +1,15 @@
+id: thermo.enthalpy
+domain: thermodynamics
+title: "Enthalpy"
+statement: "Enthalpy is internal energy plus pressure times volume; at constant pressure the heat absorbed equals the change in enthalpy."
+formula: "H = U + P × V"
+form: definition
+variables:
+  - {name: enthalpy H, quantity: enthalpy}
+  - {name: internal energy U, quantity: internal energy}
+  - {name: pressure P, quantity: pressure}
+  - {name: volume V, quantity: volume}
+costs: []
+standard_sources: ["Fermi, Thermodynamics, ch. 2"]
+book_status: unreflected
+review: pending

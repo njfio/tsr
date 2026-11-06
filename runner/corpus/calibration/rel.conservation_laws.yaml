@@ -1,0 +1,12 @@
+id: rel.conservation_laws
+domain: calibration
+title: "Conservation laws"
+statement: "In a closed system, total energy and total momentum are constant in time."
+formula: ""
+form: conservation
+variables: []
+costs: []
+standard_sources: ["Noether 1918; any mechanics text"]
+book_status: ruled
+ruling: {shape: keeps, source: "Ch16: an identity, so it keeps its shape"}
+review: "reviewed:spec-port"

@@ -1,0 +1,26 @@
+{
+ "id": "qm.tunneling",
+ "physical": "A particle can cross a barrier higher than its energy; the chance falls exponentially with the barrier's width, with the square root of its height above the particle's energy, and with the square root of the particle's mass.",
+ "reflected_formula": "T ≈ exp(−2 × κ × d), κ = √(2 × Movement M × (V − E)) ÷ ħ",
+ "reflected_sentence": "This turns around: what stood unreachable above E is already easier with receptivity, and the kept formula still has Movement M and E under the root.",
+ "shape": "turns around",
+ "rule_reason": "one cost that rises with mass, and mass carries resistance. Barrier height is undetermined and was not counted as a second cost. separation_made_by_distance is false",
+ "rule_trace": [
+  "resistance-cost"
+ ],
+ "forced": false,
+ "unmapped_terms": [
+  "probability",
+  "barrier height",
+  "barrier width",
+  "Planck constant"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "This turns around. Movement M stays with E in the kept relation, and what was harder is easier with receptivity. This is not the gap and not Frequency.",
+ "conflicts": "none",
+ "sense": 2,
+ "confidence": 5,
+ "closing": "The shape turns because the one cost rises with mass, and mass carries resistance. Barrier height is undetermined, a judgment call the fixed list says R does not decide; I did not assign it resistance and did not count it as a second cost. Width is listed as extent and the cost block sets separation_made_by_distance false, so separation did not fire. That unresolved judgment is why forced is false. The formula is not rewritten: Movement M and E stay where mass and energy were. I did not map the height to the gap.",
+ "knew_tsr": false
+}

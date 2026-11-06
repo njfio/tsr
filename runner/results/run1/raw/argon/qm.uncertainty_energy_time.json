@@ -1,0 +1,25 @@
+{
+ "id": "qm.uncertainty_energy_time",
+ "physical": "A state that lasts only a short time has a correspondingly broad energy. ΔE × Δt ≥ ħ ÷ 2",
+ "reflected_formula": "ΔE × ΔExpansion ≥ [Planck constant: no partner] ÷ 2",
+ "reflected_sentence": "The product keeps its shape: how wide E is and how wide Expansion is cannot both be narrow at once.",
+ "shape": "keeps",
+ "rule_reason": "an inequality with no cost caused by resistance (energy, time and the Planck constant carry no resistance) and no separation",
+ "rule_trace": [
+  "none"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "Planck constant",
+  "spread",
+  "state lifetime"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "E is shared by both sides and time maps to Expansion, so the product carries over and keeps its shape. But a spread and a lower bound are quantities, so the reflection has no content on the nonphysical side.",
+ "conflicts": "\"Nothing on the nonphysical side has a number, a unit or a distance\" (½ and the bound)",
+ "sense": 2,
+ "confidence": 6,
+ "closing": "The rule decided the shape: nothing carries resistance, so it keeps. The trouble is that the relation is a numerical bound, and numbers do not cross. 'Spread of Expansion' is already close to bringing quantities in.",
+ "knew_tsr": false
+}

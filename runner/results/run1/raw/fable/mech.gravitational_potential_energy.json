@@ -1,0 +1,30 @@
+{
+ "id": "mech.gravitational_potential_energy",
+ "physical": "Lifting a body against gravity costs energy in proportion to its mass and the height gained. U = m × g × h",
+ "reflected_formula": "U = Movement M × Attraction × Vibration (U has no partner)",
+ "reflected_sentence": "The formula is kept as Movement M times Attraction times Vibration, but the reading turns: what the physical side pays more for the more mass it lifts, the nonphysical side realizes more easily the more receptive it is, and with alignment there is nothing to lift against because it is already there.",
+ "shape": "turns around",
+ "rule_reason": "One cost caused by resistance: lifting costs energy in proportion to mass m, which carries resistance. One cost is odd, so it turns.",
+ "rule_trace": [
+  "resistance-cost"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "potential energy",
+  "lifting"
+ ],
+ "new_words": [],
+ "monotone_claims": [
+  {
+   "rises": "realization",
+   "with": "alignment",
+   "sign": 1
+  }
+ ],
+ "interpretation": "Lifting against Attraction is the cost on the physical side, and it grows with mass. Reflected, the cost becomes ease: realization comes more readily with receptivity, and Attraction is not something to climb out of but something that carries. The kept product of Movement M, Attraction and Vibration still names what is realized, but it is no longer what has to be paid.",
+ "conflicts": "none",
+ "sense": 4,
+ "confidence": 6,
+ "closing": "The rule decided on its own: one cost rising with mass, odd, turns. Two notes. The fixed list says height does not carry distance and the cost is not a separation made by distance, though a height is a distance in the ordinary sense; I applied the list as given, and it did not change the parity. Potential energy has no row; the nearest is 'physical energy → conscious energy' and I did not use it. The turned reading sits awkwardly with the kept formula: the formula still says the energy grows with Movement M and Vibration, while the reading says it stops being a cost.",
+ "knew_tsr": false
+}

@@ -1,0 +1,30 @@
+{
+ "id": "info.channel_capacity",
+ "physical": "C = B × log(1 + S ÷ N): the greatest rate at which information can be sent reliably through a noisy channel is the bandwidth times the log of one plus the signal-to-noise ratio.",
+ "reflected_formula": "[channel capacity: no partner] = [bandwidth: no partner] × log(1 + [signal power: no partner] ÷ [noise power: no partner])",
+ "reflected_sentence": "The relationship keeps: the greatest reliable rate through a noisy channel is set by the extent in frequency times the log of one plus the ratio of the wanted power to the unwanted power, and none of these four quantities has a frozen partner.",
+ "shape": "keeps",
+ "rule_reason": "definition; no quantity in it carries resistance (power, noise power, bandwidth, channel capacity are all fixed as non-resistance), so zero resistance-costs and the shape keeps",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "channel capacity C",
+  "bandwidth B",
+  "signal power S",
+  "noise power N",
+  "information",
+  "noisy channel",
+  "log",
+  "the number 1"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "Nothing in this relation reaches the nonphysical side. The shape is kept but it is the shape of an empty sentence. No frozen word is touched.",
+ "conflicts": "none",
+ "sense": 1,
+ "confidence": 7,
+ "closing": "The rule decided on its own: the form is a definition and none of the fixed quantities carries resistance, so keeps. The limit it states (a greatest reliable rate) is caused by noise, not resistance, so the turn-around clause does not fire. The result is still empty, because the frozen vocabulary has no words for capacity, bandwidth, signal or noise; I did not borrow strong frequency or weak frequency for signal and noise, since that would be a rescue.",
+ "knew_tsr": false
+}

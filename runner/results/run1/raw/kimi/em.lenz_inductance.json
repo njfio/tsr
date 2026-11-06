@@ -1,0 +1,31 @@
+{
+ "id": "em.lenz_inductance",
+ "physical": "An induced current flows so as to oppose the change that produced it; a coil opposes a change in its own current with a back-EMF proportional to its inductance. EMF = L × dI ÷ dt",
+ "reflected_formula": "EMF = L × dI ÷ dExpansion",
+ "reflected_sentence": "The back-push turns around: the change that opposition made harder, receptivity makes easier, and the more receptive, the easier the change comes.",
+ "shape": "turns around",
+ "rule_reason": "A cost that rises with resistance: changing the current gets harder as inductance rises, inductance carries resistance, one such cost, odd count, so it turns around.",
+ "rule_trace": [
+  "resistance-cost"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "voltage (back-EMF)",
+  "inductance L",
+  "current I"
+ ],
+ "new_words": [],
+ "monotone_claims": [
+  {
+   "rises": "receptivity",
+   "with": "alignment",
+   "sign": 1
+  }
+ ],
+ "interpretation": "What pushed back now yields. Ease rises as receptivity rises. The formula holds; only the harder becomes easier.",
+ "conflicts": "none",
+ "sense": 5,
+ "confidence": 7,
+ "closing": "The rule decided cleanly: one listed cost, rising with inductance, which the fixed table marks as carrying resistance, so a single turn-around. This is one of the cases where the flipped reading stays coherent: easier with more receptivity is exactly the mirror of harder with more opposition.",
+ "knew_tsr": false
+}

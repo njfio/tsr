@@ -1,0 +1,27 @@
+{
+ "id": "thermo.temperature_mean_kinetic_energy",
+ "physical": "Temperature as mean kinetic energy: In an ideal gas the average translational kinetic energy per molecule is three halves of k times the temperature: temperature measures mean molecular kinetic energy. ½ × m × ⟨v²⟩ = 3/2 × k × T",
+ "reflected_formula": "½ × Movement M × ⟨(rise per Expansion)²⟩ = 3/2 × [no partner: Boltzmann constant k] × [no partner: temperature T]",
+ "reflected_sentence": "The identity keeps its shape: Movement M times the square of rise per Expansion stands equal to an unnamed constant times an unnamed hotness; those two have no partners.",
+ "shape": "keeps",
+ "rule_reason": "Identity (an equivalence); no costs listed; keeps its shape even though mass m carries resistance, since the rule turns only costs, not identities.",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "temperature",
+  "Boltzmann constant",
+  "ideal gas",
+  "molecule",
+  "kinetic energy (the generic energy row exists, but kinetic energy has no row of its own)"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "Movement M and rise per Expansion meet as a product on one side; the other side has no partner. The numbers are kept only because the formula is not rewritten; nothing on this side has a number.",
+ "conflicts": "none",
+ "sense": 2,
+ "confidence": 7,
+ "closing": "The rule decided on its own: an identity keeps. Two things to flag: 'mean square speed' was carried through the velocity row ('rise per Expansion') because 'speed' is forbidden on the nonphysical side and the variable's quantity is velocity; and the factors ½ and 3/2 are numbers that the rule says do not cross, kept only because I was told not to rewrite formulas. The right-hand side has no frozen words at all, so the identity equates a frozen product to a hole.",
+ "knew_tsr": false
+}

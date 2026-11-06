@@ -1,0 +1,39 @@
+{
+ "id": "mech.gravitational_potential_energy",
+ "physical": "Lifting a body against gravity costs energy in proportion to its mass and the height gained.",
+ "reflected_formula": "E = Movement M × Attraction × Vibration",
+ "reflected_sentence": "Rising in Vibration with Attraction becomes easier as alignment and receptivity rise, rather than costing conscious energy in proportion to Movement M and Vibration.",
+ "shape": "turns around",
+ "rule_reason": "1 resistance cost: lifting the body costs energy rising with mass m (resistance)",
+ "rule_trace": [
+  "resistance-cost"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "potential energy"
+ ],
+ "new_words": [],
+ "monotone_claims": [
+  {
+   "rises": "E",
+   "with": "alignment",
+   "sign": 1
+  },
+  {
+   "rises": "E",
+   "with": "Attraction",
+   "sign": 1
+  },
+  {
+   "rises": "E",
+   "with": "Vibration",
+   "sign": 1
+  }
+ ],
+ "interpretation": "The formula keeps Movement M times Attraction times Vibration, while the reading turns around because mass carries resistance. What costs energy against gravitational pull on the physical side becomes easier with receptivity and alignment on the nonphysical side.",
+ "conflicts": "none",
+ "sense": 4,
+ "confidence": 6,
+ "closing": "The rule forces a turnaround because there is one cost rising with mass m, and physical_terms maps h to space and g to gravitational pull, leaving only potential energy U without a dedicated frozen partner beyond conscious energy / E.",
+ "knew_tsr": false
+}

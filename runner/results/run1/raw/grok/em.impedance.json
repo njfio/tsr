@@ -1,0 +1,27 @@
+{
+ "id": "em.impedance",
+ "physical": "In an alternating-current circuit the ratio of voltage to current is the impedance, whose magnitude combines resistance with the inductive and capacitive reactances. |Z| = √(R² + (X_L − X_C)²)",
+ "reflected_formula": "|(unmapped)| = √((unmapped)² + ((unmapped) − (unmapped))²)",
+ "reflected_sentence": "The ratio of the push to the flow stays a magnitude that combines the receptive conditions, and the definition keeps.",
+ "shape": "keeps",
+ "rule_reason": "The form is a definition, which the rule groups with identities, so the relationship keeps. The cost block is empty. That the quantities carry resistance flips the condition to receptivity; it does not turn the definition.",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "impedance",
+  "electrical resistance",
+  "reactance",
+  "voltage",
+  "current"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "Receptivity keeps as the combined condition. The relationship keeps. Nothing turns.",
+ "conflicts": "none",
+ "sense": 3,
+ "confidence": 7,
+ "closing": "The rule decided. A definition keeps even though impedance, resistance, and reactance are listed as carrying resistance; the cost block is empty and the statement defines a ratio rather than a cost that rises. I used receptivity for the flipped condition and left the quantities unmapped rather than inventing partners. I did not rewrite the sum of squares as a product.",
+ "knew_tsr": false
+}

@@ -1,0 +1,25 @@
+{
+ "id": "thermo.heat_capacity_cost",
+ "physical": "Warming a body by a given amount takes more heat the larger its heat capacity: thermal inertia. Q = C × ΔT",
+ "reflected_formula": "unmatched transit = unmatched amount × unmatched change",
+ "reflected_sentence": "The proportion keeps: the unmatched transit a given change takes stays larger when the unmatched amount is larger, and that reading does not turn into ease with receptivity.",
+ "shape": "keeps",
+ "rule_reason": "Judgment call. The cost block lists one cost rising with heat capacity, but heat capacity is UNDETERMINED and is not a fixed resistance carrier. Heat and temperature do not carry resistance. No separation. I do not count an undecided quantity as a resistance-cost, so the count is zero and the relationship keeps.",
+ "rule_trace": [
+  "none"
+ ],
+ "forced": false,
+ "unmapped_terms": [
+  "heat capacity",
+  "heat",
+  "temperature"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "The relationship keeps. Receptivity does not enter. No frozen word names any term, so this does not become Movement or Culmination.",
+ "conflicts": "none",
+ "sense": 1,
+ "confidence": 3,
+ "closing": "The rule did not decide this alone. The statement calls the cost thermal inertia, which is clause (a), but the fixed list marks heat capacity UNDETERMINED and says R does not decide it. I did not grant a resistance status the list withheld, so the relationship keeps. A reading that granted clause (a) would turn it around. That fork is why confidence is low and forced is false.",
+ "knew_tsr": false
+}

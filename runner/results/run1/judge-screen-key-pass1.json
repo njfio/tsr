@@ -1,0 +1,370 @@
+{
+  "keymap": {
+    "S001": {
+      "record_id": "rel.relativistic_doppler",
+      "book": false
+    },
+    "S002": {
+      "record_id": "em.lenz_inductance",
+      "book": false
+    },
+    "S003": {
+      "record_id": "mech.gravitational_potential_energy",
+      "book": false
+    },
+    "S004": {
+      "record_id": "mech.friction",
+      "book": false
+    },
+    "S005": {
+      "record_id": "mech.damping",
+      "book": true
+    },
+    "S006": {
+      "record_id": "em.wave_propagation",
+      "book": false
+    },
+    "S007": {
+      "record_id": "field.running_couplings",
+      "book": false
+    },
+    "S008": {
+      "record_id": "info.channel_capacity",
+      "book": false
+    },
+    "S009": {
+      "record_id": "em.faraday",
+      "book": false
+    },
+    "S010": {
+      "record_id": "thermo.temperature_mean_kinetic_energy",
+      "book": false
+    },
+    "S011": {
+      "record_id": "qm.decoherence",
+      "book": false
+    },
+    "S012": {
+      "record_id": "thermo.zeroth_law",
+      "book": false
+    },
+    "S013": {
+      "record_id": "rel.row11_mass_energy_warps_spacetime",
+      "book": true
+    },
+    "S014": {
+      "record_id": "thermo.carnot_limit",
+      "book": false
+    },
+    "S015": {
+      "record_id": "waves.snell_refraction",
+      "book": false
+    },
+    "S016": {
+      "record_id": "field.vacuum_energy",
+      "book": false
+    },
+    "S017": {
+      "record_id": "waves.interference_cancellation",
+      "book": true
+    },
+    "S018": {
+      "record_id": "qm.born_rule",
+      "book": false
+    },
+    "S019": {
+      "record_id": "mech.hooke",
+      "book": false
+    },
+    "S020": {
+      "record_id": "rel.equivalence_principle",
+      "book": false
+    },
+    "S021": {
+      "record_id": "info.data_processing_inequality",
+      "book": false
+    },
+    "S022": {
+      "record_id": "waves.standing_waves",
+      "book": false
+    },
+    "S023": {
+      "record_id": "mech.newtons_second_law",
+      "book": true
+    },
+    "S024": {
+      "record_id": "rel.mass_density_volume",
+      "book": true
+    },
+    "S025": {
+      "record_id": "statmech.ergodicity",
+      "book": false
+    },
+    "S026": {
+      "record_id": "rel.row06_length_contraction",
+      "book": true
+    },
+    "S027": {
+      "record_id": "thermo.joule_heating",
+      "book": false
+    },
+    "S028": {
+      "record_id": "em.impedance",
+      "book": false
+    },
+    "S029": {
+      "record_id": "rel.row09_mass_cannot_reach_c",
+      "book": true
+    },
+    "S030": {
+      "record_id": "rel.velocity_addition",
+      "book": false
+    },
+    "S031": {
+      "record_id": "qm.no_cloning",
+      "book": false
+    },
+    "S032": {
+      "record_id": "waves.superposition",
+      "book": false
+    },
+    "S033": {
+      "record_id": "thermo.second_law_clausius",
+      "book": false
+    },
+    "S034": {
+      "record_id": "rel.newtons_third_law",
+      "book": true
+    },
+    "S035": {
+      "record_id": "waves.phase_velocity",
+      "book": false
+    },
+    "S036": {
+      "record_id": "field.gauge_invariance",
+      "book": false
+    },
+    "S037": {
+      "record_id": "rel.row10_spacetime_one_continuum",
+      "book": true
+    },
+    "S038": {
+      "record_id": "thermo.thermal_equilibrium",
+      "book": false
+    },
+    "S039": {
+      "record_id": "mech.resonance_width",
+      "book": false
+    },
+    "S040": {
+      "record_id": "em.ohm_cost",
+      "book": false
+    },
+    "S041": {
+      "record_id": "rel.energy_momentum_relation",
+      "book": false
+    },
+    "S042": {
+      "record_id": "thermo.enthalpy",
+      "book": false
+    },
+    "S043": {
+      "record_id": "mech.moment_of_inertia",
+      "book": false
+    },
+    "S044": {
+      "record_id": "em.displacement_current",
+      "book": false
+    },
+    "S045": {
+      "record_id": "mech.friction",
+      "book": true
+    },
+    "S046": {
+      "record_id": "rel.row02_no_shared_now",
+      "book": true
+    },
+    "S047": {
+      "record_id": "qm.uncertainty_position_momentum",
+      "book": false
+    },
+    "S048": {
+      "record_id": "thermo.latent_heat_definition",
+      "book": false
+    },
+    "S049": {
+      "record_id": "rel.row12_wells_and_lensing",
+      "book": true
+    },
+    "S050": {
+      "record_id": "qm.spin",
+      "book": false
+    },
+    "S051": {
+      "record_id": "qm.complementarity",
+      "book": false
+    },
+    "S052": {
+      "record_id": "em.gauss",
+      "book": false
+    },
+    "S053": {
+      "record_id": "rel.row08_cost_of_more_speed",
+      "book": true
+    },
+    "S054": {
+      "record_id": "thermo.third_law",
+      "book": false
+    },
+    "S055": {
+      "record_id": "qm.superposition",
+      "book": false
+    },
+    "S056": {
+      "record_id": "waves.group_velocity",
+      "book": false
+    },
+    "S057": {
+      "record_id": "statmech.fluctuation_dissipation",
+      "book": false
+    },
+    "S058": {
+      "record_id": "statmech.boltzmann_entropy",
+      "book": false
+    },
+    "S059": {
+      "record_id": "field.higgs_mechanism",
+      "book": false
+    },
+    "S060": {
+      "record_id": "thermo.free_energy",
+      "book": false
+    },
+    "S061": {
+      "record_id": "waves.dispersion",
+      "book": false
+    },
+    "S062": {
+      "record_id": "field.noether",
+      "book": false
+    },
+    "S063": {
+      "record_id": "em.mutual_induction",
+      "book": false
+    },
+    "S064": {
+      "record_id": "qm.entanglement",
+      "book": false
+    },
+    "S065": {
+      "record_id": "info.shannon_entropy",
+      "book": false
+    },
+    "S066": {
+      "record_id": "rel.row05_time_dilation",
+      "book": true
+    },
+    "S067": {
+      "record_id": "mech.bernoulli",
+      "book": false
+    },
+    "S068": {
+      "record_id": "field.weak_flavor_change",
+      "book": false
+    },
+    "S069": {
+      "record_id": "mech.buoyancy",
+      "book": false
+    },
+    "S070": {
+      "record_id": "rel.boyle",
+      "book": true
+    },
+    "S071": {
+      "record_id": "waves.interference_cancellation",
+      "book": false
+    },
+    "S072": {
+      "record_id": "thermo.fourier_conduction",
+      "book": false
+    },
+    "S073": {
+      "record_id": "statmech.equipartition",
+      "book": false
+    },
+    "S074": {
+      "record_id": "waves.doppler",
+      "book": false
+    },
+    "S075": {
+      "record_id": "rel.row07_mass_energy_equivalence",
+      "book": true
+    },
+    "S076": {
+      "record_id": "mech.angular_momentum",
+      "book": false
+    },
+    "S077": {
+      "record_id": "qm.measurement_collapse",
+      "book": false
+    },
+    "S078": {
+      "record_id": "em.poynting",
+      "book": false
+    },
+    "S079": {
+      "record_id": "mech.collisions_elastic_inelastic",
+      "book": false
+    },
+    "S080": {
+      "record_id": "qm.zero_point_energy",
+      "book": false
+    },
+    "S081": {
+      "record_id": "thermo.first_law",
+      "book": false
+    },
+    "S082": {
+      "record_id": "info.landauer",
+      "book": false
+    },
+    "S083": {
+      "record_id": "em.ohm_definition",
+      "book": false
+    },
+    "S084": {
+      "record_id": "qm.uncertainty_energy_time",
+      "book": false
+    },
+    "S085": {
+      "record_id": "qm.pauli_exclusion",
+      "book": false
+    },
+    "S086": {
+      "record_id": "field.cp_violation",
+      "book": false
+    },
+    "S087": {
+      "record_id": "thermo.heat_capacity_definition",
+      "book": false
+    },
+    "S088": {
+      "record_id": "statmech.phase_transition_critical_point",
+      "book": false
+    },
+    "S089": {
+      "record_id": "mech.damping",
+      "book": false
+    },
+    "S090": {
+      "record_id": "rel.null_interval",
+      "book": false
+    },
+    "S091": {
+      "record_id": "thermo.latent_heat_cost",
+      "book": false
+    }
+  },
+  "n": 91,
+  "prompt_sha256": "0b8f6fd7c22fa370feaa5974dfd330a3fe4dd7d8c68a10f85239da0572fde3ae"
+}

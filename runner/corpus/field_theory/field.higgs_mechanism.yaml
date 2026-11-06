@@ -1,0 +1,15 @@
+id: field.higgs_mechanism
+domain: field_theory
+title: "Higgs mechanism"
+statement: "The masses of the W and Z bosons and of the fundamental fermions arise from their coupling to the Higgs field's nonzero vacuum value; a particle's mass is its coupling strength times that value."
+formula: "m_f = y_f × v ÷ √2"
+form: equation
+variables:
+  - {name: fermion mass m_f, quantity: mass m}
+  - {name: Yukawa coupling y_f, quantity: "Higgs coupling (Yukawa)"}
+  - {name: vacuum expectation value v, quantity: vacuum expectation value}
+costs: []
+standard_sources: ["Higgs 1964; Englert & Brout 1964; Weinberg 1967; ATLAS & CMS 2012"]
+book_status: unreflected
+review: pending
+notes: "Directly touches 'mass is resistance': what sets the resistance is a coupling. No difficulty is asserted, so the procedure keeps and forces it. The Higgs-coupling joint (whether what sets a mass carries resistance) only bites in a cost block. Note for the ledger: most of a proton's mass is binding energy, not Higgs coupling (deep read Pass 1)."

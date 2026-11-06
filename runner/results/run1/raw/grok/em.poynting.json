@@ -1,0 +1,24 @@
+{
+ "id": "em.poynting",
+ "physical": "The energy carried by an electromagnetic field per unit area per unit time is the cross product of the electric and magnetic fields over the permeability. S = E × B ÷ μ0",
+ "reflected_formula": "(unmapped) = Idle × Reflected ÷ (unmapped)",
+ "reflected_sentence": "Conscious energy stays the product of Idle and Reflected over the medium constant, and the definition keeps.",
+ "shape": "keeps",
+ "rule_reason": "The form is a definition, which the rule groups with identities, and the cost block is empty, so the relationship keeps. The Poynting vector does not carry resistance.",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "Poynting vector",
+  "permeability"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "Conscious energy stays Idle with Reflected. The relationship keeps. Nothing turns.",
+ "conflicts": "none",
+ "sense": 4,
+ "confidence": 7,
+ "closing": "The rule decided the keep: the form is a definition and the cost block is empty. Electric maps to Idle and magnetic to Reflected. I mapped the energy in the statement to conscious energy and left the Poynting vector and permeability unmapped. Units of area and of the coordinate do not cross, so I did not carry them into the sentence. I did not flip the flux into collection, because the statement does not call it radiation.",
+ "knew_tsr": false
+}

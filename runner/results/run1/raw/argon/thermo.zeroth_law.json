@@ -1,0 +1,24 @@
+{
+ "id": "thermo.zeroth_law",
+ "physical": "If two bodies are each in thermal equilibrium with a third, they are in thermal equilibrium with each other; this is what makes temperature a well-defined property.",
+ "reflected_formula": "",
+ "reflected_sentence": "Two bodies each in balance of warmth with a third are in balance with each other, and this equivalence keeps its shape.",
+ "shape": "keeps",
+ "rule_reason": "Definition / equivalence (form is definition with no costs and temperature does not carry resistance), which keeps its shape, but temperature and thermal equilibrium are unmapped in the frozen vocabulary.",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "temperature T",
+  "thermal equilibrium"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "Equivalences and definitions keep their shape across the Point of Reflection. Because temperature and thermal equilibrium have no partners in the frozen vocabulary, the statement cannot be expressed.",
+ "conflicts": "none",
+ "sense": 1,
+ "confidence": 7,
+ "closing": "The rule decided on its own that a definition/equivalence with no costs keeps its shape. However, the sole variable (temperature T) has no partner in the frozen vocabulary.",
+ "knew_tsr": false
+}

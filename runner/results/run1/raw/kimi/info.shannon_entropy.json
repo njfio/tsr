@@ -1,0 +1,27 @@
+{
+ "id": "info.shannon_entropy",
+ "physical": "Shannon entropy — The uncertainty of a source is minus the sum over outcomes of probability times log probability; it is the least average number of bits needed to encode it. H = −Σ p × log p. Form: definition.",
+ "reflected_formula": "",
+ "reflected_sentence": "The definition keeps its shape: the uncertainty of a source weighs each outcome against its likelihood and sums them — stated in plain words, since neither the uncertainty-measure nor likelihood has a partner, and the map row for entropy was not extended to this separate quantity.",
+ "shape": "keeps",
+ "rule_reason": "definition with no listed cost and no resistance-carrying quantity (Shannon entropy and probability are both fixed as non-resistance); zero costs keeps the shape",
+ "rule_trace": [
+  "identity",
+  "none"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "Shannon entropy (the frozen table maps only 'entropy'; I did not extend the row)",
+  "probability",
+  "bit",
+  "encoding"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "Nothing crosses. The shape keeps in silence.",
+ "conflicts": "none",
+ "sense": 1,
+ "confidence": 7,
+ "closing": "The shape was mechanical: a definition with no costs keeps. The one open question was vocabulary, not shape — whether 'entropy -> Culmination (provisional)' covers Shannon entropy. The pre-run quantity list deliberately separates the two, so I recorded Shannon entropy unmapped rather than guess; that discretion does not affect the keeps call.",
+ "knew_tsr": false
+}

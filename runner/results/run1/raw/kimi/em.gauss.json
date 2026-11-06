@@ -1,0 +1,26 @@
+{
+ "id": "em.gauss",
+ "physical": "The electric flux through any closed surface equals the enclosed charge divided by the permittivity of free space. Φ_E = Q ÷ ε0",
+ "reflected_formula": "Idle flux = Q ÷ ε0",
+ "reflected_sentence": "The Idle flux through a closed whole equals the enclosed source divided by a medium constant, and the identity keeps its shape.",
+ "shape": "keeps",
+ "rule_reason": "An identity of flux and source with no cost or limit caused by resistance, so it keeps its shape.",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "electric flux Φ_E",
+  "charge Q",
+  "permittivity ε0",
+  "closed surface"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "The Idle flux and the source are one equality. A medium constant divides and stays a divider. Nothing was harder on one side than the other.",
+ "conflicts": "none",
+ "sense": 3,
+ "confidence": 7,
+ "closing": "The rule decided alone: the form is stated as identity and no costs are listed. The judgment was only that 'closed whole' stands for closed surface without crossing a forbidden word; enclosure is not in the banned list, but the term has no frozen partner, which is recorded.",
+ "knew_tsr": false
+}

@@ -1,0 +1,27 @@
+{
+ "id": "field.cp_violation",
+ "physical": "The weak interaction treats matter and antimatter slightly differently: the combined operation of charge conjugation and parity is not an exact symmetry.",
+ "reflected_formula": "",
+ "reflected_sentence": "A weak Frequency treats two sides differently in Vibrational Reality: their combined reflection is not an exact equivalence.",
+ "shape": "keeps",
+ "rule_reason": "No resistance or separation costs; equation statement with zero costs keeps its shape.",
+ "rule_trace": [
+  "none"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "weak interaction",
+  "matter",
+  "antimatter",
+  "charge conjugation",
+  "parity"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "No resistance or the gap appears in this relation, so the relationship keeps its shape. The physical terms of the relation have no partners in Vibrational Reality or Collective Reality.",
+ "conflicts": "none",
+ "sense": 1,
+ "confidence": 6,
+ "closing": "The rule for shape is clear since there are no costs or separations, so the relation keeps its shape, though nearly every noun in the statement lacks a partner in the frozen vocabulary.",
+ "knew_tsr": false
+}

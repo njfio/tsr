@@ -1,0 +1,41 @@
+{
+ "id": "mech.buoyancy",
+ "physical": "A body immersed in a fluid is pushed up by a force equal to the weight of the fluid it displaces; it floats if it is less dense than the fluid.",
+ "reflected_formula": "Frequency = Desire × Attraction × Vibrance",
+ "reflected_sentence": "A body in a medium is lifted by a Frequency equal to the Desire times Attraction times Vibrance it displaces, and rises when it has less Desire than the medium.",
+ "shape": "keeps",
+ "rule_reason": "equation with 0 costs listed",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": false,
+ "unmapped_terms": [
+  "gravitational field g",
+  "fluid",
+  "floats"
+ ],
+ "new_words": [],
+ "monotone_claims": [
+  {
+   "rises": "Frequency",
+   "with": "Desire",
+   "sign": 1
+  },
+  {
+   "rises": "Frequency",
+   "with": "Attraction",
+   "sign": 1
+  },
+  {
+   "rises": "Frequency",
+   "with": "Vibrance",
+   "sign": 1
+  }
+ ],
+ "interpretation": "Frequency is Desire times Attraction times Vibrance. As Desire and Vibrance rise with Attraction, Frequency rises with them.",
+ "conflicts": "none",
+ "sense": 3,
+ "confidence": 5,
+ "closing": "The costs array is empty even though density carries resistance, so by the explicit costs list the relation keeps its shape; gravitational field g is not directly in the frozen table (only gravitational pull -> Attraction is), so it is recorded in unmapped_terms.",
+ "knew_tsr": false
+}

@@ -1,0 +1,20 @@
+id: mech.gravitational_potential_energy
+domain: mechanics
+title: "Gravitational potential energy (cost reading)"
+statement: "Lifting a body against gravity costs energy in proportion to its mass and the height gained."
+formula: "U = m × g × h"
+form: equation
+variables:
+  - {name: potential energy U, quantity: potential energy}
+  - {name: mass m, quantity: mass m}
+  - {name: height h, quantity: height}
+  - {name: gravitational field g, quantity: gravitational field g}
+physical_terms: {U: "potential energy", m: "mass m", h: "space", g: "gravitational pull"}
+costs:
+  - {what_gets_harder: "lifting the body; the energy the lift costs", rises_with: [mass m]}
+derived_from: [mech.work]
+derivation: "work against a constant weight over a height"
+standard_sources: ["any mechanics text"]
+book_status: unreflected
+review: pending
+notes: "Round 1 split this (definition and cost). Under C1 this is the cost record; the definition record is the formula itself, which keeps. Entered as the cost claim because that is the statement with content."

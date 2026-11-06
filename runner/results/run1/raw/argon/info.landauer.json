@@ -1,0 +1,28 @@
+{
+ "id": "info.landauer",
+ "physical": "Erasing one bit of information dissipates at least k T ln 2 of energy as heat; logically irreversible operations have a thermodynamic cost that rises with temperature. (E ≥ k × T × ln 2)",
+ "reflected_formula": "E ≥ [unmapped: Boltzmann constant k] × [unmapped: temperature T] × ln 2",
+ "reflected_sentence": "The E involved in [unmapped: erasing one bit of information] is at least [unmapped: Boltzmann constant k] times [unmapped: temperature T] times ln 2.",
+ "shape": "keeps",
+ "rule_reason": "the listed thermodynamic cost rises with temperature, which is fixed as not carrying resistance, leaving zero resistance-caused costs",
+ "rule_trace": [
+  "none"
+ ],
+ "forced": false,
+ "unmapped_terms": [
+  "temperature T",
+  "Boltzmann constant k",
+  "bit of information",
+  "erasing",
+  "heat",
+  "logically irreversible operations"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "E crosses the Point of Reflection unchanged, while Boltzmann constant, temperature, heat, and erasing have no partners in the frozen vocabulary. Although the relation states a cost, that cost rises with temperature rather than the gap, so the inequality keeps its direction under the fixed list. With only E mapped and pure numbers excluded on the nonphysical side, the bound has no coherent reading in Vibrational Reality.",
+ "conflicts": "\"Nothing on the nonphysical side has a number, a unit or a distance.\"",
+ "sense": 1,
+ "confidence": 5,
+ "closing": "Following the pre-fixed table strictly, the single cost entry rises with temperature, and temperature is explicitly fixed as not carrying resistance, so zero resistance-caused costs fire and the inequality keeps its shape. This required a judgment call to stick strictly to the pre-fixed resistance table, because physically Landauer dissipation is an irreversible heat cost and the prompt's deciding question contrasts equivalences with costs.",
+ "knew_tsr": false
+}

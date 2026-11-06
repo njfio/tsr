@@ -1,0 +1,18 @@
+id: mech.reynolds_laminar_turbulent
+domain: mechanics
+title: "Reynolds number: laminar and turbulent flow"
+statement: "Flow stays laminar while inertial effects are small relative to viscous ones (low Reynolds number); as density, speed or size rise, or viscosity falls, the flow becomes turbulent."
+formula: "Re = ρ × v × L ÷ μ"
+form: equation
+variables:
+  - {name: Reynolds number Re, quantity: Reynolds number}
+  - {name: density ρ, quantity: density}
+  - {name: speed v, quantity: velocity}
+  - {name: length scale L, quantity: length}
+  - {name: viscosity μ, quantity: viscosity}
+costs:
+  - {what_gets_harder: "keeping the flow ordered (laminar)", rises_with: [density], falls_with: [viscosity]}
+standard_sources: ["Reynolds 1883; Landau & Lifshitz, Fluid Mechanics, §19"]
+book_status: unreflected
+review: pending
+notes: "The river in Ch 2 is laminar. Two resistance-carrying quantities act in opposite directions: density raises the difficulty, viscosity lowers it. This is the reverse_cost joint; the row cannot be forced."

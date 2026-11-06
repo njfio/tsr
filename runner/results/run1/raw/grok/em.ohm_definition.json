@@ -1,0 +1,26 @@
+{
+ "id": "em.ohm_definition",
+ "physical": "Resistance is the ratio of the voltage across a conductor to the current through it. R = V ÷ I",
+ "reflected_formula": "(unmapped) = (unmapped) ÷ (unmapped)",
+ "reflected_sentence": "Receptivity stays the ratio of the push to the flow, and the definition keeps.",
+ "shape": "keeps",
+ "rule_reason": "The form is a definition, which the rule groups with identities, and the cost block is empty, so the relationship keeps. The condition flips from resistant to receptive; the ratio does not turn.",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "electrical resistance",
+  "voltage",
+  "current",
+  "conductor"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "Receptivity keeps as the ratio. The relationship keeps. Nothing turns.",
+ "conflicts": "none",
+ "sense": 3,
+ "confidence": 7,
+ "closing": "The rule decided. A definition keeps. I did not let the cost reading of the same symbols turn this one. The quantities have no partners; receptivity names the flipped condition, not a new symbol.",
+ "knew_tsr": false
+}

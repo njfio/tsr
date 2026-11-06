@@ -1,0 +1,29 @@
+{
+ "id": "qm.uncertainty_position_momentum",
+ "physical": "The spreads of position and momentum in any state cannot both be made small: their product is at least half the reduced Planck constant. Δx × Δp ≥ ħ ÷ 2",
+ "reflected_formula": "ΔVibration × Δmomentum ≥ ħ ÷ 2",
+ "reflected_sentence": "The spreads of Vibration and of momentum in any state cannot both be made small.",
+ "shape": "keeps",
+ "rule_reason": "no costs and no resistant quantity (momentum is declared non-resistant; the spread does not carry distance); an inequality not caused by resistance keeps",
+ "rule_trace": [
+  "none"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "Planck constant"
+ ],
+ "new_words": [],
+ "monotone_claims": [
+  {
+   "rises": "Vibration",
+   "with": "momentum",
+   "sign": -1
+  }
+ ],
+ "interpretation": "Vibration is the partner of space and momentum crosses as itself. The product keeps: narrow Vibration means broad momentum. Without the number the floor is gone, so it says only that the two spreads trade.",
+ "conflicts": "\"Nothing on the nonphysical side has a number\" against the ħ ÷ 2 that the unrewritten formula carries.",
+ "sense": 2,
+ "confidence": 5,
+ "closing": "Forced keeps. Both variables cross by the table, which is rare in this batch, but the result is thin: momentum crossing as itself and Vibration standing in for a spread of position produces a sentence that says nothing the table did not already say. The trap about Momentum as an entity property was avoided by keeping momentum lowercase as a quantity.",
+ "knew_tsr": false
+}

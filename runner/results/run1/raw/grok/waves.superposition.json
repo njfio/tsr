@@ -1,0 +1,23 @@
+{
+ "id": "waves.superposition",
+ "physical": "In a linear medium the net displacement at any point is the sum of the displacements each wave would produce alone.",
+ "reflected_formula": "",
+ "reflected_sentence": "The net extent stays the sum of the extents each wave would produce alone, and the identity keeps.",
+ "shape": "keeps",
+ "rule_reason": "An identity with no costs, and amplitude does not carry resistance.",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "amplitude"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "An identity keeps, and the sum stays a sum. The gap and alignment do not enter. No product is invented where the relation has a sum.",
+ "conflicts": "none",
+ "sense": 3,
+ "confidence": 7,
+ "closing": "Form is identity and the cost list is empty, so the relation keeps. The sum is the relation's own sum and is not rewritten into a product. The point in the statement is a location and does not cross.",
+ "knew_tsr": false
+}

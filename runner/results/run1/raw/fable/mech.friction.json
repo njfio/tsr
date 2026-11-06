@@ -1,0 +1,32 @@
+{
+ "id": "mech.friction",
+ "physical": "Resistance between two surfaces sliding past each other: the frictional force rises with the coefficient of friction and the normal force, and turns motion into heat. F = μ × N",
+ "reflected_formula": "Frequency = μ × N (μ and N have no partner); friction itself arrives as resonance",
+ "reflected_sentence": "Frequency equals how much two surfaces grip times how hard they are pressed together, friction arrives as resonance, and the reading turns: what the physical side pays to keep two surfaces moving past each other, the nonphysical side receives, so the two move together more easily the more receptive they are.",
+ "shape": "turns around",
+ "rule_reason": "One cost caused by resistance: keeping the surfaces moving gets harder as the coefficient of friction rises, and the coefficient carries resistance. One cost, odd, turns.",
+ "rule_trace": [
+  "resistance-cost"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "coefficient of friction",
+  "normal force",
+  "heat",
+  "surfaces"
+ ],
+ "new_words": [],
+ "monotone_claims": [
+  {
+   "rises": "resonance",
+   "with": "alignment",
+   "sign": 1
+  }
+ ],
+ "interpretation": "Friction is the named reflection of resonance, and the turn fits that pairing: what drags on the physical side carries on this side. The kept formula adds little, since both of its factors are unpaired and only the Frequency on the left crosses. Resonance rising with receptivity is a claim the table does not make but does not contradict.",
+ "conflicts": "'friction | resonance | named reflection' against 'No resistance on the nonphysical side; it appears only as the gap': the statement defines friction as resistance between two surfaces, so by the trap its image should be the gap, while the table names it resonance. Also 'force | Frequency' and 'friction | resonance' both claim the frictional force F.",
+ "sense": 3,
+ "confidence": 6,
+ "closing": "The rule decided on its own: one cost rising with the coefficient of friction, odd, turns. The vocabulary, not the rule, is where this row is ambiguous: F maps to Frequency through the physical_terms list while the relation as a whole maps to resonance through the named reflection, and the statement's own first word, resistance, is forbidden on the nonphysical side except as the gap. I followed the physical_terms list for the formula and the named reflection for the sentence. 'Turns motion into heat' has no partner at all.",
+ "knew_tsr": false
+}

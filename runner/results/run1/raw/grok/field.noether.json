@@ -1,0 +1,27 @@
+{
+ "id": "field.noether",
+ "physical": "Every continuous symmetry of the action corresponds to a conserved quantity: time translation to energy, space translation to momentum, rotation to angular momentum, phase to charge.",
+ "reflected_formula": "",
+ "reflected_sentence": "Expansion keeps with E, and Vibration keeps with momentum, while further conserved partners stay unnamed.",
+ "shape": "keeps",
+ "rule_reason": "An identity and a conservation law. No cost or separation. Conservation laws and symmetries keep their shape.",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "angular momentum",
+  "charge",
+  "rotation",
+  "phase",
+  "action"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "Expansion keeps with E. Vibration keeps with momentum. The relationship does not turn.",
+ "conflicts": "none",
+ "sense": 3,
+ "confidence": 7,
+ "closing": "The rule decides on its own. This is a conservation identity with no costs, so it keeps, and the term map is fixed: time to Expansion, energy to E, space to Vibration, momentum to momentum. Charge has no row, and I did not map it to Idle. Angular momentum is not the momentum row, so I left it unmapped rather than collapse it. No judgment call on the shape. Missing partners do not change the keep.",
+ "knew_tsr": false
+}

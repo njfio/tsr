@@ -1,0 +1,30 @@
+{
+ "id": "mech.friction",
+ "physical": "Resistance between two surfaces sliding past each other: the frictional force rises with the coefficient of friction and the normal force, and turns motion into heat. F = μ × N",
+ "reflected_formula": "Frequency = the gap × [normal force N]",
+ "reflected_sentence": "Friction reflects to resonance: the sliding that asked Frequency in proportion to the gap now moves more easily as receptivity rises.",
+ "shape": "turns around",
+ "rule_reason": "One listed cost: keeping the surfaces moving gets harder and rises with the coefficient of friction, which carries resistance; one odd cost turns the reading around.",
+ "rule_trace": [
+  "resistance-cost"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "coefficient of friction μ (reflected only as the gap)",
+  "normal force N"
+ ],
+ "new_words": [],
+ "monotone_claims": [
+  {
+   "rises": "Frequency",
+   "with": "receptivity",
+   "sign": -1
+  }
+ ],
+ "interpretation": "Frequency keeps its product with the gap and an unmapped pressing. Friction itself has a named reflection, resonance, which the reading uses; the coefficient that set the price appears only as the gap. The cost turns: motion eases as receptivity rises, and what was turned to heat stays unspoken.",
+ "conflicts": "none",
+ "sense": 4,
+ "confidence": 7,
+ "closing": "The turn was automatic: one cost, rising with the coefficient of friction. The named reflection friction-to-resonance came from the frozen table, which gave this row more to say than its bare formula suggests; the normal force and coefficient had no partners, and the coefficient was given its legal appearance as the gap rather than a new word.",
+ "knew_tsr": false
+}

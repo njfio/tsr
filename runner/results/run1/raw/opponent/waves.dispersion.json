@@ -1,0 +1,8 @@
+{
+ "id": "waves.dispersion",
+ "alternative_shape": null,
+ "rule_compliant": false,
+ "argument": "The only cost present (a pulse keeping its shape, rising with dispersion) is caused by dispersion, which is fixed as a dependence that does not carry resistance, and its separation_made_by_distance flag is false; the relation itself is the equation v_p = v_p(λ). No resistance-caused cost or distance-made separation is actually present, so no rule-compliant 'turns around' reading exists.",
+ "reflected_sentence": "",
+ "knew_tsr": false
+}

@@ -1,0 +1,36 @@
+{
+ "id": "thermo.fourier_conduction",
+ "physical": "The heat flowing through a slab for a given temperature difference falls as the slab's thermal resistance (thickness over conductivity times area) rises.",
+ "reflected_formula": "",
+ "reflected_sentence": "Where the passing of energy between a warmer and a cooler body falls as resistance rises, here it rises with receptivity: the less the gap, the more freely the energy passes.",
+ "shape": "turns around",
+ "rule_reason": "A cost caused by resistance: heat getting through gets harder as thermal resistance rises, and thermal resistance carries resistance; however, heat and temperature are unmapped in the frozen vocabulary.",
+ "rule_trace": [
+  "resistance-cost"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "heat flow q",
+  "temperature difference ΔT",
+  "thermal resistance R_th"
+ ],
+ "new_words": [],
+ "monotone_claims": [
+  {
+   "rises": "conscious energy",
+   "with": "alignment",
+   "sign": 1
+  },
+  {
+   "rises": "conscious energy",
+   "with": "receptivity",
+   "sign": 1
+  }
+ ],
+ "interpretation": "Resistant becomes receptive, and resistance appears only as the gap between the Current and what you are living. What gets harder with more resistance gets easier with more receptivity and alignment. Heat and temperature have no partners in the frozen vocabulary.",
+ "conflicts": "none",
+ "sense": 2,
+ "confidence": 7,
+ "closing": "The rule decided the turnaround on its own because thermal resistance is fixed as carrying resistance and there is one cost caused by it. Still, heat flow and temperature difference have no partners in the frozen vocabulary, forcing the no-partner outcome for the full statement.",
+ "knew_tsr": false
+}

@@ -1,0 +1,18 @@
+id: qm.tunneling
+domain: quantum
+title: "Tunneling"
+statement: "A particle can cross a barrier higher than its energy; the chance falls exponentially with the barrier's width, with the square root of its height above the particle's energy, and with the square root of the particle's mass."
+formula: "T ≈ exp(−2 × κ × d), κ = √(2 × m × (V − E)) ÷ ħ"
+form: equation
+variables:
+  - {name: transmission T, quantity: probability}
+  - {name: mass m, quantity: mass m}
+  - {name: barrier height V, quantity: barrier height}
+  - {name: barrier width d, quantity: barrier width}
+  - {name: Planck constant ħ, quantity: Planck constant}
+costs:
+  - {what_gets_harder: "getting through the barrier", rises_with: [mass m, barrier height]}
+standard_sources: ["Gamow 1928; Griffiths, Introduction to Quantum Mechanics, ch. 8"]
+book_status: unreflected
+review: pending
+notes: "Mass alone would turn it. The barrier height is undetermined under R1 (open joint barrier_resistance), so JUDGMENT. If the author rules the barrier is resistance, the row turns with two carriers in one cost (still one cost: the count is of claims, not variables)."

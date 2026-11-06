@@ -1,0 +1,24 @@
+{
+ "id": "thermo.zeroth_law",
+ "physical": "If two bodies are each in thermal equilibrium with a third, they are in thermal equilibrium with each other; this is what makes temperature a well-defined property.",
+ "reflected_formula": "",
+ "reflected_sentence": "The transitivity keeps its shape: if two vibrations each agree in warmth with a third, they agree with each other.",
+ "shape": "keeps",
+ "rule_reason": "A definition with a symmetry structure and no costs; definitions and symmetries keep their shape.",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "temperature",
+  "body (no frozen partner)"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "Shared-agreement-through-a-third is a shape that survives in frozen words about vibrations, now stated directly in the sentence. The property that the law defines has no partner, so the reflection keeps its shape while saying almost nothing.",
+ "conflicts": "none",
+ "sense": 1,
+ "confidence": 7,
+ "closing": "Fully decided by the rule: symmetry/definition, zero costs, keeps. The thinness of the reflection is a vocabulary fact, not a shape judgment.",
+ "knew_tsr": false
+}

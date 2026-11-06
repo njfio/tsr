@@ -1,0 +1,26 @@
+{
+ "id": "rel.equivalence_principle",
+ "physical": "Equivalence principle — Gravitational mass equals inertial mass, so a freely falling observer feels no gravity: locally, free fall is indistinguishable from the absence of gravitation.",
+ "reflected_formula": "",
+ "reflected_sentence": "In Vibrational Reality, Movement is Movement, whether named by Attraction or by push; where there is no resistance, there is nothing to feel.",
+ "shape": "keeps",
+ "rule_reason": "An equivalence keeps its shape; the statement is an identity of mass, not a cost or a separation.",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "gravitational mass",
+  "inertial mass",
+  "observer",
+  "free fall"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "The equivalence keeps its shape. Mass reflects to Movement; Attraction stands for gravitational pull. The absence of resistance is the nonphysical reading of feeling no gravity.",
+ "conflicts": "none",
+ "sense": 5,
+ "confidence": 7,
+ "closing": "The rule decided on its own: an identity with no costs keeps shape. The reflection stays within frozen words and reads coherently.",
+ "knew_tsr": false
+}

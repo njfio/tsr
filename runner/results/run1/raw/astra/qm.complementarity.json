@@ -1,0 +1,27 @@
+{
+ "id": "qm.complementarity",
+ "physical": "The more which-path information an interferometer records, the less visible its interference fringes; the two trade off so that distinguishability squared plus visibility squared is at most one.",
+ "reflected_formula": "",
+ "reflected_sentence": "The tradeoff between what can be distinguished and what can be seen keeps its shape.",
+ "shape": "keeps",
+ "rule_reason": "Neither measure carries resistance and no qualifying cost or separation is supplied, so the rule says keeps. Distinguishability and visibility have no partners.",
+ "rule_trace": [
+  "none"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "which-path distinguishability D",
+  "fringe visibility V",
+  "interferometer",
+  "interference fringes",
+  "which-path information"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "",
+ "conflicts": "none",
+ "sense": 1,
+ "confidence": 7,
+ "closing": "The rule decides keeps because a tradeoff alone is not a resistance-caused limit. The sum must not be changed to a product, but neither operand has a frozen partner. The empty formula and interpretation avoid introducing substitutes or nonphysical numerical claims.",
+ "knew_tsr": false
+}

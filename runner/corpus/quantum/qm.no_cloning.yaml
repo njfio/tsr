@@ -1,0 +1,12 @@
+id: qm.no_cloning
+domain: quantum
+title: "No-cloning"
+statement: "No physical operation can make an independent copy of an arbitrary unknown quantum state."
+form: limit
+variables:
+  - {name: wavefunction amplitude, quantity: wavefunction amplitude}
+costs: []
+standard_sources: ["Wootters & Zurek 1982; Dieks 1982"]
+book_status: unreflected
+review: pending
+notes: "A limit that follows from linearity; no resistance-carrying quantity: keeps."

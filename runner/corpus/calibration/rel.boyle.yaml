@@ -1,0 +1,17 @@
+id: rel.boyle
+domain: calibration
+title: "Boyle's law"
+statement: "For a fixed amount of gas at fixed temperature, pressure times volume is constant: squeeze the volume and the pressure climbs."
+formula: "P × V = const"
+form: equation
+variables:
+  - {name: pressure P, quantity: pressure}
+  - {name: volume V, quantity: volume}
+  - {name: amount of gas (held fixed), quantity: amount of substance}
+  - {name: temperature (held fixed), quantity: temperature}
+costs: []
+standard_sources: ["Boyle 1662; Fermi, Thermodynamics, ch. 1"]
+book_status: ruled
+ruling: {shape: keeps, words: "Hold the Movement steady and squeeze how much of you is vibrating, and the same wanting gets packed denser", source: "Ch16 Boyle passage"}
+review: "reviewed:spec-port"
+notes: "Mass is held fixed, so no cost rises with it. tsr_formal gave has_mass=True, which is why the Ch 2 wordings missed it."

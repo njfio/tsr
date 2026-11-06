@@ -1,0 +1,17 @@
+id: statmech.maxwell_boltzmann_width
+domain: statistical_mechanics
+title: "Maxwell-Boltzmann distribution width"
+statement: "The spread of molecular speeds in a gas grows with the square root of temperature and shrinks with the square root of molecular mass."
+formula: "σ_v ∝ √(k × T ÷ m)"
+form: equation
+variables:
+  - {name: speed spread σ_v, quantity: velocity}
+  - {name: temperature T, quantity: temperature}
+  - {name: molecular mass m, quantity: mass m}
+  - {name: Boltzmann constant k, quantity: Boltzmann constant}
+costs: []
+derived_from: [thermo.temperature_mean_kinetic_energy]
+standard_sources: ["Maxwell 1860; Reif, Statistical Physics, ch. 7"]
+book_status: unreflected
+review: pending
+notes: "Mass is in it and shape-wise the spread falls as mass rises, but no difficulty is asserted: it is a description, not a cost. Keeps under C1/C0. If a reader insists 'heavier means slower' is the cost of row 8 again, that is a cost record to add, and it would turn."

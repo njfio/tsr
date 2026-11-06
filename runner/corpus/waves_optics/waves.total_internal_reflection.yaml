@@ -1,0 +1,15 @@
+id: waves.total_internal_reflection
+domain: waves_optics
+title: "Total internal reflection"
+statement: "Going from a higher to a lower index, beyond the critical angle no light crosses the boundary; all of it is reflected, while an evanescent field reaches past the surface without carrying energy across."
+formula: "sin θ_c = n2 ÷ n1"
+form: limit
+variables:
+  - {name: critical angle θ_c, quantity: angle}
+  - {name: refractive index n, quantity: refractive index}
+costs:
+  - {what_gets_harder: "crossing the boundary; impossible past the critical angle, sooner the larger the index contrast", rises_with: [refractive index]}
+standard_sources: ["Hecht, Optics, ch. 4"]
+book_status: unreflected
+review: pending
+notes: "JUDGMENT: R1 does not decide whether the index is resistance (open joint refractive_index_resistance). The deep read's Pass 5 leans on this physics."

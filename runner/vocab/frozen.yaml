@@ -1,0 +1,125 @@
+# The frozen word map. Typed by Map row (role), from tests/tsr_formal.MIRROR,
+# plus the Chapter 16 / Chapter 21 reflections the book names.
+#
+# A generator may use only the nonphysical words listed here. A word that is
+# not here is NEW and makes a row ineligible for collision testing.
+#
+# provisional: the book itself marks the pairing as a reading, not a result.
+# entity_only: a property of entities; using it for a non-entity is a trap
+#              (deep-read.md section 6, tsr.wtf/holds "went too far").
+version: 1
+source: "tests/tsr_formal.py MIRROR + DIAGONAL; deep-read.md table; Ch 16; Ch 21"
+
+mirror:
+  - {physical: limited,            nonphysical: limitless,             role: property}
+  - {physical: resistant,          nonphysical: receptive,             role: property}
+  - {physical: radiation,          nonphysical: collection,            role: property}
+  - {physical: Subjective Reality, nonphysical: Vibrational Reality,   role: reality}
+  - {physical: Objective Reality,  nonphysical: Collective Reality,    role: reality}
+  - {physical: Space-Time,         nonphysical: Vibration-Expansion,   role: continuum}
+  - {physical: empirical evidence, nonphysical: emotional evidence,    role: evidence}
+  - {physical: Now,                nonphysical: Future,                role: energy flow}
+  - {physical: Past,               nonphysical: Current,               role: energy flow}
+  - {physical: Belief,             nonphysical: Desire,                role: entity contrast}
+  - {physical: Expectation,        nonphysical: Intuition,             role: entity contrast}
+  - {physical: speed of light c,   nonphysical: Current,               role: symbol}
+  - {physical: mass m,             nonphysical: Movement M,            role: symbol}
+  - {physical: Focus,              nonphysical: Tune,                  role: entity action}
+  - {physical: electric,           nonphysical: Idle,                  role: co-creating partner}
+  - {physical: magnetic,           nonphysical: Reflected,             role: co-creating partner}
+  - {physical: density,            nonphysical: Desire,                role: co-creating partner}
+  - {physical: volume,             nonphysical: Vibrance,              role: co-creating partner}
+  - {physical: physical energy,    nonphysical: conscious energy,      role: energy}
+  - {physical: actualization,      nonphysical: realization,           role: transmutation}
+  - {physical: Out Through,        nonphysical: Out For,               role: entity transmutation}
+  - {physical: In From,            nonphysical: In To,                 role: entity transmutation}
+  - {physical: space,              nonphysical: Vibration,             role: reflected partnership}
+  - {physical: time,               nonphysical: Expansion,             role: reflected partnership}
+  - {physical: velocity,           nonphysical: rise per Expansion,    role: reflected partnership}
+  - {physical: acceleration,       nonphysical: Appreciation,          role: reflected partnership}
+  - {physical: manifestation,      nonphysical: imagination,           role: reflected partnership}
+  - {physical: force,              nonphysical: Frequency,             role: reflected partnership}
+  # Chapter 16 / Chapter 8 / Chapter 21 named reflections
+  - {physical: gravitational pull, nonphysical: Attraction,            role: gravity}
+  - {physical: gravity well,       nonphysical: Vortex,                role: gravity}
+  - {physical: gravitational lensing, nonphysical: Convergence,        role: gravity}
+  - {physical: time dilation,      nonphysical: Expansion Dilation,    role: named reflection}
+  - {physical: length contraction, nonphysical: Vibrational Contraction, role: named reflection}
+  - {physical: friction,           nonphysical: resonance,             role: named reflection}
+  - {physical: entropy,            nonphysical: Culmination,           role: named reflection, provisional: true}
+  - {physical: momentum,           nonphysical: momentum,              role: momentum, note: "same word on both sides by design (Ch 17); M x C through time"}
+
+diagonal:
+  - {physical: "strong force: Expectation", nonphysical: "strong frequency: Desire"}
+  - {physical: "weak force: Belief",        nonphysical: "weak frequency: Intuition"}
+
+# Nonphysical words the book uses that are not a pairing but are legal in a
+# reflected sentence (the gap, alignment, the Point of Reflection ...).
+nonphysical_extra:
+  - {word: alignment,            note: "how little you resist; the nonphysical measure of nearness to the Current"}
+  - {word: receptivity,          note: "the flipped condition"}
+  - {word: the gap,              note: "resistance's only appearance on the nonphysical side: between the Current and what you're living"}
+  - {word: Point of Reflection,  note: "center of the crossing; where energy changes form"}
+  - {word: the Present,          note: "the whole equation C^2 x M = E = m x c^2"}
+  - {word: E,                    note: "the one energy / the entity, shared by both sides"}
+  - {word: Awareness,            entity_only: true, note: "limitless and limited met"}
+  - {word: Attraction,           note: "receptive and resistant met (entity property) and gravity's reflection"}
+  - {word: Momentum,             entity_only: true, note: "collecting and radiating met"}
+  - {word: wanting,              note: "Desire in plain speech"}
+  - {word: culminate,            note: "verb of Culmination; what two vibrations do instead of cancel (Ch 16)"}
+  - {word: strong frequency,     note: Desire}
+  - {word: weak frequency,       note: "Intuition and imagination"}
+
+# Words that must never appear on the nonphysical side (deep-read.md section 6).
+forbidden_nonphysical:
+  - distance
+  - location
+  - place
+  - travel
+  - speed
+  - time
+  - resistance
+  - effort
+  - will
+  - judgment
+  - rank
+  - radiate
+  - radiates
+  - radiating
+  - boundary
+  - edge
+  - inside
+  - outside
+  - mental
+  - mind
+
+# Units, dimensions and magnitude words: none may appear in a reflected formula.
+unit_words:
+  - meter
+  - metre
+  - second
+  - kilogram
+  - joule
+  - newton
+  - kelvin
+  - degree
+  - hertz
+  - cycles per second
+  - per second
+  - watt
+  - volt
+  - ampere
+  - ohm
+  - coulomb
+  - tesla
+  - pascal
+  - mole
+  - bit
+magnitude_words:
+  - half
+  - twice
+  - double
+  - triple
+  - square root
+  - percent
+  - "½"

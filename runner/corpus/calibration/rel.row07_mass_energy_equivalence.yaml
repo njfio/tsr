@@ -1,0 +1,16 @@
+id: rel.row07_mass_energy_equivalence
+domain: calibration
+title: "Row 7: E = mc²"
+statement: "Rest energy and mass are two measures of one quantity: E = m c²."
+formula: "E = m × c²"
+form: identity
+variables:
+  - {name: mass m, quantity: mass m}
+  - {name: speed of light c, quantity: speed of light c}
+  - {name: energy E, quantity: energy}
+physical_terms: {E: "physical energy", m: "mass m", c: "speed of light c"}
+costs: []
+standard_sources: ["Einstein 1905 (Sept.); the energy-momentum relation at p = 0"]
+book_status: ruled
+ruling: {shape: keeps, words: "C² × M = E", source: "Ch16 #7: an equivalence"}
+review: "reviewed:spec-port"

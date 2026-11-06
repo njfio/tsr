@@ -1,0 +1,28 @@
+{
+ "id": "qm.zero_point_energy",
+ "physical": "The lowest energy of a bound system is not zero; an oscillator's ground state keeps half a quantum of energy. E0 = ½ × ħ × ω",
+ "reflected_formula": "E0 = ½ × [Planck constant: no partner] × [frequency (physical): no partner]",
+ "reflected_sentence": "The limit keeps its shape: the lowest state still holds E and is never empty, because that floor does not come from the gap.",
+ "shape": "keeps",
+ "rule_reason": "a limit, but not caused by resistance (nothing here carries resistance); no separation",
+ "rule_trace": [
+  "none"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "Planck constant",
+  "frequency (physical)",
+  "ground state",
+  "oscillator",
+  "bound system",
+  "quantum"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "E is shared by both sides and never reaches nothing, so the floor keeps its shape. Physical frequency must not be read as Frequency, so the only surviving term is E.",
+ "conflicts": "\"Frequency is not a rate and not cycles per second\" (would be violated if ω were mapped to Frequency); \"Nothing on the nonphysical side has a number\" (½)",
+ "sense": 2,
+ "confidence": 6,
+ "closing": "Decided by the rule. It is a limit, but resistance does not cause it, so it keeps its shape. The obvious trap, ω becoming Frequency, is refused. 'Bound system' suggests confinement but carries no separation cost here.",
+ "knew_tsr": false
+}

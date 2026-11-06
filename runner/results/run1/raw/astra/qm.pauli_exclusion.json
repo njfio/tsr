@@ -1,0 +1,28 @@
+{
+ "id": "qm.pauli_exclusion",
+ "physical": "No two identical fermions can occupy the same quantum state; the many-body state is antisymmetric under exchange.",
+ "reflected_formula": "",
+ "reflected_sentence": "The relationship governing exchange of what is identical keeps its shape.",
+ "shape": "keeps",
+ "rule_reason": "The supplied symmetry form keeps its shape, and no resistance-caused cost is supplied. Spin, fermions and antisymmetric quantum states lack frozen partners.",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "identical fermions",
+  "quantum state",
+  "many-body state",
+  "antisymmetry under exchange",
+  "spin",
+  "occupation"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "",
+ "conflicts": "none",
+ "sense": 1,
+ "confidence": 7,
+ "closing": "The explicit symmetry rule decides keeps. Exclusion is not automatically resistance, and fermions cannot be given entity properties to manufacture a reflection. There is no frozen-vocabulary interpretation of the supplied symmetry, so that field is empty.",
+ "knew_tsr": false
+}

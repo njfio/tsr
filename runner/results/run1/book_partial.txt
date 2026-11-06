@@ -1,0 +1,229 @@
+## Chapter 0 (sample: Note Before We Begin, Prelude, Chapter 1)
+<p align="center"><img src="the-sovereign-mirror/cover.jpg" alt="Cover of The Sovereign Mirror by Nicholas Ferguson" width="260"></p>
+
+# The Sovereign Mirror
+
+*A Conversation About Consciousness, Resistance, and the Present*
+
+*by Nicholas Ferguson*
+
+> **This is a free sample:** the opening note, the prelude, and Chapter 1.
+> The full book is on [Kindle](https://www.amazon.com/dp/B0HL1YBX5K) and in [paperback](https://www.amazon.com/dp/B0HL4TQ5RK). More at [njf.io/books/the-sovereign-mirror](https://www.njf.io/books/the-sovereign-mirror).
+
+## Contents
+
+- [A Note Before We Begin](#a-note-before-we-begin) · *in this sample*
+- [Prelude: Awareness First](#prelude-awareness-first) · *in this sample*
+- Movement I · Why Is There a Particular Me?
+  - [1 · If It's All One, Why Am I Me?](#1--if-its-all-one-why-am-i-me) · *in this sample*
+  - 2 · The One Rule
+  - 3 · Isn't That a Hierarchy?
+- Movement II · What Moves Through Me?
+  - 4 · The Hot Seat
+  - 5 · Receiving
+  - 6 · The Four Directions
+  - 7 · Tune and Focus
+  - 8 · Two Kinds of Evidence
+- Movement III · Why Does Wanting Hurt?
+  - 9 · Isn't This Just the Law of Attraction?
+  - 10 · The Filter
+  - 11 · The Gap
+  - 12 · Five Seconds
+  - 13 · The Other Person Is Real
+- Movement IV · Why Can't We Go Back?
+  - 14 · The Knife
+  - 15 · Expansion and Time
+  - 16 · Twelve Reflections
+  - 17 · Why the Equation?
+- Movement V · How Far Does This Go?
+  - 18 · What Counts as an Entity?
+  - 19 · Fevers
+  - 20 · The End of a Body
+  - 21 · What I Don't Know
+- Coda: What Are You Going to Do With That Now?
+- Running the Test
+- The Map
+
+---
+
+## A Note Before We Begin
+
+When I was in fourth grade, in a YMCA league in Denver, I played a basketball game where I couldn't do anything wrong. My mom and dad and my sister were in the bleachers. By my coach's stats I had a quintuple double that day: points, rebounds, assists, steals, blocks. Nine years old. I was in the flow, the way athletes talk about it, and somewhere in the middle of it I noticed a voice. It wasn't quite mine. It was quieter than mine, and simpler. It told me where to go and what to do, and every time I followed it, something good happened. A basket. An assist. A steal.
+
+It happened a few more times over the years I played, the last time around eighth grade, while the game was still nothing but fun. But that one was the first time I really noticed it. Afterward I told my mom. I said I could hear another voice in my head, a quieter one, and when I followed it I was always right.
+
+My mom was a great mother. She was loving and caring, and she took me to sports and school events and everything else. She listened to me. Then she told me I should never tell anybody else about that voice, because they would think I was crazy and lock me up.
+
+So I didn't. For most of my life I never told anyone.
+
+This book is me telling.
+
+The voice at that basketball game turned out to be the smallest piece of something much bigger. I call the bigger thing the Theory of Sovereign Reflectivity, TSR for short. It describes how that voice was possible, why it only showed up when I was having fun, why it vanished whenever I tried to force it, and why it's available to you too.
+
+I've tried to write this book several ways. The first time, in 2020, I snuck the whole theory into a book about project management, because project management was what I knew. Since then I've written primers full of tables and definitions. People who read them could repeat the definitions back to me. Almost nobody could see the whole thing.
+
+What finally worked was conversation. For years I've explained TSR to anyone who would sit still for it, and lately to AI, every generation of it. Each one started where any smart skeptic starts. It asked a reasonable question. I answered, and the answer broke something in the picture it had built. So it asked a better question. Somewhere around the twentieth question the pieces started holding each other up, and it stopped seeing a list of strange words and started seeing a system.
+
+That's this book. The questions are real ones. People have asked them, machines have asked them, and I asked most of them myself years ago. I kept the ones that were wrong in useful ways, because you'll probably ask them too. The questions are in bold. The answers are mine.
+
+One thing I'll say once, so I don't have to keep saying it. I'm not a physicist. I'm a computer systems engineer. I barely graduated high school and I dropped out of college, and a lot of that was reading. I was never diagnosed with anything. Letters and words transposed on me, and I could make out the words well enough but I couldn't hold their meaning for more than a few at a time, so by the end of a sentence the beginning was gone. I didn't do homework. I collected zeros and passed on tests, because a multiple-choice test rewards intuition. When my mother sat me down to read a book and write the report, what came out was a story I'd made up, because I had no idea what I'd just read, and she filled in the rest to get me through. It worked. The verbal section of my ACT came back in the single digits, doing my best, and I remember her crying at the number. I'm not an avid reader and never have been. Almost nothing in this book came from other people's books; it came through thought games and conversation. Most of the lineage you'll meet in Chapter 9 was shown to me after the fact, and so were the Buddhist terms in Chapter 10 and the biology in Chapter 18, much of it while this book was being checked, and I checked it. Over the years I taught myself a way of reading and learning that works for me, mostly one precise definition at a time, and I mention it here so you know what kind of mind this came through. When I lean on Einstein in this book, I'm using the shape of his thinking to look at the other side of it. I'm not adding to his physics. Obviously the nonphysical isn't physics. It's the inverse reflection of it, and that is the whole claim: the table borrows the shape of physics, not its authority, and every row has to earn its place by holding the rows around it up. To me, what follows isn't speculation. It's a translation of something I understood whole, and I'm going to tell it to you the way I understand it.
+
+I'm not asking you to believe it because I received it. I'm asking you to understand it. What you do after that is yours. The theory insists on that part. And if the two ever pull against each other, if what I understood whole disagrees with what your own life shows you when you look carefully, your life governs. That's true for you, and it's true for me; the last chapter is me holding myself to it. And if you're waiting for the part where I say people cause their own illnesses, or that someone's suffering was their own doing, it isn't coming. Chapters 13 and 19 say the opposite, and I'd rather you know that now than wonder for the rest of the book.
+
+## Prelude: Awareness First
+
+**You say awareness comes first. Why?**
+
+Because starting anywhere else gave me the wrong problem.
+
+If you start with matter, you have to explain how awareness shows up out of things that aren't aware. Atoms become molecules, molecules become cells, cells become a brain, and somewhere along the way the lights come on. People have been looking for that switch for a long time. Nobody has found where awareness is. You can't put your finger on it. You can't see it or hear it or taste it. Everything you've ever sensed, you sensed with it, and you've never once sensed it.
+
+So I stopped trying to build awareness out of stuff and ran the game the other way.
+
+**What game?**
+
+A thought game. Einstein ran them. He imagined riding alongside a beam of light and asked what he would see. Mine went like this.
+
+Assume awareness was first. It was whole, but it didn't grow. It knew itself the way an awareness would if there were nothing else to be aware of: completely, and with no surprises. Now assume it made parts of itself. Particles. Each particle stayed bound to the whole through a vibration of its own, a kind of awareness of its own. The first of these, it seems to me, is light.
+
+Once there are parts, there are relationships. The particles moved and bounced off each other, and every collision made a new combination of vibrations. More combinations meant more particles bonding together, and bonded particles bent the paths of other particles. And it kept going like that. Every particle's path was shaped by its relationships to every other particle, and by how those relationships expanded and aligned on the side you can't see.
+
+**And what came before awareness?**
+
+I don't know. I can't get behind it. Awareness is where my thinking starts, the way the speed of light is where Einstein's starts. Everything I'll tell you follows from that starting point and one simple rule, which we'll get to.
+
+**So the universe is awareness making parts of itself so it has something to be aware of.**
+
+That's close. I'd put it this way: the parts are how the whole gets to experience difference. A whole with nothing outside it can't bump into anything. It can't be surprised. Give it parts, and suddenly there's something to meet.
+
+**Before we go further. Who are you, and why should I listen to you about this?**
+
+You shouldn't, yet. Here's who I am anyway.
+
+I worked in restaurants for years as a waiter, a busboy, a bartender. I worked at so many of them. I'd dropped out of college, and I didn't stay anywhere long until I found a place where the tips were good. In my first few cars I listened to cassette tapes: Tony Robbins, Napoleon Hill, and Abraham-Hicks, which you'll hear more about. *Think and Grow Rich* got to me, and I did what it said. I wrote down what I wanted, how I'd get there, and what it would feel like. I wanted my first million by thirty-six, and I wanted to be the chief technology officer of a company by then too. At the time I was carrying plates.
+
+I missed both goals by about a year.
+
+I did become a CTO. Bermuda is how. In my late twenties my mother was very sick, in and out of the hospital for the better part of three years, far more in than out. She was living with me in a third-floor walk-up in Denver with no elevator, and every day I carried her down the stairs to her appointments and back up again. The bills were serious, and my job at HP had been under a pay freeze for years. So I put my résumé online, and a consulting firm on an island in the Atlantic offered me a job. When I was about six, watching a television show about Bermuda, I'd told my parents I was going to live there one day. You can't just move to Bermuda. There's a work permit and a dozen hoops. I moved to Bermuda. I went to pay off what her illness had cost and to support her from there, and I could only go because a friend of hers offered to take her in. Keep that detail. My ease was somebody's weight, and I'll come back to what that means. By 2016 I was running technology at a hedge fund, and for the ten years before that I'd been watching projects and people go through cycles. The same cycles of change, over and over, in projects and in people. Once I'd noticed them I couldn't stop seeing them.
+
+In 2017, in the middle of my second divorce, a short marriage that had nothing to do with my son's mother, who had left years earlier, I started meditating and painting to get through it. In 2019 I went on a cruise, sat in a comfortable chair on a stage in front of a room full of people, and came home with something I've been trying to put into words ever since.
+
+**That's a strange résumé for a theory of consciousness.**
+
+It's the résumé of somebody who spent twenty years forcing things to happen. That turns out to be decent preparation for noticing what happens when you stop.
+
+I never set out to write TSR. It came through me. I'll tell you how, but it makes more sense in pieces, at the points where the story explains something. So let's start with the obvious question.
+
+## Movement I · Why Is There a Particular Me?
+
+*In music, a movement is a complete piece that belongs to a larger work. It has its own shape. It was never separate.*
+
+### 1 · If It's All One, Why Am I Me?
+
+**If everything is one awareness, why don't I hear your thoughts?**
+
+Resistance.
+
+That's the short answer, and most of this book unpacks it. There are two environments, the physical and the nonphysical, and they're mirror images of each other. The physical is limited, resistant, and it radiates. The nonphysical is limitless, receptive, and it collects. Those three pairs aren't three separate rules—they're one condition seen three ways. Resistance creates a boundary, which makes a thing limited, and bounded things can only reach each other by radiating across the space between them. Take resistance away and there's no boundary, so the nonphysical is limitless, and with nothing held apart, it collects instead of radiating. Everything else in TSR comes from what happens where they meet.
+
+Resistance is the thing the physical has that the nonphysical doesn't. Physics measures one form of it every day and calls it mass: a thing's resistance to a change in its motion, its inertia. Resistance is what lets something hold a shape. It gives you a body that stays yours from one minute to the next. It gives you a history that stays behind you, and a point of view that nobody else can stand in. Your resistance is why you're a you.
+
+It's also why you don't hear my thoughts. My resistance and yours keep us distinct. We meet, but we have to meet. Nothing flows straight through.
+
+**So resistance is the problem.**
+
+No, and this is where a lot of spiritual teaching goes wrong. Without resistance you wouldn't exist as a particular person at all.
+
+I've spent years carving words into oil pastel with a knife. The pastel pushes back against the blade, and that's why the words stay. Try carving a sentence into water. A surface with no resistance can't hold a mark.
+
+There are two kinds of resistance, and we'll spend a lot of time on the difference. One kind makes you a definite someone. The other keeps you from changing when a change is already wanted. I'll call the first your shape and the second holding on. Your shape is what makes you particular, and it stays yours as long as you have a body. Holding on is where most of the suffering in a life comes from. When I talk about lowering resistance in this book, holding on is the kind I mean. For now, just know that resistance itself isn't the enemy. It's the price of being particular, and being particular is the whole point.
+
+**And on the other side? The nonphysical side?**
+
+On the other side, there's no separation. Not really.
+
+I call it the Current of Consciousness. Picture a river so smooth it looks like it isn't moving. Engineers call that laminar flow: every layer sliding past the next without any turbulence. From the outside it looks idle, still enough to reflect the sky. It's moving the entire time.
+
+**If the river is that smooth, what makes a vibration in it?**
+
+Expansion does. That's what a vibration is, here or anywhere: a disturbance of an equilibrium. A still pond is in equilibrium. Drop something in and the surface has to answer, and the answer is a ripple. The Current is the smooth surface. A new desire arriving in it is the stone. The disturbance is the expansion, and the ripple it leaves in the flow is the vibration. You can't expand the Current without setting up a vibration, and every vibration is the record of an expansion. That's why, when we get to the mirror, space and time come across as a single continuum and not two separate words: Expansion is the act of disturbing the flow, and Vibration is what the disturbance leaves in it.
+
+And here's the part that matters most, and I'll come back to it at the end of the book. In water, a ripple dies out. Friction and viscosity flatten it, and those are forms of resistance. The Current has none. Disturb a flow with no resistance in it and nothing is there to damp the ripple. It never decays. It culminates: the Current takes the new vibration into its new baseline and goes smooth again, one desire larger, ready to be disturbed by the next one.
+
+The Current is always the furthest point the whole has reached, and expansion is what moves it. My expansion moves it. So does yours. The vibrations I expand aren't separate from the vibrations you expand. We're both adding to the same flow. What differs between us is how aligned each of us is with where the Current has gotten to, and you feel that in your frequency.
+
+**So on that side I'm not an individual at all.**
+
+You're a part of the whole. On this side your resistance lets you identify the part as you, and that's accurate as far as it goes. You're a particle of the whole, and you have edges here. But the other side of you, the nonphysical side, is flowing as part of the whole the entire time, because over there nothing individualizes the way it does here.
+
+Think about the particles in that thought game. Each one had its own path and its own collisions. None of them ever came loose from the whole it was part of.
+
+**Where is the Current, then? Where would I point?**
+
+Nowhere, and everywhere. It doesn't have a location. A location is a physical idea, and the Current isn't physical. It runs through everything.
+
+What lets you feel it is your own perspective. Your sovereign perspective, I'd say. Nobody can feel it for you, and nobody can feel it from where you stand except you. All any of us can ever know about the whole is the connection we feel with it. Everything else reaches us through that same perspective.
+
+People sometimes want me to prove the Current exists first and then talk about feeling it. I understand why. But it's a bit like arguing with water that it's wet. You're in it. The question is how much of it you let yourself feel.
+
+**You keep using that word, sovereign. What does it mean here?**
+
+It means you have your own point of view on the whole, one nobody else can have. It doesn't mean independence from the whole. Every one of us is fully inside it. Sovereignty is that each of us is inside it *from somewhere*, and nobody else gets to be there.
+
+That matters later, when we get to how you should treat other people. Everyone you meet has their own Movement, their own place in the flow, and nothing I want or feel entitles me to theirs.
+
+**Have you ever felt it? The no-separation part?**
+
+Once, very strongly, for a few minutes. I was on that stage on the cruise. For the first time in my life I felt like I could hear all the thoughts in the room.
+
+I'll tell you that story properly when we get there. I mention it now because it's the one time your question stopped being theoretical for me. For those few minutes my resistance was so low that the separation got thin. Then I walked back to my seat, and I was me again.
+
+---
+
+## Keep reading
+
+The rest of the book goes on from here: the one rule, the hot seat, the four directions, why wanting hurts, the knife and the carved paintings, twelve reflections of Einstein, what counts as an entity, and the map that holds it all together.
+
+- **Kindle:** [amazon.com/dp/B0HL1YBX5K](https://www.amazon.com/dp/B0HL1YBX5K)
+- **Paperback:** [amazon.com/dp/B0HL4TQ5RK](https://www.amazon.com/dp/B0HL4TQ5RK)
+- **About the book:** [njf.io/books/the-sovereign-mirror](https://www.njf.io/books/the-sovereign-mirror)
+
+---
+
+*The Sovereign Mirror* © 2026 Nicholas Ferguson. This sample is shared under the [Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License](https://creativecommons.org/licenses/by-nc-nd/4.0/): you may copy and share it unchanged, with credit, for non-commercial purposes. The full book is all rights reserved. See [LICENSE-BOOK.md](LICENSE-BOOK.md).
+
+## Chapter 2 · The One Rule / Chapter 21
+One simple basis, followed all the way through ... Forgetting is a physical event: a mark fading in a medium that can decay. The receptive side has nothing that decays, so there is nothing a thing could fade from, which is why expansion can't be undone; and because resistance stays on the physical side, only what is wanted crosses into the whole.
+
+## Chapter 2 · The One Rule / Chapter 16 · Twelve Reflections
+What you have to know is whether the relationship keeps its shape or turns around. If it depends on resistance, so that more mass means more of something, flipping resistant to receptive turns it around: more Movement means less of that thing, or it gets easier instead of harder. If it's an identity or a definition, two names for one thing, the way mass is density times volume and force is mass times acceleration, there's nothing to turn around, even with mass in it; the terms reflect and the relationship keeps its shape. Time dilation and length contraction don't depend on mass in physics, only on how close you are to the speed of light, so there's no resistance in them to flip, and they keep their shape, reflected as the gap and the shrinking distance. Number eight is about how much energy it costs to speed a mass up as it nears light speed. That one has mass in it, which means resistance is at work. When you flip resistance to receptivity, number eight has to invert: physically, each next bit of speed gets harder; nonphysically, each next bit of alignment gets easier.
+
+## Chapter 2 / Chapter 8 · Two Kinds of Evidence
+And the condition flips, as always: Force reads how hard you're pushed against resistance, Frequency reads how freely you're yielding to receptivity. Physically, what you feel is the floor, how hard you're held. Frequency, the reflection of mass times acceleration, reads how freely you're falling. Under a steady pull, what holds you and how fast you're speeding up always add up to the whole pull: all floor and no speeding up when you stand, no floor and all of it when you fall. Appreciation is how much of the pull you're letting move you: full in free fall, low while you hold. The falling man is the most aligned with gravity anyone can be, and he's the one who feels nothing but ease.
+
+## Chapter 16 · Twelve Reflections (author's ruling, October 2026)
+Distance is what resistance makes, and there is none on the nonphysical side, so the relationship turns over: every Movement shares the Current. The physical rule says the edge is unreachable. Its reflection says the edge is where you already are. The formula keeps its shape on both sides, and what turns around is what it reads. Harder becomes easier; unreachable becomes already there. Kinetic energy follows from force = mass × acceleration and the definition of work, which both keep their shape, so it keeps its shape too. As a cost that rises with resistance, its reading turns over, which is number eight. The relationship isn't rewritten. With no distance in it, the part that splits observers drops out, and every Movement shares the Current.
+
+## Chapter 2 / A Note Before We Begin
+The nonphysical doesn't hold still to be counted. It has no dimensions, so there's nothing to measure it with. The relationships carry across the mirror. The quantities don't. The table borrows the shape of physics, not its authority, and every row has to earn its place by holding the rows around it up.
+
+## Chapter 17 · Why the Equation?
+I'm not equating a number of joules, because the left side has no numbers. Putting one E in the middle says there aren't two separate energies in the universe. There's one energy, organized as realization on one side of the mirror and as actualization on the other. There's nothing to count on that side, so I don't call it multiplication. I read the sign as the product of. In a sum, one part can do the work while the other sits at zero. In a product, if either factor is zero, the whole thing is zero: no Movement, no conscious energy. The first C is the Current carrying the Movement: where you are in the flow. That's momentum, and it's yours. The second C is that carried Movement given back to the Current. That's energy, and it belongs to everything. Once is momentum. Twice is contribution. Physics has the same two steps: mc is a mass's momentum through time, and the second c is what that momentum is worth to the universe as energy. The Current is the front edge of what the whole has reached, the same for every Movement no matter how aligned it is. What's invariant is the rate. Rest energy is the reflection of C²M: the energy a Movement has by existing in the Current, even when it isn't changing in Vibration. Kinetic energy is the reflection of a Movement changing its Vibration, which is where Frequency and Appreciation live. On each side, momentum is what a thing carries through its own continuum: mass times velocity physically, Movement times Vibration over Expansion nonphysically. The entity property called Momentum is those two met at the crossing.
+
+## Chapter 1 / Chapter 10 · The Filter
+There are two kinds of resistance. One kind makes you a definite someone. The other keeps you from changing when a change is already wanted. Your shape and holding on. Resistance itself isn't the enemy. It's the price of being particular. Resistance is a physical property. It's the defining physical property. So resistant energy can't flow into the nonphysical. There's simply nothing on that side for resistance to be. Expectation and Belief are the strong and weak forces at the scale of an entity, the way the tension in a nervous system is inertia at the scale of a body. Take the relationship literally, not the number; the rule doesn't carry numbers across.
+
+## Chapter 21 · What I Don't Know (light)
+Light isn't the exception. It's the asymptote. As mass goes to zero, speed goes to light's, and nothing with any mass at all gets there. Light is the physical world at the surface of the mirror: zero mass, all limit, the one place the physical side touches the nonphysical without crossing. c is the edge of one side and C is the edge of the other, and the mirror is where the two edges meet.
+
+## Chapter 14 · The Knife
+You can cover a cut. You can't uncut it. Expansion can't become unexpanded. When the Current expands, the whole it's part of is now more than it was.
+
+## Chapter 21 · What I Don't Know (entropy)
+Entropy's reflection is culmination: relation that keeps gathering and never ungathers. Once two things interact, their states are correlated, and in anything bigger than a few particles those correlations spread into everything else that touches them, until no one can get them back. On the physical side, with distance in it, that spreading looks like entropy: things disperse and don't come back. On the nonphysical side, with no distance, the same accumulating correlations look like culmination: more and more gathered into relation, never less. Radiation and Collection, applied to the history of everything that ever touched. Time's direction and expansion's direction one relationship seen from both sides. It's a reading, not a result.
+
+## Chapter 16 · Twelve Reflections (friction, interference, Boyle; from extension-test-key)
+Friction: two Movements meeting don't lose to each other, they build each other up: resonance. Cancellation happens at a point. A location is a distance from somewhere, and distance is what resistance makes. What two vibrations do there isn't cancel, and it isn't add either; it's culminate, which is resonance again. Boyle: hold the Movement steady and squeeze how much of you is vibrating, and the same wanting gets packed denser. Pressure happens only at a crossing. Units don't cross the mirror, only relationships do.
+
+## Chapter 20 · The End of a Body
+The gap closes. Death is the full release of all resistance, both kinds. With nothing left resisting, the gap between the nonphysical part of you and everything it expanded into closes. The nonphysical has never produced a new desire on its own. Every want in the Current came through a shape, something with resistance in it, at a crossing.

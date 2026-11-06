@@ -1,0 +1,8 @@
+{
+ "id": "thermo.joule_heating",
+ "alternative_shape": null,
+ "rule_compliant": false,
+ "argument": "The strongest keeps reading would treat P = I² × R as a bare proportionality, but the statement's cost (energy lost to heat) rises with electrical resistance, which the fixed table marks as carrying resistance, and the rule turns resistance-caused costs around; the statement contains no equivalence, definition or conservation to keep, so no rule-compliant keeps reading exists.",
+ "reflected_sentence": "",
+ "knew_tsr": false
+}

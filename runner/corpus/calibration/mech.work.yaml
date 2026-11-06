@@ -1,0 +1,17 @@
+id: mech.work
+domain: calibration
+title: "Work"
+statement: "Work is force times displacement along the force (the definition of work)."
+formula: "W = F × d"
+form: definition
+variables:
+  - {name: work W, quantity: work}
+  - {name: force F, quantity: force}
+  - {name: displacement d, quantity: length}
+physical_terms: {W: "work", F: "force", d: "space"}
+costs: []
+derived_from: []
+standard_sources: ["any mechanics text"]
+book_status: ruled
+ruling: {shape: keeps, source: "Author's ruling, October 2026 (tsr.wtf/answers): 'the definition of work ... keeps its shape'"}
+review: "reviewed:spec-port"

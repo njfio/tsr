@@ -1,0 +1,30 @@
+{
+ "id": "waves.standing_waves",
+ "physical": "Between two fixed ends only wavelengths that fit a whole number of half-waves into the length persist; the ends force nodes and the allowed modes are set by the separation.",
+ "reflected_formula": "no partner",
+ "reflected_sentence": "With receptivity, the limited becomes limitless in which vibrations can persist.",
+ "shape": "turns around",
+ "rule_reason": "The supplied distance-made separation contributes one qualifying limit, so its reading turns around even though length itself is nonresistant. Wavelength, length and mode number lack partners, blocking λ_n = 2 × L ÷ n.",
+ "rule_trace": [
+  "separation"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "wavelength λ",
+  "length L between the ends",
+  "mode number n",
+  "quantum number",
+  "fixed ends",
+  "half-waves",
+  "nodes",
+  "allowed modes"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "No partner. No partner.",
+ "conflicts": "none",
+ "sense": 1,
+ "confidence": 7,
+ "closing": "The annotated separation forces a turn without a judgment call. That does not authorize replacing the formula with an unrestricted spectrum, dropping its factor, importing a count, or identifying length with space despite their different vocabulary status. The general limited-to-limitless property mapping cannot furnish the missing variable partners. No complete reflected statement is licensed.",
+ "knew_tsr": false
+}

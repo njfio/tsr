@@ -1,0 +1,15 @@
+id: statmech.phase_transition_critical_point
+domain: statistical_mechanics
+title: "Phase transition and critical point"
+statement: "At a continuous phase transition the order parameter vanishes and the correlation length diverges: fluctuations at every scale, and no characteristic size."
+formula: "ξ → ∞ as T → T_c"
+form: limit
+variables:
+  - {name: order parameter, quantity: order parameter}
+  - {name: correlation length ξ, quantity: correlation length}
+  - {name: temperature T, quantity: temperature}
+costs: []
+standard_sources: ["Landau 1937; Wilson 1971; Goldenfeld, Lectures on Phase Transitions, ch. 3"]
+book_status: unreflected
+review: pending
+notes: "No difficulty named, no resistance: keeps. A row that tests the vocabulary rather than the rule: 'no characteristic size' is a nonphysical-sounding feature of a physical state."

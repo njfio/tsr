@@ -1,0 +1,31 @@
+{
+ "id": "qm.bound_state_quantization",
+ "physical": "A particle confined to a region has only discrete allowed energies; the spacing grows as the region shrinks and falls as the particle's mass rises.",
+ "reflected_formula": "E = n² × π² × ħ² ÷ (2 × Movement M × L²)",
+ "reflected_sentence": "This turns around: the allowing of E, which grew harder as the extent shrank, gets easier with receptivity, while E stays over Movement M in the kept formula.",
+ "shape": "turns around",
+ "rule_reason": "one cost with separation_made_by_distance true; a separation made by the confining extent. rises_with is empty, so the fall with mass is not a second cost that rises with resistance",
+ "rule_trace": [
+  "separation"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "quantum number",
+  "Planck constant",
+  "length"
+ ],
+ "new_words": [],
+ "monotone_claims": [
+  {
+   "rises": "E",
+   "with": "Movement M",
+   "sign": -1
+  }
+ ],
+ "interpretation": "This turns around. E stays over Movement M, and what was harder is easier with receptivity. This is not the Present and not Frequency.",
+ "conflicts": "none",
+ "sense": 2,
+ "confidence": 6,
+ "closing": "The rule decided from the cost block. separation_made_by_distance is true, one turning cost, so the shape turns around. falls_with mass is not a cost that rises with resistance, and the block has one cost, so I did not count a second flip. Quantum number, the Planck constant, and length are unmapped. Energy is the shared E. The kept formula is not the Present. Numbers and the extent do not cross.",
+ "knew_tsr": false
+}

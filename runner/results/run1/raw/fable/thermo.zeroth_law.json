@@ -1,0 +1,25 @@
+{
+ "id": "thermo.zeroth_law",
+ "physical": "Zeroth law: If two bodies are each in thermal equilibrium with a third, they are in thermal equilibrium with each other; this is what makes temperature a well-defined property. (no formula)",
+ "reflected_formula": "",
+ "reflected_sentence": "The definition keeps its shape: a sameness each of two shares with a third they share with each other; the measure that is the same has no partner.",
+ "shape": "keeps",
+ "rule_reason": "Definition (an equivalence, a transitivity); no costs listed; keeps its shape.",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "temperature",
+  "thermal equilibrium",
+  "body"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "A sameness shared by three is shared by each pair; that much is shape. What is the same has no partner, so the row says nothing in frozen words.",
+ "conflicts": "none",
+ "sense": 1,
+ "confidence": 7,
+ "closing": "The rule decided on its own: a definition keeps. The relation has no formula and its only variable, temperature, has no partner, so the reflection is a bare transitive shape with no frozen content. No judgment call was needed, and nothing in the vocabulary table is contradicted.",
+ "knew_tsr": false
+}

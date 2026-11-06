@@ -1,0 +1,284 @@
+[
+  {
+    "id": "info.channel_capacity",
+    "physical": "The greatest rate at which information can be sent reliably through a noisy channel is the bandwidth times the log of one plus the signal-to-noise ratio. (C = B × log(1 + S ÷ N))",
+    "reflected_formula": "[unmapped: capacity C] = [unmapped: bandwidth B] × log(1 + [unmapped: signal power S] ÷ [unmapped: noise power N])",
+    "reflected_sentence": "The limitless collection of [unmapped: channel capacity C] equals [unmapped: bandwidth B] times the logarithm of one plus [unmapped: signal power S] divided by [unmapped: noise power N].",
+    "shape": "keeps",
+    "rule_reason": "definition with zero costs caused by resistance and no separation made by distance",
+    "rule_trace": [
+      "identity"
+    ],
+    "forced": true,
+    "unmapped_terms": [
+      "capacity C (channel capacity)",
+      "bandwidth B (bandwidth)",
+      "signal power S (power)",
+      "noise power N (noise power)",
+      "information",
+      "noisy channel"
+    ],
+    "new_words": [],
+    "monotone_claims": [],
+    "interpretation": "Collection in Vibrational Reality has no partner for channel capacity, bandwidth, or noise in the frozen table. Even if power is read as E per Expansion, the ratio of two E per Expansion terms leaves signal and noise indistinguishable without new words. The relationship keeps its form by the rule, but says nothing in frozen terms.",
+    "conflicts": "\"Frequency is not a rate and not cycles per second.\" and \"Nothing on the nonphysical side has a number, a unit or a distance.\"",
+    "sense": 1,
+    "confidence": 7,
+    "closing": "The keeps-or-turns rule decided mechanically because the relation is a definition with no costs and none of the four variables carries resistance or distance. However, every domain variable (channel capacity, bandwidth, signal power, noise power) lacks a partner in the frozen vocabulary, and mapping bandwidth via Frequency is blocked because Frequency reflects force and is explicitly not cycles per second.",
+    "knew_tsr": false
+  },
+  {
+    "id": "info.data_processing_inequality",
+    "physical": "Processing cannot increase information: if Z depends on X only through Y, then the information Z carries about X is at most what Y carries. (I(X;Z) ≤ I(X;Y))",
+    "reflected_formula": "[unmapped: mutual information I](X;Z) ≤ [unmapped: mutual information I](X;Y)",
+    "reflected_sentence": "If Z Tune-s to X only through Y, then the [unmapped: mutual information I] that Z holds with X is at most what Y holds with X.",
+    "shape": "keeps",
+    "rule_reason": "inequality with zero costs caused by resistance and no separation made by distance",
+    "rule_trace": [
+      "none"
+    ],
+    "forced": true,
+    "unmapped_terms": [
+      "mutual information I",
+      "information",
+      "processing"
+    ],
+    "new_words": [],
+    "monotone_claims": [],
+    "interpretation": "No variable in this inequality has a partner in the frozen vocabulary. Because mutual information carries no gap and no Vibration separation, the inequality keeps its direction under the rule. Without a partner for mutual information or processing, the reflection cannot state what is preserved or lost in Vibrational Reality.",
+    "conflicts": "none",
+    "sense": 1,
+    "confidence": 6,
+    "closing": "The rule decided mechanically from the pre-fixed inputs because costs is empty, mutual information does not carry resistance, and carries_distance is false. A mild ambiguity remains in the prose statement: 'cannot increase' is phrased as a ceiling across the Markov chain X -> Y -> Z, which resembles a mediation separation, but it is neither caused by resistance nor a spatial distance.",
+    "knew_tsr": false
+  },
+  {
+    "id": "info.landauer",
+    "physical": "Erasing one bit of information dissipates at least k T ln 2 of energy as heat; logically irreversible operations have a thermodynamic cost that rises with temperature. (E ≥ k × T × ln 2)",
+    "reflected_formula": "E ≥ [unmapped: Boltzmann constant k] × [unmapped: temperature T] × ln 2",
+    "reflected_sentence": "The E involved in [unmapped: erasing one bit of information] is at least [unmapped: Boltzmann constant k] times [unmapped: temperature T] times ln 2.",
+    "shape": "keeps",
+    "rule_reason": "the listed thermodynamic cost rises with temperature, which is fixed as not carrying resistance, leaving zero resistance-caused costs",
+    "rule_trace": [
+      "none"
+    ],
+    "forced": false,
+    "unmapped_terms": [
+      "temperature T",
+      "Boltzmann constant k",
+      "bit of information",
+      "erasing",
+      "heat",
+      "logically irreversible operations"
+    ],
+    "new_words": [],
+    "monotone_claims": [],
+    "interpretation": "E crosses the Point of Reflection unchanged, while Boltzmann constant, temperature, heat, and erasing have no partners in the frozen vocabulary. Although the relation states a cost, that cost rises with temperature rather than the gap, so the inequality keeps its direction under the fixed list. With only E mapped and pure numbers excluded on the nonphysical side, the bound has no coherent reading in Vibrational Reality.",
+    "conflicts": "\"Nothing on the nonphysical side has a number, a unit or a distance.\"",
+    "sense": 1,
+    "confidence": 5,
+    "closing": "Following the pre-fixed table strictly, the single cost entry rises with temperature, and temperature is explicitly fixed as not carrying resistance, so zero resistance-caused costs fire and the inequality keeps its shape. This required a judgment call to stick strictly to the pre-fixed resistance table, because physically Landauer dissipation is an irreversible heat cost and the prompt's deciding question contrasts equivalences with costs.",
+    "knew_tsr": false
+  },
+  {
+    "id": "info.shannon_entropy",
+    "physical": "The uncertainty of a source is minus the sum over outcomes of probability times log probability; it is the least average number of bits needed to encode it. (H = −Σ p × log p)",
+    "reflected_formula": "[unmapped: Shannon entropy H] = −Σ [unmapped: probability p] × log [unmapped: probability p]",
+    "reflected_sentence": "[unmapped: Shannon entropy H] is minus the sum over [unmapped: outcomes] of [unmapped: probability p] times the logarithm of [unmapped: probability p].",
+    "shape": "keeps",
+    "rule_reason": "definition with zero costs caused by resistance and no separation made by distance",
+    "rule_trace": [
+      "identity"
+    ],
+    "forced": true,
+    "unmapped_terms": [
+      "Shannon entropy H",
+      "probability p",
+      "uncertainty",
+      "source",
+      "outcomes",
+      "bits"
+    ],
+    "new_words": [],
+    "monotone_claims": [],
+    "interpretation": "Shannon entropy and probability have no partners in the frozen table, even if thermodynamic entropy provisionally maps to Culmination. Moreover, the formula sums over outcomes to count a number of bits, whereas the nonphysical side excludes numbers and sums. The definition keeps its shape by rule, but yields no statement in Vibrational Reality.",
+    "conflicts": "\"Nothing on the nonphysical side has a number, a unit or a distance.\" and \"No sums where the book has products.\"",
+    "sense": 1,
+    "confidence": 7,
+    "closing": "The keeps-or-turns call is mechanically decided because the relation is a definition with no resistance-bearing quantities or distance separations. The only slight vocabulary ambiguity is whether 'Shannon entropy' should borrow 'Culmination (provisional)' from 'entropy', but the resistance list separates 'Shannon entropy' from 'entropy' and all remaining terms (probability, uncertainty, outcomes, bits) are unmapped regardless.",
+    "knew_tsr": false
+  },
+  {
+    "id": "statmech.boltzmann_entropy",
+    "physical": "The entropy of a macrostate is Boltzmann's constant times the logarithm of the number of microstates that realize it. (S = k × ln W)",
+    "reflected_formula": "Culmination (provisional) = [unmapped: Boltzmann constant k] × ln [unmapped: number of microstates W]",
+    "reflected_sentence": "The Culmination (provisional) of a [unmapped: macrostate] is [unmapped: Boltzmann constant k] times the logarithm of the [unmapped: number of microstates W] in its realization.",
+    "shape": "keeps",
+    "rule_reason": "definition with zero costs caused by resistance and no separation made by distance",
+    "rule_trace": [
+      "identity"
+    ],
+    "forced": true,
+    "unmapped_terms": [
+      "Boltzmann constant k",
+      "number of microstates W",
+      "macrostate",
+      "microstates"
+    ],
+    "new_words": [],
+    "monotone_claims": [],
+    "interpretation": "Entropy maps to Culmination (provisional), and how states realize a condition touches realization, but Boltzmann constant and the number of microstates have no partners. Because nothing on the nonphysical side has a number or a unit, counting microstates cannot cross the Point of Reflection. The definition keeps its shape mechanically while leaving Culmination tied to an unmapped count.",
+    "conflicts": "\"Nothing on the nonphysical side has a number, a unit or a distance.\"",
+    "sense": 2,
+    "confidence": 7,
+    "closing": "The rule decided on its own: the relation is a definition and none of its three quantities (entropy, number of microstates, Boltzmann constant) carries resistance or distance. The reflection still stalls on vocabulary and traps because W is an explicit count (a number) and k is a dimensional constant, neither of which has a nonphysical partner.",
+    "knew_tsr": false
+  },
+  {
+    "id": "statmech.equipartition",
+    "physical": "In thermal equilibrium every quadratic degree of freedom carries an average energy of half k times the temperature. (⟨E⟩ = ½ × k × T per degree of freedom)",
+    "reflected_formula": "⟨E⟩ = ½ × [unmapped: Boltzmann constant k] × [unmapped: temperature T] per [unmapped: degree of freedom]",
+    "reflected_sentence": "In [unmapped: thermal equilibrium] every [unmapped: quadratic degree of freedom] holds an average E of half [unmapped: Boltzmann constant k] times [unmapped: temperature T].",
+    "shape": "keeps",
+    "rule_reason": "identity with zero costs caused by resistance and no separation made by distance",
+    "rule_trace": [
+      "identity"
+    ],
+    "forced": true,
+    "unmapped_terms": [
+      "temperature T",
+      "degrees of freedom",
+      "Boltzmann constant k",
+      "thermal equilibrium"
+    ],
+    "new_words": [],
+    "monotone_claims": [],
+    "interpretation": "Only E has a partner on the nonphysical side, while temperature, Boltzmann constant, and degrees of freedom remain unmapped. Moreover, the factor of one half and the count of degrees of freedom rely on numbers that do not cross the mirror, and E is one shared whole rather than partitioned into numerical shares. The identity keeps its shape by rule, but fails to form a coherent statement in frozen words.",
+    "conflicts": "\"Nothing on the nonphysical side has a number, a unit or a distance.\" and \"E (the one energy / the entity, shared by both sides)\"",
+    "sense": 1,
+    "confidence": 7,
+    "closing": "The rule decided without a judgment call because the relation is an identity with no costs and none of energy, temperature, degrees of freedom, or Boltzmann constant carries resistance or distance. However, with three of the four variables unmapped and a numerical fraction ½ attached to a count of degrees of freedom, the reflected expression has no standalone meaning in TSR's vocabulary.",
+    "knew_tsr": false
+  },
+  {
+    "id": "statmech.ergodicity",
+    "physical": "For an ergodic system the long-time average of an observable equals its average over the ensemble of accessible states.",
+    "reflected_formula": "",
+    "reflected_sentence": "For an [unmapped: ergodic system] the long-Expansion [unmapped: average] of an [unmapped: observable] equals its [unmapped: average] over the [unmapped: ensemble of accessible states].",
+    "shape": "keeps",
+    "rule_reason": "identity equating two averages with zero costs caused by resistance and no separation made by distance",
+    "rule_trace": [
+      "identity"
+    ],
+    "forced": true,
+    "unmapped_terms": [
+      "ergodic system",
+      "observable",
+      "average",
+      "ensemble of accessible states"
+    ],
+    "new_words": [],
+    "monotone_claims": [],
+    "interpretation": "Expansion replaces the physical clock in the first average, and the contrast between one path's Expansion and a whole collection echoes Vibrational Reality and Collective Reality, yet ergodic system, observable, and ensemble have no partners in the frozen table. The identity keeps its shape because no gap cost or separation appears. With only Expansion mapped, the sentence remains mostly unmapped physics prose.",
+    "conflicts": "none",
+    "sense": 2,
+    "confidence": 7,
+    "closing": "The rule decided on its own because the ergodic hypothesis is stated as an identity with no variables carrying resistance or distance and no costs. Only the word 'time' inside 'long-time' maps to 'Expansion' in the frozen vocabulary, leaving 'ergodic system', 'observable', 'average', and 'ensemble of accessible states' unmapped.",
+    "knew_tsr": false
+  },
+  {
+    "id": "statmech.fluctuation_dissipation",
+    "physical": "The way a system in equilibrium dissipates a small push is fixed by the spectrum of its own spontaneous fluctuations: friction and thermal noise are two faces of one quantity.",
+    "reflected_formula": "",
+    "reflected_sentence": "The way a system in [unmapped: equilibrium] meets a small Frequency is fixed by the [unmapped: spectrum] of its own [unmapped: spontaneous fluctuations]: resonance and [unmapped: thermal noise] are two faces of one quantity.",
+    "shape": "keeps",
+    "rule_reason": "identity equating two faces of one quantity with zero listed costs; the resistant term friction flips to resonance while the equivalence keeps its shape",
+    "rule_trace": [
+      "identity"
+    ],
+    "forced": false,
+    "unmapped_terms": [
+      "damping coefficient",
+      "temperature T",
+      "equilibrium",
+      "dissipates",
+      "spontaneous fluctuations",
+      "thermal noise",
+      "spectrum"
+    ],
+    "new_words": [],
+    "monotone_claims": [],
+    "interpretation": "Friction reflects to resonance and a push reflects to Frequency, while damping coefficient, temperature, equilibrium, and thermal noise have no partners in the frozen table. Because the theorem states an identity between two faces of one quantity rather than a cost that gets harder, the equivalence keeps its shape while friction flips to resonance. Linking resonance to unmapped thermal noise leaves the nonphysical reading incomplete.",
+    "conflicts": "none",
+    "sense": 3,
+    "confidence": 5,
+    "closing": "This relation required careful attention to the distinction between term reflection ('Every term reflects; that part always happens': friction -> resonance) and relationship shape ('Equivalences, definitions, identities... keep their shape'). Although 'damping coefficient' is listed in variables and carries resistance, the statement is an identity ('two faces of one quantity') with costs: [], so the identity keeps its shape while friction flips to resonance.",
+    "knew_tsr": false
+  },
+  {
+    "id": "statmech.maxwell_boltzmann_width",
+    "physical": "The spread of molecular speeds in a gas grows with the square root of temperature and shrinks with the square root of molecular mass. (σ_v ∝ √(k × T ÷ m))",
+    "reflected_formula": "[unmapped: spread] of rise per Expansion ∝ √([unmapped: Boltzmann constant k] × [unmapped: temperature T] ÷ Movement M)",
+    "reflected_sentence": "The [unmapped: spread] of rise per Expansion grows with the square root of [unmapped: temperature T] and, with the gap flipped to receptivity, grows rather than shrinks with the square root of Movement M and alignment.",
+    "shape": "turns around",
+    "rule_reason": "molecular mass m carries resistance and shrinks the spread of speeds (÷ m), acting as one limit caused by resistance",
+    "rule_trace": [
+      "resistance-cost"
+    ],
+    "forced": false,
+    "unmapped_terms": [
+      "temperature T",
+      "Boltzmann constant k",
+      "spread",
+      "molecular / gas"
+    ],
+    "new_words": [],
+    "monotone_claims": [
+      {
+        "rises": "rise per Expansion",
+        "with": "Movement M",
+        "sign": 1
+      },
+      {
+        "rises": "rise per Expansion",
+        "with": "alignment",
+        "sign": 1
+      }
+    ],
+    "interpretation": "Velocity maps to rise per Expansion and mass m maps to Movement M, while temperature, Boltzmann constant, and spread have no partners in the frozen table. Because mass m carries the gap that shrinks rise per Expansion on the physical side, flipping to receptivity turns that restriction around so rise per Expansion grows with Movement M and alignment. Even so, the unmapped temperature and Boltzmann constant leave half the relation outside Vibrational Reality.",
+    "conflicts": "\"Nothing on the nonphysical side has a number, a unit or a distance.\"",
+    "sense": 2,
+    "confidence": 4,
+    "closing": "A judgment call was needed because the pre-parsed YAML has 'costs: []', yet 'form' is 'equation' (not an identity or definition), 'molecular mass m' carries resistance ('Mass is resistance'), and the statement explicitly says the spread of speeds 'shrinks with the square root of molecular mass' (÷ m). Applying the prose rule that a limit caused by mass/resistance turns around flips the shrinking with m into rising with Movement M and alignment while keeping the formula unaltered.",
+    "knew_tsr": false
+  },
+  {
+    "id": "statmech.phase_transition_critical_point",
+    "physical": "At a continuous phase transition the order parameter vanishes and the correlation length diverges: fluctuations at every scale, and no characteristic size. (ξ → ∞ as T → T_c)",
+    "reflected_formula": "[unmapped: correlation length ξ] → limitless as [unmapped: temperature T] → [unmapped: critical temperature T_c]",
+    "reflected_sentence": "At a [unmapped: continuous phase transition] the [unmapped: order parameter] vanishes and the [unmapped: correlation length ξ] becomes limitless as [unmapped: temperature T] approaches [unmapped: critical temperature T_c].",
+    "shape": "keeps",
+    "rule_reason": "limit with zero costs caused by resistance and carries_distance fixed as false on all variables",
+    "rule_trace": [
+      "none"
+    ],
+    "forced": false,
+    "unmapped_terms": [
+      "order parameter",
+      "correlation length ξ",
+      "temperature T",
+      "critical temperature T_c",
+      "continuous phase transition",
+      "fluctuations",
+      "scale / characteristic size"
+    ],
+    "new_words": [],
+    "monotone_claims": [],
+    "interpretation": "Only the shift from a limited characteristic size to limitless has a partner in the frozen property row, while order parameter, correlation length, and temperature have no partners. Because the fixed table marks correlation length as carrying neither the gap nor Vibration separation, the limit keeps its shape by rule. Without partners for any of the three variables, the reflection cannot state what becomes limitless in Vibrational Reality.",
+    "conflicts": "\"No distance, time, location, travel or quantities on the nonphysical side.\"",
+    "sense": 1,
+    "confidence": 5,
+    "closing": "Under the pre-fixed YAML and resistance list, correlation length does not carry resistance, carries_distance is false, and costs is empty, which forces 'keeps'. This is ambiguous against the prose rule because 'correlation length' is physically a spatial distance over which correlations decay and 'form' is 'limit', so without the pre-fixed 'carries_distance: false' flag one could treat a finite correlation length as a distance separation that vanishes at criticality.",
+    "knew_tsr": false
+  }
+]

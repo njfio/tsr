@@ -1,0 +1,21 @@
+{
+ "id": "rel.velocity_addition",
+ "physical": "Relativistic velocity addition — Velocities compose so that the result never exceeds c: the combined speed is the sum divided by one plus the product over c squared. Formula: u' = (u + v) ÷ (1 + u × v ÷ c²)",
+ "reflected_formula": "(rise per Expansion)' = (rise per Expansion + rise per Expansion) ÷ (1 + rise per Expansion × rise per Expansion ÷ Current²)",
+ "reflected_sentence": "In Vibrational Reality, rise per Expansion adds so that it never passes Current: the sum is tempered by one plus the product over Current squared.",
+ "shape": "keeps",
+ "rule_reason": "An identity keeps its shape; the composition law is a symmetry of motion with no cost and no resistance.",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "The identity keeps its shape. Velocity reflects to rise per Expansion; c is Current. The law of composition stays intact on the nonphysical side.",
+ "conflicts": "none",
+ "sense": 6,
+ "confidence": 7,
+ "closing": "The rule decided on its own: an identity with no costs keeps shape. The reflection is fully coherent within the frozen vocabulary.",
+ "knew_tsr": false
+}

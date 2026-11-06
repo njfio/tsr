@@ -1,0 +1,29 @@
+{
+ "id": "em.mutual_induction",
+ "physical": "Mutual induction: A changing current in one coil induces an EMF in a nearby coil in proportion to their mutual inductance, which depends on their geometry and how much flux they share. EMF_2 = M × dI_1 ÷ dt",
+ "reflected_formula": "[voltage_2: unmapped] = [mutual inductance: unmapped] × d[electric current_1: unmapped] ÷ dExpansion",
+ "reflected_sentence": "A change in the flow of one gives rise to a push in another in proportion to how much they share.",
+ "shape": "keeps",
+ "rule_reason": "equation with no listed cost and no variable carrying distance; none fired, so it keeps",
+ "rule_trace": [
+  "none"
+ ],
+ "forced": false,
+ "unmapped_terms": [
+  "induced EMF (voltage)",
+  "mutual inductance M",
+  "electric current I_1",
+  "coil",
+  "nearby",
+  "geometry",
+  "flux"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "The relationship keeps its shape: a change in one gives rise to a response in the other, in proportion to what they share. 'Nearby' and 'geometry' are separations made by distance and have no frozen partner; the nearest legal reading would be alignment, but the table does not license that substitution. Without partners for either side of the equation the sentence says only that sharing couples them.",
+ "conflicts": "none",
+ "sense": 2,
+ "confidence": 4,
+ "closing": "This needed a judgment call. The prompt lists no cost, so by the count rule it keeps. But mutual inductance is fixed as carrying resistance and the induced EMF rises with it, and the statement's 'nearby' and 'geometry' are distance-made separations that were not flagged carries_distance. I applied the rule to the data as given rather than reading a cost or a separation into it, which is why confidence is low. Note that the symbol M here is mutual inductance, not the table's Movement M. (Amendment 1 applied: shape is the rule's call on the relationship; unmapped terms are listed separately and described in plain words in the sentence.)",
+ "knew_tsr": false
+}

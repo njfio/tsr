@@ -1,0 +1,25 @@
+{
+ "id": "em.ohm_definition",
+ "physical": "Ohm's law (the definition of resistance): Resistance is the ratio of the voltage across a conductor to the current through it. R = V ÷ I",
+ "reflected_formula": "the gap = [voltage: unmapped] ÷ [electric current: unmapped]",
+ "reflected_sentence": "The gap is the ratio of the push across a conductor to the flow through it.",
+ "shape": "keeps",
+ "rule_reason": "definition: it keeps its shape",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "voltage V",
+  "electric current I",
+  "conductor"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "Resistance crosses as the gap and the definition keeps its shape, so the gap is defined as a ratio of two things the table does not name. Nothing turns, because nothing is said to get harder. A definition of the gap in terms of unmapped quantities adds nothing to the table.",
+ "conflicts": "none",
+ "sense": 1,
+ "confidence": 7,
+ "closing": "The rule decided on its own: definitions keep. The pairing with em.ohm_cost is worth noting: the same formula keeps here and turns around there, which is exactly what the prompt says should happen (the formula stays, the reading turns), so this is not a contradiction. But a definition whose defining terms have no partners is empty on the far side. 'Ratio' also edges toward a number, which the mirror forbids. (Amendment 1 applied: shape is the rule's call on the relationship; unmapped terms are listed separately and described in plain words in the sentence.)",
+ "knew_tsr": false
+}

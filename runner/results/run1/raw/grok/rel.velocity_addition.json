@@ -1,0 +1,21 @@
+{
+ "id": "rel.velocity_addition",
+ "physical": "Velocities compose so that the result never exceeds c: the combined speed is the sum divided by one plus the product over c squared.",
+ "reflected_formula": "rise per Expansion' = (rise per Expansion + rise per Expansion) ÷ (1 + rise per Expansion × rise per Expansion ÷ Current²)",
+ "reflected_sentence": "Rises per Expansion keep composing so the combined rise does not exceed the Current.",
+ "shape": "keeps",
+ "rule_reason": "An identity with no cost or separation. The bound is c, and c does not carry resistance; it is the limit, not an opposition. A limit not caused by resistance does not turn. Identities keep.",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "Rise per Expansion keeps with the Current. The relationship does not turn. The Current stays the Current.",
+ "conflicts": "none",
+ "sense": 2,
+ "confidence": 6,
+ "closing": "The rule decides the keep: identity, no costs, and the ceiling is c, which is fixed as not an opposition. I did not flip never exceeds into limitless; that would turn a keep. Term reflection still replaces velocity with rise per Expansion and c with Current. The two velocities collapse to one frozen phrase, which the formula image cannot avoid without a new word. The explicit 1 is a number and does not really cross, and a sum sits where the Present is a product; I did not rewrite either. Current is not a magnitude one can stay under, so the kept sentence is only partly coherent. That is a sense failure, not a shape judgment.",
+ "knew_tsr": false
+}

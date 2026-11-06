@@ -1,0 +1,24 @@
+{
+ "id": "mech.collisions_elastic_inelastic",
+ "physical": "Momentum is conserved in every collision; kinetic energy is conserved in an elastic collision and partly converted to internal energy in an inelastic one, the fraction set by the coefficient of restitution.",
+ "reflected_formula": "",
+ "reflected_sentence": "momentum stays momentum and keeps its total in every meeting; only the energy's form changes, and the fraction that sets that change has no partner here.",
+ "shape": "keeps",
+ "rule_reason": "Conservation law with no costs listed; conservation keeps its shape.",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "kinetic energy",
+  "coefficient of restitution e"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "momentum reflects to momentum and its conservation crosses whole. The split between elastic and inelastic has no frozen words, because kinetic energy and restitution lack partners. What remains is the conservation itself, unchanged.",
+ "conflicts": "none",
+ "sense": 3,
+ "confidence": 7,
+ "closing": "The rule decided shape alone: conservation, empty costs, keeps. No judgment call on the turn. I treated kinetic energy strictly as unmapped rather than stretching the physical energy row to cover it; a more generous reading of that row would have filled the gap but the instructions say strict, not generous.",
+ "knew_tsr": false
+}

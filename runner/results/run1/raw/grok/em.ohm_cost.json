@@ -1,0 +1,25 @@
+{
+ "id": "em.ohm_cost",
+ "physical": "For a given voltage, the current that flows falls as the resistance rises. I = V ÷ R",
+ "reflected_formula": "(unmapped) = (unmapped) ÷ (unmapped)",
+ "reflected_sentence": "For a given push, the flow gets easier with receptivity, and the reading of the division turns.",
+ "shape": "turns around",
+ "rule_reason": "One cost: current for a given voltage gets harder as electrical resistance rises, and electrical resistance carries resistance, so the relationship turns around.",
+ "rule_trace": [
+  "resistance-cost"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "current",
+  "voltage",
+  "electrical resistance"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "Receptivity makes it easier. The relationship turns. Nothing here is a number.",
+ "conflicts": "none",
+ "sense": 4,
+ "confidence": 7,
+ "closing": "The rule decided. One resistance-cost is listed and the count is odd, so it turns. This is the cost reading of the same symbols as the definition, and I did not let the definition decide this one. No frozen word names the flow, so I recorded no monotone claim.",
+ "knew_tsr": false
+}

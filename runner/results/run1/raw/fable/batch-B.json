@@ -1,0 +1,407 @@
+[
+  {
+    "id": "thermo.carnot_limit",
+    "physical": "Carnot limit: No heat engine between two reservoirs can be more efficient than a reversible one; the limit is one minus the ratio of the cold to the hot temperature. η ≤ 1 − T_c ÷ T_h",
+    "reflected_formula": "[no partner: efficiency η] ≤ 1 − [no partner: cold temperature T_c] ÷ [no partner: hot temperature T_h]",
+    "reflected_sentence": "The relationship keeps its shape: the share of what can be drawn off stays capped, and the cap tightens as the two unnamed hot and cold measures draw together; none of the three quantities has a partner in the frozen vocabulary.",
+    "shape": "keeps",
+    "rule_reason": "The only listed cost (extracting work) rises with temperature, which the fixed table says does not carry resistance. Zero resistance-costs, no separation made by distance, so the relation keeps its shape. It is a limit, but not a limit caused by resistance.",
+    "rule_trace": [
+      "none"
+    ],
+    "forced": true,
+    "unmapped_terms": [
+      "efficiency",
+      "temperature (cold T_c)",
+      "temperature (hot T_h)",
+      "heat engine",
+      "reservoir",
+      "reversible"
+    ],
+    "new_words": [],
+    "monotone_claims": [],
+    "interpretation": "Efficiency and temperature have no partners, so nothing can be said here in frozen words. The relation keeps its shape only because nothing in it carries what turns a reading.",
+    "conflicts": "none",
+    "sense": 1,
+    "confidence": 6,
+    "closing": "The rule decided on its own: the cost rises with temperature, and temperature was fixed as not carrying resistance before this run, so the count of resistance-costs is zero and the inequality keeps. The only pull toward ambiguity is that the rule's gloss ('a cost that rises') and the word 'limit' invite a turn, but the deciding question is resistance, and there is none here. The reflection is empty: not one variable has a partner, so the row says nothing on the nonphysical side.",
+    "knew_tsr": false
+  },
+  {
+    "id": "thermo.enthalpy",
+    "physical": "Enthalpy: Enthalpy is internal energy plus pressure times volume; at constant pressure the heat absorbed equals the change in enthalpy. H = U + P × V",
+    "reflected_formula": "[no partner: enthalpy H] = [no partner: internal energy U] + [no partner: pressure P] × Vibrance",
+    "reflected_sentence": "The definition keeps its shape: an unnamed total equals an unnamed inner store plus an unnamed pressing term multiplied by Vibrance; only volume crosses, as Vibrance.",
+    "shape": "keeps",
+    "rule_reason": "Definition (an equivalence); no costs listed and none caused by resistance; keeps its shape.",
+    "rule_trace": [
+      "identity"
+    ],
+    "forced": true,
+    "unmapped_terms": [
+      "enthalpy",
+      "internal energy",
+      "pressure",
+      "heat",
+      "constant pressure"
+    ],
+    "new_words": [],
+    "monotone_claims": [],
+    "interpretation": "Vibrance is the one frozen word that survives, multiplied by a term that has no partner and added to another that has none. The shape holds, but it holds around holes.",
+    "conflicts": "none",
+    "sense": 1,
+    "confidence": 7,
+    "closing": "The rule decided without a judgment call: a definition keeps. The resistance table notes that the book places pressure 'at the crossing', but the frozen vocabulary gives it no row, so I left it unmapped rather than borrow 'Point of Reflection' for it. Three of four terms have no partner, so the reflected formula is a shape with almost no content.",
+    "knew_tsr": false
+  },
+  {
+    "id": "thermo.first_law",
+    "physical": "First law: The change in a system's internal energy equals the heat added minus the work it does: energy is conserved. ΔU = Q − W",
+    "reflected_formula": "Δ[no partner: internal energy U] = [no partner: heat Q] − [no partner: work W]",
+    "reflected_sentence": "The conservation keeps its shape: conscious energy is conserved, the change in an unnamed inner store equalling what is taken in minus what is given out, though those three quantities have no partners.",
+    "shape": "keeps",
+    "rule_reason": "Conservation law; no costs listed and none caused by resistance; keeps its shape.",
+    "rule_trace": [
+      "identity"
+    ],
+    "forced": true,
+    "unmapped_terms": [
+      "internal energy",
+      "heat",
+      "work",
+      "system"
+    ],
+    "new_words": [],
+    "monotone_claims": [],
+    "interpretation": "Conscious energy is conserved; that much the energy row of the table allows. The parts that are exchanged, and the one that changes, have no partners.",
+    "conflicts": "none",
+    "sense": 2,
+    "confidence": 7,
+    "closing": "The rule decided on its own: a conservation law keeps. The one liberty I took was to let the generic word 'energy' in the statement cross through the 'physical energy → conscious energy' row; the three named forms (internal energy, heat, work) are not in the table and I did not force them into that row. The formula's image is therefore three holes and a minus sign.",
+    "knew_tsr": false
+  },
+  {
+    "id": "thermo.fourier_conduction",
+    "physical": "Heat conduction (Fourier) and thermal resistance: The heat flowing through a slab for a given temperature difference falls as the slab's thermal resistance (thickness over conductivity times area) rises. q = ΔT ÷ R_th",
+    "reflected_formula": "[no partner: heat flow q] = [no partner: temperature difference ΔT] ÷ [thermal resistance R_th → the gap]",
+    "reflected_sentence": "The relationship turns around: what gets through, for a given difference, grows as receptivity grows and the gap closes, where the physical reading had it shrink; the flow and the difference themselves have no partners.",
+    "shape": "turns around",
+    "rule_reason": "One cost (heat getting through for a given temperature difference) rises with thermal resistance, which the fixed table says carries resistance. One resistance-cost is an odd number, so the reading turns: what gets harder with more resistance gets easier with more receptivity.",
+    "rule_trace": [
+      "resistance-cost"
+    ],
+    "forced": true,
+    "unmapped_terms": [
+      "heat (flow q)",
+      "temperature (difference ΔT)",
+      "thermal resistance (no table row; only the flipped condition 'receptivity' and 'the gap' are legal for it)",
+      "slab",
+      "thickness",
+      "conductivity",
+      "area"
+    ],
+    "new_words": [],
+    "monotone_claims": [],
+    "interpretation": "Receptivity lets more through; the gap lets less. What flows, and what drives it, have no partners, so only the direction survives the crossing.",
+    "conflicts": "none",
+    "sense": 2,
+    "confidence": 7,
+    "closing": "The rule decided on its own: thermal resistance is fixed as carrying resistance, the one cost rises with it, so the row turns. The ambiguity is in the words, not the verdict: thermal resistance has no row in the frozen table, so its only legal images are the rule's own flip (receptivity) and 'the gap'; I used those rather than coin anything. The flow and the difference have no partners, so I could not write a monotone claim in frozen words; the turned direction is stated in the sentence only.",
+    "knew_tsr": false
+  },
+  {
+    "id": "thermo.free_energy",
+    "physical": "Free energy: Gibbs free energy is enthalpy minus temperature times entropy; at fixed temperature and pressure a process is spontaneous when it lowers the free energy. G = H − T × S",
+    "reflected_formula": "[no partner: free energy G] = [no partner: enthalpy H] − [no partner: temperature T] × Culmination (provisional)",
+    "reflected_sentence": "The definition keeps its shape: an unnamed usable store equals an unnamed total minus an unnamed hotness multiplied by Culmination; only entropy crosses, as Culmination.",
+    "shape": "keeps",
+    "rule_reason": "Definition (an equivalence); no costs listed and none caused by resistance; keeps its shape.",
+    "rule_trace": [
+      "identity"
+    ],
+    "forced": true,
+    "unmapped_terms": [
+      "free energy",
+      "enthalpy",
+      "temperature",
+      "pressure",
+      "spontaneous",
+      "process"
+    ],
+    "new_words": [],
+    "monotone_claims": [],
+    "interpretation": "Culmination is the one frozen word here, and it is subtracted after being multiplied by a term with no partner. The second clause, about what happens on its own, has no frozen words at all.",
+    "conflicts": "none",
+    "sense": 1,
+    "confidence": 7,
+    "closing": "The rule decided without a judgment call: a definition keeps. The 'spontaneous when it lowers the free energy' clause looks like it wants to say something about Culmination rising, but free energy and temperature have no partners, so I did not build that claim. The provisional status of Culmination is noted; I used the word as the table gives it.",
+    "knew_tsr": false
+  },
+  {
+    "id": "thermo.heat_capacity_cost",
+    "physical": "Heat capacity (the cost reading): Warming a body by a given amount takes more heat the larger its heat capacity: thermal inertia. Q = C × ΔT",
+    "reflected_formula": "[no partner: heat Q] = [heat capacity C: UNDETERMINED, no partner] × [no partner: temperature change ΔT]",
+    "reflected_sentence": "Read as thermal inertia the relationship turns around: what the warming takes comes easily with receptivity where the physical reading had it grow; none of the three quantities has a partner, so nothing on the nonphysical side carries the turned reading.",
+    "shape": "turns around",
+    "rule_reason": "The one cost (warming the body by a given amount) rises with heat capacity, which the fixed table leaves UNDETERMINED. Taking the relation's own words ('thermal inertia', clause a) as the deciding gloss, heat capacity carries resistance in the same way inertial mass does, giving one resistance-cost and a turn. Under the plain-ratio reading nothing fires and it keeps. This is a judgment call, not the rule.",
+    "rule_trace": [
+      "resistance-cost"
+    ],
+    "forced": false,
+    "unmapped_terms": [
+      "heat",
+      "heat capacity",
+      "temperature",
+      "body"
+    ],
+    "new_words": [],
+    "monotone_claims": [],
+    "interpretation": "If the quantity resists the change, receptivity makes the change come easily; if it is only a ratio, nothing turns. Either way, none of the three terms has a partner, so the row is empty on the nonphysical side.",
+    "conflicts": "none",
+    "sense": 1,
+    "confidence": 3,
+    "closing": "The rule did not decide this one. Heat capacity is marked UNDETERMINED in the fixed table, and the verdict hinges entirely on whether 'thermal inertia' counts as 'defined as opposition to change'. I sided with the relation's own title and statement (the cost reading, thermal inertia), which parallels the inertial-mass clause, so I recorded a turn; the opposite call (plain ratio, keeps) is equally defensible. Confidence is low and forced is false. Independently of that call, no term here has a partner, so the reflection carries no content.",
+    "knew_tsr": false
+  },
+  {
+    "id": "thermo.heat_capacity_definition",
+    "physical": "Heat capacity (the definition): Heat capacity is the heat required per unit rise in temperature. C = Q ÷ ΔT",
+    "reflected_formula": "[heat capacity C: UNDETERMINED, no partner] = [no partner: heat Q] ÷ [no partner: temperature change ΔT]",
+    "reflected_sentence": "The definition keeps its shape: an unnamed capacity equals what is taken in divided by the unnamed change it produces; none of the three quantities has a partner.",
+    "shape": "keeps",
+    "rule_reason": "Definition (an equivalence); no costs listed; keeps its shape regardless of whether heat capacity carries resistance, since the rule turns only costs, not definitions.",
+    "rule_trace": [
+      "identity"
+    ],
+    "forced": true,
+    "unmapped_terms": [
+      "heat capacity",
+      "heat",
+      "temperature"
+    ],
+    "new_words": [],
+    "monotone_claims": [],
+    "interpretation": "A ratio of two terms with no partners, equal to a third with none. The shape keeps and nothing is said.",
+    "conflicts": "none",
+    "sense": 1,
+    "confidence": 7,
+    "closing": "The rule decided on its own: a definition keeps, and the UNDETERMINED status of heat capacity does not matter because no cost is listed. The reflection is empty of content, which is the honest result for a quantity the frozen vocabulary never names.",
+    "knew_tsr": false
+  },
+  {
+    "id": "thermo.joule_heating",
+    "physical": "Joule heating: A current through a resistance dissipates power as heat in proportion to the resistance and the square of the current. P = I² × R",
+    "reflected_formula": "[no partner: power P] = [no partner: current I]² × [electrical resistance R → the gap]",
+    "reflected_sentence": "The relationship turns around: the loss that grew with the gap shrinks as receptivity grows; the rate of loss and the flow that carries it have no partners, so only the direction crosses.",
+    "shape": "turns around",
+    "rule_reason": "One cost (carrying the current without loss) rises with electrical resistance, which the fixed table says carries resistance. One resistance-cost is an odd number, so the reading turns: what is lost under more resistance is kept under more receptivity.",
+    "rule_trace": [
+      "resistance-cost"
+    ],
+    "forced": true,
+    "unmapped_terms": [
+      "power",
+      "current (electric) (the bare word 'electric' has the partner Idle, but the quantity current has no row and I did not compose one)",
+      "electrical resistance (no table row; only the flipped condition 'receptivity' and 'the gap' are legal for it)",
+      "heat",
+      "dissipates"
+    ],
+    "new_words": [],
+    "monotone_claims": [],
+    "interpretation": "Where the gap is wide, more is lost; where receptivity is full, less is. The flow that carries it, and the loss itself, have no partners.",
+    "conflicts": "none",
+    "sense": 2,
+    "confidence": 7,
+    "closing": "The rule decided on its own: electrical resistance is fixed as carrying resistance, the one cost rises with it, the row turns. The ambiguity is in the vocabulary: 'electric' maps to Idle as a co-creating partner, but electric current is a flow with no row, and electrical resistance has no row beyond the rule's own flip to receptivity and 'the gap'. I used only those legal words. The square of the current has no frozen image, so the monotone claim could not be written in frozen words.",
+    "knew_tsr": false
+  },
+  {
+    "id": "thermo.latent_heat_cost",
+    "physical": "Latent heat (the cost reading): Changing a body's phase takes heat in proportion to its mass, with no rise in temperature while it happens. Q = m × L",
+    "reflected_formula": "[no partner: heat Q] = Movement M × [no partner: latent heat L]",
+    "reflected_sentence": "The relationship turns around: in the table's terms the formula stays as it is, Movement M multiplying an unnamed per-unit term, and the reading turns, so what is costly in the physical reading comes easily with receptivity; what is taken in and the per-unit term have no partners.",
+    "shape": "turns around",
+    "rule_reason": "One cost (changing the body's phase; the heat it takes) rises with mass m, which the fixed table says carries resistance (inertial mass as opposition to a change in motion). One resistance-cost is an odd number, so the reading turns.",
+    "rule_trace": [
+      "resistance-cost"
+    ],
+    "forced": true,
+    "unmapped_terms": [
+      "heat",
+      "latent heat",
+      "phase",
+      "temperature",
+      "body"
+    ],
+    "new_words": [],
+    "monotone_claims": [],
+    "interpretation": "Movement M stands where the cost once stood, and the cost turns: with receptivity, the change comes easily. What is taken, and the change itself, have no partners.",
+    "conflicts": "none",
+    "sense": 2,
+    "confidence": 7,
+    "closing": "The rule decided on its own: mass carries resistance, the one cost rises with it, the row turns. What is strange in TSR's own terms is that Movement M is the image of the resistant quantity, yet the turned reading says the cost falls with receptivity; the table does not say how Movement M and receptivity relate, so I left the monotone claim empty rather than assert one. The 'no rise in temperature' clause has no frozen words at all.",
+    "knew_tsr": false
+  },
+  {
+    "id": "thermo.latent_heat_definition",
+    "physical": "Latent heat (the definition): Latent heat is the heat absorbed per unit mass in a phase change at constant temperature. L = Q ÷ m",
+    "reflected_formula": "[no partner: latent heat L] = [no partner: heat Q] ÷ Movement M",
+    "reflected_sentence": "The definition keeps its shape: an unnamed per-unit term equals what is taken in divided by Movement M; only mass crosses, as Movement M.",
+    "shape": "keeps",
+    "rule_reason": "Definition (an equivalence); no costs listed; keeps its shape even though mass m carries resistance, since the rule turns only costs, not definitions.",
+    "rule_trace": [
+      "identity"
+    ],
+    "forced": true,
+    "unmapped_terms": [
+      "latent heat",
+      "heat",
+      "phase",
+      "temperature"
+    ],
+    "new_words": [],
+    "monotone_claims": [],
+    "interpretation": "An unnamed term divided by Movement M, equal to another unnamed term. The shape keeps and little is said.",
+    "conflicts": "none",
+    "sense": 1,
+    "confidence": 7,
+    "closing": "The rule decided on its own: a definition keeps. The companion cost row turns while this definition keeps, which follows the rule as written (same formula, different form), but it means the same three symbols read two ways depending on the label; I note this without resisting it. Two of three terms have no partner.",
+    "knew_tsr": false
+  },
+  {
+    "id": "thermo.second_law_clausius",
+    "physical": "Second law (Clausius): Heat does not spontaneously flow from a colder body to a hotter body; the entropy of an isolated system never decreases. ΔS_universe ≥ 0. Alternate (Kelvin-Planck): no cyclic process can convert heat entirely into work.",
+    "reflected_formula": "Δ Culmination (provisional) ≥ 0",
+    "reflected_sentence": "The relationship keeps its shape: Culmination never lessens; what flows, and the hotter and colder it flows between, have no partners.",
+    "shape": "keeps",
+    "rule_reason": "The main cost (undoing a spontaneous flow) rises with entropy and the alternate's cost (turning all heat into work) rises with heat; the fixed table says neither carries resistance. Zero resistance-costs, no separation made by distance, so the relation keeps its shape. It is an inequality and a limit, but not one caused by resistance.",
+    "rule_trace": [
+      "none"
+    ],
+    "forced": true,
+    "unmapped_terms": [
+      "heat",
+      "temperature",
+      "colder body",
+      "hotter body",
+      "isolated system",
+      "work (alternate)",
+      "cyclic process (alternate)"
+    ],
+    "new_words": [],
+    "monotone_claims": [],
+    "interpretation": "Culmination only gathers; it does not lessen. Where two vibrations meet they culminate rather than cancel, and the table's provisional word carries that one direction across. What flows has no partner, and neither do the hotter and the colder.",
+    "conflicts": "none",
+    "sense": 3,
+    "confidence": 6,
+    "closing": "The rule decided on its own: entropy and heat were fixed as not carrying resistance before this run, so the count is zero and the row keeps. The ambiguity is that this is a one-way limit, which the rule's gloss ('unreachable becomes already there') seems to want to turn, but the deciding question is resistance and there is none. The reflected formula keeps the number 0, which the rule says should not cross; I kept it only because the formula is not to be rewritten. The first clause (the direction of flow) has no frozen words, so only the second clause reflects.",
+    "knew_tsr": false
+  },
+  {
+    "id": "thermo.temperature_mean_kinetic_energy",
+    "physical": "Temperature as mean kinetic energy: In an ideal gas the average translational kinetic energy per molecule is three halves of k times the temperature: temperature measures mean molecular kinetic energy. ½ × m × ⟨v²⟩ = 3/2 × k × T",
+    "reflected_formula": "½ × Movement M × ⟨(rise per Expansion)²⟩ = 3/2 × [no partner: Boltzmann constant k] × [no partner: temperature T]",
+    "reflected_sentence": "The identity keeps its shape: Movement M times the square of rise per Expansion stands equal to an unnamed constant times an unnamed hotness; those two have no partners.",
+    "shape": "keeps",
+    "rule_reason": "Identity (an equivalence); no costs listed; keeps its shape even though mass m carries resistance, since the rule turns only costs, not identities.",
+    "rule_trace": [
+      "identity"
+    ],
+    "forced": true,
+    "unmapped_terms": [
+      "temperature",
+      "Boltzmann constant",
+      "ideal gas",
+      "molecule",
+      "kinetic energy (the generic energy row exists, but kinetic energy has no row of its own)"
+    ],
+    "new_words": [],
+    "monotone_claims": [],
+    "interpretation": "Movement M and rise per Expansion meet as a product on one side; the other side has no partner. The numbers are kept only because the formula is not rewritten; nothing on this side has a number.",
+    "conflicts": "none",
+    "sense": 2,
+    "confidence": 7,
+    "closing": "The rule decided on its own: an identity keeps. Two things to flag: 'mean square speed' was carried through the velocity row ('rise per Expansion') because 'speed' is forbidden on the nonphysical side and the variable's quantity is velocity; and the factors ½ and 3/2 are numbers that the rule says do not cross, kept only because I was told not to rewrite formulas. The right-hand side has no frozen words at all, so the identity equates a frozen product to a hole.",
+    "knew_tsr": false
+  },
+  {
+    "id": "thermo.thermal_equilibrium",
+    "physical": "Approach to thermal equilibrium: Two bodies in thermal contact exchange heat from the hotter to the colder until they reach a common temperature. (no formula)",
+    "reflected_formula": "",
+    "reflected_sentence": "The relationship keeps its shape: two meet, what passes between them passes from the hotter to the colder until they share one measure; neither the measure nor what passes has a partner.",
+    "shape": "keeps",
+    "rule_reason": "No costs listed, no resistance-cost, no separation made by distance; by the count (zero) the relation keeps its shape. It is not an equivalence either, so 'keeps' here is the default of nothing firing.",
+    "rule_trace": [
+      "none"
+    ],
+    "forced": true,
+    "unmapped_terms": [
+      "temperature",
+      "heat",
+      "body",
+      "thermal contact",
+      "hotter",
+      "colder",
+      "common temperature"
+    ],
+    "new_words": [],
+    "monotone_claims": [],
+    "interpretation": "Nothing here has a partner. The shape keeps by default and says nothing.",
+    "conflicts": "none",
+    "sense": 1,
+    "confidence": 5,
+    "closing": "The rule decided by default rather than by firing: nothing in the relation is a resistance-cost or a distance-made separation, so the count is zero and it keeps. I did not apply the property row 'radiation → collection' to the hotter body giving off heat, because the relation names heat flow, not radiation, and that would be a reinterpretation. Confidence is middling because 'keeps' for a relation with no formula and no frozen term is a formality.",
+    "knew_tsr": false
+  },
+  {
+    "id": "thermo.third_law",
+    "physical": "Third law: As temperature approaches absolute zero the entropy approaches a constant, and absolute zero cannot be reached in a finite number of steps. lim T→0 S = S0",
+    "reflected_formula": "lim [no partner: temperature T]→0 Culmination (provisional) = Culmination_0",
+    "reflected_sentence": "The relationship keeps its shape: Culmination settles to a fixed Culmination as the unnamed hotness goes to its zero, and that zero stays unreached; the hotness has no partner.",
+    "shape": "keeps",
+    "rule_reason": "The one cost (reaching the zero of temperature) rises with temperature, which the fixed table says does not carry resistance. Zero resistance-costs, no separation made by distance, so the relation keeps its shape; the unreachable stays unreachable because nothing here is a cost caused by resistance.",
+    "rule_trace": [
+      "none"
+    ],
+    "forced": true,
+    "unmapped_terms": [
+      "temperature",
+      "absolute zero",
+      "finite number of steps",
+      "constant"
+    ],
+    "new_words": [],
+    "monotone_claims": [],
+    "interpretation": "Culmination comes to rest at one value and stays there. What it comes to rest against has no partner, and the steps that never arrive have none either.",
+    "conflicts": "none",
+    "sense": 1,
+    "confidence": 6,
+    "closing": "The rule decided on its own: temperature was fixed as not carrying resistance, so the one cost does not count and the row keeps. The ambiguity is the same as the second law's: the rule's gloss 'unreachable becomes already there' describes turned rows, and this is the most 'unreachable' statement in the batch, yet it keeps because its cost is not a resistance-cost. The limit notation, the 0 and the constant S0 are numbers and a quantity that the rule says do not cross; kept only because the formula is not rewritten.",
+    "knew_tsr": false
+  },
+  {
+    "id": "thermo.zeroth_law",
+    "physical": "Zeroth law: If two bodies are each in thermal equilibrium with a third, they are in thermal equilibrium with each other; this is what makes temperature a well-defined property. (no formula)",
+    "reflected_formula": "",
+    "reflected_sentence": "The definition keeps its shape: a sameness each of two shares with a third they share with each other; the measure that is the same has no partner.",
+    "shape": "keeps",
+    "rule_reason": "Definition (an equivalence, a transitivity); no costs listed; keeps its shape.",
+    "rule_trace": [
+      "identity"
+    ],
+    "forced": true,
+    "unmapped_terms": [
+      "temperature",
+      "thermal equilibrium",
+      "body"
+    ],
+    "new_words": [],
+    "monotone_claims": [],
+    "interpretation": "A sameness shared by three is shared by each pair; that much is shape. What is the same has no partner, so the row says nothing in frozen words.",
+    "conflicts": "none",
+    "sense": 1,
+    "confidence": 7,
+    "closing": "The rule decided on its own: a definition keeps. The relation has no formula and its only variable, temperature, has no partner, so the reflection is a bare transitive shape with no frozen content. No judgment call was needed, and nothing in the vocabulary table is contradicted.",
+    "knew_tsr": false
+  }
+]

@@ -1,0 +1,30 @@
+{
+ "id": "thermo.second_law_clausius",
+ "physical": "Heat does not spontaneously flow from a colder body to a hotter body; the entropy of an isolated system never decreases. ΔS_universe ≥ 0",
+ "reflected_formula": "Culmination (provisional) never lessens",
+ "reflected_sentence": "Once vibrations culminate they do not un-culminate: Culmination (provisional) grows or holds, and what has dispersed into the Vibration-Expansion is not gathered back without the gap opening.",
+ "shape": "keeps",
+ "rule_reason": "The listed cost (undoing a spontaneous flow) rises with entropy, and the fixed list says entropy does not carry resistance; zero resistance-costs, so the inequality keeps its shape. The Kelvin-Planck alternate is no different: its cost rises with heat, which also does not carry resistance.",
+ "rule_trace": [
+  "none"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "heat",
+  "temperature"
+ ],
+ "new_words": [],
+ "monotone_claims": [
+  {
+   "rises": "Culmination (provisional)",
+   "with": "alignment",
+   "sign": -1
+  }
+ ],
+ "interpretation": "This is the one thermodynamic reflection with both a frozen partner and a surviving direction: Culmination (provisional) only growing is a sentence TSR can actually say. The kept one-wayness mirrors the physical arrow without invoking any cost flip.",
+ "conflicts": "none",
+ "sense": 4,
+ "confidence": 6,
+ "closing": "The fixed list settled entropy before this batch, so the rule decided alone: the cost is not resistance-caused, count is zero, keeps. The monotone claim pairing less Culmination with more alignment is an inference from the frozen words, and I flagged it rather than asserted it as table fact.",
+ "knew_tsr": false
+}

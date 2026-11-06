@@ -1,0 +1,23 @@
+{
+ "id": "thermo.third_law",
+ "physical": "As temperature approaches absolute zero the entropy approaches a constant, and absolute zero cannot be reached in a finite number of steps. lim T→0 S = S0",
+ "reflected_formula": "as an unmatched condition approaches its least, Culmination approaches a constant",
+ "reflected_sentence": "The limit keeps: as an unmatched condition approaches its least, Culmination approaches a constant, and that least stays unreachable.",
+ "shape": "keeps",
+ "rule_reason": "The form is a limit, but the recorded cost rises with temperature, which does not carry resistance, so it is not a limit caused by resistance. Entropy does not carry resistance. No separation. Zero such costs, so the unreachability keeps.",
+ "rule_trace": [
+  "none"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "temperature"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "Culmination approaches a constant, and that reading keeps. The least of the unmatched condition stays unreachable rather than already there. This is not the gap and not receptivity.",
+ "conflicts": "none",
+ "sense": 2,
+ "confidence": 6,
+ "closing": "The rule decided on its own. The form is a limit, but the cost rises with temperature, which does not carry resistance, so unreachable does not become already there. The only ambiguity was the bare word limit, which the rule qualifies by cause. The numeral in the limit does not cross. Culmination is the provisional name only, and a constant approached by Culmination sits poorly with that name's gloss.",
+ "knew_tsr": false
+}

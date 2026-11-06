@@ -1,0 +1,8 @@
+{
+ "id": "em.mutual_induction",
+ "alternative_shape": "turns around",
+ "rule_compliant": true,
+ "argument": "Mutual inductance is inductance, fixed before the run as carrying resistance (opposition to a change in current, Lenz/Faraday): the EMF it induces in the nearby loop is the back-EMF that opposes the change in the first loop's flow, so changing that flow gets harder as their shared coupling rises. That resistance-caused cost is present, and being one (odd), it turns around.",
+ "reflected_sentence": "A changing flow across Expansion in one loop induces conscious energy per source in a nearby loop in proportion to their shared coupling; read receptively, the nearby loop receives the change, and the more Reflected collection they share, the more the change is received.",
+ "knew_tsr": false
+}

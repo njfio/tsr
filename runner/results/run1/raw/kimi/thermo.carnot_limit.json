@@ -1,0 +1,25 @@
+{
+ "id": "thermo.carnot_limit",
+ "physical": "No heat engine between two reservoirs can be more efficient than a reversible one; the limit is one minus the ratio of the cold to the hot temperature. η ≤ 1 − T_c ÷ T_h",
+ "reflected_formula": "",
+ "reflected_sentence": "The cap keeps its shape: the share of conscious energy a flow can yield is bounded, and the bound tightens as the two unnamed warmths draw toward each other.",
+ "shape": "keeps",
+ "rule_reason": "The one listed cost (extracting work gets harder) rises with temperature, and the fixed list says temperature does not carry resistance; zero resistance-costs, so even count and the inequality keeps.",
+ "rule_trace": [
+  "none"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "efficiency",
+  "temperature",
+  "heat"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "The rule decided this on its own: no mapped quantity carries resistance, so nothing turns. With three core terms unmapped, the keeping is formal only; the image formula cannot be written in frozen words, and the sentence describes the unmapped quantities in plain words per the amendment.",
+ "conflicts": "none",
+ "sense": 1,
+ "confidence": 6,
+ "closing": "The rule decided without help: the cost's driver (temperature) is fixed as non-resistance, so the count is zero and the shape keeps, unmapped terms notwithstanding. What the rule could not fix is that nearly every term here has no partner, so the kept reflection is thin rather than meaningful.",
+ "knew_tsr": false
+}

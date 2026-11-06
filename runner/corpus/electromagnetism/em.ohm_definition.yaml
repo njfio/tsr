@@ -1,0 +1,14 @@
+id: em.ohm_definition
+domain: electromagnetism
+title: "Ohm's law (the definition of resistance)"
+statement: "Resistance is the ratio of the voltage across a conductor to the current through it."
+formula: "R = V ÷ I"
+form: definition
+variables:
+  - {name: resistance R, quantity: electrical resistance}
+  - {name: voltage V, quantity: voltage}
+  - {name: current I, quantity: current (electric)}
+costs: []
+standard_sources: ["Ohm 1827; Purcell, Electricity and Magnetism, ch. 4"]
+book_status: unreflected
+review: pending

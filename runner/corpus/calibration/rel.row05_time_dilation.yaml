@@ -1,0 +1,16 @@
+id: rel.row05_time_dilation
+domain: calibration
+title: "Row 5: time dilation"
+statement: "A clock moving relative to an observer runs slow by the Lorentz factor; the effect depends on speed, not on the clock's mass."
+formula: "Δt = γ × Δτ"
+form: equation
+variables:
+  - {name: proper time Δτ, quantity: time}
+  - {name: relative velocity v, quantity: velocity}
+  - {name: speed of light c, quantity: speed of light c}
+costs: []
+standard_sources: ["Taylor & Wheeler, Spacetime Physics, ch. 1"]
+book_status: ruled
+ruling: {shape: keeps, words: "Expansion Dilation", source: "Ch16 #5; #16 opening: no mass in it"}
+review: "reviewed:spec-port"
+notes: "No resistance-carrying quantity appears; the relation is not a cost claim. γ depends on v/c only."

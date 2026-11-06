@@ -1,0 +1,11 @@
+id: statmech.ergodicity
+domain: statistical_mechanics
+title: "Ergodic hypothesis"
+statement: "For an ergodic system the long-time average of an observable equals its average over the ensemble of accessible states."
+formula: ""
+form: identity
+variables: []
+costs: []
+standard_sources: ["Boltzmann; Reif, Statistical Physics, ch. 15"]
+book_status: unreflected
+review: pending

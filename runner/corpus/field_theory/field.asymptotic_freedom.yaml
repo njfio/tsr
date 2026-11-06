@@ -1,0 +1,23 @@
+id: field.asymptotic_freedom
+domain: field_theory
+title: "Asymptotic freedom"
+statement: "The strong coupling becomes weak at short distances and high energies: quarks close together interact almost freely, and the interaction grows as they are pulled apart."
+formula: "α_s(Q) → 0 as Q → ∞"
+form: equation
+variables:
+  - {name: strong coupling α_s, quantity: running coupling}
+  - {name: separation r, quantity: length, carries_distance: true}
+costs:
+  - {what_gets_harder: "the interaction: it grows with separation", separation_made_by_distance: true}
+alternate_statements:
+  - statement: "Read as a running of the coupling with energy scale, with no difficulty named."
+    form: equation
+    costs: []
+    note: "separation_call joint."
+    joint: separation_call
+distance_dependence: true
+derived_from: [field.confinement]
+standard_sources: ["Gross & Wilczek 1973; Politzer 1973"]
+book_status: unreflected
+review: pending
+notes: "A feature the book does not use. Not forced (separation call). If the author decides that a coupling growing with separation is a separation cost, this row turns and reads: the closer, the freer; Expectation binds tightest at a distance."

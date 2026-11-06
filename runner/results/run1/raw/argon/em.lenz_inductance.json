@@ -1,0 +1,32 @@
+{
+ "id": "em.lenz_inductance",
+ "physical": "An induced current flows so as to oppose the change that produced it; a coil opposes a change in its own current with a back-EMF proportional to its inductance. (EMF = L × dI ÷ dt)",
+ "reflected_formula": "EMF = L × dI ÷ dExpansion",
+ "reflected_sentence": "An induced flow moves to receive the change that produced it, so changing a flow across Expansion gets easier as receptivity and alignment rise.",
+ "shape": "turns around",
+ "rule_reason": "One cost caused by resistance ('changing the current' rises with 'inductance', which carries resistance) turns the relationship around so what got harder with opposition gets easier with receptivity.",
+ "rule_trace": [
+  "resistance-cost"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "back-EMF (voltage)",
+  "inductance L",
+  "current I (electric)",
+  "coil"
+ ],
+ "new_words": [],
+ "monotone_claims": [
+  {
+   "rises": "alignment",
+   "with": "receptivity",
+   "sign": 1
+  }
+ ],
+ "interpretation": "Because inductance is opposition to a change in flow, its single resistance cost turns the reading around. What opposed change on the physical side becomes receptive to change across Expansion on the nonphysical side.",
+ "conflicts": "none",
+ "sense": 4,
+ "confidence": 7,
+ "closing": "The rule decisively turns this relation around because it has an odd number (1) of costs caused by a quantity that carries resistance (inductance). Back-EMF, inductance, and electric current have no partners in the frozen vocabulary and are recorded in unmapped_terms.",
+ "knew_tsr": false
+}

@@ -1,0 +1,17 @@
+id: rel.mass_density_volume
+domain: calibration
+title: "mass = density × volume"
+statement: "Mass is density times volume (density being defined as mass per unit volume)."
+formula: "m = ρ × V"
+form: definition
+variables:
+  - {name: mass m, quantity: mass m}
+  - {name: density ρ, quantity: density}
+  - {name: volume V, quantity: volume}
+physical_terms: {m: "mass m", ρ: "density", V: "volume"}
+costs: []
+standard_sources: ["any mechanics text"]
+book_status: ruled
+ruling: {shape: keeps, words: "Movement = Desire × Vibrance", source: "Ch2 / Map"}
+review: "reviewed:spec-port"
+notes: "tsr_formal marked 'definition' a JUDGMENT. Here it is a corpus fact: physics defines density as m/V."

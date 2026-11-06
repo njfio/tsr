@@ -1,0 +1,13 @@
+id: rel.newtons_third_law
+domain: calibration
+title: "Newton's third law"
+statement: "For every force one body exerts on another, the second exerts an equal and opposite force on the first."
+formula: "F_AB = − F_BA"
+form: identity
+variables:
+  - {name: force, quantity: force}
+costs: []
+standard_sources: ["Newton, Principia, Law III"]
+book_status: ruled
+ruling: {shape: keeps, words: "everything that goes Out Through lands In From on somebody", source: "Ch16: an identity too"}
+review: "reviewed:spec-port"

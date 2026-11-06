@@ -1,0 +1,33 @@
+{
+ "id": "waves.doppler",
+ "physical": "A receiver moving toward a source, or a source moving toward a receiver, measures a higher frequency than the one emitted; moving apart, a lower one.",
+ "reflected_formula": "Frequency' = Frequency × (rise per Expansion + rise per Expansion_r) ÷ (rise per Expansion − rise per Expansion_s)",
+ "reflected_sentence": "When receptive and collecting Movement come into alignment, the rate of Vibration per Expansion increases; when out of alignment, it decreases.",
+ "shape": "keeps",
+ "rule_reason": "No costs are listed and none of physical frequency, wave speed, or velocity carries resistance or distance.",
+ "rule_trace": [
+  "none"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "emitted frequency f",
+  "measured frequency f'",
+  "wave speed v",
+  "receiver",
+  "source"
+ ],
+ "new_words": [],
+ "monotone_claims": [
+  {
+   "rises": "rise per Expansion",
+   "with": "alignment",
+   "sign": 1
+  }
+ ],
+ "interpretation": "In Vibration-Expansion, rise per Expansion combines with the rise per Expansion of each Movement. Because physical frequency is a rate rather than TSR Frequency, the frozen vocabulary lacks a partner for emitted rate and collapses all three velocities into rise per Expansion. The relation keeps its shape in form only.",
+ "conflicts": "\"frequency (physical): does not carry resistance — a rate; NB: not TSR Frequency\" and \"Frequency is not a rate and not cycles per second.\"",
+ "sense": 1,
+ "confidence": 6,
+ "closing": "The rule decided keeps without a judgment call because costs is empty and none of the variables carries resistance or distance. The reflection fails in sense because physical frequency is explicitly barred from mapping to TSR Frequency and the nonphysical side forbids travel and separation.",
+ "knew_tsr": false
+}

@@ -1,0 +1,33 @@
+{
+ "id": "waves.total_internal_reflection",
+ "physical": "Going from a higher to a lower index, beyond the critical angle no light crosses the boundary; all of it is reflected, while an evanescent field reaches past the surface without carrying energy across.",
+ "reflected_formula": "Vibration_c = the gap_2 ÷ the gap_1",
+ "reflected_sentence": "Where receptivity replaces the gap, the Current and conscious energy E are already across the Point of Reflection in full collection rather than blocked past a critical angle.",
+ "shape": "turns around",
+ "rule_reason": "Judgment call on undetermined refractive index: treating refractive index as resistance makes the critical-angle barrier a limit caused by resistance that turns around.",
+ "rule_trace": [
+  "resistance-cost"
+ ],
+ "forced": false,
+ "unmapped_terms": [
+  "critical angle θ_c",
+  "refractive index n",
+  "evanescent field",
+  "surface",
+  "sin"
+ ],
+ "new_words": [],
+ "monotone_claims": [
+  {
+   "rises": "Current",
+   "with": "alignment",
+   "sign": 1
+  }
+ ],
+ "interpretation": "In Vibrational Reality, the Current is limitless and receptive. Turning the limit around means conscious energy E is never blocked from collection at the Point of Reflection. With alignment and receptivity, what was unreachable past the gap is already received.",
+ "conflicts": "none",
+ "sense": 2,
+ "confidence": 3,
+ "closing": "The rule did not decide on its own because the single cost rises with refractive index, which the prompt marks as UNDETERMINED (a judgment call). If refractive index carries resistance, the limit turns around; if it is a pure ratio of speeds, the cost is not caused by resistance and the relation keeps its shape.",
+ "knew_tsr": false
+}

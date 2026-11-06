@@ -1,0 +1,25 @@
+{
+ "id": "statmech.boltzmann_entropy",
+ "physical": "The entropy of a macrostate is Boltzmann's constant times the logarithm of the number of microstates that realize it.",
+ "reflected_formula": "",
+ "reflected_sentence": "Culmination stays a constant times the log of the count of ways a state is realized.",
+ "shape": "keeps",
+ "rule_reason": "Definition; cost block empty; entropy does not carry resistance. Entropy's frozen partner is Culmination.",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "Boltzmann constant",
+  "number of microstates",
+  "macrostate"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "Culmination keeps the definition. The product with a constant and a count does not turn, and the constant does not cross as a unit. Movement and the gap do not enter.",
+ "conflicts": "none",
+ "sense": 4,
+ "confidence": 7,
+ "closing": "The rule decided the shape on its own: a definition with an empty cost block keeps, and the table maps entropy to Culmination. The ambiguity was the formula image. Boltzmann's constant is a unit-bearing factor and does not cross, and the count has no partner, so a complete frozen-word formula cannot be written. I did not rewrite the product by dropping the constant; the sentence keeps the product and describes the unmapped factors in plain words.",
+ "knew_tsr": false
+}

@@ -1,0 +1,23 @@
+{
+ "id": "rel.null_interval",
+ "physical": "Along a light ray the space-time interval is zero: no proper time passes for light, and its energy depends on who measures it.",
+ "reflected_formula": "dVibration-Expansion² = 0",
+ "reflected_sentence": "Along the Current, Vibration-Expansion has no gap: no Expansion passes for the Current, and its E depends on who Tunes to it.",
+ "shape": "keeps",
+ "rule_reason": "Identity with no costs keeps its shape.",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "interval ds"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "Space-Time reflects to Vibration-Expansion, time reflects to Expansion, and the speed of light c reflects to the Current. For the Current, there is no gap in Vibration-Expansion, and E is shared across the Point of Reflection.",
+ "conflicts": "Nothing on the nonphysical side has a number, a unit or a distance.",
+ "sense": 4,
+ "confidence": 6,
+ "closing": "The relation is an identity with no costs, so it keeps its shape by the rule. The formula `ds² = 0` contains the unmapped interval symbol `ds` and the number `0`, while the rule states that nothing on the nonphysical side has a number.",
+ "knew_tsr": false
+}

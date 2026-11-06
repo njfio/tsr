@@ -1,0 +1,26 @@
+{
+ "id": "rel.relativistic_doppler",
+ "physical": "Light from a source receding at speed v is received at a lower frequency by the factor square root of (1 − β) over (1 + β); approaching, higher. No medium is involved and only the relative velocity matters.",
+ "reflected_formula": "f' = f × √((1 − rise per Expansion ÷ Current) ÷ (1 + rise per Expansion ÷ Current))",
+ "reflected_sentence": "The Current with rise per Expansion away is received at a lower rate, and with rise per Expansion toward, higher; only the relative rise per Expansion matters.",
+ "shape": "keeps",
+ "rule_reason": "Equation with no costs keeps its shape.",
+ "rule_trace": [
+  "none"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "emitted frequency f",
+  "received frequency f'",
+  "source",
+  "medium"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "Velocity reflects to rise per Expansion, and the speed of light c reflects to Current. The equation has no resistance or separation costs and keeps its shape, though physical frequency has no partner in the frozen vocabulary.",
+ "conflicts": "Frequency is not a rate and not cycles per second. / Nothing on the nonphysical side has a number, a unit or a distance.",
+ "sense": 1,
+ "confidence": 7,
+ "closing": "From the record's form and empty cost block, the relation keeps its shape. However, the rule and traps explicitly state that physical frequency is a rate and is not TSR Frequency, so physical frequency `f` goes in unmapped_terms.",
+ "knew_tsr": false
+}

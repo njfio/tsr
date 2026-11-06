@@ -1,0 +1,27 @@
+{
+ "id": "waves.diffraction",
+ "physical": "Diffraction — A wave passing through an aperture spreads; the narrower the aperture compared with the wavelength, the wider the spread. sin θ ≈ λ ÷ a (equation)",
+ "reflected_formula": "(no frozen image: the spreading angle, the wavelength and the width of the opening have no partners in the table; the shape of the formula is kept as 'tilt ≈ extent ÷ extent', read turned)",
+ "reflected_sentence": "A vibration passes through without spreading; the separation that would widen it is not there.",
+ "shape": "turns around",
+ "rule_reason": "Not an equivalence or definition. The one listed cost ('passing through without spreading') rises with no resistance-carrying quantity but is flagged as a separation made by distance (the width of the opening carries distance). One separation = odd = turns around: what the separation makes harder is already there. The alternate statement lists no cost and would keep.",
+ "rule_trace": [
+  "separation"
+ ],
+ "forced": false,
+ "unmapped_terms": [
+  "spreading angle θ",
+  "wavelength λ",
+  "aperture width a",
+  "aperture",
+  "wave (carried as 'vibration' only through the Ch 16 note under 'culminate')"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "On the nonphysical side there is no separation, so nothing narrows and nothing widens a vibration. The spread the physical side pays for is not paid; the vibration simply goes through. None of the three quantities has a partner, so only the turned reading crosses, not the relation itself.",
+ "conflicts": "The fixed list says 'aperture width: does not carry resistance — extent', yet the same list cites 'the Ch 16 reading of diffraction (\"where the Current meets resistance, it diffracts\")', which treats diffraction as caused by resistance and puts 'resistance' on the nonphysical side, against 'Words that must never appear on the nonphysical side: ... resistance.'",
+ "sense": 2,
+ "confidence": 3,
+ "closing": "The rule did not decide on its own. Applied to the record as given, the separation flag fires and the relation turns around; applied to the alternate statement (no cost named), nothing fires and it keeps. The same formula gets opposite readings depending on whether 'spreading' is called a difficulty, which the rule does not settle. Separately, the prompt's own Ch 16 quote reads diffraction as the Current meeting resistance, which would make this a resistance-cost rather than a separation; the fixed list says otherwise. The turned sentence ('passes through without spreading') is nearly empty because the opening, the angle and the wavelength have no partners. 'Vibration' for 'wave' rests only on the culminate note.",
+ "knew_tsr": false
+}

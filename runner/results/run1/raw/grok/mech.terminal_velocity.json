@@ -1,0 +1,27 @@
+{
+ "id": "mech.terminal_velocity",
+ "physical": "A falling body stops accelerating when drag balances weight; that terminal speed rises with the body's mass and falls with the drag coefficient, the fluid's density and the cross-section.",
+ "reflected_formula": "",
+ "reflected_sentence": "The reading turns around: stopping the fall is easier with alignment, while rise per Expansion stays the settled rate.",
+ "shape": "turns around",
+ "rule_reason": "One resistance-cost in the block, rising with mass; odd count, so the reading turns around.",
+ "rule_trace": [
+  "resistance-cost"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "drag coefficient",
+  "area",
+  "gravitational field g",
+  "weight",
+  "drag"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "One cost in the block turns the reading: harder becomes easier with alignment. Movement, Desire, and rise per Expansion are frozen partners. No frozen word names the drag factor, the facing extent, or the downward pull, so no formula is written.",
+ "conflicts": "none",
+ "sense": 3,
+ "confidence": 5,
+ "closing": "The cost block has one object, an odd count, so the reading turns. That object rises with mass and falls with drag coefficient and density; the count was not split. The drag coefficient, area, and gravitational field have no partners. The settled rate is velocity's partner, rise per Expansion, and no number is attached. No new word was introduced.",
+ "knew_tsr": false
+}

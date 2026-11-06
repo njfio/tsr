@@ -1,0 +1,15 @@
+id: qm.uncertainty_position_momentum
+domain: quantum
+title: "Position-momentum uncertainty"
+statement: "The spreads of position and momentum in any state cannot both be made small: their product is at least half the reduced Planck constant."
+formula: "Δx × Δp ≥ ħ ÷ 2"
+form: inequality
+variables:
+  - {name: position spread Δx, quantity: length}
+  - {name: momentum spread Δp, quantity: momentum}
+  - {name: Planck constant ħ, quantity: Planck constant}
+costs: []
+standard_sources: ["Heisenberg 1927; Kennard 1927"]
+book_status: unreflected
+review: pending
+notes: "A limit with no resistance-carrying quantity in it (ħ is a constant; the spreads are extents): the procedure keeps. A cost block 'sharpening both at once' would have nothing to rise with, so by the schema it is not a cost in the book's sense."

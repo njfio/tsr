@@ -1,0 +1,25 @@
+{
+ "id": "mech.moment_of_inertia",
+ "physical": "A body's moment of inertia about an axis is the sum of each mass element times the square of its distance from the axis.",
+ "reflected_formula": "",
+ "reflected_sentence": "The definition keeps: a redistributed quantity is the sum of each Movement M times the square of its extent from an axis.",
+ "shape": "keeps",
+ "rule_reason": "Definition; cost block empty, so the relationship keeps.",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "moment of inertia",
+  "radius",
+  "distance"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "The form is a definition, so the relationship keeps. Movement is the only frozen partner in the formula. No frozen word names the redistributed quantity or the extent, so no formula is written.",
+ "conflicts": "none",
+ "sense": 2,
+ "confidence": 6,
+ "closing": "The form is a definition and the cost block is empty, so it keeps. The extent from the axis is not treated as a separation, because carries_distance is false and the cost block is empty. The source sum was not turned into a product. No new word was introduced.",
+ "knew_tsr": false
+}

@@ -1,0 +1,25 @@
+{
+ "id": "mech.reynolds_laminar_turbulent",
+ "physical": "Flow stays laminar while inertial effects are small relative to viscous ones (low Reynolds number); as density, speed or size rise, or viscosity falls, the flow becomes turbulent.",
+ "reflected_formula": "",
+ "reflected_sentence": "The reading turns around: ordered flow is easier with receptivity.",
+ "shape": "turns around",
+ "rule_reason": "One resistance-cost in the block, rising with density; odd count, so the reading turns around.",
+ "rule_trace": [
+  "resistance-cost"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "Reynolds number",
+  "length",
+  "viscosity"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "One cost in the block turns the reading: harder becomes easier with receptivity. Desire and rise per Expansion are frozen partners. No frozen word names the size or the stickiness, so no formula is written.",
+ "conflicts": "none",
+ "sense": 2,
+ "confidence": 5,
+ "closing": "The cost block has one object, an odd count, so the reading turns. That object rises with density and falls with viscosity, both resistance quantities; the count was not split. Viscosity, length, and Reynolds number have no partners. No new word was introduced.",
+ "knew_tsr": false
+}

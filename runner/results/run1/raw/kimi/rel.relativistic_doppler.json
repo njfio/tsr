@@ -1,0 +1,33 @@
+{
+ "id": "rel.relativistic_doppler",
+ "physical": "Relativistic Doppler effect — Light from a source receding at speed v is received at a lower frequency by the factor square root of (1 − β) over (1 + β); approaching, higher. No medium is involved and only the relative velocity matters. Formula: f' = f × √((1 − β) ÷ (1 + β))",
+ "reflected_formula": "(a rate with no partner) = (a rate with no partner) × √((1 − (rise per Expansion ÷ Current)) ÷ (1 + (rise per Expansion ÷ Current)))",
+ "reflected_sentence": "In Vibrational Reality, what is sent at one strength is met at another as rise per Expansion shifts: moving apart weakens it, moving together strengthens it.",
+ "shape": "keeps",
+ "rule_reason": "No cost caused by resistance and no separation made by distance is named; the shift is a kinematic relation of relative motion, not a cost, so it keeps its shape.",
+ "rule_trace": [
+  "none"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "frequency f",
+  "frequency f'",
+  "source",
+  "medium",
+  "β"
+ ],
+ "new_words": [],
+ "monotone_claims": [
+  {
+   "rises": "strength",
+   "with": "rise per Expansion",
+   "sign": -1
+  }
+ ],
+ "interpretation": "The relation keeps its shape. Velocity reflects to rise per Expansion; c is Current. Physical frequency has no partner, so the reflection speaks only of strength weakening or strengthening with relative motion.",
+ "conflicts": "none",
+ "sense": 4,
+ "confidence": 5,
+ "closing": "The rule decided on its own: no resistance-cost, keeps shape. Recession and approach are relative motion, not distance-made separation, so the turn does not fire.",
+ "knew_tsr": false
+}

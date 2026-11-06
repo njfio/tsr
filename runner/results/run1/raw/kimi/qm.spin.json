@@ -1,0 +1,24 @@
+{
+ "id": "qm.spin",
+ "physical": "Particles carry an intrinsic angular momentum that is quantized in half-integer or integer multiples of the reduced Planck constant and is not a rotation in space.",
+ "reflected_formula": "",
+ "reflected_sentence": "A turning that belongs to the particle itself, coming in steps of a constant with no partner, and not a turning in Vibration.",
+ "shape": "keeps",
+ "rule_reason": "A definition; definitions keep their shape. Spin and the Planck constant are unmapped.",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "spin",
+  "Planck constant ħ"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "A definition keeps its shape. Spin has no partner and the constant has none; both are described in plain words. The sentence keeps: a self-belonging turning that is not a turning in Vibration.",
+ "conflicts": "none",
+ "sense": 2,
+ "confidence": 7,
+ "closing": "Amended reading applied: keeps. One trap refused: the map has momentum → momentum, and spin is an angular momentum, but the fixed quantity list treats spin as its own kind, intrinsic and not a turning in space, so borrowing momentum would be a disguise, not a reflection. The steps come in counts, and numbers do not cross, so no multiplier is stated.",
+ "knew_tsr": false
+}

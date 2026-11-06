@@ -1,0 +1,25 @@
+{
+ "id": "rel.equivalence_principle",
+ "physical": "Gravitational mass equals inertial mass, so a freely falling observer feels no gravity: locally, free fall is indistinguishable from the absence of gravitation.",
+ "reflected_formula": "",
+ "reflected_sentence": "Movement equals Movement, so the equality keeps, and the absence of Attraction keeps with no further partner.",
+ "shape": "keeps",
+ "rule_reason": "An identity with no cost or separation. Mass carries resistance, but the relation equates two masses; it does not list a cost that rises with resistance. Identities keep.",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "gravitational field g",
+  "observer",
+  "free fall"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "Movement equals Movement. Attraction keeps with its absence. The relationship does not turn.",
+ "conflicts": "none",
+ "sense": 2,
+ "confidence": 6,
+ "closing": "The rule decides the keep: identity, no costs. I did not turn it just because mass carries resistance; a resistance-cost has to be a cost that rises with resistance, and none is given. Gravitational pull's partner is Attraction, which I used for gravity. Gravitational field g has no row; the resistance list calls it an acceleration, and acceleration's partner is Appreciation, but substituting that would be a judgment the table does not make, so g stays unmapped. Locally is location and does not cross. No shape judgment. Missing partners do not change the keep.",
+ "knew_tsr": false
+}

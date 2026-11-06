@@ -1,0 +1,26 @@
+{
+ "id": "thermo.third_law",
+ "physical": "Third law: As temperature approaches absolute zero the entropy approaches a constant, and absolute zero cannot be reached in a finite number of steps. lim T→0 S = S0",
+ "reflected_formula": "lim [no partner: temperature T]→0 Culmination (provisional) = Culmination_0",
+ "reflected_sentence": "The relationship keeps its shape: Culmination settles to a fixed Culmination as the unnamed hotness goes to its zero, and that zero stays unreached; the hotness has no partner.",
+ "shape": "keeps",
+ "rule_reason": "The one cost (reaching the zero of temperature) rises with temperature, which the fixed table says does not carry resistance. Zero resistance-costs, no separation made by distance, so the relation keeps its shape; the unreachable stays unreachable because nothing here is a cost caused by resistance.",
+ "rule_trace": [
+  "none"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "temperature",
+  "absolute zero",
+  "finite number of steps",
+  "constant"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "Culmination comes to rest at one value and stays there. What it comes to rest against has no partner, and the steps that never arrive have none either.",
+ "conflicts": "none",
+ "sense": 1,
+ "confidence": 6,
+ "closing": "The rule decided on its own: temperature was fixed as not carrying resistance, so the one cost does not count and the row keeps. The ambiguity is the same as the second law's: the rule's gloss 'unreachable becomes already there' describes turned rows, and this is the most 'unreachable' statement in the batch, yet it keeps because its cost is not a resistance-cost. The limit notation, the 0 and the constant S0 are numbers and a quantity that the rule says do not cross; kept only because the formula is not rewritten.",
+ "knew_tsr": false
+}

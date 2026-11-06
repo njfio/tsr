@@ -1,0 +1,27 @@
+{
+ "id": "field.running_couplings",
+ "physical": "The strengths of the interactions depend on the energy scale at which they are probed: the electromagnetic coupling grows with energy, the strong coupling falls.",
+ "reflected_formula": "",
+ "reflected_sentence": "No complete reflection has frozen vocabulary partners.",
+ "shape": "keeps",
+ "rule_reason": "Neither running coupling nor energy carries resistance, and no cost or separation is listed; the relationship keeps.",
+ "rule_trace": [
+  "none"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "running coupling",
+  "electromagnetic coupling",
+  "strong coupling",
+  "energy scale",
+  "probing interactions"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "No partner. No complete reflection.",
+ "conflicts": "none",
+ "sense": 1,
+ "confidence": 7,
+ "closing": "The no-cost reading keeps without judgment. Energy maps to E, but a numerical probing scale and interaction strengths do not acquire partners from that mapping. Idle and Reflected do not supply an electromagnetic coupling, and strong frequency is not strong coupling.",
+ "knew_tsr": false
+}

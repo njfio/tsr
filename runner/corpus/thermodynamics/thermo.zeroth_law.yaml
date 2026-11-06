@@ -1,0 +1,11 @@
+id: thermo.zeroth_law
+domain: thermodynamics
+title: "Zeroth law"
+statement: "If two bodies are each in thermal equilibrium with a third, they are in thermal equilibrium with each other; this is what makes temperature a well-defined property."
+form: definition
+variables:
+  - {name: temperature T, quantity: temperature}
+costs: []
+standard_sources: ["Fermi, Thermodynamics, ch. 1"]
+book_status: unreflected
+review: pending

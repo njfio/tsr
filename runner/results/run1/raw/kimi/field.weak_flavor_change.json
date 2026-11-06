@@ -1,0 +1,29 @@
+{
+ "id": "field.weak_flavor_change",
+ "physical": "Flavor change via the weak interaction — Only the weak interaction changes one kind of quark or lepton into another (through the charged W boson); the strong and electromagnetic interactions never do.",
+ "reflected_formula": "",
+ "reflected_sentence": "In Vibrational Reality, only the pull that carries charge changes one kind of being into another; the stronger pulls leave the kind untouched.",
+ "shape": "keeps",
+ "rule_reason": "A selection rule is an identity of scope, not a cost; no resistance or separation appears, so it keeps its shape.",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "weak interaction",
+  "strong interaction",
+  "electromagnetic interaction",
+  "quark",
+  "lepton",
+  "W boson",
+  "flavor"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "The selection rule keeps its shape. Charge does not carry resistance, but no frozen word stands for the interactions or the particles, so the reflection is only the pattern of permission and prohibition.",
+ "conflicts": "none",
+ "sense": 3,
+ "confidence": 6,
+ "closing": "The rule decided on its own: an identity with no costs keeps shape. The missing partners for the interactions and particles are vocabulary gaps, not rule gaps.",
+ "knew_tsr": false
+}

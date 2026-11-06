@@ -1,0 +1,27 @@
+{
+ "id": "statmech.boltzmann_entropy",
+ "physical": "S = k × ln W: the entropy of a macrostate is Boltzmann's constant times the logarithm of the number of microstates that realize it.",
+ "reflected_formula": "Culmination = [Boltzmann constant k: no partner] × ln [number of microstates W: no partner]",
+ "reflected_sentence": "The relationship keeps: Culmination is a fixed constant times the logarithm of a count of ways, and the constant and the count have no frozen partner; a count is a number, which does not cross.",
+ "shape": "keeps",
+ "rule_reason": "definition; entropy is fixed as a count of microstates that does not carry resistance, so zero resistance-costs and the shape keeps",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "Boltzmann constant k",
+  "number of microstates W",
+  "macrostate",
+  "microstate",
+  "logarithm"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "Culmination crosses, but it crosses alone. The definition says Culmination is the logarithm of a count, and on the nonphysical side nothing has a number, so the definition that gave Culmination its content is what cannot be carried over.",
+ "conflicts": "\"Nothing on the nonphysical side has a number, a unit or a distance\" against a definition of Culmination as k × ln of a number of microstates; and the table's gloss \"culminate (verb of Culmination; what two vibrations do instead of cancel)\" is not what S = k ln W is about.",
+ "sense": 2,
+ "confidence": 7,
+ "closing": "The rule decided on its own: a definition keeps. The left side has a frozen partner, Culmination, marked provisional; the right side has none, and its core is a count, which the rule forbids from crossing. So the reflection is a named thing with its definition removed. I did not try to re-express the count as vibrations culminating; that would be a rescue.",
+ "knew_tsr": false
+}

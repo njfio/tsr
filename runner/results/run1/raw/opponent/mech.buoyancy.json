@@ -1,0 +1,8 @@
+{
+ "id": "mech.buoyancy",
+ "alternative_shape": "turns around",
+ "rule_compliant": true,
+ "argument": "The statement carries a limit caused by resistance: the body floats only if it is less dense than the fluid, and density carries resistance, so the body's own density limits its rising. The rule flips the condition and turns a resistance-caused limit around, while the equivalence — the lift equals the weight of the displaced fluid — keeps as the relationship.",
+ "reflected_sentence": "A body in a medium is lifted by a Frequency equal to the Desire times Attraction times Vibrance it displaces; the limit on its rising, made by its own Desire against the medium's, turns around — it rises as receptivity and alignment rise.",
+ "knew_tsr": false
+}

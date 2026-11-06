@@ -1,0 +1,18 @@
+id: mech.resonance_width
+domain: mechanics
+title: "Resonance width"
+statement: "A driven oscillator responds most strongly near its natural frequency; the width of that response grows with the damping, and the peak height falls with it (Q = ω0/Δω)."
+formula: "Δω = b ÷ m"
+form: equation
+variables:
+  - {name: resonance width Δω, quantity: frequency (physical)}
+  - {name: damping coefficient b, quantity: damping coefficient}
+  - {name: mass m, quantity: mass m}
+costs:
+  - {what_gets_harder: "a sharp, strong response at the natural frequency; the peak broadens and lowers as damping rises", rises_with: [damping coefficient]}
+derived_from: [mech.damping]
+derivation: "steady-state response of the damped driven oscillator"
+standard_sources: ["French, Vibrations and Waves, ch. 4"]
+book_status: unreflected
+review: pending
+notes: "Physical frequency is not TSR Frequency (trap). The width also narrows with mass (falls_with) but that is the ratio b/m; the difficulty named is the broadening, which rises with b."

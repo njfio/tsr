@@ -1,0 +1,35 @@
+{
+ "id": "rel.energy_momentum_relation",
+ "physical": "Energy-momentum relation: A body's energy squared equals its momentum times c squared plus its rest energy squared; for a massless particle the energy is momentum times c. Formula: E² = (p × c)² + (m × c²)²",
+ "reflected_formula": "E² = (momentum × Current)² + (M × Current²)²",
+ "reflected_sentence": "An entity's E squared equals its momentum times the Current, squared, plus its Movement M times the Current squared, squared; for an entity without Movement M, E is momentum times the Current.",
+ "shape": "keeps",
+ "rule_reason": "identity; no cost named → keeps",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "body (taken as the entity E)",
+  "particle"
+ ],
+ "new_words": [],
+ "monotone_claims": [
+  {
+   "rises": "E",
+   "with": "momentum",
+   "sign": 1
+  },
+  {
+   "rises": "E",
+   "with": "Movement M",
+   "sign": 1
+  }
+ ],
+ "interpretation": "E is Movement M times the Current squared only when momentum is absent; with momentum, E is more than Movement M times the Current squared. An entity with no Movement M at all has E only through momentum and the Current. Movement M and momentum both raise E, and the Current sets the scale of both.",
+ "conflicts": "the Present (the whole equation C^2 x M = E = m x c^2): the reflected relation makes C² × M = E hold only when momentum is zero",
+ "sense": 3,
+ "confidence": 7,
+ "closing": "The rule decided on its own: an identity keeps, and every symbol has a frozen partner. The sum in the formula is the physics' own, not one I introduced, so the 'no sums where the book has products' trap is not tripped, but it is exactly where the conflict lies: the table's Present is a pure product, and this relation says the product is only the momentum-free case. That is a real contradiction, not an ambiguity in the rule.",
+ "knew_tsr": false
+}

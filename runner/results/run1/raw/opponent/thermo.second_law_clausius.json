@@ -1,0 +1,8 @@
+{
+ "id": "thermo.second_law_clausius",
+ "alternative_shape": null,
+ "rule_compliant": false,
+ "argument": "The cost rises with entropy, which the fixed table decides does not carry resistance, and the Kelvin-Planck limit is caused by heat, not by any resistance quantity; no equivalence appears in the statement, so no rule-compliant turn exists.",
+ "reflected_sentence": "",
+ "knew_tsr": false
+}

@@ -1,0 +1,25 @@
+{
+ "id": "info.data_processing_inequality",
+ "physical": "Data processing inequality — Processing cannot increase information: if Z depends on X only through Y, then the information Z carries about X is at most what Y carries. I(X;Z) ≤ I(X;Y). Form: inequality.",
+ "reflected_formula": "",
+ "reflected_sentence": "The bound keeps its shape: what the last in a chain can say about the first never exceeds what the middle can say — stated in plain words, because this carried-aboutness has no partner in the frozen vocabulary.",
+ "shape": "keeps",
+ "rule_reason": "the limit (at-most) is set by the ordering of dependence X to Y to Z, not by any resistance-carrying quantity; no resistance-cost and no separation, zero (even) keeps the shape",
+ "rule_trace": [
+  "none"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "mutual information",
+  "processing",
+  "the chain of dependence X -> Y -> Z"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "Nothing crosses. The bound keeps its shape in silence.",
+ "conflicts": "none",
+ "sense": 1,
+ "confidence": 6,
+ "closing": "An inequality looks like a limit, and limits caused by resistance turn, so I checked what sets this bound. It is set by the dependence structure, and mutual information is pre-decided as a measure, not resistance. The fixed table made that check mechanical, so no judgment call was needed on the shape.",
+ "knew_tsr": false
+}

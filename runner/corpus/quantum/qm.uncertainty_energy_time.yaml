@@ -1,0 +1,14 @@
+id: qm.uncertainty_energy_time
+domain: quantum
+title: "Energy-time uncertainty"
+statement: "A state that lasts only a short time has a correspondingly broad energy; the product of the energy spread and the lifetime is at least half the reduced Planck constant."
+formula: "ΔE × Δt ≥ ħ ÷ 2"
+form: inequality
+variables:
+  - {name: energy spread ΔE, quantity: energy}
+  - {name: lifetime Δt, quantity: time}
+  - {name: Planck constant ħ, quantity: Planck constant}
+costs: []
+standard_sources: ["Mandelstam & Tamm 1945"]
+book_status: unreflected
+review: pending

@@ -1,0 +1,29 @@
+{
+ "id": "waves.group_velocity",
+ "physical": "The envelope of a wave packet travels at the group velocity, the derivative of angular frequency with respect to wavenumber; it is the speed at which energy and signal travel.",
+ "reflected_formula": "rise per Expansion = d(Expansion) ÷ d(Vibration)",
+ "reflected_sentence": "The overall rise per Expansion of a packet of Vibration is the change of Expansion with inverse Vibration, which is how conscious energy E moves.",
+ "shape": "keeps",
+ "rule_reason": "Definition with no costs and no quantities carrying resistance or distance.",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "envelope",
+  "wave packet",
+  "group velocity v_g",
+  "angular frequency ω",
+  "wavenumber k",
+  "derivative",
+  "signal"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "Rise per Expansion defines how conscious energy E moves in Vibration-Expansion. Both Vibration and Expansion are limitless on the receptive side. Because physical angular frequency and wavenumber have no partners in the frozen table, the definition cannot be stated without losing the wave packet distinction.",
+ "conflicts": "\"Frequency is not a rate and not cycles per second.\"",
+ "sense": 1,
+ "confidence": 7,
+ "closing": "The rule decided keeps on its own because the relation is a definition with zero costs and no resistance-carrying or distance-carrying quantities. However, group velocity, angular frequency, and wavenumber are all unmapped in the frozen vocabulary, and travel and speed are forbidden on the nonphysical side.",
+ "knew_tsr": false
+}

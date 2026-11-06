@@ -1,0 +1,12 @@
+id: field.vacuum_energy
+domain: field_theory
+title: "Vacuum energy"
+statement: "The quantum vacuum has an energy density; the value field theory estimates and the value cosmology measures differ by many orders of magnitude."
+form: definition
+variables:
+  - {name: vacuum energy density, quantity: vacuum energy density}
+costs: []
+standard_sources: ["Weinberg 1989, 'The cosmological constant problem'"]
+book_status: unreflected
+review: pending
+notes: "A quantity with no partner and no difficulty: keeps, shape-only, and the generators should report 'no partner'."

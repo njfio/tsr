@@ -1,0 +1,11 @@
+id: rel.row04_special_vs_general
+domain: calibration
+title: "Row 4: special relativity covers uniform motion; general relativity covers gravity and acceleration"
+statement: "Special relativity describes inertial frames; general relativity extends the description to accelerated frames and gravitation."
+form: definition
+variables: []
+costs: []
+standard_sources: ["Einstein 1916, introduction"]
+book_status: ruled
+ruling: {shape: keeps, source: "Ch16 #4"}
+review: "reviewed:spec-port"

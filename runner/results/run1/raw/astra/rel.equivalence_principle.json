@@ -1,0 +1,26 @@
+{
+ "id": "rel.equivalence_principle",
+ "physical": "Gravitational mass equals inertial mass, so a freely falling observer feels no gravity: locally, free fall is indistinguishable from the absence of gravitation.",
+ "reflected_formula": "",
+ "reflected_sentence": "Movement M equals Movement M.",
+ "shape": "keeps",
+ "rule_reason": "The equivalence keeps; mass carrying resistance does not turn an equivalence into a cost.",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "gravitational versus inertial mass distinction",
+  "freely falling observer",
+  "free fall",
+  "local indistinguishability"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "Movement M. Attraction; Appreciation.",
+ "conflicts": "none",
+ "sense": 2,
+ "confidence": 7,
+ "closing": "The rule decides keeps, but mapping both masses to Movement M erases the distinction that gives the equality content. Gravitational field g is designated an acceleration, allowing Appreciation at that level, and gravitational pull has Attraction; neither maps the observer or free fall. The sentence records only the mapped equality, not a rescue of the complete principle.",
+ "knew_tsr": false
+}

@@ -1,0 +1,26 @@
+{
+ "id": "field.vacuum_energy",
+ "physical": "Vacuum energy — The quantum vacuum has an energy density; the value field theory estimates and the value cosmology measures differ by many orders of magnitude.",
+ "reflected_formula": "",
+ "reflected_sentence": "In Vibrational Reality, conscious energy fills Vibrance with a pressure of Desire, and the two ways of naming it do not yet agree.",
+ "shape": "keeps",
+ "rule_reason": "A definition keeps its shape; energy density carries no resistance, and no cost or separation is named.",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "quantum vacuum",
+  "field theory",
+  "cosmology",
+  "orders of magnitude"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "The definition keeps its shape. Conscious energy is the one energy; Vibrance and Desire stand in for volume and density. The mismatch of estimates has no partner and is left as a disagreement of naming.",
+ "conflicts": "none",
+ "sense": 4,
+ "confidence": 6,
+ "closing": "The rule decided on its own: a definition with no costs keeps shape. The numerical mismatch has no nonphysical counterpart and does not affect the shape call.",
+ "knew_tsr": false
+}

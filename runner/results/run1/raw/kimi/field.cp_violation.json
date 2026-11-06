@@ -1,0 +1,27 @@
+{
+ "id": "field.cp_violation",
+ "physical": "CP violation — The weak interaction treats matter and antimatter slightly differently: the combined operation of charge conjugation and parity is not an exact symmetry.",
+ "reflected_formula": "",
+ "reflected_sentence": "In Vibrational Reality, the small imbalance between what is sent and what is received shows that even collective patterns are not perfectly mirrored.",
+ "shape": "keeps",
+ "rule_reason": "The relation contains no cost, no limit caused by resistance, and no separation; a near-symmetry statement keeps its shape.",
+ "rule_trace": [
+  "none"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "weak interaction",
+  "matter",
+  "antimatter",
+  "charge conjugation",
+  "parity"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "No cost and no resistance means the shape keeps. The vocabulary gives no partner for matter, antimatter, or the symmetry operations, so the reflection states only the pattern of a small imbalance.",
+ "conflicts": "none",
+ "sense": 2,
+ "confidence": 6,
+ "closing": "The rule decided on its own: no costs, keeps shape. The unmapped terms are vocabulary gaps and do not touch the shape call.",
+ "knew_tsr": false
+}

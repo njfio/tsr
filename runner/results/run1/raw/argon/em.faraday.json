@@ -1,0 +1,26 @@
+{
+ "id": "em.faraday",
+ "physical": "A changing magnetic flux through a loop induces an electromotive force equal to the rate of change of the flux. (EMF = dΦ_B ÷ dt)",
+ "reflected_formula": "EMF = dReflected_flux ÷ dExpansion",
+ "reflected_sentence": "A changing Reflected collection through a loop induces conscious energy per source equal to the change of that Reflected collection across Expansion.",
+ "shape": "keeps",
+ "rule_reason": "Equation with zero resistance-carrying quantities and no separation cost keeps its shape.",
+ "rule_trace": [
+  "none"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "electromotive force (voltage)",
+  "magnetic flux Φ_B",
+  "flux",
+  "loop"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "Reflected and Expansion keep their relationship when zero resistance costs are present. Change in the Reflected partner across Expansion directly yields the induced conscious energy per source.",
+ "conflicts": "none",
+ "sense": 2,
+ "confidence": 7,
+ "closing": "The rule cleanly decides that the relation keeps its shape (zero costs, no resistance-carrying quantities, no distance separation). Only 'magnetic' (Reflected) and 'time' (Expansion) have direct table entries; 'voltage'/'EMF' and 'flux' go in unmapped_terms.",
+ "knew_tsr": false
+}

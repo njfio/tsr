@@ -1,0 +1,28 @@
+{
+ "id": "thermo.carnot_limit",
+ "physical": "Carnot limit: No heat engine between two reservoirs can be more efficient than a reversible one; the limit is one minus the ratio of the cold to the hot temperature. η ≤ 1 − T_c ÷ T_h",
+ "reflected_formula": "[no partner: efficiency η] ≤ 1 − [no partner: cold temperature T_c] ÷ [no partner: hot temperature T_h]",
+ "reflected_sentence": "The relationship keeps its shape: the share of what can be drawn off stays capped, and the cap tightens as the two unnamed hot and cold measures draw together; none of the three quantities has a partner in the frozen vocabulary.",
+ "shape": "keeps",
+ "rule_reason": "The only listed cost (extracting work) rises with temperature, which the fixed table says does not carry resistance. Zero resistance-costs, no separation made by distance, so the relation keeps its shape. It is a limit, but not a limit caused by resistance.",
+ "rule_trace": [
+  "none"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "efficiency",
+  "temperature (cold T_c)",
+  "temperature (hot T_h)",
+  "heat engine",
+  "reservoir",
+  "reversible"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "Efficiency and temperature have no partners, so nothing can be said here in frozen words. The relation keeps its shape only because nothing in it carries what turns a reading.",
+ "conflicts": "none",
+ "sense": 1,
+ "confidence": 6,
+ "closing": "The rule decided on its own: the cost rises with temperature, and temperature was fixed as not carrying resistance before this run, so the count of resistance-costs is zero and the inequality keeps. The only pull toward ambiguity is that the rule's gloss ('a cost that rises') and the word 'limit' invite a turn, but the deciding question is resistance, and there is none here. The reflection is empty: not one variable has a partner, so the row says nothing on the nonphysical side.",
+ "knew_tsr": false
+}

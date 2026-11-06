@@ -1,0 +1,26 @@
+{
+ "id": "em.coulomb",
+ "physical": "Two charges push or pull with a force proportional to the product of the charges and inversely proportional to the square of their separation. F = k × q1 × q2 ÷ r²",
+ "reflected_formula": "Frequency = ? × ? × ? ÷ ?²",
+ "reflected_sentence": "Frequency keeps the given relationship to the unnamed partners.",
+ "shape": "keeps",
+ "rule_reason": "The primary record is an equation with no costs, so its relationship keeps under the amendment's record-form-and-cost-block reading. The alternate statement explicitly supplies one separation cost and would turn around if evaluated separately. Charge, the coupling constant and separation lack frozen partners.",
+ "rule_trace": [
+  "none"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "charge q1",
+  "charge q2",
+  "coupling constant k",
+  "separation r"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "Frequency alone does not complete the reflection. Alignment does not supply the missing partners.",
+ "conflicts": "none",
+ "sense": 1,
+ "confidence": 6,
+ "closing": "The amendment directs the call from the primary record's form and empty cost block, yielding keeps; its explicit separation-cost alternate would turn around. This resolves the earlier choice to infer the alternate's cost from the primary wording. Question marks mark missing partners, not new nonphysical terms, and no numerical reading of the retained formula is asserted.",
+ "knew_tsr": false
+}

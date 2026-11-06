@@ -1,0 +1,34 @@
+{
+ "id": "mech.newton_gravitation",
+ "physical": "Two masses attract with a force proportional to the product of the masses and inversely proportional to the square of their separation. F = G × M × m ÷ r²",
+ "reflected_formula": "Frequency = G × Movement M × Movement M ÷ Vibration² (G has no partner)",
+ "reflected_sentence": "Two Movements attract with a Frequency that rises with the product of the two Movement M and falls with the square of the Vibration between them, scaled by a fixed constant, and under the primary record the relationship keeps its shape; read as a separation cost instead, it turns, and what separation weakens on the physical side is already there on the nonphysical side.",
+ "shape": "keeps",
+ "rule_reason": "The primary record is an equation with an empty cost block and no separation flagged: zero costs, even, keeps. The alternate record lists one separation made by distance (r carries distance), which on its own would turn. Following the amendment, the shape is decided from the primary record's form and cost block.",
+ "rule_trace": [
+  "none"
+ ],
+ "forced": false,
+ "unmapped_terms": [
+  "gravitational constant G"
+ ],
+ "new_words": [],
+ "monotone_claims": [
+  {
+   "rises": "Frequency",
+   "with": "Movement M",
+   "sign": 1
+  },
+  {
+   "rises": "Frequency",
+   "with": "Vibration",
+   "sign": -1
+  }
+ ],
+ "interpretation": "The kept formula has Frequency rising with both Movements and falling with the square of Vibration. In frozen words that says more Vibration between two Movements means less Frequency between them, which reads against the grain of a side where limited becomes limitless. The alternate reading removes the fall, so Attraction is not thinned by what the physical side calls separation; the two readings do not agree about Vibration, and the table says nothing to settle it.",
+ "conflicts": "'force | Frequency | reflected partnership' and 'gravitational pull | Attraction | gravity' both claim F here: the force in this relation is the gravitational pull, so one physical quantity has two partners.",
+ "sense": 2,
+ "confidence": 4,
+ "closing": "This one needed a judgment call. The primary record has an empty cost block, which by the count gives keeps, and the amendment says to decide from the record's form and cost block, so I recorded keeps. But the variable r is flagged as carrying distance, the statement itself says the pull falls with the square of the separation, and the alternate record makes that a separation made by distance, which the rule says turns. I think a reader applying the rule to the words of the statement would say turns around, and I am not confident the run intended keeps. The two masses map to the same word, Movement M, so the product reads as Movement M times itself. G has no partner.",
+ "knew_tsr": false
+}

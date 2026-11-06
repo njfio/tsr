@@ -1,0 +1,27 @@
+{
+ "id": "statmech.boltzmann_entropy",
+ "physical": "Boltzmann entropy — The entropy of a macrostate is Boltzmann's constant times the logarithm of the number of microstates that realize it. S = k × ln W. Form: definition.",
+ "reflected_formula": "Culmination (provisional) = k × ln W (only the left-hand name crosses; k and W have no partner)",
+ "reflected_sentence": "The definition keeps its shape: S reflects as Culmination (provisional), which grows with the logarithm of the count of ways a state can be realized — but a count is a number, numbers do not cross, and the constant has no partner, so only the name survives the mirror and the rest is plain words.",
+ "shape": "keeps",
+ "rule_reason": "definition with no listed cost; entropy, microstate count and the Boltzmann constant are all fixed as non-resistance; zero (even) count keeps",
+ "rule_trace": [
+  "identity",
+  "none"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "Boltzmann constant",
+  "number of microstates",
+  "macrostate",
+  "logarithm"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "Culmination (provisional) crosses as a name. Its driver is a count, and counts do not cross. The shape keeps; the content stays behind.",
+ "conflicts": "none",
+ "sense": 2,
+ "confidence": 7,
+ "closing": "The rule decided alone: a definition with zero costs keeps its shape. No judgment was needed; the thinness of the reflection comes from missing partners and from the no-numbers clause, not from any doubt about the shape.",
+ "knew_tsr": false
+}

@@ -1,0 +1,24 @@
+{
+ "id": "qm.no_cloning",
+ "physical": "No physical operation can make an independent copy of an arbitrary unknown quantum state.",
+ "reflected_formula": "",
+ "reflected_sentence": "No working on this side makes a second, self-standing copy of an unknown amplitude.",
+ "shape": "keeps",
+ "rule_reason": "A limit, but not one caused by resistance; the count is none, so the shape keeps. Amplitude and copying are unmapped.",
+ "rule_trace": [
+  "none"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "wavefunction amplitude",
+  "copy of a state"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "The limit is not raised by any opposition, so the shape keeps. Amplitude and copying have no partner and appear only as plain descriptions. The limit itself keeps its shape on this side.",
+ "conflicts": "none",
+ "sense": 2,
+ "confidence": 7,
+ "closing": "Amended reading applied: the rule decided keeps cleanly (this limit is not a cost that rises with resistance), and the missing partners are listed rather than allowed to alter the call. No new words were needed for the sentence.",
+ "knew_tsr": false
+}

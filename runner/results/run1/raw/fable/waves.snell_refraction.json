@@ -1,0 +1,28 @@
+{
+ "id": "waves.snell_refraction",
+ "physical": "Refraction (Snell's law) — Crossing into a medium with a different refractive index, a ray bends so that index times the sine of the angle is the same on both sides. n1 × sin θ1 = n2 × sin θ2 (equation)",
+ "reflected_formula": "(slowing of one medium) × (tilt on that side) = (slowing of the other) × (tilt on the other side) — neither quantity has a frozen partner; the shape 'product equals product' is kept",
+ "reflected_sentence": "Crossing into a medium that slows it differently, a beam bends so that slowing times tilt is the same on both sides.",
+ "shape": "keeps",
+ "rule_reason": "No cost or separation listed; the record is an equality of a product across the crossing, which is an invariance. Zero costs = even = keeps. The fixed list leaves refractive index UNDETERMINED, but that would only matter if a cost were listed as rising with it; none is.",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "refractive index n",
+  "angle θ",
+  "ray",
+  "medium",
+  "bends",
+  "boundary (banned; the statement's 'crossing' is used instead)"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "An equality kept on both sides of a crossing keeps its shape. What is kept has no partner in the table: neither the slowing of a medium nor the tilt of a beam. The relation crosses as 'something is the same on both sides' with nothing named.",
+ "conflicts": "none in the vocabulary table. The fixed list's 'refractive index: UNDETERMINED' does not enter because the record lists no cost.",
+ "sense": 1,
+ "confidence": 5,
+ "closing": "The rule decided on its own from the record: no cost, product-equality, keeps. The judgment call I declined: the bending itself could be called a cost caused by the medium's resistance (the Ch 16 'medium as resistance' reading), which would turn the relation around; the record does not list it, so I did not add it. There is also a strong temptation to hear 'the same on both sides' as the Present (C^2 × M = E = m × c^2) and rescue the row that way; I refused, since the equality here is between two media, not between the two sides of the mirror.",
+ "knew_tsr": false
+}

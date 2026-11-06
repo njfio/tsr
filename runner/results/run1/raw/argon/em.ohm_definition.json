@@ -1,0 +1,26 @@
+{
+ "id": "em.ohm_definition",
+ "physical": "Resistance is the ratio of the voltage across a conductor to the current through it. (R = V ÷ I)",
+ "reflected_formula": "the gap = V ÷ I",
+ "reflected_sentence": "The gap (or receptivity) is defined as the ratio of conscious energy per source across a path to the flow through it.",
+ "shape": "keeps",
+ "rule_reason": "As a definition (`form: definition`, `costs: []`), it keeps its shape under the rule that equivalences and definitions keep their shape.",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "voltage V",
+  "current I (electric)",
+  "conductor",
+  "electrical resistance R"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "As a definition, the ratio keeps its shape while resistant flips to receptive and resistance appears on the nonphysical side only as the gap.",
+ "conflicts": "Trap: 'No resistance on the nonphysical side; it appears only as the gap.' Defining resistance directly on the nonphysical side conflicts with its absence there except as the gap.",
+ "sense": 3,
+ "confidence": 7,
+ "closing": "The contrast with `em.ohm_cost` is explicit in the prompt design: `em.ohm_definition` has `form: definition` and `costs: []`, so the rule forces `keeps` while `em.ohm_cost` turns around.",
+ "knew_tsr": false
+}

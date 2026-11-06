@@ -1,0 +1,14 @@
+id: rel.null_interval
+domain: relativity
+title: "Null interval"
+statement: "Along a light ray the space-time interval is zero: no proper time passes for light, and its energy depends on who measures it."
+formula: "ds² = 0"
+form: identity
+variables:
+  - {name: speed of light c, quantity: speed of light c}
+costs: []
+derived_from: [rel.row10_spacetime_one_continuum]
+standard_sources: ["Minkowski 1908; Taylor & Wheeler, ch. 1"]
+book_status: reflected
+review: pending
+notes: "Already on the ledger as a connection ('The surface of the mirror', Ch 21). Entered so the formal layer sees it; not sought."

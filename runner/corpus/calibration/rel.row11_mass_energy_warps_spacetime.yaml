@@ -1,0 +1,24 @@
+id: rel.row11_mass_energy_warps_spacetime
+domain: calibration
+title: "Row 11: mass-energy curves space-time"
+statement: "Mass-energy determines the curvature of space-time; more mass-energy, more curvature."
+formula: "G_μν = (8πG ÷ c⁴) T_μν"
+form: equation
+variables:
+  - {name: mass-energy (stress-energy), quantity: energy}
+  - {name: gravitational constant G, quantity: gravitational constant G}
+  - {name: speed of light c, quantity: speed of light c}
+costs: []
+alternate_statements:
+  - statement: "Reading B of the gravity call: the well is a cost of leaving; the energy to climb out rises with the central mass."
+    form: equation
+    costs:
+      - what_gets_harder: "climbing out of the well"
+        rises_with: [energy]
+    note: "Encoded for C2 only. 'energy' does not carry resistance under R1, so reading B still keeps; the joint stays open because the book marks it so."
+depends_on: [gravity_call]
+standard_sources: ["Einstein 1915; Misner, Thorne & Wheeler, Gravitation, ch. 17"]
+book_status: ruled
+ruling: {shape: keeps, words: "Attraction; what you've already expanded into draws you toward it", source: "Ch16 #11 + Ch16 gravity call (open)"}
+review: "reviewed:spec-port"
+notes: "Reading A: a source relation, not a difficulty; no cost block. The open joint is whether what curves counts as energy (then one E, shared) or as resistance (then a cost)."

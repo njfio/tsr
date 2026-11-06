@@ -1,0 +1,30 @@
+{
+ "id": "field.noether",
+ "physical": "Every continuous symmetry of the action corresponds to a conserved quantity: time translation to energy, space translation to momentum, rotation to angular momentum, phase to charge.",
+ "reflected_formula": "",
+ "reflected_sentence": "No complete reflection has frozen vocabulary partners.",
+ "shape": "keeps",
+ "rule_reason": "An identity connecting symmetries and conservation keeps, with no resistance costs.",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "action",
+  "continuous symmetry transformations",
+  "time translation",
+  "space translation",
+  "rotation",
+  "angular momentum",
+  "phase",
+  "charge"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "No partner. No complete reflection.",
+ "conflicts": "none",
+ "sense": 1,
+ "confidence": 7,
+ "closing": "The rule decides keeps, but mapping time to Expansion and space to Vibration does not map their translation operations. Energy and lowercase momentum have partners; angular momentum and charge do not. Capitalized Momentum would improperly replace a conserved quantity with an entity property.",
+ "knew_tsr": false
+}

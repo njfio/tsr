@@ -1,0 +1,28 @@
+{
+ "id": "waves.dispersion",
+ "physical": "Dispersion — In a dispersive medium the phase velocity depends on wavelength, so a pulse made of many wavelengths spreads as it travels. v_p = v_p(λ) (equation)",
+ "reflected_formula": "(no frozen image: the pace of the crests and the wavelength have no partners; the shape 'one depends on the other' is kept)",
+ "reflected_sentence": "How a vibration's crests advance depends on how long each wave is, so a vibration made of many wave-lengths spreads as it goes.",
+ "shape": "keeps",
+ "rule_reason": "Not an equivalence, but the one listed cost ('a pulse keeping its shape') rises with dispersion, which the fixed list says carries no resistance, and the separation flag is false. Zero resistance-caused costs = even = keeps. A dependence is neither horn of the deciding question; the parity clause ('with none ... it keeps') decides it.",
+ "rule_trace": [
+  "none"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "phase velocity v_p",
+  "wavelength λ",
+  "dispersion",
+  "pulse",
+  "dispersive medium",
+  "travels (banned word on the nonphysical side; rendered 'as it goes')"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "The dependence keeps its shape: a vibration of many parts comes apart as it goes because each part advances differently. Nothing in the table names the pace of a crest or the length of a wave, so the relation crosses only as a bare dependence. The only frozen rate, rise per Expansion, reflects velocity, which the fixed list keeps distinct from the pace of a crest.",
+ "conflicts": "'Every term reflects; that part always happens' — but the frozen table has no partner for phase velocity, wavelength or dispersion.",
+ "sense": 1,
+ "confidence": 5,
+ "closing": "The rule decided mechanically: the cost's driver carries no resistance, so nothing fires and the relation keeps. No judgment call on shape. The ambiguity is elsewhere: the deciding question offers only 'equivalence' or 'cost rising with resistance', and this relation is neither, so it keeps by default rather than by the rule's positive reasoning. The reflected sentence is the physical sentence with the nouns paraphrased; nothing nonphysical was gained, and 'spreads as it goes' smuggles a traveling picture that the banned-word list is trying to keep out.",
+ "knew_tsr": false
+}

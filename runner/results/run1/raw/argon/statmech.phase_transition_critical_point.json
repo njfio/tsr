@@ -1,0 +1,29 @@
+{
+ "id": "statmech.phase_transition_critical_point",
+ "physical": "At a continuous phase transition the order parameter vanishes and the correlation length diverges: fluctuations at every scale, and no characteristic size. (ξ → ∞ as T → T_c)",
+ "reflected_formula": "[unmapped: correlation length ξ] → limitless as [unmapped: temperature T] → [unmapped: critical temperature T_c]",
+ "reflected_sentence": "At a [unmapped: continuous phase transition] the [unmapped: order parameter] vanishes and the [unmapped: correlation length ξ] becomes limitless as [unmapped: temperature T] approaches [unmapped: critical temperature T_c].",
+ "shape": "keeps",
+ "rule_reason": "limit with zero costs caused by resistance and carries_distance fixed as false on all variables",
+ "rule_trace": [
+  "none"
+ ],
+ "forced": false,
+ "unmapped_terms": [
+  "order parameter",
+  "correlation length ξ",
+  "temperature T",
+  "critical temperature T_c",
+  "continuous phase transition",
+  "fluctuations",
+  "scale / characteristic size"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "Only the shift from a limited characteristic size to limitless has a partner in the frozen property row, while order parameter, correlation length, and temperature have no partners. Because the fixed table marks correlation length as carrying neither the gap nor Vibration separation, the limit keeps its shape by rule. Without partners for any of the three variables, the reflection cannot state what becomes limitless in Vibrational Reality.",
+ "conflicts": "\"No distance, time, location, travel or quantities on the nonphysical side.\"",
+ "sense": 1,
+ "confidence": 5,
+ "closing": "Under the pre-fixed YAML and resistance list, correlation length does not carry resistance, carries_distance is false, and costs is empty, which forces 'keeps'. This is ambiguous against the prose rule because 'correlation length' is physically a spatial distance over which correlations decay and 'form' is 'limit', so without the pre-fixed 'carries_distance: false' flag one could treat a finite correlation length as a distance separation that vanishes at criticality.",
+ "knew_tsr": false
+}

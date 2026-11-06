@@ -1,0 +1,26 @@
+{
+ "id": "field.vacuum_energy",
+ "physical": "The quantum vacuum has an energy density; the value field theory estimates and the value cosmology measures differ by many orders of magnitude.",
+ "reflected_formula": "",
+ "reflected_sentence": "E keeps as the defined energy, and a difference of magnitudes does not cross.",
+ "shape": "keeps",
+ "rule_reason": "A definition with no cost or separation. Definitions keep their shape. Vacuum energy density does not carry resistance.",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "vacuum energy density",
+  "quantum vacuum",
+  "field-theory estimate",
+  "cosmology measure"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "E keeps. Desire is not claimed. The relationship does not turn.",
+ "conflicts": "none",
+ "sense": 2,
+ "confidence": 6,
+ "closing": "The rule decides the keep: a definition, no costs. The ambiguous point is vocabulary, not shape. Density's row is Desire, and energy's partner is E, but the compound is listed as energy, not as the density that co-creates with volume. Equating the whole compound to Desire would be a reinterpretation, so I did not, and I record the compound as unmapped. Orders of magnitude are numbers and do not cross. No shape judgment. Missing partners do not change the keep.",
+ "knew_tsr": false
+}

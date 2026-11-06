@@ -1,0 +1,33 @@
+{
+ "id": "waves.dispersion",
+ "physical": "In a dispersive medium the phase velocity depends on wavelength, so a pulse made of many wavelengths spreads as it travels.",
+ "reflected_formula": "rise per Expansion = rise per Expansion(Vibration)",
+ "reflected_sentence": "Rise per Expansion varies with the extent of each Vibration, so a collection of many Vibrations spreads across Expansion.",
+ "shape": "keeps",
+ "rule_reason": "The cost rises with dispersion, which is fixed as a dependence that does not carry resistance, and separation_made_by_distance is false.",
+ "rule_trace": [
+  "none"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "dispersive medium",
+  "phase velocity v_p",
+  "wavelength λ",
+  "dispersion",
+  "pulse"
+ ],
+ "new_words": [],
+ "monotone_claims": [
+  {
+   "rises": "Vibration",
+   "with": "Expansion",
+   "sign": 1
+  }
+ ],
+ "interpretation": "Rise per Expansion depends on Vibration across Vibration-Expansion. When many Vibrations move together, their rise per Expansion differs across Expansion. Without the gap, the dependence keeps its shape in Vibrational Reality.",
+ "conflicts": "none",
+ "sense": 2,
+ "confidence": 6,
+ "closing": "The rule decided the shape on its own because dispersion, phase velocity, and wavelength are all explicitly marked as not carrying resistance and carries_distance is false, leaving zero qualifying costs. However, almost none of the wave-specific terms have exact partners in the frozen table.",
+ "knew_tsr": false
+}

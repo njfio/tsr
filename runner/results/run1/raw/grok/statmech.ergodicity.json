@@ -1,0 +1,26 @@
+{
+ "id": "statmech.ergodicity",
+ "physical": "For an ergodic system the long-time average of an observable equals its average over the ensemble of accessible states.",
+ "reflected_formula": "",
+ "reflected_sentence": "An average of a reading across Expansion equals the average of that reading over the states open to it.",
+ "shape": "keeps",
+ "rule_reason": "Identity; cost block empty; no resistance-cost and no separation made by distance. Time's partner is Expansion.",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "ergodic",
+  "observable",
+  "ensemble",
+  "state"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "The identity keeps across Expansion. The equality of the two averages does not turn. Movement and the gap do not enter.",
+ "conflicts": "none",
+ "sense": 4,
+ "confidence": 6,
+ "closing": "The rule decided the shape on its own: an identity with an empty cost block keeps. Time has a partner, Expansion, so that term reflects and the equality stays an equality. I did not carry 'long' across as a magnitude, because nothing on this side has a quantity; that was a choice about the sentence, not about the shape. No separation made by distance is recorded.",
+ "knew_tsr": false
+}

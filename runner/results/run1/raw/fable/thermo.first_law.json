@@ -1,0 +1,26 @@
+{
+ "id": "thermo.first_law",
+ "physical": "First law: The change in a system's internal energy equals the heat added minus the work it does: energy is conserved. ΔU = Q − W",
+ "reflected_formula": "Δ[no partner: internal energy U] = [no partner: heat Q] − [no partner: work W]",
+ "reflected_sentence": "The conservation keeps its shape: conscious energy is conserved, the change in an unnamed inner store equalling what is taken in minus what is given out, though those three quantities have no partners.",
+ "shape": "keeps",
+ "rule_reason": "Conservation law; no costs listed and none caused by resistance; keeps its shape.",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "internal energy",
+  "heat",
+  "work",
+  "system"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "Conscious energy is conserved; that much the energy row of the table allows. The parts that are exchanged, and the one that changes, have no partners.",
+ "conflicts": "none",
+ "sense": 2,
+ "confidence": 7,
+ "closing": "The rule decided on its own: a conservation law keeps. The one liberty I took was to let the generic word 'energy' in the statement cross through the 'physical energy → conscious energy' row; the three named forms (internal energy, heat, work) are not in the table and I did not force them into that row. The formula's image is therefore three holes and a minus sign.",
+ "knew_tsr": false
+}

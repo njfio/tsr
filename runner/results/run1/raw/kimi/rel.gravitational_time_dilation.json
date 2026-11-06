@@ -1,0 +1,32 @@
+{
+ "id": "rel.gravitational_time_dilation",
+ "physical": "Gravitational time dilation — A clock deeper in a gravitational well runs slower than one higher up; the effect depends on depth in the well, not on the clock's own mass. Formula: Δt = Δτ ÷ √(1 − 2 × G × M ÷ (r × c²))",
+ "reflected_formula": "Expansion Dilation = Expansion ÷ √(1 − 2 × (a constant with no partner) × Movement ÷ (Vibrance × Current²))",
+ "reflected_sentence": "In Vibrational Reality, Expansion Dilation deepens as Movement gathers and Vibrance tightens: the Vortex slows Expansion the more Movement it holds.",
+ "shape": "keeps",
+ "rule_reason": "No cost caused by resistance and no separation made by distance is named; the depth effect is a relation of position in a field, not a cost, so it keeps its shape.",
+ "rule_trace": [
+  "none"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "gravitational constant G",
+  "clock",
+  "depth",
+  "gravitational well"
+ ],
+ "new_words": [],
+ "monotone_claims": [
+  {
+   "rises": "Expansion Dilation",
+   "with": "Movement",
+   "sign": 1
+  }
+ ],
+ "interpretation": "The relation keeps its shape. Time reflects to Expansion, mass to Movement, radius to Vibrance, and c to Current. The constant has no partner. Deeper in the Vortex means more Expansion Dilation.",
+ "conflicts": "none",
+ "sense": 4,
+ "confidence": 5,
+ "closing": "The rule decided on its own: no resistance-cost, keeps shape. I treated depth in the well as a positional relation, not a cost; that is the only place one could argue, but the rule as written does not count it.",
+ "knew_tsr": false
+}

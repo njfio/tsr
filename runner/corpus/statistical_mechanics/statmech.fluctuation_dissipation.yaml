@@ -1,0 +1,14 @@
+id: statmech.fluctuation_dissipation
+domain: statistical_mechanics
+title: "Fluctuation-dissipation theorem"
+statement: "The way a system in equilibrium dissipates a small push is fixed by the spectrum of its own spontaneous fluctuations: friction and thermal noise are two faces of one quantity."
+formula: ""
+form: identity
+variables:
+  - {name: damping coefficient, quantity: damping coefficient}
+  - {name: temperature T, quantity: temperature}
+costs: []
+standard_sources: ["Callen & Welton 1951; Kubo 1966"]
+book_status: unreflected
+review: pending
+notes: "A theorem equating a resistance (dissipation) with a fluctuation: an identity with resistance in it. Keeps under C1. The generators will be tempted to turn it because damping is in it; that is the test."

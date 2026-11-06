@@ -1,0 +1,28 @@
+{
+ "id": "info.landauer",
+ "physical": "Landauer's principle — Erasing one bit of information dissipates at least k T ln 2 of energy as heat; logically irreversible operations have a thermodynamic cost that rises with temperature. E ≥ k × T × ln 2. Form: inequality.",
+ "reflected_formula": "E ≥ k × T × ln 2 (shape kept; only E crosses, k and T have no partner)",
+ "reflected_sentence": "The inequality keeps its shape: E is shared by both sides, and each act of wiping a mark still demands at least a fixed share of E, a share that grows with the warmth of the surroundings — the warmth and the constant having no partner to carry them across, they are named here only in plain words.",
+ "shape": "keeps",
+ "rule_reason": "the one listed cost rises with temperature, and the pre-run table fixes temperature as not carrying resistance; a cost not caused by resistance does not count, so the count is zero (even) and the shape keeps",
+ "rule_trace": [
+  "none"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "temperature",
+  "Boltzmann constant",
+  "erasing",
+  "heat",
+  "ln 2",
+  "bit"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "E crosses, being the one energy shared by both sides. The share keeps its shape. The measure of that share has no partner and stays silent.",
+ "conflicts": "none",
+ "sense": 2,
+ "confidence": 6,
+ "closing": "The costs field listed a cost that rises with temperature, which at first looks like a turn signal, but the fixed quantity table declares temperature non-resistance, so by the rule as written the cost does not count and the inequality keeps. Had I judged heat dissipation itself resistance-like, it would have turned; I did not make that judgment because the table pre-empted it. That is why confidence is 6 rather than 7.",
+ "knew_tsr": false
+}

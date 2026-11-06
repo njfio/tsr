@@ -1,0 +1,36 @@
+{
+ "id": "mech.reynolds_laminar_turbulent",
+ "physical": "Flow stays laminar while inertial effects are small relative to viscous ones (low Reynolds number); as density, speed or size rise, or viscosity falls, the flow becomes turbulent. Re = ρ × v × L ÷ μ",
+ "reflected_formula": "[Reynolds number Re] = Desire × rise per Expansion × [length scale L] ÷ the gap",
+ "reflected_sentence": "Order keeps itself more easily as Desire and rise per Expansion grow and the gap closes: what resisted staying ordered now finds staying ordered easy.",
+ "shape": "turns around",
+ "rule_reason": "One listed cost: keeping the flow ordered gets harder, rising with density, which carries resistance; one odd cost turns the reading around.",
+ "rule_trace": [
+  "resistance-cost"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "Reynolds number Re",
+  "length scale L",
+  "viscosity μ (reflected only as the gap)"
+ ],
+ "new_words": [],
+ "monotone_claims": [
+  {
+   "rises": "alignment",
+   "with": "Desire",
+   "sign": 1
+  },
+  {
+   "rises": "alignment",
+   "with": "the gap",
+   "sign": -1
+  }
+ ],
+ "interpretation": "Desire and rise per Expansion press the flow toward disorder while the gap in the denominator holds it ordered. The cost turns: keeping order gets easier as receptivity replaces opposition. Density wearing Desire's name and viscosity appearing only as the gap are the frozen table's doing, reported not repaired.",
+ "conflicts": "none",
+ "sense": 3,
+ "confidence": 6,
+ "closing": "One judgment-adjacent point: the cost both rises with density and falls with viscosity, and both carry resistance; the odd-count rule counts costs, not directions, and there is exactly one cost entry, so it turns. Viscosity was given only its legal appearance, the gap, per the rule that opposition appears on that side solely as the gap.",
+ "knew_tsr": false
+}

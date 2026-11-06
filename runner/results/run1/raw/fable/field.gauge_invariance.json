@@ -1,0 +1,28 @@
+{
+ "id": "field.gauge_invariance",
+ "physical": "Gauge invariance: Requiring the laws to be unchanged under local phase changes of the matter fields forces the existence of the gauge fields that carry the forces.",
+ "reflected_formula": "",
+ "reflected_sentence": "Requiring that the relationships stay unchanged when the phase of what carries E is changed at each point of Vibration-Expansion forces there to be fields that carry the Frequencies; the shape keeps.",
+ "shape": "keeps",
+ "rule_reason": "symmetry; no cost → keeps",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "gauge field",
+  "matter field",
+  "phase",
+  "laws",
+  "local (a location word; may not cross)",
+  "symmetry"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "Frequency is the one frozen word that fits, standing for the forces that the fields carry. The relation says Frequency exists because something must stay unchanged, and that something has no partner. The table does not say where Frequency comes from, so this adds a claim it cannot check.",
+ "conflicts": "none",
+ "sense": 1,
+ "confidence": 6,
+ "closing": "The rule decided without a judgment call: a symmetry keeps. 'Local' had to be rendered as 'at each point of Vibration-Expansion' since location words may not cross; that is a plain-words description, not a new term, but it is the weakest part. Matter fields, gauge fields and phase are all unmapped.",
+ "knew_tsr": false
+}

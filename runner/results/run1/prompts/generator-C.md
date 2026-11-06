@@ -1,0 +1,429 @@
+ROLE: generator
+
+You're helping test a framework called the Theory of Sovereign Reflectivity (TSR). TSR reflects physics onto a "nonphysical" side using one rule. Your job is to apply the rule, exactly as written below, to each of the physics relations below, one at a time, and to report honestly where the result holds up and where it doesn't.
+
+Ground rules:
+
+- Use only the material in this prompt. Don't search the web. If you know anything else about TSR, set it aside, and say so in the `knew_tsr` field.
+- Be strict, not generous. A reflection that reads as nonsense in TSR's own terms is a useful result. Don't rescue it with creative reinterpretation.
+- The vocabulary below is frozen. If a physical term has no partner, say so in `unmapped_terms`. Any word you introduce goes in `new_words`, and a row with new words is recorded as "no partner".
+- Apply the rule as stated, even where you think it's wrong. Put your disagreement in `closing`, never in the reflection.
+- Do not rewrite the formula. A relation that turns around keeps its formula in the table's terms; what turns is its reading (harder becomes easier, unreachable becomes already there).
+
+## The rule
+
+> "Keep each relationship, and flip the condition. Resistant becomes receptive, limited becomes limitless, radiating becomes collecting. ... Every term reflects; that part always happens. What you have to know is whether the relationship keeps its shape or turns around."
+
+The deciding question: "One is an equivalence. The other is a cost that rises with resistance."
+
+- Equivalences, definitions, identities, conservation laws and symmetries keep their shape.
+- A cost or a limit caused by resistance turns around: what gets harder with more resistance gets easier with more receptivity. Mass is resistance, and distance is "what resistance makes." A separation made by distance also turns around.
+- A statement with an odd number of such costs turns around; with none or an even number it keeps.
+- "Units don't cross the mirror, only relationships do." Nothing on the nonphysical side has a number, a unit or a distance.
+
+## Which quantities carry resistance (fixed before this run)
+
+- Boltzmann constant: does not carry resistance — a constant
+- Shannon entropy: does not carry resistance — a measure of uncertainty
+- bandwidth: does not carry resistance — extent in frequency
+- channel capacity: does not carry resistance — a rate
+- correlation length: does not carry resistance — extent
+- damping coefficient: carries resistance — defined as the opposition to velocity that drains an oscillation
+- degrees of freedom: does not carry resistance — a count
+- energy: does not carry resistance — shared by both sides of the mirror (one E)
+- entropy: does not carry resistance — a count of microstates / a state function; not defined as opposition. Decided under R before thermodynamics ran.
+- mass m: carries resistance — inertial mass is defined as opposition to a change in motion
+- mutual information: does not carry resistance — a measure
+- noise power: does not carry resistance — power
+- number of microstates: does not carry resistance — a count
+- order parameter: does not carry resistance — a measure of order
+- power: does not carry resistance — a rate of energy
+- probability: does not carry resistance — a measure
+- temperature: does not carry resistance — mean kinetic energy per degree of freedom (or dS/dU inverse); not defined as opposition to change. Decided under R before thermodynamics ran.
+- velocity: does not carry resistance — a rate, not an opposition
+
+## The frozen vocabulary
+
+| Physical | Nonphysical | Map row |
+| --- | --- | --- |
+| limited | limitless | property |
+| resistant | receptive | property |
+| radiation | collection | property |
+| Subjective Reality | Vibrational Reality | reality |
+| Objective Reality | Collective Reality | reality |
+| Space-Time | Vibration-Expansion | continuum |
+| empirical evidence | emotional evidence | evidence |
+| Now | Future | energy flow |
+| Past | Current | energy flow |
+| Belief | Desire | entity contrast |
+| Expectation | Intuition | entity contrast |
+| speed of light c | Current | symbol |
+| mass m | Movement M | symbol |
+| Focus | Tune | entity action |
+| electric | Idle | co-creating partner |
+| magnetic | Reflected | co-creating partner |
+| density | Desire | co-creating partner |
+| volume | Vibrance | co-creating partner |
+| physical energy | conscious energy | energy |
+| actualization | realization | transmutation |
+| Out Through | Out For | entity transmutation |
+| In From | In To | entity transmutation |
+| space | Vibration | reflected partnership |
+| time | Expansion | reflected partnership |
+| velocity | rise per Expansion | reflected partnership |
+| acceleration | Appreciation | reflected partnership |
+| manifestation | imagination | reflected partnership |
+| force | Frequency | reflected partnership |
+| gravitational pull | Attraction | gravity |
+| gravity well | Vortex | gravity |
+| gravitational lensing | Convergence | gravity |
+| time dilation | Expansion Dilation | named reflection |
+| length contraction | Vibrational Contraction | named reflection |
+| friction | resonance | named reflection |
+| entropy | Culmination (provisional) | named reflection |
+| momentum | momentum | momentum |
+
+Other legal nonphysical words: alignment (how little you resist; the nonphysical measure of nearness to the Current), receptivity (the flipped condition), the gap (resistance's only appearance on the nonphysical side: between the Current and what you're living), Point of Reflection (center of the crossing; where energy changes form), the Present (the whole equation C^2 x M = E = m x c^2), E (the one energy / the entity, shared by both sides), Awareness (limitless and limited met), Attraction (receptive and resistant met (entity property) and gravity's reflection), Momentum (collecting and radiating met), wanting (Desire in plain speech), culminate (verb of Culmination; what two vibrations do instead of cancel (Ch 16)), strong frequency (Desire), weak frequency (Intuition and imagination)
+
+Words that must never appear on the nonphysical side: boundary, distance, edge, effort, inside, judgment, location, mental, mind, outside, place, radiate, radiates, radiating, rank, resistance, speed, time, travel, will.
+
+## Traps (refuse each one)
+
+- No distance, time, location, travel or quantities on the nonphysical side.
+- No resistance on the nonphysical side; it appears only as the gap.
+- No entity properties (Awareness, Momentum as a property) on things that are not entities.
+- "Nonphysical" does not mean "mental".
+- Frequency is not a rate and not cycles per second.
+- No sums where the book has products.
+- No physical words in disguise: belief, expectation, will, effort, judgment, rank belong to the physical side.
+
+## The relations
+
+Take each one on its own. Do not let one relation's reflection decide another's; the rule decides each.
+
+### info.channel_capacity
+```yaml
+{
+  "id": "info.channel_capacity",
+  "title": "Channel capacity",
+  "statement": "The greatest rate at which information can be sent reliably through a noisy channel is the bandwidth times the log of one plus the signal-to-noise ratio.",
+  "formula": "C = B × log(1 + S ÷ N)",
+  "form": "definition",
+  "variables": [
+    {
+      "name": "capacity C",
+      "quantity": "channel capacity",
+      "carries_distance": false
+    },
+    {
+      "name": "bandwidth B",
+      "quantity": "bandwidth",
+      "carries_distance": false
+    },
+    {
+      "name": "signal power S",
+      "quantity": "power",
+      "carries_distance": false
+    },
+    {
+      "name": "noise power N",
+      "quantity": "noise power",
+      "carries_distance": false
+    }
+  ],
+  "costs": [],
+  "physical_terms": {},
+  "alternate_statements": []
+}
+```
+
+### info.data_processing_inequality
+```yaml
+{
+  "id": "info.data_processing_inequality",
+  "title": "Data processing inequality",
+  "statement": "Processing cannot increase information: if Z depends on X only through Y, then the information Z carries about X is at most what Y carries.",
+  "formula": "I(X;Z) ≤ I(X;Y)",
+  "form": "inequality",
+  "variables": [
+    {
+      "name": "mutual information I",
+      "quantity": "mutual information",
+      "carries_distance": false
+    }
+  ],
+  "costs": [],
+  "physical_terms": {},
+  "alternate_statements": []
+}
+```
+
+### info.landauer
+```yaml
+{
+  "id": "info.landauer",
+  "title": "Landauer's principle",
+  "statement": "Erasing one bit of information dissipates at least k T ln 2 of energy as heat; logically irreversible operations have a thermodynamic cost that rises with temperature.",
+  "formula": "E ≥ k × T × ln 2",
+  "form": "inequality",
+  "variables": [
+    {
+      "name": "energy E",
+      "quantity": "energy",
+      "carries_distance": false
+    },
+    {
+      "name": "temperature T",
+      "quantity": "temperature",
+      "carries_distance": false
+    },
+    {
+      "name": "Boltzmann constant k",
+      "quantity": "Boltzmann constant",
+      "carries_distance": false
+    }
+  ],
+  "costs": [
+    {
+      "what_gets_harder": "erasing; the heat it must dissipate",
+      "rises_with": [
+        "temperature"
+      ],
+      "falls_with": [],
+      "separation_made_by_distance": false
+    }
+  ],
+  "physical_terms": {},
+  "alternate_statements": []
+}
+```
+
+### info.shannon_entropy
+```yaml
+{
+  "id": "info.shannon_entropy",
+  "title": "Shannon entropy",
+  "statement": "The uncertainty of a source is minus the sum over outcomes of probability times log probability; it is the least average number of bits needed to encode it.",
+  "formula": "H = −Σ p × log p",
+  "form": "definition",
+  "variables": [
+    {
+      "name": "Shannon entropy H",
+      "quantity": "Shannon entropy",
+      "carries_distance": false
+    },
+    {
+      "name": "probability p",
+      "quantity": "probability",
+      "carries_distance": false
+    }
+  ],
+  "costs": [],
+  "physical_terms": {},
+  "alternate_statements": []
+}
+```
+
+### statmech.boltzmann_entropy
+```yaml
+{
+  "id": "statmech.boltzmann_entropy",
+  "title": "Boltzmann entropy",
+  "statement": "The entropy of a macrostate is Boltzmann's constant times the logarithm of the number of microstates that realize it.",
+  "formula": "S = k × ln W",
+  "form": "definition",
+  "variables": [
+    {
+      "name": "entropy S",
+      "quantity": "entropy",
+      "carries_distance": false
+    },
+    {
+      "name": "number of microstates W",
+      "quantity": "number of microstates",
+      "carries_distance": false
+    },
+    {
+      "name": "Boltzmann constant k",
+      "quantity": "Boltzmann constant",
+      "carries_distance": false
+    }
+  ],
+  "costs": [],
+  "physical_terms": {},
+  "alternate_statements": []
+}
+```
+
+### statmech.equipartition
+```yaml
+{
+  "id": "statmech.equipartition",
+  "title": "Equipartition",
+  "statement": "In thermal equilibrium every quadratic degree of freedom carries an average energy of half k times the temperature.",
+  "formula": "⟨E⟩ = ½ × k × T per degree of freedom",
+  "form": "identity",
+  "variables": [
+    {
+      "name": "energy E",
+      "quantity": "energy",
+      "carries_distance": false
+    },
+    {
+      "name": "temperature T",
+      "quantity": "temperature",
+      "carries_distance": false
+    },
+    {
+      "name": "degrees of freedom",
+      "quantity": "degrees of freedom",
+      "carries_distance": false
+    },
+    {
+      "name": "Boltzmann constant k",
+      "quantity": "Boltzmann constant",
+      "carries_distance": false
+    }
+  ],
+  "costs": [],
+  "physical_terms": {},
+  "alternate_statements": []
+}
+```
+
+### statmech.ergodicity
+```yaml
+{
+  "id": "statmech.ergodicity",
+  "title": "Ergodic hypothesis",
+  "statement": "For an ergodic system the long-time average of an observable equals its average over the ensemble of accessible states.",
+  "formula": "",
+  "form": "identity",
+  "variables": [],
+  "costs": [],
+  "physical_terms": {},
+  "alternate_statements": []
+}
+```
+
+### statmech.fluctuation_dissipation
+```yaml
+{
+  "id": "statmech.fluctuation_dissipation",
+  "title": "Fluctuation-dissipation theorem",
+  "statement": "The way a system in equilibrium dissipates a small push is fixed by the spectrum of its own spontaneous fluctuations: friction and thermal noise are two faces of one quantity.",
+  "formula": "",
+  "form": "identity",
+  "variables": [
+    {
+      "name": "damping coefficient",
+      "quantity": "damping coefficient",
+      "carries_distance": false
+    },
+    {
+      "name": "temperature T",
+      "quantity": "temperature",
+      "carries_distance": false
+    }
+  ],
+  "costs": [],
+  "physical_terms": {},
+  "alternate_statements": []
+}
+```
+
+### statmech.maxwell_boltzmann_width
+```yaml
+{
+  "id": "statmech.maxwell_boltzmann_width",
+  "title": "Maxwell-Boltzmann distribution width",
+  "statement": "The spread of molecular speeds in a gas grows with the square root of temperature and shrinks with the square root of molecular mass.",
+  "formula": "σ_v ∝ √(k × T ÷ m)",
+  "form": "equation",
+  "variables": [
+    {
+      "name": "speed spread σ_v",
+      "quantity": "velocity",
+      "carries_distance": false
+    },
+    {
+      "name": "temperature T",
+      "quantity": "temperature",
+      "carries_distance": false
+    },
+    {
+      "name": "molecular mass m",
+      "quantity": "mass m",
+      "carries_distance": false
+    },
+    {
+      "name": "Boltzmann constant k",
+      "quantity": "Boltzmann constant",
+      "carries_distance": false
+    }
+  ],
+  "costs": [],
+  "physical_terms": {},
+  "alternate_statements": []
+}
+```
+
+### statmech.phase_transition_critical_point
+```yaml
+{
+  "id": "statmech.phase_transition_critical_point",
+  "title": "Phase transition and critical point",
+  "statement": "At a continuous phase transition the order parameter vanishes and the correlation length diverges: fluctuations at every scale, and no characteristic size.",
+  "formula": "ξ → ∞ as T → T_c",
+  "form": "limit",
+  "variables": [
+    {
+      "name": "order parameter",
+      "quantity": "order parameter",
+      "carries_distance": false
+    },
+    {
+      "name": "correlation length ξ",
+      "quantity": "correlation length",
+      "carries_distance": false
+    },
+    {
+      "name": "temperature T",
+      "quantity": "temperature",
+      "carries_distance": false
+    }
+  ],
+  "costs": [],
+  "physical_terms": {},
+  "alternate_statements": []
+}
+```
+
+## What to report
+Return ONE JSON object with exactly these keys:
+
+```json
+{
+  "id": "<the relation id>",
+  "physical": "the relation as given",
+  "reflected_formula": "the word-map image of the formula, in frozen words, with × ÷ and so on (empty if the relation has no formula)",
+  "reflected_sentence": "one plain sentence",
+  "shape": "keeps | turns around | no partner",
+  "rule_reason": "equivalence or definition, or which cost or limit caused by resistance, or which separation",
+  "rule_trace": ["which of these fired: identity, resistance-cost, separation, none"],
+  "forced": true,
+  "unmapped_terms": [],
+  "new_words": [],
+  "monotone_claims": [{"rises": "a frozen word", "with": "a frozen word or 'alignment'", "sign": 1}],
+  "interpretation": "2 or 3 sentences, frozen words only",
+  "conflicts": "any claim in the vocabulary table it contradicts, quoted, or \"none\"",
+  "sense": 1,
+  "confidence": 1,
+  "closing": "one short paragraph: did the rule decide on its own, or did you need a judgment call? where was it ambiguous?",
+  "knew_tsr": false
+}
+```
+
+`forced` is true only if the rule decided without a judgment call. `sense` 1–7 (1 = nonsense in TSR's terms; 7 = coherent and says something the table doesn't). `confidence` 1–7 on the keeps-or-turns call.
+
+Return a JSON ARRAY with one such object per relation, in the order given, and nothing else in the file. Write it to the file `runner/results/run1/raw/<MODEL>/batch-C.json` and then reply with the single word DONE. Do not read any other file, do not search the web, do not look at the repository.

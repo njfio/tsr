@@ -1,0 +1,17 @@
+id: thermo.heat_capacity_cost
+domain: thermodynamics
+title: "Heat capacity (the cost reading)"
+statement: "Warming a body by a given amount takes more heat the larger its heat capacity: thermal inertia."
+formula: "Q = C × ΔT"
+form: equation
+variables:
+  - {name: heat capacity C, quantity: heat capacity}
+  - {name: heat Q, quantity: heat}
+  - {name: temperature change ΔT, quantity: temperature}
+costs:
+  - {what_gets_harder: "warming the body by a given amount", rises_with: [heat capacity]}
+derived_from: [thermo.heat_capacity_definition]
+standard_sources: ["Fermi, Thermodynamics, ch. 2"]
+book_status: unreflected
+review: pending
+notes: "R1 does not decide whether heat capacity carries resistance: JUDGMENT (open joint heat_capacity_resistance). This is the first thermodynamic joint the author must close before the domain can be forced."

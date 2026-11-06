@@ -1,0 +1,15 @@
+id: em.faraday
+domain: electromagnetism
+title: "Faraday's law"
+statement: "A changing magnetic flux through a loop induces an electromotive force equal to the rate of change of the flux."
+formula: "EMF = dΦ_B ÷ dt"
+form: equation
+variables:
+  - {name: electromotive force, quantity: voltage}
+  - {name: magnetic flux Φ_B, quantity: magnetic flux}
+  - {name: time t, quantity: time}
+costs: []
+standard_sources: ["Faraday 1831; Purcell, Electricity and Magnetism, ch. 7"]
+book_status: unreflected
+review: pending
+notes: "Magnitude only; the sign is Lenz's law, entered separately because that is where the resistance shape is."

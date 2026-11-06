@@ -1,0 +1,26 @@
+{
+ "id": "mech.angular_momentum",
+ "physical": "Angular momentum is moment of inertia times angular velocity (the rotational definition), and is conserved when no external torque acts.",
+ "reflected_formula": "",
+ "reflected_sentence": "The definition keeps: a conserved turning quantity stays the product of a redistributed quantity and a turning rate, and no external twist undoes it.",
+ "shape": "keeps",
+ "rule_reason": "Definition and conservation law; cost block empty, so the relationship keeps.",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "angular momentum",
+  "moment of inertia",
+  "angular velocity",
+  "torque"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "The form is a definition and a conservation, so the relationship keeps. Movement is not a name for the redistributed quantity, and Frequency is not a name for the twist. No frozen word completes the product, so no formula is written.",
+ "conflicts": "none",
+ "sense": 2,
+ "confidence": 7,
+ "closing": "The rule decided this from the form and the empty cost block: a definition and a conservation keep. Unmapped rotational terms did not change the shape, and no new word was introduced. The conserved turning quantity was not mapped to momentum, the turning rate was not mapped to rise per Expansion, and the twist was not mapped to Frequency.",
+ "knew_tsr": false
+}

@@ -1,0 +1,8 @@
+{
+ "id": "mech.resonance_width",
+ "alternative_shape": "keeps",
+ "rule_compliant": true,
+ "argument": "The statement carries the equivalence Q = ω0/Δω and names two distinct limits caused by the damping: the width of the response grows with it and the peak height falls with it. Two is an even number of such costs, so the mirror keeps the shape rather than turning it around.",
+ "reflected_sentence": "An oscillator responds most strongly near its natural frequency; the width of that response grows with the draining, and the peak height falls with it.",
+ "knew_tsr": false
+}

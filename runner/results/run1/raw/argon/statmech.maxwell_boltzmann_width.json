@@ -1,0 +1,37 @@
+{
+ "id": "statmech.maxwell_boltzmann_width",
+ "physical": "The spread of molecular speeds in a gas grows with the square root of temperature and shrinks with the square root of molecular mass. (σ_v ∝ √(k × T ÷ m))",
+ "reflected_formula": "[unmapped: spread] of rise per Expansion ∝ √([unmapped: Boltzmann constant k] × [unmapped: temperature T] ÷ Movement M)",
+ "reflected_sentence": "The [unmapped: spread] of rise per Expansion grows with the square root of [unmapped: temperature T] and, with the gap flipped to receptivity, grows rather than shrinks with the square root of Movement M and alignment.",
+ "shape": "turns around",
+ "rule_reason": "molecular mass m carries resistance and shrinks the spread of speeds (÷ m), acting as one limit caused by resistance",
+ "rule_trace": [
+  "resistance-cost"
+ ],
+ "forced": false,
+ "unmapped_terms": [
+  "temperature T",
+  "Boltzmann constant k",
+  "spread",
+  "molecular / gas"
+ ],
+ "new_words": [],
+ "monotone_claims": [
+  {
+   "rises": "rise per Expansion",
+   "with": "Movement M",
+   "sign": 1
+  },
+  {
+   "rises": "rise per Expansion",
+   "with": "alignment",
+   "sign": 1
+  }
+ ],
+ "interpretation": "Velocity maps to rise per Expansion and mass m maps to Movement M, while temperature, Boltzmann constant, and spread have no partners in the frozen table. Because mass m carries the gap that shrinks rise per Expansion on the physical side, flipping to receptivity turns that restriction around so rise per Expansion grows with Movement M and alignment. Even so, the unmapped temperature and Boltzmann constant leave half the relation outside Vibrational Reality.",
+ "conflicts": "\"Nothing on the nonphysical side has a number, a unit or a distance.\"",
+ "sense": 2,
+ "confidence": 4,
+ "closing": "A judgment call was needed because the pre-parsed YAML has 'costs: []', yet 'form' is 'equation' (not an identity or definition), 'molecular mass m' carries resistance ('Mass is resistance'), and the statement explicitly says the spread of speeds 'shrinks with the square root of molecular mass' (÷ m). Applying the prose rule that a limit caused by mass/resistance turns around flips the shrinking with m into rising with Movement M and alignment while keeping the formula unaltered.",
+ "knew_tsr": false
+}

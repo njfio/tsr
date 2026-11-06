@@ -1,0 +1,27 @@
+{
+ "id": "rel.gravitational_time_dilation",
+ "physical": "A clock deeper in a gravitational well runs slower than one higher up; the effect depends on depth in the well, not on the clock's own mass.",
+ "reflected_formula": "",
+ "reflected_sentence": "No complete reflection has frozen vocabulary partners.",
+ "shape": "keeps",
+ "rule_reason": "No cost or separation is supplied, so the relationship keeps; central mass in the formula does not itself create a resistance-cost.",
+ "rule_trace": [
+  "none"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "clock",
+  "depth in a gravitational well",
+  "radius r",
+  "gravitational constant G",
+  "proper versus coordinate time distinction"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "Expansion Dilation. Vortex; Expansion; Movement M; Current.",
+ "conflicts": "none",
+ "sense": 2,
+ "confidence": 7,
+ "closing": "The given cost list is empty, and the statement names clock-rate dependence rather than a difficulty or resistance-caused limit. The rule therefore keeps without treating every occurrence of mass as a turning instruction. Expansion Dilation and Vortex provide names, but the missing radius, G and depth mappings prevent a full formula or relational interpretation.",
+ "knew_tsr": false
+}

@@ -1,0 +1,389 @@
+[
+  {
+    "id": "qm.born_rule",
+    "physical": "The probability of an outcome is the squared magnitude of its amplitude. P = |ψ|²",
+    "reflected_formula": "[probability: no partner] = |[wavefunction amplitude: no partner]|²",
+    "reflected_sentence": "How likely a realization is stays tied in the same way to the strength of the state that leads to it.",
+    "shape": "keeps",
+    "rule_reason": "definition; no cost caused by resistance and no separation",
+    "rule_trace": [
+      "identity"
+    ],
+    "forced": true,
+    "unmapped_terms": [
+      "probability",
+      "wavefunction amplitude",
+      "outcome",
+      "squared magnitude"
+    ],
+    "new_words": [],
+    "monotone_claims": [],
+    "interpretation": "The definition keeps its shape. With no partners for its terms it says nothing on the nonphysical side, and the square is a number that cannot cross the mirror.",
+    "conflicts": "\"Nothing on the nonphysical side has a number, a unit or a distance\" (the square and the probability value are numbers)",
+    "sense": 1,
+    "confidence": 7,
+    "closing": "The rule decided the shape on its own (definition, so keeps). But the reflection is empty, because probability and amplitude have no partner in the vocabulary, and a probability is itself a number.",
+    "knew_tsr": false
+  },
+  {
+    "id": "qm.bound_state_quantization",
+    "physical": "A particle confined to a region has only discrete allowed energies; the spacing grows as the region shrinks and falls as the particle's mass rises. E_n = n² × π² × ħ² ÷ (2 × m × L²)",
+    "reflected_formula": "E_n = [quantum number: no partner]² × π² × [Planck constant: no partner]² ÷ (2 × Movement M × [length: no partner]²)",
+    "reflected_sentence": "What being held in made limited, only some E allowed, turns around and becomes limitless: E is already there for Movement M in every form, not only in the ones that fit.",
+    "shape": "turns around",
+    "rule_reason": "one separation made by distance (the confinement length L); the cost falls with mass rather than rising with it, so it does not count as a resistance cost; one turn in total, so it turns around",
+    "rule_trace": [
+      "separation"
+    ],
+    "forced": false,
+    "unmapped_terms": [
+      "quantum number",
+      "Planck constant",
+      "length",
+      "confinement",
+      "region",
+      "particle",
+      "discrete allowed energies"
+    ],
+    "new_words": [],
+    "monotone_claims": [],
+    "interpretation": "E is shared by both sides; the discreteness the confinement makes is limited, and its reflection is limitless. Movement M is the partner of mass m, but here mass eased the limit, so the reflection gives Movement M no clear role.",
+    "conflicts": "\"Units don't cross the mirror\" / \"Nothing on the nonphysical side has a number\" (the levels are counted by n)",
+    "sense": 2,
+    "confidence": 3,
+    "closing": "This needed a judgment call. The cost entry falls with mass, which is the opposite of 'a cost that rises with resistance'. I left it out, so only the separation counts and the relation turns around. If you count the mass dependence as a resistance cost anyway, you get two costs, and the relation keeps its shape. The word 'discrete' is quantitative and has no partner.",
+    "knew_tsr": false
+  },
+  {
+    "id": "qm.complementarity",
+    "physical": "The more which-path information an interferometer records, the less visible its interference fringes; D² + V² ≤ 1",
+    "reflected_formula": "[which-path information: no partner]² + [interference visibility: no partner]² ≤ 1",
+    "reflected_sentence": "The trade-off between telling two ways apart and seeing how they culminate together keeps its shape.",
+    "shape": "keeps",
+    "rule_reason": "an inequality between two measures; there is no cost caused by resistance and no separation",
+    "rule_trace": [
+      "none"
+    ],
+    "forced": true,
+    "unmapped_terms": [
+      "which-path information",
+      "interference visibility",
+      "interferometer",
+      "fringes"
+    ],
+    "new_words": [],
+    "monotone_claims": [],
+    "interpretation": "Nothing in it carries resistance, so it keeps its shape. It is a sum of squares bounded by a number, and none of that can cross the mirror.",
+    "conflicts": "\"Nothing on the nonphysical side has a number\"; it is also a sum, which the traps warn against wherever the book has products (here physics itself has the sum)",
+    "sense": 1,
+    "confidence": 6,
+    "closing": "The rule decided the shape: no resistance and no distance, so it keeps. The trade-off looks like a limit, but nothing that carries resistance causes it. Both terms are unmapped, so the reflection is empty.",
+    "knew_tsr": false
+  },
+  {
+    "id": "qm.decoherence",
+    "physical": "Two branches lose coherence faster the more strongly they couple to the environment and the farther apart in position they are. Γ ∝ Λ × (Δx)²",
+    "reflected_formula": "[decoherence rate: no partner] ∝ [environment coupling: no partner] × ([length: no partner])²",
+    "reflected_sentence": "What being apart made harder turns around: two vibrations stay able to culminate together more easily, not less, the more Vibration they span.",
+    "shape": "turns around",
+    "rule_reason": "one separation made by distance (branch separation Δx); environment coupling does not carry resistance, so it adds no resistance cost; one turn, so it turns around",
+    "rule_trace": [
+      "separation"
+    ],
+    "forced": false,
+    "unmapped_terms": [
+      "decoherence rate",
+      "environment coupling",
+      "length",
+      "coherence",
+      "branch",
+      "superposition",
+      "phase relations"
+    ],
+    "new_words": [],
+    "monotone_claims": [],
+    "interpretation": "The separation made by distance turns around, so what physics loses with separation is kept with receptivity. But the rate and the coupling have no partner, and a rate is not Frequency, so the reflected relation has nothing to stand on.",
+    "conflicts": "\"No distance, time, location, travel or quantities on the nonphysical side\" (the reflected sentence needs some partner for the branch separation, and 'Vibration lies between them' comes close to a distance)",
+    "sense": 2,
+    "confidence": 4,
+    "closing": "The trace came out cleanly as a single separation, so the relation turns around. But the reflected sentence is hard to write without bringing distance back in, and every term except length's separation role is unmapped. Whether 'separation' fires when the term is only squared in a rate is my judgment call. The terms say coupling is not resistance, although it acts like opposition.",
+    "knew_tsr": false
+  },
+  {
+    "id": "qm.entanglement",
+    "physical": "Measurements on two entangled particles are correlated more strongly than any local account allows, and the correlation does not weaken with their separation.",
+    "reflected_formula": "",
+    "reflected_sentence": "The link between two realizations keeps its shape: what was already untouched by being apart stays untouched on the side where nothing is apart.",
+    "shape": "keeps",
+    "rule_reason": "a statistical correlation that does not depend on the separation; no cost caused by resistance; the separation is present but does not cause a cost",
+    "rule_trace": [
+      "none"
+    ],
+    "forced": false,
+    "unmapped_terms": [
+      "probability",
+      "length",
+      "entanglement",
+      "correlation",
+      "measurement",
+      "particle",
+      "local account"
+    ],
+    "new_words": [],
+    "monotone_claims": [],
+    "interpretation": "A separation appears in the statement but limits nothing, so nothing turns. On the nonphysical side there is no separation at all, so the reflection keeps the shape and is trivial.",
+    "conflicts": "none",
+    "sense": 3,
+    "confidence": 4,
+    "closing": "Judgment call. The rule says 'a separation made by distance also turns around', and a distance-carrying separation is in the statement. But the cost list is empty, and the relation says the separation makes no difference. I read the rule as applying only to separations that impose a cost, so the relation keeps its shape. A strict literal reading would turn it around, and then the result says the correlation weakens with receptivity, which is nonsense.",
+    "knew_tsr": false
+  },
+  {
+    "id": "qm.measurement_collapse",
+    "physical": "A measurement yields one of the observable's eigenvalues, and afterwards the system is in the corresponding eigenstate; which value appears is not determined by the prior state.",
+    "reflected_formula": "",
+    "reflected_sentence": "What happens when a state is met keeps its shape: one realization appears and the state matches it, without the prior state fixing which one.",
+    "shape": "keeps",
+    "rule_reason": "a statistical law; no cost caused by resistance and no separation",
+    "rule_trace": [
+      "none"
+    ],
+    "forced": true,
+    "unmapped_terms": [
+      "probability",
+      "wavefunction amplitude",
+      "measurement",
+      "observable",
+      "eigenvalue",
+      "eigenstate",
+      "system"
+    ],
+    "new_words": [],
+    "monotone_claims": [],
+    "interpretation": "It keeps its shape. The only partner available is 'actualization' becoming 'realization', and that would be a creative rescue, so I did not use it.",
+    "conflicts": "none",
+    "sense": 1,
+    "confidence": 6,
+    "closing": "The rule decided the shape (keeps). It is tempting to map collapse to actualization/realization, but the rule does not license that, so I left it unmapped. The word 'afterwards' implies time, and time cannot cross.",
+    "knew_tsr": false
+  },
+  {
+    "id": "qm.no_cloning",
+    "physical": "No physical operation can make an independent copy of an arbitrary unknown quantum state.",
+    "reflected_formula": "",
+    "reflected_sentence": "The limit keeps its shape: nothing can make a second independent state out of an unknown one, because that limit does not come from the gap.",
+    "shape": "keeps",
+    "rule_reason": "a limit, but not one caused by resistance (no term carries resistance); no separation",
+    "rule_trace": [
+      "none"
+    ],
+    "forced": true,
+    "unmapped_terms": [
+      "wavefunction amplitude",
+      "quantum state",
+      "copy",
+      "operation"
+    ],
+    "new_words": [],
+    "monotone_claims": [],
+    "interpretation": "Only limits caused by resistance turn around, and this one comes from the linear structure, so it keeps its shape. Limited does not become limitless here.",
+    "conflicts": "none",
+    "sense": 2,
+    "confidence": 5,
+    "closing": "Mostly forced. The property row 'limited becomes limitless' pulls toward turning every limit around, but the deciding question looks at the cause, and nothing here carries resistance. So it keeps its shape.",
+    "knew_tsr": false
+  },
+  {
+    "id": "qm.pauli_exclusion",
+    "physical": "No two identical fermions can occupy the same quantum state; the many-body state is antisymmetric under exchange.",
+    "reflected_formula": "",
+    "reflected_sentence": "The symmetry keeps its shape: two alike of this kind do not share one state, and trading them flips the sign of the whole.",
+    "shape": "keeps",
+    "rule_reason": "symmetry (antisymmetry under exchange)",
+    "rule_trace": [
+      "identity"
+    ],
+    "forced": true,
+    "unmapped_terms": [
+      "spin",
+      "fermion",
+      "quantum state",
+      "exchange antisymmetry"
+    ],
+    "new_words": [],
+    "monotone_claims": [],
+    "interpretation": "Symmetries keep their shape. The exclusion reads like a limit, but it follows from the symmetry and not from resistance.",
+    "conflicts": "none",
+    "sense": 1,
+    "confidence": 6,
+    "closing": "Decided by the rule: a symmetry keeps its shape. One could argue the exclusion is a limit, but resistance does not cause it. The words 'occupy' and 'same state' suggest location, which cannot cross.",
+    "knew_tsr": false
+  },
+  {
+    "id": "qm.spin",
+    "physical": "Particles carry an intrinsic angular momentum quantized in multiples of the reduced Planck constant, not a rotation in space.",
+    "reflected_formula": "",
+    "reflected_sentence": "The definition keeps its shape: momentum that belongs to the thing itself is still momentum, and what is not a turning in space is not a turning in Vibration.",
+    "shape": "keeps",
+    "rule_reason": "definition",
+    "rule_trace": [
+      "identity"
+    ],
+    "forced": true,
+    "unmapped_terms": [
+      "spin",
+      "Planck constant",
+      "angular",
+      "quantized multiples",
+      "particle",
+      "rotation"
+    ],
+    "new_words": [],
+    "monotone_claims": [],
+    "interpretation": "Momentum maps to momentum and space maps to Vibration. The quantization is in numbers, so it cannot cross, and only the bare definition is left.",
+    "conflicts": "\"Nothing on the nonphysical side has a number\" (half-integer and integer multiples)",
+    "sense": 2,
+    "confidence": 7,
+    "closing": "Decided by the rule: a definition keeps its shape. The only mapped words are momentum and space. 'Angular' and the half-integer counting have no partner.",
+    "knew_tsr": false
+  },
+  {
+    "id": "qm.superposition",
+    "physical": "Any linear combination of allowed states is an allowed state; the state space is linear.",
+    "reflected_formula": "",
+    "reflected_sentence": "The identity keeps its shape: any blending of allowed states is itself an allowed state.",
+    "shape": "keeps",
+    "rule_reason": "identity (linearity of the state space)",
+    "rule_trace": [
+      "identity"
+    ],
+    "forced": true,
+    "unmapped_terms": [
+      "wavefunction amplitude",
+      "state",
+      "linear combination",
+      "state space"
+    ],
+    "new_words": [],
+    "monotone_claims": [],
+    "interpretation": "It keeps its shape. A linear combination is a sum, and on the nonphysical side two vibrations culminate rather than add. Mapping one to the other would be a rescue, so I left it alone.",
+    "conflicts": "\"No sums where the book has products\" (linearity is a sum; arguably the book would read combining as culminating)",
+    "sense": 2,
+    "confidence": 6,
+    "closing": "The rule decided the shape (identity, so keeps). The open question is whether superposition's sum should be read as 'culminate', which the vocabulary offers as what two vibrations do instead of cancel. That is interpretation, not the rule.",
+    "knew_tsr": false
+  },
+  {
+    "id": "qm.tunneling",
+    "physical": "A particle can cross a barrier higher than its energy; the chance falls exponentially with the barrier's width, with the square root of its height above the particle's energy, and with the square root of the particle's mass. T ≈ exp(−2 × κ × d), κ = √(2 × m × (V − E)) ÷ ħ",
+    "reflected_formula": "[probability: no partner] ≈ exp(−2 × κ × [barrier width: no partner]), κ = √(2 × Movement M × ([barrier height: no partner] − E)) ÷ [Planck constant: no partner]",
+    "reflected_sentence": "What was harder the more resistant the thing was turns around: passing what stood above E gets easier the more receptive Movement M is, so what was out of reach is already there.",
+    "shape": "turns around",
+    "rule_reason": "one cost caused by resistance (getting through the barrier rises with mass m); barrier height is undetermined; no separation, because the width does not carry distance; one cost, so it turns around",
+    "rule_trace": [
+      "resistance-cost"
+    ],
+    "forced": false,
+    "unmapped_terms": [
+      "probability",
+      "barrier height",
+      "barrier width",
+      "Planck constant",
+      "barrier",
+      "exponential"
+    ],
+    "new_words": [],
+    "monotone_claims": [
+      {
+        "rises": "receptivity",
+        "with": "alignment",
+        "sign": 1
+      }
+    ],
+    "interpretation": "Mass is resistance, and its partner Movement M is receptive, so the cost that rose with mass becomes an ease that rises with receptivity. E is shared by both sides; the barrier and its height have no partner, so only the turning survives.",
+    "conflicts": "\"No sums where the book has products\" (V − E is a difference inside the formula, kept as instructed); \"Nothing on the nonphysical side has a number\" (the exponential)",
+    "sense": 3,
+    "confidence": 4,
+    "closing": "Judgment call on two points. First, barrier height is undetermined. If it carries resistance and each resistance factor counts separately, there are two and the relation keeps its shape; if the count is per cost entry, there is one, and it turns around. I counted the single cost entry. Second, the formula has V − E, a difference, which I kept without rewriting. The monotone claim is close to a tautology because the probability has no partner.",
+    "knew_tsr": false
+  },
+  {
+    "id": "qm.uncertainty_energy_time",
+    "physical": "A state that lasts only a short time has a correspondingly broad energy. ΔE × Δt ≥ ħ ÷ 2",
+    "reflected_formula": "ΔE × ΔExpansion ≥ [Planck constant: no partner] ÷ 2",
+    "reflected_sentence": "The product keeps its shape: how wide E is and how wide Expansion is cannot both be narrow at once.",
+    "shape": "keeps",
+    "rule_reason": "an inequality with no cost caused by resistance (energy, time and the Planck constant carry no resistance) and no separation",
+    "rule_trace": [
+      "none"
+    ],
+    "forced": true,
+    "unmapped_terms": [
+      "Planck constant",
+      "spread",
+      "state lifetime"
+    ],
+    "new_words": [],
+    "monotone_claims": [],
+    "interpretation": "E is shared by both sides and time maps to Expansion, so the product carries over and keeps its shape. But a spread and a lower bound are quantities, so the reflection has no content on the nonphysical side.",
+    "conflicts": "\"Nothing on the nonphysical side has a number, a unit or a distance\" (½ and the bound)",
+    "sense": 2,
+    "confidence": 6,
+    "closing": "The rule decided the shape: nothing carries resistance, so it keeps. The trouble is that the relation is a numerical bound, and numbers do not cross. 'Spread of Expansion' is already close to bringing quantities in.",
+    "knew_tsr": false
+  },
+  {
+    "id": "qm.uncertainty_position_momentum",
+    "physical": "The spreads of position and momentum cannot both be made small. Δx × Δp ≥ ħ ÷ 2",
+    "reflected_formula": "Δ[length: no partner] × Δmomentum ≥ [Planck constant: no partner] ÷ 2",
+    "reflected_sentence": "The product keeps its shape: how wide the extent is and how wide momentum is cannot both be narrow at once.",
+    "shape": "keeps",
+    "rule_reason": "an inequality with no cost caused by resistance and no separation (the position spread is marked as not carrying distance)",
+    "rule_trace": [
+      "none"
+    ],
+    "forced": true,
+    "unmapped_terms": [
+      "length",
+      "Planck constant",
+      "position",
+      "spread"
+    ],
+    "new_words": [],
+    "monotone_claims": [],
+    "interpretation": "It keeps its shape. Position could only map to Vibration, the partner of space, but the table gives length no partner, and on the nonphysical side there is no location.",
+    "conflicts": "\"No distance, time, location... on the nonphysical side\" (position is a location); \"Nothing on the nonphysical side has a number\"",
+    "sense": 1,
+    "confidence": 6,
+    "closing": "The rule decided the shape (keeps). It is a bound on quantities and on position, which is a location, so the reflection is nearly empty. I did not map position to Vibration, because the table says length is extent and has no partner.",
+    "knew_tsr": false
+  },
+  {
+    "id": "qm.zero_point_energy",
+    "physical": "The lowest energy of a bound system is not zero; an oscillator's ground state keeps half a quantum of energy. E0 = ½ × ħ × ω",
+    "reflected_formula": "E0 = ½ × [Planck constant: no partner] × [frequency (physical): no partner]",
+    "reflected_sentence": "The limit keeps its shape: the lowest state still holds E and is never empty, because that floor does not come from the gap.",
+    "shape": "keeps",
+    "rule_reason": "a limit, but not caused by resistance (nothing here carries resistance); no separation",
+    "rule_trace": [
+      "none"
+    ],
+    "forced": true,
+    "unmapped_terms": [
+      "Planck constant",
+      "frequency (physical)",
+      "ground state",
+      "oscillator",
+      "bound system",
+      "quantum"
+    ],
+    "new_words": [],
+    "monotone_claims": [],
+    "interpretation": "E is shared by both sides and never reaches nothing, so the floor keeps its shape. Physical frequency must not be read as Frequency, so the only surviving term is E.",
+    "conflicts": "\"Frequency is not a rate and not cycles per second\" (would be violated if ω were mapped to Frequency); \"Nothing on the nonphysical side has a number\" (½)",
+    "sense": 2,
+    "confidence": 6,
+    "closing": "Decided by the rule. It is a limit, but resistance does not cause it, so it keeps its shape. The obvious trap, ω becoming Frequency, is refused. 'Bound system' suggests confinement but carries no separation cost here.",
+    "knew_tsr": false
+  }
+]

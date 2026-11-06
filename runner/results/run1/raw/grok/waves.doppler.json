@@ -1,0 +1,24 @@
+{
+ "id": "waves.doppler",
+ "physical": "A receiver moving toward a source, or a source moving toward a receiver, measures a higher frequency than the one emitted; moving apart, a lower one.",
+ "reflected_formula": "",
+ "reflected_sentence": "The measured rate keeps its relation to the emitted rate: it rises when the receiver's rise per Expansion or the source's rise per Expansion brings them together, and it falls when they part, against the medium's rate.",
+ "shape": "keeps",
+ "rule_reason": "No costs are listed, and none of the quantities carry resistance, so the kinematic equation keeps.",
+ "rule_trace": [
+  "none"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "emitted frequency f",
+  "wave speed v"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "Rise per Expansion keeps its relation, and the relation does not turn. Frequency is not this rate. The gap and alignment do not enter an equation with no cost.",
+ "conflicts": "none",
+ "sense": 1,
+ "confidence": 6,
+ "closing": "Empty costs and no resistance-carrying quantity, so the relation keeps. Receiver and source velocity map to rise per Expansion, but the physical rate must not be called Frequency and wave speed has no partner, so the formula has no complete word-map. The prose is about moving toward and apart, which cannot cross; I did not add a separation the cost block left empty, and the kept reading is nonsense on the nonphysical side for that reason.",
+ "knew_tsr": false
+}

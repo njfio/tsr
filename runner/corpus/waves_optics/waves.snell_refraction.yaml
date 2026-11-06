@@ -1,0 +1,14 @@
+id: waves.snell_refraction
+domain: waves_optics
+title: "Refraction (Snell's law)"
+statement: "Crossing into a medium with a different refractive index, a ray bends so that index times the sine of the angle is the same on both sides."
+formula: "n1 × sin θ1 = n2 × sin θ2"
+form: equation
+variables:
+  - {name: refractive index n, quantity: refractive index}
+  - {name: angle θ, quantity: angle}
+costs: []
+standard_sources: ["Hecht, Optics, ch. 4"]
+book_status: unreflected
+review: pending
+notes: "No difficulty asserted: keeps, regardless of the refractive-index joint (which only bites inside a cost block)."

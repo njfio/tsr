@@ -1,0 +1,14 @@
+id: field.noether
+domain: field_theory
+title: "Noether's theorem"
+statement: "Every continuous symmetry of the action corresponds to a conserved quantity: time translation to energy, space translation to momentum, rotation to angular momentum, phase to charge."
+form: identity
+variables:
+  - {name: energy, quantity: energy}
+  - {name: momentum, quantity: momentum}
+  - {name: charge, quantity: charge}
+costs: []
+standard_sources: ["Noether 1918"]
+book_status: unreflected
+review: pending
+notes: "Ties conservation (which the book keeps) to symmetry (which the book keeps). A4 has nothing to compose here; Layer B may test the sentence against the book's conservation claim."

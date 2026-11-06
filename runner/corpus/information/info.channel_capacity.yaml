@@ -1,0 +1,15 @@
+id: info.channel_capacity
+domain: information
+title: "Channel capacity"
+statement: "The greatest rate at which information can be sent reliably through a noisy channel is the bandwidth times the log of one plus the signal-to-noise ratio."
+formula: "C = B × log(1 + S ÷ N)"
+form: definition
+variables:
+  - {name: capacity C, quantity: channel capacity}
+  - {name: bandwidth B, quantity: bandwidth}
+  - {name: signal power S, quantity: power}
+  - {name: noise power N, quantity: noise power}
+costs: []
+standard_sources: ["Shannon 1948 (Shannon-Hartley)"]
+book_status: unreflected
+review: pending

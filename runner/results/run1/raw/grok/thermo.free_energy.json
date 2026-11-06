@@ -1,0 +1,26 @@
+{
+ "id": "thermo.free_energy",
+ "physical": "Gibbs free energy is enthalpy minus temperature times entropy; at fixed temperature and pressure a process is spontaneous when it lowers the free energy. G = H − T × S",
+ "reflected_formula": "unmatched energy-form = unmatched energy-form − unmatched condition × Culmination",
+ "reflected_sentence": "The definition keeps: one unmatched energy-form is another unmatched energy-form minus an unmatched condition times Culmination, and a process still runs when the first form falls.",
+ "shape": "keeps",
+ "rule_reason": "Definition, and the cost block is empty. Definitions keep. Entropy maps to Culmination and does not carry resistance; temperature, enthalpy, free energy, and pressure do not carry resistance either.",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "free energy",
+  "enthalpy",
+  "temperature",
+  "pressure"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "Culmination stays in the product, and the definition keeps. The fall that lets a process run is not turned into receptivity. Conscious energy and Movement are not in this definition.",
+ "conflicts": "none",
+ "sense": 3,
+ "confidence": 6,
+ "closing": "The rule decided on its own. It is a definition with an empty cost block, so it keeps, including the clause that a process runs when free energy falls. I did not promote that clause into a resistance-cost the record does not list. Entropy's provisional map to Culmination is used and not treated as opposition.",
+ "knew_tsr": false
+}

@@ -1,0 +1,19 @@
+id: mech.damping
+domain: calibration
+title: "Damped oscillation"
+statement: "A damping force opposing velocity drains an oscillation: the amplitude decays exponentially, faster the larger the damping coefficient."
+formula: "A(t) = A0 × exp(−b t ÷ 2m)"
+form: equation
+variables:
+  - {name: damping coefficient b, quantity: damping coefficient}
+  - {name: mass m, quantity: mass m}
+  - {name: amplitude A, quantity: amplitude}
+  - {name: time t, quantity: time}
+costs:
+  - what_gets_harder: "the oscillation surviving; amplitude lost per cycle rises with the damping"
+    rises_with: [damping coefficient]
+standard_sources: ["French, Vibrations and Waves, ch. 3"]
+book_status: ruled
+ruling: {shape: turns around, words: "decay → culmination", source: "Author-accepted candidate row (spec, Phase 3 hidden calibration item)"}
+review: "reviewed:spec-port"
+notes: "Hidden calibration item for Phase 3: must land as 'turns around → culmination' without the book's sentence in the prompt."

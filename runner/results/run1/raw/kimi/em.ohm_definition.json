@@ -1,0 +1,26 @@
+{
+ "id": "em.ohm_definition",
+ "physical": "Resistance is the ratio of the voltage across a conductor to the current through it. R = V ÷ I",
+ "reflected_formula": "R = V ÷ I",
+ "reflected_sentence": "The definition of opposition as push over flow keeps its shape, though on this side opposition itself can only appear as the gap.",
+ "shape": "keeps",
+ "rule_reason": "A definition: it states what resistance is, and definitions keep their shape under the rule.",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "electrical resistance R",
+  "voltage V",
+  "current I",
+  "conductor"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "The gap is push taken over flow; that is all this says. A definition does not turn. It only loses its word, since the word cannot cross.",
+ "conflicts": "none",
+ "sense": 2,
+ "confidence": 7,
+ "closing": "The rule decided: form is definition, therefore keeps. The awkwardness is lexical, not structural - the relation defines the very term the nonphysical side forbids, so the reflection can only gesture at it as the gap, which is why the sense score is low despite full confidence in the keeps call.",
+ "knew_tsr": false
+}

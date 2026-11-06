@@ -1,0 +1,25 @@
+{
+ "id": "qm.born_rule",
+ "physical": "The probability of an outcome is the squared magnitude of its amplitude.",
+ "reflected_formula": "",
+ "reflected_sentence": "The defining relationship keeps its shape.",
+ "shape": "keeps",
+ "rule_reason": "A definition keeps its shape, with no resistance costs; probability and wavefunction amplitude have no frozen partners.",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "probability P",
+  "amplitude ψ",
+  "outcome"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "",
+ "conflicts": "none",
+ "sense": 1,
+ "confidence": 7,
+ "closing": "The definition rule independently decides keeps. The vocabulary prevents a complete reflection, so the recorded shape is no partner. The formula and interpretation are empty rather than inventing partners or two unsupported frozen-vocabulary sentences; the reflected sentence is a diagnostic, not proposed nonphysical vocabulary.",
+ "knew_tsr": false
+}

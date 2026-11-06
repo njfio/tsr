@@ -1,0 +1,26 @@
+{
+ "id": "waves.interference_cancellation",
+ "physical": "Destructive interference at a point — Two waves in opposite phase cancel at a point; the cancellation is located, and energy is conserved overall. (no formula; equation)",
+ "reflected_formula": "",
+ "reflected_sentence": "Two vibrations that would cancel instead culminate; nothing holds them apart, and E is kept whole.",
+ "shape": "turns around",
+ "rule_reason": "The one cost ('two vibrations coexisting at one location') is a separation made by distance (the location carries distance) and rises with no resistance-carrying quantity. One separation = odd = turns around: coexisting is already there. 'Energy is conserved overall' is a conservation and keeps, but it is not a cost and does not change the parity.",
+ "rule_trace": [
+  "separation",
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "phase difference",
+  "amplitude",
+  "location of the point (banned word; removed by the turn itself)"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "The cancellation the physical side fixes to one spot has nowhere to be on the nonphysical side, because there is no separation. Two vibrations met culminate rather than cancel, and conscious energy stays whole. This is the table's own Ch 16 claim, reached here by the rule rather than assumed.",
+ "conflicts": "none",
+ "sense": 4,
+ "confidence": 5,
+ "closing": "The rule decided on its own: separation flag set, turns around; the conservation clause keeps alongside it without affecting parity. No judgment on shape. Two cautions. First, the frozen vocabulary already contains the answer ('culminate ... what two vibrations do instead of cancel (Ch 16)'), so this row cannot test the rule; the table was built from this case. Second, the turn worked partly because 'location' is a banned word: the thing the physical statement insists on (the cancellation is located) is removed by the vocabulary before the rule even runs, so it is hard to tell whether the rule or the word list did the turning.",
+ "knew_tsr": false
+}

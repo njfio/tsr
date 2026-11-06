@@ -1,0 +1,32 @@
+{
+ "id": "mech.angular_momentum",
+ "physical": "Angular momentum is moment of inertia times angular velocity (the rotational definition), and is conserved when no external torque acts.",
+ "reflected_formula": "",
+ "reflected_sentence": "Rotational momentum is the rotational distribution of Movement M times the rate of turning per Expansion, and is conserved when no turning Frequency acts.",
+ "shape": "keeps",
+ "rule_reason": "definition and conservation law (0 costs)",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "angular momentum",
+  "moment of inertia",
+  "angular velocity",
+  "torque"
+ ],
+ "new_words": [],
+ "monotone_claims": [
+  {
+   "rises": "momentum",
+   "with": "Movement M",
+   "sign": 1
+  }
+ ],
+ "interpretation": "The relation is a definition and conservation law with no costs, so it keeps its shape. However, angular momentum, moment of inertia, angular velocity, and torque have no partners in the frozen vocabulary.",
+ "conflicts": "none",
+ "sense": 1,
+ "confidence": 7,
+ "closing": "The rule clearly decides that a definition and conservation law with zero costs keeps its shape, while the rotational quantities go into unmapped_terms.",
+ "knew_tsr": false
+}

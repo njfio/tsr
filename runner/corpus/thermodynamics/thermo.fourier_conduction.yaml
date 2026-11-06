@@ -1,0 +1,15 @@
+id: thermo.fourier_conduction
+domain: thermodynamics
+title: "Heat conduction (Fourier) and thermal resistance"
+statement: "The heat flowing through a slab for a given temperature difference falls as the slab's thermal resistance (thickness over conductivity times area) rises."
+formula: "q = ΔT ÷ R_th"
+form: equation
+variables:
+  - {name: heat flow q, quantity: heat}
+  - {name: temperature difference ΔT, quantity: temperature}
+  - {name: thermal resistance R_th, quantity: thermal resistance}
+costs:
+  - {what_gets_harder: "heat getting through for a given temperature difference", rises_with: [thermal resistance]}
+standard_sources: ["Fourier 1822; Incropera, Fundamentals of Heat and Mass Transfer, ch. 3"]
+book_status: unreflected
+review: pending

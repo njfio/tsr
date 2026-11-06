@@ -1,0 +1,25 @@
+{
+ "id": "mech.torque",
+ "physical": "Torque equals moment of inertia times angular acceleration: the rotational form of Newton's second law, read as the definition of torque's effect.",
+ "reflected_formula": "",
+ "reflected_sentence": "Rotational Frequency equals the rotational distribution of Movement M times rotational Appreciation.",
+ "shape": "keeps",
+ "rule_reason": "definition with 0 costs in the primary record (1 resistance cost in the alternate statement)",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "torque",
+  "moment of inertia",
+  "angular acceleration"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "Read as a definition with zero costs in the primary record, the relation keeps its shape; read as the alternate law where required torque rises with moment of inertia, the single resistance cost turns around. Torque, moment of inertia, and angular acceleration are recorded in unmapped_terms.",
+ "conflicts": "none",
+ "sense": 1,
+ "confidence": 7,
+ "closing": "The primary record is explicitly marked as a definition with an empty costs list, which forces keeps, while the alternate statement has one resistance cost (moment of inertia) which would turn around.",
+ "knew_tsr": false
+}

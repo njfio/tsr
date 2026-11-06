@@ -1,0 +1,454 @@
+[
+  {
+    "id": "field.asymptotic_freedom",
+    "physical": "The strong coupling becomes weak at short distances and high energies: quarks close together interact almost freely, and the interaction grows as they are pulled apart.",
+    "reflected_formula": "",
+    "reflected_sentence": "The Frequency grows with alignment and high E: in alignment the Frequency is strong, and the Frequency falls as the gap grows.",
+    "shape": "turns around",
+    "rule_reason": "Separation made by distance turns around (1 cost).",
+    "rule_trace": [
+      "separation"
+    ],
+    "forced": false,
+    "unmapped_terms": [
+      "strong coupling α_s",
+      "running coupling",
+      "quark",
+      "momentum transfer Q"
+    ],
+    "new_words": [],
+    "monotone_claims": [
+      {
+        "rises": "Frequency",
+        "with": "alignment",
+        "sign": 1
+      }
+    ],
+    "interpretation": "In Vibration, the gap turns around into alignment. Where there is alignment and E, the Frequency rises instead of falling. What grew with separation now grows with alignment.",
+    "conflicts": "none",
+    "sense": 2,
+    "confidence": 4,
+    "closing": "The primary statement frames the interaction growing with separation made by distance, which triggers the separation rule to turn around, whereas the alternate statement reads as a running with energy scale with no costs. In addition, core terms like strong coupling, quark, and momentum scale Q lack partners in the frozen vocabulary.",
+    "knew_tsr": false
+  },
+  {
+    "id": "field.confinement",
+    "physical": "The force between two quarks does not weaken with separation; the energy stored in the color flux tube grows linearly with distance until it is enough to make a new quark-antiquark pair, so no quark is ever found free.",
+    "reflected_formula": "E ≈ string tension σ × alignment",
+    "reflected_sentence": "The Frequency does not weaken across the gap; conscious energy grows with alignment so that realization is already there.",
+    "shape": "turns around",
+    "rule_reason": "Separation made by distance turns around, and string tension (QCD) is undetermined as a resistance carrier.",
+    "rule_trace": [
+      "separation",
+      "resistance-cost"
+    ],
+    "forced": false,
+    "unmapped_terms": [
+      "potential energy V",
+      "string tension σ",
+      "quark",
+      "antiquark",
+      "color flux tube"
+    ],
+    "new_words": [],
+    "monotone_claims": [
+      {
+        "rises": "conscious energy",
+        "with": "alignment",
+        "sign": 1
+      }
+    ],
+    "interpretation": "Frequency and conscious energy reflect force and physical energy across the Point of Reflection. Because separation turns around into alignment, what was impossible to finish becomes already realized in Vibration. However, string tension and quarks have no partners in the frozen vocabulary.",
+    "conflicts": "none",
+    "sense": 2,
+    "confidence": 3,
+    "closing": "This required a judgment call because string tension (QCD) is explicitly listed as UNDETERMINED for carrying resistance, making it ambiguous whether one cost (separation only, turning around) or two costs (separation plus resistance-cost from string tension, keeping shape) fire. Furthermore, string tension, potential energy, and quarks have no partners in the frozen vocabulary.",
+    "knew_tsr": false
+  },
+  {
+    "id": "field.cp_violation",
+    "physical": "The weak interaction treats matter and antimatter slightly differently: the combined operation of charge conjugation and parity is not an exact symmetry.",
+    "reflected_formula": "",
+    "reflected_sentence": "A weak Frequency treats two sides differently in Vibrational Reality: their combined reflection is not an exact equivalence.",
+    "shape": "keeps",
+    "rule_reason": "No resistance or separation costs; equation statement with zero costs keeps its shape.",
+    "rule_trace": [
+      "none"
+    ],
+    "forced": true,
+    "unmapped_terms": [
+      "weak interaction",
+      "matter",
+      "antimatter",
+      "charge conjugation",
+      "parity"
+    ],
+    "new_words": [],
+    "monotone_claims": [],
+    "interpretation": "No resistance or the gap appears in this relation, so the relationship keeps its shape. The physical terms of the relation have no partners in Vibrational Reality or Collective Reality.",
+    "conflicts": "none",
+    "sense": 1,
+    "confidence": 6,
+    "closing": "The rule for shape is clear since there are no costs or separations, so the relation keeps its shape, though nearly every noun in the statement lacks a partner in the frozen vocabulary.",
+    "knew_tsr": false
+  },
+  {
+    "id": "field.gauge_invariance",
+    "physical": "Requiring the laws to be unchanged under local phase changes of the matter fields forces the existence of the gauge fields that carry the forces.",
+    "reflected_formula": "",
+    "reflected_sentence": "Requiring the laws to be unchanged under changes of Vibration gives rise to what carries Frequency.",
+    "shape": "keeps",
+    "rule_reason": "Symmetry with no costs keeps its shape.",
+    "rule_trace": [
+      "identity"
+    ],
+    "forced": true,
+    "unmapped_terms": [
+      "local phase",
+      "matter fields",
+      "gauge fields"
+    ],
+    "new_words": [],
+    "monotone_claims": [],
+    "interpretation": "A symmetry keeps its shape across the Point of Reflection, and force reflects to Frequency. Because phase, matter fields, and gauge fields have no partners in the table, only the symmetry and Frequency cross over in frozen words.",
+    "conflicts": "none",
+    "sense": 1,
+    "confidence": 7,
+    "closing": "The rule cleanly identifies this as a symmetry with zero costs, so the keeps decision is forced, even though the field-theoretic terms are unmapped.",
+    "knew_tsr": false
+  },
+  {
+    "id": "field.higgs_mechanism",
+    "physical": "The masses of the W and Z bosons and of the fundamental fermions arise from their coupling to the Higgs field's nonzero vacuum value; a particle's mass is its coupling strength times that value.",
+    "reflected_formula": "Movement M = Yukawa coupling y_f × vacuum expectation value v ÷ √2",
+    "reflected_sentence": "Movement M arises from how receptivity Tunes to the underlying Vibration; Movement M is that Tune times that Vibration.",
+    "shape": "keeps",
+    "rule_reason": "Equation with empty costs block keeps its shape, though Higgs coupling (Yukawa) is marked UNDETERMINED and mass m carries resistance.",
+    "rule_trace": [
+      "none"
+    ],
+    "forced": false,
+    "unmapped_terms": [
+      "W and Z bosons",
+      "fermions",
+      "Yukawa coupling y_f",
+      "Higgs field",
+      "vacuum expectation value v"
+    ],
+    "new_words": [],
+    "monotone_claims": [],
+    "interpretation": "Mass m reflects to Movement M on the nonphysical side, and the equation keeps its shape when read from the empty cost block. The remaining terms in the formula have no partners in the table.",
+    "conflicts": "Nothing on the nonphysical side has a number, a unit or a distance.",
+    "sense": 1,
+    "confidence": 2,
+    "closing": "The prompt explicitly marks Higgs coupling (Yukawa) as UNDETERMINED and a judgment call, and although mass m carries resistance, the YAML lists costs as empty and form as equation. Under the record's empty cost block it keeps its shape, while the Yukawa coupling and vacuum expectation value remain unmapped.",
+    "knew_tsr": false
+  },
+  {
+    "id": "field.noether",
+    "physical": "Every continuous symmetry of the action corresponds to a conserved quantity: time translation to energy, space translation to momentum, rotation to angular momentum, phase to charge.",
+    "reflected_formula": "",
+    "reflected_sentence": "Every symmetry in Vibration-Expansion corresponds to what is conserved: Expansion to E, and Vibration to momentum.",
+    "shape": "keeps",
+    "rule_reason": "Identity and conservation law with no costs keeps its shape.",
+    "rule_trace": [
+      "identity"
+    ],
+    "forced": true,
+    "unmapped_terms": [
+      "action",
+      "translation",
+      "rotation",
+      "angular momentum",
+      "phase",
+      "charge"
+    ],
+    "new_words": [],
+    "monotone_claims": [],
+    "interpretation": "Expansion pairs with E, and Vibration pairs with momentum. Because action, rotation, angular momentum, phase, and charge have no partners in the table, only the Expansion-to-E and Vibration-to-momentum pairings can be stated in frozen words.",
+    "conflicts": "none",
+    "sense": 3,
+    "confidence": 7,
+    "closing": "The rule directly decides that an identity and conservation law with no costs keeps its shape, so no judgment call was needed on shape. However, several key terms in the statement (charge, phase, rotation, angular momentum, action) have no nonphysical partners in the frozen table.",
+    "knew_tsr": false
+  },
+  {
+    "id": "field.running_couplings",
+    "physical": "The strengths of the interactions depend on the energy scale at which they are probed: the electromagnetic coupling grows with energy, the strong coupling falls.",
+    "reflected_formula": "",
+    "reflected_sentence": "Frequency depends on E: Idle and Reflected Frequency grows with E, while strong Frequency falls with E.",
+    "shape": "keeps",
+    "rule_reason": "Equation with no resistance or separation costs keeps its shape.",
+    "rule_trace": [
+      "none"
+    ],
+    "forced": true,
+    "unmapped_terms": [
+      "running coupling",
+      "strong coupling"
+    ],
+    "new_words": [],
+    "monotone_claims": [
+      {
+        "rises": "Frequency",
+        "with": "E",
+        "sign": 1
+      }
+    ],
+    "interpretation": "E is shared by both sides of the Point of Reflection, and electric and magnetic reflect to Idle and Reflected. The relationship with E keeps its shape across the Point of Reflection.",
+    "conflicts": "none",
+    "sense": 2,
+    "confidence": 6,
+    "closing": "Neither running coupling nor energy carries resistance, and no separation is involved, so the rule forces a keeps-shape reading. However, coupling strength itself has no partner in the frozen vocabulary.",
+    "knew_tsr": false
+  },
+  {
+    "id": "field.vacuum_energy",
+    "physical": "The quantum vacuum has an energy density; the value field theory estimates and the value cosmology measures differ by many orders of magnitude.",
+    "reflected_formula": "",
+    "reflected_sentence": "Vibration has conscious energy and Desire; what imagination Tunes to and what emotional evidence shows differ across the gap.",
+    "shape": "keeps",
+    "rule_reason": "Definition with no costs keeps its shape.",
+    "rule_trace": [
+      "identity"
+    ],
+    "forced": true,
+    "unmapped_terms": [
+      "quantum vacuum",
+      "vacuum energy density",
+      "field theory",
+      "cosmology"
+    ],
+    "new_words": [],
+    "monotone_claims": [],
+    "interpretation": "Energy and density map to E and Desire, while empirical evidence maps to emotional evidence. Because quantum vacuum, field theory, and cosmology have no partners, and nothing on the nonphysical side has a number, the comparison of orders of magnitude has no exact vocabulary partner.",
+    "conflicts": "none",
+    "sense": 1,
+    "confidence": 7,
+    "closing": "The rule cleanly classifies this as a definition with no costs, so it keeps its shape. Vacuum energy density, field theory, and cosmology have no partners in the frozen vocabulary.",
+    "knew_tsr": false
+  },
+  {
+    "id": "field.weak_flavor_change",
+    "physical": "Only the weak interaction changes one kind of quark or lepton into another (through the charged W boson); the strong and electromagnetic interactions never do.",
+    "reflected_formula": "",
+    "reflected_sentence": "Only weak Frequency gives realization from one form into another; strong Frequency and Idle and Reflected Frequency never do.",
+    "shape": "keeps",
+    "rule_reason": "Identity with no costs keeps its shape.",
+    "rule_trace": [
+      "identity"
+    ],
+    "forced": true,
+    "unmapped_terms": [
+      "weak interaction",
+      "quark",
+      "lepton",
+      "charged W boson",
+      "strong interaction",
+      "coupling constant"
+    ],
+    "new_words": [],
+    "monotone_claims": [],
+    "interpretation": "Electric and magnetic reflect to Idle and Reflected, and transmutation has realization as its reflection. None of the particle types or the weak and strong interactions have partners in the frozen vocabulary, though the identity keeps its shape.",
+    "conflicts": "none",
+    "sense": 1,
+    "confidence": 7,
+    "closing": "As an identity with no resistance or separation costs, the rule forces the shape to keep, while almost all of the domain-specific nouns go into unmapped_terms.",
+    "knew_tsr": false
+  },
+  {
+    "id": "field.yukawa_range",
+    "physical": "A force carried by exchange of a virtual particle has a range of about the reduced Planck constant over the mediator's mass times c: the heavier the mediator, the shorter the reach.",
+    "reflected_formula": "range r ≈ Planck constant ħ ÷ (Movement M × Current)",
+    "reflected_sentence": "A Frequency has alignment that rises with Movement M and Current: the greater the Movement M, the greater the alignment.",
+    "shape": "turns around",
+    "rule_reason": "One cost caused by mass m (which carries resistance) turns the relationship around, so shorter reach with greater mass becomes greater alignment with greater Movement M.",
+    "rule_trace": [
+      "resistance-cost"
+    ],
+    "forced": true,
+    "unmapped_terms": [
+      "range r",
+      "Planck constant ħ",
+      "virtual particle",
+      "mediator"
+    ],
+    "new_words": [],
+    "monotone_claims": [
+      {
+        "rises": "Frequency",
+        "with": "Movement M",
+        "sign": 1
+      }
+    ],
+    "interpretation": "Mass m carries resistance, so the cost on reach turns around into receptivity and alignment with Movement M and Current. Greater Movement M makes alignment easier rather than harder.",
+    "conflicts": "none",
+    "sense": 2,
+    "confidence": 6,
+    "closing": "The rule clearly decides that the relation turns around because there is one cost that falls with mass m (which carries resistance). Planck constant ħ, virtual particle, and range r have no partners in the vocabulary table and are recorded in unmapped_terms.",
+    "knew_tsr": false
+  },
+  {
+    "id": "rel.energy_momentum_relation",
+    "physical": "A body's energy squared equals its momentum times c squared plus its rest energy squared; for a massless particle the energy is momentum times c.",
+    "reflected_formula": "E² = (momentum × Current)² + (Movement M × Current²)²",
+    "reflected_sentence": "E squared equals momentum times Current squared plus Movement M times Current squared squared; without Movement M, E is momentum times Current.",
+    "shape": "keeps",
+    "rule_reason": "Identity with no costs keeps its shape (despite mass m appearing in the formula, it is an equivalence/identity with zero costs).",
+    "rule_trace": [
+      "identity"
+    ],
+    "forced": false,
+    "unmapped_terms": [],
+    "new_words": [],
+    "monotone_claims": [
+      {
+        "rises": "E",
+        "with": "momentum",
+        "sign": 1
+      },
+      {
+        "rises": "E",
+        "with": "Movement M",
+        "sign": 1
+      }
+    ],
+    "interpretation": "In the Present, E relates momentum, Movement M, and Current as an equivalence. When Movement M is absent, E is momentum times Current.",
+    "conflicts": "No sums where the book has products.",
+    "sense": 3,
+    "confidence": 5,
+    "closing": "The form is an identity with no costs listed, so under the rule it keeps its shape even though mass m (which carries resistance) appears in the equation. However, the formula contains a sum (+) on the nonphysical side, which conflicts with the trap rule 'No sums where the book has products' alongside the Present (C^2 x M = E = m x c^2).",
+    "knew_tsr": false
+  },
+  {
+    "id": "rel.equivalence_principle",
+    "physical": "Gravitational mass equals inertial mass, so a freely falling observer feels no gravity: locally, free fall is indistinguishable from the absence of gravitation.",
+    "reflected_formula": "",
+    "reflected_sentence": "Movement M in Attraction equals Movement M, so in receptive alignment there is no gap from Attraction.",
+    "shape": "keeps",
+    "rule_reason": "Identity/equivalence with no costs keeps its shape.",
+    "rule_trace": [
+      "identity"
+    ],
+    "forced": false,
+    "unmapped_terms": [
+      "free fall",
+      "observer"
+    ],
+    "new_words": [],
+    "monotone_claims": [],
+    "interpretation": "Movement M is one equivalence across Attraction and Appreciation. Where there is no resistance, only alignment and Attraction remain.",
+    "conflicts": "none",
+    "sense": 3,
+    "confidence": 5,
+    "closing": "The rule specifies that equivalences and identities keep their shape, and costs are empty. A judgment call arises because mass m is defined as carrying resistance (inertial mass as opposition to a change in motion), and terms like 'freely falling' and 'observer' do not have direct entries in the frozen vocabulary.",
+    "knew_tsr": false
+  },
+  {
+    "id": "rel.gravitational_time_dilation",
+    "physical": "A clock deeper in a gravitational well runs slower than one higher up; the effect depends on depth in the well, not on the clock's own mass.",
+    "reflected_formula": "ΔExpansion = ΔExpansion ÷ √(1 − 2 × G × Movement M ÷ (r × Current²))",
+    "reflected_sentence": "Deeper in a Vortex, Expansion Dilation is greater than further out; the Expansion Dilation depends on the Vortex, not on one's own Movement M.",
+    "shape": "keeps",
+    "rule_reason": "Equation with an empty costs block in the record keeps its shape.",
+    "rule_trace": [
+      "none"
+    ],
+    "forced": false,
+    "unmapped_terms": [
+      "gravitational constant G",
+      "radius r",
+      "clock"
+    ],
+    "new_words": [],
+    "monotone_claims": [
+      {
+        "rises": "Expansion Dilation",
+        "with": "Movement M",
+        "sign": 1
+      }
+    ],
+    "interpretation": "A gravity well reflects to a Vortex, and time dilation reflects to Expansion Dilation. In the Vortex, Expansion Dilation rises with the central Movement M and Current, independent of one's own Movement M.",
+    "conflicts": "Nothing on the nonphysical side has a number, a unit or a distance.",
+    "sense": 3,
+    "confidence": 3,
+    "closing": "There is an ambiguity between the YAML specification (which lists zero costs and `carries_distance: false` for radius r, yielding `keeps`) and the general rule (which states mass M carries resistance and slower clock rates in a well could be read as a cost). Following the record's form and empty cost block gives `keeps`, while gravitational constant G and radius r go in unmapped_terms.",
+    "knew_tsr": false
+  },
+  {
+    "id": "rel.null_interval",
+    "physical": "Along a light ray the space-time interval is zero: no proper time passes for light, and its energy depends on who measures it.",
+    "reflected_formula": "dVibration-Expansion² = 0",
+    "reflected_sentence": "Along the Current, Vibration-Expansion has no gap: no Expansion passes for the Current, and its E depends on who Tunes to it.",
+    "shape": "keeps",
+    "rule_reason": "Identity with no costs keeps its shape.",
+    "rule_trace": [
+      "identity"
+    ],
+    "forced": true,
+    "unmapped_terms": [
+      "interval ds"
+    ],
+    "new_words": [],
+    "monotone_claims": [],
+    "interpretation": "Space-Time reflects to Vibration-Expansion, time reflects to Expansion, and the speed of light c reflects to the Current. For the Current, there is no gap in Vibration-Expansion, and E is shared across the Point of Reflection.",
+    "conflicts": "Nothing on the nonphysical side has a number, a unit or a distance.",
+    "sense": 4,
+    "confidence": 6,
+    "closing": "The relation is an identity with no costs, so it keeps its shape by the rule. The formula `ds² = 0` contains the unmapped interval symbol `ds` and the number `0`, while the rule states that nothing on the nonphysical side has a number.",
+    "knew_tsr": false
+  },
+  {
+    "id": "rel.relativistic_doppler",
+    "physical": "Light from a source receding at speed v is received at a lower frequency by the factor square root of (1 − β) over (1 + β); approaching, higher. No medium is involved and only the relative velocity matters.",
+    "reflected_formula": "f' = f × √((1 − rise per Expansion ÷ Current) ÷ (1 + rise per Expansion ÷ Current))",
+    "reflected_sentence": "The Current with rise per Expansion away is received at a lower rate, and with rise per Expansion toward, higher; only the relative rise per Expansion matters.",
+    "shape": "keeps",
+    "rule_reason": "Equation with no costs keeps its shape.",
+    "rule_trace": [
+      "none"
+    ],
+    "forced": true,
+    "unmapped_terms": [
+      "emitted frequency f",
+      "received frequency f'",
+      "source",
+      "medium"
+    ],
+    "new_words": [],
+    "monotone_claims": [],
+    "interpretation": "Velocity reflects to rise per Expansion, and the speed of light c reflects to Current. The equation has no resistance or separation costs and keeps its shape, though physical frequency has no partner in the frozen vocabulary.",
+    "conflicts": "Frequency is not a rate and not cycles per second. / Nothing on the nonphysical side has a number, a unit or a distance.",
+    "sense": 1,
+    "confidence": 7,
+    "closing": "From the record's form and empty cost block, the relation keeps its shape. However, the rule and traps explicitly state that physical frequency is a rate and is not TSR Frequency, so physical frequency `f` goes in unmapped_terms.",
+    "knew_tsr": false
+  },
+  {
+    "id": "rel.velocity_addition",
+    "physical": "Velocities compose so that the result never exceeds c: the combined speed is the sum divided by one plus the product over c squared.",
+    "reflected_formula": "rise per Expansion' = (rise per Expansion + rise per Expansion) ÷ (1 + rise per Expansion × rise per Expansion ÷ Current²)",
+    "reflected_sentence": "Rise per Expansion composes with rise per Expansion so that it stays within Current.",
+    "shape": "keeps",
+    "rule_reason": "Identity with no resistance or separation costs keeps its shape (c is the limit, not an opposition).",
+    "rule_trace": [
+      "identity"
+    ],
+    "forced": false,
+    "unmapped_terms": [],
+    "new_words": [],
+    "monotone_claims": [
+      {
+        "rises": "rise per Expansion",
+        "with": "Current",
+        "sign": 1
+      }
+    ],
+    "interpretation": "Every velocity reflects to rise per Expansion, and the speed of light c reflects to the Current. Composing rise per Expansion with rise per Expansion remains bounded by the Current.",
+    "conflicts": "Nothing on the nonphysical side has a number, a unit or a distance. / No sums where the book has products.",
+    "sense": 2,
+    "confidence": 4,
+    "closing": "Although the statement says the result 'never exceeds c' (which sounds like a limit), the quantity list specifies that `c` is 'the limit, not an opposition' and does not carry resistance, and the YAML classifies the form as `identity` with empty `costs`. Keeping the formula also introduces the number `1` and addition `+` on the nonphysical side, which conflicts with the rules against numbers and sums.",
+    "knew_tsr": false
+  }
+]

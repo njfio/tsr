@@ -1,0 +1,8 @@
+{
+ "id": "thermo.first_law",
+ "alternative_shape": null,
+ "rule_compliant": false,
+ "argument": "This is a conservation law, which the rule says keeps its shape; no variable carries resistance and no cost is present, so there is nothing for the mirror to turn.",
+ "reflected_sentence": "",
+ "knew_tsr": false
+}

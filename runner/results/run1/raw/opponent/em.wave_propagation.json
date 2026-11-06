@@ -1,0 +1,8 @@
+{
+ "id": "em.wave_propagation",
+ "alternative_shape": null,
+ "rule_compliant": false,
+ "argument": "The relation is an identity in which the Current (the speed of light) is fixed as the limit, not an opposition, and the two medium constants carry no resistance; identities keep their shape and no resistance-caused cost is present, so no rule-compliant alternative exists.",
+ "reflected_sentence": "",
+ "knew_tsr": false
+}

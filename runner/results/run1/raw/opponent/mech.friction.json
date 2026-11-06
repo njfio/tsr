@@ -1,0 +1,8 @@
+{
+ "id": "mech.friction",
+ "alternative_shape": "keeps",
+ "rule_compliant": true,
+ "argument": "The statement names two resistance-caused costs actually present: keeping the surfaces moving past each other gets harder, rising with the coefficient of friction, and the motion is turned into heat. Two is an even number of such costs, so the mirror keeps the shape; F = μ × N stands unrewritten.",
+ "reflected_sentence": "Where two surfaces meet in resonance, the Frequency rises with the resonance, and motion is still turned into heat; keeping the surfaces moving past each other still gets harder as the resonance rises.",
+ "knew_tsr": false
+}

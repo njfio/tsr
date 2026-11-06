@@ -1,0 +1,32 @@
+{
+ "id": "mech.bernoulli",
+ "physical": "Along a streamline of steady, inviscid, incompressible flow, pressure plus kinetic energy per volume plus gravitational energy per volume is constant. P + ½ × ρ × v² + ρ × g × h = const",
+ "reflected_formula": "P + ½ × Desire × (rise per Expansion)² + Desire × g × h = const (P, g and h have no partner)",
+ "reflected_sentence": "Along one steady flow, the sum of the push per area, Desire times the square of rise per Expansion, and Desire times the pull of the ground times how high the flow sits stays constant, and the relationship keeps its shape.",
+ "shape": "keeps",
+ "rule_reason": "A conservation law with no cost or separation listed: identity, keeps.",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "pressure",
+  "height",
+  "gravitational field g",
+  "streamline"
+ ],
+ "new_words": [],
+ "monotone_claims": [
+  {
+   "rises": "rise per Expansion",
+   "with": "Desire",
+   "sign": -1
+  }
+ ],
+ "interpretation": "The conservation crosses as a sum of three parts, two of which have Desire as a factor and one of which is unpaired. In frozen words it says only that Desire times the square of rise per Expansion trades against the rest of the sum, so with the rest held, more Desire means less rise per Expansion. That is not what the table leads one to expect of the strong frequency, but nothing in the table forbids it.",
+ "conflicts": "none",
+ "sense": 2,
+ "confidence": 7,
+ "closing": "The rule decided on its own: a conservation law with no listed cost keeps. Density carries the flipping condition and appears twice, but the fixed cost block is empty and the rule counts costs, not quantities, so I did not let that pull the row toward turning. Three of five terms have no partner, and the ½, the square and 'const' are numbers that the mirror is not supposed to carry; I kept them because the instruction says not to rewrite the formula. The physical sum is kept as a sum, since the trap only forbids turning the book's products into sums.",
+ "knew_tsr": false
+}

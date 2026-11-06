@@ -1,0 +1,8 @@
+{
+ "id": "qm.entanglement",
+ "alternative_shape": "turns around",
+ "rule_compliant": true,
+ "argument": "The separation between the two particles is a distance-made separation actually present in the statement (it is the flagged distance-carrying variable), and the rule says a separation made by distance turns around; keeping the relationship and flipping that condition gives a reading in which the shared answering holds as the gap closes rather than as it widens.",
+ "reflected_sentence": "Two vibrations that share one measure answer alike, and the nearness of their answering does not thin as the gap closes.",
+ "knew_tsr": false
+}

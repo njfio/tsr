@@ -1,0 +1,25 @@
+{
+ "id": "em.ohm_cost",
+ "physical": "For a given voltage, the current that flows falls as the resistance rises. I = V ÷ R",
+ "reflected_formula": "? = ? ÷ ?",
+ "reflected_sentence": "The relationship turns around so that what remains unnamed becomes easier with receptivity.",
+ "shape": "turns around",
+ "rule_reason": "The single explicit resistance cost turns around: the counterpart of flowing would become easier with greater receptivity, while the division in the formula stays. Current, voltage and electrical resistance lack quantity partners.",
+ "rule_trace": [
+  "resistance-cost"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "electric current I",
+  "voltage V",
+  "electrical resistance R"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "Receptivity does not supply the missing partners. Current does not complete this reflection.",
+ "conflicts": "none",
+ "sense": 1,
+ "confidence": 7,
+ "closing": "The explicit cost forces a turn independently of the definition reading elsewhere. Its reflected subject cannot be named in the frozen vocabulary, but under the amendment this does not change the shape call. Current maps the speed of light or Past, not electric current, and the condition receptivity is not a defined electrical quantity.",
+ "knew_tsr": false
+}

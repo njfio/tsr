@@ -1,0 +1,25 @@
+{
+ "id": "waves.diffraction",
+ "physical": "A wave passing through an aperture spreads; the narrower the aperture compared with the wavelength, the wider the spread.",
+ "reflected_formula": "",
+ "reflected_sentence": "Passing without a forced spread gets easier as receptivity grows, so a narrower extent against the wave's extent no longer makes a wider spread.",
+ "shape": "turns around",
+ "rule_reason": "One separation made by distance, and an odd count of such costs.",
+ "rule_trace": [
+  "separation"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "spreading angle θ",
+  "wavelength λ",
+  "aperture width a"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "The gap is what the separation becomes, and alignment makes the hard passing easier. Receptivity is the flipped condition. No Movement and no Frequency enter, and no table row is reached.",
+ "conflicts": "none",
+ "sense": 2,
+ "confidence": 5,
+ "closing": "The cost block flags one separation made by distance and an empty rises_with, so the odd-count rule turns the relation around without a call on whether aperture width carries resistance. The alternate statement, with no difficulty named and an empty cost list, would keep as a plain relation among three unmapped extents; I did not use it, because the given cost block already decides. Angle, wavelength, and aperture width have no partners, so the formula has no word-map.",
+ "knew_tsr": false
+}

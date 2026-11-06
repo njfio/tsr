@@ -1,0 +1,11 @@
+id: qm.superposition
+domain: quantum
+title: "Quantum superposition"
+statement: "Any linear combination of allowed states is an allowed state; the state space is linear."
+form: identity
+variables:
+  - {name: wavefunction amplitude, quantity: wavefunction amplitude}
+costs: []
+standard_sources: ["Dirac, Principles of Quantum Mechanics, ch. 1"]
+book_status: unreflected
+review: pending

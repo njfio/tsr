@@ -1,0 +1,32 @@
+{
+ "id": "em.coulomb",
+ "physical": "Coulomb's law: Two charges push or pull with a force proportional to the product of the charges and inversely proportional to the square of their separation. F = k × q1 × q2 ÷ r²",
+ "reflected_formula": "Frequency = [k: unmapped] × [charge: unmapped] × [charge: unmapped] ÷ [separation r: unmapped]²",
+ "reflected_sentence": "Two sources meet with a Frequency that is the product of the two, and that Frequency rises with alignment rather than falling with separation.",
+ "shape": "turns around",
+ "rule_reason": "separation made by distance: the interaction is weakened by the separation r (carries_distance true); one such cost, odd, so the reading turns around",
+ "rule_trace": [
+  "separation"
+ ],
+ "forced": false,
+ "unmapped_terms": [
+  "charge q",
+  "Coulomb constant k",
+  "separation r (length)",
+  "square (inverse-square dependence)"
+ ],
+ "new_words": [],
+ "monotone_claims": [
+  {
+   "rises": "Frequency",
+   "with": "alignment",
+   "sign": 1
+  }
+ ],
+ "interpretation": "Force crosses as Frequency, so the product of two [charges] gives a Frequency. The weakening by separation turns around: the Frequency grows as the gap closes, that is, with alignment. Nothing in the frozen words says what a [charge] is on the other side, so the product itself has no reading.",
+ "conflicts": "none",
+ "sense": 2,
+ "confidence": 5,
+ "closing": "The rule did not decide cleanly. The main statement lists no costs, which would make it keep, while the variable r is flagged carries_distance and the alternate statement names a separation cost; the rule's line that a separation made by distance turns around settled it, but that was my call between two readings of the same data. Charge has no partner in the table, and the table's electric/Idle pairing is not the same thing as charge, so the central terms cannot cross and the result says little. (Amendment 1 applied: shape is the rule's call on the relationship; unmapped terms are listed separately and described in plain words in the sentence.)",
+ "knew_tsr": false
+}

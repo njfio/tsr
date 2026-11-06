@@ -1,0 +1,30 @@
+{
+ "id": "waves.phase_velocity",
+ "physical": "A wave's phase advances by one cycle per wavelength; the phase velocity is wavelength times frequency, or angular frequency over wavenumber.",
+ "reflected_formula": "no partner",
+ "reflected_sentence": "The defining relationship for the repeating form keeps its shape.",
+ "shape": "keeps",
+ "rule_reason": "The definition keeps, and none of its quantities carries resistance. Phase velocity, angular frequency and wavenumber lack partners, so v_p = ω ÷ k has no complete frozen word-map image.",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "wave",
+  "phase",
+  "cycle",
+  "wavelength",
+  "phase velocity v_p",
+  "frequency (physical)",
+  "angular frequency ω",
+  "wavenumber k"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "No partner. No partner.",
+ "conflicts": "none",
+ "sense": 1,
+ "confidence": 7,
+ "closing": "The definition decides keeps without a judgment call; identity denotes that preserving branch in the restricted trace vocabulary. Physical frequency has no partner, and the generic velocity mapping does not settle phase velocity as a distinct quantity. No quantitative cycle reading can be carried over. The reporting markers are not proposed reflection terms.",
+ "knew_tsr": false
+}

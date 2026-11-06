@@ -1,0 +1,30 @@
+{
+ "id": "mech.damping",
+ "physical": "A damping force opposing velocity drains an oscillation: the amplitude decays exponentially, faster the larger the damping coefficient.",
+ "reflected_formula": "",
+ "reflected_sentence": "Instead of an opposing Frequency draining the extent of oscillation over Expansion, the oscillation is sustained more easily as receptivity and alignment rise.",
+ "shape": "turns around",
+ "rule_reason": "1 resistance cost: amplitude lost per cycle rises with the damping coefficient",
+ "rule_trace": [
+  "resistance-cost"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "damping coefficient",
+  "amplitude"
+ ],
+ "new_words": [],
+ "monotone_claims": [
+  {
+   "rises": "alignment",
+   "with": "receptivity",
+   "sign": 1
+  }
+ ],
+ "interpretation": "Time reflects to Expansion and mass m to Movement M, while the single resistance cost from the damping coefficient turns decay into sustaining with receptivity and alignment. Damping coefficient and amplitude have no partners in the frozen vocabulary and go in unmapped_terms.",
+ "conflicts": "none",
+ "sense": 2,
+ "confidence": 7,
+ "closing": "The single resistance cost on survival of the oscillation unambiguously fires resistance-cost to turn the reading around, with damping coefficient and amplitude listed in unmapped_terms.",
+ "knew_tsr": false
+}

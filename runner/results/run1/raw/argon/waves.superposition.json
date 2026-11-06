@@ -1,0 +1,32 @@
+{
+ "id": "waves.superposition",
+ "physical": "In a linear medium the net displacement at any point is the sum of the displacements each wave would produce alone.",
+ "reflected_formula": "Vibration = Vibration_1 + Vibration_2",
+ "reflected_sentence": "Two Vibrations met in receptivity culminate together into the whole extent of Vibration.",
+ "shape": "keeps",
+ "rule_reason": "Identity with zero costs and no quantities carrying resistance or distance.",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "linear medium",
+  "net displacement y",
+  "point",
+  "amplitude"
+ ],
+ "new_words": [],
+ "monotone_claims": [
+  {
+   "rises": "Vibration",
+   "with": "Vibration",
+   "sign": 1
+  }
+ ],
+ "interpretation": "In Vibrational Reality, each Vibration contributes to the whole Vibration and they culminate in collection. The identity keeps its shape because amplitude carries no gap. However, the formula is a sum while the traps forbid sums where the book has products.",
+ "conflicts": "\"No sums where the book has products.\"",
+ "sense": 3,
+ "confidence": 7,
+ "closing": "The rule forced keeps without a judgment call because superposition is an identity with no costs and amplitude does not carry resistance or distance. The formula y = y1 + y2 retains a sum because the ground rules forbid rewriting the formula, which sits in tension with the trap against sums.",
+ "knew_tsr": false
+}

@@ -1,0 +1,18 @@
+id: thermo.joule_heating
+domain: thermodynamics
+title: "Joule heating"
+statement: "A current through a resistance dissipates power as heat in proportion to the resistance and the square of the current."
+formula: "P = I² × R"
+form: equation
+variables:
+  - {name: power P, quantity: power}
+  - {name: current I, quantity: current (electric)}
+  - {name: resistance R, quantity: electrical resistance}
+costs:
+  - {what_gets_harder: "carrying the current without loss; the energy lost to heat", rises_with: [electrical resistance]}
+derived_from: [em.ohm_definition]
+derivation: "P = V I with V = I R"
+standard_sources: ["Joule 1841; Purcell, Electricity and Magnetism, ch. 4"]
+book_status: unreflected
+review: pending
+notes: "Friction's electrical cousin (motion to heat under resistance). The book turned friction into resonance."

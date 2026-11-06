@@ -1,0 +1,34 @@
+{
+ "id": "em.displacement_current",
+ "physical": "Maxwell's displacement current: A changing electric field acts as a source of magnetic field just as a current does, which closes the symmetry between the two fields and makes electromagnetic waves possible. ∇ × B = μ0 × J + μ0 × ε0 × dE ÷ dt",
+ "reflected_formula": "[curl: unmapped] Reflected = [permeability: unmapped] × [electric current J: unmapped] + [permeability: unmapped] × [permittivity: unmapped] × dIdle ÷ dExpansion",
+ "reflected_sentence": "A change in the Idle gives rise to the Reflected just as a flow of sources does, and the two co-create each other.",
+ "shape": "keeps",
+ "rule_reason": "symmetry: no cost and no separation, so the relationship keeps its shape",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "curl ∇×",
+  "electric current J",
+  "permeability μ0",
+  "permittivity ε0",
+  "field (as in electric field, magnetic field)",
+  "electromagnetic wave"
+ ],
+ "new_words": [],
+ "monotone_claims": [
+  {
+   "rises": "Reflected",
+   "with": "Idle",
+   "sign": 1
+  }
+ ],
+ "interpretation": "A change in the Idle across Expansion gives rise to the Reflected. The table already calls electric and magnetic co-creating partners, and this symmetry reads the same way: each change in one brings the other. The formula's sum is kept as given, since the physical side has it.",
+ "conflicts": "none",
+ "sense": 3,
+ "confidence": 6,
+ "closing": "The rule decided on its own: the relation is labelled a symmetry, lists no costs, and nothing carries distance, so it keeps. The judgment I had to make was lexical, not structural: mapping electric field to Idle and magnetic field to Reflected relies on the table's electric/magnetic rows, since 'field' itself has no partner, and electric current J must stay unmapped because the nonphysical 'Current' is the partner of Past and c, not of electric current. The reflected formula is mostly placeholders. (Amendment 1 applied: shape is the rule's call on the relationship; unmapped terms are listed separately and described in plain words in the sentence.)",
+ "knew_tsr": false
+}

@@ -1,0 +1,28 @@
+{
+ "id": "waves.phase_velocity",
+ "physical": "A wave's phase advances by one cycle per wavelength; the phase velocity is wavelength times frequency, or angular frequency over wavenumber.",
+ "reflected_formula": "rise per Expansion = Expansion ÷ Vibration",
+ "reflected_sentence": "A Vibration advances by one cycle per extent of Vibration, and its rise per Expansion is the ratio of rate in Expansion to inverse extent of Vibration.",
+ "shape": "keeps",
+ "rule_reason": "Definition with no costs and no quantities carrying resistance or distance.",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "phase",
+  "cycle",
+  "wavelength",
+  "phase velocity v_p",
+  "angular frequency ω",
+  "wavenumber k"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "In Vibration-Expansion, rise per Expansion relates Vibration and Expansion directly. Without partners for phase, cycle, wavelength, physical frequency, or wavenumber, the reflected definition collapses into the same generic rise per Expansion as every other velocity. Nothing distinguishes phase velocity from group velocity in the frozen words.",
+ "conflicts": "\"Frequency is not a rate and not cycles per second.\"",
+ "sense": 1,
+ "confidence": 7,
+ "closing": "The rule forced keeps without ambiguity because this is a definition with no costs and no resistance or distance flags. The result reads as degenerate in TSR's terms because all wave-kinematic variables lack partners in the frozen vocabulary.",
+ "knew_tsr": false
+}

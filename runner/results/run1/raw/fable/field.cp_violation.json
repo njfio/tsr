@@ -1,0 +1,29 @@
+{
+ "id": "field.cp_violation",
+ "physical": "CP violation: The weak interaction treats matter and antimatter slightly differently: the combined operation of charge conjugation and parity is not an exact symmetry.",
+ "reflected_formula": "",
+ "reflected_sentence": "One kind of interaction treats a thing and its opposite slightly differently, so the joined swap of the two with a mirror flip is not an exact symmetry; this keeps its shape, with no frozen word for any of its terms.",
+ "shape": "keeps",
+ "rule_reason": "no cost and no separation named; a (broken) symmetry statement; zero costs → keeps",
+ "rule_trace": [
+  "none"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "weak interaction",
+  "matter",
+  "antimatter",
+  "charge conjugation",
+  "parity",
+  "charge",
+  "symmetry"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "Nothing in the table answers to this relation by name. Idle and Reflected, the co-creating partners, do not reach it, since the interaction here is not electric or magnetic. The reflection is the physics restated with every term unnamed.",
+ "conflicts": "none",
+ "sense": 1,
+ "confidence": 6,
+ "closing": "The rule decided on its own: with no cost block the statement keeps. The vocabulary, though, has no partner for any term, so the reflected sentence is the physical statement in plain words with the nouns removed; it says nothing in TSR's terms. I did not need a new word, so it is not 'no partner', but the result is empty.",
+ "knew_tsr": false
+}

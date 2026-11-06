@@ -1,0 +1,8 @@
+{
+ "id": "waves.standing_waves",
+ "alternative_shape": null,
+ "rule_compliant": false,
+ "argument": "The strongest attempt reads λ_n = 2L/n as an exact fit identity between each allowed wavelength and the length. It fails: the form is a limit, and the one recorded cost, that only vibrations that fit between the two ends can persist, is a separation made by distance (separation_made_by_distance: true); one such cost is an odd number, which turns around. No rule-compliant 'keeps' reading exists.",
+ "reflected_sentence": "",
+ "knew_tsr": false
+}

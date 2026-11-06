@@ -1,0 +1,27 @@
+{
+ "id": "qm.measurement_collapse",
+ "physical": "A measurement yields one of the observable's eigenvalues, and afterwards the system is in the corresponding eigenstate; which value appears is not determined by the prior state.",
+ "reflected_formula": "",
+ "reflected_sentence": "A look yields one allowed outcome, and afterwards the vibration is that outcome; which one appears is not set before.",
+ "shape": "keeps",
+ "rule_reason": "A statistical statement with no costs; the count is none and the shape keeps. Probability, amplitude, observable, eigenvalue and eigenstate are unmapped.",
+ "rule_trace": [
+  "none"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "probability",
+  "wavefunction amplitude",
+  "observable",
+  "eigenvalue",
+  "eigenstate"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "Nothing in the statement is a cost, so the rule keeps the shape. The outcome, the measure and the amplitude have no partner and are described only in plain words. The indeterminateness of which outcome appears keeps its shape too.",
+ "conflicts": "none",
+ "sense": 2,
+ "confidence": 7,
+ "closing": "Amended reading applied: keeps by the rule (statistical form, no cost entries), with all the unmapped nouns reported. I had considered actualization → realization for the yielding of an outcome, but that row belongs to transmutation of entities, and forcing it here would be the creative rescue I was told to refuse.",
+ "knew_tsr": false
+}

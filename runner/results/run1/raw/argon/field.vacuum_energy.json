@@ -1,0 +1,26 @@
+{
+ "id": "field.vacuum_energy",
+ "physical": "The quantum vacuum has an energy density; the value field theory estimates and the value cosmology measures differ by many orders of magnitude.",
+ "reflected_formula": "",
+ "reflected_sentence": "Vibration has conscious energy and Desire; what imagination Tunes to and what emotional evidence shows differ across the gap.",
+ "shape": "keeps",
+ "rule_reason": "Definition with no costs keeps its shape.",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "quantum vacuum",
+  "vacuum energy density",
+  "field theory",
+  "cosmology"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "Energy and density map to E and Desire, while empirical evidence maps to emotional evidence. Because quantum vacuum, field theory, and cosmology have no partners, and nothing on the nonphysical side has a number, the comparison of orders of magnitude has no exact vocabulary partner.",
+ "conflicts": "none",
+ "sense": 1,
+ "confidence": 7,
+ "closing": "The rule cleanly classifies this as a definition with no costs, so it keeps its shape. Vacuum energy density, field theory, and cosmology have no partners in the frozen vocabulary.",
+ "knew_tsr": false
+}

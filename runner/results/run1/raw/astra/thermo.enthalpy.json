@@ -1,0 +1,26 @@
+{
+ "id": "thermo.enthalpy",
+ "physical": "Enthalpy is internal energy plus pressure times volume; at constant pressure the heat absorbed equals the change in enthalpy.",
+ "reflected_formula": "? = ? + ? × Vibrance",
+ "reflected_sentence": "What is defined remains what is held plus how strongly it presses multiplied by Vibrance.",
+ "shape": "keeps",
+ "rule_reason": "The underlying shape keeps because this is a definition with no resistance-caused costs.",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "enthalpy",
+  "internal energy",
+  "pressure",
+  "heat"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "No complete reflection is available. Missing partners prevent a nonphysical interpretation.",
+ "conflicts": "none",
+ "sense": 1,
+ "confidence": 7,
+ "closing": "The definition decides keeps on its own. Volume maps to Vibrance, but the generic physical-energy mapping does not specify distinct partners for enthalpy, internal energy, and heat; pressure also lacks a partner. The supplied sum is retained, not substituted for a product.",
+ "knew_tsr": false
+}

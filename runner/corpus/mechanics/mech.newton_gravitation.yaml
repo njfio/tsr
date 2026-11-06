@@ -1,0 +1,27 @@
+id: mech.newton_gravitation
+domain: mechanics
+title: "Newton's law of gravitation"
+statement: "Two masses attract with a force proportional to the product of the masses and inversely proportional to the square of their separation."
+formula: "F = G × M × m ÷ r²"
+form: equation
+variables:
+  - {name: force F, quantity: force}
+  - {name: mass M, quantity: mass m}
+  - {name: mass m, quantity: mass m}
+  - {name: separation r, quantity: length, carries_distance: true}
+  - {name: gravitational constant G, quantity: gravitational constant G}
+physical_terms: {F: "force", M: "mass m", m: "mass m", r: "space", G: "gravitational constant G"}
+costs: []
+alternate_statements:
+  - statement: "Read as a separation cost: the pull between two bodies is weakened by their separation."
+    form: equation
+    costs:
+      - {what_gets_harder: "the pull, weakened by separation", separation_made_by_distance: true}
+    note: "separation_call joint: whether an inverse-square falloff is 'a separation made by distance'."
+    joint: separation_call
+depends_on: [gravity_call]
+distance_dependence: true
+standard_sources: ["Newton, Principia, Book III"]
+book_status: unreflected
+review: pending
+notes: "Also inherits the gravity call (C2). Not forced on two counts."

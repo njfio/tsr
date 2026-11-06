@@ -1,0 +1,36 @@
+{
+ "id": "em.impedance",
+ "physical": "Impedance: In an alternating-current circuit the ratio of voltage to current is the impedance, whose magnitude combines resistance with the inductive and capacitive reactances. |Z| = √(R² + (X_L − X_C)²)",
+ "reflected_formula": "[impedance: unmapped] = √(the gap² + ([reactance_L: unmapped] − [reactance_C: unmapped])²)",
+ "reflected_sentence": "The whole opposition met by an alternating flow combines the gap with the opposition to change, and, read receptively, the whole receptivity combines the same way.",
+ "shape": "keeps",
+ "rule_reason": "definition: it keeps its shape",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "impedance Z",
+  "reactance X_L",
+  "reactance X_C",
+  "voltage",
+  "electric current",
+  "alternating-current circuit",
+  "magnitude",
+  "square root"
+ ],
+ "new_words": [],
+ "monotone_claims": [
+  {
+   "rises": "the gap",
+   "with": "alignment",
+   "sign": -1
+  }
+ ],
+ "interpretation": "Every term in this definition carries resistance, and resistance has only one appearance on the other side, the gap. The definition keeps its shape, so the gap is combined with two more oppositions that the table does not name. 'Resistant becomes receptive' flips the condition of each term, but a definition that is nothing but oppositions has no frozen content once flipped.",
+ "conflicts": "none",
+ "sense": 1,
+ "confidence": 6,
+ "closing": "The rule decided on its own: definitions keep. The ambiguity is what the terms become. Resistance crosses as the gap; impedance and reactance also carry resistance, but the table gives the gap as resistance's only appearance, so either all three collapse into one word or two stay unmapped. I left them unmapped rather than collapse them. Either way the formula on the far side is the gap combined with itself, which is nonsense in TSR's own terms. (Amendment 1 applied: shape is the rule's call on the relationship; unmapped terms are listed separately and described in plain words in the sentence.)",
+ "knew_tsr": false
+}

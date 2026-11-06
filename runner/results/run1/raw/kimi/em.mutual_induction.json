@@ -1,0 +1,27 @@
+{
+ "id": "em.mutual_induction",
+ "physical": "A changing current in one coil induces an EMF in a nearby coil in proportion to their mutual inductance, which depends on their geometry and how much flux they share. EMF_2 = M × dI_1 ÷ dt",
+ "reflected_formula": "EMF_2 = M × dI_1 ÷ dExpansion",
+ "reflected_sentence": "The changing flow in one induces a push in the other in proportion to what they share, and the proportion keeps its shape.",
+ "shape": "keeps",
+ "rule_reason": "No cost or limit caused by resistance is listed for this relation; zero costs is an even count, so it keeps its shape.",
+ "rule_trace": [
+  "none"
+ ],
+ "forced": false,
+ "unmapped_terms": [
+  "voltage (induced EMF)",
+  "mutual inductance M",
+  "current I_1",
+  "shared flux",
+  "geometry"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "One's change reaches the other by what they share. The proportion survives the mirror. Nearness here is sharing, not the gap.",
+ "conflicts": "none",
+ "sense": 3,
+ "confidence": 5,
+ "closing": "This one needed a judgment call. Mutual inductance carries resistance in the fixed table, and 'nearby' plus shared geometry smells like a separation dependence, but the relation lists no cost and flags nothing as separation-made, so a strict read of the count says keeps. I let the listed costs, not the flavor, decide.",
+ "knew_tsr": false
+}

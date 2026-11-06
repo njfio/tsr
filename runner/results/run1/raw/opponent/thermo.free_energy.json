@@ -1,0 +1,8 @@
+{
+ "id": "thermo.free_energy",
+ "alternative_shape": null,
+ "rule_compliant": false,
+ "argument": "The relation is a definition with no costs, and free energy, enthalpy, temperature and entropy are all fixed as not carrying resistance; definitions keep their shape, so no rule-compliant turn exists.",
+ "reflected_sentence": "",
+ "knew_tsr": false
+}

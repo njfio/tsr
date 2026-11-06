@@ -1,0 +1,25 @@
+{
+ "id": "rel.equivalence_principle",
+ "physical": "Equivalence principle: Gravitational mass equals inertial mass, so a freely falling observer feels no gravity: locally, free fall is indistinguishable from the absence of gravitation.",
+ "reflected_formula": "",
+ "reflected_sentence": "The Movement M that Attraction acts on is the same Movement M that meets a change, so an entity carried wholly by Attraction feels no Attraction: being carried by Attraction cannot be told apart from there being no Attraction.",
+ "shape": "keeps",
+ "rule_reason": "identity: gravitational mass equals inertial mass; no cost named → keeps",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "free fall",
+  "observer",
+  "locally (a location word; may not cross)"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "Attraction and receptivity meet in the same Movement M. An entity that does not resist Attraction has no gap and feels none of it; Attraction is felt only against the gap. That sits close to the table's own definition of Attraction as receptive and resistant met.",
+ "conflicts": "none",
+ "sense": 4,
+ "confidence": 7,
+ "closing": "The rule decided on its own: an identity keeps. Both masses are the one quantity 'mass m', so both are Movement M, and gravity's pull is Attraction; the gravitational field g would be Appreciation (an acceleration) but the statement does not use it. 'Locally' had to be dropped as a location word and 'free fall' is described as being carried wholly by Attraction. This is one of the few rows where the reflection reads as something the table almost already says.",
+ "knew_tsr": false
+}

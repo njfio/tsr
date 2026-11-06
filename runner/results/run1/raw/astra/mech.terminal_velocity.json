@@ -1,0 +1,29 @@
+{
+ "id": "mech.terminal_velocity",
+ "physical": "A falling body stops accelerating when drag balances weight; that terminal speed rises with the body's mass and falls with the drag coefficient, the fluid's density and the cross-section.",
+ "reflected_formula": "rise per Expansion = √(2 × Movement M × ∅ ÷ (Desire × ∅ × ∅))",
+ "reflected_sentence": "The single cost reading turns with receptivity, but its balancing relation lacks complete partners.",
+ "shape": "turns around",
+ "rule_reason": "The stated stopping cost rises with mass m, which carries resistance; this is one cost and turns around, not three costs counted from its resistance-bearing factors.",
+ "rule_trace": [
+  "resistance-cost"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "drag coefficient",
+  "area",
+  "gravitational field g",
+  "drag",
+  "weight",
+  "falling",
+  "terminal condition"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "Rise per Expansion. Movement M × Desire.",
+ "conflicts": "none",
+ "sense": 1,
+ "confidence": 7,
+ "closing": "The rule decides turns around from the one supplied cost. Drag coefficient and density in falls_with do not create additional cost events. The legal-word interpretation fragments are not a substitute equation: Desire stays in the formula's denominator. The square root and coefficient remain uninterpreted syntax, while the missing field, drag and area partners block a complete reading.",
+ "knew_tsr": false
+}

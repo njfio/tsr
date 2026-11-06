@@ -1,0 +1,17 @@
+id: field.confinement
+domain: field_theory
+title: "Confinement"
+statement: "The force between two quarks does not weaken with separation; the energy stored in the color flux tube grows linearly with distance until it is enough to make a new quark-antiquark pair, so no quark is ever found free."
+formula: "V(r) ≈ σ × r"
+form: limit
+variables:
+  - {name: potential energy V, quantity: potential energy}
+  - {name: string tension σ, quantity: "string tension (QCD)"}
+  - {name: separation r, quantity: length, carries_distance: true}
+costs:
+  - {what_gets_harder: "pulling the pair apart; impossible to finish", rises_with: ["string tension (QCD)"], separation_made_by_distance: true}
+distance_dependence: true
+standard_sources: ["Wilson 1974; Bali 2001 (lattice QCD); PDG review 'Quantum Chromodynamics'"]
+book_status: reflected
+review: pending
+notes: "The book: Expectation is the strong force; you don't pull your way out of an old expectation, you change the condition (tsr.wtf/holds, 'Deconfinement'). JUDGMENT: string tension is undetermined under R1. With the separation alone the row would turn; with the tension as resistance it would still turn (one cost). The joint matters for the derivation chain, not the shape."

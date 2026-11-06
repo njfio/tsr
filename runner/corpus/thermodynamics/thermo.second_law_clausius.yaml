@@ -1,0 +1,21 @@
+id: thermo.second_law_clausius
+domain: thermodynamics
+title: "Second law (Clausius)"
+statement: "Heat does not spontaneously flow from a colder body to a hotter body; the entropy of an isolated system never decreases."
+formula: "ΔS_universe ≥ 0"
+form: inequality
+variables:
+  - {name: entropy S, quantity: entropy}
+  - {name: temperature T, quantity: temperature}
+costs:
+  - {what_gets_harder: "undoing a spontaneous flow; getting the dispersed energy back as work", rises_with: [entropy]}
+alternate_statements:
+  - statement: "Kelvin-Planck: no cyclic process can convert heat entirely into work."
+    form: limit
+    costs:
+      - {what_gets_harder: "turning all of the heat into work", rises_with: [heat]}
+    note: "Equivalent standard form."
+standard_sources: ["Fermi, Thermodynamics, ch. 3-4"]
+book_status: unreflected
+review: pending
+notes: "Entropy and heat do not carry resistance under R1, so the cost is not resistance-caused: the procedure keeps the direction. Compare the book's Culmination reading (entropy → relation that keeps gathering, never ungathers), which also keeps the direction."

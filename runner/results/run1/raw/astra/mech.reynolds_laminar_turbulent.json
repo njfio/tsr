@@ -1,0 +1,29 @@
+{
+ "id": "mech.reynolds_laminar_turbulent",
+ "physical": "Flow stays laminar while inertial effects are small relative to viscous ones (low Reynolds number); as density, speed or size rise, or viscosity falls, the flow becomes turbulent.",
+ "reflected_formula": "∅ = Desire × (rise per Expansion) × ∅ ÷ ∅",
+ "reflected_sentence": "Desire and rise per Expansion have partners, but the turning cost reading lacks a complete reflection.",
+ "shape": "turns around",
+ "rule_reason": "One ordering cost rises with density, a resistance carrier, so it turns around; viscosity in falls_with is not another cost and does not make the parity even.",
+ "rule_trace": [
+  "resistance-cost"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "Reynolds number",
+  "length",
+  "viscosity",
+  "laminar flow",
+  "turbulent flow",
+  "inertial effects",
+  "viscous effects"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "Desire. Rise per Expansion.",
+ "conflicts": "none",
+ "sense": 1,
+ "confidence": 7,
+ "closing": "The supplied single cost decides turns around. Its decrease with viscosity is retained as part of that same cost, not counted as a second turn. Reynolds number is expressly not a resistance carrier. Missing partners for viscosity, length and the flow states prevent any claim about what nonphysical order or turbulence would mean.",
+ "knew_tsr": false
+}

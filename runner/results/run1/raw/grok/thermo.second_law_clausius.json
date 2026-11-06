@@ -1,0 +1,25 @@
+{
+ "id": "thermo.second_law_clausius",
+ "physical": "Heat does not spontaneously flow from a colder body to a hotter body; the entropy of an isolated system never decreases. ΔS_universe ≥ 0",
+ "reflected_formula": "change in Culmination does not decrease",
+ "reflected_sentence": "The inequality keeps: an unmatched transit still does not run on its own from a colder condition to a hotter one, and Culmination still does not decrease.",
+ "shape": "keeps",
+ "rule_reason": "Inequality, not a conservation law. The recorded cost rises with entropy, which does not carry resistance. The alternate rises with heat, which does not carry resistance. No separation. Zero such costs, so the relationship keeps, including the alternate limit.",
+ "rule_trace": [
+  "none"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "heat",
+  "temperature",
+  "work"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "Culmination does not decrease, and that reading keeps. The transit from a colder condition to a hotter one has no frozen name and is not turned into collection. Receptivity does not make the return already there.",
+ "conflicts": "none",
+ "sense": 2,
+ "confidence": 6,
+ "closing": "The rule decided on its own. Entropy and heat were fixed as not carrying resistance, so neither the main cost nor the Kelvin-Planck alternate is a resistance-cost, and never-decreases does not flip. Entropy maps to Culmination only as the provisional name. That name's own gloss, what two vibrations do instead of cancel, does not support a never-decreasing count, which is why the reflection is weak in these terms. The numeral in the inequality does not cross.",
+ "knew_tsr": false
+}

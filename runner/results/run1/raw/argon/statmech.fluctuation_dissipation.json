@@ -1,0 +1,29 @@
+{
+ "id": "statmech.fluctuation_dissipation",
+ "physical": "The way a system in equilibrium dissipates a small push is fixed by the spectrum of its own spontaneous fluctuations: friction and thermal noise are two faces of one quantity.",
+ "reflected_formula": "",
+ "reflected_sentence": "The way a system in [unmapped: equilibrium] meets a small Frequency is fixed by the [unmapped: spectrum] of its own [unmapped: spontaneous fluctuations]: resonance and [unmapped: thermal noise] are two faces of one quantity.",
+ "shape": "keeps",
+ "rule_reason": "identity equating two faces of one quantity with zero listed costs; the resistant term friction flips to resonance while the equivalence keeps its shape",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": false,
+ "unmapped_terms": [
+  "damping coefficient",
+  "temperature T",
+  "equilibrium",
+  "dissipates",
+  "spontaneous fluctuations",
+  "thermal noise",
+  "spectrum"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "Friction reflects to resonance and a push reflects to Frequency, while damping coefficient, temperature, equilibrium, and thermal noise have no partners in the frozen table. Because the theorem states an identity between two faces of one quantity rather than a cost that gets harder, the equivalence keeps its shape while friction flips to resonance. Linking resonance to unmapped thermal noise leaves the nonphysical reading incomplete.",
+ "conflicts": "none",
+ "sense": 3,
+ "confidence": 5,
+ "closing": "This relation required careful attention to the distinction between term reflection ('Every term reflects; that part always happens': friction -> resonance) and relationship shape ('Equivalences, definitions, identities... keep their shape'). Although 'damping coefficient' is listed in variables and carries resistance, the statement is an identity ('two faces of one quantity') with costs: [], so the identity keeps its shape while friction flips to resonance.",
+ "knew_tsr": false
+}

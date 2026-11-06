@@ -1,0 +1,25 @@
+{
+ "id": "thermo.heat_capacity_definition",
+ "physical": "Heat capacity is the heat required per unit rise in temperature. C = Q ÷ ΔT",
+ "reflected_formula": "",
+ "reflected_sentence": "The definition keeps its shape: an unnamed holding-in of warmth is an unnamed gift of conscious energy per unnamed single rise in warmth.",
+ "shape": "keeps",
+ "rule_reason": "Definition with an empty cost list; definitions keep their shape regardless of the undetermined status of heat capacity, because no resistance-cost is present to count.",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "heat capacity",
+  "heat",
+  "temperature"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "The per-unit form has no image in frozen words and survives only as plain description. The undetermined clause never fires here because the relation presents itself as a definition, not as a cost.",
+ "conflicts": "none",
+ "sense": 1,
+ "confidence": 7,
+ "closing": "Fully decided: zero costs in a definition keeps the shape, and the undetermined heat-capacity clause is never engaged because no cost is asserted. No judgment call needed.",
+ "knew_tsr": false
+}

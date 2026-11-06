@@ -1,0 +1,8 @@
+{
+ "id": "mech.angular_momentum",
+ "alternative_shape": null,
+ "rule_compliant": false,
+ "argument": "The statement is a definition plus a conservation law, both of which keep their shape; it names no cost that gets harder and no separation made by distance (the cost list is empty and every variable is marked carries_distance false). Moment of inertia carries resistance, but it enters only through the definition, and the fixed list records angular momentum's rise with it in rises_with rather than as a cost, so no rule-compliant turn exists.",
+ "reflected_sentence": "",
+ "knew_tsr": false
+}

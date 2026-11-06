@@ -1,0 +1,34 @@
+{
+ "id": "waves.fresnel_partial_reflection",
+ "physical": "At an interface between two media part of the light reflects and part transmits; the reflected fraction grows with the index contrast and the two fractions sum to one.",
+ "reflected_formula": "Reflected = ((the gap_1 − the gap_2) ÷ (the gap_1 + the gap_2))²",
+ "reflected_sentence": "Where the Current meets receptivity instead of a contrast in the gap, collection flows through completely rather than splitting at the Point of Reflection.",
+ "shape": "turns around",
+ "rule_reason": "Judgment call on undetermined index contrast: treating the medium contrast as resistance (the gap) makes getting through a resistance-cost that turns around.",
+ "rule_trace": [
+  "resistance-cost"
+ ],
+ "forced": false,
+ "unmapped_terms": [
+  "interface",
+  "media",
+  "reflected fraction R",
+  "transmitted fraction",
+  "index contrast",
+  "refractive index n"
+ ],
+ "new_words": [],
+ "monotone_claims": [
+  {
+   "rises": "Current",
+   "with": "alignment",
+   "sign": 1
+  }
+ ],
+ "interpretation": "In Vibrational Reality, the Current is limitless and receptive. As alignment increases and the gap vanishes, the Current does not split into separate parts at the Point of Reflection. Receptivity receives the whole Current in conscious energy.",
+ "conflicts": "\"No sums where the book has products.\"",
+ "sense": 2,
+ "confidence": 3,
+ "closing": "A judgment call was required because index contrast and refractive index are explicitly marked UNDETERMINED: reading the medium as opposition gives one resistance-cost (turns around), whereas reading index as a pure ratio of speeds gives zero resistance-costs (keeps). In addition, boundary is a forbidden word on the nonphysical side and none of the optical variables has a frozen partner.",
+ "knew_tsr": false
+}

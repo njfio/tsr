@@ -1,0 +1,27 @@
+{
+ "id": "field.asymptotic_freedom",
+ "physical": "The strong coupling becomes weak at short distances and high energies: quarks close together interact almost freely, and the interaction grows as they are pulled apart.",
+ "reflected_formula": "",
+ "reflected_sentence": "No complete reflection has frozen vocabulary partners.",
+ "shape": "turns around",
+ "rule_reason": "The stated interaction cost includes one separation made by distance, so its reading turns around; the coupling and separated objects have no partners.",
+ "rule_trace": [
+  "separation"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "strong coupling α_s",
+  "energy scale Q",
+  "separation r",
+  "quarks",
+  "interaction"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "No partner. No complete reflection.",
+ "conflicts": "none",
+ "sense": 1,
+ "confidence": 7,
+ "closing": "The main statement mechanically turns around because it lists one distance-made separation. The alternate statement has no cost and therefore keeps, exposing dependence on the chosen statement. No full word-map formula can be written without inventing partners; the empty formula records that failure rather than a reformulation. Failure notices are metalinguistic, not additional nonphysical vocabulary.",
+ "knew_tsr": false
+}

@@ -1,0 +1,26 @@
+{
+ "id": "thermo.joule_heating",
+ "physical": "A current through a resistance dissipates power as heat in proportion to the resistance and the square of the current. P = I² × R",
+ "reflected_formula": "unmatched rate = unmatched flow × unmatched flow × the gap",
+ "reflected_sentence": "The formula image stays an unmatched rate equal to an unmatched flow times itself times the gap, and the reading turns around: carrying that flow without losing it gets easier with more receptivity.",
+ "shape": "turns around",
+ "rule_reason": "One cost: carrying the flow without loss, and the energy lost into transit, gets harder as electrical resistance rises. Electrical resistance carries resistance. Odd count. No separation. The reading turns; the product is not rewritten.",
+ "rule_trace": [
+  "resistance-cost"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "power",
+  "current (electric)",
+  "electrical resistance",
+  "heat"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "The product keeps its written shape and the reading turns around. The gap is the only appearance of the opposition, and carrying the flow gets easier with receptivity. This is not Idle, Current, or conscious energy.",
+ "conflicts": "none",
+ "sense": 3,
+ "confidence": 7,
+ "closing": "The rule decided on its own. One cost rises with electrical resistance, which carries resistance, so the reading turns and the formula is not rewritten. The square is stated as the flow times itself so a numeral does not cross. Electrical resistance has no table row and appears only as the gap. I did not map the flow to Idle or to Current.",
+ "knew_tsr": false
+}

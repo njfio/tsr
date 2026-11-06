@@ -1,0 +1,25 @@
+{
+ "id": "thermo.latent_heat_cost",
+ "physical": "Changing a body's phase takes heat in proportion to its mass, with no rise in temperature while it happens. Q = m × L",
+ "reflected_formula": "unmatched transit = Movement × unmatched per-amount",
+ "reflected_sentence": "The formula image stays an unmatched transit equal to Movement times an unmatched per-amount, and the reading turns around, so the change of form gets easier with more receptivity, while an unmatched condition stays unrising.",
+ "shape": "turns around",
+ "rule_reason": "One cost: the transit a change of form takes gets harder as mass rises, and mass carries resistance. Latent heat itself does not carry resistance; the quantity note says the rise with mass is relation-level. Odd count. No separation. The reading turns; the product is not rewritten.",
+ "rule_trace": [
+  "resistance-cost"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "latent heat",
+  "heat",
+  "temperature"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "Movement stays in the product, and the reading turns around, so the change gets easier with receptivity. The transit has no frozen name. Culmination is not in this relation.",
+ "conflicts": "none",
+ "sense": 4,
+ "confidence": 7,
+ "closing": "The rule decided on its own. Latent heat does not carry resistance, but the recorded cost rises with mass, and mass does, at relation level, so this equation turns. Mass maps to Movement and the formula is not rewritten. The clause that temperature does not rise is not itself a resistance-cost, so I did not flip it into a rise.",
+ "knew_tsr": false
+}

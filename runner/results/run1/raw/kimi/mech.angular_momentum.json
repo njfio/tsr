@@ -1,0 +1,24 @@
+{
+ "id": "mech.angular_momentum",
+ "physical": "Angular momentum is moment of inertia times angular velocity (the rotational definition), and is conserved when no external torque acts. L = I × ω",
+ "reflected_formula": "momentum = [moment of inertia] × [angular velocity]",
+ "reflected_sentence": "A conserved momentum keeps its definition: the product holds, though both turning factors have no partner across the mirror.",
+ "shape": "keeps",
+ "rule_reason": "Definition (rotational form) with no costs listed; equivalences and definitions keep their shape.",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "moment of inertia I",
+  "angular velocity ω"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "momentum reflects to momentum and conservation keeps its shape. The product of Movement's turning and its rate survives only as structure; both factors lack frozen partners.",
+ "conflicts": "none",
+ "sense": 2,
+ "confidence": 7,
+ "closing": "The rule decided on its own for shape: a definition with an empty costs list keeps, and the trace is identity alone. The only open point is vocabulary coverage, not shape; I mapped angular momentum to the table's momentum row since the resistance list treats it as the same conserved quantity, but refused to extend that generosity to moment of inertia or angular velocity, which have no rows.",
+ "knew_tsr": false
+}

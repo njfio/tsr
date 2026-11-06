@@ -1,0 +1,8 @@
+{
+ "id": "thermo.latent_heat_definition",
+ "alternative_shape": null,
+ "rule_compliant": false,
+ "argument": "The relation is a definition, and latent heat and heat are fixed as not carrying resistance; definitions keep their shape, so no rule-compliant turn exists.",
+ "reflected_sentence": "",
+ "knew_tsr": false
+}

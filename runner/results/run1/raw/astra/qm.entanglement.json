@@ -1,0 +1,28 @@
+{
+ "id": "qm.entanglement",
+ "physical": "Measurements on two entangled particles are correlated more strongly than any local account allows (Bell), and the correlation does not weaken with their separation.",
+ "reflected_formula": "",
+ "reflected_sentence": "How what appears together remains related keeps its shape rather than turning around.",
+ "shape": "keeps",
+ "rule_reason": "No cost is listed, and separation does not weaken the stated correlation. Merely mentioning separation does not supply a separation-induced obstacle; with no qualifying cost the relation keeps.",
+ "rule_trace": [
+  "none"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "measurement",
+  "entangled particles",
+  "correlation",
+  "local account",
+  "probability",
+  "separation"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "",
+ "conflicts": "none",
+ "sense": 1,
+ "confidence": 6,
+ "closing": "Using the supplied empty costs list and the explicit independence from separation, the rule decides keeps. The broad phrase about separation could be misread as flipping any mention of it, but this relation states no separation-induced loss to reverse. No frozen partners support a nonphysical interpretation, so that field is empty.",
+ "knew_tsr": false
+}

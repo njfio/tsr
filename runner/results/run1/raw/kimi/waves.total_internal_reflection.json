@@ -1,0 +1,31 @@
+{
+ "id": "waves.total_internal_reflection",
+ "physical": "Going from a higher to a lower index, beyond the critical angle no light crosses the boundary; all of it is reflected, while an evanescent field reaches past the surface without carrying energy across. sin θ_c = n2 ÷ n1",
+ "reflected_formula": "sin θ_c = n2 ÷ n1 (kept as given; θ_c and n have no frozen partners)",
+ "reflected_sentence": "The formula keeps its form but the limit turns around: what read as a slant past which no light may cross now reads as a mark past which nothing is held back — the unreachable is already there, and what the gap returned now collects.",
+ "shape": "turns around",
+ "rule_reason": "The cost 'crossing the boundary' rises with refractive index; judged to carry resistance here, making one resistance-cost, odd parity, so the reading turns while the formula stays.",
+ "rule_trace": [
+  "resistance-cost"
+ ],
+ "forced": false,
+ "unmapped_terms": [
+  "critical angle θ_c",
+  "refractive index n",
+  "evanescent field"
+ ],
+ "new_words": [],
+ "monotone_claims": [
+  {
+   "rises": "collection",
+   "with": "receptivity",
+   "sign": 1
+  }
+ ],
+ "interpretation": "The banned word for the surface becomes the gap. A cost that rises with the medium's opposition flips to an ease that rises with receptivity. What was all returned now collects.",
+ "conflicts": "none",
+ "sense": 3,
+ "confidence": 4,
+ "closing": "Judgment call, the same one as the Fresnel row: refractive index is UNDETERMINED, and the turn depends entirely on reading the medium as resistance, which Ch 16's diffraction line supports and the ratio-of-speeds definition denies. I took the resistance reading because the statement's own cost rises with the index; on the other reading this row has zero costs of the relevant kind and would keep.",
+ "knew_tsr": false
+}

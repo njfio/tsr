@@ -1,0 +1,15 @@
+id: mech.collisions_elastic_inelastic
+domain: mechanics
+title: "Elastic and inelastic collisions"
+statement: "Momentum is conserved in every collision; kinetic energy is conserved in an elastic collision and partly converted to internal energy in an inelastic one, the fraction set by the coefficient of restitution."
+formula: ""
+form: conservation
+variables:
+  - {name: momentum, quantity: momentum}
+  - {name: kinetic energy, quantity: kinetic energy}
+  - {name: coefficient of restitution e, quantity: coefficient of restitution}
+costs: []
+standard_sources: ["Kleppner & Kolenkow, ch. 4"]
+book_status: unreflected
+review: pending
+notes: "The inelastic case is friction-like (motion to heat); as a statement it is a conservation accounting, so form = conservation. A separate cost record would read 'kinetic energy lost rises with ...' and has no resistance-carrying quantity to rise with (e is a ratio of speeds)."

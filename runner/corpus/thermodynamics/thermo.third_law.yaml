@@ -1,0 +1,15 @@
+id: thermo.third_law
+domain: thermodynamics
+title: "Third law"
+statement: "As temperature approaches absolute zero the entropy approaches a constant, and absolute zero cannot be reached in a finite number of steps."
+formula: "lim T→0 S = S0"
+form: limit
+variables:
+  - {name: entropy S, quantity: entropy}
+  - {name: temperature T, quantity: temperature}
+costs:
+  - {what_gets_harder: "reaching the zero of temperature; each step removes a smaller fraction", rises_with: [temperature]}
+standard_sources: ["Nernst 1906; Fermi, Thermodynamics, ch. 8"]
+book_status: unreflected
+review: pending
+notes: "An unreachable limit, like row 9, but with no resistance-carrying quantity in it: the procedure keeps. Row 9 turned because mass is in it. If the author reads this as 'the same kind of limit', that is a proposed change to R1 (temperature carries resistance), which reruns everything."

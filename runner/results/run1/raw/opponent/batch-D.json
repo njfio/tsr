@@ -1,0 +1,66 @@
+[
+  {
+    "id": "waves.dispersion",
+    "alternative_shape": null,
+    "rule_compliant": false,
+    "argument": "The only cost present (a pulse keeping its shape, rising with dispersion) is caused by dispersion, which is fixed as a dependence that does not carry resistance, and its separation_made_by_distance flag is false; the relation itself is the equation v_p = v_p(λ). No resistance-caused cost or distance-made separation is actually present, so no rule-compliant 'turns around' reading exists.",
+    "reflected_sentence": "",
+    "knew_tsr": false
+  },
+  {
+    "id": "waves.doppler",
+    "alternative_shape": null,
+    "rule_compliant": false,
+    "argument": "The statement records no cost (costs is empty), no variable carries resistance or distance, and the effect depends only on relative motion, a symmetry, which keeps its shape. No resistance-caused cost or distance-made separation is actually present, so no rule-compliant 'turns around' reading exists.",
+    "reflected_sentence": "",
+    "knew_tsr": false
+  },
+  {
+    "id": "waves.group_velocity",
+    "alternative_shape": null,
+    "rule_compliant": false,
+    "argument": "The relation is a definition (form: definition) of the group velocity as dω/dk, and definitions keep their shape; no cost or separation is recorded and no variable carries resistance. No rule-compliant 'turns around' reading exists.",
+    "reflected_sentence": "",
+    "knew_tsr": false
+  },
+  {
+    "id": "waves.phase_velocity",
+    "alternative_shape": null,
+    "rule_compliant": false,
+    "argument": "The relation is a definition (v_p = ω/k) of the phase velocity, and definitions keep their shape; no cost or separation is recorded and no variable carries resistance. No rule-compliant 'turns around' reading exists.",
+    "reflected_sentence": "",
+    "knew_tsr": false
+  },
+  {
+    "id": "waves.snell_refraction",
+    "alternative_shape": null,
+    "rule_compliant": false,
+    "argument": "The strongest attempt reads the medium as resistance (the Ch 16 reading) so that the index, the factor by which a medium slows light, makes the bend a resistance-caused cost. It fails: the statement records no cost, the index's resistance status is explicitly undetermined (R does not decide it), and the law is the symmetry that index times sine of the angle is the same on both sides, and symmetries keep their shape. No rule-compliant 'turns around' reading exists.",
+    "reflected_sentence": "",
+    "knew_tsr": false
+  },
+  {
+    "id": "waves.standing_waves",
+    "alternative_shape": null,
+    "rule_compliant": false,
+    "argument": "The strongest attempt reads λ_n = 2L/n as an exact fit identity between each allowed wavelength and the length. It fails: the form is a limit, and the one recorded cost, that only vibrations that fit between the two ends can persist, is a separation made by distance (separation_made_by_distance: true); one such cost is an odd number, which turns around. No rule-compliant 'keeps' reading exists.",
+    "reflected_sentence": "",
+    "knew_tsr": false
+  },
+  {
+    "id": "waves.superposition",
+    "alternative_shape": null,
+    "rule_compliant": false,
+    "argument": "The relation is an identity (y = y1 + y2) in a linear medium, and identities keep their shape; amplitude carries no resistance and no cost or separation is recorded. No rule-compliant 'turns around' reading exists.",
+    "reflected_sentence": "",
+    "knew_tsr": false
+  },
+  {
+    "id": "waves.interference_cancellation",
+    "alternative_shape": null,
+    "rule_compliant": false,
+    "argument": "The strongest attempt rests a 'keeps' reading on the conservation law explicitly present (energy is conserved overall), since conservation laws keep their shape. It fails: the statement also records one cost, two vibrations coexisting at one location, flagged as a separation made by distance, and an odd number of such costs turns around; that conservation is kept inside the turned sentence, as the majority reading did. No rule-compliant 'keeps' reading of the whole relation exists.",
+    "reflected_sentence": "",
+    "knew_tsr": false
+  }
+]

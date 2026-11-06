@@ -1,0 +1,29 @@
+{
+ "id": "mech.buoyancy",
+ "physical": "A body immersed in a fluid is pushed up by a force equal to the weight of the fluid it displaces; it floats if it is less dense than the fluid.",
+ "reflected_formula": "Frequency = Desire × ∅ × Vibrance",
+ "reflected_sentence": "Frequency, Desire and Vibrance have partners, but the remaining relation has none.",
+ "shape": "keeps",
+ "rule_reason": "There is no stated resistance-cost or separation; the equality keeps its shape with zero turning costs.",
+ "rule_trace": [
+  "none"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "gravitational field g",
+  "body",
+  "fluid",
+  "weight",
+  "immersion",
+  "displacement",
+  "floating"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "Frequency. Desire × Vibrance.",
+ "conflicts": "none",
+ "sense": 1,
+ "confidence": 7,
+ "closing": "The rule decides keeps because no qualifying cost occurs. The fragment in interpretation is only the mapped product fragment, not a replacement equation. Mapping gravitational field to Attraction would require equating it with gravitational pull, which this relation's physical_terms does not authorize. The relative-density floating condition also lacks a complete vocabulary.",
+ "knew_tsr": false
+}

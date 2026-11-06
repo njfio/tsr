@@ -1,0 +1,24 @@
+{
+ "id": "waves.group_velocity",
+ "physical": "The envelope of a wave packet travels at the group velocity, the derivative of angular frequency with respect to wavenumber; it is the speed at which energy and signal travel. v_g = dω ÷ dk",
+ "reflected_formula": "rise per Expansion = dω ÷ dk (ω and k kept as symbols with no partners)",
+ "reflected_sentence": "As a definition it keeps its shape: the rise per Expansion of the envelope is the change of the counted rate per change of the inverse extent, and the envelope of conscious energy still sets how fast the news of it goes.",
+ "shape": "keeps",
+ "rule_reason": "It is a definition; definitions keep their shape; no costs named.",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "angular frequency ω",
+  "wavenumber k"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "A definition crosses whole. Rise per Expansion stands where group velocity stood and the derivative form survives. With ω and k unmapped, the right side is two bare symbols joined by ÷.",
+ "conflicts": "none",
+ "sense": 3,
+ "confidence": 7,
+ "closing": "The rule decided alone: definitions keep. No ambiguity; the result is a formally intact but semantically thin reflection, since only the velocity term finds a partner.",
+ "knew_tsr": false
+}

@@ -1,0 +1,28 @@
+{
+ "id": "field.asymptotic_freedom",
+ "physical": "The strong coupling becomes weak at short distances and high energies: quarks close together interact almost freely, and the interaction grows as they are pulled apart.",
+ "reflected_formula": "",
+ "reflected_sentence": "What grows harder turns and eases with receptivity, and alignment already holds what was withheld.",
+ "shape": "turns around",
+ "rule_reason": "One given cost, and it is a separation made by distance: the interaction grows with separation. An odd count turns the reading. Running coupling does not carry resistance, and rises_with and falls_with are empty, so this is not a resistance-cost.",
+ "rule_trace": [
+  "separation"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "strong coupling α_s",
+  "running coupling",
+  "energy scale Q",
+  "quarks",
+  "interaction",
+  "separation r"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "Receptivity eases the gap. Alignment already holds with the Current. The relationship turns.",
+ "conflicts": "none",
+ "sense": 2,
+ "confidence": 6,
+ "closing": "The cost block has one separation made by distance and empty rises_with and falls_with, so the odd-count rule turns the reading without a judgment on any resistance quantity. Running coupling does not carry resistance. An alternate statement with no costs would keep, but it is not the cost block, so it does not change the shape. Strong coupling, quarks, and Q have no frozen partners, and 0 and infinity are numbers that do not cross, so the formula has no word-map image. I did not invent partners, and the missing partners do not change the turn.",
+ "knew_tsr": false
+}

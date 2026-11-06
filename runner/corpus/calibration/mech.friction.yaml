@@ -1,0 +1,18 @@
+id: mech.friction
+domain: calibration
+title: "Friction"
+statement: "Resistance between two surfaces sliding past each other: the frictional force rises with the coefficient of friction and the normal force, and turns motion into heat."
+formula: "F = μ × N"
+form: equation
+variables:
+  - {name: coefficient of friction μ, quantity: coefficient of friction}
+  - {name: normal force N, quantity: normal force}
+  - {name: frictional force F, quantity: force}
+physical_terms: {F: "force", μ: "coefficient of friction", N: "normal force"}
+costs:
+  - what_gets_harder: "keeping the surfaces moving past each other"
+    rises_with: [coefficient of friction]
+standard_sources: ["Amontons-Coulomb friction; any mechanics text"]
+book_status: ruled
+ruling: {shape: turns around, words: "two Movements meeting don't lose to each other, they build each other up: resonance", source: "Ch16 friction passage (extension-test-key.md item 7)"}
+review: "reviewed:spec-port"

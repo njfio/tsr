@@ -1,0 +1,30 @@
+{
+ "id": "field.weak_flavor_change",
+ "physical": "Only the weak interaction changes one kind of quark or lepton into another (through the charged W boson); the strong and electromagnetic interactions never do.",
+ "reflected_formula": "",
+ "reflected_sentence": "An identity keeps in which only one interaction changes one kind into another, with no frozen partner for that interaction.",
+ "shape": "keeps",
+ "rule_reason": "An identity with no cost or separation. Coupling constant does not carry resistance. Zero such costs, so it keeps.",
+ "rule_trace": [
+  "identity"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "weak interaction",
+  "quark",
+  "lepton",
+  "flavor",
+  "W boson",
+  "strong interaction",
+  "electromagnetic interaction",
+  "coupling constant"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "Idle and Reflected are not claimed for this change. Movement is not in this relationship. The relationship does not turn.",
+ "conflicts": "none",
+ "sense": 1,
+ "confidence": 6,
+ "closing": "The rule decides the keep: identity, no costs. The vocabulary does not cover a change of kind, and I introduced no words. Electric maps to Idle and magnetic to Reflected, but those rows are co-creating partners, not a claim about which interaction changes kind into kind; mapping that clause onto them would be a reinterpretation, so I left the interaction unmapped. No shape judgment. Missing partners do not change the keep.",
+ "knew_tsr": false
+}

@@ -1,0 +1,28 @@
+{
+ "id": "thermo.carnot_limit",
+ "physical": "No heat engine between two reservoirs can be more efficient than a reversible one; the limit is one minus the ratio of the cold to the hot temperature.",
+ "reflected_formula": "",
+ "reflected_sentence": "The cap on how much of the energy taken in can be turned to use, set by the ratio of the cooler to the warmer intensity of the two sources, keeps its shape: it is not a cost caused by resistance, so it stays a cap.",
+ "shape": "keeps",
+ "rule_reason": "Temperature does not carry resistance, so the cost is not caused by resistance; moreover, efficiency, temperature, heat engine, and reservoirs have no partners in the frozen vocabulary.",
+ "rule_trace": [
+  "none"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "efficiency η",
+  "cold temperature T_c",
+  "hot temperature T_h",
+  "heat engine",
+  "reservoirs",
+  "reversible"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "Every term reflects. When a term has no partner in the frozen vocabulary, the reflection cannot be formed in frozen words.",
+ "conflicts": "none",
+ "sense": 1,
+ "confidence": 7,
+ "closing": "The rule decided on its own. Temperature and efficiency are explicitly listed as not carrying resistance, so no resistance-cost fires, and none of the thermodynamic variables in this relation appear in the frozen vocabulary table.",
+ "knew_tsr": false
+}

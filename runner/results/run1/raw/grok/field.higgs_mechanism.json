@@ -1,0 +1,27 @@
+{
+ "id": "field.higgs_mechanism",
+ "physical": "The masses of the W and Z bosons and of the fundamental fermions arise from their coupling to the Higgs field's nonzero vacuum value; a particle's mass is its coupling strength times that value.",
+ "reflected_formula": "",
+ "reflected_sentence": "Movement keeps as a strength times a field value, with no frozen partner for those factors.",
+ "shape": "keeps",
+ "rule_reason": "A definitional equation with no listed cost or separation. Zero such costs, so it keeps. Mass carries resistance, but resistance inside a definition is not a cost unless a cost is given. None is given.",
+ "rule_trace": [
+  "none"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "Yukawa coupling y_f",
+  "vacuum expectation value v",
+  "Higgs field",
+  "W boson",
+  "Z boson"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "Movement keeps. The Current is not this relationship. The relationship does not turn.",
+ "conflicts": "none",
+ "sense": 2,
+ "confidence": 5,
+ "closing": "The shape is forced: no costs, so it keeps, and I did not invent a resistance-cost out of mass. Yukawa is undetermined as a resistance carrier; that is a judgment the record leaves open. It is not in a cost, so the undetermined status does not change the parity and I did not judge it. The formula is a product, which I would have kept, but the coupling and the vacuum value have no partners and the square root of 2 is a number that does not cross, so there is no formula image. Nonzero is a quantity and does not cross. Missing partners do not change the keep.",
+ "knew_tsr": false
+}

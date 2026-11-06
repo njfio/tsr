@@ -1,0 +1,28 @@
+{
+ "id": "mech.friction",
+ "physical": "Resistance between two surfaces sliding past each other: the frictional force rises with the coefficient of friction and the normal force, and turns motion into heat.",
+ "reflected_formula": "Frequency = ∅ × ∅",
+ "reflected_sentence": "Friction reflects as resonance and the cost reading turns, but its coefficient and constraint lack partners.",
+ "shape": "turns around",
+ "rule_reason": "One sliding cost rises with coefficient of friction, which carries resistance, so the reading turns around; normal force is not itself a resistance carrier.",
+ "rule_trace": [
+  "resistance-cost"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "coefficient of friction",
+  "normal force",
+  "surfaces",
+  "sliding",
+  "motion",
+  "heat"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "Resonance. Frequency.",
+ "conflicts": "none",
+ "sense": 1,
+ "confidence": 7,
+ "closing": "The rule forces turns around, and the named friction-to-resonance reflection is available. That named reflection supplies neither a coefficient of resonance nor a partner for normal force; inventing either would violate the frozen vocabulary. The sentence names the physical input only to report its existing mapping, not to introduce friction onto the nonphysical side.",
+ "knew_tsr": false
+}

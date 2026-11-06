@@ -1,0 +1,26 @@
+{
+ "id": "em.faraday",
+ "physical": "A changing magnetic flux through a loop induces an electromotive force equal to the rate of change of the flux. EMF = dΦ_B ÷ dt",
+ "reflected_formula": "? = d? ÷ dExpansion",
+ "reflected_sentence": "The relationship involving Reflected and Expansion keeps its shape, with what changes and what it produces unnamed.",
+ "shape": "keeps",
+ "rule_reason": "No resistance cost is stated, so the relation keeps. Electromotive force is voltage, not force, and magnetic flux has no full partner.",
+ "rule_trace": [
+  "none"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "electromotive force (voltage)",
+  "magnetic flux Φ_B",
+  "loop",
+  "rate of change"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "Reflected does not complete the reflection. Expansion alone does not complete it.",
+ "conflicts": "none",
+ "sense": 1,
+ "confidence": 7,
+ "closing": "The zero-cost rule decides keeps on this statement alone; importing opposition from Lenz's law would violate the independence requirement. The differential syntax is retained formally, not interpreted as a quantitative rate on the nonphysical side. A complete reflected assertion cannot be made from these partners.",
+ "knew_tsr": false
+}

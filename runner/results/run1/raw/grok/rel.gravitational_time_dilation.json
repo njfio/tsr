@@ -1,0 +1,26 @@
+{
+ "id": "rel.gravitational_time_dilation",
+ "physical": "A clock deeper in a gravitational well runs slower than one higher up; the effect depends on depth in the well, not on the clock's own mass.",
+ "reflected_formula": "",
+ "reflected_sentence": "Expansion Dilation keeps with the Vortex, and not with the body's own Movement.",
+ "shape": "keeps",
+ "rule_reason": "No cost or separation is given. Zero such costs, so the relationship keeps. Mass appears in the formula but is not listed as a cost. Depth is not flagged as a separation made by distance. Time dilation's named partner is Expansion Dilation; gravity well's partner is Vortex.",
+ "rule_trace": [
+  "none"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "gravitational constant G",
+  "radius r",
+  "clock",
+  "proper time as distinct from coordinate time"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "Expansion Dilation keeps with the Vortex. Movement is not divided into two. The relationship does not turn.",
+ "conflicts": "none",
+ "sense": 3,
+ "confidence": 5,
+ "closing": "The given cost list is empty, so the parity rule keeps this without a judgment on mass or radius; both are fixed as not deciding a cost unless a cost is listed. I did not add a resistance-cost for central mass or a separation for depth, though a reader might see a limit there. That would be my addition, and the rule says to use the costs given. The ambiguity is that omission, which is why confidence is not 7, but forced is still true because I did not have to choose a quantity. G and r have no partners, the formula's 1, 2, and square root are numbers, and depth would require location, so the formula has no image. Clock mass and central mass both map to Movement, so that distinction cannot be split without a new word; I did not add one. Missing partners do not change the keep.",
+ "knew_tsr": false
+}

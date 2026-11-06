@@ -1,0 +1,24 @@
+{
+ "id": "mech.buoyancy",
+ "physical": "A body immersed in a fluid is pushed up by a force equal to the weight of the fluid it displaces; it floats if it is less dense than the fluid.",
+ "reflected_formula": "",
+ "reflected_sentence": "The equation keeps: Frequency is Desire times Vibrance times a downward pull, and floating follows the lesser Desire.",
+ "shape": "keeps",
+ "rule_reason": "Equation with an empty cost block: no listed resistance-cost and no listed separation, so the relationship keeps.",
+ "rule_trace": [
+  "none"
+ ],
+ "forced": true,
+ "unmapped_terms": [
+  "gravitational field g",
+  "weight"
+ ],
+ "new_words": [],
+ "monotone_claims": [],
+ "interpretation": "No cost is in the block, so the relationship keeps. Frequency, Desire, and Vibrance are frozen partners. The downward pull has no frozen partner, so no formula is written.",
+ "conflicts": "none",
+ "sense": 3,
+ "confidence": 6,
+ "closing": "The empty cost block and the equation form keep the relationship. The float clause compares densities and was not added as an unlisted limit. Gravitational field g has no partner; Appreciation and Attraction were not used for it. No new word was introduced.",
+ "knew_tsr": false
+}

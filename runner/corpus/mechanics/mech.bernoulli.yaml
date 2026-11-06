@@ -1,0 +1,17 @@
+id: mech.bernoulli
+domain: mechanics
+title: "Bernoulli's principle"
+statement: "Along a streamline of steady, inviscid, incompressible flow, pressure plus kinetic energy per volume plus gravitational energy per volume is constant."
+formula: "P + ½ × ρ × v² + ρ × g × h = const"
+form: conservation
+variables:
+  - {name: pressure P, quantity: pressure}
+  - {name: density ρ, quantity: density}
+  - {name: speed v, quantity: velocity}
+  - {name: height h, quantity: height}
+  - {name: gravitational field g, quantity: gravitational field g}
+costs: []
+standard_sources: ["Landau & Lifshitz, Fluid Mechanics, §5"]
+book_status: unreflected
+review: pending
+notes: "Energy conservation per unit volume. The formula is a sum (the book has products): flagged for the generators, not for the procedure."
