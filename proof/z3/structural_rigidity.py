@@ -1,24 +1,32 @@
 """
-structural_rigidity.py — Part II.A: Vocabulary-Free Automorphism Group of TSR
-==============================================================================
+structural_rigidity.py — Part II.A: Unlabeled Graph Automorphism Group of TSR
+=============================================================================
 Uses Z3 (SMT solver) to compute the exact automorphism group Aut(S_TSR) of the
-29 unlabeled nonphysical + center nodes of The Present and The Map across the
-full symmetric group S_29 (29! = 8,841,761,993,739,701,954,543,616,000,000),
-using ZERO English dictionary senses and ZERO artificial one-element sort tags.
+29 integer-indexed nonphysical + center nodes of The Present and The Map across
+the full symmetric group S_29 (29! = 8,841,761,993,739,701,954,543,616,000,000),
+passing zero English dictionary definitions to the solver.
 
-Demonstrates a 3-stage symmetry-breaking cascade directly from the equations and
-diagram geometry of The Sovereign Mirror:
+Epistemic scope: Following The Sovereign Mirror (v57, A Note Before We Begin p. 9),
+"the table borrows the shape of physics, not its authority." The 29-node graph
+relations (both multi-node equations/links and unary directional/polarity
+predicates in `_build_stage_relations`) were written by hand knowing the Map
+terms. What the Z3 result establishes is: no two terms in the Map, as encoded,
+are interchangeable (|Aut(S3)| = 1; all 29/29 nodes lie in singleton orbits).
+
+Demonstrates a 3-stage symmetry-breaking cascade from the equations and diagram
+geometry of The Sovereign Mirror (v57):
   - Stage S1 (Algebraic equations + Crossing V4 topology + Reality containment):
       |Aut(S1)| = 12  (≅ S_3 × Z_2; 21/29 nodes already have |orbit| = 1)
   - Stage S2 (+ Map p. 172 cross-row co-creation links: Tune->Attraction,
               Idle/Reflected->Momentum):
-      |Aut(S2)| = 2   (≅ Z_2; 27/29 nodes have |orbit| = 1; only Maxwellian
+      |Aut(S2)| = 2   (≅ Z_2; 27/29 nodes have |orbit| = 1; only
                        Idle <-> Reflected duality remains)
-  - Stage S3 (+ Ch. 2 p. 27 stationary-charge vs. closed-loop magnetic polarity):
+  - Stage S3 (+ Ch. 2 pp. 26-27 stationary/poised Idle vs. returning/closed-loop
+              Reflected polarity):
       |Aut(S3)| = 1   (Trivial group {id}; all 29/29 nodes have |orbit| = 1)
 
-Also proves Global Two-Sided Asymmetry (UNSAT + Minimal Unsatisfiable Core):
-no structure-preserving bijection of the full two-sided system can swap the
+Also checks Global Two-Sided Asymmetry (UNSAT + Minimal Unsatisfiable Core):
+no structure-preserving bijection of the encoded two-sided system can swap the
 Physical and Nonphysical sectors because ρ_NP = 0 vs. ρ_P > 0 breaks mirror parity.
 """
 from __future__ import annotations
@@ -151,7 +159,7 @@ def _build_stage_relations(stage: int) -> dict[str, Any]:
     #   Reality containment (Collective outer whole -> Vibrational individual share, Ch. 6 p. 50)
     reality_contains2 = {(IDX["Collective Reality"], IDX["Vibrational Reality"])}
 
-    #   Particular sits in the overlap of Collective and Vibrational Realities (Map p. 169)
+    #   Particular sits in the overlap of Collective and Vibrational Realities (Map p. 169, p. 171)
     particular_in_realities3 = {
         (IDX["Movement M"], IDX["Collective Reality"], IDX["Vibrational Reality"]),
         (IDX["Movement M"], IDX["Vibrational Reality"], IDX["Collective Reality"]),
@@ -206,9 +214,10 @@ def _build_stage_relations(stage: int) -> dict[str, Any]:
         )
 
     if stage >= 3:
-        # Ch. 2 p. 27 Gauss/Maxwell field asymmetry:
-        #   Electric <-> Idle: present around a stationary charge (monopole source != 0)
-        #   Magnetic <-> Reflected: closed field lines with zero monopole (div B = 0, always returning)
+        # The Sovereign Mirror (v57), Note p. 9: "the table borrows the shape of physics, not its authority."
+        # Ch. 2 pp. 26-27 stationary/poised vs. returning polarity of the two Current partners:
+        #   Idle (across from Electro): poised, running while standing still (present at rest without traveling)
+        #   Reflected (across from Magnetic): bent back, closing on itself (always returning rather than pouring out)
         rels["poised_stationary_component1"] = (1, {IDX["Idle"]})
         rels["closed_loop_returning_component1"] = (1, {IDX["Reflected"]})
 
@@ -319,7 +328,7 @@ def prove_two_sided_asymmetry_unsat() -> dict[str, Any]:
     )
     solver.assert_and_track(
         z3.And(blockable_in_crossing(0) == False, blockable_in_crossing(1) == True),
-        "thm_3_2_bottom_holding_on_barrier_only_on_P",
+        "thm_3_2_bottom_holding_on_resistance_only_on_P",
     )
 
     # Automorphism preservation of dynamical laws
@@ -362,14 +371,23 @@ def run_structural_rigidity() -> dict[str, Any]:
     assert s3["fixed_node_count"] == 29
 
     return {
-        "proof_id": "Part_II_A_Vocabulary_Free_Structural_Rigidity",
+        "proof_id": "Part_II_A_Unlabeled_Graph_Structural_Rigidity",
+        "epistemic_scope": (
+            "Following The Sovereign Mirror (v57, Note p. 9), 'the table borrows the shape of physics, "
+            "not its authority.' Although the Z3 solver receives only unlabeled integer node IDs 0..28 "
+            "with zero English dictionary definitions, the 29-node graph relations in `_build_stage_relations` "
+            "were written by hand knowing the Map terms. What this Z3 automorphism proof establishes is: "
+            "no two terms in the Map, as encoded, are interchangeable (12 -> 2 -> 1 automorphism collapse, "
+            "all 29/29 nodes fixed at Stage 3), and no encoded bijection swaps the Nonphysical and Physical sectors."
+        ),
+        "relations_hand_written_knowing_targets": True,
         "z3_version": z3.get_version_string(),
         "total_unlabeled_nodes": N_NODES,
         "symmetric_group_size": str(math.factorial(N_NODES)),
         "stages": {
             "S1_equations_crossing_containment": s1,
             "S2_plus_map_cocreation_links": s2,
-            "S3_plus_gauss_maxwell_field_polarity": s3,
+            "S3_plus_ch2_stationary_vs_returning_polarity": s3,
         },
         "two_sided_swap_no_go": side_swap,
     }

@@ -1,14 +1,28 @@
 {
-  "source_book": "What the Words Knew (Nicholas Ferguson, November 2026), 'Every Word, for the Record', pp. 95-100",
+  "source": "What the Words Knew (Nicholas Ferguson, November 2026), proof 36, 'Every Word, for the Record', pp. 99-104",
+  "edition": "WTWK proof 36 (What-the-Words-Knew-interior-proof-36); Sovereign Mirror references verified against v57",
   "total_words": 80,
+  "kind_counts": {
+    "a pun": 1,
+    "both ways": 2,
+    "either side": 4,
+    "family": 36,
+    "household": 7,
+    "inward first": 5,
+    "no help": 1,
+    "not used": 1,
+    "nothing to add": 3,
+    "outward first": 19,
+    "unknown": 1
+  },
   "selection_frozen_dates": {
     "notebook_page_1": "2019-10-07",
     "published_table": "2020-07-06",
     "directions_post": "2020-07-09",
-    "sovereign_mirror_manuscript": "2026-10",
-    "extension_test_and_author_rulings": "2026-10-22",
-    "frozen_repo_formalization": "2026-11-05",
-    "etymology_audit": "2026-11"
+    "sovereign_mirror_manuscript": "2026-10 (v57)",
+    "oct22_formal_test_cdba80d": "2026-10-22 (tests/tsr_formal.py)",
+    "secondary_formalization_first_committed_nov13": "2026-11-13 (author-attested, first committed Nov 13; vocab/mirror.py, rule/tsr_formal_port.py)",
+    "etymology_audit": "2026-11 (refreshed against WTWK proof 36)"
   },
   "pie_root_standards": {
     "pie_roots_strict": "Strict modern laryngeal Indo-European reconstruction (de Vaan 2008 Etymological Dictionary of Latin; Rix et al. 2001 LIV2; Kroonen 2013 Proto-Germanic; Beekes 2010 Greek). Separates converge (< Lat. vergere < PIE *h1werg-) from vortex (< Lat. vertere < PIE *wert-) and records [] where no established PIE root exists.",
@@ -16,9 +30,9 @@
   },
   "classical_link_taxonomy": {
     "coined_translation_calque": "Strict coined morphological translation calque (category: translation_calque): medieval Scholastic Latin actualitas coined specifically to render Aristotle's coined Greek energeia (actual <-> energy).",
-    "classical_sense_overlap": "Classical polysemy parallel (category: classical_polysemy_parallel): independent classical Latin verbs desiderare and exspectare sharing dictionary polysemy 'to long for, hope for' (desire <-> expect, WTWK Ch. 5 p. 52); distinct from a coined translation calque."
+    "classical_sense_overlap": "Classical polysemy parallel (category: classical_polysemy_parallel): independent classical Latin verbs desiderare and exspectare sharing dictionary polysemy 'to long for, hope for' (desire <-> expect, WTWK proof 36 Ch. 2 p. 28, Ch. 5 p. 52); distinct from a coined translation calque."
   },
-  "historical_slot_swap_note": "Notebook page 1 (2019-10-07) placed Momentum in the nonphysical M slot (m <-> M); in the 2020-07-06 published table, Movement replaced Momentum in the M slot while Momentum moved to the center continuum (Collection + Radiation -> Momentum; WTWK pp. 39, 93). Under the strict Latinate -mentum/-ment stem filter, momentum <-> movement is excluded as non-blind morphology.",
+  "historical_slot_swap_note": "Notebook page 1 (2019-10-07) placed Momentum in the nonphysical M slot (m <-> M); in the 2020-07-06 published table, Movement replaced Momentum in the M slot while Momentum moved to the center continuum (Collection + Radiation -> Momentum; WTWK proof 36 pp. 41, 97). Under the strict Latinate -mentum/-ment stem filter, momentum <-> movement is excluded as orthographically related morphology.",
   "words": [
     {
       "word": "accelerate",
@@ -44,7 +58,7 @@
       "tsr_slot": "acceleration",
       "physics_stratum": "core_law",
       "polysemy_tier": "low",
-      "pre_etymology_citation": "The Sovereign Mirror (Oct 2026), Ch. 2 pp. 20, 23 ('Force = mass × acceleration'), Ch. 8 p. 57, The Map pp. 171, 173 ('Appreciation ↔ Acceleration'); frozen code (Nov 5-6, 2026): vocab/mirror.py MIRROR ('acceleration', 'Appreciation') & rule/tsr_formal_port.py PHYS['acceleration'], ROWS 'F = ma'.",
+      "pre_etymology_citation": "The Sovereign Mirror (v57, Oct 2026), Ch. 2 pp. 20, 23 ('Force = mass × acceleration'), Ch. 8 p. 57, The Map pp. 171, 173 ('Appreciation ↔ Acceleration'); frozen code (author-attested, first committed Nov 13, 2026): vocab/mirror.py MIRROR ('acceleration', 'Appreciation') & rule/tsr_formal_port.py PHYS['acceleration'], ROWS 'F = ma'.",
       "audit_note": null
     },
     {
@@ -127,7 +141,7 @@
       "tsr_slot": "Attraction",
       "physics_stratum": "core_law",
       "polysemy_tier": "high",
-      "pre_etymology_citation": "Notebook p. 1 (2019-10-07, WTWK p. 93); Published Table (2020-07-06); The Sovereign Mirror (Oct 2026), Ch. 8 pp. 59-60, Ch. 16 pp. 117, 121, The Map pp. 169-170, 172 ('Receptive + Resistant -> Attraction', reflection of gravity); frozen code (Nov 5-6, 2026): vocab/mirror.py EXTENDED_PARTNERS['gravity'] = 'Attraction'.",
+      "pre_etymology_citation": "Notebook p. 1 (2019-10-07, WTWK proof 36 p. 97); Published Table (2020-07-06); The Sovereign Mirror (v57, Oct 2026), Ch. 8 pp. 59-60, Ch. 16 pp. 117, 121, The Map pp. 169-170, 172 ('Receptive + Resistant -> Attraction', reflection of gravity); frozen code (author-attested, first committed Nov 13, 2026): vocab/mirror.py EXTENDED_PARTNERS['gravity'] = 'Attraction'.",
       "audit_note": null
     },
     {
@@ -236,7 +250,7 @@
       "tsr_slot": "electric_charge",
       "physics_stratum": "core_law",
       "polysemy_tier": "high",
-      "pre_etymology_citation": "The Sovereign Mirror (Oct 2026), Ch. 2 p. 27 (Maxwell/Gauss stationary electric charge vs. closed-loop magnetic polarity fixing 'electric ↔ Idle' and 'magnetic ↔ Reflected'); kind='both ways' (scored conservatively as 0 in Test III.3).",
+      "pre_etymology_citation": "The Sovereign Mirror (v57, Oct 2026), Ch. 2 p. 27 (electric field around a charge at rest vs. magnetic lines closing back on themselves, fixing 'electric ↔ Idle' and 'magnetic ↔ Reflected'); kind='both ways' (scored conservatively as 0 in Test III.3).",
       "audit_note": null
     },
     {
@@ -347,7 +361,7 @@
       "physics_stratum": "secondary_physics",
       "polysemy_tier": "low",
       "pre_etymology_citation": null,
-      "audit_note": "From Late Latin convergere (com- + vergere 'to bend, incline'). Strict modern laryngeal IE (de Vaan 2008: 665; LIV2 290) reconstructs PIE *h1werg-, separating it from vertere/vortex (PIE *wert-). Grouped with vortex only under traditional Pokorny IEW 1152 *wer- root-extension umbrella. Also recorded in WTWK Ch. 8 p. 82 as an 'outward first' miss."
+      "audit_note": "From Late Latin convergere (com- + vergere 'to bend, incline'). Strict modern laryngeal IE (de Vaan 2008: 665; LIV2 290) reconstructs PIE *h1werg-, separating it from vertere/vortex (PIE *wert-). Grouped with vortex only under traditional Pokorny IEW 1152 *wer- root-extension umbrella. Also recorded in WTWK proof 36 Ch. 8 p. 86 as an 'outward first' miss."
     },
     {
       "word": "culminate",
@@ -400,7 +414,7 @@
       "tsr_slot": "Current",
       "physics_stratum": "core_law",
       "polysemy_tier": "high",
-      "pre_etymology_citation": "Published Table (2020-07-06); The Sovereign Mirror (Oct 2026), Ch. 1-2 pp. 17-27, Ch. 17 pp. 127-130, The Map pp. 169-174 ('C^2 × M = E = m × c^2', 'c ↔ C', 'Past ↔ Current'); frozen code (Nov 5-6, 2026): vocab/mirror.py MIRROR ('Past', 'Current') & ('speed of light c', 'Current'), rule/tsr_formal_port.py NONPHYS_STATED['conscious energy'].",
+      "pre_etymology_citation": "Published Table (2020-07-06); The Sovereign Mirror (v57, Oct 2026), Ch. 1-2 pp. 17-27, Ch. 17 pp. 127-130, The Map pp. 169-174 ('C^2 × M = E = m × c^2', 'c ↔ C', 'Past ↔ Current'); frozen code (author-attested, first committed Nov 13, 2026): vocab/mirror.py MIRROR ('Past', 'Current') & ('speed of light c', 'Current'), rule/tsr_formal_port.py NONPHYS_STATED['conscious energy'].",
       "audit_note": null
     },
     {
@@ -423,12 +437,12 @@
       "tsr_slot": "density",
       "physics_stratum": "core_law",
       "polysemy_tier": "medium",
-      "pre_etymology_citation": "The Sovereign Mirror (Oct 2026), Ch. 2 pp. 20, 22, 26 ('Mass = density × volume'), The Map pp. 172-173 ('Desire ↔ Density'); frozen code (Nov 5-6, 2026): vocab/mirror.py MIRROR ('density', 'Desire') & rule/tsr_formal_port.py PHYS['mass m'], ROWS 'm = density x volume'.",
+      "pre_etymology_citation": "The Sovereign Mirror (v57, Oct 2026), Ch. 2 pp. 20, 22, 26 ('Mass = density × volume'), The Map pp. 172-173 ('Desire ↔ Density'); frozen code (author-attested, first committed Nov 13, 2026): vocab/mirror.py MIRROR ('density', 'Desire') & rule/tsr_formal_port.py PHYS['mass m'], ROWS 'm = density x volume'.",
       "audit_note": null
     },
     {
       "word": "desire",
-      "where_it_began": "Latin desiderare, to long for, to miss; the star story is a 'perhaps'",
+      "where_it_began": "Latin desiderare, to long for, to miss; the star story is a “perhaps”",
       "in_english": "c.1200",
       "kind": "family",
       "check": [
@@ -450,7 +464,7 @@
       "physics_stratum": "not_physics_term",
       "polysemy_tier": "medium",
       "pre_etymology_citation": null,
-      "audit_note": "Classical Latin desiderare shares dictionary polysemy ('to long for, miss, hope for') with exspectare (expect) (WTWK Ch. 5 p. 52). Classified as classical_sense_overlap (classical_polysemy_parallel), NOT a translation calque."
+      "audit_note": "Classical Latin desiderare shares dictionary polysemy ('to long for, miss, hope for') with exspectare (expect) (WTWK proof 36 Ch. 2 p. 28, Ch. 5 p. 52). Classified as classical_sense_overlap (classical_polysemy_parallel), NOT a translation calque."
     },
     {
       "word": "distance",
@@ -476,12 +490,12 @@
       "tsr_slot": "distance",
       "physics_stratum": "core_law",
       "polysemy_tier": "medium",
-      "pre_etymology_citation": "The Sovereign Mirror (Oct 2026), Ch. 2 pp. 21, 24, Ch. 16 pp. 116, 118 ('#2: distance is what resistance makes'); frozen code (Nov 5-6, 2026): vocab/mirror.py EXTENDED_PARTNERS['distance'] = 'Vibration' & rule/tsr_formal_port.py ROWS #2.",
+      "pre_etymology_citation": "The Sovereign Mirror (v57, Oct 2026), Ch. 2 pp. 21, 24, Ch. 16 pp. 116, 118-119 ('#2: distance is what resistance makes'); frozen code (author-attested, first committed Nov 13, 2026): vocab/mirror.py EXTENDED_PARTNERS['distance'] = 'Vibration' & rule/tsr_formal_port.py ROWS #2.",
       "audit_note": null
     },
     {
       "word": "electric",
-      "where_it_began": "Modern Latin, 'like amber,' coined in 1600",
+      "where_it_began": "Modern Latin, “like amber,” coined in 1600",
       "in_english": "1640s",
       "kind": "household",
       "check": [
@@ -501,7 +515,7 @@
       "tsr_slot": "electric",
       "physics_stratum": "core_law",
       "polysemy_tier": "low",
-      "pre_etymology_citation": "Published Table (2020-07-06); The Sovereign Mirror (Oct 2026), Ch. 2 pp. 26-27 (electromagnetic radiation), The Map pp. 172-173 ('Idle-Reflected ↔ Electro-Magnetic'); frozen code (Nov 5-6, 2026): vocab/mirror.py MIRROR ('electric', 'Idle').",
+      "pre_etymology_citation": "Published Table (2020-07-06); The Sovereign Mirror (v57, Oct 2026), Ch. 2 pp. 26-27 (electromagnetic radiation), The Map pp. 172-173 ('Idle-Reflected ↔ Electro-Magnetic'); frozen code (author-attested, first committed Nov 13, 2026): vocab/mirror.py MIRROR ('electric', 'Idle').",
       "audit_note": null
     },
     {
@@ -561,7 +575,7 @@
     {
       "word": "energy",
       "where_it_began": "Greek energeia, being at work",
-      "in_english": "1590s, force of expression; physics, in Young's lectures of 1802, printed 1807",
+      "in_english": "1590s, force of expression; physics, in Young’s lectures of 1802, printed 1807",
       "kind": "inward first",
       "check": [
         "E",
@@ -583,12 +597,12 @@
       "tsr_slot": "Energy_E",
       "physics_stratum": "core_law",
       "polysemy_tier": "medium",
-      "pre_etymology_citation": "Notebook p. 1 (2019-10-07, central hinge 'E'); Published Table (2020-07-06); The Sovereign Mirror (Oct 2026), Ch. 2 p. 24, Ch. 16 p. 116 ('#7 E = mc^2'), Ch. 17 pp. 127-134, The Map pp. 169, 171-172; frozen code (Nov 5-6, 2026): vocab/mirror.py MIRROR ('physical energy', 'conscious energy') & rule/tsr_formal_port.py PHYS['physical energy'], ROWS #7.",
+      "pre_etymology_citation": "Notebook p. 1 (2019-10-07, central 'E'); Published Table (2020-07-06); The Sovereign Mirror (v57, Oct 2026), Ch. 2 p. 24, Ch. 16 pp. 117, 120 ('#7 E = mc^2'), Ch. 17 pp. 127-133, The Map pp. 169, 171-172; frozen code (author-attested, first committed Nov 13, 2026): vocab/mirror.py MIRROR ('physical energy', 'conscious energy') & rule/tsr_formal_port.py PHYS['physical energy'], ROWS #7.",
       "audit_note": "Aristotle's coined Greek energeia ('being-at-work', from ergon < PIE *werg-, cognate with English work); rendered in medieval Scholastic Latin by the coined translation calque actualitas (actual)."
     },
     {
       "word": "entity",
-      "where_it_began": "Latin ens, a made-up form of 'to be'",
+      "where_it_began": "Latin ens, a made-up form of “to be”",
       "in_english": "1590s",
       "kind": "family",
       "check": [
@@ -748,7 +762,7 @@
       "physics_stratum": "not_physics_term",
       "polysemy_tier": "medium",
       "pre_etymology_citation": null,
-      "audit_note": "Classical Latin exspectare ('to look out for; also to hope for, long for, desire') overlaps in classical sense with desiderare (desire) (WTWK Ch. 5 p. 52). Classified as classical_sense_overlap (classical_polysemy_parallel), NOT a calque."
+      "audit_note": "Classical Latin exspectare ('to look out for; also to hope for, long for, desire') overlaps in classical sense with desiderare (desire) (WTWK proof 36 Ch. 2 p. 28, Ch. 5 p. 52). Classified as classical_sense_overlap (classical_polysemy_parallel), NOT a calque."
     },
     {
       "word": "experience",
@@ -904,7 +918,7 @@
       "tsr_slot": "force",
       "physics_stratum": "core_law",
       "polysemy_tier": "high",
-      "pre_etymology_citation": "The Sovereign Mirror (Oct 2026), Ch. 2 pp. 20, 23 ('F = ma'), Ch. 8 p. 57, Ch. 10 pp. 76-79 (strong/weak core forces), The Map pp. 170-173 ('force ↔ Frequency'); frozen code (Nov 5-6, 2026): vocab/mirror.py MIRROR, DIAGONAL & rule/tsr_formal_port.py PHYS['force'], EXTENSION['work'], EXTENSION['power'], ROWS 'F = ma'.",
+      "pre_etymology_citation": "The Sovereign Mirror (v57, Oct 2026), Ch. 2 pp. 20, 23 ('F = ma'), Ch. 8 p. 57, Ch. 10 pp. 76-79 (strong/weak core forces), The Map pp. 170-173 ('force ↔ Frequency'); frozen code (author-attested, first committed Nov 13, 2026): vocab/mirror.py MIRROR, DIAGONAL & rule/tsr_formal_port.py PHYS['force'], EXTENSION['work'], EXTENSION['power'], ROWS 'F = ma'.",
       "audit_note": null
     },
     {
@@ -1008,12 +1022,12 @@
       "tsr_slot": "gravity",
       "physics_stratum": "core_law",
       "polysemy_tier": "medium",
-      "pre_etymology_citation": "The Sovereign Mirror (Oct 2026), Ch. 8 pp. 59-60 (falling-man equivalence), Ch. 16 pp. 117, 121 ('#11', '#12'), The Map pp. 170, 174, 176; frozen code (Nov 5-6, 2026): vocab/mirror.py EXTENDED_PARTNERS['gravity'] = 'Attraction' & rule/tsr_formal_port.py ROWS #11-12.",
+      "pre_etymology_citation": "The Sovereign Mirror (v57, Oct 2026), Ch. 8 pp. 59-60 (falling-man equivalence), Ch. 16 pp. 117, 121 ('#11', '#12'), The Map pp. 170, 174, 176; frozen code (author-attested, first committed Nov 13, 2026): vocab/mirror.py EXTENDED_PARTNERS['gravity'] = 'Attraction' & rule/tsr_formal_port.py ROWS #11-12.",
       "audit_note": null
     },
     {
       "word": "human",
-      "where_it_began": "Latin humanus; in part from a root for 'earthling'; the sound changes are unsettled",
+      "where_it_began": "Latin humanus; in part from a root for “earthling”; the sound changes are unsettled",
       "in_english": "mid-1400s",
       "kind": "family",
       "check": [
@@ -1139,8 +1153,8 @@
       "tsr_slot": "mass_inertia",
       "physics_stratum": "core_law",
       "polysemy_tier": "low",
-      "pre_etymology_citation": "The Sovereign Mirror (Oct 2026), Ch. 1 p. 16 (defining TSR's foundational physical resistance primitive via Newton's inertia: 'Physics measures one form of it every day and calls it mass: a thing's resistance to a change in its motion, its inertia'), Ch. 10 pp. 75-76; pre-etymology formalization audit deep-read.md Pass 1 (Nov 5, 2026: 'inertia and Newton's first and second laws').",
-      "audit_note": "Grounded pre-etymology in The Sovereign Mirror Ch. 1 p. 16 (defining TSR's foundational physical resistance condition via Newton's inertia) and Ch. 10 pp. 75-76."
+      "pre_etymology_citation": "The Sovereign Mirror (v57, Oct 2026), Ch. 1 p. 16 (defining TSR's foundational physical resistance primitive via Newton's inertia: 'Physics measures one form of it every day and calls it mass: a thing's resistance to a change in its motion, its inertia'), Ch. 10 pp. 75-76; pre-etymology formalization audit deep-read.md Pass 1 (Nov 5, 2026: 'inertia and Newton's first and second laws').",
+      "audit_note": "Grounded pre-etymology in The Sovereign Mirror (v57) Ch. 1 p. 16 (defining TSR's foundational physical resistance condition via Newton's inertia) and Ch. 10 pp. 75-76."
     },
     {
       "word": "inspire",
@@ -1197,11 +1211,10 @@
     {
       "word": "light",
       "where_it_began": "Old English, brightness, and already spiritual illumination",
-      "in_english": "looked up; not in the book",
-      "kind": "not used",
+      "in_english": "Old English, in both senses; mental illumination, mid-1400s",
+      "kind": "family",
       "check": [
-        "E",
-        "G"
+        "E"
       ],
       "pos": "noun",
       "root_group": "PIE:*leuk-",
@@ -1219,7 +1232,7 @@
       "tsr_slot": "speed_of_light",
       "physics_stratum": "core_law",
       "polysemy_tier": "high",
-      "pre_etymology_citation": "Notebook p. 1 (2019-10-07, 'c'); Published Table (2020-07-06); The Sovereign Mirror (Oct 2026), Ch. 2 pp. 21, 24, 26-27, Ch. 16 p. 116 ('#7 E = mc^2', '#9 mass can't reach c'), The Map pp. 170-171 ('c ↔ C'); frozen code (Nov 5-6, 2026): vocab/mirror.py MIRROR ('speed of light c', 'Current') & rule/tsr_formal_port.py PHYS['physical energy'], ROWS #7, #9.",
+      "pre_etymology_citation": "Notebook p. 1 (2019-10-07, 'c'); Published Table (2020-07-06); The Sovereign Mirror (v57, Oct 2026), Ch. 2 pp. 21, 24, 26-27, Ch. 16 pp. 116, 120 ('#7 E = mc^2', '#9 mass can't reach c'); WTWK proof 36 Ch. 7 p. 81 ('Light on both sides from the start'), The Map pp. 170-171 ('c ↔ C'); frozen code (author-attested, first committed Nov 13, 2026): vocab/mirror.py MIRROR ('speed of light c', 'Current') & rule/tsr_formal_port.py PHYS['physical energy'], ROWS #7, #9.",
       "audit_note": null
     },
     {
@@ -1250,7 +1263,7 @@
     },
     {
       "word": "manifest",
-      "where_it_began": "Latin, caught in the act; probably 'struck by the hand'",
+      "where_it_began": "Latin, caught in the act; probably “struck by the hand”",
       "in_english": "late 1300s",
       "kind": "outward first",
       "check": [
@@ -1300,7 +1313,7 @@
       "tsr_slot": "mass_m",
       "physics_stratum": "core_law",
       "polysemy_tier": "high",
-      "pre_etymology_citation": "Notebook p. 1 (2019-10-07, 'm'); Published Table (2020-07-06); The Sovereign Mirror (Oct 2026), Ch. 1 p. 16, Ch. 2 pp. 20-26, Ch. 16 p. 116, Ch. 17 pp. 127-132, The Map pp. 169, 171-173 ('m ↔ M'); frozen code (Nov 5-6, 2026): vocab/mirror.py MIRROR ('mass m', 'Movement M') & rule/tsr_formal_port.py PHYS, EXTENSION, ROWS.",
+      "pre_etymology_citation": "Notebook p. 1 (2019-10-07, 'm'); Published Table (2020-07-06); The Sovereign Mirror (v57, Oct 2026), Ch. 1 p. 16, Ch. 2 pp. 20-26, Ch. 16 pp. 116, 120-121, Ch. 17 pp. 127-132, The Map pp. 169, 171-173 ('m ↔ M'); frozen code (author-attested, first committed Nov 13, 2026): vocab/mirror.py MIRROR ('mass m', 'Movement M') & rule/tsr_formal_port.py PHYS, EXTENSION, ROWS.",
       "audit_note": null
     },
     {
@@ -1327,7 +1340,7 @@
       "tsr_slot": "physical_matter",
       "physics_stratum": "core_law",
       "polysemy_tier": "high",
-      "pre_etymology_citation": "The Sovereign Mirror (Oct 2026), Ch. 2 p. 25, Ch. 10 pp. 76, 79 (strong and weak forces governing the core of physical matter mapped to entity core), Ch. 18 pp. 137, 139, Ch. 21 p. 154; deep-read.md §2 (Nov 5, 2026); kind='either side' (scored 0 in Test III.3).",
+      "pre_etymology_citation": "The Sovereign Mirror (v57, Oct 2026), Ch. 2 p. 25, Ch. 10 pp. 76, 79 (strong and weak forces governing the core of physical matter mapped to entity core), Ch. 18 pp. 137, 139, Ch. 21 p. 154; deep-read.md §2 (Nov 5, 2026); kind='either side' (scored 0 in Test III.3).",
       "audit_note": null
     },
     {
@@ -1381,8 +1394,8 @@
       "tsr_slot": "Momentum",
       "physics_stratum": "core_law",
       "polysemy_tier": "low",
-      "pre_etymology_citation": "Notebook p. 1 (2019-10-07, WTWK p. 93); The Sovereign Mirror (Oct 2026), Ch. 17 pp. 129-130 ('mv' and 'mc'), The Map pp. 169-170, 172, 175 ('Collection + Radiation -> Momentum'); frozen code (Nov 5-6, 2026): vocab/mirror.py EXTENDED_PARTNERS['momentum'] & rule/tsr_formal_port.py EXTENSION['momentum'] = ('product', ('mass m', 'velocity')).",
-      "audit_note": "From Latin momentum (< *movimentum, from movere 'to move' + -mentum). Shares transparent move-/mo- onset and cognate Latinate -mentum/-ment nominalizing suffix with movement; excluded from strict blind pairs (and reported side-by-side under legacy 4-char filter). Historical slot note: Notebook p. 1 (2019-10-07) had Momentum in the M slot before Movement replaced it in the 2020-07-06 published table while Momentum moved to the center continuum (WTWK pp. 39, 93)."
+      "pre_etymology_citation": "Notebook p. 1 (2019-10-07, WTWK proof 36 p. 97); The Sovereign Mirror (v57, Oct 2026), Ch. 17 pp. 129-130 ('mv' and 'mc'), The Map pp. 169-170, 172, 175 ('Collection + Radiation -> Momentum'); frozen code (author-attested, first committed Nov 13, 2026): vocab/mirror.py EXTENDED_PARTNERS['momentum'] & rule/tsr_formal_port.py EXTENSION['momentum'] = ('product', ('mass m', 'velocity')).",
+      "audit_note": "From Latin momentum (< *movimentum, from movere 'to move' + -mentum). Shares transparent move-/mo- onset and cognate Latinate -mentum/-ment nominalizing suffix with movement; excluded from strict orthographically unrelated pairs (and reported side-by-side under legacy 4-char filter). Historical slot note: Notebook p. 1 (2019-10-07) had Momentum in the M slot before Movement replaced it in the 2020-07-06 published table while Momentum moved to the center continuum (WTWK proof 36 pp. 41, 97)."
     },
     {
       "word": "movement",
@@ -1409,7 +1422,7 @@
       "physics_stratum": "not_physics_term",
       "polysemy_tier": "high",
       "pre_etymology_citation": null,
-      "audit_note": "From Old French movement (< Medieval Latin movimentum, from movere 'to move' + -mentum). Excluded as non-blind with momentum under strict Latinate -mentum/-ment suffix stripping. Replaced Momentum in the nonphysical M slot between 2019-10-07 and 2020-07-06 (WTWK pp. 39, 93)."
+      "audit_note": "From Old French movement (< Medieval Latin movimentum, from movere 'to move' + -mentum). Excluded as orthographically related with momentum under strict Latinate -mentum/-ment suffix stripping. Replaced Momentum in the nonphysical M slot between 2019-10-07 and 2020-07-06 (WTWK proof 36 pp. 41, 97)."
     },
     {
       "word": "now",
@@ -1516,8 +1529,8 @@
       "tsr_slot": "power",
       "physics_stratum": "core_law",
       "polysemy_tier": "high",
-      "pre_etymology_citation": "Pre-etymology TSR Extension Test (2026-10-22, tests/README.md line 30) & Author's October 2026 Ruling (tsr.wtf/answers, 'Kinetic energy, work, and force'), frozen Nov 5-6, 2026 in vocab/mirror.py AUTHOR_RULING_SOURCES['power'], EXTENDED_PARTNERS['power'] = 'conscious energy' & tests/tsr_formal.py / rule/tsr_formal_port.py EXTENSION['power'] = ('product', ('force', 'velocity')).",
-      "audit_note": "Grounded pre-etymology in the 2026-10-22 Extension Test and October 2026 Author Ruling (tsr.wtf/answers) and frozen in vocab/mirror.py & rule/tsr_formal_port.py (Nov 5-6, 2026)."
+      "pre_etymology_citation": "Pre-etymology TSR Extension Test (2026-10-22, tests/README.md line 30) & Author's October 2026 Ruling (tsr.wtf/answers, 'Kinetic energy, work, and force'), frozen in code (author-attested, first committed Nov 13, 2026) in vocab/mirror.py AUTHOR_RULING_SOURCES['power'], EXTENDED_PARTNERS['power'] = 'conscious energy' & tests/tsr_formal.py / rule/tsr_formal_port.py EXTENSION['power'] = ('product', ('force', 'velocity')).",
+      "audit_note": "Grounded pre-etymology in the 2026-10-22 Extension Test and October 2026 Author Ruling (tsr.wtf/answers) and in vocab/mirror.py & rule/tsr_formal_port.py (author-attested, first committed Nov 13, 2026)."
     },
     {
       "word": "present",
@@ -1572,7 +1585,7 @@
       "tsr_slot": "pressure",
       "physics_stratum": "core_law",
       "polysemy_tier": "medium",
-      "pre_etymology_citation": "The Sovereign Mirror (Oct 2026), Ch. 16 p. 118 (Boyle's law inverse volume-pressure reflection); Extension Test Key item 11 (2026-10-22 / Nov 5, 2026); frozen code (Nov 5-6, 2026): rule/tsr_formal_port.py ROWS 'Boyle: squeeze volume, pressure climbs'.",
+      "pre_etymology_citation": "The Sovereign Mirror (v57, Oct 2026), Ch. 16 p. 118 (Boyle's law inverse volume-pressure reflection); Extension Test Key item 11 (2026-10-22 / Nov 5, 2026); frozen code (author-attested, first committed Nov 13, 2026): rule/tsr_formal_port.py ROWS 'Boyle: squeeze volume, pressure climbs'.",
       "audit_note": null
     },
     {
@@ -1655,7 +1668,7 @@
     {
       "word": "reflection",
       "where_it_began": "Late Latin, a bending back",
-      "in_english": "late 1300s, of light; 1670s, of the mind",
+      "in_english": "late 1300s, of light; 1670s, of the mind; reflectivity, 1800s",
       "kind": "outward first",
       "check": [
         "E",
@@ -1680,7 +1693,7 @@
     },
     {
       "word": "remember",
-      "where_it_began": "Latin, to be mindful again; 're-member' is a pun",
+      "where_it_began": "Latin, to be mindful again; “re-member” is a pun",
       "in_english": "early 1300s",
       "kind": "a pun",
       "check": [
@@ -1761,7 +1774,7 @@
     },
     {
       "word": "sense",
-      "where_it_began": "Latin sentire, to perceive; root glossed 'to go'",
+      "where_it_began": "Latin sentire, to perceive; root glossed “to go”",
       "in_english": "c.1400",
       "kind": "outward first",
       "check": [
@@ -1813,7 +1826,7 @@
     {
       "word": "sovereign",
       "where_it_began": "Latin super, over",
-      "in_english": "late 1200s, a ruler over others; self-rule came later; the g came from 'reign'",
+      "in_english": "late 1200s, a ruler over others; self-rule came later; the g came from “reign”",
       "kind": "family",
       "check": [
         "E"
@@ -1858,13 +1871,13 @@
       "tsr_slot": "space",
       "physics_stratum": "core_law",
       "polysemy_tier": "high",
-      "pre_etymology_citation": "Notebook p. 1 (2019-10-07); Published Table (2020-07-06); The Sovereign Mirror (Oct 2026), Ch. 2 pp. 21-22, 26, Ch. 16 p. 116 ('#10 space-time one continuum'), The Map pp. 169, 171, 173 ('space ↔ Vibration'); frozen code (Nov 5-6, 2026): vocab/mirror.py MIRROR ('space', 'Vibration') & rule/tsr_formal_port.py PHYS['velocity'], EXTENSION['work'], ROWS #10.",
+      "pre_etymology_citation": "Notebook p. 1 (2019-10-07); Published Table (2020-07-06); The Sovereign Mirror (v57, Oct 2026), Ch. 2 pp. 21-22, 26, Ch. 16 p. 121 ('#10 space-time one continuum'), The Map pp. 169, 171, 173 ('space ↔ Vibration'); frozen code (author-attested, first committed Nov 13, 2026): vocab/mirror.py MIRROR ('space', 'Vibration') & rule/tsr_formal_port.py PHYS['velocity'], EXTENSION['work'], ROWS #10.",
       "audit_note": null
     },
     {
       "word": "subject",
       "where_it_began": "Latin, thrown under",
-      "in_english": "early 1300s, one under a ruler; subjective as 'in the mind,' 1707",
+      "in_english": "early 1300s, one under a ruler; subjective as “in the mind,” 1707",
       "kind": "family",
       "check": [
         "E"
@@ -1940,13 +1953,13 @@
       "tsr_slot": "time",
       "physics_stratum": "core_law",
       "polysemy_tier": "high",
-      "pre_etymology_citation": "Notebook p. 1 (2019-10-07); Published Table (2020-07-06); The Sovereign Mirror (Oct 2026), Ch. 2 pp. 21-22, Ch. 15 pp. 111-115, Ch. 16 p. 116 ('#5', '#10'), The Map pp. 169, 171, 173 ('time ↔ Expansion'); frozen code (Nov 5-6, 2026): vocab/mirror.py MIRROR ('time', 'Expansion') & rule/tsr_formal_port.py PHYS, EXTENSION, ROWS #5, #10.",
+      "pre_etymology_citation": "Notebook p. 1 (2019-10-07); Published Table (2020-07-06); The Sovereign Mirror (v57, Oct 2026), Ch. 2 pp. 21-22, Ch. 15 pp. 111-115, Ch. 16 pp. 116, 120-121 ('#5', '#10'), The Map pp. 169, 171, 173 ('time ↔ Expansion'); frozen code (author-attested, first committed Nov 13, 2026): vocab/mirror.py MIRROR ('time', 'Expansion') & rule/tsr_formal_port.py PHYS, EXTENSION, ROWS #5, #10.",
       "audit_note": null
     },
     {
       "word": "tune",
       "where_it_began": "a variant of tone; Greek tonos, a stretching, a taut string",
-      "in_english": "early 1300s; attune, 1590s, 'probably suggested by' atone",
+      "in_english": "early 1300s; attune, 1590s, “probably suggested by” atone",
       "kind": "outward first",
       "check": [
         "E",
@@ -1974,7 +1987,7 @@
     {
       "word": "vibration",
       "where_it_began": "Latin vibrare, to shake",
-      "in_english": "vibrate, 1610s; vibrant as 'full of life,' 1858; vibes, 1967",
+      "in_english": "vibrate, 1610s; vibrant as “full of life,” 1858; vibes, 1967",
       "kind": "both ways",
       "check": [
         "E",
@@ -2023,7 +2036,7 @@
       "tsr_slot": "volume",
       "physics_stratum": "core_law",
       "polysemy_tier": "high",
-      "pre_etymology_citation": "The Sovereign Mirror (Oct 2026), Ch. 2 pp. 20, 22, 26 ('Mass = density × volume'), Ch. 16 p. 118 (Boyle's law), The Map pp. 172-173 ('Volume ↔ Vibrance'); frozen code (Nov 5-6, 2026): vocab/mirror.py MIRROR ('volume', 'Vibrance') & rule/tsr_formal_port.py PHYS['mass m'], ROWS 'm = density x volume', 'Boyle: squeeze volume, pressure climbs'.",
+      "pre_etymology_citation": "The Sovereign Mirror (v57, Oct 2026), Ch. 2 pp. 20, 22, 26 ('Mass = density × volume'), Ch. 16 p. 118 (Boyle's law), The Map pp. 172-173 ('Volume ↔ Vibrance'); frozen code (author-attested, first committed Nov 13, 2026): vocab/mirror.py MIRROR ('volume', 'Vibrance') & rule/tsr_formal_port.py PHYS['mass m'], ROWS 'm = density x volume', 'Boyle: squeeze volume, pressure climbs'.",
       "audit_note": null
     },
     {
@@ -2051,7 +2064,7 @@
       "physics_stratum": "secondary_physics",
       "polysemy_tier": "low",
       "pre_etymology_citation": null,
-      "audit_note": "From Latin vortex/vertex ('whirlpool') < vertere ('to turn') < PIE *wert- (de Vaan 2008: 667; LIV2 691), distinct in strict laryngeal IE from vergere/converge (PIE *h1werg-); united only under Pokorny IEW 1152 *wer-. Also an 'outward first' miss in WTWK Ch. 8 p. 82."
+      "audit_note": "From Latin vortex/vertex ('whirlpool') < vertere ('to turn') < PIE *wert- (de Vaan 2008: 667; LIV2 691), distinct in strict laryngeal IE from vergere/converge (PIE *h1werg-); united only under Pokorny IEW 1152 *wer-. Also an 'outward first' miss in WTWK proof 36 Ch. 8 p. 86."
     },
     {
       "word": "want",
@@ -2084,7 +2097,7 @@
     {
       "word": "wave",
       "where_it_began": "Old English, to move to and fro; the sources conflict",
-      "in_english": "looked up; not in the book",
+      "in_english": "origin looked up; not told in the book",
       "kind": "not used",
       "check": [
         "E",
@@ -2157,8 +2170,8 @@
       "tsr_slot": "work",
       "physics_stratum": "core_law",
       "polysemy_tier": "high",
-      "pre_etymology_citation": "Pre-etymology TSR Extension Test (2026-10-22, tests/README.md line 30) & Author's October 2026 Ruling (tsr.wtf/answers, 'Kinetic energy, work, and force'; deep-read.md lines 74, 172 [Nov 5, 2026]), frozen Nov 5-6, 2026 in vocab/mirror.py AUTHOR_RULING_SOURCES['work'], EXTENDED_PARTNERS['work'] = 'conscious energy' & tests/tsr_formal.py / rule/tsr_formal_port.py EXTENSION['work'] = ('product', ('force', 'space')).",
-      "audit_note": "Cognate with energy via PIE *werg- (OE weorc / Gk. ergon -> energeia). Grounded pre-etymology in the 2026-10-22 Extension Test and October 2026 Author Ruling (tsr.wtf/answers) and frozen in vocab/mirror.py & rule/tsr_formal_port.py (Nov 5-6, 2026)."
+      "pre_etymology_citation": "Pre-etymology TSR Extension Test (2026-10-22, tests/README.md line 30) & Author's October 2026 Ruling (tsr.wtf/answers, 'Kinetic energy, work, and force'; deep-read.md lines 74, 172 [Nov 5, 2026]), frozen in code (author-attested, first committed Nov 13, 2026) in vocab/mirror.py AUTHOR_RULING_SOURCES['work'], EXTENDED_PARTNERS['work'] = 'conscious energy' & tests/tsr_formal.py / rule/tsr_formal_port.py EXTENSION['work'] = ('product', ('force', 'space')).",
+      "audit_note": "Cognate with energy via PIE *werg- (OE weorc / Gk. ergon -> energeia). Grounded pre-etymology in the 2026-10-22 Extension Test and October 2026 Author Ruling (tsr.wtf/answers) and in vocab/mirror.py & rule/tsr_formal_port.py (author-attested, first committed Nov 13, 2026)."
     }
   ]
 }

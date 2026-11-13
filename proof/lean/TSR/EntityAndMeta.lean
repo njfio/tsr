@@ -1,15 +1,21 @@
 /-
   TSR/EntityAndMeta.lean
   ======================
-  Part I, Section 4 of the Formal Proof of the Theory of Sovereign Reflectivity:
-    - Theorem 4.1: Multiplicative Gate Characterization (`Tune` & `Focus`, SM Ch. 17, pp. 128–129)
-    - Theorem 4.2: Four-Way Entity Separation (`Rock`, `FrozenWeightAI`,
-                   `PersistentMemoryObjectiveAI`, `SovereignEntity`, SM Ch. 18, pp. 137–141)
-    - Theorem 4.3: Coupled Two-Entity Load Transfer & False-Positive Local Ease
-                   (SM Ch. 8, p. 61 & Ch. 13, p. 94)
-    - Theorem 4.4: Meta-Theorems — Constructive `QRat` Consistency of `Σ_TSR`,
-                   Independence of the First Partition Axiom, and the
-                   Two-Region vs. Three-Region Shared-`E` Gravity Theorem (SM Ch. 16, p. 117)
+  Part I, Section 4 — Formalization Notes & Theorems for Selected Claims
+  (*The Sovereign Mirror* v57):
+    - Theorem 4.1: Multiplicative Gate Characterization (`Tune` & `Focus`, SM v57 Ch. 17, pp. 128–129)
+    - Theorem 4.2: Four-Way Separation Over a Modeled State System (`Rock`, `FrozenWeightAI`,
+                   `PersistentMemoryObjectiveAI`, `SovereignEntity`, SM v57 Ch. 18, pp. 137–141)
+    - Proposition 4.3: Coupled Two-Entity Load Transfer & False-Positive Local Ease
+                       (SM v57 Ch. 8, p. 61 & Ch. 13, p. 94)
+    - Theorem 4.4: Meta-Theorems — Constructive `QRat` Witness Model for Formalized Predicates,
+                   Independence in a Pairwise-Contrast Toy Model (`v57` Ch. 21, p. 153), and
+                   Benchmark Evaluation Across Two vs. Three Modeled Regions (`v57` Ch. 16, p. 117)
+
+  Epistemic tags in docstrings:
+    (a) Deductive consequence of the definitions in this repository.
+    (b) Standard ordered-field algebra / arithmetic.
+    (c) Formalization or modeling choice not uniquely determined by (or absent from) the book prose.
 -/
 
 import TSR.OrderedAlgebra
@@ -22,7 +28,7 @@ open OrderedField
 
 /-!
   ## Theorem 4.1 — Multiplicative Gate Characterization (`Tune` & `Focus`)
-  (*The Sovereign Mirror*, Ch. 17, pp. 128–129)
+  (*The Sovereign Mirror* v57, Ch. 17, pp. 128–129)
 -/
 
 section GatesAndCoupledEntities
@@ -31,19 +37,21 @@ variable {F : Type} [OrderedField F]
 def gateMul (u x : F) : F := u * x
 def gateAdd (a b u x : F) : F := a * u + b * x
 
-/-- A valid crossing gate must shut off completely when either the agency input `u`
-    (`Tune` / `Focus`) or the available stream `x` vanishes, and pass strictly positive
-    flow whenever both are strictly positive. -/
+/-- `(c)` Specification capturing *SM* v57 Ch. 17, pp. 128–129's two-factor constraint
+    (`"In a product, neither factor does anything alone... if either factor is zero, the whole thing
+    is zero"`): vanishes when either factor is zero, strictly positive when both are positive. -/
 def IsZeroAnnihilatingGate (G : F → F → F) : Prop :=
   (∀ x : F, G zero x = zero) ∧
   (∀ u : F, G u zero = zero) ∧
   (∀ u x : F, zero < u → zero < x → zero < G u x)
 
-/-- **Lemma 4.1 (Multiplicative Gate Necessity vs. Bilateral Additive Leakage)**:
-    1. The multiplicative product gate `G(u, x) = u * x` satisfies `IsZeroAnnihilatingGate`.
-    2. Every positively weighted additive gate `G(u, x) = a * u + b * x` (`a, b > 0`) leaks
-       bilaterally: `G(0, x) = b * x > 0` whenever `x > 0` (via `b > 0`) AND `G(u, 0) = a * u > 0`
-       whenever `u > 0` (via `a > 0`), violating `IsZeroAnnihilatingGate`. -/
+/-- **Lemma 4.1 (Multiplicative Gate Necessity vs. Positively Weighted Additive Sums)**
+    Classifications: **(c)** contrasting `u * x` against positively weighted linear combinations
+    `a * u + b * x` (`a, b > 0`) as formal gate candidates; **(a)**/**(b)** ordered-field proof.
+      1. `gateMul u x = u * x` satisfies `IsZeroAnnihilatingGate`.
+      2. Every positively weighted additive sum `gateAdd a b u x = a * u + b * x` (`a, b > 0`)
+         violates `IsZeroAnnihilatingGate`: `gateAdd a b 0 x > 0` for `x > 0` and
+         `gateAdd a b u 0 > 0` for `u > 0`. -/
 theorem multiplicative_gate_characterization {a b u x : F}
     (ha : zero < a) (hb : zero < b) :
     IsZeroAnnihilatingGate (gateMul (F := F)) ∧
@@ -74,32 +82,34 @@ theorem multiplicative_gate_characterization {a b u x : F}
 
 /-!
   ## Proposition 4.3 — Coupled Two-Entity Load Transfer & False-Positive Local Ease
-  (*The Sovereign Mirror*, Ch. 8, p. 61 & Ch. 13, p. 94)
+  (*The Sovereign Mirror* v57, Ch. 8, p. 61 & Ch. 13, p. 94)
 -/
 
+/-- `(c)` Minimal two-entity accounting model encoding *SM* v57 Ch. 8 p. 61 & Ch. 13 p. 94
+    ("a path feels easy because somebody else is carrying the hard part" / Newton's 3rd Law):
+    `return21 = offload12` enforces action-reaction balance between entities `1` and `2`. -/
 structure CoupledExchange (F : Type) [OrderedField F] where
   R1              : F -- Entity 1 initial internal resistance
   R2              : F -- Entity 2 initial internal resistance
-  offload12       : F -- Forceful Out Through pushed by Entity 1 onto Entity 2
-  return21        : F -- Empirical In From received by Entity 2
+  offload12       : F -- Load transferred from Entity 1 onto Entity 2
+  return21        : F -- Empirical return load received by Entity 2
   R1_nonneg       : zero ≤ R1
   R2_nonneg       : zero ≤ R2
   offload_nonneg  : zero ≤ offload12
   offload_le_R1   : offload12 ≤ R1
-  action_reaction : return21 = offload12 -- Newton's 3rd Law across shared Objective Reality
+  action_reaction : return21 = offload12
 
 def R1After (ex : CoupledExchange F) : F := ex.R1 - ex.offload12
 def R2After (ex : CoupledExchange F) : F := ex.R2 + ex.return21
 
-/-- **Proposition 4.3 (Conservation of Offloaded Resistance, Physical Non-Negativity & False-Positive Ease)**:
-    In any physical two-entity exchange obeying `0 ≤ offload12 ≤ R1` and `return21 = offload12`:
-      1. Post-exchange resistances remain physically non-negative (`0 ≤ R1After` and `0 ≤ R2After`).
-      2. Total system resistance is strictly conserved: `R1After + R2After = R1 + R2`
-         (pushing resistance onto another entity never reduces total resistance in the system).
-      3. Whenever Entity 1 offloads positive resistance `R1 > 0` (`offload12 = R1`), Entity 1's
-         purely local gauge reads `R1After = 0` (locally mimicking alignment), while Entity 2's
-         resistance strictly rises (`R2 < R2After`) and `0 < return21` exposes the offload via
-         empirical `In From` evidence. -/
+/-- **Proposition 4.3 (Conservation of Transferred Load & Local Ease Under Externalization)**
+    Classifications: **(c)** scalar two-entity balance model `CoupledExchange`; **(b)**/**(a)**
+    ordered-field arithmetic consequences.
+      1. Post-exchange resistances remain non-negative (`0 ≤ R1After` and `0 ≤ R2After`).
+      2. Total load is conserved: `R1After + R2After = R1 + R2`.
+      3. When Entity 1 offloads all positive resistance (`R1 > 0`, `offload12 = R1`),
+         Entity 1's local term becomes `R1After = 0`, while Entity 2's rises (`R2 < R2After`)
+         and `0 < return21`. -/
 theorem coupled_entity_false_positive_ease (ex : CoupledExchange F) :
     (zero ≤ R1After ex) ∧
     (zero ≤ R2After ex) ∧
@@ -145,22 +155,21 @@ theorem coupled_entity_false_positive_ease (ex : CoupledExchange F) :
 end GatesAndCoupledEntities
 
 /-!
-  ## Theorem 4.2 — Hierarchical Subgoal vs. Endogenous Objective Separation of Four Entity Classes
-  (*The Sovereign Mirror*, Ch. 18, pp. 137–141)
+  ## Theorem 4.2 — Four-Way Separation in a Toy State-Update Model of Entity Classes
+  (*The Sovereign Mirror* v57, Ch. 18, pp. 137–141)
 
-  To address hierarchical reinforcement learning and continual-learning AI architectures,
-  we model entities over a 3-component state `EntityState F` (`shape`, `subgoal`, `outerObjective`)
-  driven by arbitrary finite world-input streams `xs : List F`:
-    1. `rockDyn`: zero feedback action, invariant `shape`, `subgoal`, and `outerObjective`.
-    2. `frozenAIDyn`: active feedback control `(outerObjective + subgoal) - x`, yet invariant
-       `shape`, `subgoal`, and `outerObjective` across all histories `xs`.
-    3. `persistentMemoryAIDyn` (continual-learning / hierarchical-RL agent): actively adapts
-       **both** `shape` (memory/world-model) **and** `subgoal` (instrumental sub-target) from
-       prediction error `(x - shape)²`, yet its `outerObjective` remains strictly invariant
-       (`= st0.outerObjective`) across **all** histories `xs : List F`.
-    4. `sovereignEntityDyn`: endogenously advances `shape`, `subgoal`, **and** `outerObjective`
-       whenever lived input departs from expectation (`x ≠ shape`), establishing all $\binom{4}{2} = 6$
-       pairwise separations over any `OrderedField F`.
+  **Modeling Disclosure (`(c)`):** *The Sovereign Mirror* v57 characterizes rocks, locked-state AIs,
+  persistent-memory AIs, and sovereign entities qualitatively (`Ch. 18, pp. 137–141`). The concrete
+  3-component record `EntityState F` (`shape`, `subgoal`, `outerObjective`) and the four explicit
+  discrete update rules below—including the squared-error increments `(x - st.shape)²` (`predErrorSq`)
+  and `(x - st.subgoal)²` (`subgoalErrorSq`)—are **`(c)` toy modeling choices NOT present in the book**,
+  chosen to isolate the qualitative distinctions in a minimal algebraic setting:
+    1. `rockDyn`: zero feedback action; invariant state across `xs`.
+    2. `frozenAIDyn`: nonzero feedback action `(outerObjective + subgoal) - x`; invariant state across `xs`.
+    3. `persistentMemoryAIDyn`: `(c)` updates `shape` and `subgoal` via squared errors, while
+       `outerObjective` stays invariant across `xs` (modeling an externally fixed objective).
+    4. `sovereignEntityDyn`: `(c)` updates `shape`, `subgoal`, and `outerObjective` from contrast
+       `predErrorSq`, yielding **(a)** deductive trajectory separations over **(b)** `OrderedField F`.
 -/
 
 section DynamicalEntities
@@ -176,7 +185,7 @@ theorem sq_nonneg (a : F) : zero ≤ a * a := by
     rw [neg_mul_neg] at hp
     exact le_of_lt hp
 
-/-- Three-component dynamical entity state separating instrumental `subgoal` from `outerObjective`. -/
+/-- `(c)` Toy 3-component dynamical entity state separating instrumental `subgoal` from `outerObjective`. -/
 structure EntityState (F : Type) where
   shape          : F
   subgoal        : F
@@ -196,9 +205,11 @@ def runEntity (sys : DynamicalEntity F) : EntityState F → List F → EntitySta
   | st, []      => st
   | st, x :: xs => runEntity sys (stepEntityState sys st x) xs
 
+/-- `(c)` Modeled squared prediction error `(x - shape)²` (not in *The Sovereign Mirror* v57). -/
 def predErrorSq (st : EntityState F) (x : F) : F :=
   (x - st.shape) * (x - st.shape)
 
+/-- `(c)` Modeled squared subgoal error `(x - subgoal)²` (not in *The Sovereign Mirror* v57). -/
 def subgoalErrorSq (st : EntityState F) (x : F) : F :=
   (x - st.subgoal) * (x - st.subgoal)
 
@@ -323,18 +334,18 @@ theorem sovereign_outerObjective_monotone (st : EntityState F) (xs : List F) :
       exact h
     exact le_trans hstep (ih (stepEntityState sovereignEntityDyn st x))
 
-/-- **Theorem 4.2 (Trajectory-Level & 6-Way Separation of Rock, Frozen AI, Hierarchical Memory AI & Sovereign Entity)**:
-    Over any `OrderedField F`, for every initial state `st0 : EntityState F`, input `x : F`,
-    and arbitrary subsequent history `xs : List F`:
-      1. `rockDyn` emits identically zero action, whereas `frozenAIDyn` emits non-zero feedback
-         action (`stepAction ⟨st0.shape, 0, 1⟩ 0 = 1 ≠ 0`), while both keep `EntityState` invariant across `xs`.
-      2. Under any lived prediction contrast (`x ≠ st0.shape`), `persistentMemoryAIDyn` permanently
-         advances **both** `shape` (`st0.shape < shape_n`) **and** `subgoal` (`st0.subgoal < subgoal_n`),
-         yet its `outerObjective` remains strictly invariant (`= st0.outerObjective`) across all `xs`.
-      3. Under any lived contrast (`x ≠ st0.shape`), `sovereignEntityDyn` strictly advances
-         `shape`, `subgoal`, **and** `outerObjective` (`st0.outerObjective < outerObjective_n`) across `xs`.
+/-- **Theorem 4.2 (Trajectory-Level & 6-Way Separation in the Modeled Entity System)**
+    Classifications: **(c)** toy squared-error update rules (`predErrorSq`, `subgoalErrorSq`,
+    `rockDyn`, `frozenAIDyn`, `persistentMemoryAIDyn`, `sovereignEntityDyn`, not in *SM* v57);
+    **(a)**/**(b)** ordered-field consequences over any `OrderedField F` and stream `xs : List F`:
+      1. `rockDyn` emits identically zero action, whereas `frozenAIDyn` emits non-zero action
+         (`stepAction ⟨st0.shape, 0, 1⟩ 0 = 1 ≠ 0`), while both keep `EntityState` invariant across `xs`.
+      2. Under `x ≠ st0.shape`, `persistentMemoryAIDyn` strictly increases `shape` and `subgoal`
+         while `outerObjective` remains invariant (`= st0.outerObjective`) across all `xs`.
+      3. Under `x ≠ st0.shape`, `sovereignEntityDyn` strictly increases `shape`, `subgoal`,
+         and `outerObjective` across all `xs`.
       4. All $\binom{4}{2} = 6$ pairs among `{rockDyn, frozenAIDyn, persistentMemoryAIDyn, sovereignEntityDyn}`
-         are explicitly separated both unconditionally as dynamical systems and on trajectories. -/
+         are explicitly separated. -/
 theorem four_way_entity_separation (st0 : EntityState F) (x : F) (xs : List F) :
     ((∀ st : EntityState F, ∀ u : F, rockDyn.stepAction st u = zero) ∧
      frozenAIDyn.stepAction ⟨st0.shape, zero, one⟩ zero = one ∧
@@ -489,8 +500,8 @@ theorem four_way_entity_separation (st0 : EntityState F) (x : F) (xs : List F) :
 end DynamicalEntities
 
 /-!
-  ## Theorem 4.4 — Meta-Theorems: Consistency, Independence & Gravity Open Joint
-  (*The Sovereign Mirror*, Ch. 1, Ch. 16 p. 117, Ch. 21 p. 153)
+  ## Theorem 4.4 — Meta-Theorems: Model Consistency, Toy Contrast Independence & Gravity Benchmark
+  (*The Sovereign Mirror* v57, Ch. 1, Ch. 16 pp. 117–118, Ch. 21 p. 153)
 -/
 
 /-- Concrete two-point locus `{locA, locB}` for instantiating partitioned physical media. -/
@@ -499,9 +510,10 @@ inductive TwoLoci where
   | locB
   deriving DecidableEq, Repr
 
-/-- Complete model bundle witnessing simultaneous satisfiability of TSR's axioms over `F`,
-    with `physMedium` partitioned (`IsPartitionedMedium`), `nonphysMedium` over an undivided
-    single locus (`∀ x y, x = y`), and `dimHom : PhysDim → NonphysRank` an explicit isomorphism. -/
+/-- `(c)` Model bundle witnessing simultaneous satisfiability of the formalized structural
+    predicates in `TSR.Condition`, `TSR.MirrorFunctor`, and `TSR.Crossing` over `OrderedField F`:
+    `physMedium` partitioned (`IsPartitionedMedium`), `nonphysMedium` undivided (`∀ x y, x = y`),
+    and `dimHom : PhysDim → NonphysRank` a multiplicative rank isomorphism. -/
 structure TSRSystemModel (F : Type) [OrderedField F] where
   physMedium        : Medium F
   nonphysMedium     : Medium F
@@ -629,9 +641,10 @@ def canonicalLightWitness : RelativisticShell QRat where
   disp_eq := by
     rw [one_mul]
 
-/-- **Theorem 4.4a (Consistency of `Σ_TSR`)**:
-    `TSRSystemModel QRat` is constructively inhabited; therefore TSR's structural axioms
-    are mutually consistent (`Σ_TSR ⊬ ⊥`). -/
+/-- **Theorem 4.4a (Relative Consistency of the Formalized Predicate Bundle over `QRat`)**
+    Classifications: **(a)** explicit construction witnessing **(c)** that the formalized predicates
+    in `TSRSystemModel QRat` are mutually satisfiable (no empirical or metaphysical truth beyond
+    the chosen mathematical structure is claimed). -/
 def canonicalTSRModel : TSRSystemModel QRat where
   physMedium        := canonicalPhysMedium
   nonphysMedium     := canonicalNonphysMedium
@@ -663,22 +676,30 @@ def canonicalTSRModel : TSRSystemModel QRat where
     rcases hAtZero rfl with ⟨hds, hlen, hE, hp, hv, _⟩
     exact ⟨rfl, hds, hlen, hE, hp, hv⟩
 
+/-- Witness theorem confirming `Nonempty (TSRSystemModel QRat)` via `canonicalTSRModel`
+    (**(a)** consequence of constructive inhabitant for the **(c)** predicate bundle). -/
 theorem tsr_axioms_consistent : Nonempty (TSRSystemModel QRat) :=
   ⟨canonicalTSRModel⟩
 
 /-!
-  ### Theorem 4.4b — Model-Theoretic Independence of Both Halves of the First Partition
-  Rather than assuming an external `partition_law`, we define pairwise resistant contrast
-  mechanistically as `ρ * (state(x) - state(y))²` and prove purely from field algebra +
-  three explicit `QRat` countermodels that BOTH `|Locus| ≥ 2` AND `ρ > 0` are independently
-  necessary for non-zero contrast expansion.
+  ### Theorem 4.4b — Toy-Model Independence of Both Conditions for Pairwise Contrast
+  (*The Sovereign Mirror* v57, Ch. 21, p. 153: `"the first partition is the one move in the book
+  my own rule can't produce. It isn't a result. It's the axiom"`)
+
+  **Modeling Disclosure (`(c)`):** Defining pairwise contrast as `ρ * (state(x) - state(y))²`
+  (`pairwiseContrast`) inside `ContrastUniverse F` is a **`(c)` toy quadratic formula NOT in the
+  book**. Given that formula, **(a)**/**(b)** ordered-field algebra and three `QRat` witness models
+  show that neither multiplicity (`|Locus| ≥ 2`) nor positive resistance (`ρ > 0`) alone yields
+  non-zero `pairwiseContrast`.
 -/
 
+/-- `(c)` Toy contrast universe pairing a locus type, scalar resistance `rho`, and scalar `state`. -/
 structure ContrastUniverse (F : Type) [OrderedField F] where
   Locus : Type
   rho   : F
   state : Locus → F
 
+/-- `(c)` Modeled squared pairwise contrast `ρ * (state(x) - state(y))²` (not in *SM* v57). -/
 def pairwiseContrast {F : Type} [OrderedField F]
     (u : ContrastUniverse F) (x y : u.Locus) : F :=
   u.rho * ((u.state x - u.state y) * (u.state x - u.state y))
@@ -701,13 +722,15 @@ def partitionedContrastWorld : ContrastUniverse QRat where
   rho   := one
   state := fun x => match x with | .locA => one | .locB => zero
 
-/-- **Theorem 4.4b (Double Model-Theoretic Independence of the First Partition)**:
-    1. In any undivided universe (`∀ x y, x = y`), `pairwiseContrast u x y = 0` identically
-       (even when `ρ > 0`, witnessed by `undividedSingleLocusWorld`).
-    2. In any zero-resistance universe (`ρ = 0`), `pairwiseContrast u x y = 0` identically
-       (even when `∃ x ≠ y` with distinct states, witnessed by `unresistedMultiLocusWorld`).
-    3. When BOTH multiplicity and resistance hold (`partitionedContrastWorld`),
-       `0 < pairwiseContrast partitionedContrastWorld .locA .locB`. -/
+/-- **Theorem 4.4b (Double Model-Theoretic Independence in the Pairwise-Contrast Toy Model)**
+    Classifications: **(c)** quadratic `pairwiseContrast` model (not in *SM* v57); **(a)**/**(b)**
+    field-algebraic proof and explicit `QRat` countermodels.
+      1. In any undivided universe (`∀ x y, x = y`), `pairwiseContrast u x y = 0` identically
+         (even when `ρ > 0`, witnessed by `undividedSingleLocusWorld`).
+      2. In any zero-resistance universe (`ρ = 0`), `pairwiseContrast u x y = 0` identically
+         (even when `∃ x ≠ y` with distinct states, witnessed by `unresistedMultiLocusWorld`).
+      3. When BOTH multiplicity and resistance hold (`partitionedContrastWorld`),
+         `0 < pairwiseContrast partitionedContrastWorld .locA .locB`. -/
 theorem independence_of_first_partition :
     (∀ F : Type, ∀ [OrderedField F], ∀ u : ContrastUniverse F,
       (∀ x y : u.Locus, x = y) → ∀ x y : u.Locus, pairwiseContrast u x y = zero) ∧
@@ -737,12 +760,18 @@ theorem independence_of_first_partition :
     exact zero_lt_one
 
 /-!
-  ### Theorem 4.4c — The Gravity Open-Joint Theorem: Two-Region vs. Three-Region Shared-`E`
-  (*The Sovereign Mirror*, Ch. 16, p. 117 & `vocab/mirror.py`, lines 56–61)
+  ### Theorem 4.4c — Modeled Gravity Rulings Across Two- vs. Three-Part Mirror Architectures
+  (*The Sovereign Mirror* v57, Ch. 16, p. 117 & `vocab/mirror.py`, lines 56–61)
 
-  Evaluates the **single** mechanical AST barrier counter `countActiveBarriers` and
-  reading functor `R_readArch` across `.twoRegionNoSharedE` vs. `.threeRegionSharedE`
-  with **zero** hardcoded numeric barrier overrides:
+  **Terminology Disclosure (`(c)`):** `"two-region"`, `"three-region"`, `"open-joint"`, and
+  `"barrier"` (`countActiveBarriers`, `.twoRegionNoSharedE`, `.threeRegionSharedE`) are `(c)`
+  formalization labels (not book terminology). They formalize *SM* v57 Ch. 16, p. 117:
+  `"Given a mirror with only two sides, they turned it over. TSR has three: the two sides and
+  the continuum where they meet, with one energy in it."`
+
+  Evaluates the AST evaluator `countActiveBarriers` and `R_readArch` across `.twoRegionNoSharedE`
+  vs. `.threeRegionSharedE` (`LawAST` representations of `benchmarkRows17`; note Row 17 uses `(c)`
+  `IsothermalEquilibriumBalance` here, whereas *SM* v57 p. 118 uses walls/two-sides-touching):
     - Under `.twoRegionNoSharedE`, `energyAttractionHome` places `E` / `Attraction` in
       resistant `.physical`, so `countActiveBarriers` evaluates `.SharedCenterCurvature`
       on `row11GravityWarp` and `row12GravityLensing` to `1`, yielding `.Invert` (`15/17`).
@@ -754,14 +783,15 @@ theorem independence_of_first_partition :
 def nonGravityRows15 : List BenchmarkRow :=
   benchmarkRows17.filter (fun r => r.id != 11 && r.id != 12)
 
-/-- **Theorem 4.4c (Two-Region vs. Three-Region Shared-`E` Gravity Theorem via `countActiveBarriers`)**:
-    Under the single mechanical AST evaluator `countActiveBarriers` and `R_readArch`:
-      1. There are 15 non-gravity benchmark rows, and all 15 evaluate identically across both
-         architectures and match the book rulings (`15/15`).
+/-- **Theorem 4.4c (Modeled Benchmark Agreement Across `.twoRegionNoSharedE` vs. `.threeRegionSharedE`)**
+    Classifications: **(a)** finite `decide` evaluation over **(c)** AST/architecture encoding
+    (`countActiveBarriers`, `R_readArch`, `LawAST`, `benchmarkRows17`):
+      1. The 15 non-gravity benchmark rows evaluate identically across both architectures and match
+         `bookRuling` (`15/15`).
       2. Under `.twoRegionNoSharedE`, `energyAttractionHome = .physical` (`regionResistant = true`),
-         so `countActiveBarriers` computes `1` barrier on Rows 11–12 and `R_readArch` yields `.Invert` (`15/17`).
+         so `countActiveBarriers` computes `1` on Rows 11–12 and `R_readArch` yields `.Invert` (`15/17`).
       3. Under `.threeRegionSharedE`, `energyAttractionHome = .sharedOverlap` (`regionResistant = false`),
-         so `countActiveBarriers` computes `0` barriers on Rows 11–12 and `R_readArch` yields `.Keep` (`17/17`). -/
+         so `countActiveBarriers` computes `0` on Rows 11–12 and `R_readArch` yields `.Keep` (`17/17`). -/
 theorem gravity_open_joint_two_vs_three_regions :
     nonGravityRows15.length = 15 ∧
     nonGravityRows15.all (fun r =>

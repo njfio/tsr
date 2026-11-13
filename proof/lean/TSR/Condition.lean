@@ -1,13 +1,20 @@
 /-
   TSR/Condition.lean
   ==================
-  Part I, Section 1 of the Formal Proof of the Theory of Sovereign Reflectivity:
+  Part I, Section 1 — Lean 4 formalization of condition-triad, ripple-evolution,
+  irreversibility, and wave-interference models from *The Sovereign Mirror* (v57):
     - Proposition 1.1: Condition Triad Equivalence on Partitioned Media (`condition_triad_equivalence`),
                        Receptive Triad (`receptive_triad_equivalence`), and Undivided Locus Triad (`undivided_locus_triad`)
+                       (SM v57 Ch. 1, pp. 16–19; Ch. 2, p. 20; *The Map*, pp. 169–170)
     - Theorem 1.2: Damped Ripple Decay (`ρ > 0`), Zero-Resistance Laminar Culmination (`ρ = 0`),
-                   and Multi-Mode Chord Signature Preservation (`zero_resistance_chord_preservation`, SM Ch. 20, pp. 148–149)
-    - Theorem 1.3: "The Knife" — Irreversibility of Zero-Resistance Expansion (SM Ch. 14, p. 106)
-    - Theorem 1.4: Wave Interference Spatial-Separation Requirement (SM Ch. 16, p. 118)
+                   and Multi-Mode Chord Signature Preservation (`zero_resistance_chord_preservation`,
+                   SM v57 Ch. 1, p. 18; Ch. 2, p. 21; Ch. 20, pp. 148–149)
+    - Theorem 1.3: "The Knife" — Irreversibility of Zero-Resistance Expansion (SM v57 Ch. 14, p. 106)
+    - Theorem 1.4: Wave Interference Spatial-Separation Requirement (SM v57 Ch. 16, p. 118)
+
+  Epistemic status: explicit algebraic/discrete definitions (`Medium`, `barrier`, `transferCost`,
+  `PerturbationMedium`, `trajectory`, `chordTrajectory`, `listSum`) are `(c)` modeling choices;
+  all propositions/theorems here are `(a)` deductive consequences (using `(b)` ordered-field algebra).
 -/
 
 import TSR.OrderedAlgebra
@@ -49,18 +56,20 @@ theorem pos_of_mul_pos_left {a b : F} (ha : zero < a) (hab : zero < a * b) : zer
 
 /-!
   ## Proposition 1.1 — Bilinear Metric-Work Coupling of the Condition Triad
-  (*The Sovereign Mirror*, Ch. 1, pp. 17–20; *The Map*, p. 167)
+  (*The Sovereign Mirror* v57, Ch. 1, pp. 16–19; Ch. 2, p. 20; *The Map*, pp. 169–170)
 
-  The base `Medium F` structure assumes **only** a locus space `(Locus, dist)` obeying
-  `dist x x = 0` and `0 ≤ dist x y`, medium resistance `ρ ≥ 0`, and radiative coupling `κ > 0`.
+  Modeling choice `(c)`: The base `Medium F` structure assumes a locus space `(Locus, dist)`
+  obeying `dist x x = 0` and `0 ≤ dist x y`, resistance parameter `ρ ≥ 0`, and coupling `κ > 0`.
   Spatial partition into distinct positively separated particulars (`IsPartitionedMedium M`)
   is factored out as an explicit hypothesis:
-    - Boundary barrier work across `(x, y)` is `barrier M x y := ρ * dist x y`.
-    - Cross-boundary traversal loss is `transferCost M x y := κ * barrier M x y`.
+    - Formalization metric-resistance term: `barrier M x y := ρ * dist x y` (`(c)` modeling choice).
+    - Formalization transfer-loss term: `transferCost M x y := κ * barrier M x y` (`(c)` modeling choice).
+    - Note: `"barrier"` and `"transferCost"` are formalization identifiers `(c)`, not book vocabulary.
+  Deductive consequences `(a)`:
     - On a partitioned physical medium (`IsPartitionedMedium M`), `Resistant ↔ Limited ↔ Radiating`.
-    - On **any** medium (partitioned or undivided `Unit`), `ρ = 0` implies zero barrier/transfer
-      cost (`Limitless ∧ Collecting`), AND an undivided locus (`∀ x y, x = y`) independently
-      forces zero barrier/transfer cost (`Limitless ∧ Collecting`) via `dist_self`.
+    - On **any** medium (partitioned or undivided `Unit`), `ρ = 0` implies zero `barrier`/`transferCost`
+      (`Limitless ∧ Collecting`), AND an undivided locus (`∀ x y, x = y`) independently forces zero
+      `barrier`/`transferCost` (`Limitless ∧ Collecting`) via `dist_self`.
 -/
 
 structure Medium (F : Type) [OrderedField F] where
@@ -188,7 +197,12 @@ theorem undivided_locus_triad (M : Medium F) (hUndiv : ∀ x y : M.Locus, x = y)
 
 /-!
   ## Theorem 1.2 — Ripple Decay (`ρ > 0`) vs. Laminar Culmination (`ρ = 0`)
-  (*The Sovereign Mirror*, Ch. 1, p. 18: the pond stone vs. zero-resistance whole)
+  (*The Sovereign Mirror* v57, Ch. 1, p. 18; Ch. 2, p. 21; Ch. 20, pp. 148–149)
+
+  Modeling choice `(c)`: `PerturbationMedium`, `trajectory` (`B_{n+1} = (1 - α) B_n + ξ_n`),
+  `singleModePulse`, and `chordTrajectory` (`C_{n+1}(m) = (1 - ρ) C_n(m) + pulse_n(m)`) are
+  discrete linear-update models encoding the qualitative contrast between damped water ripples
+  and undamped laminar/chord culmination in the book (which states no explicit recurrence formula).
 -/
 
 structure PerturbationMedium (F : Type) [OrderedField F] where
@@ -367,7 +381,10 @@ theorem zero_resistance_chord_preservation {Mode : Type} [DecidableEq Mode]
 
 /-!
   ## Theorem 1.3 — "The Knife": Irreversibility of Zero-Resistance Expansion
-  (*The Sovereign Mirror*, Ch. 14, p. 106: *"You can cover a cut; you can't uncut it."*)
+  (*The Sovereign Mirror* v57, Ch. 14, p. 106: *"You can cover a cut. You can't uncut it."*)
+
+  Epistemic status: `(b)` ordered-field additive cancellation `(P0 + δ) - δ = P0` paired with
+  `(a)` monotonicity/strictness of `trajectory` under the `(c)` `PerturbationMedium` model.
 -/
 
 theorem zero_resistance_monotone (M : PerturbationMedium F)
@@ -421,8 +438,12 @@ theorem the_knife_irreversibility (M : PerturbationMedium F)
 
 /-!
   ## Theorem 1.4 — Wave Interference Requires Spatial Separation
-  (*The Sovereign Mirror*, Ch. 16, p. 118: why waves cancel in Space-Time via separated
+  (*The Sovereign Mirror* v57, Ch. 16, p. 118: why waves cancel in Space-Time via separated
   dark/bright fringes, whereas in the undivided Current two Movements cannot cancel.)
+
+  Epistemic status: modeling intensity conservation as a finite list sum `listSum X I = E_tot > 0`
+  is `(c)`/`(b)`; `destructive_null_requires_spatial_separation` and `single_locus_cannot_cancel`
+  are `(a)` deductive consequences.
 -/
 
 /-- Total energy summed over a finite list of spatial loci. -/

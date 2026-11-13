@@ -5,12 +5,14 @@
   over Lean 4 core (`Init`), together with general ordered-field theorems and
   a fully constructive rational model `QRat` (`OrderedField QRat`).
 
+  Epistemic classification: `(b)` standard ordered-field algebra.
   Having both:
     (1) Generic theorems quantified over an arbitrary `[OrderedField F]` (applicable
-        to ℝ, ℚ, or any ordered continuum), and
+        to ℝ, ℚ, or any ordered commutative field), and
     (2) A constructive witness `OrderedField QRat` built from `Int` with zero
-        unproved axioms,
-  guarantees that every TSR theorem is universally general AND non-vacuous.
+        `sorry` and zero `Classical.choice`,
+  establishes that all ordered-field results hold in general `[OrderedField F]`
+  and that the `OrderedField` axioms are constructively inhabited by `QRat`.
 -/
 
 namespace TSR

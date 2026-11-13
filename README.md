@@ -47,7 +47,7 @@ These are the ideas the book builds, in its own words.
 | [`reflection-game.md`](reflection-game.md) | The Reflection Game: try to build a table that holds together like TSR's, with any AI |
 | [`deep-read.md`](deep-read.md) | The Deep Read: a prompt that walks an AI through TSR in ten passes |
 | [`tests/`](tests/) | Tests of the one rule: a formal model, an extension test run with five AIs, and a blind round, with results and open questions |
-| [`proof/`](proof/PROOF.md) | Machine-checked formal verification suite: Lean 4 deductive proofs, Z3 structural & lexical rigidity, and exact rational etymology combinatorics |
+| [`proof/`](proof/PROOF.md) | Machine-checked formalization and consistency suite: Lean 4 deductive checks, Z3 graph & slot-uniqueness checks, and exact rational etymology combinatorics |
 | `10-02 The universe as reflection..mp3` | Audio recording: *The universe as reflection* |
 | [`the-sovereign-mirror/`](the-sovereign-mirror/) | Cover art for the book |
 
