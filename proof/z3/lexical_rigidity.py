@@ -1,29 +1,40 @@
 """
 lexical_rigidity.py — Part II.B: Chapter 16 Axiomatic MUC Audit & Cross-Platform Discrete-Sense Lexicon Audit
 =============================================================================================================
+Epistemic scope: Following *The Sovereign Mirror* (v57, A Note Before We Begin p. 9),
+"the table borrows the shape of physics, not its authority." Z3 does not independently
+know English, and the relation sets, `CANDIDATES` feature booleans, `SLOT_REQUIREMENTS`
+rules, and per-slot keyword groups (`DUAL_SENSE_POLYSEMY_SPECS` / `SINGLE_SENSE_DOMAIN_SPECS`)
+were all written by hand knowing the target Map terms (they are NOT "blind" to the
+target words). What the Z3 result establishes is: no two terms in the Map, as encoded,
+are interchangeable.
+
 Contains THREE explicitly distinguished components:
   1. Axiomatic Formalization of Chapter 16's Synchronic Elimination Rules (Z3):
      Encodes the stated multi-row structural and semantic elimination criteria from
-     *The Sovereign Mirror* (Ch. 2 pp. 26-27, Ch. 6 pp. 46-51, Ch. 8 pp. 59-60,
-     Ch. 16 pp. 122-126, Ch. 17 pp. 128-130, and The Map pp. 169-175) over the
-     30-word candidate pool. Epistemic scope: Z3 does not independently know English;
-     this component proves that Chapter 16's stated criteria are mutually consistent,
-     admit a unique satisfying assignment across all P(30, 14) = 4.28e18 injective
-     assignments (with only `growth` surviving before the continuum tiebreak, matching
-     p. 124), and yield 21 deletion-verified irreducible 1-minimal UNSAT cores.
+     *The Sovereign Mirror* (v57: Ch. 2 pp. 26-27, Ch. 6 pp. 46-51, Ch. 8 pp. 59-60,
+     Ch. 16 pp. 122-126, Ch. 17 pp. 128-130, and The Map pp. 169-176) over the
+     30-word candidate pool. Proves that the encoded Chapter 16 criteria are mutually
+     consistent, admit a unique satisfying assignment across all P(30, 14) = 4.28e18
+     injective assignments (with only `growth` surviving before the continuum tiebreak,
+     matching p. 124), and yield 21 deletion-verified 1-minimal UNSAT cores.
   2. Cross-Platform Discrete WordNet 3.0 Synset-Gloss Audit (All Platforms, Zero Window Parameters):
      Evaluates all 14 nonphysical slots of Chapter 16 (7 explicit dual-sense polysemy slots
      + 7 single-sense lexical-domain slots) against genuine Princeton WordNet 3.0 discrete
      synset definitions (`wordnet_100_synsets.json`, SHA-256 verified) across all 100
-     single-word candidates (`PRIMARY_30_POOL` U `CURRENT_CANDIDATES` U `ledger_80`), using
-     whole-word concept sets per discrete synset, strict target-stem non-circularity, and
-     zero character-window tuning. Runs deterministically on macOS, Linux, and Windows.
+     single-word candidates (`PRIMARY_30_POOL` U `CURRENT_CANDIDATES` U `ledger_80`).
+     Distinction: the per-slot concept keyword groups were written by hand knowing the
+     target words, while the dictionary intersection helper uses zero hand-coded per-word
+     booleans, zero character-window tuning, and an automated stem check enforcing zero
+     target-word stem self-matching. Runs deterministically on macOS, Linux, and Windows.
   3. Live macOS New Oxford American Dictionary Discrete-Sense & Uniform Window-Sweep Audit:
-     Queries macOS's local New Oxford American Dictionary (`CoreServices.DCSCopyTextDefinition`),
-     strips `ORIGIN` etymology blocks before lowercasing, splits entries strictly on discrete
-     sense delimiters (`•`, `;`, POS headers, numbered senses) into whole-word definition token
-     sets across all 14 slots with zero window parameters, and additionally runs a uniform
-     character-gap sensitivity sweep over `w in [40, 60, 80, 100]` demonstrating invariance.
+     When macOS `CoreServices` is available, queries New Oxford American Dictionary
+     (`DCSCopyTextDefinition`), strips `ORIGIN` etymology blocks before lowercasing, splits
+     entries strictly on discrete sense delimiters (`•`, `;`, POS headers, numbered senses)
+     into whole-word definition token sets across all 14 slots with zero window parameters,
+     and runs a uniform character-gap sensitivity sweep over `w in [40, 60, 80, 100]`.
+     When `CoreServices` is unavailable (Linux/Windows), runs deterministically via the
+     checked-in cross-platform Princeton WordNet 3.0 payload (`wordnet_100_synsets.json`).
 """
 from __future__ import annotations
 
@@ -70,7 +81,8 @@ SLOTS: list[str] = [
     "Intuition",
 ]
 
-# Boolean lexical + structural predicates (cited to SM pages and dictionary senses)
+# Boolean lexical + structural predicates (hand-written knowing the target Map terms,
+# cited to SM v57 pages and dictionary senses)
 FEATURES: list[str] = [
     "not_physical_side_term",          # Not already a physical-side term (Belief, Focus, Now, Past, Space, etc.)
     "not_center_whole_entity",         # Not the two-sided center whole ('soul' = Eternal-Energetic-Entity, p. 123)
@@ -118,7 +130,8 @@ COMMON_NONPHYS = [
     "unseparated_shared_medium",
 ]
 
-# Audited feature profiles for all 14 canonical TSR terms + 16 challengers + physical terms for A3-S
+# Hand-written feature profiles (authored knowing the target words) for all 14 canonical
+# TSR terms + 16 challengers + physical terms for A3-S
 CANDIDATES: dict[str, dict[str, bool]] = {
     # --- 14 Canonical TSR Nonphysical Terms ---
     "Current": _make_vec(
@@ -264,7 +277,7 @@ assert not CANDIDATES["magnetic"]["means_returning_closed_loop"]
 CAND_NAMES: list[str] = list(CANDIDATES.keys())
 CAND_IDX: dict[str, int] = {w: i for i, w in enumerate(CAND_NAMES)}
 
-# Slot-by-slot required features (each named with its exact book/structural justification)
+# Slot-by-slot required features (hand-written knowing the target Map terms, with SM v57 justifications)
 SLOT_REQUIREMENTS: dict[str, list[tuple[str, str]]] = {
     "Current": [
         ("not_physical_side_term", "Current_must_belong_to_nonphysical_side"),
@@ -327,15 +340,15 @@ SLOT_REQUIREMENTS: dict[str, list[tuple[str, str]]] = {
     "Vibrance": [
         ("not_physical_side_term", "Vibrance_must_belong_to_nonphysical_side"),
         ("oscillatory_difference_root", "Vibrance_is_derived_from_Vibration_as_Volume_from_Space (Ch.2 p.26)"),
-        ("means_vibration_extent", "Vibrance_must_mean_extent_fullness_of_vibration (Map p.175)"),
+        ("means_vibration_extent", "Vibrance_must_mean_extent_fullness_of_vibration (Ch.2 p.26, Map p.176)"),
     ],
     "Idle": [
         ("not_physical_side_term", "Idle_must_belong_to_nonphysical_side"),
-        ("means_poised_at_rest", "Idle_must_mean_running_while_standing_still_like_static_E_field (Ch.2 p.27)"),
+        ("means_poised_at_rest", "Idle_must_mean_poised_running_while_standing_still (Ch.2 p.27)"),
     ],
     "Reflected": [
         ("not_physical_side_term", "Reflected_must_belong_to_nonphysical_side"),
-        ("means_returning_closed_loop", "Reflected_must_mean_bent_back_closing_on_itself_like_B_lines (Ch.2 p.27)"),
+        ("means_returning_closed_loop", "Reflected_must_mean_bent_back_always_returning_closing_on_itself (Ch.2 p.27)"),
     ],
     "Future": [
         ("not_physical_side_term", "Future_must_belong_to_nonphysical_side"),
@@ -434,7 +447,7 @@ def extract_verified_minimal_unsat_core(
 ) -> list[str]:
     """
     Extract an UNSAT core with Z3 and deterministically reduce it by deletion
-    until it is 100% 1-minimal (removing ANY single constraint yields SAT).
+    until it is provably 1-minimal (removing ANY single constraint yields SAT).
     """
     solver = z3.Solver()
     solver.set(unsat_core=True)
@@ -532,7 +545,7 @@ def verify_tsr_sat_and_uniqueness() -> dict[str, Any]:
         "pre_continuum_tiebreak_solutions_count": len(pre_solutions),
         "pre_continuum_tiebreak_note": (
             "Without continuum_unfolding_sense on Expansion, exactly 2 of 4.28e18 assignments survive: "
-            "A0 and A0[Expansion := growth], independently confirming SM Ch.16 p.124 ('growth is what Expansion already means')."
+            "A0 and A0[Expansion := growth], matching SM v57 Ch.16 p.124 ('growth is what Expansion already means')."
         ),
         "canonical_tsr_sat": True,
         "unique_solution": True,
@@ -694,12 +707,18 @@ def run_a3_control_mucs() -> list[dict[str, Any]]:
 
 
 # =============================================================================================
-# Blind Discrete-Sense Lexicon Specifications Covering ALL 14 Nonphysical Slots of Chapter 16
+# Stem-Stripped Discrete-Sense Lexicon Specifications Covering ALL 14 Slots of Chapter 16
 # =============================================================================================
+# Epistemic clarification: The per-slot concept keyword groups below were written by hand
+# knowing the 14 target words in The Sovereign Mirror (v57); they are NOT "blind" to the
+# targets. What is automated and non-circular in the dictionary intersection helpers is:
+# (1) zero hand-coded per-word booleans are used during lookup, (2) zero character-window
+# parameters are tuned on discrete senses, (3) ORIGIN etymology is stripped before lowercasing
+# in Oxford, and (4) `_validate_noncircular_slot_specs` asserts zero target-word stem
+# self-matching across all 14 slots.
 # Every concept group is a set of whole lowercase words. A discrete dictionary sense matches a
 # query `groups: list[set[str]]` iff EVERY set in `groups` intersects that discrete sense's
-# whole-word token set. Zero character-window parameters are used on discrete senses, and an
-# automated stem assertion guarantees zero target-word stem self-matching across all 14 slots.
+# whole-word token set.
 
 DUAL_SENSE_POLYSEMY_SPECS: list[tuple[str, str, str, list[set[str]], list[set[str]]]] = [
     (
@@ -863,10 +882,12 @@ def _match_uniform_char_gap_window(text: str, groups: list[set[str]], max_char_g
 
 def verify_wordnet_synset_polysemy() -> dict[str, Any]:
     """
-    Cross-platform, OS-independent blind discrete-synset audit over genuine Princeton
+    Cross-platform, OS-independent discrete-synset lexicon audit over genuine Princeton
     WordNet 3.0 synset definitions (`proof/z3/wordnet_100_synsets.json`, SHA-256 verified)
-    across all 100 single-word candidates and all 14 nonphysical slots of Chapter 16,
-    with ZERO character-window parameters and ZERO hand-coded per-word booleans.
+    across all 100 single-word candidates and all 14 nonphysical slots of Chapter 16.
+    Per-slot keyword groups were written by hand knowing the target words; the lookup
+    helper uses zero character-window parameters, zero hand-coded per-word booleans, and
+    enforces zero target-stem circularity.
     """
     assert WORDNET_SYNSETS_PATH.exists(), f"Missing WordNet synset artifact: {WORDNET_SYNSETS_PATH}"
     raw_bytes = WORDNET_SYNSETS_PATH.read_bytes()
@@ -997,6 +1018,7 @@ def verify_wordnet_synset_polysemy() -> dict[str, Any]:
         "zero_window_size_parameters": True,
         "zero_hand_coded_word_booleans": True,
         "zero_target_stem_circularity_verified": True,
+        "per_slot_keyword_groups_hand_written_knowing_targets": True,
         "artifact_path": str(WORDNET_SYNSETS_PATH.relative_to(REPO_ROOT)),
         "artifact_file_sha256": artifact_file_sha256,
         "synsets_payload_sha256": computed_payload_sha256,
@@ -1047,13 +1069,18 @@ def _split_oxford_discrete_senses(pre_origin_text: str) -> list[set[str]]:
 
 def verify_blind_dictionary_polysemy(allow_coreservices: bool = True) -> dict[str, Any]:
     """
-    Independent blind discrete-sense audit against macOS's local New Oxford American
+    Stem-stripped discrete-sense lexicon audit against macOS's local New Oxford American
     Dictionary (`CoreServices.DCSCopyTextDefinition`), stripping `ORIGIN` blocks BEFORE
     lowercasing so etymology cannot leak in, splitting strictly into discrete senses
     with ZERO window-size parameters across all 14 nonphysical slots, AND running an
     explicit uniform `[40, 60, 80, 100]` character-gap sensitivity sweep.
-    When `CoreServices` is unavailable (e.g. Linux/Windows CI), cross-platform lexical
-    verification is still guaranteed by `verify_wordnet_synset_polysemy()`.
+    Note: The historical identifier `verify_blind_dictionary_polysemy` is retained for
+    caller compatibility; the per-slot keyword groups were written by hand knowing the
+    target words, while the lookup helper uses zero per-word booleans and enforces zero
+    target-stem self-matching.
+    When `CoreServices` is unavailable (e.g. Linux/Windows CI), the polysemy intersection
+    check executes deterministically against the checked-in cross-platform Princeton
+    WordNet 3.0 payload (`wordnet_100_synsets.json`) with compatible schema keys.
     """
     cs_path = ctypes.util.find_library("CoreServices") if allow_coreservices else None
     cf_path = ctypes.util.find_library("CoreFoundation") if allow_coreservices else None
@@ -1062,9 +1089,24 @@ def verify_blind_dictionary_polysemy(allow_coreservices: bool = True) -> dict[st
         return {
             "status": "macos_coreservices_unavailable_verified_via_cross_platform_wordnet_3_0",
             "macos_coreservices_available": False,
+            "lexicon_source_used": "checked_in_princeton_wordnet_3_0_payload",
+            "cross_platform_fallback_note": (
+                "macOS CoreServices / New Oxford American Dictionary is unavailable on this OS; "
+                "all 14-slot polysemy and domain-intersection checks ran deterministically against "
+                "the checked-in cross-platform Princeton WordNet 3.0 payload (wordnet_100_synsets.json)."
+            ),
             "cross_platform_wordnet_status": wn_fallback["status"],
             "cross_platform_wordnet_payload_sha256": wn_fallback["synsets_payload_sha256"],
+            "zero_window_size_parameters_in_discrete_audit": wn_fallback["zero_window_size_parameters"],
+            "zero_hand_coded_word_booleans": wn_fallback["zero_hand_coded_word_booleans"],
+            "zero_target_stem_circularity_verified": wn_fallback["zero_target_stem_circularity_verified"],
+            "per_slot_keyword_groups_hand_written_knowing_targets": True,
+            "single_word_pool_size": wn_fallback["single_word_pool_size"],
+            "resolved_entries_count": wn_fallback["resolved_words_count"],
+            "unresolved_words": wn_fallback["unresolved_words"],
             "slots_evaluated_total": wn_fallback["slots_evaluated_total"],
+            "dual_sense_polysemy_slots_count": wn_fallback["dual_sense_polysemy_slots_count"],
+            "single_sense_domain_slots_count": wn_fallback["single_sense_domain_slots_count"],
             "polysemy_intersections": wn_fallback["polysemy_intersections"],
             "single_sense_domain_survivors": wn_fallback["single_sense_domain_survivors"],
         }
@@ -1185,11 +1227,13 @@ def verify_blind_dictionary_polysemy(allow_coreservices: bool = True) -> dict[st
     return {
         "status": "verified_live_macos_new_oxford_american_dictionary_discrete_senses",
         "macos_coreservices_available": True,
+        "lexicon_source_used": "live_macos_new_oxford_american_dictionary",
         "origin_etymology_stripped_before_lowercase": True,
         "discrete_sense_delimiters": ["•", ";", "POS_header", "numbered_senses"],
         "zero_window_size_parameters_in_discrete_audit": True,
         "zero_hand_coded_word_booleans": True,
         "zero_target_stem_circularity_verified": True,
+        "per_slot_keyword_groups_hand_written_knowing_targets": True,
         "single_word_pool_size": len(pool),
         "resolved_entries_count": non_empty,
         "slots_evaluated_total": len(SLOTS),
@@ -1208,13 +1252,16 @@ def verify_blind_dictionary_polysemy(allow_coreservices: bool = True) -> dict[st
 
 
 def verify_cross_platform_without_coreservices(
-    baseline_wordnet: dict[str, Any],
+    baseline_wordnet: dict[str, Any] | None = None,
 ) -> dict[str, Any]:
     """
     Self-test mocking `ctypes.util.find_library` -> `None` (simulating a Linux/Windows CI
     runner without macOS `CoreServices`) to guarantee that offline discrete-synset verification
-    executes deterministically and never silently skips.
+    executes deterministically with full schema compatibility and never silently skips.
     """
+    if baseline_wordnet is None:
+        baseline_wordnet = verify_wordnet_synset_polysemy()
+
     orig_find_library = ctypes.util.find_library
     try:
         ctypes.util.find_library = lambda _name: None  # type: ignore[assignment]
@@ -1228,14 +1275,27 @@ def verify_cross_platform_without_coreservices(
         mocked_dict["status"]
         == "macos_coreservices_unavailable_verified_via_cross_platform_wordnet_3_0"
     )
+    assert mocked_dict["lexicon_source_used"] == "checked_in_princeton_wordnet_3_0_payload"
+    assert mocked_dict["zero_window_size_parameters_in_discrete_audit"] is True
+    assert mocked_dict["zero_hand_coded_word_booleans"] is True
+    assert mocked_dict["zero_target_stem_circularity_verified"] is True
+    assert mocked_dict["per_slot_keyword_groups_hand_written_knowing_targets"] is True
+    assert mocked_dict["single_word_pool_size"] == baseline_wordnet["single_word_pool_size"] == 100
+    assert mocked_dict["resolved_entries_count"] == baseline_wordnet["resolved_words_count"] == 99
     assert mocked_dict["slots_evaluated_total"] == len(SLOTS) == 14
+    assert mocked_dict["dual_sense_polysemy_slots_count"] == 7
+    assert mocked_dict["single_sense_domain_slots_count"] == 7
     assert mocked_dict["polysemy_intersections"] == baseline_wordnet["polysemy_intersections"]
+    assert mocked_dict["single_sense_domain_survivors"] == baseline_wordnet["single_sense_domain_survivors"]
     assert mocked_wn == baseline_wordnet
 
     return {
         "simulated_linux_ci_coreservices_disabled": True,
         "did_silently_skip": False,
         "fallback_status": mocked_dict["status"],
+        "lexicon_source_used": mocked_dict["lexicon_source_used"],
+        "zero_hand_coded_word_booleans": mocked_dict["zero_hand_coded_word_booleans"],
+        "zero_target_stem_circularity_verified": mocked_dict["zero_target_stem_circularity_verified"],
         "deterministic_match_with_wordnet_3_0_audit": True,
         "slots_verified_offline": mocked_dict["slots_evaluated_total"],
     }
@@ -1257,13 +1317,21 @@ def run_lexical_rigidity() -> dict[str, Any]:
     return {
         "proof_id": "Part_II_B_Chapter16_Axiomatic_MUC_Audit_and_Discrete_Sense_Lexicon_Audit",
         "epistemic_scope": (
-            "The 30x26 Z3 matrix formalizes Chapter 16's stated elimination criteria to prove mutual "
-            "consistency, unique satisfiability, and 21 deletion-verified 1-minimal UNSAT cores conditional "
-            "on those rules; independent zero-hand-coding, zero-window-parameter lexical verification across "
-            "all 14 slots is provided cross-platform by `wordnet_synset_polysemy` (Princeton WordNet 3.0, "
-            "SHA-256 verified) and on macOS by `blind_oxford_dictionary_polysemy` (discrete sense splitting + "
-            "uniform [40, 60, 80, 100] character-gap sensitivity sweep)."
+            "Following The Sovereign Mirror (v57, Note p. 9), 'the table borrows the shape of physics, "
+            "not its authority.' All relation sets, CANDIDATES feature flags, SLOT_REQUIREMENTS rules, "
+            "and per-slot keyword groups (DUAL_SENSE_POLYSEMY_SPECS / SINGLE_SENSE_DOMAIN_SPECS) were "
+            "written by hand knowing the target words (they are NOT blind to the targets). What the Z3 "
+            "proof establishes is: no two terms in the Map, as encoded, are interchangeable (unique "
+            "assignment across 4.28e18 injective mappings and 21 deletion-verified 1-minimal UNSAT cores). "
+            "In the dictionary-intersection helpers (`wordnet_synset_polysemy` and `blind_oxford_dictionary_polysemy` "
+            "— key retained for schema compatibility), zero hand-coded per-word booleans are used in the "
+            "lookup, zero window parameters are tuned on discrete senses, ORIGIN etymology is stripped "
+            "before lowercasing in Oxford, and an automated stem check enforces zero target-word stem "
+            "self-matching across all 14 slots; on non-macOS systems without CoreServices, the dictionary "
+            "audit executes deterministically via the checked-in cross-platform WordNet 3.0 payload."
         ),
+        "candidate_feature_flags_hand_written_knowing_targets": True,
+        "per_slot_keyword_groups_hand_written_knowing_targets": True,
         "z3_version": z3.get_version_string(),
         "uniqueness_theorem": uniqueness,
         "wordnet_synset_polysemy": wordnet_audit,

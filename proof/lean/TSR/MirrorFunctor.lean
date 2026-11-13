@@ -1,15 +1,26 @@
 /-
   TSR/MirrorFunctor.lean
   ======================
-  Part I, Section 2 of the Formal Proof of the Theory of Sovereign Reflectivity:
+  Part I, Section 2 — Lean 4 formalization of dimensional-rank typing, formula/reading
+  maps, mechanical composition, equivalence/monotonicity relations, and the relativistic
+  light-surface shell from *The Sovereign Mirror* (v57) and *What the Words Knew* (proof 36):
     - Theorem 2.1: The Elimination Theorem for Desire vs. Vibrance across distinct
-                   nominal types `PhysDim → NonphysRank` (SM Ch. 2, pp. 26–28; WTWK Ch. 4, p. 38)
-    - Theorem 2.2: Two-Level Mirror Functor (`R_form`, `R_read`), Spatial & Temporal
-                   Momentum (`mv`/`MV`, `mc`/`MC`), Multi-Region `LawAST` + `countActiveBarriers`,
-                   17/17 Book Rulings, and Multi-Barrier `Work` Resolution (SM Ch. 2, Ch. 16, Ch. 17)
+                   nominal types `PhysDim → NonphysRank` (SM v57 Ch. 2, pp. 26–28;
+                   WTWK proof 36, Ch. 7, pp. 76–78; cf. Ch. 6, pp. 62–63)
+    - Theorem 2.2: Formalized Mirror Functor (`R_form`, `R_read`), Velocity/Current
+                   Momentum (`mv`/`MV`, `mc`/`MC`), Multi-Region `LawAST` +
+                   `countActiveBarriers`, 17/17 Book Rulings, v57 Rule Wordings
+                   (`R_read_v57_ch2`, `R_read_v57_ch16`), and Multi-Barrier `Work`
+                   (SM v57 Ch. 2 p. 20, Ch. 16 pp. 116–121, Ch. 17 pp. 129–130)
     - Theorem 2.3: Falling-Man Equivalence Principle, Multiplicative Frequency Uniqueness,
-                   and Cross-Hinge Dilation Throttling (SM Ch. 8, pp. 58–60; Ch. 15, p. 115; Ch. 20, p. 147)
-    - Theorem 2.4: Light as the Surface of the Mirror (SM Ch. 2, p. 24 & Ch. 21, p. 154)
+                   and Modeled Dilation Throttling `cross_hinge_dilation_throttling`
+                   (SM v57 Ch. 8, pp. 58–60; Ch. 15, p. 115; Ch. 20, p. 147)
+    - Theorem 2.4: Light as the Surface of the Mirror (SM v57 Ch. 2, p. 24 & Ch. 21, pp. 154–155)
+
+  Epistemic status: `PhysDim`/`NonphysRank`, `LawAST`, `countActiveBarriers`, `R_read`,
+  `R_read_v57_ch2`, `R_read_v57_ch16`, and the throttling formula `C_rate * T_0 / (T_0 + h)`
+  are `(c)` formalization choices; relativistic shell identities and ordered-field steps are
+  `(b)` standard physics/algebra; theorems over those definitions are `(a)` deductive consequences.
 -/
 
 import TSR.OrderedAlgebra
@@ -19,16 +30,18 @@ open OrderedField
 
 /-!
   ## Theorem 2.1 — Cross-Domain Elimination Theorem (`Desire` vs. `Vibrance`)
-  (*The Sovereign Mirror*, Ch. 2, pp. 26–28; *What the Words Knew*, Ch. 4, p. 38)
+  (*The Sovereign Mirror* v57, Ch. 2, pp. 26–28; *What the Words Knew* proof 36, Ch. 7, pp. 76–78;
+   cf. Ch. 6, pp. 62–63)
 
-  Physical dimensional exponents (`PhysDim`: `space, time, mass`) and nonphysical
-  unitless relational-composition ranks (`NonphysRank`: `vibration, expansion, movement`)
-  are modeled as **distinct nominal structures** with separate abelian group operations,
+  Modeling choice `(c)`: Physical dimensional exponents (`PhysDim`: `space, time, mass`) and
+  nonphysical unitless relational-composition ranks (`NonphysRank`: `vibration, expansion, movement`)
+  are modeled as **distinct nominal structures** with separate abelian group operations over `Int`,
   making the identity map `id` a compile-time type error.
   While `Density × Volume = Mass` (`physAdd (dimDensity d) (dimVolume d) = dimMass`) is
   commutative, requiring `Φ : PhysDim → NonphysRank` to be an additive homomorphism
   (`IsMirrorRankHom Φ`) fixing `Space ↦ Vibration` and `Mass ↦ Movement` uniquely forces
   `Volume(d) ↦ Vibrance(d)` and `Density(d) ↦ Desire(d)` for every spatial dimension `d ≥ 1`.
+  Epistemic status: `(a)` group-homomorphism consequence of the `(c)` `PhysDim`/`NonphysRank` setup.
 -/
 
 /-- Nominal lattice of physical unit exponents `(Space^a, Time^b, Mass^c)`. -/
@@ -267,8 +280,13 @@ theorem elimination_theorem_desire_vibrance
   · rw [hDen]; exact Ne.symm hNe
 
 /-!
-  ## Theorem 2.2 — Two-Level Mirror Functor (`R_form`, `R_read`) & 17/17 Book Rulings
-  (*The Sovereign Mirror*, Ch. 2, Ch. 16, and Oct 2026 Derivation-Chain Resolution)
+  ## Theorem 2.2 — Formalized Mirror Functor (`R_form`, `R_read`) & 17/17 Book Rulings
+  (*The Sovereign Mirror* v57, Ch. 2 p. 20, Ch. 16 pp. 116–121, Ch. 17 pp. 129–130,
+   *The Map* pp. 171–175, and the author's October 2026 ruling on `Work`)
+
+  Note: `"Mirror Functor"` (`R_form`, `R_read`), `"two-region"`/`"three-region"`,
+  `"temporal momentum"`, and `"reversible equilibrium"` are formalization labels (`(c)`),
+  not the book's terminology.
 -/
 
 inductive BaseAtom where
@@ -328,7 +346,11 @@ theorem R_form_injective {t1 t2 : FormulaTerm} (h : R_form t1 = R_form t2) : t1 
   rw [R_form_involutive, R_form_involutive] at h2
   exact h2
 
-/- Stated Physical & Nonphysical Equations + Spatial & Temporal Momentum + Extended Chain -/
+/- Stated Physical & Nonphysical Equations + `m * v` / `m * c` Momentum + Extended Chain.
+   Note: `physTemporalMomentum` (`m * c`) uses `"temporal momentum"` as a formalization label (`(c)`),
+   NOT book phrasing; *SM* v57 Ch. 17 p. 130 writes: *"At rest all of it runs along time, as mc.
+   As a body moves, some of it turns toward space, as mass times velocity, and the total stays mc."*
+   (And p. 129: *"Its momentum along time is mc, and one more factor of c turns that into energy."*) -/
 def physVelocity         : FormulaTerm := .quot (.atom .space) (.atom .time)
 def physAcceleration     : FormulaTerm := .rate physVelocity (.atom .time)
 def physMass             : FormulaTerm := .prod2 (.atom .density) (.atom .volume)
@@ -360,8 +382,10 @@ def nonphysWeight              : FormulaTerm := .prod2 nonphysMovement (.atom .a
 /-- **Theorem 2.2b (Exact Functorial Composition Across Stated & Extended Mechanics)**:
     Reflecting primitive terms and composing nonphysically equals composing physically
     and reflecting the resulting formula across all 12 mechanical equations, including both
-    spatial/vibrational momentum (`m · v ↔ M · (Vibration / Expansion)`) and
-    temporal/Current momentum (`m · c ↔ M · C`, *SM* Ch. 17 pp. 129–130 & Glossary p. 175). -/
+    velocity momentum (`m · v ↔ M · (Vibration / Expansion)`) and rest-time momentum
+    (`m · c ↔ M · C`, *SM* v57 Ch. 17 pp. 129–130 & Glossary p. 175; `"temporal momentum"`
+    is a formalization label `(c)`, not book phrasing).
+    Epistemic status: `(a)` finite `decide` evaluation over the `(c)` `FormulaTerm` AST. -/
 theorem R_form_compositional_mechanics :
     R_form physVelocity         = nonphysVelocity ∧
     R_form physAcceleration     = nonphysAppreciation ∧
@@ -377,10 +401,14 @@ theorem R_form_compositional_mechanics :
     R_form physWeight           = nonphysWeight := by
   decide
 
-/-- **Proposition 2.2b' (Temporal/Current Momentum Two-Step Energy Factorization)**:
-    Formalizes *SM* Ch. 17 (pp. 129–130): temporal momentum `p_t = m * c` reflects via `R_form`
-    to Current momentum `P_C = M * C`, and multiplying once more by continuum speed (`c` or `C`)
-    yields rest energy `(m * c) * c = m * (c * c)` and conscious energy `(M * C) * C = (C * C) * M`. -/
+/-- **Proposition 2.2b' (Two-Step `m · c` / `M · C` Energy Factorization)**:
+    Formalizes *SM* v57 Ch. 17 pp. 129–130 (*"At rest all of it runs along time, as mc.
+    As a body moves, some of it turns toward space, as mass times velocity, and the total
+    stays mc"*, and *"M × C, is its momentum, and one more C turns it into conscious energy"*):
+    `physTemporalMomentum` (`m * c`, formalization label `"temporal momentum"`, not book phrasing)
+    reflects via `R_form` to `M * C`, and multiplying once more by `c` or `C` yields
+    `(m * c) * c = m * (c * c)` and `(M * C) * C = (C * C) * M`.
+    Epistemic status: `(a)` AST evaluation + `(b)` ordered-field associativity/commutativity. -/
 theorem temporal_momentum_energy_factorization {F : Type} [OrderedField F] :
     R_form physSpatialMomentum  = nonphysVibrationalMomentum ∧
     R_form physTemporalMomentum = nonphysCurrentMomentum ∧
@@ -398,34 +426,39 @@ inductive Reading where
   | Invert
   deriving DecidableEq, Repr
 
-/-- Explicit topological regions of the TSR mirror system. -/
+/-- Explicit topological regions in this `(c)` formalization of TSR's mirror system
+    (*The Sovereign Mirror* v57, Ch. 16, p. 117: `"TSR has three: the two sides and
+    the continuum where they meet, with one energy in it"`). -/
 inductive MirrorRegion where
   | nonphysical
   | physical
   | sharedOverlap
   deriving DecidableEq, Repr
 
-/-- Candidate global architectures for the mirror boundary (*SM* Ch. 16, p. 117):
-    - `twoRegionNoSharedE`: disjoint Physical and Nonphysical sectors with no shared center.
-    - `threeRegionSharedE`: Physical and Nonphysical meet at the shared central `E` overlap. -/
+/-- `(c)` Candidate global architectures for the mirror boundary (*SM* v57, Ch. 16, p. 117):
+    - `twoRegionNoSharedE`: formalization label (not book phrasing) for `"a mirror with only two sides"`
+      where `E` / `Attraction` has no separate shared center (`energyAttractionHome` places it in `.physical`).
+    - `threeRegionSharedE`: formalization label (not book phrasing) for TSR's three-part picture:
+      `"the two sides and the continuum where they meet, with one energy in it"` (`E` in `.sharedOverlap`). -/
 inductive MirrorArchitecture where
   | twoRegionNoSharedE
   | threeRegionSharedE
   deriving DecidableEq, Repr
 
-/-- Only the partitioned `.physical` sector carries medium resistance (`ρ > 0`);
-    both `.nonphysical` and `.sharedOverlap` (`E`) have `ρ = 0`. -/
+/-- `(c)` Modeling choice: only `.physical` carries resistance (`ρ > 0`); `.nonphysical` and
+    `.sharedOverlap` (`E`) are assigned `false`. -/
 def regionResistant : MirrorRegion → Bool
   | .physical      => true
   | .nonphysical   => false
   | .sharedOverlap => false
 
-/-- Topological home of central Energy `E` / `Attraction` under each mirror architecture. -/
+/-- `(c)` Topological home of central Energy `E` / `Attraction` under each modeled architecture. -/
 def energyAttractionHome : MirrorArchitecture → MirrorRegion
   | .twoRegionNoSharedE => .physical
   | .threeRegionSharedE => .sharedOverlap
 
-/-- Distinct physical barrier mechanisms inside a resistant dynamical law. -/
+/-- `(c)` Formalization label for physical obstruction mechanisms (`"barrier"` is a code label
+    introduced for `rule/tsr_formal_port.py`, not book terminology). -/
 inductive BarrierKind where
   | inertialMassAcceleration
   | crossLocusResistantTransport
@@ -435,13 +468,18 @@ def barrierKindRegion : BarrierKind → MirrorRegion
   | .inertialMassAcceleration     => .physical
   | .crossLocusResistantTransport => .physical
 
-/-- Structural AST classifying the physical mechanics of each benchmark law (zero raw barrier integers):
+/-- `(c)` Structural AST classifying each benchmark law in `rule/tsr_formal_port.py` (using named
+    constructors rather than raw barrier integers):
     - `IdentityOrEquiv`: accounting identity or definitional equivalence (`F = ma`, `E = mc²`, conservation)
     - `KinematicFrameRatio`: pure space-time coordinate/metric scaling (`time dilation`, `length contraction`)
-    - `IsothermalEquilibriumBalance`: reversible state balance at fixed temperature (`P₁V₁ = P₂V₂`, Boyle's Law)
+    - `IsothermalEquilibriumBalance`: `(c)` modeling label for Boyle's Law (`P₁V₁ = P₂V₂`); note that
+      calling its rationale `"reversible state equilibrium"` is a `(c)` modeling choice not in the book.
+      In *The Sovereign Mirror* v57, Ch. 16, p. 118, Boyle's law stays `.Keep` because pressure only
+      exists because walls hold something in, walls are resistance, and pressure can only exist where
+      the two sides touch (`Current` pressing against resistance as volume/`Vibrance` is squeezed).
     - `SpatialSeparationDependence`: cross-locus signal/simultaneity separation across resistant `.physical` space
     - `SharedCenterCurvature`: continuum curvature coupling mediated at `energyAttractionHome arch`
-    - `ResistanceWorkBarrier barriers`: operational expenditure against explicit inertial/separation barriers. -/
+    - `ResistanceWorkBarrier barriers`: operational expenditure against modeled inertial/separation factors. -/
 inductive LawAST where
   | IdentityOrEquiv
   | KinematicFrameRatio
@@ -451,7 +489,7 @@ inductive LawAST where
   | ResistanceWorkBarrier (barriers : List BarrierKind)
   deriving DecidableEq, Repr
 
-/-- Region locator for an elementary physical coupling node. -/
+/-- Region locator for an elementary coupling node (`(c)` AST lowering helper). -/
 inductive RegionLocator where
   | fixedRegion (r : MirrorRegion)
   | energyAttractionLocus
@@ -461,11 +499,13 @@ def resolveRegion (arch : MirrorArchitecture) : RegionLocator → MirrorRegion
   | .fixedRegion r         => r
   | .energyAttractionLocus => energyAttractionHome arch
 
-/-- Dynamical mode of an elementary physical coupling node. -/
+/-- `(c)` Dynamical mode of an elementary coupling node. Note that `reversibleStateEquilibrium` is
+    a `(c)` formalization label for Row 17 (Boyle's law), not the book's p. 118 walls/two-sides-touching
+    explanation. -/
 inductive DynamicalMode where
   | accountingEquivalence      -- Definitional / conservation identity (no active transport)
   | pureKinematicScaling       -- Coordinate / metric ratio without force or dissipation
-  | reversibleStateEquilibrium -- Conservative state trade-off at fixed state (Boyle: P₁V₁ = P₂V₂)
+  | reversibleStateEquilibrium -- (c) Modeled as conservative fixed-state trade-off for Boyle's Law (`P₁V₁ = P₂V₂`)
   | activeResistanceCoupling   -- Active cross-locus transport, inertial push, or continuum sourcing
   deriving DecidableEq, Repr
 
@@ -491,13 +531,13 @@ def lowerLawAST : LawAST → List CouplingNode
   | .ResistanceWorkBarrier bs     =>
       bs.map (fun b => ⟨.fixedRegion (barrierKindRegion b), .activeResistanceCoupling⟩)
 
-/-- A coupling node incurs an active barrier iff its resolved region is resistant (`ρ > 0`)
-    AND its dynamical mode performs active transport/inertial/source work. -/
+/-- A coupling node counts as an active barrier (code term, `(c)`) iff its resolved region is
+    resistant (`ρ > 0`) AND its dynamical mode is `.activeResistanceCoupling`. -/
 def nodeIsActiveBarrier (arch : MirrorArchitecture) (node : CouplingNode) : Bool :=
   regionResistant (resolveRegion arch node.locator) && engagesActiveTransfer node.mode
 
-/-- Computable mechanical barrier evaluator (zero hardcoded integer literals): counts the
-    coupling nodes of `ast` that engage an active resistance barrier under `arch`. -/
+/-- `(c)` Computable AST barrier counter (zero hardcoded integer literals): counts the coupling nodes
+    of `ast` that evaluate to `nodeIsActiveBarrier arch = true`. -/
 def countActiveBarriers (arch : MirrorArchitecture) (ast : LawAST) : Nat :=
   ((lowerLawAST ast).filter (nodeIsActiveBarrier arch)).length
 
@@ -505,8 +545,8 @@ def isIdentityOrEquiv : LawAST → Bool
   | .IdentityOrEquiv => true
   | _                => false
 
-/-- Benchmark row carrying **zero** hand-typed barrier-count literals: barrier counts are
-    computed mechanically from `lawAST` via `countActiveBarriers`. -/
+/-- Benchmark row encoding (`(c)`) carrying zero raw barrier integers; barrier counts are computed
+    from `lawAST` via `countActiveBarriers`. -/
 structure BenchmarkRow where
   id         : Nat
   label      : String
@@ -515,17 +555,21 @@ structure BenchmarkRow where
   lawAST     : LawAST
   deriving DecidableEq, Repr
 
-/-- Architecture-parameterized Two-Level Reading Functor (`tsr_formal_port.py`). -/
+/-- `(c)` Architecture-parameterized Reading Functor (`rule/tsr_formal_port.py`). -/
 def R_readArch (arch : MirrorArchitecture) (r : BenchmarkRow) : Reading :=
   if 1 ≤ countActiveBarriers arch r.lawAST then .Invert else .Keep
 
-/-- Canonical Ch. 16 Two-Level Reading Functor over TSR's 3-region shared-`E` architecture. -/
+/-- `(c)` Canonical Reading Functor over `.threeRegionSharedE` + `LawAST`. -/
 def R_read (r : BenchmarkRow) : Reading :=
   R_readArch .threeRegionSharedE r
 
+/-- `(c)` Baseline naive rule inverting purely on `hasMass`. -/
 def R_read_naive_mass (r : BenchmarkRow) : Reading :=
   if r.hasMass then .Invert else .Keep
 
+/-- `(c)` Narrow `hasMass`-only proxy for checking `IdentityOrEquiv` vs. `hasMass` without
+    spatial separation or shared-energy clauses (NOT the full *SM* v57 Ch. 2, p. 20 sentence;
+    see `R_read_v57_ch2` below for the full v57 Ch. 2 clause). -/
 def R_read_ch2_clauses (r : BenchmarkRow) : Reading :=
   if isIdentityOrEquiv r.lawAST then .Keep else if r.hasMass then .Invert else .Keep
 
@@ -541,7 +585,7 @@ def row12GravityLensing : BenchmarkRow :=
 def row17Boyle : BenchmarkRow :=
   ⟨17, "Boyle: squeeze volume, pressure climbs", .Keep, true, .IsothermalEquilibriumBalance⟩
 
-/-- The complete 17-row benchmark suite from `rule/tsr_formal_port.py`, encoded purely via `LawAST`. -/
+/-- `(c)` The 17-row benchmark suite (`rule/tsr_formal_port.py`) encoded via `LawAST` constructors. -/
 def benchmarkRows17 : List BenchmarkRow := [
   ⟨1,  "1 laws same for every observer",  .Keep,   false, .IdentityOrEquiv⟩,
   ⟨2,  "2 no shared now (distance)",      .Invert, false, .SpatialSeparationDependence⟩,
@@ -562,19 +606,23 @@ def benchmarkRows17 : List BenchmarkRow := [
   row17Boyle
 ]
 
-/-- Multi-barrier operational work row (`W = F · Δx` crossing both inertia and spatial separation). -/
+/-- `(c)` Synthetic multi-barrier row (`W = F · Δx`, modeled as combining inertial mass + spatial
+    separation barriers; not one of the 17 rows in `benchmarkRows17`). -/
 def multiBarrierWorkRow : BenchmarkRow :=
   ⟨18, "Work expenditure across resistance + separation", .Invert, true,
    .ResistanceWorkBarrier [.inertialMassAcceleration, .crossLocusResistantTransport]⟩
 
-/-- **Theorem 2.2c (Exact 17/17 AST-Evaluated Benchmark Agreement & Multi-Barrier `Work` Resolution)**:
-    1. `benchmarkRows17` has 17 rows and AST-derived `R_read` matches **all 17/17** book rulings.
-    2. Naive mass-presence (`R_read_naive_mass`) fails on **7** rows, and Ch. 2's mass-with-definition
-       approximation (`R_read_ch2_clauses`) still fails on **4** rows (Rows 2, 11, 12, 17).
-    3. Boyle's Law (`row17Boyle`, `hasMass = true`) evaluates via `countActiveBarriers` to `0` (`Keep`).
-    4. On `multiBarrierWorkRow`, `countActiveBarriers` sums inertia + spatial separation to `2` barriers,
-       so `R_read` yields `.Invert` (matching the Oct 2026 ruling on `Work`), whereas `(-1)^2 = +1`
-       parity (`R_read_naive_parity`) mispredicts `.Keep`. -/
+/-- **Theorem 2.2c (AST-Evaluated Benchmark Agreement & Multi-Barrier Saturation)**
+    Classifications: **(a)** finite `decide` evaluation over **(c)** AST encoding (`benchmarkRows17`,
+    `LawAST`, `countActiveBarriers`, and the narrow `hasMass`-only proxy `R_read_ch2_clauses`).
+    1. `benchmarkRows17` has 17 rows and the modeled `R_read` matches all 17/17 `bookRuling` values.
+       (Note: Row 17 is `.Keep` here via `(c)` `IsothermalEquilibriumBalance`; *SM* v57 Ch. 16, p. 118
+       gives a different physical/mirror explanation via walls/two-sides-touching.)
+    2. `R_read_naive_mass` misses 7 rows, and the narrow `hasMass`-only proxy `R_read_ch2_clauses`
+       misses 4 rows (Rows 2, 11, 12, 17).
+    3. `row17Boyle` (`hasMass = true`) evaluates via `countActiveBarriers` to `0` (`Keep`).
+    4. On `multiBarrierWorkRow`, `countActiveBarriers` sums both modeled barriers to `2`,
+       so `R_read` yields `.Invert`, whereas `(-1)^2` parity (`R_read_naive_parity`) gives `.Keep`. -/
 theorem two_level_reading_theorem :
     benchmarkRows17.length = 17 ∧
     benchmarkRows17.all (fun r => R_read r == r.bookRuling) = true ∧
@@ -588,19 +636,70 @@ theorem two_level_reading_theorem :
      R_read_naive_parity multiBarrierWorkRow = .Keep) := by
   decide
 
+/-- `(c)` Predicate for *The Sovereign Mirror* v57, Ch. 16, p. 116's clause:
+    `"or the work of the one energy both sides share"` (modeled here as `.SharedCenterCurvature`,
+    covering Rows 11 and 12). -/
+def isSharedEnergyWork : LawAST → Bool
+  | .SharedCenterCurvature => true
+  | _                      => false
+
+/-- `(c)` Predicate encoding *SM* v57, Ch. 2, p. 20 / Ch. 16, p. 116:
+    `"depend[s] on resistance, or on the distance resistance makes"` as
+    `r.hasMass || (r.lawAST == .SpatialSeparationDependence)`. -/
+def dependsOnResistanceOrSeparation (r : BenchmarkRow) : Bool :=
+  r.hasMass || (r.lawAST == .SpatialSeparationDependence)
+
+/-- `(c)` Encoding of the full *The Sovereign Mirror* v57 Ch. 2, p. 20 reading rule:
+    `"If it depends on resistance, or on the distance resistance makes... flipping resistant to
+    receptive turns it around... If it's an identity or a definition... there's nothing to turn
+    around, even with mass in it; the terms reflect and the relationship keeps its shape."` -/
+def R_read_v57_ch2 (r : BenchmarkRow) : Reading :=
+  if isIdentityOrEquiv r.lawAST then .Keep
+  else if dependsOnResistanceOrSeparation r then .Invert
+  else .Keep
+
+/-- `(c)` Encoding of the *The Sovereign Mirror* v57 Ch. 16, p. 116 reading rule:
+    `"...does this relationship depend on resistance, or on the distance resistance makes, or is it
+    an identity, a definition, or the work of the one energy both sides share?"` -/
+def R_read_v57_ch16 (r : BenchmarkRow) : Reading :=
+  if isIdentityOrEquiv r.lawAST || isSharedEnergyWork r.lawAST then .Keep
+  else if dependsOnResistanceOrSeparation r then .Invert
+  else .Keep
+
+/-- **Theorem 2.2d (`v57` Exact Ch. 2 p. 20 and Ch. 16 p. 116 Rule-Wording Benchmark)**
+    Classifications: **(a)** finite `decide` evaluation over **(c)** `LawAST` / predicate encodings
+    (`R_read_v57_ch2`, `R_read_v57_ch16`) of the exact prose rules in *The Sovereign Mirror* v57.
+    1. Unlike the narrow `hasMass`-only proxy `R_read_ch2_clauses` (which also missed Row 2),
+       `R_read_v57_ch2` includes `SpatialSeparationDependence` (`"or on the distance resistance makes"`)
+       and matches **14/17** rows, missing only `[11, 12, 17]`.
+    2. Adding Ch. 16, p. 116's `"or the work of the one energy both sides share"` (`isSharedEnergyWork`)
+       resolves Rows 11 and 12 (gravity warp and lensing), so `R_read_v57_ch16` matches **16/17** rows
+       and isolates `[17]` (Boyle's Law) as the sole mismatch under the p. 116 sentence alone.
+    3. Why `[17]` misses under `R_read_v57_ch16`: `row17Boyle` has `hasMass = true`, and p. 116 alone
+       does not state the boundary-wall exemption given on *SM* v57 Ch. 16, p. 118 (pressure only
+       exists because walls hold something in, walls are resistance, so pressure can only exist
+       where the two sides touch, keeping the compressed volume–pressure relationship `.Keep`). -/
+theorem v57_rule_wordings_benchmark :
+    (benchmarkRows17.filter (fun r => R_read_v57_ch2 r == r.bookRuling)).length = 14 ∧
+    (benchmarkRows17.filter (fun r => R_read_v57_ch2 r != r.bookRuling)).map BenchmarkRow.id = [11, 12, 17] ∧
+    (benchmarkRows17.filter (fun r => R_read_v57_ch16 r == r.bookRuling)).length = 16 ∧
+    (benchmarkRows17.filter (fun r => R_read_v57_ch16 r != r.bookRuling)).map BenchmarkRow.id = [17] := by
+  decide
+
 /-!
-  ## Theorem 2.3 — Falling-Man Equivalence Principle & Product Uniqueness
-  (*The Sovereign Mirror*, Ch. 8, pp. 59–60)
+  ## Theorem 2.3 — Falling-Man Partition Algebra & Rate/Product Scaling
+  (*The Sovereign Mirror* v57, Ch. 8, pp. 58–60 & Ch. 15, p. 115)
 -/
 
 section ElevatorAndFrequency
 variable {F : Type} [OrderedField F]
 
-/-- **Theorem 2.3a (Falling-Man Partition Identity)**:
-    Given particular `m > 0`, pull `g`, floor/holding-on reaction `R`, and net acceleration `a`
-    governed by `m * a = m * g - R`, the resisted share `R / m` and yielded acceleration `a`
-    sum identically to the whole pull `g`: `(R / m) + a = g`, with exact boundary cases for
-    full standing resistance (`a = 0 ↔ R = m * g`) and free fall (`R = 0 ↔ a = g`). -/
+/-- **Theorem 2.3a (Falling-Man Partition Identity)**
+    Classification: **(b)** standard Newtonian / ordered-field algebra (`m * a = m * g - R`),
+    encoding the analogy in *SM* v57, Ch. 8, pp. 59–60.
+    Given `m > 0`, pull `g`, floor/holding-on reaction `R`, and net acceleration `a` governed by
+    `m * a = m * g - R`, the resisted share `R / m` and yielded acceleration `a` sum to `g`:
+    `(R / m) + a = g`, with boundary equivalences `a = 0 ↔ R = m * g` and `R = 0 ↔ a = g`. -/
 theorem falling_man_equivalence {m g R a : F}
     (hm : zero < m) (hNewton : m * a = m * g - R) :
     ((R /ᶠ m) + a = g) ∧
@@ -649,23 +748,27 @@ theorem falling_man_equivalence {m g R a : F}
       exact hSum
   exact ⟨hPart, hStand, hFree⟩
 
-/-- **Theorem 2.3b (Strict Monotonicity of Multiplicative Frequency `F = M × A`)**:
-    Whenever alignment increases both `Movement` (`0 < M1 < M2`) and `Appreciation` (`0 < A1 < A2`),
-    their product `Frequency = M * A` strictly rises unconditionally (`M1 * A1 < M2 * A2`). -/
+/-- **Theorem 2.3b (Strict Monotonicity of Multiplicative Frequency `F = M × A`)**
+    Classification: **(b)** standard ordered-field monotonicity of positive multiplication
+    (`M1 * A1 < M2 * A2` whenever `0 < M1 < M2` and `0 < A1 < A2`), matching *SM* v57's
+    multiplicative pairing (`Frequency = Movement × Appreciation`). -/
 theorem frequency_product_strict_monotonicity {M1 M2 A1 A2 : F}
     (hM1 : zero < M1) (hA1 : zero < A1)
     (hM : M1 < M2) (hA : A1 < A2) :
     M1 * A1 < M2 * A2 :=
   mul_lt_mul_of_pos_of_lt hM1 hA1 hM hA
 
-/-- **Theorem 2.3d (Cross-Hinge Dilation Throttling)**:
-    Models the effective lived rate across the hinge (*SM* Ch. 8 p. 58, Ch. 15 p. 115, Ch. 20 p. 147)
-    as `v_eff = C_rate * (T_0 /ᶠ (T_0 + h))` with Current rate `0 < C_rate`, baseline scale
-    `0 < T_0`, and physical holding-on `0 ≤ h`:
-      1. Full unthrottled Current rate (`v_eff = C_rate`) is achieved **if and only if**
-         physical holding-on vanishes (`h = 0`).
-      2. Whenever positive holding-on is present (`0 < h`), `v_eff` remains strictly positive
-         while strictly throttled below `C_rate` (`0 < v_eff < C_rate`, Expansion Dilation). -/
+/-- **Theorem 2.3d (Modeled Dilation Throttling Formula; identifier `cross_hinge_dilation_throttling` preserved)**
+    Classifications: **(c)** modeling choice for the rate formula `v_eff = C_rate * (T_0 /ᶠ (T_0 + h))`,
+    plus **(a)**/**(b)** ordered-field consequences of that ansatz.
+    - The specific rational formula `C_rate * (T_0 / (T_0 + h))` is a **(c)** formalization choice
+      NOT found in *The Sovereign Mirror* v57; similarly, `"hinge"` in the identifier name
+      `cross_hinge_dilation_throttling` is a formalization label (in *SM* v57, Ch. 8 p. 58 & Ch. 17
+      p. 131, `"hinge"` refers to central `E` / the crossing where expectation narrows Tune, while
+      *SM* v57 Ch. 15 p. 115 discusses Expansion Dilation qualitatively).
+    - Given `v_eff = C_rate * (T_0 / (T_0 + h))` with `0 < C_rate`, `0 < T_0`, `0 ≤ h`:
+      1. `v_eff = C_rate ↔ h = 0`.
+      2. `0 < h → 0 < v_eff < C_rate`. -/
 theorem cross_hinge_dilation_throttling {C_rate T_0 h : F}
     (hC : zero < C_rate) (hT0 : zero < T_0) (hh : zero ≤ h) :
     let v_eff := C_rate * (T_0 /ᶠ (T_0 + h))
@@ -719,9 +822,10 @@ theorem cross_hinge_dilation_throttling {C_rate T_0 h : F}
 
 end ElevatorAndFrequency
 
-/-- **Theorem 2.3c (Counterexamples Ruling Out Ratio Laws `A / M` and `M / A`)**:
-    Constructive `QRat` witnesses where `0 < M1 < M2` and `0 < A1 < A2` both strictly increase,
-    yet `A2 / M2 < A1 / M1` (first witness) and `M2 / A2 < M1 / A1` (second witness). -/
+/-- **Theorem 2.3c (Counterexamples Ruling Out Ratio Laws `A / M` and `M / A`)**
+    Classification: **(b)**/**(a)** constructive `QRat` counterexample witnesses (`decide`) showing
+    both `0 < M1 < M2` and `0 < A1 < A2` can strictly increase while `A2 / M2 < A1 / M1`
+    (witness 1) or `M2 / A2 < M1 / A1` (witness 2). -/
 theorem ratio_laws_fail_monotonicity :
     (∃ M1 M2 A1 A2 : QRat,
       zero < M1 ∧ zero < A1 ∧ M1 < M2 ∧ A1 < A2 ∧ (A2 /ᶠ M2) < (A1 /ᶠ M1)) ∧
@@ -753,8 +857,8 @@ theorem ratio_laws_fail_monotonicity :
       decide
 
 /-!
-  ## Theorem 2.4 — Light as the Surface of the Mirror
-  (*The Sovereign Mirror*, Ch. 2, p. 24 & Ch. 21, p. 154)
+  ## Theorem 2.4 — Relativistic Zero-Mass Boundary ("Light as the Surface of the Mirror")
+  (*The Sovereign Mirror* v57, Ch. 2, p. 24 & Ch. 21, pp. 154–155)
 -/
 
 section LightMirrorSurface
@@ -790,6 +894,8 @@ theorem eq_of_sq_eq_of_nonneg {a b : F}
     rw [hsum] at hposSum
     exact False.elim (lt_irrefl zero hposSum)
 
+/-- `(b)` Standard special-relativistic energy-momentum-velocity shell assumptions over `OrderedField F`:
+    `E² - (pc)² = (mc²)²`, `Ev = pc²`, `dx = v dt` with `c > 0`, `E > 0`, `p ≥ 0`, `m ≥ 0`, `dt > 0`. -/
 structure RelativisticShell (F : Type) [OrderedField F] where
   c  : F
   E  : F
@@ -813,11 +919,13 @@ def dsSquared {F : Type} [OrderedField F] (S : RelativisticShell F) : F :=
 def lengthFactorSq {F : Type} [OrderedField F] (S : RelativisticShell F) : F :=
   one - (S.v /ᶠ S.c) * (S.v /ᶠ S.c)
 
-/-- **Theorem 2.4 (Light as the Surface of the Mirror)**:
-    On the relativistic energy-momentum shell with `E > 0` and `c > 0`:
-      1. Zero rest-mass resistance (`m = 0`) is strictly equivalent to `p * c = E` and `v = c`.
-      2. At `m = 0`, spacetime separation `ds² = 0` and contracted-length factor `1 - (v/c)² = 0`
-         both vanish identically, while `E > 0`, `p > 0`, and `v = c > 0` survive strictly positive. -/
+/-- **Theorem 2.4 (Zero-Mass Null-Shell Boundary — TSR's "Light as the Surface of the Mirror" Reading)**
+    Classifications: **(b)** standard special-relativistic kinematics & ordered-field algebra on
+    `RelativisticShell F`; **(c)** interpreting the `m = 0` null asymptote as `"the surface of the mirror"`
+    follows *SM* v57 Ch. 21, pp. 154–155 (`"This paragraph says light is the surface of the mirror"` /
+    `"a position, not a proof"`).
+      1. `m = 0 ↔ p * c = E` and `m = 0 ↔ v = c`.
+      2. At `m = 0`, `ds² = 0` and `1 - (v/c)² = 0`, while `E > 0`, `p > 0`, and `v = c > 0`. -/
 theorem light_surface_of_mirror (S : RelativisticShell F) :
     (S.m = zero ↔ S.p * S.c = S.E) ∧
     (S.m = zero ↔ S.v = S.c) ∧

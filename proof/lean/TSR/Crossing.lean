@@ -1,13 +1,19 @@
 /-
   TSR/Crossing.lean
   =================
-  Part I, Section 3 of the Formal Proof of the Theory of Sovereign Reflectivity:
+  Part I, Section 3 — Lean 4 formalization of crossing symmetry, contrast-filter, and
+  escape-walk models from *The Sovereign Mirror* (v57):
     - Theorem 3.1: Klein Four-Group `V_4` & Derived Diagonal Symmetry from the
-                   Single Irreversible-Pole Axiom (SM Ch. 10, pp. 78–79 & Map p. 173)
+                   Irreversible-Pole Assignment (SM v57 Ch. 10, pp. 78–79 & *The Map*, pp. 172–173)
     - Theorem 3.2: Resistance Contrast Filter, `Shape` vs. `HoldingOn`, and
-                   Self-Refutation of Wanting Non-Wanting (SM Ch. 10, pp. 69–75)
-    - Theorem 3.3: Quark Confinement Barrier vs. Unique Weak-Diagonal Escape Path
-                   (SM Ch. 10, p. 79 & Ch. 12)
+                   Self-Refutation of Wanting Non-Wanting (SM v57 Ch. 10, pp. 69–75; Ch. 8, pp. 59–60)
+    - Theorem 3.3: Confinement Scaling vs. Unique Weak-Diagonal Escape Path
+                   (SM v57 Ch. 10, pp. 76–79 & Ch. 12, pp. 86–90)
+
+  Epistemic status: explicit finite-group, linear-step, and directed-graph definitions (`Quad`,
+  `poleStrength`, `V4Op`, `ContrastPair`, `FallingManState`, `confinementStep`, `canStep`) are `(c)`
+  modeling choices; all theorems here are `(a)` deductive consequences (with `(b)` field algebra
+  and Newton's force balance in `self_refutation_of_wanting_nonwanting`).
 -/
 
 import TSR.OrderedAlgebra
@@ -18,7 +24,12 @@ open OrderedField
 
 /-!
   ## Theorem 3.1 — Klein Four-Group `V_4` & Derived Diagonal Symmetry
-  (*The Sovereign Mirror*, Ch. 10, pp. 78–79; *The Map*, p. 173)
+  (*The Sovereign Mirror* v57, Ch. 10, pp. 78–79; *The Map*, pp. 172–173)
+
+  Modeling choice `(c)`: `Quad := Side × FlowDir`, `poleStrength`, `V4Op`, `mulV4`, and `actV4`
+  encode the four crossing corners and the two symmetries described on *The Map*, pp. 172–173.
+  The group laws (`v4_group_and_action`) and uniqueness of `.diag` (`derived_diagonal_symmetry`)
+  are `(a)` deductive consequences of these definitions.
 -/
 
 inductive Side where
@@ -56,7 +67,7 @@ def flipStrength : Strength → Strength
   | .Strong => .Weak
   | .Weak   => .Strong
 
-/-- **Single Irreversible-Pole Axiom**:
+/-- **Irreversible-Pole Assignment (`(c)` formalization of *SM* v57 Ch. 10, pp. 78–79)**:
     - On the Resistant side (`.P`), what has arrived (`.In`, `Past`) holds the mark (`.Strong`)
       while what goes out now (`.Out`, `Now`) is shiftable (`.Weak`).
     - On the Receptive side (`.NP`), what is launched (`.Out`, `Future` / `Desire`) irreversibly
@@ -149,7 +160,11 @@ theorem derived_diagonal_symmetry :
 
 /-!
   ## Theorem 3.2 — Resistance Contrast Filter & Buddhist Resolution
-  (*The Sovereign Mirror*, Ch. 10, pp. 69–75)
+  (*The Sovereign Mirror* v57, Ch. 10, pp. 69–75; Ch. 8, pp. 59–60)
+
+  Modeling choice `(c)`: `ContrastPair`, `projectNP (w, h) := (w, 0)`, `stepTopCrossing`,
+  `stepBottomRefusal`, `IsShape`, `IsHoldingOn`, and `FallingManState` are algebraic models
+  encoding the filter asymmetry and `tanha`/`chanda`/`upadana` distinction in Ch. 10, pp. 69–75.
 -/
 
 section ContrastFilterAndBuddhism
@@ -207,8 +222,9 @@ theorem resistance_contrast_filter_properties
     exact lt_irrefl zero hPos
   exact ⟨rfl, rfl, hTop, hBot, hDisj⟩
 
-/-- Physical-nonphysical state under gravitational pull `pull_g` and support reaction `support_N`,
-    governed by Newton's multiplicative force balance `mass_m * accel = mass_m * pull_g - support_N`. -/
+/-- Physical-nonphysical state model (`(c)` modeling choice) under gravitational pull `pull_g`
+    and support reaction `support_N`, governed by Newton's multiplicative force balance
+    `mass_m * accel = mass_m * pull_g - support_N` (`(b)` standard mechanics). -/
 structure FallingManState (F : Type) [OrderedField F] where
   otherDesire    : F
   wantCessation  : F
@@ -227,7 +243,8 @@ structure FallingManState (F : Type) [OrderedField F] where
     2. By `falling_man_equivalence` (`0 < s.mass_m`), `(s.support_N / m) + s.accel = s.pull_g`;
        dropping `HoldingOn` (`s.support_N = 0` on `s.shape > 0`) preserves `IsShape`, keeps
        `Movement = s.wanting * s.vibrance > 0`, cancels `s.mass_m > 0` from Newton's balance to
-       yield `s.accel = s.pull_g`, and reduces the partition identity to `(0 / m) + g = g`. -/
+       yield `s.accel = s.pull_g`, and reduces the partition identity to `(0 / m) + g = g`.
+    Epistemic status: `(a)`/`(b)` consequence under the `(c)` `FallingManState` identification. -/
 theorem self_refutation_of_wanting_nonwanting
     (s : FallingManState F)
     (hOtherNonneg : zero ≤ s.otherDesire)
@@ -266,8 +283,12 @@ theorem self_refutation_of_wanting_nonwanting
   exact ⟨⟨hShapePos, hSupZero⟩, mul_pos _ _ hWantPos hVibPos, hAccelEq, hFreeFall⟩
 
 /-!
-  ## Theorem 3.3 — Quark Confinement Barrier vs. Unique Weak-Diagonal Escape
-  (*The Sovereign Mirror*, Ch. 10, p. 79 & Ch. 12)
+  ## Theorem 3.3 — Confinement Scaling vs. Unique Weak-Diagonal Escape
+  (*The Sovereign Mirror* v57, Ch. 10, pp. 76–79 & Ch. 12, pp. 86–90)
+
+  Modeling choice `(c)`: `confinementStep H beta u_force := H + beta * u_force` is a linear
+  formalization proxy (not an equation in the book) for Ch. 10 p. 77's qualitative quark-bond
+  analogy, and `canStep` encodes the allowed quadrant transitions of Ch. 10 pp. 78–79.
 -/
 
 def confinementStep (H beta u_force : F) : F :=
@@ -275,7 +296,8 @@ def confinementStep (H beta u_force : F) : F :=
 
 /-- **Theorem 3.3a (Direct Forcing Strengthens Confinement)**:
     For positive coupling `β > 0`, any forceful push `u_force > 0` directly against an entrenched
-    expectation strictly increases the binding barrier `H < H + β * u_force`. -/
+    expectation strictly increases the modeled binding strength `H < H + β * u_force`.
+    Epistemic status: `(a)`/`(b)` ordered-field inequality on the `(c)` function `confinementStep`. -/
 theorem direct_forcing_increases_confinement {H beta u_force : F}
     (hBeta : zero < beta) (hForce : zero < u_force) :
     H < confinementStep H beta u_force := by
@@ -336,11 +358,12 @@ private theorem step_from_desire_true {q : Quad}
 
 /-- **Theorem 3.3b (Blocked Untuned Crossing & Unique Weak-Diagonal Escape Path)**:
     Over **all** walks `path : List Quad` of arbitrary finite length starting at `qIntuition`
-    and ending at `qExpectation`:
+    and ending at `qExpectation` under the `(c)` transition graph `canStep`:
       1. When `tuned = false`, **no** valid walk exists (`isValidWalk false path = false`).
       2. When `tuned = true`, a cycle-free (`nodupQuad`) walk is valid **if and only if**
          `path = [qIntuition, qBelief, qExpectation]`—uniquely traversing the Weak Diagonal
-         `Intuition → Belief` followed by physical action `Belief → Expectation`. -/
+         `Intuition → Belief` followed by physical action `Belief → Expectation`.
+    Epistemic status: `(a)` deductive consequence of the `(c)` transition graph `canStep`. -/
 theorem unique_weak_diagonal_escape :
     (∀ path : List Quad,
       path.head? = some qIntuition →

@@ -1,22 +1,25 @@
 """
-run_all_proofs.py — Unified End-to-End Formal Verification Suite for TSR
-========================================================================
-Executes all three independent, deterministic, zero-LLM formal proof pillars:
-  - Part I  (`proof/lean/`):      Lean 4 (v4.35.0) machine-checked deductive proofs,
-                                  source scan for zero `sorry`/`admit`/`axiom`/`have _`,
-                                  negative typecheck on nominal `PhysDim` vs `NonphysRank`,
-                                  and `#print axioms` audit across all 33 headline items.
+run_all_proofs.py — Unified Machine-Checked Formalization & Consistency Suite for TSR
+=====================================================================================
+Executes all three independent, deterministic, zero-LLM verification pillars:
+  - Part I  (`proof/lean/`):      Lean 4 (v4.35.0) machine-checked formalization and
+                                  consistency checks, source scan for zero `sorry`/`admit`/
+                                  `axiom`/`have _`, negative typecheck on nominal `PhysDim`
+                                  vs `NonphysRank`, and `#print axioms` audit across all
+                                  34 headline items.
   - Part II (`proof/z3/`):        Z3 (SMT) structural automorphism cascade on S_29
-                                  (8.84e30 -> 12 -> 2 -> 1) + Ch. 16 axiomatic MUC
-                                  audit (21 deletion-verified 1-minimal cores, cleaned
-                                  physical control flags) + 14-slot Princeton WordNet 3.0
-                                  synset audit + macOS Oxford discrete-sense & uniform
-                                  [40, 60, 80, 100] window-sweep audit + offline self-test.
+                                  (8.84e30 -> 12 -> 2 -> 1) under hand-written Map relations
+                                  + Ch. 16 axiomatic MUC audit (21 deletion-verified
+                                  1-minimal cores, cleaned physical control flags) +
+                                  14-slot Princeton WordNet 3.0 synset audit + macOS Oxford
+                                  discrete-sense / Linux WordNet fallback + offline self-test.
   - Part III (`proof/etymology/`): Exact rational (`fractions.Fraction`) combinatorial
-                                  proofs over all 80 audited words of *What the Words Knew*,
-                                  headlined by zero-choice pre-existing repo code graphs
-                                  across the full symmetric blind grid (`N_blind = 3152`)
-                                  and non-circular within-physics directionality tests.
+                                  audit over all 80 audited words of *What the Words Knew*
+                                  (proof 36, pp. 99-104), headlined by the ONE pre-declared
+                                  primary test (`g_tsr_oct22_cdba80d` 66 edges vs strict PIE
+                                  16 edges over `N_orth_unrelated = 3152`: 1/16, p = 0.2878,
+                                  not significant), plus descriptive core-law summaries and
+                                  quarantined uncorrected exploratory sensitivity checks.
 
 Writes deterministic output certificate to `proof/verification_certificate.json`.
 """
@@ -25,6 +28,7 @@ from __future__ import annotations
 import hashlib
 import json
 import os
+import platform
 import re
 import subprocess
 import sys
@@ -58,7 +62,7 @@ LEAN_THEOREMS: list[str] = [
     "TSR.the_knife_irreversibility",
     "TSR.destructive_null_requires_spatial_separation",
     "TSR.single_locus_cannot_cancel",
-    # MirrorFunctor.lean (Thms/Props 2.1 - 2.4, 12 items)
+    # MirrorFunctor.lean (Thms/Props 2.1 - 2.4, 13 items)
     "TSR.density_volume_product_symmetric",
     "TSR.canonicalMirrorRankHom_isomorphism",
     "TSR.elimination_theorem_desire_vibrance",
@@ -66,6 +70,7 @@ LEAN_THEOREMS: list[str] = [
     "TSR.R_form_compositional_mechanics",
     "TSR.temporal_momentum_energy_factorization",
     "TSR.two_level_reading_theorem",
+    "TSR.v57_rule_wordings_benchmark",
     "TSR.falling_man_equivalence",
     "TSR.frequency_product_strict_monotonicity",
     "TSR.cross_hinge_dilation_throttling",
@@ -104,7 +109,7 @@ def verify_lean_suite() -> dict[str, Any]:
     lean_files = sorted(LEAN_DIR.rglob("*.lean"))
     lean_files = [f for f in lean_files if ".lake" not in f.parts]
     assert len(lean_files) >= 7, f"Expected >= 7 Lean files, found {len(lean_files)}"
-    assert len(LEAN_THEOREMS) == 33, f"Expected 33 headline Lean theorems, found {len(LEAN_THEOREMS)}"
+    assert len(LEAN_THEOREMS) == 34, f"Expected 34 headline Lean theorems, found {len(LEAN_THEOREMS)}"
 
     # 1. Source hygiene scan: zero `sorry`, `admit`, custom `axiom`, or unused `have _`
     for lf in lean_files:
@@ -138,7 +143,7 @@ def verify_lean_suite() -> dict[str, Any]:
     combined_build_out = (build_proc.stdout + "\n" + build_proc.stderr).strip()
     assert "warning:" not in combined_build_out, f"Lean build emitted warnings:\n{combined_build_out}"
 
-    # 4. Kernel axiom audit on all 33 headline theorems via `#print axioms`
+    # 4. Kernel axiom audit on all 34 headline theorems via `#print axioms`
     stdin_script = "import TSR\n" + "\n".join(f"#print axioms {t}" for t in LEAN_THEOREMS) + "\n"
     ax_proc = subprocess.run(
         ["lake", "env", "lean", "--stdin"],
@@ -194,7 +199,7 @@ def verify_lean_suite() -> dict[str, Any]:
 
     return {
         "lean_version": lean_version,
-        "modules_verified": [str(f.relative_to(REPO_ROOT)) for f in lean_files],
+        "modules_verified": [f.relative_to(REPO_ROOT).as_posix() for f in lean_files],
         "zero_sorry_verified": True,
         "zero_custom_axioms_verified": True,
         "zero_classical_choice_verified": True,
@@ -209,18 +214,24 @@ def verify_lean_suite() -> dict[str, Any]:
 
 def verify_part2_invariants(part2a_struct: dict[str, Any], part2b_lex: dict[str, Any]) -> None:
     # Part II.A: S_29 automorphism cascade 12 -> 2 -> 1 + A3-S UNSAT
+    assert part2a_struct.get("relations_hand_written_knowing_targets") is True
+    assert "relations_hand_written_knowing_targets" in part2a_struct
+    assert "epistemic_scope" in part2a_struct
     assert part2a_struct["total_unlabeled_nodes"] == 29
     stages = part2a_struct["stages"]
     assert stages["S1_equations_crossing_containment"]["automorphism_count"] == 12
     assert stages["S1_equations_crossing_containment"]["fixed_node_count"] == 21
     assert stages["S2_plus_map_cocreation_links"]["automorphism_count"] == 2
     assert stages["S2_plus_map_cocreation_links"]["fixed_node_count"] == 27
-    assert stages["S3_plus_gauss_maxwell_field_polarity"]["automorphism_count"] == 1
-    assert stages["S3_plus_gauss_maxwell_field_polarity"]["fixed_node_count"] == 29
+    assert stages["S3_plus_ch2_stationary_vs_returning_polarity"]["automorphism_count"] == 1
+    assert stages["S3_plus_ch2_stationary_vs_returning_polarity"]["fixed_node_count"] == 29
     assert part2a_struct["two_sided_swap_no_go"]["solver_result"] == "unsat"
     assert len(part2a_struct["two_sided_swap_no_go"]["minimal_unsatisfiable_core"]) >= 2
 
-    # Part II.B.1: Cleaned physical control flags, pre-tiebreak = 2, unique A0, 21 1-minimal MUCs
+    # Part II.B.1: Hand-written target-aware flags, cleaned physical control flags, pre-tiebreak = 2, unique A0, 21 1-minimal MUCs
+    assert part2b_lex["candidate_feature_flags_hand_written_knowing_targets"] is True
+    assert part2b_lex["per_slot_keyword_groups_hand_written_knowing_targets"] is True
+    assert "epistemic_scope" in part2b_lex
     uniq = part2b_lex["uniqueness_theorem"]
     assert uniq["physical_control_flags_cleaned"] == {
         "Focus_selects_receptivity_target": False,
@@ -258,7 +269,7 @@ def verify_part2_invariants(part2a_struct: dict[str, Any], part2b_lex: dict[str,
     assert wn_path.exists(), f"Missing WordNet artifact at {wn_path}"
     assert hashlib.sha256(wn_path.read_bytes()).hexdigest() == wn["artifact_file_sha256"]
 
-    # macOS New Oxford American Dictionary discrete-sense + uniform [40, 60, 80, 100] sweep
+    # macOS New Oxford American Dictionary discrete-sense + uniform [40, 60, 80, 100] sweep (or WordNet 3.0 fallback on Linux)
     ox = part2b_lex["blind_oxford_dictionary_polysemy"]
     assert ox["zero_hand_coded_word_booleans"] is True
     assert ox["zero_target_stem_circularity_verified"] is True
@@ -270,6 +281,11 @@ def verify_part2_invariants(part2a_struct: dict[str, Any], part2b_lex: dict[str,
         sweep = ox["window_sensitivity_sweep"]
         assert sweep["uniform_widths_tested"] == [40, 60, 80, 100]
         assert sweep["all_slots_invariant_across_widths"] is True
+    else:
+        assert ox["resolved_entries_count"] == 99
+        assert ox["cross_platform_wordnet_status"] == "verified_cross_platform_princeton_wordnet_3_0"
+        assert ox["zero_window_size_parameters_in_discrete_audit"] is True
+        assert ox["per_slot_keyword_groups_hand_written_knowing_targets"] is True
 
     # Offline CoreServices -> None non-skipping self-test
     selftest = part2b_lex["cross_platform_offline_selftest"]
@@ -279,53 +295,51 @@ def verify_part2_invariants(part2a_struct: dict[str, Any], part2b_lex: dict[str,
     assert selftest["slots_verified_offline"] == 14
 
 
+def _assert_no_forbidden_keys(obj: Any, forbidden: set[str], path: str = "part3") -> None:
+    if isinstance(obj, dict):
+        for k, v in obj.items():
+            assert k not in forbidden, f"Forbidden key `{k}` found at {path}.{k}"
+            _assert_no_forbidden_keys(v, forbidden, f"{path}.{k}")
+    elif isinstance(obj, list):
+        for idx, item in enumerate(obj):
+            _assert_no_forbidden_keys(item, forbidden, f"{path}[{idx}]")
+
+
 def verify_part3_invariants(part3_etym: dict[str, Any]) -> None:
+    _assert_no_forbidden_keys(
+        part3_etym,
+        {"_".join(["N", "blind"]), "_".join(["n", "blind", "pairs"])},
+    )
+
+    assert (
+        part3_etym["oct22_tsr_formal_sha256"]
+        == "075fd22b9e4a9b91fa76bc433e4a754ca5faf57009fa0c071158711fba918ae0"
+    )
+
+    p = part3_etym["primary_test"]
+    assert p["N_orth_unrelated"] == 3152
+    assert p["tsr_edge_count"] == 66
+    assert p["etymology_edge_count"] == 16
+    assert p["observed_overlap_count"] == 1
+    assert p["overlapping_pairs"] == [["distance", "resist"]]
+    assert p["statistically_significant_at_0_05"] is False
+    assert 0.287 < p["exact_hypergeometric_p_float"] < 0.289
+
     st = part3_etym["self_tests"]
     assert st["all_passed"] is True
-    assert st["frozen_unique_tokens_audited"] == 333
-    assert st["frozen_mapped_tokens_count"] == 84
-    for tok in ("real", "reality", "realities"):
-        assert tok in st["forbidden_tokens_verified_unmapped"]
-    assert st["strict_n_blind_pairs"] == 3152
-    assert st["legacy_n_blind_pairs"] == 3153
+    assert st["oct22_tsr_formal_sha256_verified"] is True
+    assert st["strict_n_orth_unrelated_pairs"] == 3152
+    assert st["legacy_n_orth_unrelated_pairs"] == 3153
+    assert st["oct22_cdba80d_edge_count"] == 66
     assert st["core_law_pre_etymology_citations_verified"] == 21
-    assert st["pure_table_subset_of_frozen_verified"] is True
+    assert st["subset_invariants_verified"] is True
 
-    t1 = part3_etym["test_III_1_hidden_root_homomorphism"]
-    for cell_key in ("III_1A_Pure_PIE", "III_1A_Diachronic", "III_1B_Pure_PIE", "III_1C_Diachronic"):
-        cell = t1[cell_key]
-        assert cell["n_blind_pairs"] == 3152
-        assert cell["hypergeometric_total_pop_used"] == 3152
+    desc = part3_etym["descriptive_core_law_directionality_summary"]
+    assert desc["inferential_status"] == "DESCRIPTIVE_ONLY_POST_HOC_SPLIT_NOT_INFERENTIAL"
+    assert desc["full_80_kind_distribution"]["family"] == 36
+    assert desc["full_80_kind_distribution"]["not used"] == 1
 
-    sl = t1["strict_laryngeal_pie_sensitivity"]
-    for sl_key in (
-        "III_1A_Pure_PIE_Strict_Laryngeal",
-        "III_1A_Diachronic_Strict_Laryngeal",
-        "III_1B_Pure_PIE_Strict_Laryngeal",
-        "III_1C_Diachronic_Strict_Laryngeal",
-        "III_1A_Strict_PIE_Plus_Coined_Calque_Only",
-        "III_1C_Strict_PIE_Plus_Coined_Calque_Only",
-    ):
-        assert sl[sl_key]["hypergeometric_total_pop_used"] == 3152
-
-    mm = t1["momentum_movement_filter_sensitivity_side_by_side"]
-    assert mm["strict_mentum_filter_excluding_momentum_movement"]["n_blind_pairs"] == 3152
-    assert mm["legacy_4char_filter_including_momentum_movement"]["n_blind_pairs"] == 3153
-    assert "exploratory_unblinded_descriptive_concordance" in t1
-
-    t2 = part3_etym["test_III_2_energeia_actualitas_hinge_localization"]
-    assert t2["calque_pair"] == ["actual", "energy"]
-    assert t2["classical_link_type"] == "coined_translation_calque"
-    assert t2["exact_probabilities"]["uniform_blind_exact_physical_hinge_edge"]["fraction"] == "1/3152"
-
-    t3 = part3_etym["test_III_3_directional_asymmetry_within_physics"]
-    hl = t3["headline_within_physics_inferential_tests"]
-    assert hl["fisher_directional_physics_core_vs_secondary"]["exact_fraction"] == "3/1001"
-    assert hl["fisher_all_35_physics_words_core_vs_secondary"]["exact_fraction"] == "171/2728"
-    assert "binomial_reverse_metaphor_upper_tail_bounds" in hl
-    assert "sovereign_mirror_book_only_sensitivity" in hl
-    assert len(t3["core_law_pre_etymology_citations"]) == 21
-    assert "descriptive_80_word_ledger_concentration_summary" in t3
+    assert "exploratory_sensitivity_uncorrected" in part3_etym
 
 
 def compute_file_hashes() -> dict[str, str]:
@@ -336,7 +350,7 @@ def compute_file_hashes() -> dict[str, str]:
                 tracked.append(f)
     hashes: dict[str, str] = {}
     for f in tracked:
-        rel = str(f.relative_to(REPO_ROOT))
+        rel = f.relative_to(REPO_ROOT).as_posix()
         hashes[rel] = hashlib.sha256(f.read_bytes()).hexdigest()
     return hashes
 
@@ -344,7 +358,7 @@ def compute_file_hashes() -> dict[str, str]:
 def main() -> None:
     t0 = time.perf_counter()
 
-    print("[1/3] Verifying Part I — Lean 4 Deductive & Meta-Theoretical Suite...")
+    print("[1/3] Verifying Part I — Lean 4 Formalization & Consistency Suite...")
     part1_lean = verify_lean_suite()
     print(
         f"      PASS: {part1_lean['total_theorems_audited']} theorems kernel-verified "
@@ -359,37 +373,41 @@ def main() -> None:
     dict_status = part2b_lex["blind_oxford_dictionary_polysemy"]["status"]
     wn_status = part2b_lex["wordnet_synset_polysemy"]["status"]
     print(
-        f"      PASS: S_29 cascade 12 -> 2 -> 1 + A3-S UNSAT; "
+        f"      PASS: S_29 cascade 12 -> 2 -> 1 + A3-S UNSAT (no two terms in the encoded Map are interchangeable); "
         f"Ch. 16 uniqueness (pre-tiebreak = 2) + 21 1-minimal MUCs; "
-        f"14-slot WordNet ({wn_status}) + Oxford ({dict_status}) + offline self-test."
+        f"14-slot WordNet ({wn_status}) + dictionary check ({dict_status}) + offline self-test."
     )
 
-    print("[3/3] Verifying Part III — Exact 80-Word Combinatorial Etymology Suite...")
+    print("[3/3] Verifying Part III — Exact 80-Word WTWK Proof 36 Etymology Suite...")
     part3_etym = combinatorial_proofs.run_combinatorial_proofs()
     verify_part3_invariants(part3_etym)
-    t1 = part3_etym["test_III_1_hidden_root_homomorphism"]
-    c1a_pie = t1["III_1A_Pure_PIE"]
-    c1c_dia = t1["III_1C_Diachronic"]
-    t3_hl = part3_etym["test_III_3_directional_asymmetry_within_physics"]["headline_within_physics_inferential_tests"]
-    f_dir = t3_hl["fisher_directional_physics_core_vs_secondary"]
-    f_35 = t3_hl["fisher_all_35_physics_words_core_vs_secondary"]
+    p = part3_etym["primary_test"]
+    overlap_pair = "/".join(p["overlapping_pairs"][0])
+    desc = part3_etym["descriptive_core_law_directionality_summary"]
+    desc_ratios = desc["descriptive_physics_stratum_ratios"]
+    f_dir = desc_ratios["descriptive_fisher_directional_physics_core_vs_secondary"]
     print(
-        f"      PASS: 80/80 words + self-tests passed (N_blind = 3152 strict / 3153 legacy); "
-        f"III.1A pure PIE = {c1a_pie['observed_overlap_count']}/{c1a_pie['etymology_edge_count']} "
-        f"(p = {c1a_pie['exact_hypergeometric_p_float']:.4f}), "
-        f"III.1C diachronic = {c1c_dia['observed_overlap_count']}/{c1c_dia['etymology_edge_count']} "
-        f"(hyper p = {c1c_dia['exact_hypergeometric_p_float']:.4f}, "
-        f"strat-perm p = {c1c_dia['stratified_permutation_100k_crosscheck']['empirical_p_upper_bound']:.4f}); "
-        f"within-physics Fisher 5/6 vs 0/8 p = {f_dir['p_value']:.4e} "
-        f"(all-35 5/21 vs 0/14 p = {f_35['p_value']:.4f})."
+        f"      PASS: Oct 22 primary test ({p['primary_tsr_graph']} {p['tsr_edge_count']} edges vs "
+        f"{p['primary_etymology_graph']} {p['etymology_edge_count']} edges, "
+        f"N_orth_unrelated = {p['N_orth_unrelated']}) = "
+        f"{p['observed_overlap_count']}/{p['etymology_edge_count']} ({overlap_pair}), "
+        f"p = {p['exact_hypergeometric_p_float']:.4f}, NOT SIGNIFICANT (null result); "
+        f"80/80 WTWK proof 36 ledger + self-tests passed "
+        f"(descriptive core-law tally: {f_dir['contingency']}, ratio = {f_dir['exact_fraction']}; "
+        f"exploratory analyses quarantined as uncorrected sensitivity)."
     )
 
     elapsed = round(time.perf_counter() - t0, 3)
 
     certificate = {
-        "suite": "Theory of Sovereign Reflectivity (TSR) — Unified Formal Proof Certificate",
+        "suite": "Theory of Sovereign Reflectivity (TSR) — Machine-Checked Formalization and Consistency Check Certificate",
         "all_checks_passed": True,
         "zero_llm_calls": True,
+        "execution_os": platform.system(),
+        "execution_arch": platform.machine(),
+        "python_version": platform.python_version(),
+        "lean_version": part1_lean["lean_version"],
+        "z3_version": part2a_struct["z3_version"],
         "verification_runtime_seconds": elapsed,
         "part_I_lean4_deductive": part1_lean,
         "part_II_A_z3_structural_rigidity": part2a_struct,
@@ -398,8 +416,10 @@ def main() -> None:
         "source_sha256_manifest": compute_file_hashes(),
     }
 
-    CERT_PATH.write_text(json.dumps(certificate, indent=2) + "\n", encoding="utf-8")
-    print(f"\nALL PROOFS VERIFIED IN {elapsed:.2f}s -> {CERT_PATH.relative_to(REPO_ROOT)}")
+    payload = json.dumps(certificate, indent=2) + "\n"
+    assert not re.search(r"/Users/", payload), "Local user path leaked into verification certificate!"
+    CERT_PATH.write_text(payload, encoding="utf-8")
+    print(f"\nALL CONSISTENCY CHECKS PASSED IN {elapsed:.2f}s -> {CERT_PATH.relative_to(REPO_ROOT).as_posix()}")
 
 
 if __name__ == "__main__":

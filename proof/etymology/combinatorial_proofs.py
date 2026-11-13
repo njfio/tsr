@@ -1,97 +1,93 @@
 """
 combinatorial_proofs.py — Part III: Exact Combinatorial Proofs of What the Words Knew
 =====================================================================================
-Deterministic, LLM-free, exact rational (`fractions.Fraction` / `math.comb`) proofs
-over the COMPLETE 80-word audited ledger (`proof/etymology/ledger_80.json`, verbatim
-from *What the Words Knew*, 'Every Word, for the Record', pp. 95-100 — all misses,
-'outward first', 'household', 'either side', 'nothing to add', 'no help', 'not used',
-'a pun', and 'unknown' included).
+Deterministic, LLM-free, exact rational (`fractions.Fraction` / `math.comb`) audit
+over the COMPLETE 80-word ledger (`proof/etymology/ledger_80.json`, verbatim from
+*What the Words Knew*, proof 36, 'Every Word, for the Record', pp. 99-104 — all
+misses, 'outward first', 'household', 'either side', 'nothing to add', 'no help',
+'not used', 'a pun', and 'unknown' included; cross-checked against *The Sovereign
+Mirror* v57).
 
-Methodological & Linguistic Safeguards (Adversarial Referee Audit Hardening):
-  1. Explicit Surface-to-Ledger Inflected Wordform Map (`SURFACE_TO_LEDGER`):
-     Replaces prefix-heuristic matching across `vocab/mirror.py` and
-     `rule/tsr_formal_port.py` with an audited exact token-to-lemma dictionary over
-     all 333 frozen-code tokens. Prevents false-friend stem leaks (`"real"`,
-     `"reality"`, `"realities"` -/-> `"realize"`; `"moment"` -/-> `"momentum"`;
-     `"times"` -/-> `"time"`; `"forceable"` -/-> `"force"`; `"senses"` -/-> `"sense"`;
-     `"limitless"` -/-> `"limit"`) while recovering genuine inflected TSR table slots
-     (`"belief"` -> `"believe"`, `"expansion"` -> `"expand"`, `"receptive"` ->
-     `"receive"`, `"vibrance"` -> `"vibration"`).
+Pre-Declared Single Primary Test (Confirmatory Lead):
+  - Primary TSR graph: `g_tsr_oct22_cdba80d` (`66` orthographically unrelated pairs
+    extracted directly from the Oct 22 commit `cdba80d` artifact `tests/tsr_formal.py`,
+    after asserting its SHA-256 equals
+    `075fd22b9e4a9b91fa76bc433e4a754ca5faf57009fa0c071158711fba918ae0`). Combines
+    `MIRROR`, `DIAGONAL`, `('gravitational pull', 'Attraction')`, `PHYS`,
+    `NONPHYS_STATED`, `EXTENSION`, and `ROWS`.
+  - Primary etymology graph: `pie_roots_strict` (`16` orthographically unrelated pairs
+    under modern laryngeal Indo-European reconstruction: de Vaan 2008 / LIV2 /
+    Kroonen 2013 / Beekes 2010).
+  - Background pair pool: `N_orth_unrelated = 3,152` pairs across all `C(80, 2) = 3,160`
+    word pairs after removing 8 orthographically or transparently morphologically
+    related pairs via the strict Latinate `-mentum`/`-entum`/`-tum` + `-ment` + 4-char
+    filter (which excludes `momentum-movement` alongside 7 4-char stem overlaps).
+  - Primary Test Result: **`1` overlapping pair (`("distance", "resist")`), exact
+    hypergeometric upper-tail `p = 0.2878...` (NOT statistically significant; null
+    result).** This script leads with that primary test result first in docstring,
+    stdout, and top-level JSON `"primary_test"`.
 
-  2. Strict Latinate `-mentum`/`-entum`/`-tum` + `-ment` Morphological Blindness Filter
-     (Reported Side-by-Side with Legacy 4-Char Filter):
-     Strips Latinate `-mentum`, `-entum`, `-tum` alongside English `-ment`, `-tion`,
-     etc., catching `momentum` (< Lat. *momentum* < *movimentum*) <-> `movement`
-     (< MLat. *movimentum*) as transparent shared *move-*/nominalizer morphology rather
-     than counting it as an opaque PIE hit (also documenting the 2019-10-07 ->
-     2020-07-06 `Momentum -> Movement` `M`-slot swap, WTWK pp. 39, 93). Reports
-     both the primary strict filter (`n_blind_pairs = 3152`, excluding
-     `momentum-movement`) and the legacy 4-char filter (`n_blind_pairs = 3153`,
-     including `momentum-movement`) side-by-side.
+Multiplicity Quarantine & Provenance Safeguards:
+  1. Uncorrected Exploratory / Sensitivity Section (`exploratory_sensitivity_uncorrected`):
+     ALL other ~60+ `p`-values, secondary graph/root pairings, alternative null
+     controls, QAP permutations, and calque probabilities are quarantined under
+     `"exploratory_sensitivity_uncorrected"` with explicit notice that NONE are
+     corrected for multiple comparisons. This includes:
+       - `g_tsr_oct22_pure_table` (54 pairs from `tests/tsr_formal.py` without `ROWS`),
+       - secondary `vocab/mirror.py` + `rule/tsr_formal_port.py` graphs (`67` and
+         `182` pairs), explicitly labeled `"author-attested, first committed Nov 13"`,
+       - `pokorny_pie`, `strict_pie_plus_translation_calque`, `diachronic_strict_pie`,
+         and `diachronic_pokorny_pie` sensitivity variants,
+       - legacy 4-char morphological filter (`N_orth_unrelated = 3,153`, retaining
+         `momentum-movement`),
+       - uniform `S_80` QAP vertex-permutation moments, Cantelli bounds, and 100k
+         `(pos, polysemy_tier)`-stratified permutations (`seed=20191007`),
+       - `actual-energy` center-crossing translation-calque localization probabilities,
+       - the post-hoc prose-augmented full-book concordance (`CANONICAL_TSR_EDGES_RAW`).
 
-  3. Exact Blind-Pair Hypergeometric Denominator (`total_pop = n_blind_pairs`):
-     Because non-blind pairs are deleted from both TSR and etymology blind graphs,
-     all exact hypergeometric upper-tail p-values draw from `total_pop = n_blind_pairs`
-     (`3152` strict / `3153` legacy, NOT `C(80, 2) = 3160`), reported alongside exact
-     blind-pair hypergeometric moments, exact `S_80` QAP vertex-permutation moments,
-     exact `(pos, polysemy_tier)` stratified expectations (both blind-pair-conditioned
-     and vertex-permutation), and 100,000-trial stratified permutations (`seed=20191007`).
+  2. Descriptive `core_law` vs `secondary_physics` Kind Split:
+     Any `core_law` vs `secondary_physics` Fisher / binomial concentration breakdown is
+     explicitly tagged `"DESCRIPTIVE_ONLY_POST_HOC_SPLIT_NOT_INFERENTIAL"`. Because
+     the `kind` labels in `ledger_80.json` were assigned by the author while drafting
+     *What the Words Knew* (not blind) and the `21` vs `14` split is post hoc, those
+     tallies are strictly descriptive summaries and NOT confirmatory hypothesis tests.
 
-  4. Complete Blind Graph Grid (`g_tsr_pure_table` First) + Dual PIE Root Standards +
-     Calque vs. Classical Sense-Overlap Taxonomy:
-     Evaluates BOTH zero-choice frozen graphs — prose-free `g_tsr_pure_table` (67 strict
-     blind edges; primary headline family) and full frozen repo `g_tsr_frozen` (182
-     strict blind edges, verified `g_tsr_pure_table <= g_tsr_frozen`) — across:
-       * `pie_roots_strict` (Modern Laryngeal IE: de Vaan 2008 / LIV2 / Kroonen 2013 /
-         Beekes 2010; separates `converge < *h1werg-` from `vortex < *wert-`),
-       * `pie_roots_pokorny` (Broad Traditional IE: Pokorny IEW 1152 / Watkins /
-         Etymonline; retains `*wer-turn` on `converge-vortex`, noting both are Ch. 8
-         `outward first` misses in WTWK p. 82), and
-       * Diachronic classical extensions distinguishing `coined_translation_calque`
-         (`actual-energy`, category `translation_calque`: *energeia -> actualitas*)
-         from `classical_sense_overlap` (`desire-expect`, category
-         `classical_polysemy_parallel`: *desiderare / exspectare*).
-     Explicitly outputs the 2x3 primary grid, the four named Checklist §3.4 cells
-     (`III_1A_Pure_PIE`, `III_1A_Diachronic`, `III_1B_Pure_PIE`, `III_1C_Diachronic`),
-     and the strict laryngeal-IE sensitivity cells.
+  3. Explicit Surface-to-Ledger Inflected Wordform Map (`SURFACE_TO_LEDGER`):
+     Replaces prefix-heuristic matching with an audited exact token-to-lemma map.
+     Prevents false-friend stem leaks (`"real"`, `"reality"`, `"realities"` -/->
+     `"realize"`; `"moment"` -/-> `"momentum"`; `"times"` -/-> `"time"`;
+     `"forceable"` -/-> `"force"`; `"senses"` -/-> `"sense"`; `"limitless"` -/->
+     `"limit"`; `"radius"` -/-> `"radiate"`; `"be"` -/-> `"being"`) while mapping
+     genuine inflections (`"belief"` -> `"believe"`, `"expansion"` -> `"expand"`,
+     `"receptive"` -> `"receive"`, `"vibrance"` -> `"vibration"`).
 
-  5. Within-Physics Test III.3 (`core_law` vs `secondary_physics`) & Pre-Etymology
-     Grounding of All 21 `core_law` Words:
-     In *What the Words Knew* (p. 95), `"inward first"` means a word that *"began in
-     human life and was later handed to physics"*. Thus the 45 `not_physics_term` words
-     are structurally ineligible (`0/45` by definition), making the old `5/21` vs `0/59`
-     all-80 Fisher test circular. Test III.3 leads with valid within-physics tests
-     (`5/6` vs `0/8` directional physics, p = 3/1001 ≈ 3.00e-3; `5/21` vs `0/14` all
-     35 physics words, p = 171/2728 ≈ 0.0627 reported candidly; exact binomial bounds
-     against q_0 in {0.05, 0.10, 0.15}; and *Sovereign Mirror* book-only sensitivity
-     holding out Oct 2026 `EXTENSION` rulings `work` and `power`), while retaining the
-     80-word figure strictly as a descriptive ledger concentration summary.
-
-     Pre-etymology grounding of all 21 `core_law` words (fixed prior to Nov 2026 lookup):
-       - `accelerate`: SM Ch. 2 pp. 20, 23 (`F = ma`), Map pp. 171, 173; `MIRROR`, `PHYS`.
-       - `attraction`: Notebook p. 1 (2019-10-07); SM Ch. 8 pp. 59-60, Map pp. 169-172; `EXTENDED_PARTNERS`.
-       - `charge`: SM Ch. 2 p. 27 (stationary electric charge vs magnetic loop); `kind='both ways'`.
-       - `current`: Table (2020-07-06); SM Ch. 1-2, 17 (`E = C^2 M`, `c <-> C`); `MIRROR`, `NONPHYS_STATED`.
-       - `density`: SM Ch. 2 pp. 20, 22, 26 (`m = density * volume`), Map pp. 172-173; `MIRROR`, `PHYS`.
-       - `distance`: SM Ch. 2 pp. 21, 24, Ch. 16 pp. 116, 118 (#2); `EXTENDED_PARTNERS`, `ROWS` #2.
-       - `electric`: Table (2020-07-06); SM Ch. 2 pp. 26-27, Map pp. 172-173; `MIRROR`.
-       - `energy`: Notebook p. 1 (2019-10-07, central `E`); SM Ch. 2, 16, 17; `MIRROR`, `PHYS`, `ROWS` #7.
-       - `force`: SM Ch. 2 pp. 20, 23 (`F = ma`), Ch. 10 pp. 76-79, Map pp. 170-173; `MIRROR`, `DIAGONAL`, `PHYS`.
-       - `gravity`: SM Ch. 8 pp. 59-60, Ch. 16 pp. 117, 121 (#11-12), Map pp. 170, 174; `EXTENDED_PARTNERS`, `ROWS`.
-       - `inertia`: SM Ch. 1 p. 16 (defining TSR physical resistance via Newton's inertia), Ch. 10 pp. 75-76; `deep-read.md` (Nov 5).
-       - `light`: Notebook p. 1 (2019-10-07, `c`); SM Ch. 2, 16 (#7, #9), Map pp. 170-171; `MIRROR`, `PHYS`, `ROWS`.
-       - `mass`: Notebook p. 1 (2019-10-07, `m`); SM Ch. 1, 2, 16, 17, Map pp. 169-173; `MIRROR`, `PHYS`, `ROWS`.
-       - `matter`: SM Ch. 2 p. 25, Ch. 10 pp. 76, 79 (core of matter), Ch. 18, 21; `deep-read.md` §2 (Nov 5).
-       - `momentum`: Notebook p. 1 (2019-10-07); SM Ch. 17 pp. 129-130, Map pp. 169-175; `EXTENDED_PARTNERS`, `EXTENSION`.
-       - `power`: Extension Test (2026-10-22) & Oct 2026 Author Ruling (`tsr.wtf/answers`); `AUTHOR_RULING_SOURCES`, `EXTENDED_PARTNERS`, `EXTENSION` (Nov 5-6).
-       - `pressure`: SM Ch. 16 p. 118 (Boyle's law); Extension Test Key #11 (Oct 22 / Nov 5); `ROWS` Boyle row.
-       - `space`: Notebook p. 1 (2019-10-07); SM Ch. 2, 16 (#10), Map pp. 169-173; `MIRROR`, `PHYS`, `EXTENSION`, `ROWS`.
-       - `time`: Notebook p. 1 (2019-10-07); SM Ch. 2, 15, 16 (#5, #10), Map pp. 169-173; `MIRROR`, `PHYS`, `EXTENSION`, `ROWS`.
-       - `volume`: SM Ch. 2 pp. 20, 22, 26 (`m = density * volume`), Ch. 16 p. 118; `MIRROR`, `PHYS`, `ROWS`.
-       - `work`: Extension Test (2026-10-22) & Oct 2026 Author Ruling (`tsr.wtf/answers`, `deep-read.md` Nov 5); `AUTHOR_RULING_SOURCES`, `EXTENDED_PARTNERS`, `EXTENSION` (Nov 5-6).
+  4. Pre-Etymology Grounding of the 21 `core_law` Words (Updated for Proof 36 & SM v57):
+     - `accelerate`: SM v57 Ch. 2 pp. 20, 23 (`F = ma`), Map pp. 171, 173; `MIRROR`, `PHYS`.
+     - `attraction`: Notebook p. 1 (2019-10-07, WTWK proof 36 p. 97); SM v57 Ch. 8 pp. 59-60, Map pp. 169-172.
+     - `charge`: SM v57 Ch. 2 p. 27 (electric field around charge at rest vs closed magnetic lines); `kind='both ways'`.
+     - `current`: Table (2020-07-06); SM v57 Ch. 1-2, 17 (`E = C^2 M`, `c <-> C`); `MIRROR`, `NONPHYS_STATED`.
+     - `density`: SM v57 Ch. 2 pp. 20, 22, 26 (`m = density * volume`), Map pp. 172-173; `MIRROR`, `PHYS`.
+     - `distance`: SM v57 Ch. 2 pp. 21, 24, Ch. 16 pp. 116, 118-119 (`#2`); `ROWS` #2 (`tests/tsr_formal.py`).
+     - `electric`: Table (2020-07-06); SM v57 Ch. 2 pp. 26-27, Map pp. 172-173; `MIRROR`.
+     - `energy`: Notebook p. 1 (2019-10-07, central `E`); SM v57 Ch. 2, 16 (pp. 117, 120), 17 (pp. 127-133).
+     - `force`: SM v57 Ch. 2 pp. 20, 23 (`F = ma`), Ch. 10 pp. 76-79, Map pp. 170-173; `MIRROR`, `DIAGONAL`, `PHYS`.
+     - `gravity`: SM v57 Ch. 8 pp. 59-60, Ch. 16 pp. 117, 121 (`#11-12`), Map pp. 170, 174; `ROWS`.
+     - `inertia`: SM v57 Ch. 1 p. 16, Ch. 10 pp. 75-76; `deep-read.md`.
+     - `light`: Notebook p. 1 (2019-10-07, `c`); SM v57 Ch. 2, 16 (pp. 116, 120 `#7`, `#9`), Map pp. 170-171; WTWK proof 36 p. 81 (`kind='family'`).
+     - `mass`: Notebook p. 1 (2019-10-07, `m`); SM v57 Ch. 1, 2, 16 (pp. 116, 120-121), 17, Map pp. 169-173.
+     - `matter`: SM v57 Ch. 2 p. 25, Ch. 10 pp. 76, 79, Ch. 18, 21; `deep-read.md`.
+     - `momentum`: Notebook p. 1 (2019-10-07); SM v57 Ch. 17 pp. 129-130, Map pp. 169-175; `EXTENSION`.
+     - `power`: Extension Test (2026-10-22, `tests/tsr_formal.py` `EXTENSION`); secondary `vocab/mirror.py` (`author-attested, first committed Nov 13`).
+     - `pressure`: SM v57 Ch. 16 p. 118 (Boyle's law); `tests/tsr_formal.py` `ROWS` Boyle row.
+     - `space`: Notebook p. 1 (2019-10-07); SM v57 Ch. 2, 16 (p. 121 `#10`), Map pp. 169-173.
+     - `time`: Notebook p. 1 (2019-10-07); SM v57 Ch. 2, 15, 16 (pp. 116, 120-121 `#5`, `#10`), Map pp. 169-173.
+     - `volume`: SM v57 Ch. 2 pp. 20, 22, 26 (`m = density * volume`), Ch. 16 p. 118; `MIRROR`, `PHYS`, `ROWS`.
+     - `work`: Extension Test (2026-10-22, `tests/tsr_formal.py` `EXTENSION`); secondary `vocab/mirror.py` (`author-attested, first committed Nov 13`).
 """
 from __future__ import annotations
 
+import hashlib
+import importlib.util
 import json
 import math
 import random
@@ -100,26 +96,37 @@ import sys
 from collections import Counter, defaultdict
 from fractions import Fraction
 from pathlib import Path
-from typing import Any, Callable
+from typing import Any, Callable, Iterable
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
 if str(REPO_ROOT) not in sys.path:
     sys.path.insert(0, str(REPO_ROOT))
 
 from vocab.mirror import (  # noqa: E402
-    AUTHOR_RULING_SOURCES,
-    DIAGONAL,
-    EXTENDED_PARTNERS,
-    GLOSSARY_SENSES,
-    MIRROR,
+    AUTHOR_RULING_SOURCES as NOV13_AUTHOR_RULING_SOURCES,
+    DIAGONAL as NOV13_DIAGONAL,
+    EXTENDED_PARTNERS as NOV13_EXTENDED_PARTNERS,
+    GLOSSARY_SENSES as NOV13_GLOSSARY_SENSES,
+    MIRROR as NOV13_MIRROR,
 )
-from rule.tsr_formal_port import EXTENSION, NONPHYS_STATED, PHYS, ROWS  # noqa: E402
+from rule.tsr_formal_port import (  # noqa: E402
+    EXTENSION as NOV13_EXTENSION,
+    NONPHYS_STATED as NOV13_NONPHYS_STATED,
+    PHYS as NOV13_PHYS,
+    ROWS as NOV13_ROWS,
+)
 
 LEDGER_PATH = Path(__file__).resolve().parent / "ledger_80.json"
+OCT22_TSR_FORMAL_RELPATH = Path("tests") / "tsr_formal.py"
+OCT22_TSR_FORMAL_PATH = REPO_ROOT / OCT22_TSR_FORMAL_RELPATH
+OCT22_TSR_FORMAL_SHA256 = (
+    "075fd22b9e4a9b91fa76bc433e4a754ca5faf57009fa0c071158711fba918ae0"
+)
+NOV13_PROVENANCE_LABEL = "author-attested, first committed Nov 13"
+CORE_LAW_FISHER_STATUS = "DESCRIPTIVE_ONLY_POST_HOC_SPLIT_NOT_INFERENTIAL"
 
-# Explicit, audited surface-token -> 80-word-ledger lemma dictionary across ALL 333
-# unique alphabetic tokens in `vocab/mirror.py` and `rule/tsr_formal_port.py`.
-# Zero prefix guessing is permitted.
+# Explicit, audited surface-token -> 80-word-ledger lemma dictionary across ALL unique
+# alphabetic tokens in `tests/tsr_formal.py`, `vocab/mirror.py`, and `rule/tsr_formal_port.py`.
 INFLECTED_SURFACE_TO_LEDGER: dict[str, str] = {
     "acceleration": "accelerate",
     "actualization": "actual",
@@ -164,8 +171,8 @@ INFLECTED_SURFACE_TO_LEDGER: dict[str, str] = {
     "wanting": "want",
 }
 
-# False-friend, meta-lexicographic, antonym, and homograph tokens in frozen code
-# that MUST NEVER alias to a ledger word:
+# False-friend, meta-lexicographic, antonym, and homograph tokens that MUST NEVER
+# alias to a ledger word:
 FORBIDDEN_SURFACE_TOKENS: frozenset[str] = frozenset(
     {
         "real",
@@ -180,6 +187,23 @@ FORBIDDEN_SURFACE_TOKENS: frozenset[str] = frozenset(
         "be",          # Auxiliary copula ('taken to be true'), NOT ontological 'being'
     }
 )
+
+
+def load_oct22_tsr_formal_module() -> Any:
+    """
+    Verify the SHA-256 digest of `tests/tsr_formal.py` (commit `cdba80d`, 2026-10-22)
+    and import its data tables cleanly without running its `__main__` block or mutating globals.
+    """
+    assert OCT22_TSR_FORMAL_PATH.is_file(), f"Missing Oct 22 artifact: {OCT22_TSR_FORMAL_PATH}"
+    digest = hashlib.sha256(OCT22_TSR_FORMAL_PATH.read_bytes()).hexdigest()
+    assert digest == OCT22_TSR_FORMAL_SHA256, (
+        f"SHA-256 mismatch on {OCT22_TSR_FORMAL_RELPATH}: expected {OCT22_TSR_FORMAL_SHA256}, got {digest}"
+    )
+    spec = importlib.util.spec_from_file_location("tsr_formal_oct22_cdba80d", OCT22_TSR_FORMAL_PATH)
+    assert spec is not None and spec.loader is not None, f"Could not create spec for {OCT22_TSR_FORMAL_PATH}"
+    module = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(module)
+    return module
 
 
 def build_surface_to_ledger_map(words: list[dict[str, Any]]) -> dict[str, str]:
@@ -207,8 +231,8 @@ def extract_ledger_words(
     surface_map: dict[str, str] | None = None,
 ) -> set[str]:
     """
-    Map alphabetic tokens in `text` strictly through the explicit `SURFACE_TO_LEDGER`
-    dictionary (zero 4-char `startswith` guessing).
+    Map alphabetic tokens in `text` strictly through `SURFACE_TO_LEDGER`
+    (zero 4-char `startswith` guessing).
     """
     smap = SURFACE_TO_LEDGER if surface_map is None else surface_map
     tokens = re.findall(r"[a-zA-Z]+", text.lower())
@@ -253,7 +277,7 @@ def _strip_productive_suffix(w: str) -> tuple[str, str | None]:
 
 
 def shares_4char_substring_legacy(w1: str, w2: str) -> bool:
-    """Legacy 4-char substring filter (for Checklist §3.2 side-by-side sensitivity)."""
+    """Legacy 4-char orthographic filter (used for morphological sensitivity checks)."""
     a, b = _strip_productive_suffix_legacy(w1.lower()), _strip_productive_suffix_legacy(w2.lower())
     if len(a) < 4 or len(b) < 4:
         return a == b
@@ -264,7 +288,7 @@ def shares_4char_substring_legacy(w1: str, w2: str) -> bool:
 
 def shares_4char_substring(w1: str, w2: str, *, strict_latinate: bool = True) -> bool:
     """
-    Orthographic and transparent-morphology blindness filter.
+    Orthographic and transparent-morphology filter.
     When `strict_latinate=True` (default / primary):
       1. Strips Latinate `-mentum` / `-entum` / `-tum` alongside `-ment`, `-tion`, etc.
       2. Flags cognate `-ment` / `-mentum` nominalizations sharing a >=2-character root
@@ -286,14 +310,14 @@ def shares_4char_substring(w1: str, w2: str, *, strict_latinate: bool = True) ->
     return bool(subs_a & subs_b)
 
 
-def compute_blind_pair_universe(
+def compute_orth_unrelated_pair_universe(
     words: list[dict[str, Any]],
     *,
     strict_latinate: bool = True,
 ) -> tuple[set[tuple[str, str]], list[tuple[str, str]]]:
     """
-    Return `(eligible_blind_pairs, excluded_nonblind_pairs)` across all C(80, 2) = 3,160
-    unordered word pairs in the 80-word ledger.
+    Return `(eligible_orth_unrelated_pairs, excluded_orth_related_pairs)` across all
+    `C(80, 2) = 3,160` unordered word pairs in the 80-word ledger.
     """
     eligible: set[tuple[str, str]] = set()
     excluded: list[tuple[str, str]] = []
@@ -321,6 +345,10 @@ def load_ledger() -> list[dict[str, Any]]:
     assert len(words) == 80, f"Expected all 80 words, got {len(words)}"
     seen = [w["word"] for w in words]
     assert len(set(seen)) == 80, "Duplicate words in ledger!"
+    kc = Counter(w["kind"] for w in words)
+    assert kc["family"] == 36, f"Expected family==36 in proof 36 ledger, got {kc['family']}"
+    assert kc["not used"] == 1, f"Expected not used==1 in proof 36 ledger, got {kc['not used']}"
+    assert sum(kc.values()) == 80
     return words
 
 
@@ -330,9 +358,9 @@ def build_hidden_etymology_graphs(
     strict_latinate: bool = True,
 ) -> dict[str, set[tuple[str, str]]]:
     """
-    Construct hidden diachronic root and classical-link graphs over the 80 words under
-    the specified blindness filter (`strict_latinate=True` -> N_blind=3152;
-    `strict_latinate=False` -> N_blind=3153):
+    Construct diachronic root and classical-link graphs over the 80 words under the
+    specified orthographic filter (`strict_latinate=True` -> N_orth_unrelated=3152;
+    `strict_latinate=False` -> N_orth_unrelated=3153):
       - `strict_pie`: shared `pie_roots_strict` (de Vaan 2008 / LIV2 / Kroonen / Beekes;
         separates `converge < *h1werg-` from `vortex < *wert-`).
       - `pokorny_pie`: shared `pie_roots_pokorny` (Pokorny IEW / Watkins / Etymonline;
@@ -344,7 +372,9 @@ def build_hidden_etymology_graphs(
       - `diachronic_pokorny_pie`: `pokorny_pie` + `coined_translation_calque`
         (`actual-energy`) + `classical_sense_overlap` (`desire-expect`).
     """
-    eligible_pairs, _ = compute_blind_pair_universe(words, strict_latinate=strict_latinate)
+    eligible_pairs, _ = compute_orth_unrelated_pair_universe(
+        words, strict_latinate=strict_latinate
+    )
 
     strict_pie: set[tuple[str, str]] = set()
     pokorny_pie: set[tuple[str, str]] = set()
@@ -396,9 +426,9 @@ def classify_etymology_pair(
     wu, wv = word_by_name[u], word_by_name[v]
     shared_strict = sorted(set(wu["pie_roots_strict"]) & set(wv["pie_roots_strict"]))
     shared_pokorny = sorted(set(wu["pie_roots_pokorny"]) & set(wv["pie_roots_pokorny"]))
-    nonblind_strict = shares_4char_substring(u, v, strict_latinate=True)
-    if nonblind_strict:
-        rel = "non_blind_shared_latinate_morphology"
+    orth_related = shares_4char_substring(u, v, strict_latinate=True)
+    if orth_related:
+        rel = "orth_related_shared_latinate_morphology"
     elif shared_strict:
         rel = "strict_pie_cognate"
     elif shared_pokorny:
@@ -431,17 +461,17 @@ def classify_etymology_pair(
     if {u, v} == {"converge", "vortex"}:
         out["note"] = (
             "Separated in strict laryngeal IE (converge < *h1werg- vs vortex < *wert-, de Vaan 2008: 665, 667); "
-            "united only under Pokorny IEW 1152 *wer-; both are Ch. 8 'outward first' misses in WTWK (p. 82)."
+            "united only under Pokorny IEW 1152 *wer-; both are Ch. 8 'outward first' misses in WTWK proof 36 (p. 86)."
         )
     elif {u, v} == {"momentum", "movement"}:
         out["note"] = (
-            "Shared Latinate movere + -mentum/-ment morphology; excluded from primary strict blind universe "
-            "(also subject to 2019-10-07 -> 2020-07-06 Momentum -> Movement M-slot swap, WTWK pp. 39, 93)."
+            "Shared Latinate movere + -mentum/-ment morphology; excluded from primary strict orthographically "
+            "unrelated universe (also subject to 2019-10-07 -> 2020-07-06 Momentum -> Movement M-slot swap, WTWK proof 36 pp. 41, 97)."
         )
     elif {u, v} == {"desire", "expect"}:
         out["note"] = (
             "Classical Latin dictionary polysemy overlap (desiderare / exspectare 'to long for, hope for', "
-            "WTWK Ch. 5 p. 52); classified as classical_sense_overlap (classical_polysemy_parallel), NOT a calque."
+            "WTWK proof 36 Ch. 2 p. 28, Ch. 5 p. 52); classified as classical_sense_overlap (classical_polysemy_parallel), NOT a calque."
         )
     elif {u, v} == {"actual", "energy"}:
         out["note"] = (
@@ -451,7 +481,7 @@ def classify_etymology_pair(
     return out
 
 
-# Exploratory unblinded book concordance (quarantined from blind inferential p-values):
+# Post-hoc prose-augmented book concordance (quarantined in exploratory section):
 CANONICAL_TSR_EDGES_RAW: list[tuple[str, str]] = [
     ("limit", "aware"),
     ("resist", "receive"),
@@ -567,17 +597,65 @@ CANONICAL_TSR_EDGES_RAW: list[tuple[str, str]] = [
 ]
 
 
+def _extract_tsr_graph_from_components(
+    words: list[dict[str, Any]],
+    *,
+    strict_latinate: bool,
+    mirror_rows: Iterable[tuple[str, str, str]],
+    diagonal_rows: Iterable[tuple[str, str]],
+    extra_partner_items: Iterable[tuple[str, str]],
+    equation_items: Iterable[tuple[str, tuple[str, tuple[str, ...]]]],
+    calibration_rows: Iterable[tuple[Any, ...]] = (),
+    glossary_items: Iterable[tuple[str, str]] = (),
+    ruling_items: Iterable[tuple[str, str]] = (),
+) -> set[tuple[str, str]]:
+    """Shared deterministic graph extractor restricted to orthographically unrelated pairs."""
+    smap = build_surface_to_ledger_map(words)
+    eligible_pairs, _ = compute_orth_unrelated_pair_universe(
+        words, strict_latinate=strict_latinate
+    )
+    edges: set[tuple[str, str]] = set()
+
+    def connect_sets(s1: set[str], s2: set[str]) -> None:
+        for u in s1:
+            for v in s2:
+                if u != v:
+                    e = _u_edge(u, v)
+                    if e in eligible_pairs:
+                        edges.add(e)
+
+    for phys, non, _role in mirror_rows:
+        connect_sets(extract_ledger_words(phys, smap), extract_ledger_words(non, smap))
+    for left, right in diagonal_rows:
+        connect_sets(extract_ledger_words(left, smap), extract_ledger_words(right, smap))
+    for phys, non in extra_partner_items:
+        connect_sets(extract_ledger_words(phys, smap), extract_ledger_words(non, smap))
+    for lhs, (_op, rhs_tup) in equation_items:
+        connect_sets(
+            extract_ledger_words(lhs, smap),
+            extract_ledger_words(" ".join(rhs_tup), smap),
+        )
+    for row in calibration_rows:
+        row_name, row_src = row[0], row[5]
+        connect_sets(extract_ledger_words(row_name, smap), extract_ledger_words(row_src, smap))
+    for head, text in glossary_items:
+        connect_sets(extract_ledger_words(head, smap), extract_ledger_words(text, smap))
+    for head, text in ruling_items:
+        connect_sets(extract_ledger_words(head, smap), extract_ledger_words(text, smap))
+
+    return edges
+
+
 def build_canonical_tsr_graph(
     words: list[dict[str, Any]],
     *,
     strict_latinate: bool = True,
 ) -> set[tuple[str, str]]:
-    """
-    Build the unblinded exploratory concordance graph restricted to `eligible_blind_pairs`
-    so its descriptive comparisons operate over the identical `n_blind_pairs` universe.
-    """
+    """Post-hoc prose-augmented book concordance restricted to `eligible_orth_unrelated_pairs`."""
     word_set = {w["word"] for w in words}
-    eligible_pairs, _ = compute_blind_pair_universe(words, strict_latinate=strict_latinate)
+    eligible_pairs, _ = compute_orth_unrelated_pair_universe(
+        words, strict_latinate=strict_latinate
+    )
     edges: set[tuple[str, str]] = set()
     for u, v in CANONICAL_TSR_EDGES_RAW:
         assert u in word_set and v in word_set, f"Edge ({u}, {v}) not in 80-word ledger!"
@@ -587,100 +665,126 @@ def build_canonical_tsr_graph(
     return edges
 
 
-def build_programmatic_pure_table_graph(
+def build_oct22_pure_table_graph(
     words: list[dict[str, Any]],
+    oct22_mod: Any,
     *,
     strict_latinate: bool = True,
 ) -> set[tuple[str, str]]:
     """
-    Primary zero-researcher-choice blind graph (`g_tsr_pure_table`): extracted ONLY
-    from prose-free table pairings and algebraic formulas in `vocab/mirror.py`
-    (`MIRROR`, `DIAGONAL`, `EXTENDED_PARTNERS`) and `rule/tsr_formal_port.py`
-    (`PHYS`, `NONPHYS_STATED`, `EXTENSION`), mapped via `SURFACE_TO_LEDGER` and
-    restricted to `eligible_blind_pairs`.
+    `g_tsr_oct22_pure_table` (54 strict pairs): Oct 22 commit `cdba80d` (`tests/tsr_formal.py`)
+    tables and algebraic equations (`MIRROR`, `DIAGONAL`, `('gravitational pull', 'Attraction')`,
+    `PHYS`, `NONPHYS_STATED`, `EXTENSION`), excluding `ROWS`.
     """
-    smap = build_surface_to_ledger_map(words)
-    eligible_pairs, _ = compute_blind_pair_universe(words, strict_latinate=strict_latinate)
-    edges: set[tuple[str, str]] = set()
-
-    def connect_sets(s1: set[str], s2: set[str]) -> None:
-        for u in s1:
-            for v in s2:
-                if u != v:
-                    e = _u_edge(u, v)
-                    if e in eligible_pairs:
-                        edges.add(e)
-
-    for phys, non, _role in MIRROR:
-        connect_sets(extract_ledger_words(phys, smap), extract_ledger_words(non, smap))
-    for left, right in DIAGONAL:
-        connect_sets(extract_ledger_words(left, smap), extract_ledger_words(right, smap))
-    for phys, non in EXTENDED_PARTNERS.items():
-        connect_sets(extract_ledger_words(phys, smap), extract_ledger_words(non, smap))
-    for lhs, (_op, rhs_tup) in (
-        list(PHYS.items()) + list(NONPHYS_STATED.items()) + list(EXTENSION.items())
-    ):
-        connect_sets(
-            extract_ledger_words(lhs, smap),
-            extract_ledger_words(" ".join(rhs_tup), smap),
-        )
-
-    return edges
-
-
-def build_programmatic_frozen_mirror_graph(
-    words: list[dict[str, Any]],
-    *,
-    strict_latinate: bool = True,
-) -> set[tuple[str, str]]:
-    """
-    Full zero-researcher-choice frozen repository code graph (`g_tsr_frozen`):
-    superset of `g_tsr_pure_table` adding frozen glossary and calibration-row structures
-    in `vocab/mirror.py` (`GLOSSARY_SENSES`, `AUTHOR_RULING_SOURCES`) and
-    `rule/tsr_formal_port.py` (`ROWS`), mapped via `SURFACE_TO_LEDGER` and restricted
-    to `eligible_blind_pairs`.
-    """
-    smap = build_surface_to_ledger_map(words)
-    eligible_pairs, _ = compute_blind_pair_universe(words, strict_latinate=strict_latinate)
-    edges: set[tuple[str, str]] = set(
-        build_programmatic_pure_table_graph(words, strict_latinate=strict_latinate)
+    return _extract_tsr_graph_from_components(
+        words,
+        strict_latinate=strict_latinate,
+        mirror_rows=oct22_mod.MIRROR,
+        diagonal_rows=oct22_mod.DIAGONAL,
+        extra_partner_items=[("gravitational pull", "Attraction")],
+        equation_items=(
+            list(oct22_mod.PHYS.items())
+            + list(oct22_mod.NONPHYS_STATED.items())
+            + list(oct22_mod.EXTENSION.items())
+        ),
     )
 
-    def connect_sets(s1: set[str], s2: set[str]) -> None:
-        for u in s1:
-            for v in s2:
-                if u != v:
-                    e = _u_edge(u, v)
-                    if e in eligible_pairs:
-                        edges.add(e)
 
-    for head, gloss in GLOSSARY_SENSES.items():
-        connect_sets(extract_ledger_words(head, smap), extract_ledger_words(gloss, smap))
-    for head, ruling_src in AUTHOR_RULING_SOURCES.items():
-        connect_sets(extract_ledger_words(head, smap), extract_ledger_words(ruling_src, smap))
-    for row_name, _ruling, _hm, _defn, _costs, row_src in ROWS:
-        connect_sets(extract_ledger_words(row_name, smap), extract_ledger_words(row_src, smap))
+def build_oct22_cdba80d_graph(
+    words: list[dict[str, Any]],
+    oct22_mod: Any,
+    *,
+    strict_latinate: bool = True,
+) -> set[tuple[str, str]]:
+    """
+    PRIMARY pre-declared TSR graph (`g_tsr_oct22_cdba80d`, 66 strict pairs): full Oct 22
+    commit `cdba80d` (`tests/tsr_formal.py`) extraction (`MIRROR`, `DIAGONAL`,
+    `('gravitational pull', 'Attraction')`, `PHYS`, `NONPHYS_STATED`, `EXTENSION`, and `ROWS`).
+    """
+    return _extract_tsr_graph_from_components(
+        words,
+        strict_latinate=strict_latinate,
+        mirror_rows=oct22_mod.MIRROR,
+        diagonal_rows=oct22_mod.DIAGONAL,
+        extra_partner_items=[("gravitational pull", "Attraction")],
+        equation_items=(
+            list(oct22_mod.PHYS.items())
+            + list(oct22_mod.NONPHYS_STATED.items())
+            + list(oct22_mod.EXTENSION.items())
+        ),
+        calibration_rows=oct22_mod.ROWS,
+    )
 
-    return edges
+
+def build_nov13_pure_table_graph(
+    words: list[dict[str, Any]],
+    *,
+    strict_latinate: bool = True,
+) -> set[tuple[str, str]]:
+    """
+    Secondary `g_tsr_nov13_pure_table` (67 strict pairs; author-attested, first committed
+    Nov 13): `vocab/mirror.py` (`MIRROR`, `DIAGONAL`, `EXTENDED_PARTNERS`) and
+    `rule/tsr_formal_port.py` (`PHYS`, `NONPHYS_STATED`, `EXTENSION`).
+    """
+    return _extract_tsr_graph_from_components(
+        words,
+        strict_latinate=strict_latinate,
+        mirror_rows=NOV13_MIRROR,
+        diagonal_rows=NOV13_DIAGONAL,
+        extra_partner_items=NOV13_EXTENDED_PARTNERS.items(),
+        equation_items=(
+            list(NOV13_PHYS.items())
+            + list(NOV13_NONPHYS_STATED.items())
+            + list(NOV13_EXTENSION.items())
+        ),
+    )
 
 
-def exact_blind_hypergeometric_moments(
-    n_blind_pairs: int,
+def build_nov13_frozen_mirror_graph(
+    words: list[dict[str, Any]],
+    *,
+    strict_latinate: bool = True,
+) -> set[tuple[str, str]]:
+    """
+    Secondary `g_tsr_nov13_frozen` (182 strict pairs; author-attested, first committed
+    Nov 13): `g_tsr_nov13_pure_table` plus `GLOSSARY_SENSES`, `AUTHOR_RULING_SOURCES`,
+    and `ROWS`.
+    """
+    return _extract_tsr_graph_from_components(
+        words,
+        strict_latinate=strict_latinate,
+        mirror_rows=NOV13_MIRROR,
+        diagonal_rows=NOV13_DIAGONAL,
+        extra_partner_items=NOV13_EXTENDED_PARTNERS.items(),
+        equation_items=(
+            list(NOV13_PHYS.items())
+            + list(NOV13_NONPHYS_STATED.items())
+            + list(NOV13_EXTENSION.items())
+        ),
+        calibration_rows=NOV13_ROWS,
+        glossary_items=NOV13_GLOSSARY_SENSES.items(),
+        ruling_items=NOV13_AUTHOR_RULING_SOURCES.items(),
+    )
+
+
+def exact_orth_unrelated_hypergeometric_moments(
+    n_orth_unrelated_pairs: int,
     draws: int,
     pop_successes: int,
 ) -> dict[str, Any]:
     """
     Exact rational first and second moments of the hypergeometric edge-overlap count
-    over the eligible blind-pair universe of size `n_blind_pairs` (< 3,160).
+    over the eligible orthographically unrelated pair universe of size
+    `n_orth_unrelated_pairs` (< 3,160).
     """
-    mean_exact = Fraction(draws * pop_successes, n_blind_pairs)
+    mean_exact = Fraction(draws * pop_successes, n_orth_unrelated_pairs)
     var_exact = (
-        Fraction(draws * pop_successes, n_blind_pairs)
-        * Fraction(n_blind_pairs - pop_successes, n_blind_pairs)
-        * Fraction(n_blind_pairs - draws, n_blind_pairs - 1)
+        Fraction(draws * pop_successes, n_orth_unrelated_pairs)
+        * Fraction(n_orth_unrelated_pairs - pop_successes, n_orth_unrelated_pairs)
+        * Fraction(n_orth_unrelated_pairs - draws, n_orth_unrelated_pairs - 1)
     )
     return {
-        "n_blind_pairs": n_blind_pairs,
+        "n_orth_unrelated_pairs": n_orth_unrelated_pairs,
         "mean_fraction": f"{mean_exact.numerator}/{mean_exact.denominator}",
         "mean_float": float(mean_exact),
         "variance_fraction": f"{var_exact.numerator}/{var_exact.denominator}",
@@ -697,8 +801,8 @@ def exact_qap_moments_uniform(
     """
     Exact rational expectation E[T] and variance Var(T) of the vertex-permutation
     edge-overlap statistic T(pi) = |E_A cap pi(E_B)| over ALL n! bijections pi in S_n
-    (80! ≈ 7.16e118). Because non-blind pairs are already absent from E_A and E_B,
-    any edge mapped onto a non-blind vertex pair automatically contributes 0 to T(pi).
+    (80! ≈ 7.16e118). Because orthographically related pairs are already absent from E_A
+    and E_B, any edge mapped onto an excluded vertex pair contributes 0 to T(pi).
     """
     m_pairs = math.comb(n_vertices, 2)
     a_size = len(edges_a)
@@ -744,26 +848,25 @@ def exact_stratified_expectation(
     edges_tsr: set[tuple[str, str]],
     edges_etym: set[tuple[str, str]],
     stratum_fn: Callable[[dict[str, Any]], Any],
-    eligible_blind_pairs: set[tuple[str, str]] | None = None,
+    eligible_orth_unrelated_pairs: set[tuple[str, str]] | None = None,
 ) -> Fraction:
     """
     Compute the EXACT rational stratified expectation E_strat[T]:
-      - If `eligible_blind_pairs is None`: exact expectation over vertex permutations
-        pi in prod_s S_{V_s} preserving `stratum_fn(word)` (matches the exact mean of
-        `run_stratified_permutation_crosscheck`).
-      - If `eligible_blind_pairs` is provided: exact expectation over stratum-matched
-        blind edge draws where each unordered stratum pair `(s_u, s_v)` uses denominator
-        `|Pairs(s_u, s_v) cap eligible_blind_pairs|`.
+      - If `eligible_orth_unrelated_pairs is None`: exact expectation over vertex permutations
+        pi in prod_s S_{V_s} preserving `stratum_fn(word)`.
+      - If `eligible_orth_unrelated_pairs` is provided: exact expectation over stratum-matched
+        orthographically unrelated edge draws where each unordered stratum pair `(s_u, s_v)`
+        uses denominator `|Pairs(s_u, s_v) cap eligible_orth_unrelated_pairs|`.
     """
     word_to_stratum = {w["word"]: stratum_fn(w) for w in words}
     stratum_sizes = Counter(word_to_stratum.values())
 
-    blind_stratum_denoms: Counter[tuple[Any, Any]] = Counter()
-    if eligible_blind_pairs is not None:
-        for u, v in eligible_blind_pairs:
+    orth_stratum_denoms: Counter[tuple[Any, Any]] = Counter()
+    if eligible_orth_unrelated_pairs is not None:
+        for u, v in eligible_orth_unrelated_pairs:
             su, sv = word_to_stratum[u], word_to_stratum[v]
             key = (su, sv) if su <= sv else (sv, su)
-            blind_stratum_denoms[key] += 1
+            orth_stratum_denoms[key] += 1
 
     etym_counts: Counter[tuple[Any, Any]] = Counter()
     for u, v in edges_etym:
@@ -778,8 +881,8 @@ def exact_stratified_expectation(
         k_hits = etym_counts[key]
         if k_hits == 0:
             continue
-        if eligible_blind_pairs is not None:
-            denom = blind_stratum_denoms[key]
+        if eligible_orth_unrelated_pairs is not None:
+            denom = orth_stratum_denoms[key]
         elif su == sv:
             denom = math.comb(stratum_sizes[su], 2)
         else:
@@ -797,8 +900,8 @@ def exact_hypergeometric_upper_tail(
 ) -> Fraction:
     """
     Exact rational hypergeometric upper-tail probability P(X >= obs_k) when drawing
-    `draws` blind pairs without replacement from `total_pop = n_blind_pairs` eligible
-    blind pairs containing `pop_successes` hidden etymology edges.
+    `draws` pairs without replacement from `total_pop = n_orth_unrelated_pairs`
+    eligible pairs containing `pop_successes` hidden etymology edges.
     """
     assert 0 <= draws <= total_pop, f"Invalid draws={draws} for total_pop={total_pop}"
     assert 0 <= pop_successes <= total_pop, (
@@ -861,9 +964,7 @@ def run_stratified_permutation_crosscheck(
     n_trials: int = 100_000,
     seed: int = 20191007,
 ) -> dict[str, Any]:
-    """
-    Standalone deterministic seeded permutation cross-check preserving `stratum_fn(w)`.
-    """
+    """Standalone deterministic seeded permutation cross-check preserving `stratum_fn(w)`."""
     return run_batched_stratified_permutation_crosscheck(
         words=words,
         tasks=[("single", edges_tsr, edges_etym, obs_overlap)],
@@ -944,35 +1045,39 @@ def run_batched_stratified_permutation_crosscheck(
 
 def evaluate_graph_alignment(
     label: str,
-    blind_status: str,
+    provenance_status: str,
     words: list[dict[str, Any]],
     word_by_name: dict[str, dict[str, Any]],
-    eligible_blind_pairs: set[tuple[str, str]],
+    eligible_orth_unrelated_pairs: set[tuple[str, str]],
     edges_tsr: set[tuple[str, str]],
     edges_etym: set[tuple[str, str]],
     perm_check: dict[str, Any],
 ) -> dict[str, Any]:
-    assert edges_tsr <= eligible_blind_pairs, f"{label}: TSR graph contains non-blind pair!"
-    assert edges_etym <= eligible_blind_pairs, f"{label}: Etymology graph contains non-blind pair!"
+    assert edges_tsr <= eligible_orth_unrelated_pairs, (
+        f"{label}: TSR graph contains orthographically related pair!"
+    )
+    assert edges_etym <= eligible_orth_unrelated_pairs, (
+        f"{label}: Etymology graph contains orthographically related pair!"
+    )
 
     n_words = len(words)
     all_word_pairs = math.comb(n_words, 2)
-    n_blind_pairs = len(eligible_blind_pairs)
+    n_orth_unrelated_pairs = len(eligible_orth_unrelated_pairs)
 
     overlap_edges = sorted(edges_tsr & edges_etym)
     missed_etym_edges = sorted(edges_etym - edges_tsr)
     obs = len(overlap_edges)
 
-    blind_hyper_moments = exact_blind_hypergeometric_moments(
-        n_blind_pairs=n_blind_pairs,
+    orth_hyper_moments = exact_orth_unrelated_hypergeometric_moments(
+        n_orth_unrelated_pairs=n_orth_unrelated_pairs,
         draws=len(edges_tsr),
         pop_successes=len(edges_etym),
     )
     qap_uniform = exact_qap_moments_uniform(n_words, edges_tsr, edges_etym)
 
-    z_score_blind = (
-        (obs - blind_hyper_moments["mean_float"]) / blind_hyper_moments["std_float"]
-        if blind_hyper_moments["std_float"] > 0
+    z_score_orth = (
+        (obs - orth_hyper_moments["mean_float"]) / orth_hyper_moments["std_float"]
+        if orth_hyper_moments["std_float"] > 0
         else 0.0
     )
     z_score_s80 = (
@@ -986,43 +1091,42 @@ def evaluate_graph_alignment(
     t_q = Fraction(obs, 1) - mu_q
     cantelli_bound = var_q / (var_q + t_q * t_q) if t_q > 0 else Fraction(1, 1)
 
-    # Exact hypergeometric edge-draw upper tail over N_blind eligible blind pairs (< 3,160)
     hyper_p = exact_hypergeometric_upper_tail(
-        total_pop=n_blind_pairs,
+        total_pop=n_orth_unrelated_pairs,
         pop_successes=len(edges_etym),
         draws=len(edges_tsr),
         obs_k=obs,
     )
 
-    exp_polysemy_blind = exact_stratified_expectation(
+    exp_polysemy_orth = exact_stratified_expectation(
         words,
         edges_tsr,
         edges_etym,
         stratum_fn=lambda w: w["polysemy_tier"],
-        eligible_blind_pairs=eligible_blind_pairs,
+        eligible_orth_unrelated_pairs=eligible_orth_unrelated_pairs,
     )
-    exp_pos_polysemy_blind = exact_stratified_expectation(
+    exp_pos_polysemy_orth = exact_stratified_expectation(
         words,
         edges_tsr,
         edges_etym,
         stratum_fn=lambda w: (w["pos"], w["polysemy_tier"]),
-        eligible_blind_pairs=eligible_blind_pairs,
+        eligible_orth_unrelated_pairs=eligible_orth_unrelated_pairs,
     )
     exp_pos_polysemy_vertex = exact_stratified_expectation(
         words,
         edges_tsr,
         edges_etym,
         stratum_fn=lambda w: (w["pos"], w["polysemy_tier"]),
-        eligible_blind_pairs=None,
+        eligible_orth_unrelated_pairs=None,
     )
 
     return {
         "alignment_id": label,
-        "blind_status": blind_status,
+        "provenance_status": provenance_status,
         "total_words": n_words,
         "total_unfiltered_word_pairs": all_word_pairs,
-        "n_blind_pairs": n_blind_pairs,
-        "hypergeometric_total_pop_used": n_blind_pairs,
+        "n_orth_unrelated_pairs": n_orth_unrelated_pairs,
+        "hypergeometric_total_pop_used": n_orth_unrelated_pairs,
         "tsr_edge_count": len(edges_tsr),
         "etymology_edge_count": len(edges_etym),
         "observed_overlap_count": obs,
@@ -1031,27 +1135,27 @@ def evaluate_graph_alignment(
             classify_etymology_pair(e, word_by_name) for e in overlap_edges
         ],
         "non_overlapping_etymology_pairs": [list(e) for e in missed_etym_edges],
-        "exact_blind_pair_hypergeometric_moments": blind_hyper_moments,
+        "exact_orth_unrelated_hypergeometric_moments": orth_hyper_moments,
         "exact_uniform_S80_moments": qap_uniform,
-        "z_score_vs_blind_hypergeometric": round(z_score_blind, 4),
+        "z_score_vs_orth_unrelated_hypergeometric": round(z_score_orth, 4),
         "z_score_vs_uniform_S80": round(z_score_s80, 4),
         "exact_cantelli_upper_bound_float": float(cantelli_bound),
         "exact_hypergeometric_p_fraction": f"{hyper_p.numerator}/{hyper_p.denominator}",
         "exact_hypergeometric_p_float": float(hyper_p),
         "exact_polysemy_stratified_mean": {
-            "blind_pair_conditioned_fraction": f"{exp_polysemy_blind.numerator}/{exp_polysemy_blind.denominator}",
-            "float": float(exp_polysemy_blind),
-            "enrichment_ratio": round(obs / float(exp_polysemy_blind), 2)
-            if exp_polysemy_blind > 0
+            "orth_unrelated_conditioned_fraction": f"{exp_polysemy_orth.numerator}/{exp_polysemy_orth.denominator}",
+            "float": float(exp_polysemy_orth),
+            "enrichment_ratio": round(obs / float(exp_polysemy_orth), 2)
+            if exp_polysemy_orth > 0
             else None,
         },
         "exact_pos_and_polysemy_stratified_mean": {
-            "blind_pair_conditioned_fraction": f"{exp_pos_polysemy_blind.numerator}/{exp_pos_polysemy_blind.denominator}",
-            "blind_pair_conditioned_float": float(exp_pos_polysemy_blind),
+            "orth_unrelated_conditioned_fraction": f"{exp_pos_polysemy_orth.numerator}/{exp_pos_polysemy_orth.denominator}",
+            "orth_unrelated_conditioned_float": float(exp_pos_polysemy_orth),
             "vertex_permutation_fraction": f"{exp_pos_polysemy_vertex.numerator}/{exp_pos_polysemy_vertex.denominator}",
             "float": float(exp_pos_polysemy_vertex),
-            "enrichment_ratio": round(obs / float(exp_pos_polysemy_blind), 2)
-            if exp_pos_polysemy_blind > 0
+            "enrichment_ratio": round(obs / float(exp_pos_polysemy_orth), 2)
+            if exp_pos_polysemy_orth > 0
             else None,
             "enrichment_ratio_vertex_perm": round(obs / float(exp_pos_polysemy_vertex), 2)
             if exp_pos_polysemy_vertex > 0
@@ -1061,18 +1165,20 @@ def evaluate_graph_alignment(
     }
 
 
-def run_test_iii_2_energeia_actualitas_hinge(
+def run_test_iii_2_energeia_actualitas_center_crossing(
     words: list[dict[str, Any]],
-    n_blind_pairs_strict: int,
-    g_tsr_pure_table: set[tuple[str, str]],
-    g_tsr_frozen: set[tuple[str, str]],
+    n_orth_unrelated_pairs_strict: int,
+    g_oct22_pure_table: set[tuple[str, str]],
+    g_oct22_cdba80d: set[tuple[str, str]],
+    g_nov13_pure_table: set[tuple[str, str]],
+    g_nov13_frozen: set[tuple[str, str]],
     g_tsr_canonical: set[tuple[str, str]],
 ) -> dict[str, Any]:
     """
-    Test III.2: Exact rational probabilities for the unique coined translation calque
-    (`energy` [*energeia*] <-> `actual` [*actualitas*]; category `translation_calque`,
-    type `coined_translation_calque`) landing on the central E -> physical transmutation
-    hinge of *The Sovereign Mirror* (The Map pp. 169-171).
+    Exploratory / Uncorrected Center-Crossing Localization: exact rational probabilities
+    for the coined translation calque (`energy` [*energeia*] <-> `actual` [*actualitas*])
+    landing on the central E -> physical transmutation center_crossing edge of *The Sovereign Mirror*
+    v57 (The Map pp. 169-171). Quarantined under `exploratory_sensitivity_uncorrected`.
     """
     n_words = len(words)
     total_pairs = math.comb(n_words, 2)  # 3,160
@@ -1103,18 +1209,21 @@ def run_test_iii_2_energeia_actualitas_hinge(
     ]
     n_process = len(process_words)  # 17
 
-    p_exact_right_blind = Fraction(1, n_blind_pairs_strict)
-    p_either_hinge_blind = Fraction(2, n_blind_pairs_strict)
+    p_exact_right_orth = Fraction(1, n_orth_unrelated_pairs_strict)
+    p_either_center_crossing_orth = Fraction(2, n_orth_unrelated_pairs_strict)
     p_exact_right_all = Fraction(1, total_pairs)
-    p_either_hinge_all = Fraction(2, total_pairs)
-    p_in_pure_table = Fraction(len(g_tsr_pure_table), n_blind_pairs_strict)
-    p_in_frozen_repo = Fraction(len(g_tsr_frozen), n_blind_pairs_strict)
+    p_either_center_crossing_all = Fraction(2, total_pairs)
+    p_in_oct22_pure = Fraction(len(g_oct22_pure_table), n_orth_unrelated_pairs_strict)
+    p_in_oct22_cdba = Fraction(len(g_oct22_cdba80d), n_orth_unrelated_pairs_strict)
+    p_in_nov13_pure = Fraction(len(g_nov13_pure_table), n_orth_unrelated_pairs_strict)
+    p_in_nov13_frozen = Fraction(len(g_nov13_frozen), n_orth_unrelated_pairs_strict)
     p_role_conditioned_right = Fraction(1, n_process)
     p_role_conditioned_either = Fraction(2, n_process)
 
     calque_edge = _u_edge("actual", "energy")
 
     return {
+        "inferential_status": "UNCORRECTED_EXPLORATORY_LOCALIZATION",
         "calque_pair": ["actual", "energy"],
         "classical_link_type": "coined_translation_calque",
         "classical_link_category": "translation_calque",
@@ -1124,44 +1233,54 @@ def run_test_iii_2_energeia_actualitas_hinge(
         ),
         "shares_4char_substring": shares_4char_substring("actual", "energy", strict_latinate=True),
         "graph_presence_audit": {
-            "in_g_tsr_pure_table": calque_edge in g_tsr_pure_table,
-            "in_g_tsr_frozen": calque_edge in g_tsr_frozen,
-            "in_unblinded_diagram_concordance": calque_edge in g_tsr_canonical,
+            "in_g_tsr_oct22_pure_table": calque_edge in g_oct22_pure_table,
+            "in_g_tsr_oct22_cdba80d": calque_edge in g_oct22_cdba80d,
+            "in_g_tsr_nov13_pure_table": calque_edge in g_nov13_pure_table,
+            "in_g_tsr_nov13_frozen": calque_edge in g_nov13_frozen,
+            "in_post_hoc_diagram_concordance": calque_edge in g_tsr_canonical,
             "candor_note": (
-                "In `vocab/mirror.py`, `actualization` is paired horizontally with `realization` "
-                "(`role='transmutation'`) without an explicit string link to `'energy'`, so "
-                "`('actual', 'energy')` is NOT counted as an overlap hit in either `g_tsr_pure_table` "
-                "or `g_tsr_frozen`; Test III.2 evaluates the diagram-hinge localization directly."
+                "In both `tests/tsr_formal.py` (Oct 22 `cdba80d`) and secondary `vocab/mirror.py` "
+                "(author-attested, first committed Nov 13), `actualization` is paired horizontally with "
+                "`realization` (`role='transmutation'`) without an explicit string link to `'energy'`, "
+                "so `('actual', 'energy')` is NOT counted as an overlap hit in either extracted graph."
             ),
         },
-        "exact_probabilities": {
-            "uniform_blind_exact_physical_hinge_edge": {
-                "n_blind_pairs": n_blind_pairs_strict,
-                "fraction": f"{p_exact_right_blind.numerator}/{p_exact_right_blind.denominator}",
-                "float": float(p_exact_right_blind),
+        "exact_probabilities_uncorrected": {
+            "uniform_orth_unrelated_exact_physical_center_crossing_edge": {
+                "n_orth_unrelated_pairs": n_orth_unrelated_pairs_strict,
+                "fraction": f"{p_exact_right_orth.numerator}/{p_exact_right_orth.denominator}",
+                "float": float(p_exact_right_orth),
             },
-            "uniform_blind_either_hinge_transmutation_edge": {
-                "n_blind_pairs": n_blind_pairs_strict,
-                "fraction": f"{p_either_hinge_blind.numerator}/{p_either_hinge_blind.denominator}",
-                "float": float(p_either_hinge_blind),
+            "uniform_orth_unrelated_either_center_crossing_transmutation_edge": {
+                "n_orth_unrelated_pairs": n_orth_unrelated_pairs_strict,
+                "fraction": f"{p_either_center_crossing_orth.numerator}/{p_either_center_crossing_orth.denominator}",
+                "float": float(p_either_center_crossing_orth),
             },
-            "uniform_exact_physical_hinge_edge": {
+            "uniform_exact_physical_center_crossing_edge": {
                 "total_word_pairs": total_pairs,
                 "fraction": f"{p_exact_right_all.numerator}/{p_exact_right_all.denominator}",
                 "float": float(p_exact_right_all),
             },
-            "uniform_either_hinge_transmutation_edge": {
+            "uniform_either_center_crossing_transmutation_edge": {
                 "total_word_pairs": total_pairs,
-                "fraction": f"{p_either_hinge_all.numerator}/{p_either_hinge_all.denominator}",
-                "float": float(p_either_hinge_all),
+                "fraction": f"{p_either_center_crossing_all.numerator}/{p_either_center_crossing_all.denominator}",
+                "float": float(p_either_center_crossing_all),
             },
-            "uniform_any_edge_of_g_tsr_pure_table": {
-                "fraction": f"{p_in_pure_table.numerator}/{p_in_pure_table.denominator}",
-                "float": float(p_in_pure_table),
+            "uniform_any_edge_of_g_tsr_oct22_pure_table": {
+                "fraction": f"{p_in_oct22_pure.numerator}/{p_in_oct22_pure.denominator}",
+                "float": float(p_in_oct22_pure),
             },
-            "uniform_any_edge_of_g_tsr_frozen": {
-                "fraction": f"{p_in_frozen_repo.numerator}/{p_in_frozen_repo.denominator}",
-                "float": float(p_in_frozen_repo),
+            "uniform_any_edge_of_g_tsr_oct22_cdba80d": {
+                "fraction": f"{p_in_oct22_cdba.numerator}/{p_in_oct22_cdba.denominator}",
+                "float": float(p_in_oct22_cdba),
+            },
+            "uniform_any_edge_of_g_tsr_nov13_pure_table": {
+                "fraction": f"{p_in_nov13_pure.numerator}/{p_in_nov13_pure.denominator}",
+                "float": float(p_in_nov13_pure),
+            },
+            "uniform_any_edge_of_g_tsr_nov13_frozen": {
+                "fraction": f"{p_in_nov13_frozen.numerator}/{p_in_nov13_frozen.denominator}",
+                "float": float(p_in_nov13_frozen),
             },
             "process_stratum_conditioned_right_transmutation": {
                 "process_pool_size": n_process,
@@ -1177,26 +1296,26 @@ def run_test_iii_2_energeia_actualitas_hinge(
     }
 
 
-def run_test_iii_3_directionality_audit(words: list[dict[str, Any]]) -> dict[str, Any]:
+def run_descriptive_core_law_directionality_audit(words: list[dict[str, Any]]) -> dict[str, Any]:
     """
-    Test III.3: Within-Physics Directional Asymmetry ('Mr. Newton Goes Shopping')
-    & Pre-Etymology `core_law` Grounding Audit.
+    Descriptive `core_law` vs `secondary_physics` Kind Tally & Pre-Etymology Grounding.
 
-    Removes the circular all-80 Fisher test from headline inferential status:
-    in *What the Words Knew* (p. 95), `"inward first"` means a word that *"began in
-    human life and was later handed to physics"*, making the 45 `not_physics_term`
-    words structurally ineligible (`0/45` by definition). Leads strictly with valid
-    within-physics comparisons (`core_law` vs `secondary_physics`).
+    Inferential status: `DESCRIPTIVE_ONLY_POST_HOC_SPLIT_NOT_INFERENTIAL`.
+    The `kind` labels in `proof/etymology/ledger_80.json` were assigned by the author
+    while drafting *What the Words Knew* (not blind), and the `21` `core_law` vs `14`
+    `secondary_physics` partition is post hoc. All Fisher / binomial ratios below are
+    reported purely as descriptive ledger summaries, NOT confirmatory inferential tests.
     """
     kind_counts = Counter(w["kind"] for w in words)
     assert sum(kind_counts.values()) == 80
+    assert kind_counts["family"] == 36
+    assert kind_counts["not used"] == 1
 
     core_law = [w for w in words if w["physics_stratum"] == "core_law"]
     sec_phys = [w for w in words if w["physics_stratum"] == "secondary_physics"]
     non_phys = [w for w in words if w["physics_stratum"] == "not_physics_term"]
     assert len(core_law) == 21 and len(sec_phys) == 14 and len(non_phys) == 45
 
-    # Verify every core_law word has a non-empty pre_etymology_citation in ledger_80.json
     core_law_citations: dict[str, str] = {}
     for w in sorted(core_law, key=lambda x: x["word"]):
         cit = w.get("pre_etymology_citation")
@@ -1219,9 +1338,7 @@ def run_test_iii_3_directionality_audit(words: list[dict[str, Any]]) -> dict[str
     assert outward_core == ["attraction"]
     assert len(outward_sec) == 8
 
-    # HEADLINE 1: Exact Fisher one-sided test on unambiguous directional physics metaphors
-    # core_law: 5 inward ('energy, force, inertia, power, work') vs 1 outward ('attraction')
-    # secondary_physics: 0 inward vs 8 outward ('converge, culminate, friction, limit, reflection, resonance, tension, vortex')
+    # Descriptive Fisher ratios within physics words (STRICTLY DESCRIPTIVE ONLY)
     n_dir_core = len(inward_core) + len(outward_core)  # 6
     n_dir_sec = len(inward_sec) + len(outward_sec)     # 8
     p_fisher_dir_phys = exact_hypergeometric_upper_tail(
@@ -1237,9 +1354,6 @@ def run_test_iii_3_directionality_audit(words: list[dict[str, Any]]) -> dict[str
         d=len(outward_sec),
     )
 
-    # HEADLINE 2: Exact Fisher one-sided test across ALL 35 physics words
-    # (scoring all mixed/neutral/ambiguous kinds — 'household', 'either side', 'family',
-    # 'both ways', 'nothing to add', 'not used' — conservatively as 0 / non-inward)
     p_fisher_all35_phys = exact_hypergeometric_upper_tail(
         total_pop=len(core_law) + len(sec_phys),  # 35
         pop_successes=len(inward_core),           # 5
@@ -1253,30 +1367,30 @@ def run_test_iii_3_directionality_audit(words: list[dict[str, Any]]) -> dict[str
         d=len(sec_phys) - len(inward_sec),
     )
 
-    # HEADLINE 3: Exact rational binomial upper-tail bounds against historical
-    # reverse-metaphor base rates q_0 in {0.05, 0.10, 0.15}
+    # In proof 36, `light` has `kind='family'`, so non-family/non-both-ways core_law pool is 14
     worst_case_core_pool = sorted(
         w["word"] for w in core_law if w["kind"] not in ("family", "both ways")
     )
-    n_worst_core = len(worst_case_core_pool)  # 15
+    n_worst_core = len(worst_case_core_pool)  # 14
+    assert n_worst_core == 14, f"Expected 14 non-family/non-both-ways core_law words, got {n_worst_core}"
 
-    binomial_bounds: dict[str, Any] = {}
+    binomial_reference_summaries: dict[str, Any] = {}
     for denom_key, n_trials, desc in (
         (
             "directional_core_law_5_of_6",
             n_dir_core,
-            "Unambiguous directional metaphors in core_law (5 inward vs 1 outward ['attraction'])",
+            "Directional `kind` labels in core_law (5 inward vs 1 outward ['attraction'])",
         ),
         (
-            "worst_case_nonfamily_core_law_5_of_15",
+            "worst_case_nonfamily_core_law_5_of_14",
             n_worst_core,
-            "Scores ALL 'either side' (gravity, matter, pressure), 'household' (density, electric, mass, volume), "
-            "'nothing to add' (accelerate), and 'not used' (light) in core_law against TSR",
+            "Pools 'either side' (gravity, matter, pressure), 'household' (density, electric, mass, volume), "
+            "'nothing to add' (accelerate), and 'outward first' (attraction) as non-inward; `light` is `family` in proof 36",
         ),
         (
             "all_core_law_5_of_21",
             len(core_law),
-            "Ultra-conservative denominator across all 21 core_law words (including 'family' and 'both ways')",
+            "All 21 core_law words (including 'family' [6 words including light] and 'both ways' [charge])",
         ),
     ):
         per_q: dict[str, Any] = {}
@@ -1289,16 +1403,15 @@ def run_test_iii_3_directionality_audit(words: list[dict[str, Any]]) -> dict[str
             per_q[q_str] = {
                 "base_rate_fraction": f"{q_frac.numerator}/{q_frac.denominator}",
                 "exact_fraction": f"{bt.numerator}/{bt.denominator}",
-                "p_value": float(bt),
+                "descriptive_tail_value": float(bt),
             }
-        binomial_bounds[denom_key] = {
+        binomial_reference_summaries[denom_key] = {
             "k_of_n": f"5/{n_trials}",
             "denominator_description": desc,
-            "bounds_by_base_rate": per_q,
+            "reference_tails_by_base_rate": per_q,
         }
 
-    # SENSITIVITY: Sovereign Mirror manuscript-only core_law (holding out Oct 2026
-    # Extension Test / Author Ruling words `work` and `power`)
+    # Sensitivity counts without Oct 22 work/power rulings (purely descriptive)
     p_sm_book_holdout_dir = exact_hypergeometric_upper_tail(
         total_pop=4 + 8, pop_successes=3, draws=4, obs_k=3
     )
@@ -1308,20 +1421,20 @@ def run_test_iii_3_directionality_audit(words: list[dict[str, Any]]) -> dict[str
     p_sm_book_reclass_dir = exact_hypergeometric_upper_tail(
         total_pop=4 + 10, pop_successes=5, draws=4, obs_k=3
     )
-
-    # DESCRIPTIVE ONLY (demoted from headline inferential reporting):
     p_descriptive_all80 = exact_hypergeometric_upper_tail(
         total_pop=80, pop_successes=5, draws=21, obs_k=5
     )
 
     return {
-        "methodological_correction_note": (
-            "In What the Words Knew ('Every Word, for the Record', p. 95), 'inward first' is defined as "
-            "a word that 'began in human life and was later handed to physics'. Consequently, the 45 "
-            "`not_physics_term` words in the 80-word ledger are structurally ineligible to be 'inward first' "
-            "(0/45 is guaranteed by definition), making an all-80 Fisher test circular. All headline "
-            "inferential tests below are restricted strictly to the 35 physics words (`core_law` vs "
-            "`secondary_physics`), with the 80-word tally retained solely as a descriptive ledger summary."
+        "inferential_status": CORE_LAW_FISHER_STATUS,
+        "author_assigned_kind_labels_disclosure": (
+            "The `kind` labels in proof/etymology/ledger_80.json were assigned by the author while "
+            "drafting What the Words Knew (proof 36, pp. 99-104), not blind. Furthermore, the "
+            "21 `core_law` vs 14 `secondary_physics` split is post hoc, and in proof 36 p. 99 "
+            "`'inward first'` means 'began in human life and was later handed to physics' (making "
+            "all 45 `not_physics_term` words structurally ineligible, 0/45 by definition). Therefore "
+            "EVERY Fisher enrichment ratio, odds ratio, and binomial bound below is strictly descriptive "
+            "(`DESCRIPTIVE_ONLY_POST_HOC_SPLIT_NOT_INFERENTIAL`) and MUST NOT be reported as a confirmatory test."
         ),
         "ledger_total_words": 80,
         "eligible_physics_words_total": len(core_law) + len(sec_phys),
@@ -1330,64 +1443,66 @@ def run_test_iii_3_directionality_audit(words: list[dict[str, Any]]) -> dict[str
         "strata_sizes": {
             "core_law": len(core_law),
             "secondary_physics": len(sec_phys),
-            "not_physics_term_excluded_from_inference": len(non_phys),
+            "not_physics_term_ineligible": len(non_phys),
         },
         "inward_first_core_law_words": inward_core,
         "inward_first_secondary_physics_words": inward_sec,
         "outward_first_core_law_words": outward_core,
         "outward_first_secondary_physics_words": outward_sec,
-        "either_side_physics_words_scored_zero": either_side_phys,
-        "household_physics_words_scored_zero": household_phys,
-        "headline_within_physics_inferential_tests": {
-            "fisher_directional_physics_core_vs_secondary": {
+        "either_side_physics_words": either_side_phys,
+        "household_physics_words": household_phys,
+        "descriptive_physics_stratum_ratios": {
+            "inferential_status": CORE_LAW_FISHER_STATUS,
+            "descriptive_fisher_directional_physics_core_vs_secondary": {
+                "inferential_status": CORE_LAW_FISHER_STATUS,
                 "contingency": (
                     f"{len(inward_core)} inward / {len(outward_core)} outward in core_law vs "
                     f"{len(inward_sec)} inward / {len(outward_sec)} outward in secondary_physics"
                 ),
                 "exact_fraction": f"{p_fisher_dir_phys.numerator}/{p_fisher_dir_phys.denominator}",
-                "p_value": float(p_fisher_dir_phys),
+                "descriptive_hypergeometric_ratio_float": float(p_fisher_dir_phys),
                 **or_dir_phys,
             },
-            "fisher_all_35_physics_words_core_vs_secondary": {
-                "contingency": "5/21 in core_law vs 0/14 in secondary_physics (all mixed/neutral physics words scored 0)",
+            "descriptive_fisher_all_35_physics_words_core_vs_secondary": {
+                "inferential_status": CORE_LAW_FISHER_STATUS,
+                "contingency": "5/21 in core_law vs 0/14 in secondary_physics (non-inward kinds scored 0)",
                 "exact_fraction": f"{p_fisher_all35_phys.numerator}/{p_fisher_all35_phys.denominator}",
-                "p_value": float(p_fisher_all35_phys),
-                "exceeds_0_05_alpha": float(p_fisher_all35_phys) > 0.05,
-                "candor_note": (
-                    "When all 15 non-directional core_law words and 6 non-directional secondary_physics "
-                    "words are pooled as non-hits, the one-sided 35-word Fisher exact p-value is "
-                    "171/2728 ≈ 0.0627 (> 0.05)."
-                ),
+                "descriptive_hypergeometric_ratio_float": float(p_fisher_all35_phys),
+                "exceeds_0_05_threshold": float(p_fisher_all35_phys) > 0.05,
                 **or_all35_phys,
             },
-            "binomial_reverse_metaphor_upper_tail_bounds": binomial_bounds,
-            "sovereign_mirror_book_only_sensitivity": {
+            "descriptive_binomial_reference_tails": {
+                "inferential_status": CORE_LAW_FISHER_STATUS,
+                "denominators": binomial_reference_summaries,
+            },
+            "descriptive_sovereign_mirror_book_only_holdout": {
+                "inferential_status": CORE_LAW_FISHER_STATUS,
                 "description": (
-                    "Sensitivity check holding out `work` and `power` (whose pre-etymology grounding comes "
-                    "from the 2026-10-22 Extension Test and October 2026 Author Ruling rather than the "
-                    "main chapters of The Sovereign Mirror), leaving `energy`, `force`, `inertia` in core_law."
+                    "Descriptive tally holding out `work` and `power` (introduced in Oct 22 "
+                    "tests/tsr_formal.py EXTENSION and Oct 2026 author rulings rather than main chapters of "
+                    "The Sovereign Mirror v57), leaving `energy`, `force`, `inertia` in core_law."
                 ),
                 "holdout_directional_3_of_4_vs_0_of_8": {
                     "exact_fraction": f"{p_sm_book_holdout_dir.numerator}/{p_sm_book_holdout_dir.denominator}",
-                    "p_value": float(p_sm_book_holdout_dir),
+                    "descriptive_ratio_float": float(p_sm_book_holdout_dir),
                 },
                 "holdout_all_physics_3_of_19_vs_0_of_14": {
                     "exact_fraction": f"{p_sm_book_holdout_all33.numerator}/{p_sm_book_holdout_all33.denominator}",
-                    "p_value": float(p_sm_book_holdout_all33),
+                    "descriptive_ratio_float": float(p_sm_book_holdout_all33),
                 },
                 "reclassified_to_secondary_directional_3_of_4_vs_2_of_10": {
                     "exact_fraction": f"{p_sm_book_reclass_dir.numerator}/{p_sm_book_reclass_dir.denominator}",
-                    "p_value": float(p_sm_book_reclass_dir),
+                    "descriptive_ratio_float": float(p_sm_book_reclass_dir),
                 },
             },
         },
         "core_law_pre_etymology_citations": core_law_citations,
         "descriptive_80_word_ledger_concentration_summary": {
-            "inferential_status": "DESCRIPTIVE_CONCENTRATION_SUMMARY_ONLY_NOT_INFERENTIAL",
+            "inferential_status": CORE_LAW_FISHER_STATUS,
             "structural_ineligibility_reason": (
-                "45 of the 59 non-core_law words are `not_physics_term` and therefore cannot be "
-                "'handed to physics' (`inward first`) by definition; do NOT cite this hypergeometric "
-                "ratio as an inferential hypothesis test."
+                "45 of the 59 non-core_law words are `not_physics_term` and cannot be "
+                "'handed to physics' (`inward first`) by definition; do NOT cite this ratio "
+                "as an inferential hypothesis test."
             ),
             "ledger_tally": "5/21 in core_law vs 0/14 in secondary_physics and 0/45 in not_physics_term",
             "descriptive_hypergeometric_ratio_fraction": (
@@ -1398,70 +1513,182 @@ def run_test_iii_3_directionality_audit(words: list[dict[str, Any]]) -> dict[str
     }
 
 
+def _compact_summary_row(al: dict[str, Any]) -> dict[str, Any]:
+    return {
+        "tsr_edges": al["tsr_edge_count"],
+        "etymology_edges": al["etymology_edge_count"],
+        "n_orth_unrelated_pairs": al["n_orth_unrelated_pairs"],
+        "observed_overlap": al["observed_overlap_count"],
+        "overlapping_pairs": al["overlapping_pairs"],
+        "orth_unrelated_hypergeometric_mean": round(
+            al["exact_orth_unrelated_hypergeometric_moments"]["mean_float"], 4
+        ),
+        "exact_hypergeometric_p_fraction": al["exact_hypergeometric_p_fraction"],
+        "exact_hypergeometric_p_float": al["exact_hypergeometric_p_float"],
+        "pos_polysemy_stratified_mean_orth_unrelated": round(
+            al["exact_pos_and_polysemy_stratified_mean"]["orth_unrelated_conditioned_float"], 4
+        ),
+        "stratified_perm_100k_p_upper_bound": al["stratified_permutation_100k_crosscheck"][
+            "empirical_p_upper_bound"
+        ],
+    }
+
+
+def _build_primary_test_block(primary_alignment: dict[str, Any]) -> dict[str, Any]:
+    """
+    Build the single pre-declared primary confirmatory test block (`g_tsr_oct22_cdba80d` vs
+    `pie_roots_strict` over `N_orth_unrelated = 3152`). Keeps alternative null controls and QAP
+    runs inside `exploratory_sensitivity_uncorrected` so `"primary_test"` carries strictly
+    ONE p-value (`p ≈ 0.2878`, null result).
+    """
+    p_val = primary_alignment["exact_hypergeometric_p_float"]
+    assert primary_alignment["tsr_edge_count"] == 66
+    assert primary_alignment["etymology_edge_count"] == 16
+    assert primary_alignment["n_orth_unrelated_pairs"] == 3152
+    assert primary_alignment["observed_overlap_count"] == 1
+    assert primary_alignment["overlapping_pairs"] == [["distance", "resist"]]
+    assert 0.2877 < p_val < 0.2879, f"Unexpected primary p-value: {p_val}"
+
+    return {
+        "test_id": "PRIMARY_PRE_DECLARED_OCT22_CDBA80D_VS_STRICT_PIE",
+        "pre_declared_hypothesis": (
+            "Single confirmatory edge-overlap test comparing the Oct 22 commit `cdba80d` TSR graph "
+            "(`g_tsr_oct22_cdba80d`, 66 pairs from `tests/tsr_formal.py`) against strict laryngeal "
+            "PIE cognates (`pie_roots_strict`, 16 pairs) within the `N_orth_unrelated = 3,152` "
+            "orthographically unrelated word-pair universe."
+        ),
+        "primary_tsr_graph": "g_tsr_oct22_cdba80d",
+        "primary_tsr_provenance": f"Git commit cdba80d (2026-10-22), {OCT22_TSR_FORMAL_RELPATH} (SHA-256 verified)",
+        "primary_tsr_sha256": OCT22_TSR_FORMAL_SHA256,
+        "primary_etymology_graph": "pie_roots_strict",
+        "orthographic_filter": "strict_latinate_mentum_ment_4char",
+        "total_words": primary_alignment["total_words"],
+        "total_unfiltered_word_pairs": primary_alignment["total_unfiltered_word_pairs"],
+        "N_orth_unrelated": primary_alignment["n_orth_unrelated_pairs"],
+        "tsr_edge_count": primary_alignment["tsr_edge_count"],
+        "etymology_edge_count": primary_alignment["etymology_edge_count"],
+        "observed_overlap_count": primary_alignment["observed_overlap_count"],
+        "overlapping_pairs": primary_alignment["overlapping_pairs"],
+        "overlapping_pair_classifications": primary_alignment["overlapping_pair_classifications"],
+        "non_overlapping_etymology_pairs": primary_alignment["non_overlapping_etymology_pairs"],
+        "exact_orth_unrelated_hypergeometric_moments": primary_alignment[
+            "exact_orth_unrelated_hypergeometric_moments"
+        ],
+        "z_score_vs_orth_unrelated_hypergeometric": primary_alignment[
+            "z_score_vs_orth_unrelated_hypergeometric"
+        ],
+        "exact_hypergeometric_p_fraction": primary_alignment["exact_hypergeometric_p_fraction"],
+        "exact_hypergeometric_p_float": p_val,
+        "statistically_significant_at_0_05": p_val < 0.05,
+        "verdict": "NOT_STATISTICALLY_SIGNIFICANT_NULL_RESULT",
+        "candor_note": (
+            "The single pre-declared primary test (`g_tsr_oct22_cdba80d`, 66 pairs from Oct 22 "
+            "`tests/tsr_formal.py`, vs `pie_roots_strict`, 16 pairs over N_orth_unrelated = 3152) "
+            "yields 1 overlapping pair (`distance` <-> `resist`), exact hypergeometric upper-tail "
+            "p = 0.2878 (> 0.05). Under the strictest pre-committed graph and strict PIE standard, "
+            "there is no statistically significant cognate enrichment."
+        ),
+    }
+
+
 def run_self_tests(
     words: list[dict[str, Any]],
     word_by_name: dict[str, dict[str, Any]],
-    blind_pairs_strict: set[tuple[str, str]],
+    oct22_mod: Any,
+    orth_unrelated_strict: set[tuple[str, str]],
     excluded_strict: list[tuple[str, str]],
-    blind_pairs_legacy: set[tuple[str, str]],
-    g_pure_strict: set[tuple[str, str]],
-    g_frozen_strict: set[tuple[str, str]],
+    orth_unrelated_legacy: set[tuple[str, str]],
+    g_oct22_pure_strict: set[tuple[str, str]],
+    g_oct22_cdba_strict: set[tuple[str, str]],
+    g_nov13_pure_strict: set[tuple[str, str]],
+    g_nov13_frozen_strict: set[tuple[str, str]],
     etym_strict_filter: dict[str, set[tuple[str, str]]],
-    strict_alignments: dict[str, dict[str, Any]],
+    all_strict_alignments: dict[str, dict[str, Any]],
 ) -> dict[str, Any]:
     """
-    Internal deterministic self-assertion suite verifying all four Leak fixes (1-4)
-    and Checklist items (3.1-3.4) on every run.
+    Internal deterministic self-assertion suite verifying ledger integrity, SHA-256 verification,
+    stem-leak guards, Oct 22 primary graph counts, Nov 13 secondary graph counts, and QAP moments.
     """
     smap = build_surface_to_ledger_map(words)
 
-    # 1. Leak #3A: Surface-to-ledger stem leak assertions
+    # 1. Surface-to-ledger stem leak assertions
     assert extract_ledger_words(
         "Subjective Reality and Objective Reality; vibrational and subjective realities; make real",
         smap,
-    ) == {"subject", "object", "vibration"}, "Leak #3A failure: 'real'/'reality'/'realities' leaked!"
+    ) == {"subject", "object", "vibration"}, "Leak failure: 'real'/'reality'/'realities' leaked!"
     assert "realize" not in extract_ledger_words("real reality realities", smap)
     assert extract_ledger_words(
         "present moment; Movement times Appreciation; Rows 11 and 12 become forceable; Two senses: limitless",
         smap,
-    ) == {"present", "movement", "appreciate"}, "Leak #3A failure: false-friend token leaked!"
+    ) == {"present", "movement", "appreciate"}, "Leak failure: false-friend token leaked!"
 
-    # Scan every token across all frozen code structures
-    frozen_texts: list[str] = []
-    for phys, non, _r in MIRROR:
-        frozen_texts.extend([phys, non])
-    for l_str, r_str in DIAGONAL:
-        frozen_texts.extend([l_str, r_str])
-    for k, v in EXTENDED_PARTNERS.items():
-        frozen_texts.extend([k, v])
-    for k, v in GLOSSARY_SENSES.items():
-        frozen_texts.extend([k, v])
-    for k, v in AUTHOR_RULING_SOURCES.items():
-        frozen_texts.extend([k, v])
-    for k, (_op, rhs) in list(PHYS.items()) + list(NONPHYS_STATED.items()) + list(EXTENSION.items()):
-        frozen_texts.extend([k, " ".join(rhs)])
-    for r in ROWS:
-        frozen_texts.extend([r[0], r[5]])
+    # Audit every token across Oct 22 `tests/tsr_formal.py` AND secondary Nov 13 files
+    source_texts: list[str] = []
+    for phys, non, _r in oct22_mod.MIRROR:
+        source_texts.extend([phys, non])
+    for l_str, r_str in oct22_mod.DIAGONAL:
+        source_texts.extend([l_str, r_str])
+    source_texts.extend(["gravitational pull", "Attraction"])
+    for k, (_op, rhs) in (
+        list(oct22_mod.PHYS.items())
+        + list(oct22_mod.NONPHYS_STATED.items())
+        + list(oct22_mod.EXTENSION.items())
+    ):
+        source_texts.extend([k, " ".join(rhs)])
+    for r in oct22_mod.ROWS:
+        source_texts.extend([r[0], r[5]])
 
-    all_frozen_tokens = {
-        tok for txt in frozen_texts for tok in re.findall(r"[a-zA-Z]+", txt.lower())
+    for phys, non, _r in NOV13_MIRROR:
+        source_texts.extend([phys, non])
+    for l_str, r_str in NOV13_DIAGONAL:
+        source_texts.extend([l_str, r_str])
+    for k, v in NOV13_EXTENDED_PARTNERS.items():
+        source_texts.extend([k, v])
+    for k, v in NOV13_GLOSSARY_SENSES.items():
+        source_texts.extend([k, v])
+    for k, v in NOV13_AUTHOR_RULING_SOURCES.items():
+        source_texts.extend([k, v])
+    for k, (_op, rhs) in (
+        list(NOV13_PHYS.items())
+        + list(NOV13_NONPHYS_STATED.items())
+        + list(NOV13_EXTENSION.items())
+    ):
+        source_texts.extend([k, " ".join(rhs)])
+    for r in NOV13_ROWS:
+        source_texts.extend([r[0], r[5]])
+
+    all_audited_tokens = {
+        tok for txt in source_texts for tok in re.findall(r"[a-zA-Z]+", txt.lower())
     }
-    mapped_frozen_tokens = sorted(tok for tok in all_frozen_tokens if tok in smap)
-    for tok in mapped_frozen_tokens:
+    mapped_tokens = sorted(tok for tok in all_audited_tokens if tok in smap)
+    for tok in mapped_tokens:
         assert tok not in FORBIDDEN_SURFACE_TOKENS
         assert smap[tok] in word_by_name
 
-    # 2. Leak #3B: momentum-movement Latinate -mentum/-ment filter & full K_80 morphology check
+    # 2. Proof 36 `light` update & kind_counts check
+    kc = Counter(w["kind"] for w in words)
+    assert word_by_name["light"]["kind"] == "family"
+    assert word_by_name["light"]["check"] == ["E"]
+    assert kc["family"] == 36
+    assert kc["not used"] == 1
+    assert sum(kc.values()) == 80
+
+    # 3. Orthographic filter & graph subset assertions
     assert shares_4char_substring("momentum", "movement", strict_latinate=True) is True
     assert shares_4char_substring("momentum", "movement", strict_latinate=False) is False
-    assert ("momentum", "movement") not in blind_pairs_strict
+    assert ("momentum", "movement") not in orth_unrelated_strict
     assert ("momentum", "movement") in excluded_strict
-    assert ("momentum", "movement") in blind_pairs_legacy
-    assert len(blind_pairs_strict) == 3152
-    assert len(blind_pairs_legacy) == 3153
-    assert g_pure_strict <= g_frozen_strict, "g_tsr_pure_table must be a subset of g_tsr_frozen!"
+    assert ("momentum", "movement") in orth_unrelated_legacy
+    assert len(orth_unrelated_strict) == 3152
+    assert len(orth_unrelated_legacy) == 3153
+    assert len(g_oct22_pure_strict) == 54
+    assert len(g_oct22_cdba_strict) == 66
+    assert g_oct22_pure_strict <= g_oct22_cdba_strict
+    assert len(g_nov13_pure_strict) == 67
+    assert len(g_nov13_frozen_strict) == 182
+    assert g_nov13_pure_strict <= g_nov13_frozen_strict
 
-    # 3. Leak #3C & #3D: Dual PIE root standards & calque vs classical_sense_overlap labels
+    # 4. Dual PIE root standards & calque vs classical_sense_overlap labels
     assert word_by_name["converge"]["pie_roots_strict"] == ["PIE:*h1werg-"]
     assert word_by_name["vortex"]["pie_roots_strict"] == ["PIE:*wert-"]
     assert set(word_by_name["converge"]["pie_roots_strict"]).isdisjoint(
@@ -1483,129 +1710,136 @@ def run_self_tests(
         assert word_by_name[w_sense]["classical_link_category"] == "classical_polysemy_parallel"
         assert word_by_name[w_sense]["calque_group"] is None
 
-    # 4. Leak #4: Verify N_blind denominator & consistency with QAP / stratified permutations
-    for al_key, al_val in strict_alignments.items():
-        assert al_val["n_blind_pairs"] == 3152, f"{al_key} did not use N_blind=3152!"
+    # 5. Verify N_orth_unrelated=3152 denominator & QAP / stratified permutation consistency
+    for al_key, al_val in all_strict_alignments.items():
+        assert al_val["n_orth_unrelated_pairs"] == 3152, (
+            f"{al_key} did not use N_orth_unrelated=3152!"
+        )
         assert al_val["hypergeometric_total_pop_used"] == 3152
-        # Verify 100k stratified permutation empirical mean matches exact analytical vertex-perm mean
         emp_mu = al_val["stratified_permutation_100k_crosscheck"]["empirical_mean"]
         exact_mu = al_val["exact_pos_and_polysemy_stratified_mean"]["float"]
         assert abs(emp_mu - exact_mu) < 0.02, (
             f"Stratified permutation mean mismatch on {al_key}: {emp_mu} vs {exact_mu}"
         )
-        # Blind-pair-conditioned stratified mean must be >= vertex-perm mean (since N_blind <= 3160)
         assert (
-            al_val["exact_pos_and_polysemy_stratified_mean"]["blind_pair_conditioned_float"]
+            al_val["exact_pos_and_polysemy_stratified_mean"]["orth_unrelated_conditioned_float"]
             + 1e-12
             >= exact_mu
         )
 
     # Verify batched permutation runner matches standalone bit-for-bit on 500 trials
-    sample_edges_etym = etym_strict_filter["diachronic_strict_pie"]
+    sample_edges_etym = etym_strict_filter["strict_pie"]
     standalone_500 = run_stratified_permutation_crosscheck(
         words,
-        g_pure_strict,
+        g_oct22_cdba_strict,
         sample_edges_etym,
-        obs_overlap=len(g_pure_strict & sample_edges_etym),
+        obs_overlap=len(g_oct22_cdba_strict & sample_edges_etym),
         stratum_fn=lambda w: (w["pos"], w["polysemy_tier"]),
         n_trials=500,
         seed=20191007,
     )
     batched_500 = run_batched_stratified_permutation_crosscheck(
         words,
-        [("check", g_pure_strict, sample_edges_etym, len(g_pure_strict & sample_edges_etym))],
+        [("check", g_oct22_cdba_strict, sample_edges_etym, len(g_oct22_cdba_strict & sample_edges_etym))],
         stratum_fn=lambda w: (w["pos"], w["polysemy_tier"]),
         n_trials=500,
         seed=20191007,
     )["check"]
     assert standalone_500 == batched_500
 
-    # 5. Leak #1: Verify all 21 core_law words carry pre_etymology_citation & non_phys has 0 inward_first
+    # 6. Verify all 21 core_law words carry pre_etymology_citation & non_phys has 0 inward_first
     core_words = [w for w in words if w["physics_stratum"] == "core_law"]
     assert len(core_words) == 21
     for cw in core_words:
         assert cw.get("pre_etymology_citation") and len(cw["pre_etymology_citation"]) > 20
-    assert [w["word"] for w in words if w["physics_stratum"] == "not_physics_term" and w["kind"] == "inward first"] == []
+    assert [
+        w["word"]
+        for w in words
+        if w["physics_stratum"] == "not_physics_term" and w["kind"] == "inward first"
+    ] == []
 
     return {
         "all_passed": True,
-        "frozen_unique_tokens_audited": len(all_frozen_tokens),
-        "frozen_mapped_tokens_count": len(mapped_frozen_tokens),
+        "oct22_tsr_formal_sha256_verified": True,
+        "ledger_kind_counts_verified": dict(sorted(kc.items())),
+        "audited_unique_source_tokens": len(all_audited_tokens),
+        "audited_mapped_tokens_count": len(mapped_tokens),
         "forbidden_tokens_verified_unmapped": sorted(FORBIDDEN_SURFACE_TOKENS),
-        "strict_n_blind_pairs": len(blind_pairs_strict),
-        "legacy_n_blind_pairs": len(blind_pairs_legacy),
-        "excluded_nonblind_pairs_strict": [list(e) for e in excluded_strict],
+        "strict_n_orth_unrelated_pairs": len(orth_unrelated_strict),
+        "legacy_n_orth_unrelated_pairs": len(orth_unrelated_legacy),
+        "oct22_pure_table_edge_count": len(g_oct22_pure_strict),
+        "oct22_cdba80d_edge_count": len(g_oct22_cdba_strict),
+        "nov13_pure_table_edge_count": len(g_nov13_pure_strict),
+        "nov13_frozen_edge_count": len(g_nov13_frozen_strict),
+        "excluded_orth_related_pairs_strict": [list(e) for e in excluded_strict],
         "pokorny_minus_strict_pie_pairs": [["converge", "vortex"]],
         "core_law_pre_etymology_citations_verified": len(core_words),
-        "pure_table_subset_of_frozen_verified": True,
-    }
-
-
-def _compact_summary_row(al: dict[str, Any]) -> dict[str, Any]:
-    return {
-        "tsr_edges": al["tsr_edge_count"],
-        "etymology_edges": al["etymology_edge_count"],
-        "n_blind_pairs": al["n_blind_pairs"],
-        "observed_overlap": al["observed_overlap_count"],
-        "overlapping_pairs": al["overlapping_pairs"],
-        "blind_hypergeometric_mean": round(
-            al["exact_blind_pair_hypergeometric_moments"]["mean_float"], 4
-        ),
-        "exact_hypergeometric_p_fraction": al["exact_hypergeometric_p_fraction"],
-        "exact_hypergeometric_p_float": al["exact_hypergeometric_p_float"],
-        "pos_polysemy_stratified_mean_blind": round(
-            al["exact_pos_and_polysemy_stratified_mean"]["blind_pair_conditioned_float"], 4
-        ),
-        "stratified_perm_100k_p_upper_bound": al["stratified_permutation_100k_crosscheck"][
-            "empirical_p_upper_bound"
-        ],
+        "subset_invariants_verified": True,
     }
 
 
 def run_combinatorial_proofs() -> dict[str, Any]:
     words = load_ledger()
     word_by_name = {w["word"]: w for w in words}
+    oct22_mod = load_oct22_tsr_formal_module()
 
-    # Build strict (-mentum/-ment, primary: N_blind=3152) and legacy (4-char: N_blind=3153) universes
-    blind_pairs_strict, excluded_strict = compute_blind_pair_universe(words, strict_latinate=True)
-    blind_pairs_legacy, excluded_legacy = compute_blind_pair_universe(words, strict_latinate=False)
+    # Strict (-mentum/-ment, primary: N_orth_unrelated=3152) and legacy (4-char: N_orth_unrelated=3153) universes
+    orth_strict, excluded_strict = compute_orth_unrelated_pair_universe(words, strict_latinate=True)
+    orth_legacy, excluded_legacy = compute_orth_unrelated_pair_universe(words, strict_latinate=False)
 
     etym_strict = build_hidden_etymology_graphs(words, strict_latinate=True)
     etym_legacy = build_hidden_etymology_graphs(words, strict_latinate=False)
 
-    g_pure_strict = build_programmatic_pure_table_graph(words, strict_latinate=True)
-    g_frozen_strict = build_programmatic_frozen_mirror_graph(words, strict_latinate=True)
+    # Primary Oct 22 commit cdba80d TSR graphs (tests/tsr_formal.py)
+    g_oct22_cdba_strict = build_oct22_cdba80d_graph(words, oct22_mod, strict_latinate=True)
+    g_oct22_pure_strict = build_oct22_pure_table_graph(words, oct22_mod, strict_latinate=True)
+    g_oct22_cdba_legacy = build_oct22_cdba80d_graph(words, oct22_mod, strict_latinate=False)
+    g_oct22_pure_legacy = build_oct22_pure_table_graph(words, oct22_mod, strict_latinate=False)
+
+    # Secondary Nov 13 TSR graphs (author-attested, first committed Nov 13: vocab/mirror.py + rule/tsr_formal_port.py)
+    g_nov13_pure_strict = build_nov13_pure_table_graph(words, strict_latinate=True)
+    g_nov13_frozen_strict = build_nov13_frozen_mirror_graph(words, strict_latinate=True)
+    g_nov13_pure_legacy = build_nov13_pure_table_graph(words, strict_latinate=False)
+    g_nov13_frozen_legacy = build_nov13_frozen_mirror_graph(words, strict_latinate=False)
+
+    # Post-hoc prose-augmented concordance (quarantined in exploratory)
     g_canon_strict = build_canonical_tsr_graph(words, strict_latinate=True)
 
-    g_pure_legacy = build_programmatic_pure_table_graph(words, strict_latinate=False)
-    g_frozen_legacy = build_programmatic_frozen_mirror_graph(words, strict_latinate=False)
-
     # Batch all 100,000-trial (pos, polysemy_tier)-stratified permutation checks in one pass
-    perm_tasks: list[tuple[str, set[tuple[str, str]], set[tuple[str, str]], int]] = [
-        # Primary strict filter (N_blind = 3,152)
-        ("strict__pure__strict_pie", g_pure_strict, etym_strict["strict_pie"], len(g_pure_strict & etym_strict["strict_pie"])),
-        ("strict__pure__pokorny_pie", g_pure_strict, etym_strict["pokorny_pie"], len(g_pure_strict & etym_strict["pokorny_pie"])),
-        ("strict__pure__strict_pie_calque_only", g_pure_strict, etym_strict["strict_pie_plus_translation_calque"], len(g_pure_strict & etym_strict["strict_pie_plus_translation_calque"])),
-        ("strict__pure__diachronic_strict_pie", g_pure_strict, etym_strict["diachronic_strict_pie"], len(g_pure_strict & etym_strict["diachronic_strict_pie"])),
-        ("strict__pure__diachronic_pokorny_pie", g_pure_strict, etym_strict["diachronic_pokorny_pie"], len(g_pure_strict & etym_strict["diachronic_pokorny_pie"])),
-        ("strict__frozen__strict_pie", g_frozen_strict, etym_strict["strict_pie"], len(g_frozen_strict & etym_strict["strict_pie"])),
-        ("strict__frozen__pokorny_pie", g_frozen_strict, etym_strict["pokorny_pie"], len(g_frozen_strict & etym_strict["pokorny_pie"])),
-        ("strict__frozen__strict_pie_calque_only", g_frozen_strict, etym_strict["strict_pie_plus_translation_calque"], len(g_frozen_strict & etym_strict["strict_pie_plus_translation_calque"])),
-        ("strict__frozen__diachronic_strict_pie", g_frozen_strict, etym_strict["diachronic_strict_pie"], len(g_frozen_strict & etym_strict["diachronic_strict_pie"])),
-        ("strict__frozen__diachronic_pokorny_pie", g_frozen_strict, etym_strict["diachronic_pokorny_pie"], len(g_frozen_strict & etym_strict["diachronic_pokorny_pie"])),
-        # Legacy 4-char filter side-by-side (N_blind = 3,153, includes momentum-movement)
-        ("legacy__pure__strict_pie", g_pure_legacy, etym_legacy["strict_pie"], len(g_pure_legacy & etym_legacy["strict_pie"])),
-        ("legacy__pure__pokorny_pie", g_pure_legacy, etym_legacy["pokorny_pie"], len(g_pure_legacy & etym_legacy["pokorny_pie"])),
-        ("legacy__pure__diachronic_strict_pie", g_pure_legacy, etym_legacy["diachronic_strict_pie"], len(g_pure_legacy & etym_legacy["diachronic_strict_pie"])),
-        ("legacy__pure__diachronic_pokorny_pie", g_pure_legacy, etym_legacy["diachronic_pokorny_pie"], len(g_pure_legacy & etym_legacy["diachronic_pokorny_pie"])),
-        ("legacy__frozen__strict_pie", g_frozen_legacy, etym_legacy["strict_pie"], len(g_frozen_legacy & etym_legacy["strict_pie"])),
-        ("legacy__frozen__pokorny_pie", g_frozen_legacy, etym_legacy["pokorny_pie"], len(g_frozen_legacy & etym_legacy["pokorny_pie"])),
-        ("legacy__frozen__diachronic_strict_pie", g_frozen_legacy, etym_legacy["diachronic_strict_pie"], len(g_frozen_legacy & etym_legacy["diachronic_strict_pie"])),
-        ("legacy__frozen__diachronic_pokorny_pie", g_frozen_legacy, etym_legacy["diachronic_pokorny_pie"], len(g_frozen_legacy & etym_legacy["diachronic_pokorny_pie"])),
-        # Unblinded descriptive concordance (quarantined)
-        ("desc__canon__strict_pie", g_canon_strict, etym_strict["strict_pie"], len(g_canon_strict & etym_strict["strict_pie"])),
-        ("desc__canon__diachronic_pokorny_pie", g_canon_strict, etym_strict["diachronic_pokorny_pie"], len(g_canon_strict & etym_strict["diachronic_pokorny_pie"])),
+    etym_grid_keys = (
+        ("strict_pie", "strict_pie"),
+        ("pokorny_pie", "pokorny_pie"),
+        ("strict_pie_plus_translation_calque", "strict_pie_calque_only"),
+        ("diachronic_strict_pie", "diachronic_strict_pie"),
+        ("diachronic_pokorny_pie", "diachronic_pokorny_pie"),
+    )
+    perm_tasks: list[tuple[str, set[tuple[str, str]], set[tuple[str, str]], int]] = []
+    graph_specs = [
+        ("oct22_cdba_strict", g_oct22_cdba_strict, etym_strict),
+        ("oct22_pure_strict", g_oct22_pure_strict, etym_strict),
+        ("nov13_pure_strict", g_nov13_pure_strict, etym_strict),
+        ("nov13_frozen_strict", g_nov13_frozen_strict, etym_strict),
+        ("oct22_cdba_legacy", g_oct22_cdba_legacy, etym_legacy),
+        ("oct22_pure_legacy", g_oct22_pure_legacy, etym_legacy),
+        ("nov13_pure_legacy", g_nov13_pure_legacy, etym_legacy),
+        ("nov13_frozen_legacy", g_nov13_frozen_legacy, etym_legacy),
     ]
+    for g_prefix, g_edges, e_dict in graph_specs:
+        for e_key, t_suffix in etym_grid_keys:
+            if "legacy" in g_prefix and e_key == "strict_pie_plus_translation_calque":
+                continue
+            eg = e_dict[e_key]
+            perm_tasks.append((f"{g_prefix}__{t_suffix}", g_edges, eg, len(g_edges & eg)))
+
+    perm_tasks.extend(
+        [
+            ("oct22_cdba_strict__calque_only", g_oct22_cdba_strict, etym_strict["coined_translation_calque_only"], len(g_oct22_cdba_strict & etym_strict["coined_translation_calque_only"])),
+            ("oct22_cdba_strict__sense_overlap_only", g_oct22_cdba_strict, etym_strict["classical_sense_overlap_only"], len(g_oct22_cdba_strict & etym_strict["classical_sense_overlap_only"])),
+            ("desc__canon__strict_pie", g_canon_strict, etym_strict["strict_pie"], len(g_canon_strict & etym_strict["strict_pie"])),
+            ("desc__canon__diachronic_pokorny_pie", g_canon_strict, etym_strict["diachronic_pokorny_pie"], len(g_canon_strict & etym_strict["diachronic_pokorny_pie"])),
+        ]
+    )
+
     perm_results = run_batched_stratified_permutation_crosscheck(
         words=words,
         tasks=perm_tasks,
@@ -1614,295 +1848,477 @@ def run_combinatorial_proofs() -> dict[str, Any]:
         seed=20191007,
     )
 
-    def eval_strict(label: str, status: str, g_tsr: set[tuple[str, str]], g_etym: set[tuple[str, str]], pkey: str) -> dict[str, Any]:
+    def eval_strict(
+        label: str, status: str, g_tsr: set[tuple[str, str]], g_etym: set[tuple[str, str]], pkey: str
+    ) -> dict[str, Any]:
         return evaluate_graph_alignment(
-            label, status, words, word_by_name, blind_pairs_strict, g_tsr, g_etym, perm_results[pkey]
+            label, status, words, word_by_name, orth_strict, g_tsr, g_etym, perm_results[pkey]
         )
 
-    def eval_legacy(label: str, status: str, g_tsr: set[tuple[str, str]], g_etym: set[tuple[str, str]], pkey: str) -> dict[str, Any]:
+    def eval_legacy(
+        label: str, status: str, g_tsr: set[tuple[str, str]], g_etym: set[tuple[str, str]], pkey: str
+    ) -> dict[str, Any]:
         return evaluate_graph_alignment(
-            label, status, words, word_by_name, blind_pairs_legacy, g_tsr, g_etym, perm_results[pkey]
+            label, status, words, word_by_name, orth_legacy, g_tsr, g_etym, perm_results[pkey]
         )
 
-    # Primary strict-filter alignments (g_tsr_pure_table FIRST, then g_tsr_frozen)
-    strict_alignments = {
-        "pure_table_vs_strict_pie": eval_strict(
-            "III_1A_Pure_PIE_Strict_Laryngeal",
-            "PRIMARY_BLIND_PURE_TABLE_STRICT_MENTUM_FILTER",
-            g_pure_strict,
+    # 1. Pre-declared primary alignment (single confirmatory test)
+    oct22_cdba_vs_strict_pie_full = eval_strict(
+        "PRIMARY_Oct22_cdba80d_vs_Strict_PIE",
+        "PRIMARY_PRE_DECLARED_OCT22_CDBA80D",
+        g_oct22_cdba_strict,
+        etym_strict["strict_pie"],
+        "oct22_cdba_strict__strict_pie",
+    )
+    primary_test_block = _build_primary_test_block(oct22_cdba_vs_strict_pie_full)
+
+    # 2. Exploratory Oct 22 alignments (other etymology specs + pure_table without ROWS + null controls)
+    oct22_cdba_exploratory = {
+        "pokorny_pie": eval_strict(
+            "Exploratory_Oct22_cdba80d_vs_Pokorny_PIE",
+            "EXPLORATORY_SENSITIVITY_UNCORRECTED_OCT22_CDBA80D",
+            g_oct22_cdba_strict,
+            etym_strict["pokorny_pie"],
+            "oct22_cdba_strict__pokorny_pie",
+        ),
+        "coined_translation_calque_only": eval_strict(
+            "Exploratory_Oct22_cdba80d_vs_Coined_Calque_Only",
+            "EXPLORATORY_SENSITIVITY_UNCORRECTED_OCT22_CDBA80D",
+            g_oct22_cdba_strict,
+            etym_strict["coined_translation_calque_only"],
+            "oct22_cdba_strict__calque_only",
+        ),
+        "classical_sense_overlap_only": eval_strict(
+            "Exploratory_Oct22_cdba80d_vs_Classical_Sense_Overlap_Only",
+            "EXPLORATORY_SENSITIVITY_UNCORRECTED_OCT22_CDBA80D",
+            g_oct22_cdba_strict,
+            etym_strict["classical_sense_overlap_only"],
+            "oct22_cdba_strict__sense_overlap_only",
+        ),
+        "strict_pie_plus_translation_calque_only": eval_strict(
+            "Exploratory_Oct22_cdba80d_vs_Strict_PIE_Plus_Calque",
+            "EXPLORATORY_SENSITIVITY_UNCORRECTED_OCT22_CDBA80D",
+            g_oct22_cdba_strict,
+            etym_strict["strict_pie_plus_translation_calque"],
+            "oct22_cdba_strict__strict_pie_calque_only",
+        ),
+        "diachronic_strict_pie": eval_strict(
+            "Exploratory_Oct22_cdba80d_vs_Diachronic_Strict_PIE",
+            "EXPLORATORY_SENSITIVITY_UNCORRECTED_OCT22_CDBA80D",
+            g_oct22_cdba_strict,
+            etym_strict["diachronic_strict_pie"],
+            "oct22_cdba_strict__diachronic_strict_pie",
+        ),
+        "diachronic_pokorny_pie": eval_strict(
+            "Exploratory_Oct22_cdba80d_vs_Diachronic_Pokorny_PIE",
+            "EXPLORATORY_SENSITIVITY_UNCORRECTED_OCT22_CDBA80D",
+            g_oct22_cdba_strict,
+            etym_strict["diachronic_pokorny_pie"],
+            "oct22_cdba_strict__diachronic_pokorny_pie",
+        ),
+    }
+
+    oct22_pure_exploratory = {
+        "strict_pie": eval_strict(
+            "Exploratory_Oct22_PureTable_vs_Strict_PIE",
+            "EXPLORATORY_SENSITIVITY_UNCORRECTED_OCT22_PURE_TABLE",
+            g_oct22_pure_strict,
             etym_strict["strict_pie"],
-            "strict__pure__strict_pie",
+            "oct22_pure_strict__strict_pie",
+        ),
+        "pokorny_pie": eval_strict(
+            "Exploratory_Oct22_PureTable_vs_Pokorny_PIE",
+            "EXPLORATORY_SENSITIVITY_UNCORRECTED_OCT22_PURE_TABLE",
+            g_oct22_pure_strict,
+            etym_strict["pokorny_pie"],
+            "oct22_pure_strict__pokorny_pie",
+        ),
+        "strict_pie_plus_translation_calque_only": eval_strict(
+            "Exploratory_Oct22_PureTable_vs_Strict_PIE_Plus_Calque",
+            "EXPLORATORY_SENSITIVITY_UNCORRECTED_OCT22_PURE_TABLE",
+            g_oct22_pure_strict,
+            etym_strict["strict_pie_plus_translation_calque"],
+            "oct22_pure_strict__strict_pie_calque_only",
+        ),
+        "diachronic_strict_pie": eval_strict(
+            "Exploratory_Oct22_PureTable_vs_Diachronic_Strict_PIE",
+            "EXPLORATORY_SENSITIVITY_UNCORRECTED_OCT22_PURE_TABLE",
+            g_oct22_pure_strict,
+            etym_strict["diachronic_strict_pie"],
+            "oct22_pure_strict__diachronic_strict_pie",
+        ),
+        "diachronic_pokorny_pie": eval_strict(
+            "Exploratory_Oct22_PureTable_vs_Diachronic_Pokorny_PIE",
+            "EXPLORATORY_SENSITIVITY_UNCORRECTED_OCT22_PURE_TABLE",
+            g_oct22_pure_strict,
+            etym_strict["diachronic_pokorny_pie"],
+            "oct22_pure_strict__diachronic_pokorny_pie",
+        ),
+    }
+
+    # 3. Secondary Nov 13 graphs (author-attested, first committed Nov 13)
+    nov13_status_pure = f"SECONDARY_UNCORRECTED ({NOV13_PROVENANCE_LABEL})"
+    nov13_status_frozen = f"SECONDARY_UNCORRECTED ({NOV13_PROVENANCE_LABEL})"
+    nov13_strict_alignments = {
+        "pure_table_vs_strict_pie": eval_strict(
+            "Secondary_Nov13_PureTable_vs_Strict_PIE",
+            nov13_status_pure,
+            g_nov13_pure_strict,
+            etym_strict["strict_pie"],
+            "nov13_pure_strict__strict_pie",
         ),
         "pure_table_vs_pokorny_pie": eval_strict(
-            "III_1A_Pure_PIE",
-            "PRIMARY_BLIND_PURE_TABLE_STRICT_MENTUM_FILTER",
-            g_pure_strict,
+            "Secondary_Nov13_PureTable_vs_Pokorny_PIE",
+            nov13_status_pure,
+            g_nov13_pure_strict,
             etym_strict["pokorny_pie"],
-            "strict__pure__pokorny_pie",
+            "nov13_pure_strict__pokorny_pie",
         ),
         "pure_table_vs_strict_pie_plus_translation_calque_only": eval_strict(
-            "III_1A_Strict_PIE_Plus_Coined_Translation_Calque_Only",
-            "PRIMARY_BLIND_PURE_TABLE_STRICT_MENTUM_FILTER",
-            g_pure_strict,
+            "Secondary_Nov13_PureTable_vs_Strict_PIE_Plus_Calque",
+            nov13_status_pure,
+            g_nov13_pure_strict,
             etym_strict["strict_pie_plus_translation_calque"],
-            "strict__pure__strict_pie_calque_only",
+            "nov13_pure_strict__strict_pie_calque_only",
         ),
         "pure_table_vs_diachronic_strict_pie": eval_strict(
-            "III_1A_Diachronic_Strict_Laryngeal",
-            "PRIMARY_BLIND_PURE_TABLE_STRICT_MENTUM_FILTER",
-            g_pure_strict,
+            "Secondary_Nov13_PureTable_vs_Diachronic_Strict_PIE",
+            nov13_status_pure,
+            g_nov13_pure_strict,
             etym_strict["diachronic_strict_pie"],
-            "strict__pure__diachronic_strict_pie",
+            "nov13_pure_strict__diachronic_strict_pie",
         ),
         "pure_table_vs_diachronic_pokorny_pie": eval_strict(
-            "III_1A_Diachronic",
-            "PRIMARY_BLIND_PURE_TABLE_STRICT_MENTUM_FILTER",
-            g_pure_strict,
+            "Secondary_Nov13_PureTable_vs_Diachronic_Pokorny_PIE",
+            nov13_status_pure,
+            g_nov13_pure_strict,
             etym_strict["diachronic_pokorny_pie"],
-            "strict__pure__diachronic_pokorny_pie",
+            "nov13_pure_strict__diachronic_pokorny_pie",
         ),
         "frozen_code_vs_strict_pie": eval_strict(
-            "III_1B_Pure_PIE_Strict_Laryngeal",
-            "BLIND_FROZEN_REPO_CODE_STRICT_MENTUM_FILTER",
-            g_frozen_strict,
+            "Secondary_Nov13_Frozen_vs_Strict_PIE",
+            nov13_status_frozen,
+            g_nov13_frozen_strict,
             etym_strict["strict_pie"],
-            "strict__frozen__strict_pie",
+            "nov13_frozen_strict__strict_pie",
         ),
         "frozen_code_vs_pokorny_pie": eval_strict(
-            "III_1B_Pure_PIE",
-            "BLIND_FROZEN_REPO_CODE_STRICT_MENTUM_FILTER",
-            g_frozen_strict,
+            "Secondary_Nov13_Frozen_vs_Pokorny_PIE",
+            nov13_status_frozen,
+            g_nov13_frozen_strict,
             etym_strict["pokorny_pie"],
-            "strict__frozen__pokorny_pie",
+            "nov13_frozen_strict__pokorny_pie",
         ),
         "frozen_code_vs_strict_pie_plus_translation_calque_only": eval_strict(
-            "III_1C_Strict_PIE_Plus_Coined_Translation_Calque_Only",
-            "BLIND_FROZEN_REPO_CODE_STRICT_MENTUM_FILTER",
-            g_frozen_strict,
+            "Secondary_Nov13_Frozen_vs_Strict_PIE_Plus_Calque",
+            nov13_status_frozen,
+            g_nov13_frozen_strict,
             etym_strict["strict_pie_plus_translation_calque"],
-            "strict__frozen__strict_pie_calque_only",
+            "nov13_frozen_strict__strict_pie_calque_only",
         ),
         "frozen_code_vs_diachronic_strict_pie": eval_strict(
-            "III_1C_Diachronic_Strict_Laryngeal",
-            "BLIND_FROZEN_REPO_CODE_STRICT_MENTUM_FILTER",
-            g_frozen_strict,
+            "Secondary_Nov13_Frozen_vs_Diachronic_Strict_PIE",
+            nov13_status_frozen,
+            g_nov13_frozen_strict,
             etym_strict["diachronic_strict_pie"],
-            "strict__frozen__diachronic_strict_pie",
+            "nov13_frozen_strict__diachronic_strict_pie",
         ),
         "frozen_code_vs_diachronic_pokorny_pie": eval_strict(
-            "III_1C_Diachronic",
-            "BLIND_FROZEN_REPO_CODE_STRICT_MENTUM_FILTER",
-            g_frozen_strict,
+            "Secondary_Nov13_Frozen_vs_Diachronic_Pokorny_PIE",
+            nov13_status_frozen,
+            g_nov13_frozen_strict,
             etym_strict["diachronic_pokorny_pie"],
-            "strict__frozen__diachronic_pokorny_pie",
+            "nov13_frozen_strict__diachronic_pokorny_pie",
         ),
     }
 
-    # Legacy 4-char filter side-by-side alignments (Checklist §3.2)
-    legacy_alignments = {
-        "pure_table_vs_strict_pie": eval_legacy(
-            "Legacy4Char_III_1A_Pure_PIE_Strict_Laryngeal",
+    # 4. Legacy 4-char morphological filter sensitivity (N_orth_unrelated = 3153)
+    legacy_oct22_alignments = {
+        "oct22_cdba80d_vs_strict_pie": eval_legacy(
+            "Legacy4Char_Oct22_cdba80d_vs_Strict_PIE",
             "SENSITIVITY_LEGACY_4CHAR_FILTER_INCLUDES_MOMENTUM_MOVEMENT",
-            g_pure_legacy,
+            g_oct22_cdba_legacy,
             etym_legacy["strict_pie"],
-            "legacy__pure__strict_pie",
+            "oct22_cdba_legacy__strict_pie",
         ),
-        "pure_table_vs_pokorny_pie": eval_legacy(
-            "Legacy4Char_III_1A_Pure_PIE",
+        "oct22_cdba80d_vs_pokorny_pie": eval_legacy(
+            "Legacy4Char_Oct22_cdba80d_vs_Pokorny_PIE",
             "SENSITIVITY_LEGACY_4CHAR_FILTER_INCLUDES_MOMENTUM_MOVEMENT",
-            g_pure_legacy,
+            g_oct22_cdba_legacy,
             etym_legacy["pokorny_pie"],
-            "legacy__pure__pokorny_pie",
+            "oct22_cdba_legacy__pokorny_pie",
         ),
-        "pure_table_vs_diachronic_strict_pie": eval_legacy(
-            "Legacy4Char_III_1A_Diachronic_Strict_Laryngeal",
+        "oct22_cdba80d_vs_diachronic_strict_pie": eval_legacy(
+            "Legacy4Char_Oct22_cdba80d_vs_Diachronic_Strict_PIE",
             "SENSITIVITY_LEGACY_4CHAR_FILTER_INCLUDES_MOMENTUM_MOVEMENT",
-            g_pure_legacy,
+            g_oct22_cdba_legacy,
             etym_legacy["diachronic_strict_pie"],
-            "legacy__pure__diachronic_strict_pie",
+            "oct22_cdba_legacy__diachronic_strict_pie",
         ),
-        "pure_table_vs_diachronic_pokorny_pie": eval_legacy(
-            "Legacy4Char_III_1A_Diachronic",
+        "oct22_cdba80d_vs_diachronic_pokorny_pie": eval_legacy(
+            "Legacy4Char_Oct22_cdba80d_vs_Diachronic_Pokorny_PIE",
             "SENSITIVITY_LEGACY_4CHAR_FILTER_INCLUDES_MOMENTUM_MOVEMENT",
-            g_pure_legacy,
+            g_oct22_cdba_legacy,
             etym_legacy["diachronic_pokorny_pie"],
-            "legacy__pure__diachronic_pokorny_pie",
+            "oct22_cdba_legacy__diachronic_pokorny_pie",
         ),
-        "frozen_code_vs_strict_pie": eval_legacy(
-            "Legacy4Char_III_1B_Pure_PIE_Strict_Laryngeal",
+        "oct22_pure_table_vs_strict_pie": eval_legacy(
+            "Legacy4Char_Oct22_PureTable_vs_Strict_PIE",
             "SENSITIVITY_LEGACY_4CHAR_FILTER_INCLUDES_MOMENTUM_MOVEMENT",
-            g_frozen_legacy,
+            g_oct22_pure_legacy,
             etym_legacy["strict_pie"],
-            "legacy__frozen__strict_pie",
+            "oct22_pure_legacy__strict_pie",
         ),
-        "frozen_code_vs_pokorny_pie": eval_legacy(
-            "Legacy4Char_III_1B_Pure_PIE",
+        "oct22_pure_table_vs_diachronic_pokorny_pie": eval_legacy(
+            "Legacy4Char_Oct22_PureTable_vs_Diachronic_Pokorny_PIE",
             "SENSITIVITY_LEGACY_4CHAR_FILTER_INCLUDES_MOMENTUM_MOVEMENT",
-            g_frozen_legacy,
-            etym_legacy["pokorny_pie"],
-            "legacy__frozen__pokorny_pie",
-        ),
-        "frozen_code_vs_diachronic_strict_pie": eval_legacy(
-            "Legacy4Char_III_1C_Diachronic_Strict_Laryngeal",
-            "SENSITIVITY_LEGACY_4CHAR_FILTER_INCLUDES_MOMENTUM_MOVEMENT",
-            g_frozen_legacy,
-            etym_legacy["diachronic_strict_pie"],
-            "legacy__frozen__diachronic_strict_pie",
-        ),
-        "frozen_code_vs_diachronic_pokorny_pie": eval_legacy(
-            "Legacy4Char_III_1C_Diachronic",
-            "SENSITIVITY_LEGACY_4CHAR_FILTER_INCLUDES_MOMENTUM_MOVEMENT",
-            g_frozen_legacy,
+            g_oct22_pure_legacy,
             etym_legacy["diachronic_pokorny_pie"],
-            "legacy__frozen__diachronic_pokorny_pie",
+            "oct22_pure_legacy__diachronic_pokorny_pie",
         ),
     }
 
-    # Unblinded descriptive concordance
+    legacy_nov13_alignments = {
+        "nov13_pure_table_vs_strict_pie": eval_legacy(
+            "Legacy4Char_Nov13_PureTable_vs_Strict_PIE",
+            f"SENSITIVITY_LEGACY_4CHAR ({NOV13_PROVENANCE_LABEL})",
+            g_nov13_pure_legacy,
+            etym_legacy["strict_pie"],
+            "nov13_pure_legacy__strict_pie",
+        ),
+        "nov13_pure_table_vs_pokorny_pie": eval_legacy(
+            "Legacy4Char_Nov13_PureTable_vs_Pokorny_PIE",
+            f"SENSITIVITY_LEGACY_4CHAR ({NOV13_PROVENANCE_LABEL})",
+            g_nov13_pure_legacy,
+            etym_legacy["pokorny_pie"],
+            "nov13_pure_legacy__pokorny_pie",
+        ),
+        "nov13_pure_table_vs_diachronic_strict_pie": eval_legacy(
+            "Legacy4Char_Nov13_PureTable_vs_Diachronic_Strict_PIE",
+            f"SENSITIVITY_LEGACY_4CHAR ({NOV13_PROVENANCE_LABEL})",
+            g_nov13_pure_legacy,
+            etym_legacy["diachronic_strict_pie"],
+            "nov13_pure_legacy__diachronic_strict_pie",
+        ),
+        "nov13_pure_table_vs_diachronic_pokorny_pie": eval_legacy(
+            "Legacy4Char_Nov13_PureTable_vs_Diachronic_Pokorny_PIE",
+            f"SENSITIVITY_LEGACY_4CHAR ({NOV13_PROVENANCE_LABEL})",
+            g_nov13_pure_legacy,
+            etym_legacy["diachronic_pokorny_pie"],
+            "nov13_pure_legacy__diachronic_pokorny_pie",
+        ),
+        "nov13_frozen_code_vs_strict_pie": eval_legacy(
+            "Legacy4Char_Nov13_Frozen_vs_Strict_PIE",
+            f"SENSITIVITY_LEGACY_4CHAR ({NOV13_PROVENANCE_LABEL})",
+            g_nov13_frozen_legacy,
+            etym_legacy["strict_pie"],
+            "nov13_frozen_legacy__strict_pie",
+        ),
+        "nov13_frozen_code_vs_pokorny_pie": eval_legacy(
+            "Legacy4Char_Nov13_Frozen_vs_Pokorny_PIE",
+            f"SENSITIVITY_LEGACY_4CHAR ({NOV13_PROVENANCE_LABEL})",
+            g_nov13_frozen_legacy,
+            etym_legacy["pokorny_pie"],
+            "nov13_frozen_legacy__pokorny_pie",
+        ),
+        "nov13_frozen_code_vs_diachronic_strict_pie": eval_legacy(
+            "Legacy4Char_Nov13_Frozen_vs_Diachronic_Strict_PIE",
+            f"SENSITIVITY_LEGACY_4CHAR ({NOV13_PROVENANCE_LABEL})",
+            g_nov13_frozen_legacy,
+            etym_legacy["diachronic_strict_pie"],
+            "nov13_frozen_legacy__diachronic_strict_pie",
+        ),
+        "nov13_frozen_code_vs_diachronic_pokorny_pie": eval_legacy(
+            "Legacy4Char_Nov13_Frozen_vs_Diachronic_Pokorny_PIE",
+            f"SENSITIVITY_LEGACY_4CHAR ({NOV13_PROVENANCE_LABEL})",
+            g_nov13_frozen_legacy,
+            etym_legacy["diachronic_pokorny_pie"],
+            "nov13_frozen_legacy__diachronic_pokorny_pie",
+        ),
+    }
+
+    # 5. Post-hoc prose-augmented concordance
     t1_desc_strict_pie = eval_strict(
-        "III_1_Descriptive_Full_Book_Concordance_vs_Strict_PIE",
-        "UNBLINDED_POST_HOC_DESCRIPTIVE_CONCORDANCE_ONLY",
+        "Exploratory_Canonical_Book_Concordance_vs_Strict_PIE",
+        "POST_HOC_DESCRIPTIVE_CONCORDANCE_ONLY",
         g_canon_strict,
         etym_strict["strict_pie"],
         "desc__canon__strict_pie",
     )
     t1_desc_diachronic_pokorny = eval_strict(
-        "III_1_Descriptive_Full_Book_Concordance_vs_Diachronic_Pokorny_PIE",
-        "UNBLINDED_POST_HOC_DESCRIPTIVE_CONCORDANCE_ONLY",
+        "Exploratory_Canonical_Book_Concordance_vs_Diachronic_Pokorny_PIE",
+        "POST_HOC_DESCRIPTIVE_CONCORDANCE_ONLY",
         g_canon_strict,
         etym_strict["diachronic_pokorny_pie"],
         "desc__canon__diachronic_pokorny_pie",
     )
-    unblinded_extra_hits = [
+    post_hoc_extra_hits_vs_oct22 = [
         list(e)
         for e in sorted(
-            (g_canon_strict & etym_strict["diachronic_pokorny_pie"]) - g_frozen_strict
+            (g_canon_strict & etym_strict["diachronic_pokorny_pie"]) - g_oct22_cdba_strict
         )
     ]
+
+    all_strict_alignments_for_self_test = {
+        "primary_oct22_cdba80d_vs_strict_pie": oct22_cdba_vs_strict_pie_full,
+        **{f"oct22_cdba__{k}": v for k, v in oct22_cdba_exploratory.items()},
+        **{f"oct22_pure__{k}": v for k, v in oct22_pure_exploratory.items()},
+        **nov13_strict_alignments,
+        "canon_vs_strict_pie": t1_desc_strict_pie,
+        "canon_vs_diachronic_pokorny_pie": t1_desc_diachronic_pokorny,
+    }
 
     self_test_report = run_self_tests(
         words=words,
         word_by_name=word_by_name,
-        blind_pairs_strict=blind_pairs_strict,
+        oct22_mod=oct22_mod,
+        orth_unrelated_strict=orth_strict,
         excluded_strict=excluded_strict,
-        blind_pairs_legacy=blind_pairs_legacy,
-        g_pure_strict=g_pure_strict,
-        g_frozen_strict=g_frozen_strict,
+        orth_unrelated_legacy=orth_legacy,
+        g_oct22_pure_strict=g_oct22_pure_strict,
+        g_oct22_cdba_strict=g_oct22_cdba_strict,
+        g_nov13_pure_strict=g_nov13_pure_strict,
+        g_nov13_frozen_strict=g_nov13_frozen_strict,
         etym_strict_filter=etym_strict,
-        strict_alignments=strict_alignments,
+        all_strict_alignments=all_strict_alignments_for_self_test,
     )
 
-    t2_hinge = run_test_iii_2_energeia_actualitas_hinge(
+    center_crossing_loc = run_test_iii_2_energeia_actualitas_center_crossing(
         words=words,
-        n_blind_pairs_strict=len(blind_pairs_strict),
-        g_tsr_pure_table=g_pure_strict,
-        g_tsr_frozen=g_frozen_strict,
+        n_orth_unrelated_pairs_strict=len(orth_strict),
+        g_oct22_pure_table=g_oct22_pure_strict,
+        g_oct22_cdba80d=g_oct22_cdba_strict,
+        g_nov13_pure_table=g_nov13_pure_strict,
+        g_nov13_frozen=g_nov13_frozen_strict,
         g_tsr_canonical=g_canon_strict,
     )
-    t3_directionality = run_test_iii_3_directionality_audit(words)
+    descriptive_core_law = run_descriptive_core_law_directionality_audit(words)
 
     return {
         "proof_id": "Part_III_Exact_Combinatorial_Etymology_Proofs",
         "source_dataset": str(LEDGER_PATH.relative_to(REPO_ROOT)),
+        "source_edition": "WTWK proof 36 (pp. 99-104); Sovereign Mirror v57",
+        "oct22_tsr_formal_sha256": OCT22_TSR_FORMAL_SHA256,
+        "primary_test": primary_test_block,
         "self_tests": self_test_report,
-        "test_III_1_hidden_root_homomorphism": {
-            "methodological_note": (
-                "Headline benchmarks lead with prose-free `g_tsr_pure_table` (67 strict blind edges "
-                "scraped solely from `MIRROR`, `DIAGONAL`, `EXTENDED_PARTNERS`, `PHYS`, `NONPHYS_STATED`, "
-                "`EXTENSION`), followed by full frozen code `g_tsr_frozen` (182 strict blind edges). "
-                "All tokens are resolved via the explicit `SURFACE_TO_LEDGER` map; transparent Latinate "
-                "`-mentum`/`-ment` morphology (`momentum-movement`, also subject to the Oct 2019 -> July 2020 "
-                "M-slot swap, WTWK pp. 39, 93) is excluded in the primary strict filter (`N_blind = 3152`) "
-                "and reported side-by-side under the legacy 4-char filter (`N_blind = 3153`); exact "
-                "hypergeometric tails use `total_pop = n_blind_pairs`; and both strict laryngeal PIE "
-                "(de Vaan 2008 / LIV2, splitting `converge` < *h1werg- from `vortex` < *wert-) and "
-                "Pokorny PIE (`*wer-turn`) are evaluated side-by-side."
+        "descriptive_core_law_directionality_summary": descriptive_core_law,
+        "exploratory_sensitivity_uncorrected": {
+            "multiple_comparisons_warning": (
+                "UNCORRECTED EXPLORATORY & SENSITIVITY ANALYSES: None of the ~60+ p-values, "
+                "alternative null controls (uniform S_80 QAP / Cantelli bounds / 100k stratified "
+                "permutations), secondary Nov 13 graphs ('author-attested, first committed Nov 13'), "
+                "diachronic/Pokorny etymology specifications, legacy 4-char morphological filters, "
+                "center-crossing calque probabilities, or post-hoc concordance counts below are "
+                "corrected for multiple comparisons. Treat exclusively as sensitivity diagnostics, "
+                "NEVER as confirmatory hypothesis tests."
             ),
-            "blind_grid_2x3_summary_strict_filter": {
-                "g_tsr_pure_table": {
-                    "strict_pie": _compact_summary_row(strict_alignments["pure_table_vs_strict_pie"]),
-                    "pokorny_pie": _compact_summary_row(strict_alignments["pure_table_vs_pokorny_pie"]),
-                    "diachronic_strict_pie": _compact_summary_row(
-                        strict_alignments["pure_table_vs_diachronic_strict_pie"]
-                    ),
-                    "diachronic_pokorny_pie": _compact_summary_row(
-                        strict_alignments["pure_table_vs_diachronic_pokorny_pie"]
-                    ),
-                    "strict_pie_plus_coined_calque_only": _compact_summary_row(
-                        strict_alignments["pure_table_vs_strict_pie_plus_translation_calque_only"]
-                    ),
-                },
-                "g_tsr_frozen": {
-                    "strict_pie": _compact_summary_row(strict_alignments["frozen_code_vs_strict_pie"]),
-                    "pokorny_pie": _compact_summary_row(strict_alignments["frozen_code_vs_pokorny_pie"]),
-                    "diachronic_strict_pie": _compact_summary_row(
-                        strict_alignments["frozen_code_vs_diachronic_strict_pie"]
-                    ),
-                    "diachronic_pokorny_pie": _compact_summary_row(
-                        strict_alignments["frozen_code_vs_diachronic_pokorny_pie"]
-                    ),
-                    "strict_pie_plus_coined_calque_only": _compact_summary_row(
-                        strict_alignments["frozen_code_vs_strict_pie_plus_translation_calque_only"]
-                    ),
-                },
-            },
-            "III_1A_Pure_PIE": strict_alignments["pure_table_vs_pokorny_pie"],
-            "III_1A_Diachronic": strict_alignments["pure_table_vs_diachronic_pokorny_pie"],
-            "III_1B_Pure_PIE": strict_alignments["frozen_code_vs_pokorny_pie"],
-            "III_1C_Diachronic": strict_alignments["frozen_code_vs_diachronic_pokorny_pie"],
-            "strict_laryngeal_pie_sensitivity": {
+            "primary_alignment_alternative_null_controls": {
                 "note": (
-                    "Strict modern laryngeal IE (de Vaan 2008: 665, 667; LIV2 290, 691) separates "
-                    "`converge` (< Lat. vergere < PIE *h1werg-) from `vortex` (< Lat. vertere < PIE *wert-); "
-                    "moreover, both `converge` and `vortex` are Ch. 8 'outward first' misses in WTWK (p. 82)."
+                    "Alternative null models and permutation diagnostics specifically for the "
+                    "primary pair (`g_tsr_oct22_cdba80d` vs `pie_roots_strict`); placed here "
+                    "so `primary_test` reports strictly ONE pre-declared confirmatory p-value."
                 ),
-                "III_1A_Pure_PIE_Strict_Laryngeal": strict_alignments["pure_table_vs_strict_pie"],
-                "III_1A_Diachronic_Strict_Laryngeal": strict_alignments[
-                    "pure_table_vs_diachronic_strict_pie"
+                "exact_uniform_S80_moments": oct22_cdba_vs_strict_pie_full["exact_uniform_S80_moments"],
+                "z_score_vs_uniform_S80": oct22_cdba_vs_strict_pie_full["z_score_vs_uniform_S80"],
+                "exact_cantelli_upper_bound_float": oct22_cdba_vs_strict_pie_full[
+                    "exact_cantelli_upper_bound_float"
                 ],
-                "III_1B_Pure_PIE_Strict_Laryngeal": strict_alignments["frozen_code_vs_strict_pie"],
-                "III_1C_Diachronic_Strict_Laryngeal": strict_alignments[
-                    "frozen_code_vs_diachronic_strict_pie"
+                "exact_polysemy_stratified_mean": oct22_cdba_vs_strict_pie_full[
+                    "exact_polysemy_stratified_mean"
                 ],
-                "III_1A_Strict_PIE_Plus_Coined_Calque_Only": strict_alignments[
-                    "pure_table_vs_strict_pie_plus_translation_calque_only"
+                "exact_pos_and_polysemy_stratified_mean": oct22_cdba_vs_strict_pie_full[
+                    "exact_pos_and_polysemy_stratified_mean"
                 ],
-                "III_1C_Strict_PIE_Plus_Coined_Calque_Only": strict_alignments[
-                    "frozen_code_vs_strict_pie_plus_translation_calque_only"
+                "stratified_permutation_100k_crosscheck": oct22_cdba_vs_strict_pie_full[
+                    "stratified_permutation_100k_crosscheck"
                 ],
             },
-            "momentum_movement_filter_sensitivity_side_by_side": {
+            "oct22_cdba80d_sensitivity_strict_filter": {
+                "graph_provenance": f"Git commit cdba80d (2026-10-22), {OCT22_TSR_FORMAL_RELPATH}",
+                "g_tsr_oct22_cdba80d_66_pairs": {
+                    "summary": {k: _compact_summary_row(v) for k, v in oct22_cdba_exploratory.items()},
+                    "full_alignments": oct22_cdba_exploratory,
+                },
+                "g_tsr_oct22_pure_table_54_pairs": {
+                    "summary": {k: _compact_summary_row(v) for k, v in oct22_pure_exploratory.items()},
+                    "full_alignments": oct22_pure_exploratory,
+                },
+            },
+            "nov13_author_attested_secondary_graphs": {
+                "graph_provenance": (
+                    f"{NOV13_PROVENANCE_LABEL}: vocab/mirror.py & rule/tsr_formal_port.py "
+                    "(g_tsr_nov13_pure_table=67 pairs; g_tsr_nov13_frozen=182 pairs)"
+                ),
+                "summary_grid_strict_filter": {
+                    "g_tsr_nov13_pure_table": {
+                        "strict_pie": _compact_summary_row(
+                            nov13_strict_alignments["pure_table_vs_strict_pie"]
+                        ),
+                        "pokorny_pie": _compact_summary_row(
+                            nov13_strict_alignments["pure_table_vs_pokorny_pie"]
+                        ),
+                        "diachronic_strict_pie": _compact_summary_row(
+                            nov13_strict_alignments["pure_table_vs_diachronic_strict_pie"]
+                        ),
+                        "diachronic_pokorny_pie": _compact_summary_row(
+                            nov13_strict_alignments["pure_table_vs_diachronic_pokorny_pie"]
+                        ),
+                        "strict_pie_plus_coined_calque_only": _compact_summary_row(
+                            nov13_strict_alignments[
+                                "pure_table_vs_strict_pie_plus_translation_calque_only"
+                            ]
+                        ),
+                    },
+                    "g_tsr_nov13_frozen": {
+                        "strict_pie": _compact_summary_row(
+                            nov13_strict_alignments["frozen_code_vs_strict_pie"]
+                        ),
+                        "pokorny_pie": _compact_summary_row(
+                            nov13_strict_alignments["frozen_code_vs_pokorny_pie"]
+                        ),
+                        "diachronic_strict_pie": _compact_summary_row(
+                            nov13_strict_alignments["frozen_code_vs_diachronic_strict_pie"]
+                        ),
+                        "diachronic_pokorny_pie": _compact_summary_row(
+                            nov13_strict_alignments["frozen_code_vs_diachronic_pokorny_pie"]
+                        ),
+                        "strict_pie_plus_coined_calque_only": _compact_summary_row(
+                            nov13_strict_alignments[
+                                "frozen_code_vs_strict_pie_plus_translation_calque_only"
+                            ]
+                        ),
+                    },
+                },
+                "full_alignments": nov13_strict_alignments,
+            },
+            "legacy_4char_morphological_filter_sensitivity": {
                 "audit_note": (
-                    "Side-by-side comparison of the primary strict Latinate `-mentum`/`-ment` filter "
-                    "(excluding `momentum-movement`, `n_blind_pairs = 3152`) vs. the legacy 4-char filter "
-                    "(including `momentum-movement`, `n_blind_pairs = 3153`; Checklist §3.2). Also notes "
-                    "that `Momentum` occupied the M slot on 2019-10-07 before being replaced by `Movement` "
-                    "on 2020-07-06 while `Momentum` moved to the center continuum (WTWK pp. 39, 93)."
+                    "Compares strict Latinate `-mentum`/`-ment` filter (excluding `momentum-movement`, "
+                    "`N_orth_unrelated = 3152`) against legacy 4-char filter (including `momentum-movement`, "
+                    "`N_orth_unrelated = 3153`; WTWK proof 36 pp. 41, 97 M-slot swap)."
                 ),
-                "strict_mentum_filter_excluding_momentum_movement": {
-                    "n_blind_pairs": len(blind_pairs_strict),
-                    "excluded_pairs": [list(e) for e in excluded_strict],
-                    "summary": {k: _compact_summary_row(v) for k, v in strict_alignments.items()},
+                "n_orth_unrelated_pairs": len(orth_legacy),
+                "excluded_pairs": [list(e) for e in excluded_legacy],
+                "oct22_graphs_summary": {
+                    k: _compact_summary_row(v) for k, v in legacy_oct22_alignments.items()
                 },
-                "legacy_4char_filter_including_momentum_movement": {
-                    "n_blind_pairs": len(blind_pairs_legacy),
-                    "excluded_pairs": [list(e) for e in excluded_legacy],
-                    "summary": {k: _compact_summary_row(v) for k, v in legacy_alignments.items()},
-                    "full_alignments": legacy_alignments,
+                "oct22_graphs_full_alignments": legacy_oct22_alignments,
+                "nov13_author_attested_graphs_summary": {
+                    k: _compact_summary_row(v) for k, v in legacy_nov13_alignments.items()
                 },
+                "nov13_author_attested_graphs_full_alignments": legacy_nov13_alignments,
             },
-            "exploratory_unblinded_descriptive_concordance": {
+            "prose_augmented_book_concordance_post_hoc": {
                 "warning": (
-                    "Compiled after reading What the Words Knew; includes thematic prose links "
-                    "not present in `vocab/mirror.py` and must NOT be cited as a blind p-value."
+                    "Compiled after reading What the Words Knew; includes thematic prose links not in "
+                    "Oct 22 tests/tsr_formal.py or Nov 13 vocab/mirror.py and MUST NOT be cited as confirmatory."
                 ),
-                "post_hoc_extra_overlapping_pairs_not_in_frozen_code": unblinded_extra_hits,
+                "post_hoc_extra_overlapping_pairs_not_in_oct22": post_hoc_extra_hits_vs_oct22,
                 "canonical_vs_strict_pie": t1_desc_strict_pie,
                 "canonical_vs_diachronic_pokorny_pie": t1_desc_diachronic_pokorny,
             },
+            "center_crossing_calque_localization_uncorrected": center_crossing_loc,
         },
-        "test_III_2_energeia_actualitas_hinge_localization": t2_hinge,
-        "test_III_3_directional_asymmetry_within_physics": t3_directionality,
     }
 
 
