@@ -1,0 +1,14 @@
+# Python & virtual environments
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Lean 4 build artifacts
+proof/lean/.lake/
+*.olean
+*.ilean
+
+# Local environment & OS metadata
+.env
+.DS_Store
