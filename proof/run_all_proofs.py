@@ -404,6 +404,7 @@ def main() -> None:
         "suite": "Theory of Sovereign Reflectivity (TSR) — Machine-Checked Formalization and Consistency Check Certificate",
         "all_checks_passed": True,
         "zero_llm_calls": True,
+        "preregistration_commit_sha": "463ad9f93c8a276b1e0d9ee497198dfa2169d079",
         "execution_os": platform.system(),
         "execution_arch": platform.machine(),
         "python_version": platform.python_version(),

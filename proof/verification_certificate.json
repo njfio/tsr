@@ -2,12 +2,13 @@
   "suite": "Theory of Sovereign Reflectivity (TSR) \u2014 Machine-Checked Formalization and Consistency Check Certificate",
   "all_checks_passed": true,
   "zero_llm_calls": true,
+  "preregistration_commit_sha": "463ad9f93c8a276b1e0d9ee497198dfa2169d079",
   "execution_os": "Linux",
   "execution_arch": "aarch64",
   "python_version": "3.12.15",
   "lean_version": "Lean (version 4.35.0, aarch64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
   "z3_version": "5.4.1",
-  "verification_runtime_seconds": 8.595,
+  "verification_runtime_seconds": 6.035,
   "part_I_lean4_deductive": {
     "lean_version": "Lean (version 4.35.0, aarch64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
     "modules_verified": [

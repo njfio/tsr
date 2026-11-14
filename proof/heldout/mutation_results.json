@@ -1,0 +1,180 @@
+{
+  "preregistration_commit_sha": "463ad9f93c8a276b1e0d9ee497198dfa2169d079",
+  "execution_environment": {
+    "os": "Linux",
+    "arch": "aarch64",
+    "python_version": "3.12.15"
+  },
+  "total_mutations": 15,
+  "caught_count": 15,
+  "surviving_count": 0,
+  "surviving_mutations": [],
+  "all_caught": true,
+  "mutations": [
+    {
+      "id": "M01",
+      "file_path": "proof/lean/TSR/Condition.lean",
+      "symbol": "barrier (Lean definition)",
+      "expected_check": "lake build fails at condition_triad_equivalence / destructive_null_requires_spatial_separation",
+      "verifier_command": "lake build",
+      "exit_code": 1,
+      "caught": true,
+      "runtime_seconds": 0.571,
+      "failure_excerpt": "x y : M.Locus\n⊢ zero = zero\nerror: TSR/Condition.lean:183:8: Tactic `rewrite` failed: Did not find an occurrence of the pattern\n  x\nin the target expression\n  zero = zero\nF : Type\ninst✝ : OrderedField F\nM : Medium F\nhUndiv : ∀ (x y : M.Locus), x = y\nx y : M.Locus\n⊢ zero = zero\nSome required targets logged failures:\n- TSR.Condition"
+    },
+    {
+      "id": "M02",
+      "file_path": "proof/lean/TSR/Condition.lean",
+      "symbol": "condition_triad_equivalence (Lean theorem assumption)",
+      "expected_check": "lake build fails at condition_triad_equivalence (missing partition assumption hPart)",
+      "verifier_command": "lake build",
+      "exit_code": 1,
+      "caught": true,
+      "runtime_seconds": 0.513,
+      "failure_excerpt": "n/TSR/Condition.lean -o proof/lean/.lake/build/lib/lean/TSR/Condition.olean -i proof/lean/.lake/build/lib/lean/TSR/Condition.ilean -c proof/lean/.lake/build/ir/TSR/Condition.c --setup proof/lean/.lake/build/ir/TSR/Condition.setup.json --json\nerror: TSR/Condition.lean:120:13: Unknown identifier `hPart`\nerror: TSR/Condition.lean:120:26: Tactic `rcases` failed: `x✝ : ?m.28` is not an inductive datatype\nerror: TSR/Condition.lean:124:37: Unknown identifier `hPart`\nerror: TSR/Condition.lean:165:11: Function expected at\n  condition_triad_equivalence M\nbut this term has type\n  (Resistant M ↔ Limited M) ∧ (Limited M ↔ Radiating M) ∧ (Resistant M ↔ Radiating M)\nNote: Expected a function because this term is being applied to the argument\n  hPart\nerror: TSR/Condition.lean:165:52: Tactic `rcases` failed: `x✝ : ?m.162` is not an inductive datatype\nSome required targets logged failures:\n- TSR.Condition"
+    },
+    {
+      "id": "M03",
+      "file_path": "proof/lean/TSR/Condition.lean",
+      "symbol": "damped_ripple_strict_decay (Lean theorem assumption)",
+      "expected_check": "lake build fails at damped_ripple_strict_decay (M.alpha_bounds_of_pos hRes type mismatch)",
+      "verifier_command": "lake build",
+      "exit_code": 1,
+      "caught": true,
+      "runtime_seconds": 0.513,
+      "failure_excerpt": "error: build failed\n✖ [5/8] Building TSR.Condition (246ms)\ntrace: .> LEAN_PATH=proof/lean/.lake/build/lib/lean /root/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean proof/lean/TSR/Condition.lean -o proof/lean/.lake/build/lib/lean/TSR/Condition.olean -i proof/lean/.lake/build/lib/lean/TSR/Condition.ilean -c proof/lean/.lake/build/ir/TSR/Condition.c --setup proof/lean/.lake/build/ir/TSR/Condition.setup.json --json\nerror: TSR/Condition.lean:234:31: Application type mismatch: The argument\n  hRes\nhas type\n  zero ≤ M.rho\nbut is expected to have type\n  zero < M.rho\nin the application\n  M.alpha_bounds_of_pos hRes\nSome required targets logged failures:\n- TSR.Condition"
+    },
+    {
+      "id": "M04",
+      "file_path": "proof/lean/TSR/MirrorFunctor.lean",
+      "symbol": "mirrorAtom (Lean definition)",
+      "expected_check": "lake build fails at mirrorAtom_involutive / R_form_involutive",
+      "verifier_command": "lake build",
+      "exit_code": 1,
+      "caught": true,
+      "runtime_seconds": 0.811,
+      "failure_excerpt": "        R_form physForce = nonphysFrequency ∧\n          R_form physRestEnergy = nonphysEnergy ∧\n            R_form physSpatialMomentum = nonphysVibrationalMomentum ∧\n              R_form physTemporalMomentum = nonphysCurrentMomentum ∧\n                R_form physWork = nonphysWork ∧\n                  R_form physPower = nonphysPower ∧\n                    R_form physKineticEnergy = nonphysKineticEnergy ∧\n                      R_form physImpulse = nonphysImpulse ∧ R_form physWeight = nonphysWeight\nis false\nerror: TSR/MirrorFunctor.lean:417:24: Tactic `decide` proved that the proposition\n  R_form physTemporalMomentum = nonphysCurrentMomentum\nis false\nSome required targets logged failures:\n- TSR.MirrorFunctor"
+    },
+    {
+      "id": "M05",
+      "file_path": "proof/lean/TSR/MirrorFunctor.lean",
+      "symbol": "regionResistant (Lean definition)",
+      "expected_check": "lake build fails at two_level_reading_theorem (decide) and gravity_open_joint_two_vs_three_regions",
+      "verifier_command": "lake build",
+      "exit_code": 1,
+      "caught": true,
+      "runtime_seconds": 0.831,
+      "failure_excerpt": ".lake/build/ir/TSR/MirrorFunctor.setup.json --json\nerror: TSR/MirrorFunctor.lean:637:2: Tactic `decide` proved that the proposition\n  benchmarkRows17.length = 17 ∧\n    (benchmarkRows17.all fun r => R_read r == r.bookRuling) = true ∧\n      (List.filter (fun r => R_read_naive_mass r != r.bookRuling) benchmarkRows17).length = 7 ∧\n        (List.filter (fun r => R_read_ch2_clauses r != r.bookRuling) benchmarkRows17).length = 4 ∧\n          (row17Boyle.hasMass = true ∧\n              countActiveBarriers MirrorArchitecture.threeRegionSharedE row17Boyle.lawAST = 0 ∧\n                R_read row17Boyle = Reading.Keep) ∧\n            countActiveBarriers MirrorArchitecture.threeRegionSharedE multiBarrierWorkRow.lawAST = 2 ∧\n              R_read multiBarrierWorkRow = Reading.Invert ∧ R_read_naive_parity multiBarrierWorkRow = Reading.Keep\nis false\nSome required targets logged failures:\n- TSR.MirrorFunctor"
+    },
+    {
+      "id": "M06",
+      "file_path": "proof/lean/TSR/MirrorFunctor.lean",
+      "symbol": "benchmarkRows17 Row 2 (Lean benchmark row)",
+      "expected_check": "lake build fails at two_level_reading_theorem and v57_rule_wordings_benchmark (decide)",
+      "verifier_command": "lake build",
+      "exit_code": 1,
+      "caught": true,
+      "runtime_seconds": 0.817,
+      "failure_excerpt": "r (fun r => R_read_always_keep r == r.bookRuling) benchmarkRows17).length = 14 ∧\n    List.map BenchmarkRow.id (List.filter (fun r => R_read_always_keep r != r.bookRuling) benchmarkRows17) = [2, 8, 9] ∧\n      (List.filter (fun r => R_read_always_invert r == r.bookRuling) benchmarkRows17).length = 3 ∧\n        List.map BenchmarkRow.id (List.filter (fun r => R_read_always_invert r == r.bookRuling) benchmarkRows17) =\n            [2, 8, 9] ∧\n          (List.filter (fun r => R_read_v57_ch2 r == r.bookRuling) benchmarkRows17).length =\n              (List.filter (fun r => R_read_always_keep r == r.bookRuling) benchmarkRows17).length ∧\n            (List.filter (fun r => R_read_v57_ch16 r == r.bookRuling) benchmarkRows17).length =\n              (List.filter (fun r => R_read_always_keep r == r.bookRuling) benchmarkRows17).length + 2\nis false\nSome required targets logged failures:\n- TSR.MirrorFunctor"
+    },
+    {
+      "id": "M07",
+      "file_path": "proof/lean/TSR/MirrorFunctor.lean",
+      "symbol": "benchmarkRows17 Row 7 (Lean benchmark row)",
+      "expected_check": "lake build fails at two_level_reading_theorem and v57_rule_wordings_benchmark (decide)",
+      "verifier_command": "lake build",
+      "exit_code": 1,
+      "caught": true,
+      "runtime_seconds": 0.825,
+      "failure_excerpt": "r (fun r => R_read_always_keep r == r.bookRuling) benchmarkRows17).length = 14 ∧\n    List.map BenchmarkRow.id (List.filter (fun r => R_read_always_keep r != r.bookRuling) benchmarkRows17) = [2, 8, 9] ∧\n      (List.filter (fun r => R_read_always_invert r == r.bookRuling) benchmarkRows17).length = 3 ∧\n        List.map BenchmarkRow.id (List.filter (fun r => R_read_always_invert r == r.bookRuling) benchmarkRows17) =\n            [2, 8, 9] ∧\n          (List.filter (fun r => R_read_v57_ch2 r == r.bookRuling) benchmarkRows17).length =\n              (List.filter (fun r => R_read_always_keep r == r.bookRuling) benchmarkRows17).length ∧\n            (List.filter (fun r => R_read_v57_ch16 r == r.bookRuling) benchmarkRows17).length =\n              (List.filter (fun r => R_read_always_keep r == r.bookRuling) benchmarkRows17).length + 2\nis false\nSome required targets logged failures:\n- TSR.MirrorFunctor"
+    },
+    {
+      "id": "M08",
+      "file_path": "proof/lean/TSR/MirrorFunctor.lean",
+      "symbol": "isSharedEnergyWork (Lean definition)",
+      "expected_check": "lake build fails at v57_rule_wordings_benchmark (decide: R_read_v57_ch16 match count drops from 16 to 14)",
+      "verifier_command": "lake build",
+      "exit_code": 1,
+      "caught": true,
+      "runtime_seconds": 0.813,
+      "failure_excerpt": "r (fun r => R_read_always_keep r == r.bookRuling) benchmarkRows17).length = 14 ∧\n    List.map BenchmarkRow.id (List.filter (fun r => R_read_always_keep r != r.bookRuling) benchmarkRows17) = [2, 8, 9] ∧\n      (List.filter (fun r => R_read_always_invert r == r.bookRuling) benchmarkRows17).length = 3 ∧\n        List.map BenchmarkRow.id (List.filter (fun r => R_read_always_invert r == r.bookRuling) benchmarkRows17) =\n            [2, 8, 9] ∧\n          (List.filter (fun r => R_read_v57_ch2 r == r.bookRuling) benchmarkRows17).length =\n              (List.filter (fun r => R_read_always_keep r == r.bookRuling) benchmarkRows17).length ∧\n            (List.filter (fun r => R_read_v57_ch16 r == r.bookRuling) benchmarkRows17).length =\n              (List.filter (fun r => R_read_always_keep r == r.bookRuling) benchmarkRows17).length + 2\nis false\nSome required targets logged failures:\n- TSR.MirrorFunctor"
+    },
+    {
+      "id": "M09",
+      "file_path": "proof/lean/TSR/Crossing.lean",
+      "symbol": "canStep (Lean definition)",
+      "expected_check": "lake build fails at step_from_intuition_false and unique_weak_diagonal_escape",
+      "verifier_command": "lake build",
+      "exit_code": 1,
+      "caught": true,
+      "runtime_seconds": 0.506,
+      "failure_excerpt": "n4---v4.35.0/bin/lean proof/lean/TSR/Crossing.lean -o proof/lean/.lake/build/lib/lean/TSR/Crossing.olean -i proof/lean/.lake/build/lib/lean/TSR/Crossing.ilean -c proof/lean/.lake/build/ir/TSR/Crossing.c --setup proof/lean/.lake/build/ir/TSR/Crossing.setup.json --json\nwarning: TSR/Crossing.lean:314:13: Variable name `tuned` is not explicitly referenced.\nHint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:\n  [apply] _tuned\nNote: This linter can be disabled with `set_option linter.unusedVariables false`\nerror: TSR/Crossing.lean:337:26: Tactic `rfl` failed: The left-hand side\n  canStep false qIntuition (Side.P, FlowDir.Out)\nis not definitionally equal to the right-hand side\n  false\ncase P.Out\n⊢ canStep false qIntuition (Side.P, FlowDir.Out) = false\nSome required targets logged failures:\n- TSR.Crossing"
+    },
+    {
+      "id": "M10",
+      "file_path": "proof/lean/TSR/EntityAndMeta.lean",
+      "symbol": "sovereignEntityDyn (Lean definition)",
+      "expected_check": "lake build fails at four_way_entity_separation",
+      "verifier_command": "lake build",
+      "exit_code": 1,
+      "caught": true,
+      "runtime_seconds": 0.592,
+      "failure_excerpt": "error: TSR/EntityAndMeta.lean:334:6: Type mismatch\n  h\nhas type\n  st.outerObjective ≤ st.outerObjective + (x - st.shape) * (x - st.shape)\nbut is expected to have type\n  st.outerObjective ≤ st.outerObjective\nerror: TSR/EntityAndMeta.lean:439:6: Type mismatch\n  h\nhas type\n  st.outerObjective < st.outerObjective + predErrorSq st y\nbut is expected to have type\n  st.outerObjective < st.outerObjective\nSome required targets logged failures:\n- TSR.EntityAndMeta"
+    },
+    {
+      "id": "M11",
+      "file_path": "proof/z3/structural_rigidity.py",
+      "symbol": "_build_stage_relations (Z3 Stage 2 relation graph)",
+      "expected_check": "run_structural_rigidity() raises AssertionError: Expected 2 at Stage 2, got 4",
+      "verifier_command": "python3 -B proof/run_all_proofs.py",
+      "exit_code": 1,
+      "caught": true,
+      "runtime_seconds": 1.144,
+      "failure_excerpt": "Traceback (most recent call last):\n  File \"proof/run_all_proofs.py\", line 428, in <module>\n    main()\n  File \"proof/run_all_proofs.py\", line 371, in main\n    part2a_struct = structural_rigidity.run_structural_rigidity()\n                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"proof/z3/structural_rigidity.py\", line 369, in run_structural_rigidity\n    assert s2[\"automorphism_count\"] == 2, f\"Expected 2 at Stage 2, got {s2['automorphism_count']}\"\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Expected 2 at Stage 2, got 4\n[1/3] Verifying Part I — Lean 4 Formalization & Consistency Suite...\n      PASS: 35 theorems kernel-verified (0 sorry, 0 custom axioms, 0 Classical.choice, nominal PhysDim/NonphysRank separation verified; 15 pure CIC).\n[2/3] Verifying Part II — Z3 Structural, Ch. 16 MUC & WordNet 3.0 / Oxford Suite..."
+    },
+    {
+      "id": "M12",
+      "file_path": "proof/z3/structural_rigidity.py",
+      "symbol": "_build_stage_relations (Z3 Stage 3 relation graph)",
+      "expected_check": "run_structural_rigidity() raises AssertionError: Expected 1 at Stage 3, got 2",
+      "verifier_command": "python3 -B proof/run_all_proofs.py",
+      "exit_code": 1,
+      "caught": true,
+      "runtime_seconds": 1.046,
+      "failure_excerpt": "Traceback (most recent call last):\n  File \"proof/run_all_proofs.py\", line 428, in <module>\n    main()\n  File \"proof/run_all_proofs.py\", line 371, in main\n    part2a_struct = structural_rigidity.run_structural_rigidity()\n                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"proof/z3/structural_rigidity.py\", line 370, in run_structural_rigidity\n    assert s3[\"automorphism_count\"] == 1, f\"Expected 1 at Stage 3, got {s3['automorphism_count']}\"\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Expected 1 at Stage 3, got 2\n[1/3] Verifying Part I — Lean 4 Formalization & Consistency Suite...\n      PASS: 35 theorems kernel-verified (0 sorry, 0 custom axioms, 0 Classical.choice, nominal PhysDim/NonphysRank separation verified; 15 pure CIC).\n[2/3] Verifying Part II — Z3 Structural, Ch. 16 MUC & WordNet 3.0 / Oxford Suite..."
+    },
+    {
+      "id": "M13",
+      "file_path": "proof/z3/lexical_rigidity.py",
+      "symbol": "SLOT_REQUIREMENTS[\"Expansion\"] (Z3 lexical slot)",
+      "expected_check": "verify_tsr_sat_and_uniqueness() raises AssertionError: Canonical TSR assignment must be globally unique!",
+      "verifier_command": "python3 -B proof/run_all_proofs.py",
+      "exit_code": 1,
+      "caught": true,
+      "runtime_seconds": 1.126,
+      "failure_excerpt": "un_all_proofs.py\", line 372, in main\n    part2b_lex = lexical_rigidity.run_lexical_rigidity()\n                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"proof/z3/lexical_rigidity.py\", line 1305, in run_lexical_rigidity\n    uniqueness = verify_tsr_sat_and_uniqueness()\n                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"proof/z3/lexical_rigidity.py\", line 534, in verify_tsr_sat_and_uniqueness\n    assert second_status == z3.unsat, \"Canonical TSR assignment must be globally unique!\"\n           ^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Canonical TSR assignment must be globally unique!\n[1/3] Verifying Part I — Lean 4 Formalization & Consistency Suite...\n      PASS: 35 theorems kernel-verified (0 sorry, 0 custom axioms, 0 Classical.choice, nominal PhysDim/NonphysRank separation verified; 15 pure CIC).\n[2/3] Verifying Part II — Z3 Structural, Ch. 16 MUC & WordNet 3.0 / Oxford Suite..."
+    },
+    {
+      "id": "M14",
+      "file_path": "proof/etymology/combinatorial_proofs.py",
+      "symbol": "shares_4char_substring (Python combinatorics)",
+      "expected_check": "verify_part3_invariants() fails N_orth_unrelated == 3152 (becomes 3153) and run_self_tests() fails",
+      "verifier_command": "python3 -B proof/run_all_proofs.py",
+      "exit_code": 1,
+      "caught": true,
+      "runtime_seconds": 5.974,
+      "failure_excerpt": "oofs.py\", line 1546, in _build_primary_test_block\n    assert primary_alignment[\"etymology_edge_count\"] == 16\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n[1/3] Verifying Part I — Lean 4 Formalization & Consistency Suite...\n      PASS: 35 theorems kernel-verified (0 sorry, 0 custom axioms, 0 Classical.choice, nominal PhysDim/NonphysRank separation verified; 15 pure CIC).\n[2/3] Verifying Part II — Z3 Structural, Ch. 16 MUC & WordNet 3.0 / Oxford Suite...\n      PASS: S_29 cascade 12 -> 2 -> 1 + A3-S UNSAT (no two terms in the encoded Map are interchangeable); Ch. 16 uniqueness (pre-tiebreak = 2) + 21 1-minimal MUCs; 14-slot WordNet (verified_cross_platform_princeton_wordnet_3_0) + dictionary check (macos_coreservices_unavailable_verified_via_cross_platform_wordnet_3_0) + offline self-test.\n[3/3] Verifying Part III — Exact 80-Word WTWK Proof 36 Etymology Suite..."
+    },
+    {
+      "id": "M15",
+      "file_path": "proof/etymology/combinatorial_proofs.py",
+      "symbol": "exact_hypergeometric_upper_tail (Python fractions primary test)",
+      "expected_check": "verify_part3_invariants() fails 0.287 < exact_hypergeometric_p_float < 0.289 (p drops to 0.0429)",
+      "verifier_command": "python3 -B proof/run_all_proofs.py",
+      "exit_code": 1,
+      "caught": true,
+      "runtime_seconds": 5.853,
+      "failure_excerpt": "st_block\n    assert 0.2877 < p_val < 0.2879, f\"Unexpected primary p-value: {p_val}\"\n           ^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Unexpected primary p-value: 0.04290450804688024\n[1/3] Verifying Part I — Lean 4 Formalization & Consistency Suite...\n      PASS: 35 theorems kernel-verified (0 sorry, 0 custom axioms, 0 Classical.choice, nominal PhysDim/NonphysRank separation verified; 15 pure CIC).\n[2/3] Verifying Part II — Z3 Structural, Ch. 16 MUC & WordNet 3.0 / Oxford Suite...\n      PASS: S_29 cascade 12 -> 2 -> 1 + A3-S UNSAT (no two terms in the encoded Map are interchangeable); Ch. 16 uniqueness (pre-tiebreak = 2) + 21 1-minimal MUCs; 14-slot WordNet (verified_cross_platform_princeton_wordnet_3_0) + dictionary check (macos_coreservices_unavailable_verified_via_cross_platform_wordnet_3_0) + offline self-test.\n[3/3] Verifying Part III — Exact 80-Word WTWK Proof 36 Etymology Suite..."
+    }
+  ]
+}
