@@ -1,6 +1,6 @@
 # Preregistered Protocol for Held-Out Validation and Verification Hygiene (Parts 2–4)
 
-**Status:** Locked preregistered protocol (Commit 2 on branch `feat/heldout-preregistration`; pre-data decisions `A1`–`A4` confirmed before any OpenStax data was fetched).  
+**Status:** Locked initial preregistration at Commit 2 (`463ad9f93c8a276b1e0d9ee497198dfa2169d079`, branch `feat/heldout-preregistration`; pre-data decisions `A1`–`A4` confirmed before any OpenStax data was fetched) + Pre-Results Amendment 1 (Commit 6, prior to any Track `(b)` or Track `(c)` execution).  
 **Epistemic Contract:** Governed by Section 0 of [`proof/PROOF.md`](../PROOF.md). All confirmatory hypotheses, sampling seeds, exclusion rules, boundary flags, and statistical tests below are fixed before any held-out dataset is retrieved.
 
 ---
@@ -27,6 +27,15 @@ Before any OpenStax *University Physics* data was fetched or any held-out run be
 4. **`A4` — Part 3 Target Word List (Section 2.2):** Confirmed the `10` physical-quantity words in the `Physical` column of *The Map* (*SM v57* pp. 170–173): `acceleration`, `density`, `energy`, `force`, `mass`, `space`, `speed`, `time`, `velocity`, `volume`. All `7` flagged borderline terms (`light`, `radiation`, `electric`/`electro`, `magnetic`, `kinetic`, `rest`, `momentum`) are excluded from Part 3 targets.
 
 Every downstream Part 2, Part 3, and Part 4 data file, card/ruling/applier/labeling packet, evaluation script output JSON, and `proof/verification_certificate.json` MUST record the 40-character SHA of Commit 2 in the field `preregistration_commit_sha`.
+
+### 0.4 Pre-Results Amendment 1 — Author Withdrawal From Track `(a)`
+After Commit 5 (`c329a65fb8e833067686790096a105dd7f0fbf81`, which emitted the Track `(a)` worksheet) and with zero Track `(a)`, Track `(b)`, or Track `(c)` rulings or labels in existence, Nicholas declined to rule in Track `(a)` because he built *The Sovereign Mirror* table from $E = mc^2$ and Newton's mechanics only and is not qualified to rule on unfamiliar university physics equations.
+
+Under this pre-results amendment (Commit 6, locked prior to any Track `(b)` or Track `(c)` execution):
+1. **Track `(a)` retired pre-results:** `proof/heldout/build_ruling_packet.py`, `proof/heldout/ruling_packet.csv`, and `proof/heldout/packets/track_a_ruling_worksheet.md` are removed from the working tree via `git rm` in Commit 6 (Commit 5 remains in git history for audit), and no `proof/heldout/rulings.csv` is created.
+2. **Fixed `48`-law held-out sample:** With no Track `(a)` rulings to trigger minority-class adaptive extension, the held-out evaluation sample size is fixed at the `48` `primary_48` laws already drawn at Commit 3 (`C001`–`C065` minus the `17` `calibration_17` rows; `proof/heldout/reserve_pool.csv` stays unused on disk, and no adaptive stopping applies to Track `(b)` or Track `(c)`).
+3. **Two remaining evaluation tracks and single conjunctive primary test:** Part 2 proceeds exclusively with independent Track `(b)` (three fresh model-family rule-applier sessions on `proof/heldout/applier_packet.md`) and independent Track `(c)` (three separate fresh model-family physics-codebook sessions on `proof/heldout/labeling_packet.md`), evaluated under the single conjunctive primary test specified in Section 1.9.
+4. **Amendment SHA provenance:** `preregistration_commit_sha = 463ad9f93c8a276b1e0d9ee497198dfa2169d079` remains untouched across all Commit 3–4 files (`fetch_and_sample_laws.py`, `openstax_*`, `exclusion_log.csv`, `eligible_laws_pool.csv`, `reserve_pool.csv`, `sample_manifest.csv`, `build_law_cards.py`, `law_cards.csv`, `law_cards.md`, and `packets/stage0_*`). Commit 6's 40-character commit SHA is recorded alongside `preregistration_commit_sha` as `amendment_1_commit_sha` in Part 2 evaluation packets (`proof/heldout/applier_packet.md`, `proof/heldout/labeling_packet.md`), Part 2 evaluation scripts and output JSONs, and `proof/PROOF.md`.
 
 ---
 
@@ -143,7 +152,7 @@ Before sampling, every extracted row in canonical `(volume, chapter, row_idx)` o
 
 4. **`E4_EXACT_DUPLICATE`:** An exact repeat (same normalized formula/law statement) of an earlier retained entry within the 22-chapter corpus; the earliest occurrence in canonical `(volume, chapter, row_idx)` order is retained and later duplicates are logged under `E4_EXACT_DUPLICATE`.
 
-#### Deterministic Stratified Sampling and Minority-Class Reserve Extension
+#### Deterministic Stratified Sampling and Fixed Sample Size (Amendment 1)
 All surviving eligible laws are sorted canonically by `(volume, chapter, row_idx)` and assigned canonical `law_id` values `H001, H002, ...`. Sampling uses `rng = random.Random(20261113)` exclusively:
 1. Partition eligible rows into the 22 chapter buckets ordered canonically by `(volume, chapter)`. For each bucket in canonical chapter order, run `rng.shuffle(bucket)`.
 2. **Capacity-aware round-robin allocation totaling `N_primary = 48`:**
@@ -151,54 +160,49 @@ All surviving eligible laws are sorted canonically by `(volume, chapter, row_idx
    - If `48 - allocated >= len(avail)`, pop 1 row from each chapter in `avail` in canonical order (`allocated += len(avail)`), removing any chapter that becomes empty after its pop.
    - Otherwise (`remainder = 48 - allocated < len(avail)`), draw `chosen = rng.sample(avail, remainder)` (preserving canonical ordering of `avail` as input to `rng.sample`), pop 1 row from each chosen chapter, and finish primary allocation (`allocated == 48`).
 3. **Sequential Reserve Permutation:** Gather all unallocated eligible rows across all chapters in canonical `(volume, chapter, row_idx)` order into `reserve_pool`, execute `rng.shuffle(reserve_pool)`, and assign `reserve_rank = 1, 2, ..., len(reserve_pool)`.
-4. **Minority-Class Extension Rule:**
-   First, Nicholas completes Track `(a)` rulings on the `48` primary cards (`draw_phase = "primary_48"`) and records `n_Keep`, `n_Invert`, and `"the rule doesn't say"` counts. Rulings equal to `"the rule doesn't say"` are counted and reported separately and excluded from `(n_Keep, n_Invert)`.
-   - If $\min(n_{\text{Keep}}, n_{\text{Invert}}) < 10$ on the `48` primary cards, draw additional laws one-by-one in ascending `reserve_rank` order (`1, 2, ...`, flagged `draw_phase = "reserve_extension"`), generating and committing each new card via the Stage 0 non-TSR prompt (Section 1.4) before submitting it to Nicholas under the identical withheld-origin packet format, until one of three stopping conditions holds:
-     1. $\min(n_{\text{Keep}}, n_{\text{Invert}}) == 10$; OR
-     2. total drawn held-out laws reach `80` (`48` primary + `32` extension); OR
-     3. `reserve_pool` is exhausted.
+4. **Fixed Held-Out Sample Size (`48` `primary_48` Laws; Pre-Results Amendment 1):**
+   With Track `(a)` withdrawn pre-results (Section 0.4), the held-out evaluation sample size is fixed at the `48` `primary_48` OpenStax laws already drawn at Commit 3 (`C001`–`C065` minus the `17` `calibration_17` rows). `proof/heldout/reserve_pool.csv` stays unused on disk, and no minority-class adaptive extension or adaptive stopping is applied to Track `(b)` or Track `(c)`.
 
 ### 1.4 Stage 0 — Plain-Language Law Cards (`proof/heldout/law_cards.csv` & `proof/heldout/law_cards.md`)
 - **Card Writer & Isolation:** One fresh external model session (run by Nicholas; repository agents MUST NOT write law cards) with zero access to this repository, *The Sovereign Mirror*, *What the Words Knew*, or TSR writes a plain-language card for every drawn held-out law and for the 17 existing laws from `benchmarkRows17`.
-- **Pooling, Shuffling, and Withheld Manifest:** The `48` primary held-out laws and the `17` existing laws are pooled (`65` laws) and shuffled with `random.Random(20261113)` under sequential neutral IDs `C001, C002, ..., C065`. The mapping between `card_id` (`C001..`), `source_set` (`"heldout"` vs. `"benchmark_17"`), `law_id`, `benchmark_id`, `volume`, `chapter`, `row_idx`, `eq_number`, `draw_phase`, and `reserve_rank` is stored solely in `proof/heldout/sample_manifest.csv` and stays withheld from the card writer, Nicholas during Track `(a)`, Track `(b)` sessions, and Track `(c)` sessions.
-- **Structured JSON Output & Deterministic Serialization (`proof/heldout/build_law_cards.py`):** The single fresh external card-writer session outputs one structured JSON array of objects, each containing exact keys `card_id`, `what_it_says`, `quantities_related`, and `conditions_to_hold`, for `C001..C065` (and for any sequential `C066..` `reserve_extension` laws if minority-class extension triggers). A deterministic repository serialization script (`proof/heldout/build_law_cards.py`) validates the JSON schema, exact sequential `card_id` coverage (`C001..C065`, or `C066..` on extension), non-empty string values, and zero TSR vocabulary, and writes `proof/heldout/law_cards.csv` (appending `preregistration_commit_sha`) and `proof/heldout/law_cards.md` verbatim without editing card wording.
+- **Pooling, Shuffling, and Withheld Manifest:** The `48` primary held-out laws and the `17` existing laws are pooled (`65` laws) and shuffled with `random.Random(20261113)` under sequential neutral IDs `C001, C002, ..., C065`. The mapping between `card_id` (`C001..`), `source_set` (`"heldout"` vs. `"benchmark_17"`), `law_id`, `benchmark_id`, `volume`, `chapter`, `row_idx`, `eq_number`, `draw_phase`, and `reserve_rank` is stored solely in `proof/heldout/sample_manifest.csv` and stays withheld from the card writer, Track `(b)` sessions, and Track `(c)` sessions (and was withheld from Track `(a)` prior to its pre-results withdrawal in Amendment 1).
+- **Structured JSON Output & Deterministic Serialization (`proof/heldout/build_law_cards.py`):** The single fresh external card-writer session outputs one structured JSON array of objects, each containing exact keys `card_id`, `what_it_says`, `quantities_related`, and `conditions_to_hold`, for `C001..C065` (fixed at `65` cards total under Amendment 1, with no `C066..` `reserve_extension` cards drawn). A deterministic repository serialization script (`proof/heldout/build_law_cards.py`) validates the JSON schema, exact sequential `card_id` coverage (`C001..C065`), non-empty string values, and zero TSR vocabulary, and writes `proof/heldout/law_cards.csv` (appending `preregistration_commit_sha`) and `proof/heldout/law_cards.md` verbatim without editing card wording.
 - **Required Card Fields:** Each card in `proof/heldout/law_cards.csv` and `proof/heldout/law_cards.md` states:
   1. `what_it_says`: Plain-language statement of the physical law plus its standard mathematical formula where present.
   2. `quantities_related`: The physical quantities related by the law.
   3. `conditions_to_hold`: The physical conditions required for the law to hold (for example: mass or rotational inertia, spatial distance or separation, physical contact/surfaces or walls, gravitational curvature/field, or definition/equivalence/conservation/frame invariance).
 - **Zero TSR Vocabulary Permitted:** Law cards MUST contain zero TSR vocabulary (`Movement` as a TSR term, `Current of Consciousness`, `Vibrance`, `Appreciation`, `Point of Reflection`, `Point of Attraction`, `Vortex`, `Convergence` as TSR terms, `Nonphysical Movement`, `Expansion Dilation`, `Eternal-Energetic-Entity`, `Conscious-physical`, `conscious energy`, `Keep`, `Invert`, `sovereign`, `nonphysical`, `receptivity`, `receptive`, `TSR`, `The Sovereign Mirror`, etc.). The deterministic serialization/filter script `proof/heldout/build_law_cards.py` MUST verify zero TSR vocabulary matches in the input JSON, `proof/heldout/law_cards.csv`, and `proof/heldout/law_cards.md` before commit (using case-insensitive matching for TSR-exclusive terms such as `vibrance`, `appreciation`, `point of reflection`, `point of attraction`, `sovereign`, `nonphysical`, `receptivity`, `receptive`, `keep`, `invert`, `tsr`, and capitalized/phrase matching for polysemous physics words such as `Movement`, `Current`, `Vortex`, `Convergence` so standard physics terms such as electric current remain unblocked).
-- **Stage 0 Commit Gate:** `proof/heldout/law_cards.csv` and `proof/heldout/law_cards.md` MUST be committed to git BEFORE Track `(a)`, Track `(b)`, or Track `(c)` begins. If minority-class extension (Section 1.3) triggers, each sequential `reserve_extension` law is converted to a JSON card object using the identical Stage 0 non-TSR prompt, validated and serialized verbatim by `proof/heldout/build_law_cards.py` under sequential neutral IDs (`C066, ...`), and committed to `proof/heldout/law_cards.csv` and `proof/heldout/law_cards.md` BEFORE Nicholas rules on it and before Tracks `(b)` and `(c)` run.
+- **Stage 0 Commit Gate:** `proof/heldout/law_cards.csv` and `proof/heldout/law_cards.md` (`C001..C065`) were committed to git in Commit 4 (`b19f5da7bb3f1516d568434d49febbf043416ae9`) BEFORE Track `(b)` or Track `(c)` begins. Under Amendment 1 (Section 0.4), no `C066..` `reserve_extension` laws are drawn.
 - **Schemas:**
   - `proof/heldout/law_cards.csv`: `card_id, what_it_says, quantities_related, conditions_to_hold, preregistration_commit_sha`
-  - `proof/heldout/sample_manifest.csv` (withheld until all three tracks commit): `card_id, source_set, law_id, benchmark_id, volume, chapter, row_idx, eq_number, draw_phase, reserve_rank, preregistration_commit_sha`
+  - `proof/heldout/sample_manifest.csv` (withheld until both Track `(b)` and Track `(c)` commit): `card_id, source_set, law_id, benchmark_id, volume, chapter, row_idx, eq_number, draw_phase, reserve_rank, preregistration_commit_sha`
 
-### 1.5 Three Independent Ruling Tracks — Each Committed Before Joining Any of Them
-All three tracks operate on the committed plain-language law cards without sight of each other's outputs. Repository agents MUST NOT produce or edit any ruling in Track `(a)`, Track `(b)`, or Track `(c)`. All three output files (`proof/heldout/rulings.csv`, `proof/heldout/appliers.csv`, and `proof/heldout/labels.csv`) MUST be committed independently to git BEFORE any script reads `proof/heldout/sample_manifest.csv` to join them:
+### 1.5 Two Independent Evaluation Tracks — Each Committed Before Joining
+Both remaining evaluation tracks (`(b)` and `(c)`) operate on the committed plain-language law cards (`C001..C065`) without sight of each other's outputs or `proof/heldout/sample_manifest.csv`. Repository agents MUST NOT produce or edit any ruling in Track `(b)` or any label in Track `(c)`. Both output files (`proof/heldout/appliers.csv` and `proof/heldout/labels.csv`), together with the six raw session JSON outputs, MUST be committed independently to git BEFORE any script reads `proof/heldout/sample_manifest.csv` to separate `"heldout"` (`48`) from `"benchmark_17"` (`17`) or join Track `(b)` with Track `(c)`:
 
-1. **Track `(a)` — Author Rulings (`proof/heldout/rulings.csv`):**
-   - Nicholas rules **first**, receiving ONLY the held-out cards (`card_id, what_it_says, quantities_related, conditions_to_hold` via `proof/heldout/ruling_packet.csv`, with `volume`, `chapter`, `law_id`, `draw_phase`, `reserve_rank`, `source_set`, and all Track `(b)`/`(c)` outputs withheld; zero sight of `(b)` or `(c)`).
-   - For each held-out card, Nicholas assigns `ruling` $\in \{\text{"Keep"}, \text{"Invert"}, \text{"the rule doesn't say"}\}$, plus optional `note`.
-   - The minority-class check $\min(n_{\text{Keep}}, n_{\text{Invert}}) < 10$ on the `48` primary cards excludes `"the rule doesn't say"` and triggers sequential reserve extension up to at most `80` held-out laws (`48` primary + `32` extension) as specified in Section 1.3.
-   - **Schema (`proof/heldout/rulings.csv`):** `card_id, ruling, note, preregistration_commit_sha`
+1. **Track `(a)` — Author Rulings (`WITHDRAWN PRE-RESULTS` in Amendment 1):**
+   - Withdrawn prior to any evaluation execution under Section 0.4 because Nicholas built *The Sovereign Mirror* table from $E = mc^2$ and Newton's mechanics only and declined to rule on unfamiliar university physics equations.
+   - `proof/heldout/build_ruling_packet.py`, `proof/heldout/ruling_packet.csv`, and `proof/heldout/packets/track_a_ruling_worksheet.md` are retired via `git rm` in Commit 6 (Commit 5 `c329a65fb8e833067686790096a105dd7f0fbf81` is retained in git history for audit), and no `proof/heldout/rulings.csv` is created.
 
 2. **Track `(b)` — Independent Rule Appliers (`proof/heldout/appliers.csv`):**
-   - Nicholas runs **3 fresh sessions** (`b1`, `b2`, `b3`) of **three distinct model families** with zero access to this repository, *The Sovereign Mirror*, *What the Words Knew*, or any TSR material outside `proof/heldout/applier_packet.md`, and zero sight of Track `(a)`, Track `(c)`, or each other's outputs.
-   - Each Track `(b)` session receives ONLY:
+   - Nicholas runs **3 fresh sessions** (`b1`, `b2`, `b3`) of **three distinct model families** on `proof/heldout/applier_packet.md`, with zero access to this repository, *The Sovereign Mirror*, *What the Words Knew*, or any TSR material outside `proof/heldout/applier_packet.md`, and zero sight of Track `(c)` or each other's outputs.
+   - Each Track `(b)` session receives ONLY `proof/heldout/applier_packet.md`, containing:
      1. The locked Track `(b)` text block in Section 1.6 (the two exact *SM v57* rule passages from pp. 20 and 116 with the Ch. 2 p. 20 inline example clause replaced by `[...]`, plus the half-page of exact *SM v57* term definitions — zero worked rulings and nothing else from TSR); and
-     2. The shuffled plain-language law cards (`C001..`, pooling all drawn held-out laws and the 17 existing laws from `benchmarkRows17`, presented in `random.Random(20261113)` order without origin labels).
-   - Each session assigns `ruling` $\in \{\text{"Keep"}, \text{"Invert"}, \text{"the rule doesn't say"}\}$ and a one-line `rationale` for every card.
+     2. All `65` shuffled plain-language law cards (`C001..C065`, pooling the `48` `primary_48` held-out laws and the `17` existing laws from `benchmarkRows17`, presented in `random.Random(20261113)` order without origin labels).
+   - Each session outputs JSON `[{"card_id": ..., "ruling": ..., "rationale": ...}]` in order `C001..C065`, assigning `ruling` $\in \{\text{"Keep"}, \text{"Invert"}, \text{"the rule doesn't say"}\}$ and a one-line `rationale` citing which phrase of the quoted rule applies. Raw session JSON outputs are committed alongside `proof/heldout/appliers.csv`.
    - **3-Category Majority (`b_maj_ruling`):** Across `(b1_ruling, b2_ruling, b3_ruling)`, if at least 2 of 3 sessions agree on one category in `{"Keep", "Invert", "the rule doesn't say"}`, `b_maj_ruling` equals that category; if all 3 sessions select distinct categories (a 1-1-1 three-way split), record `b_maj_ruling = "no_majority"` (counted as non-definite / non-match against `"Keep"` or `"Invert"` in unconditional metrics).
    - **Schema (`proof/heldout/appliers.csv`):**
-     `card_id, b1_model_family, b2_model_family, b3_model_family, b1_ruling, b1_rationale, b2_ruling, b2_rationale, b3_ruling, b3_rationale, b_maj_ruling, preregistration_commit_sha`
+     `card_id, b1_model_family, b2_model_family, b3_model_family, b1_ruling, b1_rationale, b2_ruling, b2_rationale, b3_ruling, b3_rationale, b_maj_ruling, preregistration_commit_sha, amendment_1_commit_sha`
 
 3. **Track `(c)` — Physics Codebook & Mechanical Rule Evaluation (`proof/heldout/labels.csv`):**
-   - Nicholas runs **3 additional fresh sessions** (`c1`, `c2`, `c3`) of **three distinct model families** (separate sessions from Track `(b)`) with zero access to this repository, *The Sovereign Mirror*, *What the Words Knew*, Track `(a)`, Track `(b)`, or the Section 1.6 rule quotes.
+   - Nicholas runs **3 separate fresh sessions** (`c1`, `c2`, `c3`) of **three distinct model families** (separate sessions from Track `(b)`) on `proof/heldout/labeling_packet.md`, with zero access to this repository, *The Sovereign Mirror*, *What the Words Knew*, Track `(b)`, or the Section 1.6 rule quotes.
    - Each Track `(c)` session receives ONLY `proof/heldout/labeling_packet.md`, containing:
-     1. The verbatim 4-question yes/no physics codebook (Section 1.7); and
-     2. The shuffled plain-language law cards (`C001..`, pooling all drawn held-out laws and the 17 existing laws from `benchmarkRows17`, presented in `random.Random(20261113)` order without origin labels).
-   - Each session answers the 4 binary (`Yes` / `No`) questions (`q1..q4`) on every card. Strict 2/3 majority vote per question (`q1_maj..q4_maj`) feeds the frozen formulas in Section 1.2 to emit `pred_ch2` (`R_read_v57_ch2`), `pred_ch16` (`R_read_v57_ch16`), and `pred_naive_mass` (`R_read_naive_mass`).
+     1. The verbatim 4-question yes/no pure-physics codebook and pure-physics `q4` scope paragraph (Section 1.7, with zero TSR vocabulary or `"Keep"`/`"Invert"` terms); and
+     2. All `65` shuffled plain-language law cards (`C001..C065`, pooling the `48` `primary_48` held-out laws and the `17` existing laws from `benchmarkRows17`, presented in `random.Random(20261113)` order without origin labels).
+   - Each session outputs JSON `[{"card_id": ..., "q1": ..., "q2": ..., "q3": ..., "q4": ...}]` in order `C001..C065`, answering `"Yes"` or `"No"` for each question on every card. Raw session JSON outputs are committed alongside `proof/heldout/labels.csv`.
+   - Strict 2/3 majority vote per question (`q1_maj..q4_maj`) feeds the frozen formulas in Section 1.2 to emit `pred_ch2` (`R_read_v57_ch2`), `pred_ch16` (`R_read_v57_ch16`), and `pred_naive_mass` (`R_read_naive_mass`).
    - **Schema (`proof/heldout/labels.csv`):**
-     `card_id, c1_model_family, c2_model_family, c3_model_family, c1_q1, c1_q2, c1_q3, c1_q4, c2_q1, c2_q2, c2_q3, c2_q4, c3_q1, c3_q2, c3_q3, c3_q4, q1_maj, q2_maj, q3_maj, q4_maj, pred_ch2, pred_ch16, pred_naive_mass, preregistration_commit_sha`
+     `card_id, c1_model_family, c2_model_family, c3_model_family, c1_q1, c1_q2, c1_q3, c1_q4, c2_q1, c2_q2, c2_q3, c2_q4, c3_q1, c3_q2, c3_q3, c3_q4, q1_maj, q2_maj, q3_maj, q4_maj, pred_ch2, pred_ch16, pred_naive_mass, preregistration_commit_sha, amendment_1_commit_sha`
 
 ### 1.6 Locked Track `(b)` Rule-Applier Text Block (`proof/heldout/applier_packet.md`)
 In Track `(b)`, `proof/heldout/applier_packet.md` provides only the prompt instructions (asking for `ruling ∈ {"Keep", "Invert", "the rule doesn't say"}` and a one-line `rationale` for each card `C001..`), the shuffled plain-language law cards, and the locked *The Sovereign Mirror* (v57) text block below (zero worked rulings from Ch. 16 or elsewhere):
@@ -246,10 +250,16 @@ In Track `(b)`, `proof/heldout/applier_packet.md` provides only the prompt instr
 - **`q4_shared_energy_curvature` (`Yes` / `No`):** *Does the equation/statement govern shared gravitational/spacetime curvature, gravitational wells or lensing, or conservative potential-well / shared field energy coupling across space — including all Newtonian and relativistic gravitational laws (rather than non-gravitational inertial resistance to acceleration or point-to-point transport/dissipation)?*
 
 #### Locked `q4` Scope Rule — Option B (All-Gravitation Scope, Frozen Verbatim into `proof/heldout/labeling_packet.md`)
-Under confirmed pre-data decision `A3` (**Option B — All-Gravitation Scope**), answer `q4 = Yes` for **all gravitational laws**, including Newtonian universal gravitation ($F = Gm_1 m_2 / r^2$) and closely related orbital/gravitational force laws, gravitational field/potential/wells ($U_g = -GMm/r$, escape/orbital balance), relativistic spacetime curvature / mass-energy warping, and gravitational lensing (matching *SM v57* pp. 117 and 121, where gravity reflects as Attraction — what receptive and resistant make together through the one shared energy). Under `R_read_v57_ch16`, `q4 = Yes` predicts `"Keep"` for all such gravitational laws, while non-gravitational laws involving inertial resistance to acceleration or point-to-point transport/dissipation remain `q4 = No`. This wording is frozen verbatim into `proof/heldout/labeling_packet.md`. The frozen Lean predicates and benchmark definitions at commit `df6d8fbab8aec198ac4d6af58455a206f8bc6ebd` (`isIdentityOrEquiv`, `isSharedEnergyWork`, `dependsOnResistanceOrSeparation`, `R_read_v57_ch2`, `R_read_v57_ch16`, `R_read_naive_mass`, `benchmarkRows17`, and `v57_rule_wordings_benchmark`) remain unchanged.
+
+**Pure-Physics `q4` Scope Text (placed verbatim in `proof/heldout/labeling_packet.md`):**
+
+> Answer `q4 = Yes` for **all gravitational laws**, including Newtonian universal gravitation ($F = Gm_1 m_2 / r^2$) and closely related orbital/gravitational force laws, gravitational field/potential/wells ($U_g = -GMm/r$, escape/orbital balance), relativistic spacetime curvature / mass-energy warping, and gravitational lensing. Non-gravitational laws involving inertial resistance to acceleration or point-to-point transport/dissipation remain `q4 = No`.
+
+**TSR / Lean Provenance Note (kept out of `proof/heldout/labeling_packet.md` so Track `(c)` sees zero TSR vocabulary or `"Keep"`/`"Invert"` words):**
+Under confirmed pre-data decision `A3` (**Option B — All-Gravitation Scope**), the pure-physics `q4` scope rule above matches *SM v57* pp. 117 and 121 (where gravity reflects as Attraction — what receptive and resistant make together through the one shared energy). Under `R_read_v57_ch16`, `q4 = Yes` predicts `"Keep"` for all such gravitational laws, while non-gravitational laws involving inertial resistance to acceleration or point-to-point transport/dissipation remain `q4 = No`. The frozen Lean predicates and benchmark definitions at commit `df6d8fbab8aec198ac4d6af58455a206f8bc6ebd` (`isIdentityOrEquiv`, `isSharedEnergyWork`, `dependsOnResistanceOrSeparation`, `R_read_v57_ch2`, `R_read_v57_ch16`, `R_read_naive_mass`, `benchmarkRows17`, and `v57_rule_wordings_benchmark`) remain unchanged.
 
 ### 1.8 Calibration on Existing 17 (`benchmarkRows17`, Never Pooled with Held-Out)
-Both Track `(b)` and Track `(c)` include the 17 existing laws from `benchmarkRows17` embedded as plain-language cards in the shuffled `C001..` packets (`proof/heldout/appliers.csv` and `proof/heldout/labels.csv`). Calibration on the 17 is analyzed separately and NEVER pooled with held-out laws:
+Both Track `(b)` and Track `(c)` include the 17 existing laws from `benchmarkRows17` embedded as plain-language cards in the shuffled `C001..C065` packets (`proof/heldout/appliers.csv` and `proof/heldout/labels.csv`). Calibration on the 17 is analyzed separately and NEVER pooled with held-out laws:
 1. **Track `(b)` on `benchmarkRows17`:**
    - Exact rational **3-category Fleiss' $\kappa$** (`{"Keep", "Invert", "the rule doesn't say"}`) among `(b1, b2, b3)`.
    - Agreement rate of each individual applier (`b1`, `b2`, `b3`) and of the majority (`b_maj_ruling`) against `benchmarkRows17.bookRuling`, reported **overall (`n = 17`)** AND **split by provenance (`"construction"` [4 rows: `7, 14, 15, 16`] vs. `"applied later"` [13 rows: `1–6, 8–13, 17`], as recorded in `proof/PROOF.md` Section 1.3)**.
@@ -258,27 +268,29 @@ Both Track `(b)` and Track `(c)` include the 17 existing laws from `benchmarkRow
    - Per-question `%` agreement and exact rational **Fleiss' $\kappa$** among `(c1, c2, c3)` for each codebook question (`q1..q4`).
    - Per-question `%` agreement and exact Cohen's $\kappa$ between the 2/3 majority votes `(q1_maj, q2_maj, q3_maj, q4_maj)` and the existing Lean encodings in `proof/lean/TSR/MirrorFunctor.lean` (`isIdentityOrEquiv`, `hasMass`, `lawAST == .SpatialSeparationDependence`, `isSharedEnergyWork`).
    - Induced `R_read_v57_ch2` (`pred_ch2`) and `R_read_v57_ch16` (`pred_ch16`) agreement rates against `benchmarkRows17.bookRuling` (reported overall and split by `"construction"` vs. `"applied later"`).
+3. **Direct Track `(b)` vs. Track `(c)` Agreement on `benchmarkRows17` (`n = 17`):**
+   - Direct agreement rate (`matches / 17`), exact rational Cohen's $\kappa$, full confusion matrices, and row-by-row comparison between `b_maj_ruling` (and individual appliers `b1..b3`) and `pred_ch16` (`R_read_v57_ch16`) as well as `pred_ch2` (`R_read_v57_ch2`), reported **overall (`n = 17`)** AND **split by provenance (`"construction"` [4 rows] vs. `"applied later"` [13 rows])**.
 
-### 1.9 Held-Out Evaluation Metrics, Primary Test, and Pre-Declared Secondary Benchmark
-All Part 2 held-out metrics below are computed **strictly on held-out cards** (`source_set == "heldout"` in `proof/heldout/sample_manifest.csv`, NEVER pooled with the 17 calibration rows), using exact rational arithmetic (`fractions.Fraction`) for all agreement statistics, rates, and Fisher's exact tests:
+### 1.9 Held-Out Evaluation Metrics and Single Confirmatory Primary Test (`48` OpenStax Laws)
+All Part 2 held-out metrics below are computed **strictly on the `48` held-out cards** (`source_set == "heldout"` in `proof/heldout/sample_manifest.csv`, NEVER pooled with the `17` calibration rows), using exact rational arithmetic (`fractions.Fraction`) for all agreement statistics, rates, and Fisher's exact tests:
 
 1. **Inter-Session Agreement (`Fleiss' kappa`):**
-   - Exact rational **3-category Fleiss' $\kappa$ among `(b1, b2, b3)`** across all held-out cards (`{"Keep", "Invert", "the rule doesn't say"}`), plus descriptive 2-category Fleiss' $\kappa$ (`{"Keep", "Invert"}`) restricted to held-out cards where all three Track `(b)` appliers gave definite rulings.
-   - Exact rational **2-category Fleiss' $\kappa$ among `(c1, c2, c3)`** per codebook question (`q1..q4`) across all held-out cards.
+   - Exact rational **3-category Fleiss' $\kappa$ among `(b1, b2, b3)`** across all `48` held-out laws (`{"Keep", "Invert", "the rule doesn't say"}`).
+   - Descriptive **2-category Fleiss' $\kappa$** (`{"Keep", "Invert"}`) restricted to held-out cards where all three Track `(b)` appliers gave definite rulings (`b1, b2, b3 ∈ {"Keep", "Invert"}`).
+   - Exact rational **2-category Fleiss' $\kappa$ among `(c1, c2, c3)`** per codebook question (`q1..q4`) across all `48` held-out laws.
 
-2. **Agreement With Nicholas (`(a)`) Across Appliers and Mechanical Rules:**
-   For each Track `(b)` predictor (`b1`, `b2`, `b3`, `b_maj_ruling`) and each Track `(c)` mechanical reading (`R_read_v57_ch2`, `R_read_v57_ch16`):
-   - **Across ALL held-out cards** (including `"the rule doesn't say"` and any `"no_majority"` 3-way split): raw agreement, exact rational Cohen's $\kappa$, and the full confusion matrix (`rows = Nicholas (a) ruling`, `cols = predictor output`).
-   - **Across Nicholas's definite rulings (`ruling ∈ {"Keep", "Invert"}`):** unconditional raw agreement (counting an applier's `"the rule doesn't say"` or `"no_majority"` as a non-match), exact rational Cohen's $\kappa$, full confusion matrix, and conditional raw agreement restricted to held-out cards decided as `"Keep"` or `"Invert"` by both Nicholas and the applier/majority.
+2. **`"the rule doesn't say"` & `"no_majority"` Inventory:**
+   Exact counts across `b1`, `b2`, `b3`, and `b_maj_ruling` (`"the rule doesn't say"` and `"no_majority"` 3-way splits), definite-majority coverage $N_{\text{def}} / 48$ (where $N_{\text{def}}$ is the count of held-out laws with `b_maj_ruling ∈ {"Keep", "Invert"}`), and complete per-law listing (`card_id, law_id, volume, chapter, eq_number, description`) of every `"the rule doesn't say"` or `"no_majority"` held-out card.
 
-3. **`"the rule doesn't say"` Inventory:**
-   Exact count and per-law listing (`card_id, law_id, volume, chapter, eq_number, description`) of every `"the rule doesn't say"` answer across Nicholas `(a)`, `b1`, `b2`, `b3`, and `b_maj_ruling` (plus any `"no_majority"` split).
+3. **Unconditional Agreement (`matches / 48`) and Full $4 \times 2$ Confusion Matrices:**
+   - Compare `b_maj_ruling` (`"Keep"`, `"Invert"`, `"the rule doesn't say"`, `"no_majority"`) against all 5 mechanical predictors (`R_read_v57_ch16` [`pred_ch16`], `R_read_v57_ch2` [`pred_ch2`], `R_read_naive_mass` [`pred_naive_mass`], `R_read_always_keep`, `R_read_always_invert`), reporting exact `matches / 48` and the full $4 \times 2$ confusion matrix for each predictor (where `"the rule doesn't say"` and `"no_majority"` count as non-matches).
+   - Also report unconditional `matches / 48` and full $3 \times 2$ confusion matrices for each individual Track `(b)` applier (`b1`, `b2`, `b3`) against `R_read_v57_ch16` (`pred_ch16`) and `R_read_v57_ch2` (`pred_ch2`).
 
-4. **Accuracy, TPR, TNR, Balanced Accuracy (`BA`), and 95% Wilson-MOVER CI (`z = 1.959963984540054`):**
-   Computed on Nicholas's definite rulings (`ruling ∈ {"Keep", "Invert"}`, treating `"Invert"` as the positive class $i = 1$ with count $n_1 = n_{\text{Invert}}$, and `"Keep"` as the negative class $i = 2$ with count $n_2 = n_{\text{Keep}}$):
-   - $\text{TPR} = k_1 / n_1$ (matches on `"Invert"` laws; `"the rule doesn't say"` / `"no_majority"` by an applier counts in $n_1$ and not in $k_1$)
-   - $\text{TNR} = k_2 / n_2$ (matches on `"Keep"` laws; `"the rule doesn't say"` / `"no_majority"` by an applier counts in $n_2$ and not in $k_2$)
-   - Overall unconditional accuracy $= (k_1 + k_2) / (n_1 + n_2)$
+4. **Conditional Metrics on Definite `b_maj_ruling` (`"Keep"` / `"Invert"`, $N_{\text{def}} = n_1 + n_2$):**
+   Restricted to held-out laws with definite `b_maj_ruling ∈ {"Keep", "Invert"}`, treating `"Invert"` as the positive class $i = 1$ ($n_1 = n_{\text{Invert}}$) and `"Keep"` as the negative class $i = 2$ ($n_2 = n_{\text{Keep}}$):
+   - $\text{TPR} = k_1 / n_1$ (matches on positive-class laws)
+   - $\text{TNR} = k_2 / n_2$ (matches on negative-class laws)
+   - Conditional accuracy $= (k_1 + k_2) / (n_1 + n_2)$
    - Balanced accuracy $\text{BA} = (\text{TPR} + \text{TNR}) / 2$
    - Closed-form **95% Wilson-MOVER (Newcombe Method 10 square-and-add) confidence interval $[L_{\text{BA}}, U_{\text{BA}}]$** using $z = 1.959963984540054$ for $\hat{p}_1 = k_1 / n_1 = \text{TPR}$ and $\hat{p}_2 = k_2 / n_2 = \text{TNR}$:
 
@@ -288,20 +300,19 @@ $$L_{\text{BA}} = \frac{1}{2}\left(\hat{p}_1 + \hat{p}_2 - \sqrt{(\hat{p}_1 - l_
 
 $$U_{\text{BA}} = \frac{1}{2}\left(\hat{p}_1 + \hat{p}_2 + \sqrt{(u_1 - \hat{p}_1)^2 + (u_2 - \hat{p}_2)^2}\right).$$
 
-   Report all five quantities (unconditional accuracy, $\text{TPR}$, $\text{TNR}$, $\text{BA}$, and $[L_{\text{BA}}, U_{\text{BA}}]$) for all **9 predictors**: `R_read_v57_ch16`, `R_read_v57_ch2`, `b1`, `b2`, `b3`, `b_maj_ruling`, and the 3 baselines (`R_read_always_keep`, `R_read_always_invert`, `R_read_naive_mass`).
+   Report all five quantities (accuracy, $\text{TPR}$, $\text{TNR}$, $\text{BA}$, and $[L_{\text{BA}}, U_{\text{BA}}]$) on the definite-`b_maj_ruling` subset for: `R_read_v57_ch16`, `R_read_v57_ch2`, `b1..b3` vs `pred_ch16` (treating `pred_ch16 == "Invert"` as positive class $n_1$ and `pred_ch16 == "Keep"` as negative class $n_2$, with any `"the rule doesn't say"` by `b_j` counted in $n_1$ or $n_2$ and not in $k_1$ or $k_2$), `R_read_naive_mass`, `R_read_always_keep`, and `R_read_always_invert`.  
+   **Degenerate-Class Rule:** If $n_1 == 0$ or $n_2 == 0$, $\text{TPR}$, $\text{TNR}$, $\text{BA}$, and $[L_{\text{BA}}, U_{\text{BA}}]$ are undefined (`null`), Fisher's exact $p = 1$ (`1/1`), and the confirmatory test does not pass.
 
-5. **Per-Law Disagreement Log:**
-   List **every held-out disagreement by law** (`card_id, law_id, volume, chapter, eq_number, description, nicholas_ruling, b1_ruling, b2_ruling, b3_ruling, b_maj_ruling, pred_ch2, pred_ch16`) with a one-line explanation of why the disagreement occurred, covering all disagreements between Nicholas `(a)`, Track `(b)` appliers (`b1`, `b2`, `b3`, `b_maj_ruling`), and Track `(c)` mechanical readings (`R_read_v57_ch2`, `R_read_v57_ch16`).
+5. **Complete Per-Law Disagreement Log:**
+   List **every held-out disagreement by law** (`card_id, law_id, volume, chapter, eq_number, description, b1_ruling, b2_ruling, b3_ruling, b_maj_ruling, pred_ch2, pred_ch16, note`) covering all disagreements among Track `(b)` appliers (`b1`, `b2`, `b3`, `b_maj_ruling`) and Track `(c)` mechanical readings (`pred_ch2`, `pred_ch16`), with a one-line `note` explaining why the disagreement occurred.
 
-#### Primary Confirmatory Test (ONLY Confirmatory Test in Part 2)
-- Compute the one-sided Fisher's exact test (`fractions.Fraction`, hypergeometric upper tail for $\text{OR} > 1$) on the 2×2 contingency table `[[TP, FP], [FN, TN]]` comparing `R_read_v57_ch16` against Nicholas's definite rulings (`"Keep"` / `"Invert"`, excluding `"the rule doesn't say"` which is counted and listed separately).
-- **Confirmatory Support Criterion:** `R_read_v57_ch16` passes confirmatory held-out validation iff **BOTH**:
-  1. One-sided Fisher's exact $p < 0.05$; **AND**
-  2. Closed-form 95% Wilson-MOVER lower bound $L_{\text{BA}} > 0.50$.
+#### Single Confirmatory Primary Test (Part 2)
+Held-out validation on the `48` OpenStax laws passes iff **ALL THREE** conditions hold simultaneously:
+1. Exact rational **3-category Fleiss' $\kappa \ge 0.60$** among `(b1, b2, b3)` across all `48` held-out laws (`{"Keep", "Invert", "the rule doesn't say"}`); **AND**
+2. **One-sided Fisher's exact $p < 0.05$** (`fractions.Fraction`, hypergeometric upper tail for $\text{OR} > 1$ on the $2 \times 2$ contingency table `[[TP, FP], [FN, TN]]` with `"Invert"` as the positive class) comparing `R_read_v57_ch16` (`pred_ch16`) against definite `b_maj_ruling` (`"Keep"` / `"Invert"`) on the held-out laws; **AND**
+3. **Closed-form 95% Wilson-MOVER lower bound $L_{\text{BA}} > 0.50$** for `R_read_v57_ch16` (`pred_ch16`) against definite `b_maj_ruling`.
 
-#### Pre-Declared Secondary Benchmark (Part 2)
-- **3-Category Applier Consistency Benchmark:** Exact rational 3-category Fleiss' $\kappa \ge 0.60$ among the three independent Track `(b)` appliers `(b1, b2, b3)` across all held-out cards (`{"Keep", "Invert", "the rule doesn't say"}`), corresponding to the conventional substantial-agreement threshold.
-- All other Part 2 metrics (`R_read_v57_ch2`, `b1`, `b2`, `b3`, `b_maj_ruling`, conditional accuracies, `R_read_naive_mass`, `R_read_always_keep`, `R_read_always_invert`, per-chapter tables, and calibration metrics on `benchmarkRows17`) are reported strictly as secondary or descriptive outputs.
+If $n_1 == 0$ or $n_2 == 0$ on definite `b_maj_ruling`, Fisher's $p = 1$ (`1/1`), $\text{TPR}/\text{TNR}/\text{BA}/[L_{\text{BA}}, U_{\text{BA}}]$ are `null`, and the confirmatory test does not pass. All other Part 2 metrics (`R_read_v57_ch2`, `b1..b3` vs `pred_ch16`, `R_read_naive_mass`, `R_read_always_keep`, `R_read_always_invert`, unconditional $4 \times 2$ metrics, 2-category Fleiss' $\kappa$ on unanimously definite cards, per-chapter breakdowns, and calibration metrics on `benchmarkRows17`) are reported strictly as descriptive or secondary outputs.
 
 ---
 
