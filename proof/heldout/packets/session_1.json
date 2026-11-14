@@ -1,0 +1,587 @@
+[
+  {
+    "card_id": "C001",
+    "q1": "Yes",
+    "q2": "No",
+    "q3": "No",
+    "q4": "No",
+    "ruling": "Keep",
+    "rationale": "Equates volume flow rate across cross sections of a steady incompressible stream, matching 'an identity or a definition, two names for one thing, [...], there’s nothing to turn around... the terms reflect and the relationship keeps its shape.'"
+  },
+  {
+    "card_id": "C002",
+    "q1": "No",
+    "q2": "No",
+    "q3": "Yes",
+    "q4": "No",
+    "ruling": "the rule doesn't say",
+    "rationale": "Expresses empirical fractional thermal expansion (Delta L / L = alpha Delta T) driven by temperature rather than mass or separation impeding change, so neither 'depends on resistance, or on the distance resistance makes' nor 'an identity, a definition, or the work of the one energy both sides share' decides it."
+  },
+  {
+    "card_id": "C003",
+    "q1": "No",
+    "q2": "No",
+    "q3": "Yes",
+    "q4": "No",
+    "ruling": "Invert",
+    "rationale": "Allowed wavelengths depend directly on confining boundaries and separation L, matching 'Resistance creates a boundary, which makes a thing limited' and 'depends on resistance, or on the distance resistance makes, so that ... more separation means more of something, flipping resistant to receptive turns it around.'"
+  },
+  {
+    "card_id": "C004",
+    "q1": "No",
+    "q2": "No",
+    "q3": "No",
+    "q4": "No",
+    "ruling": "Invert",
+    "rationale": "Kinetic friction directly opposes sliding ('Resistance is resistance to change'), so under 'If it depends on resistance... flipping resistant to receptive turns it around: ... it gets easier instead of harder,' the relationship turns around."
+  },
+  {
+    "card_id": "C005",
+    "q1": "No",
+    "q2": "No",
+    "q3": "No",
+    "q4": "No",
+    "ruling": "Invert",
+    "rationale": "Coordinate time stretches as relative speed approaches the physical limit c ('The physical is limited, resistant' and 'time is what keeps everything from happening at once'), so under 'flip the condition. Resistant becomes receptive, limited becomes limitless' and 'depends on resistance, or on the distance resistance makes... turns it around,' it inverts."
+  },
+  {
+    "card_id": "C006",
+    "q1": "No",
+    "q2": "Yes",
+    "q3": "Yes",
+    "q4": "No",
+    "ruling": "Invert",
+    "rationale": "Governed by inertial mass m ('Physics already measures resistance to a change in motion. It calls it mass'), viscous damping b ('Resistance is resistance to change'), and displacement x, so 'If it depends on resistance, or on the distance resistance makes... turns it around' applies."
+  },
+  {
+    "card_id": "C007",
+    "q1": "Yes",
+    "q2": "No",
+    "q3": "No",
+    "q4": "No",
+    "ruling": "Keep",
+    "rationale": "Explicitly defines instantaneous angular velocity as d theta / dt, matching 'If it’s an identity or a definition, two names for one thing, [...], there’s nothing to turn around... the terms reflect and the relationship keeps its shape.'"
+  },
+  {
+    "card_id": "C008",
+    "q1": "No",
+    "q2": "Yes",
+    "q3": "Yes",
+    "q4": "Yes",
+    "ruling": "the rule doesn't say",
+    "rationale": "Orbital period increases with separation r yet decreases with gravitational mass M_E, so 'so that more mass or more separation means more of something' pulls in opposite directions and the quoted text (with '[...]' omitted) does not decide gravitational orbits."
+  },
+  {
+    "card_id": "C009",
+    "q1": "Yes",
+    "q2": "No",
+    "q3": "No",
+    "q4": "No",
+    "ruling": "Keep",
+    "rationale": "Mayer's relation is a first-law thermodynamic energy-balance identity for molar heat capacities, matching 'an identity, a definition, or the work of the one energy both sides share' where 'the relationship keeps its shape.'"
+  },
+  {
+    "card_id": "C010",
+    "q1": "Yes",
+    "q2": "No",
+    "q3": "No",
+    "q4": "No",
+    "ruling": "Keep",
+    "rationale": "Directly equates rate of change of total angular momentum to net external torque with no mass-resistance or separation factor to invert, matching 'an identity or a definition, two names for one thing... the terms reflect and the relationship keeps its shape.'"
+  },
+  {
+    "card_id": "C011",
+    "q1": "No",
+    "q2": "Yes",
+    "q3": "No",
+    "q4": "No",
+    "ruling": "Invert",
+    "rationale": "Relativistic kinetic and total energy of a moving particle grow with rest mass m ('resistance to a change in motion. It calls it mass') and diverge toward the limit c, matching 'If it depends on resistance... so that more mass... means more of something, flipping resistant to receptive turns it around.'"
+  },
+  {
+    "card_id": "C012",
+    "q1": "No",
+    "q2": "Yes",
+    "q3": "No",
+    "q4": "No",
+    "ruling": "the rule doesn't say",
+    "rationale": "The dilute-gas equation of state pV = N k_B T is neither an identity/definition nor a mass-inertia or spatial-separation barrier addressed by 'depends on resistance, or on the distance resistance makes, or is it an identity, a definition, or the work of the one energy both sides share?'"
+  },
+  {
+    "card_id": "C013",
+    "q1": "Yes",
+    "q2": "No",
+    "q3": "Yes",
+    "q4": "No",
+    "ruling": "Keep",
+    "rationale": "Maps coordinates of the same single spacetime event between equivalent inertial frames, matching 'If it’s an identity or a definition, two names for one thing, [...], there’s nothing to turn around... the terms reflect and the relationship keeps its shape.'"
+  },
+  {
+    "card_id": "C014",
+    "q1": "No",
+    "q2": "Yes",
+    "q3": "No",
+    "q4": "No",
+    "ruling": "the rule doesn't say",
+    "rationale": "Boyle's isothermal ideal-gas relation P_1 V_1 = P_2 V_2 is an approximate gas state law independent of particle mass and spatial distance, which is not decided by 'depends on resistance, or on the distance resistance makes' or 'an identity, a definition, or the work of the one energy both sides share.'"
+  },
+  {
+    "card_id": "C015",
+    "q1": "No",
+    "q2": "Yes",
+    "q3": "No",
+    "q4": "No",
+    "ruling": "Invert",
+    "rationale": "Nonzero rest mass m imposes an unbounded inertial barrier keeping v < c ('The physical is limited, resistant' and 'resistance to a change in motion. It calls it mass'), so under 'Resistant becomes receptive, limited becomes limitless' and 'depends on resistance... turns it around: ... it gets easier instead of harder,' it inverts."
+  },
+  {
+    "card_id": "C016",
+    "q1": "Yes",
+    "q2": "No",
+    "q3": "Yes",
+    "q4": "Yes",
+    "ruling": "Keep",
+    "rationale": "States the exact mathematical equivalence criterion for path-independent conservative work, matching 'an identity, a definition, or the work of the one energy both sides share' so 'the relationship keeps its shape.'"
+  },
+  {
+    "card_id": "C017",
+    "q1": "Yes",
+    "q2": "No",
+    "q3": "Yes",
+    "q4": "Yes",
+    "ruling": "Keep",
+    "rationale": "Defines conservative force as the negative spatial derivative of potential energy, matching 'an identity, a definition, or the work of the one energy both sides share' where 'there’s nothing to turn around... the relationship keeps its shape.'"
+  },
+  {
+    "card_id": "C018",
+    "q1": "No",
+    "q2": "Yes",
+    "q3": "Yes",
+    "q4": "Yes",
+    "ruling": "the rule doesn't say",
+    "rationale": "Gravitational potential wells, redshift, and lensing combine mass-energy, radial distance, and curved-spacetime attraction, while the quoted passages define mass only as inertial 'resistance to a change in motion' and omit '[...]', leaving gravitational curvature undecided."
+  },
+  {
+    "card_id": "C019",
+    "q1": "Yes",
+    "q2": "No",
+    "q3": "No",
+    "q4": "No",
+    "ruling": "Keep",
+    "rationale": "Defines heat-pump coefficient of performance and applies cyclic energy conservation W = Q_h - Q_c, matching 'an identity, a definition, or the work of the one energy both sides share' so 'the relationship keeps its shape.'"
+  },
+  {
+    "card_id": "C020",
+    "q1": "No",
+    "q2": "No",
+    "q3": "No",
+    "q4": "No",
+    "ruling": "the rule doesn't say",
+    "rationale": "Empirical volume thermal expansion Delta V = beta V Delta T is neither an identity/definition nor governed by mass or spatial distance in the quoted text, so 'does this relationship depend on resistance, or on the distance resistance makes, or is it an identity, a definition, or the work of the one energy both sides share?' does not decide it."
+  },
+  {
+    "card_id": "C021",
+    "q1": "No",
+    "q2": "No",
+    "q3": "Yes",
+    "q4": "No",
+    "ruling": "Invert",
+    "rationale": "Viscous Stokes drag opposes motion through a fluid and increases with radius r, viscosity, and speed ('Resistance is resistance to change'), matching 'If it depends on resistance, or on the distance resistance makes... flipping resistant to receptive turns it around: ... it gets easier instead of harder.'"
+  },
+  {
+    "card_id": "C022",
+    "q1": "Yes",
+    "q2": "No",
+    "q3": "No",
+    "q4": "No",
+    "ruling": "Keep",
+    "rationale": "Conservation of total energy E_i = E_f expresses both an identity across states and 'the work of the one energy both sides share' ('There’s one energy transmuting... at the hinge, the E'), so 'the relationship keeps its shape.'"
+  },
+  {
+    "card_id": "C023",
+    "q1": "Yes",
+    "q2": "No",
+    "q3": "No",
+    "q4": "No",
+    "ruling": "Keep",
+    "rationale": "Invariance of the mathematical form of physical laws across all inertial frames is a frame-equivalence identity, matching 'If it’s an identity or a definition, two names for one thing, [...], there’s nothing to turn around... the relationship keeps its shape.'"
+  },
+  {
+    "card_id": "C024",
+    "q1": "Yes",
+    "q2": "No",
+    "q3": "No",
+    "q4": "No",
+    "ruling": "Keep",
+    "rationale": "The work-energy theorem equates net mechanical work directly to kinetic energy change, matching 'an identity, a definition, or the work of the one energy both sides share' so 'the relationship keeps its shape.'"
+  },
+  {
+    "card_id": "C025",
+    "q1": "Yes",
+    "q2": "No",
+    "q3": "No",
+    "q4": "No",
+    "ruling": "Keep",
+    "rationale": "Explicitly defines impulse as the time integral of force, matching 'If it’s an identity or a definition, two names for one thing, [...], there’s nothing to turn around... the terms reflect and the relationship keeps its shape.'"
+  },
+  {
+    "card_id": "C026",
+    "q1": "No",
+    "q2": "Yes",
+    "q3": "Yes",
+    "q4": "Yes",
+    "ruling": "the rule doesn't say",
+    "rationale": "Gravitational work W_grav = -mg(y_B - y_A) mixes conservative gravitational energy transfer with mass m and height displacement y_B - y_A (opposing ascent yet aiding descent), which is not decided by the quoted passages with '[...]' omitted."
+  },
+  {
+    "card_id": "C027",
+    "q1": "No",
+    "q2": "Yes",
+    "q3": "No",
+    "q4": "No",
+    "ruling": "Invert",
+    "rationale": "Newton's second law directly expresses inertial mass as 'resistance to a change in motion. It calls it mass,' so under 'If it depends on resistance... so that more mass... means more of something, flipping resistant to receptive turns it around: more Movement means less of that thing, or it gets easier instead of harder,' it inverts."
+  },
+  {
+    "card_id": "C028",
+    "q1": "Yes",
+    "q2": "No",
+    "q3": "Yes",
+    "q4": "No",
+    "ruling": "Keep",
+    "rationale": "Provides the Lorentz coordinate correspondence relating two inertial frames' descriptions of the same single event, matching 'If it’s an identity or a definition, two names for one thing, [...], there’s nothing to turn around... the terms reflect and the relationship keeps its shape.'"
+  },
+  {
+    "card_id": "C029",
+    "q1": "Yes",
+    "q2": "No",
+    "q3": "Yes",
+    "q4": "No",
+    "ruling": "Keep",
+    "rationale": "Follows directly as a calculus/kinematic identity from differentiating x(t) = A cos(omega t + phi) with no resistance term, matching 'an identity or a definition, two names for one thing... there’s nothing to turn around... the relationship keeps its shape.'"
+  },
+  {
+    "card_id": "C030",
+    "q1": "Yes",
+    "q2": "No",
+    "q3": "No",
+    "q4": "No",
+    "ruling": "Keep",
+    "rationale": "Decomposes total acceleration into orthogonal normal and tangential vector components by geometric identity, matching 'If it’s an identity or a definition, two names for one thing, [...], there’s nothing to turn around... the relationship keeps its shape.'"
+  },
+  {
+    "card_id": "C031",
+    "q1": "No",
+    "q2": "Yes",
+    "q3": "No",
+    "q4": "No",
+    "ruling": "Invert",
+    "rationale": "Sound speed decreases as gas molar mass M increases because mass resists acceleration ('Physics already measures resistance to a change in motion. It calls it mass'), so under 'If it depends on resistance... flipping resistant to receptive turns it around: ... it gets easier instead of harder,' it inverts."
+  },
+  {
+    "card_id": "C032",
+    "q1": "Yes",
+    "q2": "Yes",
+    "q3": "No",
+    "q4": "No",
+    "ruling": "Keep",
+    "rationale": "Defines uniform mass density via m = rho V, directly matching 'If it’s an identity or a definition, two names for one thing, [...], there’s nothing to turn around, even with mass in it; the terms reflect and the relationship keeps its shape.'"
+  },
+  {
+    "card_id": "C033",
+    "q1": "No",
+    "q2": "Yes",
+    "q3": "Yes",
+    "q4": "No",
+    "ruling": "Invert",
+    "rationale": "Rotational inertia I = sum m_j r_j^2 grows with both particle mass m_j and distance r_j from the axis, directly matching 'If it depends on resistance, or on the distance resistance makes, so that more mass or more separation means more of something, flipping resistant to receptive turns it around.'"
+  },
+  {
+    "card_id": "C034",
+    "q1": "No",
+    "q2": "No",
+    "q3": "Yes",
+    "q4": "No",
+    "ruling": "Invert",
+    "rationale": "Young's modulus characterizes axial elastic stiffness resisting length change Delta L over length L_0 ('Resistance is resistance to change'), matching 'If it depends on resistance, or on the distance resistance makes... turns it around: ... it gets easier instead of harder.'"
+  },
+  {
+    "card_id": "C035",
+    "q1": "Yes",
+    "q2": "No",
+    "q3": "No",
+    "q4": "No",
+    "ruling": "Keep",
+    "rationale": "Equivalence of all inertial reference frames with no preferred rest frame expresses frame symmetry/identity, matching 'If it’s an identity or a definition, two names for one thing, [...], there’s nothing to turn around... the relationship keeps its shape.'"
+  },
+  {
+    "card_id": "C036",
+    "q1": "Yes",
+    "q2": "No",
+    "q3": "No",
+    "q4": "No",
+    "ruling": "Keep",
+    "rationale": "Defines the dimensionless adiabatic index as the ratio C_p / C_V, matching 'If it’s an identity or a definition, two names for one thing, [...], there’s nothing to turn around... the terms reflect and the relationship keeps its shape.'"
+  },
+  {
+    "card_id": "C037",
+    "q1": "No",
+    "q2": "No",
+    "q3": "Yes",
+    "q4": "No",
+    "ruling": "Invert",
+    "rationale": "Greater spatial separation Delta x produces a larger coordinate time offset Delta t keeping events from happening at once ('space is what keeps two things from sitting in the same place, and time is what keeps everything from happening at once'), matching 'depends on... the distance resistance makes, so that ... more separation means more of something, flipping resistant to receptive turns it around.'"
+  },
+  {
+    "card_id": "C038",
+    "q1": "Yes",
+    "q2": "Yes",
+    "q3": "Yes",
+    "q4": "No",
+    "ruling": "Keep",
+    "rationale": "Expresses the kinematic identity for center-of-mass acceleration by differentiating the center-of-mass definition, matching 'If it’s an identity or a definition, two names for one thing, [...], there’s nothing to turn around, even with mass in it; the terms reflect and the relationship keeps its shape.'"
+  },
+  {
+    "card_id": "C039",
+    "q1": "No",
+    "q2": "No",
+    "q3": "Yes",
+    "q4": "No",
+    "ruling": "Invert",
+    "rationale": "Dynamic viscosity measures fluid shear resistance opposing plate motion across gap thickness L ('Resistance is resistance to change'), matching 'If it depends on resistance, or on the distance resistance makes... turns it around: ... it gets easier instead of harder.'"
+  },
+  {
+    "card_id": "C040",
+    "q1": "Yes",
+    "q2": "Yes",
+    "q3": "No",
+    "q4": "No",
+    "ruling": "Keep",
+    "rationale": "Rest-energy equivalence E_0 = m c^2 is both 'an identity or a definition, two names for one thing, [...], there’s nothing to turn around, even with mass in it' and 'the work of the one energy both sides share' ('at the hinge, the E'), so 'the relationship keeps its shape.'"
+  },
+  {
+    "card_id": "C041",
+    "q1": "No",
+    "q2": "Yes",
+    "q3": "No",
+    "q4": "No",
+    "ruling": "the rule doesn't say",
+    "rationale": "The reversible adiabatic ideal-gas relation p V^gamma = constant is a thermodynamic state curve neither constituting an identity/definition nor governed by mass inertia or spatial distance in 'depends on resistance, or on the distance resistance makes, or is it an identity, a definition, or the work of the one energy both sides share?'"
+  },
+  {
+    "card_id": "C042",
+    "q1": "Yes",
+    "q2": "No",
+    "q3": "Yes",
+    "q4": "No",
+    "ruling": "Keep",
+    "rationale": "Defines the Minkowski spacetime interval and states its exact frame invariance across all inertial observers, matching 'If it’s an identity or a definition, two names for one thing, [...], there’s nothing to turn around... the terms reflect and the relationship keeps its shape.'"
+  },
+  {
+    "card_id": "C043",
+    "q1": "Yes",
+    "q2": "No",
+    "q3": "Yes",
+    "q4": "No",
+    "ruling": "Keep",
+    "rationale": "Explicitly defines angular wave number k as 2 pi / lambda, matching 'If it’s an identity or a definition, two names for one thing, [...], there’s nothing to turn around... the terms reflect and the relationship keeps its shape.'"
+  },
+  {
+    "card_id": "C044",
+    "q1": "No",
+    "q2": "No",
+    "q3": "No",
+    "q4": "No",
+    "ruling": "the rule doesn't say",
+    "rationale": "Carnot refrigerator performance K_R = T_c / (T_h - T_c) depends on absolute reservoir temperatures rather than mass or spatial distance and is not a mere definition, so the quoted rule passages do not decide how it reflects."
+  },
+  {
+    "card_id": "C045",
+    "q1": "Yes",
+    "q2": "No",
+    "q3": "Yes",
+    "q4": "No",
+    "ruling": "Keep",
+    "rationale": "Integrates the kinematic definitions v = dx/dt and constant a = dv/dt with no mass or resistance barrier, matching 'an identity or a definition, two names for one thing... there’s nothing to turn around... the terms reflect and the relationship keeps its shape.'"
+  },
+  {
+    "card_id": "C046",
+    "q1": "No",
+    "q2": "Yes",
+    "q3": "Yes",
+    "q4": "No",
+    "ruling": "Invert",
+    "rationale": "Linear acceleration down the incline is reduced by mass m and rotational inertia I_CM / r^2 resisting change in motion, matching 'If it depends on resistance, or on the distance resistance makes... flipping resistant to receptive turns it around: ... it gets easier instead of harder.'"
+  },
+  {
+    "card_id": "C047",
+    "q1": "No",
+    "q2": "No",
+    "q3": "Yes",
+    "q4": "No",
+    "ruling": "Invert",
+    "rationale": "Conductive heat flow is impeded across slab thickness d ('bounded things can only reach each other by radiating across the space between them'), matching 'If it depends on resistance, or on the distance resistance makes... turns it around: ... it gets easier instead of harder.'"
+  },
+  {
+    "card_id": "C048",
+    "q1": "No",
+    "q2": "Yes",
+    "q3": "No",
+    "q4": "No",
+    "ruling": "Invert",
+    "rationale": "Solid boundary support force N ('where resistance gives things edges, space is what keeps two things from sitting in the same place') increases proportionally with mass m, matching 'If it depends on resistance... so that more mass... means more of something, flipping resistant to receptive turns it around.'"
+  },
+  {
+    "card_id": "C049",
+    "q1": "No",
+    "q2": "No",
+    "q3": "No",
+    "q4": "No",
+    "ruling": "the rule doesn't say",
+    "rationale": "Medium-wave Doppler shift f_o = f_s ((v +- v_o) / v) contains no mass or separation variable, is not an identity/definition or shared energy E, and shifts in opposite signs for approach versus recession, leaving it undecided by 'depends on resistance, or on the distance resistance makes, or is it an identity, a definition, or the work of the one energy both sides share?'"
+  },
+  {
+    "card_id": "C050",
+    "q1": "Yes",
+    "q2": "Yes",
+    "q3": "No",
+    "q4": "Yes",
+    "ruling": "Keep",
+    "rationale": "States the local equivalence (indistinguishability) of uniform gravity and uniform frame acceleration via equality of inertial and gravitational mass, matching 'If it’s an identity or a definition, two names for one thing, [...], there’s nothing to turn around, even with mass in it; the terms reflect and the relationship keeps its shape.'"
+  },
+  {
+    "card_id": "C051",
+    "q1": "No",
+    "q2": "Yes",
+    "q3": "Yes",
+    "q4": "Yes",
+    "ruling": "the rule doesn't say",
+    "rationale": "Kepler's third law increases period T with orbital separation a while decreasing T with central mass M in gravitational attraction, so 'so that more mass or more separation means more of something' conflicts across a^3 / M and the quoted text (with '[...]' omitted) does not decide it."
+  },
+  {
+    "card_id": "C052",
+    "q1": "Yes",
+    "q2": "No",
+    "q3": "No",
+    "q4": "No",
+    "ruling": "Keep",
+    "rationale": "Expresses a velocity vector in terms of its Cartesian components by coordinate definition, matching 'If it’s an identity or a definition, two names for one thing, [...], there’s nothing to turn around... the terms reflect and the relationship keeps its shape.'"
+  },
+  {
+    "card_id": "C053",
+    "q1": "Yes",
+    "q2": "No",
+    "q3": "No",
+    "q4": "No",
+    "ruling": "Keep",
+    "rationale": "Equates zero net external force with unchanging velocity in an inertial frame with no mass or separation scaling to invert, matching 'an identity or a definition, two names for one thing... there’s nothing to turn around... the relationship keeps its shape.'"
+  },
+  {
+    "card_id": "C054",
+    "q1": "Yes",
+    "q2": "No",
+    "q3": "No",
+    "q4": "No",
+    "ruling": "Keep",
+    "rationale": "Reciprocal pairwise interaction F_AB = -F_BA equates the two sides of one mutual interaction with no mass or distance factor to turn around, matching 'an identity or a definition, two names for one thing... the terms reflect and the relationship keeps its shape.'"
+  },
+  {
+    "card_id": "C055",
+    "q1": "Yes",
+    "q2": "No",
+    "q3": "No",
+    "q4": "No",
+    "ruling": "Keep",
+    "rationale": "Defines harmonic wave phase speed via v = omega / k, matching 'If it’s an identity or a definition, two names for one thing, [...], there’s nothing to turn around... the terms reflect and the relationship keeps its shape.'"
+  },
+  {
+    "card_id": "C056",
+    "q1": "Yes",
+    "q2": "No",
+    "q3": "Yes",
+    "q4": "No",
+    "ruling": "Keep",
+    "rationale": "Defines instantaneous Cartesian acceleration as the second time derivative of position coordinates, matching 'If it’s an identity or a definition, two names for one thing, [...], there’s nothing to turn around... the terms reflect and the relationship keeps its shape.'"
+  },
+  {
+    "card_id": "C057",
+    "q1": "Yes",
+    "q2": "No",
+    "q3": "Yes",
+    "q4": "No",
+    "ruling": "Keep",
+    "rationale": "Maximum speed |v_max| = A omega is a pure sinusoidal kinematic identity with no resistance term, matching 'If it’s an identity or a definition, two names for one thing, [...], there’s nothing to turn around... the terms reflect and the relationship keeps its shape.'"
+  },
+  {
+    "card_id": "C058",
+    "q1": "Yes",
+    "q2": "No",
+    "q3": "No",
+    "q4": "No",
+    "ruling": "Keep",
+    "rationale": "Average velocity (v_0 + v) / 2 for linearly varying velocity is an exact kinematic identity, matching 'If it’s an identity or a definition, two names for one thing, [...], there’s nothing to turn around... the terms reflect and the relationship keeps its shape.'"
+  },
+  {
+    "card_id": "C059",
+    "q1": "No",
+    "q2": "No",
+    "q3": "No",
+    "q4": "No",
+    "ruling": "the rule doesn't say",
+    "rationale": "Classical equipartition molar heat capacity C_V = (d / 2) R is neither a universal definition/identity nor a mass or spatial-separation resistance relation, so 'depends on resistance, or on the distance resistance makes, or is it an identity, a definition, or the work of the one energy both sides share?' does not decide it."
+  },
+  {
+    "card_id": "C060",
+    "q1": "No",
+    "q2": "Yes",
+    "q3": "Yes",
+    "q4": "Yes",
+    "ruling": "the rule doesn't say",
+    "rationale": "Spacetime curvature by mass, energy, and momentum combines 'the one energy both sides share' with mass and spacetime geometry to produce geodesic attraction, while the quoted passages (with '[...]' omitted) do not decide how relativistic gravity reflects."
+  },
+  {
+    "card_id": "C061",
+    "q1": "No",
+    "q2": "Yes",
+    "q3": "Yes",
+    "q4": "Yes",
+    "ruling": "the rule doesn't say",
+    "rationale": "Universal gravitation F = G m_1 m_2 / r^2 increases with masses m_1, m_2 yet decreases with separation r^2 in mutual attraction, so 'so that more mass or more separation means more of something' pulls in opposite directions and the quoted text (with '[...]' omitted) does not decide it."
+  },
+  {
+    "card_id": "C062",
+    "q1": "No",
+    "q2": "No",
+    "q3": "Yes",
+    "q4": "No",
+    "ruling": "Invert",
+    "rationale": "Hooke's law F = -k x expresses elastic stiffness resisting displacement x from equilibrium ('Resistance is resistance to change'), matching 'If it depends on resistance, or on the distance resistance makes, so that ... more separation means more of something, flipping resistant to receptive turns it around.'"
+  },
+  {
+    "card_id": "C063",
+    "q1": "No",
+    "q2": "No",
+    "q3": "Yes",
+    "q4": "No",
+    "ruling": "Invert",
+    "rationale": "Length contraction depends on bounded spatial length L_0 ('where resistance gives things edges... Take resistance away and there’s no distance') and the speed limit c ('limited becomes limitless'), matching 'depends on resistance, or on the distance resistance makes... turns it around.'"
+  },
+  {
+    "card_id": "C064",
+    "q1": "No",
+    "q2": "No",
+    "q3": "Yes",
+    "q4": "Yes",
+    "ruling": "the rule doesn't say",
+    "rationale": "Vertical free fall y = y_0 + v_0 t - (1/2) g t^2 is governed solely by mass-independent gravitational acceleration g, and the quoted passages (with '[...]' omitted) do not state whether gravitational acceleration keeps its shape or turns around."
+  },
+  {
+    "card_id": "C065",
+    "q1": "No",
+    "q2": "No",
+    "q3": "No",
+    "q4": "No",
+    "ruling": "Invert",
+    "rationale": "Bulk modulus explicitly measures a material's resistance to uniform hydrostatic compression ('Resistance is resistance to change'), matching 'If it depends on resistance... flipping resistant to receptive turns it around: ... it gets easier instead of harder.'"
+  }
+]
