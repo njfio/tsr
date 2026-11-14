@@ -1,0 +1,13 @@
+word,exclusion_code,matched_reference_word,rationale,preregistration_commit_sha
+density,C1_IN_LEDGER_80,density,Exact match in 80-word etymological ledger (ledger_80.json).,463ad9f93c8a276b1e0d9ee497198dfa2169d079
+force,C1_IN_LEDGER_80,force,Exact match in 80-word etymological ledger (ledger_80.json).,463ad9f93c8a276b1e0d9ee497198dfa2169d079
+friction,C1_IN_LEDGER_80,friction,Exact match in 80-word etymological ledger (ledger_80.json).,463ad9f93c8a276b1e0d9ee497198dfa2169d079
+inertia,C1_IN_LEDGER_80,inertia,Exact match in 80-word etymological ledger (ledger_80.json).,463ad9f93c8a276b1e0d9ee497198dfa2169d079
+momentum,C1_IN_LEDGER_80,momentum,Exact match in 80-word etymological ledger (ledger_80.json).,463ad9f93c8a276b1e0d9ee497198dfa2169d079
+power,C1_IN_LEDGER_80,power,Exact match in 80-word etymological ledger (ledger_80.json).,463ad9f93c8a276b1e0d9ee497198dfa2169d079
+pressure,C1_IN_LEDGER_80,pressure,Exact match in 80-word etymological ledger (ledger_80.json).,463ad9f93c8a276b1e0d9ee497198dfa2169d079
+radiation,C3_MORPHOLOGICAL_VARIANT,radiate,"Shared morphological/Latinate root (radi, radia, radiat) with reference word 'radiate'.",463ad9f93c8a276b1e0d9ee497198dfa2169d079
+resonance,C1_IN_LEDGER_80,resonance,Exact match in 80-word etymological ledger (ledger_80.json).,463ad9f93c8a276b1e0d9ee497198dfa2169d079
+tension,C1_IN_LEDGER_80,tension,Exact match in 80-word etymological ledger (ledger_80.json).,463ad9f93c8a276b1e0d9ee497198dfa2169d079
+wave,C1_IN_LEDGER_80,wave,Exact match in 80-word etymological ledger (ledger_80.json).,463ad9f93c8a276b1e0d9ee497198dfa2169d079
+work,C1_IN_LEDGER_80,work,Exact match in 80-word etymological ledger (ledger_80.json).,463ad9f93c8a276b1e0d9ee497198dfa2169d079
