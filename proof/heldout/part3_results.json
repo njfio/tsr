@@ -1,0 +1,5965 @@
+{
+  "preregistration_commit_sha": "463ad9f93c8a276b1e0d9ee497198dfa2169d079",
+  "part3_pre_unmasking_commit_sha": "cf6f1352a36e798e65c28c6d77cd320180b3761c",
+  "attribution": "Access for free at https://openstax.org — Licensed under CC BY 4.0.",
+  "evaluation_status": "PROTOCOL_DEVIATED_PRE_UNMASKING",
+  "source_coverage": "single-source",
+  "session_panel": {
+    "preregistered_model_families_required": 3,
+    "actual_model_families_represented": 2,
+    "model_families": [
+      "Gemini",
+      "Anthropic"
+    ],
+    "refused_models": [
+      "grok_4_7"
+    ],
+    "sessions": {
+      "s1": {
+        "model": "gemini_hydrogen",
+        "family": "Gemini",
+        "items_coded": 78,
+        "live_verified_count": 78,
+        "unverified_memory_count": 0,
+        "retrieved_utc": "2026-11-14",
+        "live_verified_items": "W001..W078"
+      },
+      "s2": {
+        "model": "opus_5_5",
+        "family": "Anthropic",
+        "items_coded": 78,
+        "live_verified_count": 3,
+        "live_verified_items": [
+          "W001",
+          "W002",
+          "W003"
+        ],
+        "unverified_memory_count": 75,
+        "unverified_memory_items": "W004..W078",
+        "unverified_in_targets_10_count": 10,
+        "unverified_in_controls_40_count": 38,
+        "unverified_in_ledger_physics_35_count": 34,
+        "retrieved_utc_summary": "2026-11-14 (W001..W003); unverified (W004..W078)",
+        "note": "Anti-bot blocking stopped live etymonline.com retrieval after W003; W004..W078 coded from parametric memory."
+      },
+      "s3": {
+        "model": "gemini_carbon",
+        "family": "Gemini",
+        "items_coded": 78,
+        "live_verified_count": 78,
+        "unverified_memory_count": 0,
+        "retrieved_utc": "2026-11-14",
+        "live_verified_items": "W001..W078"
+      }
+    }
+  },
+  "protocol_deviation_disclosure": "Two protocol deviations occurred prior to unmasking and are disclosed upfront: (1) PREREGISTRATION.md Section 2.4 specified 3 distinct model families, whereas grok_4_7 refused the task, leaving 2 model families represented across 3 sessions: two Gemini runs (s1 = gemini_hydrogen, s3 = gemini_carbon; 78/78 retrieved live on 2026-11-14) and one Anthropic run (s2 = opus_5_5), giving Gemini 2/3 of the majority vote (direction_class_maj). (2) In s2 (opus_5_5), anti-bot blocking prevented live etymonline.com retrieval after W003, so only 3/78 items (W001 theory, W002 sound, W003 friction) were verified live on 2026-11-14 and 75/78 items (W004..W078) were coded from parametric memory marked 'unverified', including all 10/10 target words, 38/40 control words, and 34/35 ledger_physics_35 words. All session codings were committed at part3_pre_unmasking_commit_sha before joining with word_coding_key.csv.",
+  "dataset_partition_invariants": {
+    "total_items": 78,
+    "targets_10_count": 10,
+    "controls_40_count": 40,
+    "primary_50_count": 50,
+    "ledger_physics_35_count": 35,
+    "ledger_core_law_count": 21,
+    "ledger_secondary_physics_count": 14,
+    "targets_and_ledger_physics_overlap_count": 7,
+    "targets_and_ledger_physics_overlap_words": [
+      "density",
+      "energy",
+      "force",
+      "mass",
+      "space",
+      "time",
+      "volume"
+    ],
+    "target_only_count": 3,
+    "target_only_words": [
+      "acceleration",
+      "speed",
+      "velocity"
+    ],
+    "targets_and_controls_overlap_count": 0,
+    "ledger_physics_and_controls_overlap_count": 0,
+    "ledger_80_and_controls_overlap_count": 0,
+    "targets_10_words": [
+      "acceleration",
+      "density",
+      "energy",
+      "force",
+      "mass",
+      "space",
+      "speed",
+      "time",
+      "velocity",
+      "volume"
+    ],
+    "controls_40_words": [
+      "antinode",
+      "aphelion",
+      "associative",
+      "beats",
+      "calorimeter",
+      "commutative",
+      "conduction",
+      "dimension",
+      "discrepancy",
+      "displacement",
+      "dynamics",
+      "entropy",
+      "environment",
+      "event",
+      "hearing",
+      "heat",
+      "inelastic",
+      "kinematics",
+      "law",
+      "model",
+      "node",
+      "oscillation",
+      "overtone",
+      "overtones",
+      "physics",
+      "pitch",
+      "precision",
+      "scalar",
+      "second",
+      "sound",
+      "superposition",
+      "theory",
+      "thrust",
+      "torque",
+      "uncertainty",
+      "units",
+      "vapor",
+      "vector",
+      "viscosity",
+      "weight"
+    ]
+  },
+  "inter_session_reliability": {
+    "all_78": {
+      "n_items": 78,
+      "fleiss_kappa_4cat": {
+        "n_items": 78,
+        "n_raters": 3,
+        "categories": [
+          "person_first",
+          "physics_first",
+          "both_from_start",
+          "no_person_sense"
+        ],
+        "category_counts": {
+          "person_first": 66,
+          "physics_first": 88,
+          "both_from_start": 17,
+          "no_person_sense": 63
+        },
+        "category_proportions": {
+          "person_first": {
+            "num": 11,
+            "den": 39,
+            "fraction": "11/39",
+            "float": 0.28205128205128205
+          },
+          "physics_first": {
+            "num": 44,
+            "den": 117,
+            "fraction": "44/117",
+            "float": 0.37606837606837606
+          },
+          "both_from_start": {
+            "num": 17,
+            "den": 234,
+            "fraction": "17/234",
+            "float": 0.07264957264957266
+          },
+          "no_person_sense": {
+            "num": 7,
+            "den": 26,
+            "fraction": "7/26",
+            "float": 0.2692307692307692
+          }
+        },
+        "unanimous_count": 50,
+        "unanimous_rate": {
+          "num": 25,
+          "den": 39,
+          "fraction": "25/39",
+          "float": 0.6410256410256411
+        },
+        "P_bar": {
+          "num": 88,
+          "den": 117,
+          "fraction": "88/117",
+          "float": 0.7521367521367521
+        },
+        "P_e": {
+          "num": 8179,
+          "den": 27378,
+          "fraction": "8179/27378",
+          "float": 0.29874351669223465
+        },
+        "kappa": {
+          "num": 12413,
+          "den": 19199,
+          "fraction": "12413/19199",
+          "float": 0.6465440908380645
+        },
+        "kappa_fraction": "12413/19199",
+        "kappa_float": 0.6465440908380645,
+        "degenerate_single_category": false
+      },
+      "fleiss_kappa_binary_person_first": {
+        "n_items": 78,
+        "n_raters": 3,
+        "categories": [
+          "person_first",
+          "not_person_first"
+        ],
+        "category_counts": {
+          "person_first": 66,
+          "not_person_first": 168
+        },
+        "category_proportions": {
+          "person_first": {
+            "num": 11,
+            "den": 39,
+            "fraction": "11/39",
+            "float": 0.28205128205128205
+          },
+          "not_person_first": {
+            "num": 28,
+            "den": 39,
+            "fraction": "28/39",
+            "float": 0.717948717948718
+          }
+        },
+        "unanimous_count": 63,
+        "unanimous_rate": {
+          "num": 21,
+          "den": 26,
+          "fraction": "21/26",
+          "float": 0.8076923076923077
+        },
+        "P_bar": {
+          "num": 34,
+          "den": 39,
+          "fraction": "34/39",
+          "float": 0.8717948717948718
+        },
+        "P_e": {
+          "num": 905,
+          "den": 1521,
+          "fraction": "905/1521",
+          "float": 0.5950032873109796
+        },
+        "kappa": {
+          "num": 421,
+          "den": 616,
+          "fraction": "421/616",
+          "float": 0.6834415584415584
+        },
+        "kappa_fraction": "421/616",
+        "kappa_float": 0.6834415584415584,
+        "degenerate_single_category": false
+      },
+      "tie_or_disagreement_count": 2,
+      "tie_or_disagreement_items": [
+        {
+          "item_id": "W002",
+          "word": "sound",
+          "in_targets_10": false,
+          "in_controls_40": true,
+          "in_ledger_physics_35": false,
+          "s1": "person_first",
+          "s2": "both_from_start",
+          "s3": "no_person_sense"
+        },
+        {
+          "item_id": "W072",
+          "word": "charge",
+          "in_targets_10": false,
+          "in_controls_40": false,
+          "in_ledger_physics_35": true,
+          "s1": "physics_first",
+          "s2": "person_first",
+          "s3": "both_from_start"
+        }
+      ],
+      "pairwise_cohen_kappa": {
+        "s1_vs_s3": {
+          "relation": "within_gemini_family",
+          "four_category": {
+            "n_items": 78,
+            "categories": [
+              "person_first",
+              "physics_first",
+              "both_from_start",
+              "no_person_sense"
+            ],
+            "matches": 58,
+            "agreement_rate": {
+              "num": 29,
+              "den": 39,
+              "fraction": "29/39",
+              "float": 0.7435897435897436
+            },
+            "p_o": {
+              "num": 29,
+              "den": 39,
+              "fraction": "29/39",
+              "float": 0.7435897435897436
+            },
+            "p_e": {
+              "num": 901,
+              "den": 3042,
+              "fraction": "901/3042",
+              "float": 0.2961867192636423
+            },
+            "confusion_matrix": {
+              "person_first": {
+                "person_first": 15,
+                "physics_first": 2,
+                "both_from_start": 2,
+                "no_person_sense": 1
+              },
+              "physics_first": {
+                "person_first": 1,
+                "physics_first": 24,
+                "both_from_start": 2,
+                "no_person_sense": 3
+              },
+              "both_from_start": {
+                "person_first": 3,
+                "physics_first": 0,
+                "both_from_start": 3,
+                "no_person_sense": 0
+              },
+              "no_person_sense": {
+                "person_first": 2,
+                "physics_first": 4,
+                "both_from_start": 0,
+                "no_person_sense": 16
+              }
+            },
+            "kappa": {
+              "num": 1361,
+              "den": 2141,
+              "fraction": "1361/2141",
+              "float": 0.6356842596917328
+            },
+            "kappa_fraction": "1361/2141",
+            "kappa_float": 0.6356842596917328,
+            "degenerate_single_category": false
+          },
+          "binary_person_first": {
+            "n_items": 78,
+            "categories": [
+              "person_first",
+              "not_person_first"
+            ],
+            "matches": 67,
+            "agreement_rate": {
+              "num": 67,
+              "den": 78,
+              "fraction": "67/78",
+              "float": 0.8589743589743589
+            },
+            "p_o": {
+              "num": 67,
+              "den": 78,
+              "fraction": "67/78",
+              "float": 0.8589743589743589
+            },
+            "p_e": {
+              "num": 207,
+              "den": 338,
+              "fraction": "207/338",
+              "float": 0.6124260355029586
+            },
+            "confusion_matrix": {
+              "person_first": {
+                "person_first": 15,
+                "not_person_first": 5
+              },
+              "not_person_first": {
+                "person_first": 6,
+                "not_person_first": 52
+              }
+            },
+            "kappa": {
+              "num": 250,
+              "den": 393,
+              "fraction": "250/393",
+              "float": 0.6361323155216285
+            },
+            "kappa_fraction": "250/393",
+            "kappa_float": 0.6361323155216285,
+            "degenerate_single_category": false
+          }
+        },
+        "s1_vs_s2": {
+          "relation": "cross_family_gemini_vs_anthropic",
+          "four_category": {
+            "n_items": 78,
+            "categories": [
+              "person_first",
+              "physics_first",
+              "both_from_start",
+              "no_person_sense"
+            ],
+            "matches": 57,
+            "agreement_rate": {
+              "num": 19,
+              "den": 26,
+              "fraction": "19/26",
+              "float": 0.7307692307692307
+            },
+            "p_o": {
+              "num": 19,
+              "den": 26,
+              "fraction": "19/26",
+              "float": 0.7307692307692307
+            },
+            "p_e": {
+              "num": 913,
+              "den": 3042,
+              "fraction": "913/3042",
+              "float": 0.30013149243918474
+            },
+            "confusion_matrix": {
+              "person_first": {
+                "person_first": 17,
+                "physics_first": 0,
+                "both_from_start": 2,
+                "no_person_sense": 1
+              },
+              "physics_first": {
+                "person_first": 3,
+                "physics_first": 23,
+                "both_from_start": 0,
+                "no_person_sense": 4
+              },
+              "both_from_start": {
+                "person_first": 3,
+                "physics_first": 0,
+                "both_from_start": 2,
+                "no_person_sense": 1
+              },
+              "no_person_sense": {
+                "person_first": 2,
+                "physics_first": 5,
+                "both_from_start": 0,
+                "no_person_sense": 15
+              }
+            },
+            "kappa": {
+              "num": 1310,
+              "den": 2129,
+              "fraction": "1310/2129",
+              "float": 0.615312353217473
+            },
+            "kappa_fraction": "1310/2129",
+            "kappa_float": 0.615312353217473,
+            "degenerate_single_category": false
+          },
+          "binary_person_first": {
+            "n_items": 78,
+            "categories": [
+              "person_first",
+              "not_person_first"
+            ],
+            "matches": 67,
+            "agreement_rate": {
+              "num": 67,
+              "den": 78,
+              "fraction": "67/78",
+              "float": 0.8589743589743589
+            },
+            "p_o": {
+              "num": 67,
+              "den": 78,
+              "fraction": "67/78",
+              "float": 0.8589743589743589
+            },
+            "p_e": {
+              "num": 1787,
+              "den": 3042,
+              "fraction": "1787/3042",
+              "float": 0.5874424720578567
+            },
+            "confusion_matrix": {
+              "person_first": {
+                "person_first": 17,
+                "not_person_first": 3
+              },
+              "not_person_first": {
+                "person_first": 8,
+                "not_person_first": 50
+              }
+            },
+            "kappa": {
+              "num": 826,
+              "den": 1255,
+              "fraction": "826/1255",
+              "float": 0.6581673306772908
+            },
+            "kappa_fraction": "826/1255",
+            "kappa_float": 0.6581673306772908,
+            "degenerate_single_category": false
+          }
+        },
+        "s3_vs_s2": {
+          "relation": "cross_family_gemini_vs_anthropic",
+          "four_category": {
+            "n_items": 78,
+            "categories": [
+              "person_first",
+              "physics_first",
+              "both_from_start",
+              "no_person_sense"
+            ],
+            "matches": 61,
+            "agreement_rate": {
+              "num": 61,
+              "den": 78,
+              "fraction": "61/78",
+              "float": 0.782051282051282
+            },
+            "p_o": {
+              "num": 61,
+              "den": 78,
+              "fraction": "61/78",
+              "float": 0.782051282051282
+            },
+            "p_e": {
+              "num": 1813,
+              "den": 6084,
+              "fraction": "1813/6084",
+              "float": 0.2979947403024326
+            },
+            "confusion_matrix": {
+              "person_first": {
+                "person_first": 19,
+                "physics_first": 0,
+                "both_from_start": 1,
+                "no_person_sense": 1
+              },
+              "physics_first": {
+                "person_first": 3,
+                "physics_first": 24,
+                "both_from_start": 0,
+                "no_person_sense": 3
+              },
+              "both_from_start": {
+                "person_first": 3,
+                "physics_first": 1,
+                "both_from_start": 2,
+                "no_person_sense": 1
+              },
+              "no_person_sense": {
+                "person_first": 0,
+                "physics_first": 3,
+                "both_from_start": 1,
+                "no_person_sense": 16
+              }
+            },
+            "kappa": {
+              "num": 2945,
+              "den": 4271,
+              "fraction": "2945/4271",
+              "float": 0.6895340669632405
+            },
+            "kappa_fraction": "2945/4271",
+            "kappa_float": 0.6895340669632405,
+            "degenerate_single_category": false
+          },
+          "binary_person_first": {
+            "n_items": 78,
+            "categories": [
+              "person_first",
+              "not_person_first"
+            ],
+            "matches": 70,
+            "agreement_rate": {
+              "num": 35,
+              "den": 39,
+              "fraction": "35/39",
+              "float": 0.8974358974358975
+            },
+            "p_o": {
+              "num": 35,
+              "den": 39,
+              "fraction": "35/39",
+              "float": 0.8974358974358975
+            },
+            "p_e": {
+              "num": 197,
+              "den": 338,
+              "fraction": "197/338",
+              "float": 0.5828402366863905
+            },
+            "confusion_matrix": {
+              "person_first": {
+                "person_first": 19,
+                "not_person_first": 2
+              },
+              "not_person_first": {
+                "person_first": 6,
+                "not_person_first": 51
+              }
+            },
+            "kappa": {
+              "num": 319,
+              "den": 423,
+              "fraction": "319/423",
+              "float": 0.7541371158392435
+            },
+            "kappa_fraction": "319/423",
+            "kappa_float": 0.7541371158392435,
+            "degenerate_single_category": false
+          }
+        }
+      }
+    },
+    "primary_50": {
+      "n_items": 50,
+      "fleiss_kappa_4cat": {
+        "n_items": 50,
+        "n_raters": 3,
+        "categories": [
+          "person_first",
+          "physics_first",
+          "both_from_start",
+          "no_person_sense"
+        ],
+        "category_counts": {
+          "person_first": 44,
+          "physics_first": 42,
+          "both_from_start": 10,
+          "no_person_sense": 54
+        },
+        "category_proportions": {
+          "person_first": {
+            "num": 22,
+            "den": 75,
+            "fraction": "22/75",
+            "float": 0.29333333333333333
+          },
+          "physics_first": {
+            "num": 7,
+            "den": 25,
+            "fraction": "7/25",
+            "float": 0.28
+          },
+          "both_from_start": {
+            "num": 1,
+            "den": 15,
+            "fraction": "1/15",
+            "float": 0.06666666666666667
+          },
+          "no_person_sense": {
+            "num": 9,
+            "den": 25,
+            "fraction": "9/25",
+            "float": 0.36
+          }
+        },
+        "unanimous_count": 31,
+        "unanimous_rate": {
+          "num": 31,
+          "den": 50,
+          "fraction": "31/50",
+          "float": 0.62
+        },
+        "P_bar": {
+          "num": 37,
+          "den": 50,
+          "fraction": "37/50",
+          "float": 0.74
+        },
+        "P_e": {
+          "num": 1679,
+          "den": 5625,
+          "fraction": "1679/5625",
+          "float": 0.2984888888888889
+        },
+        "kappa": {
+          "num": 4967,
+          "den": 7892,
+          "fraction": "4967/7892",
+          "float": 0.6293715154586923
+        },
+        "kappa_fraction": "4967/7892",
+        "kappa_float": 0.6293715154586923,
+        "degenerate_single_category": false
+      },
+      "fleiss_kappa_binary_person_first": {
+        "n_items": 50,
+        "n_raters": 3,
+        "categories": [
+          "person_first",
+          "not_person_first"
+        ],
+        "category_counts": {
+          "person_first": 44,
+          "not_person_first": 106
+        },
+        "category_proportions": {
+          "person_first": {
+            "num": 22,
+            "den": 75,
+            "fraction": "22/75",
+            "float": 0.29333333333333333
+          },
+          "not_person_first": {
+            "num": 53,
+            "den": 75,
+            "fraction": "53/75",
+            "float": 0.7066666666666667
+          }
+        },
+        "unanimous_count": 39,
+        "unanimous_rate": {
+          "num": 39,
+          "den": 50,
+          "fraction": "39/50",
+          "float": 0.78
+        },
+        "P_bar": {
+          "num": 64,
+          "den": 75,
+          "fraction": "64/75",
+          "float": 0.8533333333333334
+        },
+        "P_e": {
+          "num": 3293,
+          "den": 5625,
+          "fraction": "3293/5625",
+          "float": 0.5854222222222222
+        },
+        "kappa": {
+          "num": 137,
+          "den": 212,
+          "fraction": "137/212",
+          "float": 0.6462264150943396
+        },
+        "kappa_fraction": "137/212",
+        "kappa_float": 0.6462264150943396,
+        "degenerate_single_category": false
+      },
+      "tie_or_disagreement_count": 1,
+      "tie_or_disagreement_items": [
+        {
+          "item_id": "W002",
+          "word": "sound",
+          "in_targets_10": false,
+          "in_controls_40": true,
+          "in_ledger_physics_35": false,
+          "s1": "person_first",
+          "s2": "both_from_start",
+          "s3": "no_person_sense"
+        }
+      ],
+      "pairwise_cohen_kappa": {
+        "s1_vs_s3": {
+          "relation": "within_gemini_family",
+          "four_category": {
+            "n_items": 50,
+            "categories": [
+              "person_first",
+              "physics_first",
+              "both_from_start",
+              "no_person_sense"
+            ],
+            "matches": 38,
+            "agreement_rate": {
+              "num": 19,
+              "den": 25,
+              "fraction": "19/25",
+              "float": 0.76
+            },
+            "p_o": {
+              "num": 19,
+              "den": 25,
+              "fraction": "19/25",
+              "float": 0.76
+            },
+            "p_e": {
+              "num": 737,
+              "den": 2500,
+              "fraction": "737/2500",
+              "float": 0.2948
+            },
+            "confusion_matrix": {
+              "person_first": {
+                "person_first": 10,
+                "physics_first": 2,
+                "both_from_start": 1,
+                "no_person_sense": 1
+              },
+              "physics_first": {
+                "person_first": 1,
+                "physics_first": 12,
+                "both_from_start": 0,
+                "no_person_sense": 2
+              },
+              "both_from_start": {
+                "person_first": 2,
+                "physics_first": 0,
+                "both_from_start": 2,
+                "no_person_sense": 0
+              },
+              "no_person_sense": {
+                "person_first": 1,
+                "physics_first": 2,
+                "both_from_start": 0,
+                "no_person_sense": 14
+              }
+            },
+            "kappa": {
+              "num": 1163,
+              "den": 1763,
+              "fraction": "1163/1763",
+              "float": 0.6596710153148043
+            },
+            "kappa_fraction": "1163/1763",
+            "kappa_float": 0.6596710153148043,
+            "degenerate_single_category": false
+          },
+          "binary_person_first": {
+            "n_items": 50,
+            "categories": [
+              "person_first",
+              "not_person_first"
+            ],
+            "matches": 42,
+            "agreement_rate": {
+              "num": 21,
+              "den": 25,
+              "fraction": "21/25",
+              "float": 0.84
+            },
+            "p_o": {
+              "num": 21,
+              "den": 25,
+              "fraction": "21/25",
+              "float": 0.84
+            },
+            "p_e": {
+              "num": 373,
+              "den": 625,
+              "fraction": "373/625",
+              "float": 0.5968
+            },
+            "confusion_matrix": {
+              "person_first": {
+                "person_first": 10,
+                "not_person_first": 4
+              },
+              "not_person_first": {
+                "person_first": 4,
+                "not_person_first": 32
+              }
+            },
+            "kappa": {
+              "num": 38,
+              "den": 63,
+              "fraction": "38/63",
+              "float": 0.6031746031746031
+            },
+            "kappa_fraction": "38/63",
+            "kappa_float": 0.6031746031746031,
+            "degenerate_single_category": false
+          }
+        },
+        "s1_vs_s2": {
+          "relation": "cross_family_gemini_vs_anthropic",
+          "four_category": {
+            "n_items": 50,
+            "categories": [
+              "person_first",
+              "physics_first",
+              "both_from_start",
+              "no_person_sense"
+            ],
+            "matches": 35,
+            "agreement_rate": {
+              "num": 7,
+              "den": 10,
+              "fraction": "7/10",
+              "float": 0.7
+            },
+            "p_o": {
+              "num": 7,
+              "den": 10,
+              "fraction": "7/10",
+              "float": 0.7
+            },
+            "p_e": {
+              "num": 741,
+              "den": 2500,
+              "fraction": "741/2500",
+              "float": 0.2964
+            },
+            "confusion_matrix": {
+              "person_first": {
+                "person_first": 11,
+                "physics_first": 0,
+                "both_from_start": 2,
+                "no_person_sense": 1
+              },
+              "physics_first": {
+                "person_first": 2,
+                "physics_first": 9,
+                "both_from_start": 0,
+                "no_person_sense": 4
+              },
+              "both_from_start": {
+                "person_first": 2,
+                "physics_first": 0,
+                "both_from_start": 1,
+                "no_person_sense": 1
+              },
+              "no_person_sense": {
+                "person_first": 1,
+                "physics_first": 2,
+                "both_from_start": 0,
+                "no_person_sense": 14
+              }
+            },
+            "kappa": {
+              "num": 1009,
+              "den": 1759,
+              "fraction": "1009/1759",
+              "float": 0.5736213757816941
+            },
+            "kappa_fraction": "1009/1759",
+            "kappa_float": 0.5736213757816941,
+            "degenerate_single_category": false
+          },
+          "binary_person_first": {
+            "n_items": 50,
+            "categories": [
+              "person_first",
+              "not_person_first"
+            ],
+            "matches": 42,
+            "agreement_rate": {
+              "num": 21,
+              "den": 25,
+              "fraction": "21/25",
+              "float": 0.84
+            },
+            "p_o": {
+              "num": 21,
+              "den": 25,
+              "fraction": "21/25",
+              "float": 0.84
+            },
+            "p_e": {
+              "num": 362,
+              "den": 625,
+              "fraction": "362/625",
+              "float": 0.5792
+            },
+            "confusion_matrix": {
+              "person_first": {
+                "person_first": 11,
+                "not_person_first": 3
+              },
+              "not_person_first": {
+                "person_first": 5,
+                "not_person_first": 31
+              }
+            },
+            "kappa": {
+              "num": 163,
+              "den": 263,
+              "fraction": "163/263",
+              "float": 0.6197718631178707
+            },
+            "kappa_fraction": "163/263",
+            "kappa_float": 0.6197718631178707,
+            "degenerate_single_category": false
+          }
+        },
+        "s3_vs_s2": {
+          "relation": "cross_family_gemini_vs_anthropic",
+          "four_category": {
+            "n_items": 50,
+            "categories": [
+              "person_first",
+              "physics_first",
+              "both_from_start",
+              "no_person_sense"
+            ],
+            "matches": 38,
+            "agreement_rate": {
+              "num": 19,
+              "den": 25,
+              "fraction": "19/25",
+              "float": 0.76
+            },
+            "p_o": {
+              "num": 19,
+              "den": 25,
+              "fraction": "19/25",
+              "float": 0.76
+            },
+            "p_e": {
+              "num": 749,
+              "den": 2500,
+              "fraction": "749/2500",
+              "float": 0.2996
+            },
+            "confusion_matrix": {
+              "person_first": {
+                "person_first": 12,
+                "physics_first": 0,
+                "both_from_start": 1,
+                "no_person_sense": 1
+              },
+              "physics_first": {
+                "person_first": 3,
+                "physics_first": 10,
+                "both_from_start": 0,
+                "no_person_sense": 3
+              },
+              "both_from_start": {
+                "person_first": 1,
+                "physics_first": 0,
+                "both_from_start": 1,
+                "no_person_sense": 1
+              },
+              "no_person_sense": {
+                "person_first": 0,
+                "physics_first": 1,
+                "both_from_start": 1,
+                "no_person_sense": 15
+              }
+            },
+            "kappa": {
+              "num": 1151,
+              "den": 1751,
+              "fraction": "1151/1751",
+              "float": 0.6573386636207881
+            },
+            "kappa_fraction": "1151/1751",
+            "kappa_float": 0.6573386636207881,
+            "degenerate_single_category": false
+          },
+          "binary_person_first": {
+            "n_items": 50,
+            "categories": [
+              "person_first",
+              "not_person_first"
+            ],
+            "matches": 44,
+            "agreement_rate": {
+              "num": 22,
+              "den": 25,
+              "fraction": "22/25",
+              "float": 0.88
+            },
+            "p_o": {
+              "num": 22,
+              "den": 25,
+              "fraction": "22/25",
+              "float": 0.88
+            },
+            "p_e": {
+              "num": 362,
+              "den": 625,
+              "fraction": "362/625",
+              "float": 0.5792
+            },
+            "confusion_matrix": {
+              "person_first": {
+                "person_first": 12,
+                "not_person_first": 2
+              },
+              "not_person_first": {
+                "person_first": 4,
+                "not_person_first": 32
+              }
+            },
+            "kappa": {
+              "num": 188,
+              "den": 263,
+              "fraction": "188/263",
+              "float": 0.714828897338403
+            },
+            "kappa_fraction": "188/263",
+            "kappa_float": 0.714828897338403,
+            "degenerate_single_category": false
+          }
+        }
+      }
+    },
+    "ledger_physics_35": {
+      "n_items": 35,
+      "fleiss_kappa_4cat": {
+        "n_items": 35,
+        "n_raters": 3,
+        "categories": [
+          "person_first",
+          "physics_first",
+          "both_from_start",
+          "no_person_sense"
+        ],
+        "category_counts": {
+          "person_first": 27,
+          "physics_first": 52,
+          "both_from_start": 9,
+          "no_person_sense": 17
+        },
+        "category_proportions": {
+          "person_first": {
+            "num": 9,
+            "den": 35,
+            "fraction": "9/35",
+            "float": 0.2571428571428571
+          },
+          "physics_first": {
+            "num": 52,
+            "den": 105,
+            "fraction": "52/105",
+            "float": 0.49523809523809526
+          },
+          "both_from_start": {
+            "num": 3,
+            "den": 35,
+            "fraction": "3/35",
+            "float": 0.08571428571428572
+          },
+          "no_person_sense": {
+            "num": 17,
+            "den": 105,
+            "fraction": "17/105",
+            "float": 0.1619047619047619
+          }
+        },
+        "unanimous_count": 21,
+        "unanimous_rate": {
+          "num": 3,
+          "den": 5,
+          "fraction": "3/5",
+          "float": 0.6
+        },
+        "P_bar": {
+          "num": 76,
+          "den": 105,
+          "fraction": "76/105",
+          "float": 0.7238095238095238
+        },
+        "P_e": {
+          "num": 3803,
+          "den": 11025,
+          "fraction": "3803/11025",
+          "float": 0.34494331065759637
+        },
+        "kappa": {
+          "num": 4177,
+          "den": 7222,
+          "fraction": "4177/7222",
+          "float": 0.5783716422043755
+        },
+        "kappa_fraction": "4177/7222",
+        "kappa_float": 0.5783716422043755,
+        "degenerate_single_category": false
+      },
+      "fleiss_kappa_binary_person_first": {
+        "n_items": 35,
+        "n_raters": 3,
+        "categories": [
+          "person_first",
+          "not_person_first"
+        ],
+        "category_counts": {
+          "person_first": 27,
+          "not_person_first": 78
+        },
+        "category_proportions": {
+          "person_first": {
+            "num": 9,
+            "den": 35,
+            "fraction": "9/35",
+            "float": 0.2571428571428571
+          },
+          "not_person_first": {
+            "num": 26,
+            "den": 35,
+            "fraction": "26/35",
+            "float": 0.7428571428571429
+          }
+        },
+        "unanimous_count": 30,
+        "unanimous_rate": {
+          "num": 6,
+          "den": 7,
+          "fraction": "6/7",
+          "float": 0.8571428571428571
+        },
+        "P_bar": {
+          "num": 19,
+          "den": 21,
+          "fraction": "19/21",
+          "float": 0.9047619047619048
+        },
+        "P_e": {
+          "num": 757,
+          "den": 1225,
+          "fraction": "757/1225",
+          "float": 0.6179591836734694
+        },
+        "kappa": {
+          "num": 527,
+          "den": 702,
+          "fraction": "527/702",
+          "float": 0.7507122507122507
+        },
+        "kappa_fraction": "527/702",
+        "kappa_float": 0.7507122507122507,
+        "degenerate_single_category": false
+      },
+      "tie_or_disagreement_count": 1,
+      "tie_or_disagreement_items": [
+        {
+          "item_id": "W072",
+          "word": "charge",
+          "in_targets_10": false,
+          "in_controls_40": false,
+          "in_ledger_physics_35": true,
+          "s1": "physics_first",
+          "s2": "person_first",
+          "s3": "both_from_start"
+        }
+      ],
+      "pairwise_cohen_kappa": {
+        "s1_vs_s3": {
+          "relation": "within_gemini_family",
+          "four_category": {
+            "n_items": 35,
+            "categories": [
+              "person_first",
+              "physics_first",
+              "both_from_start",
+              "no_person_sense"
+            ],
+            "matches": 24,
+            "agreement_rate": {
+              "num": 24,
+              "den": 35,
+              "fraction": "24/35",
+              "float": 0.6857142857142857
+            },
+            "p_o": {
+              "num": 24,
+              "den": 35,
+              "fraction": "24/35",
+              "float": 0.6857142857142857
+            },
+            "p_e": {
+              "num": 403,
+              "den": 1225,
+              "fraction": "403/1225",
+              "float": 0.3289795918367347
+            },
+            "confusion_matrix": {
+              "person_first": {
+                "person_first": 6,
+                "physics_first": 1,
+                "both_from_start": 1,
+                "no_person_sense": 0
+              },
+              "physics_first": {
+                "person_first": 0,
+                "physics_first": 13,
+                "both_from_start": 2,
+                "no_person_sense": 2
+              },
+              "both_from_start": {
+                "person_first": 1,
+                "physics_first": 0,
+                "both_from_start": 2,
+                "no_person_sense": 0
+              },
+              "no_person_sense": {
+                "person_first": 1,
+                "physics_first": 3,
+                "both_from_start": 0,
+                "no_person_sense": 3
+              }
+            },
+            "kappa": {
+              "num": 437,
+              "den": 822,
+              "fraction": "437/822",
+              "float": 0.5316301703163017
+            },
+            "kappa_fraction": "437/822",
+            "kappa_float": 0.5316301703163017,
+            "degenerate_single_category": false
+          },
+          "binary_person_first": {
+            "n_items": 35,
+            "categories": [
+              "person_first",
+              "not_person_first"
+            ],
+            "matches": 31,
+            "agreement_rate": {
+              "num": 31,
+              "den": 35,
+              "fraction": "31/35",
+              "float": 0.8857142857142857
+            },
+            "p_o": {
+              "num": 31,
+              "den": 35,
+              "fraction": "31/35",
+              "float": 0.8857142857142857
+            },
+            "p_e": {
+              "num": 793,
+              "den": 1225,
+              "fraction": "793/1225",
+              "float": 0.6473469387755102
+            },
+            "confusion_matrix": {
+              "person_first": {
+                "person_first": 6,
+                "not_person_first": 2
+              },
+              "not_person_first": {
+                "person_first": 2,
+                "not_person_first": 25
+              }
+            },
+            "kappa": {
+              "num": 73,
+              "den": 108,
+              "fraction": "73/108",
+              "float": 0.6759259259259259
+            },
+            "kappa_fraction": "73/108",
+            "kappa_float": 0.6759259259259259,
+            "degenerate_single_category": false
+          }
+        },
+        "s1_vs_s2": {
+          "relation": "cross_family_gemini_vs_anthropic",
+          "four_category": {
+            "n_items": 35,
+            "categories": [
+              "person_first",
+              "physics_first",
+              "both_from_start",
+              "no_person_sense"
+            ],
+            "matches": 25,
+            "agreement_rate": {
+              "num": 5,
+              "den": 7,
+              "fraction": "5/7",
+              "float": 0.7142857142857143
+            },
+            "p_o": {
+              "num": 5,
+              "den": 7,
+              "fraction": "5/7",
+              "float": 0.7142857142857143
+            },
+            "p_e": {
+              "num": 432,
+              "den": 1225,
+              "fraction": "432/1225",
+              "float": 0.3526530612244898
+            },
+            "confusion_matrix": {
+              "person_first": {
+                "person_first": 8,
+                "physics_first": 0,
+                "both_from_start": 0,
+                "no_person_sense": 0
+              },
+              "physics_first": {
+                "person_first": 1,
+                "physics_first": 14,
+                "both_from_start": 0,
+                "no_person_sense": 2
+              },
+              "both_from_start": {
+                "person_first": 1,
+                "physics_first": 0,
+                "both_from_start": 1,
+                "no_person_sense": 1
+              },
+              "no_person_sense": {
+                "person_first": 1,
+                "physics_first": 4,
+                "both_from_start": 0,
+                "no_person_sense": 2
+              }
+            },
+            "kappa": {
+              "num": 443,
+              "den": 793,
+              "fraction": "443/793",
+              "float": 0.5586380832282472
+            },
+            "kappa_fraction": "443/793",
+            "kappa_float": 0.5586380832282472,
+            "degenerate_single_category": false
+          },
+          "binary_person_first": {
+            "n_items": 35,
+            "categories": [
+              "person_first",
+              "not_person_first"
+            ],
+            "matches": 32,
+            "agreement_rate": {
+              "num": 32,
+              "den": 35,
+              "fraction": "32/35",
+              "float": 0.9142857142857143
+            },
+            "p_o": {
+              "num": 32,
+              "den": 35,
+              "fraction": "32/35",
+              "float": 0.9142857142857143
+            },
+            "p_e": {
+              "num": 736,
+              "den": 1225,
+              "fraction": "736/1225",
+              "float": 0.6008163265306122
+            },
+            "confusion_matrix": {
+              "person_first": {
+                "person_first": 8,
+                "not_person_first": 0
+              },
+              "not_person_first": {
+                "person_first": 3,
+                "not_person_first": 24
+              }
+            },
+            "kappa": {
+              "num": 128,
+              "den": 163,
+              "fraction": "128/163",
+              "float": 0.7852760736196319
+            },
+            "kappa_fraction": "128/163",
+            "kappa_float": 0.7852760736196319,
+            "degenerate_single_category": false
+          }
+        },
+        "s3_vs_s2": {
+          "relation": "cross_family_gemini_vs_anthropic",
+          "four_category": {
+            "n_items": 35,
+            "categories": [
+              "person_first",
+              "physics_first",
+              "both_from_start",
+              "no_person_sense"
+            ],
+            "matches": 27,
+            "agreement_rate": {
+              "num": 27,
+              "den": 35,
+              "fraction": "27/35",
+              "float": 0.7714285714285715
+            },
+            "p_o": {
+              "num": 27,
+              "den": 35,
+              "fraction": "27/35",
+              "float": 0.7714285714285715
+            },
+            "p_e": {
+              "num": 424,
+              "den": 1225,
+              "fraction": "424/1225",
+              "float": 0.3461224489795918
+            },
+            "confusion_matrix": {
+              "person_first": {
+                "person_first": 8,
+                "physics_first": 0,
+                "both_from_start": 0,
+                "no_person_sense": 0
+              },
+              "physics_first": {
+                "person_first": 1,
+                "physics_first": 15,
+                "both_from_start": 0,
+                "no_person_sense": 1
+              },
+              "both_from_start": {
+                "person_first": 2,
+                "physics_first": 1,
+                "both_from_start": 1,
+                "no_person_sense": 1
+              },
+              "no_person_sense": {
+                "person_first": 0,
+                "physics_first": 2,
+                "both_from_start": 0,
+                "no_person_sense": 3
+              }
+            },
+            "kappa": {
+              "num": 521,
+              "den": 801,
+              "fraction": "521/801",
+              "float": 0.6504369538077404
+            },
+            "kappa_fraction": "521/801",
+            "kappa_float": 0.6504369538077404,
+            "degenerate_single_category": false
+          },
+          "binary_person_first": {
+            "n_items": 35,
+            "categories": [
+              "person_first",
+              "not_person_first"
+            ],
+            "matches": 32,
+            "agreement_rate": {
+              "num": 32,
+              "den": 35,
+              "fraction": "32/35",
+              "float": 0.9142857142857143
+            },
+            "p_o": {
+              "num": 32,
+              "den": 35,
+              "fraction": "32/35",
+              "float": 0.9142857142857143
+            },
+            "p_e": {
+              "num": 736,
+              "den": 1225,
+              "fraction": "736/1225",
+              "float": 0.6008163265306122
+            },
+            "confusion_matrix": {
+              "person_first": {
+                "person_first": 8,
+                "not_person_first": 0
+              },
+              "not_person_first": {
+                "person_first": 3,
+                "not_person_first": 24
+              }
+            },
+            "kappa": {
+              "num": 128,
+              "den": 163,
+              "fraction": "128/163",
+              "float": 0.7852760736196319
+            },
+            "kappa_fraction": "128/163",
+            "kappa_float": 0.7852760736196319,
+            "degenerate_single_category": false
+          }
+        }
+      }
+    }
+  },
+  "target_vs_control_primary_and_sensitivity": {
+    "primary_rule": "maj_3run",
+    "preregistered_alpha": {
+      "num": 1,
+      "den": 20,
+      "fraction": "1/20",
+      "float": 0.05
+    },
+    "any_rule_p_lt_0_05": false,
+    "fisher_exact_tests_9_rules": {
+      "maj_3run": {
+        "rule_name": "maj_3run",
+        "description": "3-run strict majority (direction_class_maj == 'person_first'; Gemini holds 2/3 votes)",
+        "contingency_2x2": {
+          "target_person_first": 4,
+          "target_not_person_first": 6,
+          "control_person_first": 13,
+          "control_not_person_first": 27
+        },
+        "target_person_first_count": 4,
+        "target_total": 10,
+        "target_person_first": {
+          "num": 2,
+          "den": 5,
+          "fraction": "2/5",
+          "float": 0.4
+        },
+        "control_person_first_count": 13,
+        "control_total": 40,
+        "control_person_first": {
+          "num": 13,
+          "den": 40,
+          "fraction": "13/40",
+          "float": 0.325
+        },
+        "risk_difference": {
+          "num": 3,
+          "den": 40,
+          "fraction": "3/40",
+          "float": 0.075
+        },
+        "fisher_p_one_sided_upper": {
+          "num": 4388533,
+          "den": 9529015,
+          "fraction": "4388533/9529015",
+          "float": 0.4605442430303657
+        },
+        "fisher_p_two_sided_secondary": {
+          "num": 66975323,
+          "den": 93384347,
+          "fraction": "66975323/93384347",
+          "float": 0.7172007424327762
+        },
+        "p_lt_0_05": false,
+        "target_person_first_words": [
+          "acceleration",
+          "energy",
+          "force",
+          "speed"
+        ],
+        "control_person_first_words": [
+          "associative",
+          "beats",
+          "commutative",
+          "conduction",
+          "discrepancy",
+          "displacement",
+          "event",
+          "hearing",
+          "law",
+          "precision",
+          "theory",
+          "thrust",
+          "uncertainty"
+        ]
+      },
+      "s1_gemini_hydrogen": {
+        "rule_name": "s1_gemini_hydrogen",
+        "description": "Session 1 only (gemini_hydrogen, 78/78 retrieved 2026-11-14)",
+        "contingency_2x2": {
+          "target_person_first": 3,
+          "target_not_person_first": 7,
+          "control_person_first": 11,
+          "control_not_person_first": 29
+        },
+        "target_person_first_count": 3,
+        "target_total": 10,
+        "target_person_first": {
+          "num": 3,
+          "den": 10,
+          "fraction": "3/10",
+          "float": 0.3
+        },
+        "control_person_first_count": 11,
+        "control_total": 40,
+        "control_person_first": {
+          "num": 11,
+          "den": 40,
+          "fraction": "11/40",
+          "float": 0.275
+        },
+        "risk_difference": {
+          "num": 1,
+          "den": 40,
+          "fraction": "1/40",
+          "float": 0.025
+        },
+        "fisher_p_one_sided_upper": {
+          "num": 38612951,
+          "den": 66703105,
+          "fraction": "38612951/66703105",
+          "float": 0.57887786483103
+        },
+        "fisher_p_two_sided_secondary": {
+          "num": 1,
+          "den": 1,
+          "fraction": "1/1",
+          "float": 1.0
+        },
+        "p_lt_0_05": false,
+        "target_person_first_words": [
+          "energy",
+          "force",
+          "speed"
+        ],
+        "control_person_first_words": [
+          "associative",
+          "beats",
+          "commutative",
+          "conduction",
+          "displacement",
+          "hearing",
+          "law",
+          "precision",
+          "sound",
+          "theory",
+          "thrust"
+        ]
+      },
+      "s2_opus_5_5_memory_75_of_78": {
+        "rule_name": "s2_opus_5_5_memory_75_of_78",
+        "description": "Session 2 only (opus_5_5; W001..W003 live, W004..W078 memory unverified)",
+        "contingency_2x2": {
+          "target_person_first": 4,
+          "target_not_person_first": 6,
+          "control_person_first": 12,
+          "control_not_person_first": 28
+        },
+        "target_person_first_count": 4,
+        "target_total": 10,
+        "target_person_first": {
+          "num": 2,
+          "den": 5,
+          "fraction": "2/5",
+          "float": 0.4
+        },
+        "control_person_first_count": 12,
+        "control_total": 40,
+        "control_person_first": {
+          "num": 3,
+          "den": 10,
+          "fraction": "3/10",
+          "float": 0.3
+        },
+        "risk_difference": {
+          "num": 1,
+          "den": 10,
+          "fraction": "1/10",
+          "float": 0.1
+        },
+        "fisher_p_one_sided_upper": {
+          "num": 3813173,
+          "den": 9529015,
+          "fraction": "3813173/9529015",
+          "float": 0.40016444511840943
+        },
+        "fisher_p_two_sided_secondary": {
+          "num": 9428173,
+          "den": 13340621,
+          "fraction": "9428173/13340621",
+          "float": 0.7067266958562124
+        },
+        "p_lt_0_05": false,
+        "target_person_first_words": [
+          "acceleration",
+          "energy",
+          "force",
+          "speed"
+        ],
+        "control_person_first_words": [
+          "associative",
+          "beats",
+          "conduction",
+          "discrepancy",
+          "event",
+          "hearing",
+          "law",
+          "precision",
+          "second",
+          "theory",
+          "thrust",
+          "uncertainty"
+        ]
+      },
+      "s3_gemini_carbon": {
+        "rule_name": "s3_gemini_carbon",
+        "description": "Session 3 only (gemini_carbon, 78/78 retrieved 2026-11-14)",
+        "contingency_2x2": {
+          "target_person_first": 3,
+          "target_not_person_first": 7,
+          "control_person_first": 11,
+          "control_not_person_first": 29
+        },
+        "target_person_first_count": 3,
+        "target_total": 10,
+        "target_person_first": {
+          "num": 3,
+          "den": 10,
+          "fraction": "3/10",
+          "float": 0.3
+        },
+        "control_person_first_count": 11,
+        "control_total": 40,
+        "control_person_first": {
+          "num": 11,
+          "den": 40,
+          "fraction": "11/40",
+          "float": 0.275
+        },
+        "risk_difference": {
+          "num": 1,
+          "den": 40,
+          "fraction": "1/40",
+          "float": 0.025
+        },
+        "fisher_p_one_sided_upper": {
+          "num": 38612951,
+          "den": 66703105,
+          "fraction": "38612951/66703105",
+          "float": 0.57887786483103
+        },
+        "fisher_p_two_sided_secondary": {
+          "num": 1,
+          "den": 1,
+          "fraction": "1/1",
+          "float": 1.0
+        },
+        "p_lt_0_05": false,
+        "target_person_first_words": [
+          "acceleration",
+          "force",
+          "speed"
+        ],
+        "control_person_first_words": [
+          "associative",
+          "beats",
+          "commutative",
+          "discrepancy",
+          "displacement",
+          "event",
+          "hearing",
+          "law",
+          "precision",
+          "theory",
+          "uncertainty"
+        ]
+      },
+      "cross_family_strict_s1_and_s2": {
+        "rule_name": "cross_family_strict_s1_and_s2",
+        "description": "Cross-family strict conjunction: s1 (gemini_hydrogen) == 'person_first' AND s2 (opus_5_5) == 'person_first'",
+        "contingency_2x2": {
+          "target_person_first": 3,
+          "target_not_person_first": 7,
+          "control_person_first": 8,
+          "control_not_person_first": 32
+        },
+        "target_person_first_count": 3,
+        "target_total": 10,
+        "target_person_first": {
+          "num": 3,
+          "den": 10,
+          "fraction": "3/10",
+          "float": 0.3
+        },
+        "control_person_first_count": 8,
+        "control_total": 40,
+        "control_person_first": {
+          "num": 1,
+          "den": 5,
+          "fraction": "1/5",
+          "float": 0.2
+        },
+        "risk_difference": {
+          "num": 1,
+          "den": 10,
+          "fraction": "1/10",
+          "float": 0.1
+        },
+        "fisher_p_one_sided_upper": {
+          "num": 178257281,
+          "den": 466921735,
+          "fraction": "178257281/466921735",
+          "float": 0.3817712212518871
+        },
+        "fisher_p_two_sided_secondary": {
+          "num": 62622473,
+          "den": 93384347,
+          "fraction": "62622473/93384347",
+          "float": 0.6705885409253866
+        },
+        "p_lt_0_05": false,
+        "target_person_first_words": [
+          "energy",
+          "force",
+          "speed"
+        ],
+        "control_person_first_words": [
+          "associative",
+          "beats",
+          "conduction",
+          "hearing",
+          "law",
+          "precision",
+          "theory",
+          "thrust"
+        ]
+      },
+      "cross_family_strict_s3_and_s2": {
+        "rule_name": "cross_family_strict_s3_and_s2",
+        "description": "Cross-family strict conjunction: s3 (gemini_carbon) == 'person_first' AND s2 (opus_5_5) == 'person_first'",
+        "contingency_2x2": {
+          "target_person_first": 3,
+          "target_not_person_first": 7,
+          "control_person_first": 9,
+          "control_not_person_first": 31
+        },
+        "target_person_first_count": 3,
+        "target_total": 10,
+        "target_person_first": {
+          "num": 3,
+          "den": 10,
+          "fraction": "3/10",
+          "float": 0.3
+        },
+        "control_person_first_count": 9,
+        "control_total": 40,
+        "control_person_first": {
+          "num": 9,
+          "den": 40,
+          "fraction": "9/40",
+          "float": 0.225
+        },
+        "risk_difference": {
+          "num": 3,
+          "den": 40,
+          "fraction": "3/40",
+          "float": 0.075
+        },
+        "fisher_p_one_sided_upper": {
+          "num": 209807921,
+          "den": 466921735,
+          "fraction": "209807921/466921735",
+          "float": 0.4493428026005258
+        },
+        "fisher_p_two_sided_secondary": {
+          "num": 320211259,
+          "den": 466921735,
+          "fraction": "320211259/466921735",
+          "float": 0.6857921467288303
+        },
+        "p_lt_0_05": false,
+        "target_person_first_words": [
+          "acceleration",
+          "force",
+          "speed"
+        ],
+        "control_person_first_words": [
+          "associative",
+          "beats",
+          "discrepancy",
+          "event",
+          "hearing",
+          "law",
+          "precision",
+          "theory",
+          "uncertainty"
+        ]
+      },
+      "cross_family_lenient_s1_or_s2": {
+        "rule_name": "cross_family_lenient_s1_or_s2",
+        "description": "Cross-family lenient disjunction: s1 (gemini_hydrogen) == 'person_first' OR s2 (opus_5_5) == 'person_first'",
+        "contingency_2x2": {
+          "target_person_first": 4,
+          "target_not_person_first": 6,
+          "control_person_first": 15,
+          "control_not_person_first": 25
+        },
+        "target_person_first_count": 4,
+        "target_total": 10,
+        "target_person_first": {
+          "num": 2,
+          "den": 5,
+          "fraction": "2/5",
+          "float": 0.4
+        },
+        "control_person_first_count": 15,
+        "control_total": 40,
+        "control_person_first": {
+          "num": 3,
+          "den": 8,
+          "fraction": "3/8",
+          "float": 0.375
+        },
+        "risk_difference": {
+          "num": 1,
+          "den": 40,
+          "fraction": "1/40",
+          "float": 0.025
+        },
+        "fisher_p_one_sided_upper": {
+          "num": 84969349,
+          "den": 146746831,
+          "fraction": "84969349/146746831",
+          "float": 0.5790199926020889
+        },
+        "fisher_p_two_sided_secondary": {
+          "num": 1,
+          "den": 1,
+          "fraction": "1/1",
+          "float": 1.0
+        },
+        "p_lt_0_05": false,
+        "target_person_first_words": [
+          "acceleration",
+          "energy",
+          "force",
+          "speed"
+        ],
+        "control_person_first_words": [
+          "associative",
+          "beats",
+          "commutative",
+          "conduction",
+          "discrepancy",
+          "displacement",
+          "event",
+          "hearing",
+          "law",
+          "precision",
+          "second",
+          "sound",
+          "theory",
+          "thrust",
+          "uncertainty"
+        ]
+      },
+      "cross_family_lenient_s3_or_s2": {
+        "rule_name": "cross_family_lenient_s3_or_s2",
+        "description": "Cross-family lenient disjunction: s3 (gemini_carbon) == 'person_first' OR s2 (opus_5_5) == 'person_first'",
+        "contingency_2x2": {
+          "target_person_first": 4,
+          "target_not_person_first": 6,
+          "control_person_first": 14,
+          "control_not_person_first": 26
+        },
+        "target_person_first_count": 4,
+        "target_total": 10,
+        "target_person_first": {
+          "num": 2,
+          "den": 5,
+          "fraction": "2/5",
+          "float": 0.4
+        },
+        "control_person_first_count": 14,
+        "control_total": 40,
+        "control_person_first": {
+          "num": 7,
+          "den": 20,
+          "fraction": "7/20",
+          "float": 0.35
+        },
+        "risk_difference": {
+          "num": 1,
+          "den": 20,
+          "fraction": "1/20",
+          "float": 0.05
+        },
+        "fisher_p_one_sided_upper": {
+          "num": 381932081,
+          "den": 733734155,
+          "fraction": "381932081/733734155",
+          "float": 0.520531964332504
+        },
+        "fisher_p_two_sided_secondary": {
+          "num": 1,
+          "den": 1,
+          "fraction": "1/1",
+          "float": 1.0
+        },
+        "p_lt_0_05": false,
+        "target_person_first_words": [
+          "acceleration",
+          "energy",
+          "force",
+          "speed"
+        ],
+        "control_person_first_words": [
+          "associative",
+          "beats",
+          "commutative",
+          "conduction",
+          "discrepancy",
+          "displacement",
+          "event",
+          "hearing",
+          "law",
+          "precision",
+          "second",
+          "theory",
+          "thrust",
+          "uncertainty"
+        ]
+      },
+      "unanimous_all_3": {
+        "rule_name": "unanimous_all_3",
+        "description": "Unanimous all 3 sessions (s1 == s2 == s3 == 'person_first')",
+        "contingency_2x2": {
+          "target_person_first": 2,
+          "target_not_person_first": 8,
+          "control_person_first": 6,
+          "control_not_person_first": 34
+        },
+        "target_person_first_count": 2,
+        "target_total": 10,
+        "target_person_first": {
+          "num": 1,
+          "den": 5,
+          "fraction": "1/5",
+          "float": 0.2
+        },
+        "control_person_first_count": 6,
+        "control_total": 40,
+        "control_person_first": {
+          "num": 3,
+          "den": 20,
+          "fraction": "3/20",
+          "float": 0.15
+        },
+        "risk_difference": {
+          "num": 1,
+          "den": 20,
+          "fraction": "1/20",
+          "float": 0.05
+        },
+        "fisher_p_one_sided_upper": {
+          "num": 18235891,
+          "den": 35791910,
+          "fraction": "18235891/35791910",
+          "float": 0.5094975652319197
+        },
+        "fisher_p_two_sided_secondary": {
+          "num": 2336287,
+          "den": 3579191,
+          "fraction": "2336287/3579191",
+          "float": 0.652741639102244
+        },
+        "p_lt_0_05": false,
+        "target_person_first_words": [
+          "force",
+          "speed"
+        ],
+        "control_person_first_words": [
+          "associative",
+          "beats",
+          "hearing",
+          "law",
+          "precision",
+          "theory"
+        ]
+      }
+    },
+    "direction_class_distributions": {
+      "targets_10": {
+        "n_items": 10,
+        "maj_3run": {
+          "person_first": 4,
+          "physics_first": 2,
+          "both_from_start": 1,
+          "no_person_sense": 3,
+          "tie_or_disagreement": 0
+        },
+        "s1_gemini_hydrogen": {
+          "person_first": 3,
+          "physics_first": 2,
+          "both_from_start": 1,
+          "no_person_sense": 4
+        },
+        "s2_opus_5_5": {
+          "person_first": 4,
+          "physics_first": 1,
+          "both_from_start": 0,
+          "no_person_sense": 5
+        },
+        "s3_gemini_carbon": {
+          "person_first": 3,
+          "physics_first": 3,
+          "both_from_start": 1,
+          "no_person_sense": 3
+        }
+      },
+      "controls_40": {
+        "n_items": 40,
+        "maj_3run": {
+          "person_first": 13,
+          "physics_first": 11,
+          "both_from_start": 1,
+          "no_person_sense": 14,
+          "tie_or_disagreement": 1
+        },
+        "s1_gemini_hydrogen": {
+          "person_first": 11,
+          "physics_first": 13,
+          "both_from_start": 3,
+          "no_person_sense": 13
+        },
+        "s2_opus_5_5": {
+          "person_first": 12,
+          "physics_first": 10,
+          "both_from_start": 3,
+          "no_person_sense": 15
+        },
+        "s3_gemini_carbon": {
+          "person_first": 11,
+          "physics_first": 13,
+          "both_from_start": 2,
+          "no_person_sense": 14
+        }
+      }
+    },
+    "targets_10_per_word": [
+      {
+        "item_id": "W011",
+        "word": "velocity",
+        "s1_direction_class": "no_person_sense",
+        "s2_direction_class": "no_person_sense",
+        "s3_direction_class": "no_person_sense",
+        "direction_class_maj": "no_person_sense",
+        "person_first_maj": false,
+        "s1_retrieved_utc": "2026-11-14",
+        "s2_retrieved_utc": "unverified",
+        "s3_retrieved_utc": "2026-11-14",
+        "in_ledger_physics_35": false,
+        "ledger_stratum": null,
+        "ledger_kind": null
+      },
+      {
+        "item_id": "W026",
+        "word": "time",
+        "s1_direction_class": "both_from_start",
+        "s2_direction_class": "no_person_sense",
+        "s3_direction_class": "both_from_start",
+        "direction_class_maj": "both_from_start",
+        "person_first_maj": false,
+        "s1_retrieved_utc": "2026-11-14",
+        "s2_retrieved_utc": "unverified",
+        "s3_retrieved_utc": "2026-11-14",
+        "in_ledger_physics_35": true,
+        "ledger_stratum": "core_law",
+        "ledger_kind": "family"
+      },
+      {
+        "item_id": "W046",
+        "word": "energy",
+        "s1_direction_class": "person_first",
+        "s2_direction_class": "person_first",
+        "s3_direction_class": "physics_first",
+        "direction_class_maj": "person_first",
+        "person_first_maj": true,
+        "s1_retrieved_utc": "2026-11-14",
+        "s2_retrieved_utc": "unverified",
+        "s3_retrieved_utc": "2026-11-14",
+        "in_ledger_physics_35": true,
+        "ledger_stratum": "core_law",
+        "ledger_kind": "inward first"
+      },
+      {
+        "item_id": "W048",
+        "word": "speed",
+        "s1_direction_class": "person_first",
+        "s2_direction_class": "person_first",
+        "s3_direction_class": "person_first",
+        "direction_class_maj": "person_first",
+        "person_first_maj": true,
+        "s1_retrieved_utc": "2026-11-14",
+        "s2_retrieved_utc": "unverified",
+        "s3_retrieved_utc": "2026-11-14",
+        "in_ledger_physics_35": false,
+        "ledger_stratum": null,
+        "ledger_kind": null
+      },
+      {
+        "item_id": "W051",
+        "word": "force",
+        "s1_direction_class": "person_first",
+        "s2_direction_class": "person_first",
+        "s3_direction_class": "person_first",
+        "direction_class_maj": "person_first",
+        "person_first_maj": true,
+        "s1_retrieved_utc": "2026-11-14",
+        "s2_retrieved_utc": "unverified",
+        "s3_retrieved_utc": "2026-11-14",
+        "in_ledger_physics_35": true,
+        "ledger_stratum": "core_law",
+        "ledger_kind": "inward first"
+      },
+      {
+        "item_id": "W063",
+        "word": "volume",
+        "s1_direction_class": "no_person_sense",
+        "s2_direction_class": "no_person_sense",
+        "s3_direction_class": "no_person_sense",
+        "direction_class_maj": "no_person_sense",
+        "person_first_maj": false,
+        "s1_retrieved_utc": "2026-11-14",
+        "s2_retrieved_utc": "unverified",
+        "s3_retrieved_utc": "2026-11-14",
+        "in_ledger_physics_35": true,
+        "ledger_stratum": "core_law",
+        "ledger_kind": "household"
+      },
+      {
+        "item_id": "W064",
+        "word": "mass",
+        "s1_direction_class": "physics_first",
+        "s2_direction_class": "no_person_sense",
+        "s3_direction_class": "physics_first",
+        "direction_class_maj": "physics_first",
+        "person_first_maj": false,
+        "s1_retrieved_utc": "2026-11-14",
+        "s2_retrieved_utc": "unverified",
+        "s3_retrieved_utc": "2026-11-14",
+        "in_ledger_physics_35": true,
+        "ledger_stratum": "core_law",
+        "ledger_kind": "household"
+      },
+      {
+        "item_id": "W065",
+        "word": "density",
+        "s1_direction_class": "no_person_sense",
+        "s2_direction_class": "physics_first",
+        "s3_direction_class": "physics_first",
+        "direction_class_maj": "physics_first",
+        "person_first_maj": false,
+        "s1_retrieved_utc": "2026-11-14",
+        "s2_retrieved_utc": "unverified",
+        "s3_retrieved_utc": "2026-11-14",
+        "in_ledger_physics_35": true,
+        "ledger_stratum": "core_law",
+        "ledger_kind": "household"
+      },
+      {
+        "item_id": "W073",
+        "word": "space",
+        "s1_direction_class": "physics_first",
+        "s2_direction_class": "no_person_sense",
+        "s3_direction_class": "no_person_sense",
+        "direction_class_maj": "no_person_sense",
+        "person_first_maj": false,
+        "s1_retrieved_utc": "2026-11-14",
+        "s2_retrieved_utc": "unverified",
+        "s3_retrieved_utc": "2026-11-14",
+        "in_ledger_physics_35": true,
+        "ledger_stratum": "core_law",
+        "ledger_kind": "family"
+      },
+      {
+        "item_id": "W074",
+        "word": "acceleration",
+        "s1_direction_class": "no_person_sense",
+        "s2_direction_class": "person_first",
+        "s3_direction_class": "person_first",
+        "direction_class_maj": "person_first",
+        "person_first_maj": true,
+        "s1_retrieved_utc": "2026-11-14",
+        "s2_retrieved_utc": "unverified",
+        "s3_retrieved_utc": "2026-11-14",
+        "in_ledger_physics_35": false,
+        "ledger_stratum": null,
+        "ledger_kind": null
+      }
+    ],
+    "controls_40_per_word": [
+      {
+        "item_id": "W001",
+        "word": "theory",
+        "control_openstax_chapters": [
+          "V1C1"
+        ],
+        "s1_direction_class": "person_first",
+        "s2_direction_class": "person_first",
+        "s3_direction_class": "person_first",
+        "direction_class_maj": "person_first",
+        "person_first_maj": true,
+        "s1_retrieved_utc": "2026-11-14",
+        "s2_retrieved_utc": "2026-11-14",
+        "s3_retrieved_utc": "2026-11-14"
+      },
+      {
+        "item_id": "W002",
+        "word": "sound",
+        "control_openstax_chapters": [
+          "V1C17"
+        ],
+        "s1_direction_class": "person_first",
+        "s2_direction_class": "both_from_start",
+        "s3_direction_class": "no_person_sense",
+        "direction_class_maj": "tie_or_disagreement",
+        "person_first_maj": false,
+        "s1_retrieved_utc": "2026-11-14",
+        "s2_retrieved_utc": "2026-11-14",
+        "s3_retrieved_utc": "2026-11-14"
+      },
+      {
+        "item_id": "W006",
+        "word": "scalar",
+        "control_openstax_chapters": [
+          "V1C2"
+        ],
+        "s1_direction_class": "no_person_sense",
+        "s2_direction_class": "no_person_sense",
+        "s3_direction_class": "no_person_sense",
+        "direction_class_maj": "no_person_sense",
+        "person_first_maj": false,
+        "s1_retrieved_utc": "2026-11-14",
+        "s2_retrieved_utc": "unverified",
+        "s3_retrieved_utc": "2026-11-14"
+      },
+      {
+        "item_id": "W007",
+        "word": "calorimeter",
+        "control_openstax_chapters": [
+          "V2C1"
+        ],
+        "s1_direction_class": "no_person_sense",
+        "s2_direction_class": "no_person_sense",
+        "s3_direction_class": "no_person_sense",
+        "direction_class_maj": "no_person_sense",
+        "person_first_maj": false,
+        "s1_retrieved_utc": "2026-11-14",
+        "s2_retrieved_utc": "unverified",
+        "s3_retrieved_utc": "2026-11-14"
+      },
+      {
+        "item_id": "W008",
+        "word": "vapor",
+        "control_openstax_chapters": [
+          "V2C1"
+        ],
+        "s1_direction_class": "physics_first",
+        "s2_direction_class": "physics_first",
+        "s3_direction_class": "physics_first",
+        "direction_class_maj": "physics_first",
+        "person_first_maj": false,
+        "s1_retrieved_utc": "2026-11-14",
+        "s2_retrieved_utc": "unverified",
+        "s3_retrieved_utc": "2026-11-14"
+      },
+      {
+        "item_id": "W009",
+        "word": "uncertainty",
+        "control_openstax_chapters": [
+          "V1C1"
+        ],
+        "s1_direction_class": "both_from_start",
+        "s2_direction_class": "person_first",
+        "s3_direction_class": "person_first",
+        "direction_class_maj": "person_first",
+        "person_first_maj": true,
+        "s1_retrieved_utc": "2026-11-14",
+        "s2_retrieved_utc": "unverified",
+        "s3_retrieved_utc": "2026-11-14"
+      },
+      {
+        "item_id": "W010",
+        "word": "kinematics",
+        "control_openstax_chapters": [
+          "V1C3"
+        ],
+        "s1_direction_class": "no_person_sense",
+        "s2_direction_class": "no_person_sense",
+        "s3_direction_class": "no_person_sense",
+        "direction_class_maj": "no_person_sense",
+        "person_first_maj": false,
+        "s1_retrieved_utc": "2026-11-14",
+        "s2_retrieved_utc": "unverified",
+        "s3_retrieved_utc": "2026-11-14"
+      },
+      {
+        "item_id": "W012",
+        "word": "event",
+        "control_openstax_chapters": [
+          "V3C5"
+        ],
+        "s1_direction_class": "physics_first",
+        "s2_direction_class": "person_first",
+        "s3_direction_class": "person_first",
+        "direction_class_maj": "person_first",
+        "person_first_maj": true,
+        "s1_retrieved_utc": "2026-11-14",
+        "s2_retrieved_utc": "unverified",
+        "s3_retrieved_utc": "2026-11-14"
+      },
+      {
+        "item_id": "W013",
+        "word": "thrust",
+        "control_openstax_chapters": [
+          "V1C5"
+        ],
+        "s1_direction_class": "person_first",
+        "s2_direction_class": "person_first",
+        "s3_direction_class": "both_from_start",
+        "direction_class_maj": "person_first",
+        "person_first_maj": true,
+        "s1_retrieved_utc": "2026-11-14",
+        "s2_retrieved_utc": "unverified",
+        "s3_retrieved_utc": "2026-11-14"
+      },
+      {
+        "item_id": "W016",
+        "word": "dimension",
+        "control_openstax_chapters": [
+          "V1C1"
+        ],
+        "s1_direction_class": "no_person_sense",
+        "s2_direction_class": "no_person_sense",
+        "s3_direction_class": "physics_first",
+        "direction_class_maj": "no_person_sense",
+        "person_first_maj": false,
+        "s1_retrieved_utc": "2026-11-14",
+        "s2_retrieved_utc": "unverified",
+        "s3_retrieved_utc": "2026-11-14"
+      },
+      {
+        "item_id": "W017",
+        "word": "weight",
+        "control_openstax_chapters": [
+          "V1C5"
+        ],
+        "s1_direction_class": "physics_first",
+        "s2_direction_class": "physics_first",
+        "s3_direction_class": "physics_first",
+        "direction_class_maj": "physics_first",
+        "person_first_maj": false,
+        "s1_retrieved_utc": "2026-11-14",
+        "s2_retrieved_utc": "unverified",
+        "s3_retrieved_utc": "2026-11-14"
+      },
+      {
+        "item_id": "W022",
+        "word": "viscosity",
+        "control_openstax_chapters": [
+          "V1C14"
+        ],
+        "s1_direction_class": "no_person_sense",
+        "s2_direction_class": "no_person_sense",
+        "s3_direction_class": "no_person_sense",
+        "direction_class_maj": "no_person_sense",
+        "person_first_maj": false,
+        "s1_retrieved_utc": "2026-11-14",
+        "s2_retrieved_utc": "unverified",
+        "s3_retrieved_utc": "2026-11-14"
+      },
+      {
+        "item_id": "W024",
+        "word": "commutative",
+        "control_openstax_chapters": [
+          "V1C2"
+        ],
+        "s1_direction_class": "person_first",
+        "s2_direction_class": "no_person_sense",
+        "s3_direction_class": "person_first",
+        "direction_class_maj": "person_first",
+        "person_first_maj": true,
+        "s1_retrieved_utc": "2026-11-14",
+        "s2_retrieved_utc": "unverified",
+        "s3_retrieved_utc": "2026-11-14"
+      },
+      {
+        "item_id": "W027",
+        "word": "law",
+        "control_openstax_chapters": [
+          "V1C1"
+        ],
+        "s1_direction_class": "person_first",
+        "s2_direction_class": "person_first",
+        "s3_direction_class": "person_first",
+        "direction_class_maj": "person_first",
+        "person_first_maj": true,
+        "s1_retrieved_utc": "2026-11-14",
+        "s2_retrieved_utc": "unverified",
+        "s3_retrieved_utc": "2026-11-14"
+      },
+      {
+        "item_id": "W030",
+        "word": "environment",
+        "control_openstax_chapters": [
+          "V2C3"
+        ],
+        "s1_direction_class": "physics_first",
+        "s2_direction_class": "physics_first",
+        "s3_direction_class": "physics_first",
+        "direction_class_maj": "physics_first",
+        "person_first_maj": false,
+        "s1_retrieved_utc": "2026-11-14",
+        "s2_retrieved_utc": "unverified",
+        "s3_retrieved_utc": "2026-11-14"
+      },
+      {
+        "item_id": "W031",
+        "word": "overtone",
+        "control_openstax_chapters": [
+          "V1C16"
+        ],
+        "s1_direction_class": "physics_first",
+        "s2_direction_class": "physics_first",
+        "s3_direction_class": "physics_first",
+        "direction_class_maj": "physics_first",
+        "person_first_maj": false,
+        "s1_retrieved_utc": "2026-11-14",
+        "s2_retrieved_utc": "unverified",
+        "s3_retrieved_utc": "2026-11-14"
+      },
+      {
+        "item_id": "W033",
+        "word": "pitch",
+        "control_openstax_chapters": [
+          "V1C17"
+        ],
+        "s1_direction_class": "physics_first",
+        "s2_direction_class": "physics_first",
+        "s3_direction_class": "physics_first",
+        "direction_class_maj": "physics_first",
+        "person_first_maj": false,
+        "s1_retrieved_utc": "2026-11-14",
+        "s2_retrieved_utc": "unverified",
+        "s3_retrieved_utc": "2026-11-14"
+      },
+      {
+        "item_id": "W034",
+        "word": "inelastic",
+        "control_openstax_chapters": [
+          "V1C9"
+        ],
+        "s1_direction_class": "physics_first",
+        "s2_direction_class": "no_person_sense",
+        "s3_direction_class": "physics_first",
+        "direction_class_maj": "physics_first",
+        "person_first_maj": false,
+        "s1_retrieved_utc": "2026-11-14",
+        "s2_retrieved_utc": "unverified",
+        "s3_retrieved_utc": "2026-11-14"
+      },
+      {
+        "item_id": "W037",
+        "word": "displacement",
+        "control_openstax_chapters": [
+          "V1C2",
+          "V1C3"
+        ],
+        "s1_direction_class": "person_first",
+        "s2_direction_class": "both_from_start",
+        "s3_direction_class": "person_first",
+        "direction_class_maj": "person_first",
+        "person_first_maj": true,
+        "s1_retrieved_utc": "2026-11-14",
+        "s2_retrieved_utc": "unverified",
+        "s3_retrieved_utc": "2026-11-14"
+      },
+      {
+        "item_id": "W041",
+        "word": "associative",
+        "control_openstax_chapters": [
+          "V1C2"
+        ],
+        "s1_direction_class": "person_first",
+        "s2_direction_class": "person_first",
+        "s3_direction_class": "person_first",
+        "direction_class_maj": "person_first",
+        "person_first_maj": true,
+        "s1_retrieved_utc": "2026-11-14",
+        "s2_retrieved_utc": "unverified",
+        "s3_retrieved_utc": "2026-11-14"
+      },
+      {
+        "item_id": "W042",
+        "word": "conduction",
+        "control_openstax_chapters": [
+          "V2C1"
+        ],
+        "s1_direction_class": "person_first",
+        "s2_direction_class": "person_first",
+        "s3_direction_class": "physics_first",
+        "direction_class_maj": "person_first",
+        "person_first_maj": true,
+        "s1_retrieved_utc": "2026-11-14",
+        "s2_retrieved_utc": "unverified",
+        "s3_retrieved_utc": "2026-11-14"
+      },
+      {
+        "item_id": "W049",
+        "word": "aphelion",
+        "control_openstax_chapters": [
+          "V1C13"
+        ],
+        "s1_direction_class": "no_person_sense",
+        "s2_direction_class": "no_person_sense",
+        "s3_direction_class": "no_person_sense",
+        "direction_class_maj": "no_person_sense",
+        "person_first_maj": false,
+        "s1_retrieved_utc": "2026-11-14",
+        "s2_retrieved_utc": "unverified",
+        "s3_retrieved_utc": "2026-11-14"
+      },
+      {
+        "item_id": "W050",
+        "word": "vector",
+        "control_openstax_chapters": [
+          "V1C2"
+        ],
+        "s1_direction_class": "no_person_sense",
+        "s2_direction_class": "no_person_sense",
+        "s3_direction_class": "no_person_sense",
+        "direction_class_maj": "no_person_sense",
+        "person_first_maj": false,
+        "s1_retrieved_utc": "2026-11-14",
+        "s2_retrieved_utc": "unverified",
+        "s3_retrieved_utc": "2026-11-14"
+      },
+      {
+        "item_id": "W052",
+        "word": "oscillation",
+        "control_openstax_chapters": [
+          "V1C15"
+        ],
+        "s1_direction_class": "physics_first",
+        "s2_direction_class": "physics_first",
+        "s3_direction_class": "physics_first",
+        "direction_class_maj": "physics_first",
+        "person_first_maj": false,
+        "s1_retrieved_utc": "2026-11-14",
+        "s2_retrieved_utc": "unverified",
+        "s3_retrieved_utc": "2026-11-14"
+      },
+      {
+        "item_id": "W053",
+        "word": "heat",
+        "control_openstax_chapters": [
+          "V2C1"
+        ],
+        "s1_direction_class": "both_from_start",
+        "s2_direction_class": "both_from_start",
+        "s3_direction_class": "both_from_start",
+        "direction_class_maj": "both_from_start",
+        "person_first_maj": false,
+        "s1_retrieved_utc": "2026-11-14",
+        "s2_retrieved_utc": "unverified",
+        "s3_retrieved_utc": "2026-11-14"
+      },
+      {
+        "item_id": "W055",
+        "word": "superposition",
+        "control_openstax_chapters": [
+          "V1C16"
+        ],
+        "s1_direction_class": "no_person_sense",
+        "s2_direction_class": "no_person_sense",
+        "s3_direction_class": "no_person_sense",
+        "direction_class_maj": "no_person_sense",
+        "person_first_maj": false,
+        "s1_retrieved_utc": "2026-11-14",
+        "s2_retrieved_utc": "unverified",
+        "s3_retrieved_utc": "2026-11-14"
+      },
+      {
+        "item_id": "W056",
+        "word": "physics",
+        "control_openstax_chapters": [
+          "V1C1"
+        ],
+        "s1_direction_class": "no_person_sense",
+        "s2_direction_class": "no_person_sense",
+        "s3_direction_class": "no_person_sense",
+        "direction_class_maj": "no_person_sense",
+        "person_first_maj": false,
+        "s1_retrieved_utc": "2026-11-14",
+        "s2_retrieved_utc": "unverified",
+        "s3_retrieved_utc": "2026-11-14"
+      },
+      {
+        "item_id": "W057",
+        "word": "node",
+        "control_openstax_chapters": [
+          "V1C16"
+        ],
+        "s1_direction_class": "no_person_sense",
+        "s2_direction_class": "no_person_sense",
+        "s3_direction_class": "no_person_sense",
+        "direction_class_maj": "no_person_sense",
+        "person_first_maj": false,
+        "s1_retrieved_utc": "2026-11-14",
+        "s2_retrieved_utc": "unverified",
+        "s3_retrieved_utc": "2026-11-14"
+      },
+      {
+        "item_id": "W058",
+        "word": "model",
+        "control_openstax_chapters": [
+          "V1C1"
+        ],
+        "s1_direction_class": "physics_first",
+        "s2_direction_class": "physics_first",
+        "s3_direction_class": "physics_first",
+        "direction_class_maj": "physics_first",
+        "person_first_maj": false,
+        "s1_retrieved_utc": "2026-11-14",
+        "s2_retrieved_utc": "unverified",
+        "s3_retrieved_utc": "2026-11-14"
+      },
+      {
+        "item_id": "W060",
+        "word": "hearing",
+        "control_openstax_chapters": [
+          "V1C17"
+        ],
+        "s1_direction_class": "person_first",
+        "s2_direction_class": "person_first",
+        "s3_direction_class": "person_first",
+        "direction_class_maj": "person_first",
+        "person_first_maj": true,
+        "s1_retrieved_utc": "2026-11-14",
+        "s2_retrieved_utc": "unverified",
+        "s3_retrieved_utc": "2026-11-14"
+      },
+      {
+        "item_id": "W061",
+        "word": "second",
+        "control_openstax_chapters": [
+          "V1C1"
+        ],
+        "s1_direction_class": "physics_first",
+        "s2_direction_class": "person_first",
+        "s3_direction_class": "physics_first",
+        "direction_class_maj": "physics_first",
+        "person_first_maj": false,
+        "s1_retrieved_utc": "2026-11-14",
+        "s2_retrieved_utc": "unverified",
+        "s3_retrieved_utc": "2026-11-14"
+      },
+      {
+        "item_id": "W062",
+        "word": "dynamics",
+        "control_openstax_chapters": [
+          "V1C5"
+        ],
+        "s1_direction_class": "physics_first",
+        "s2_direction_class": "physics_first",
+        "s3_direction_class": "physics_first",
+        "direction_class_maj": "physics_first",
+        "person_first_maj": false,
+        "s1_retrieved_utc": "2026-11-14",
+        "s2_retrieved_utc": "unverified",
+        "s3_retrieved_utc": "2026-11-14"
+      },
+      {
+        "item_id": "W066",
+        "word": "units",
+        "control_openstax_chapters": [
+          "V1C1"
+        ],
+        "s1_direction_class": "physics_first",
+        "s2_direction_class": "no_person_sense",
+        "s3_direction_class": "no_person_sense",
+        "direction_class_maj": "no_person_sense",
+        "person_first_maj": false,
+        "s1_retrieved_utc": "2026-11-14",
+        "s2_retrieved_utc": "unverified",
+        "s3_retrieved_utc": "2026-11-14"
+      },
+      {
+        "item_id": "W067",
+        "word": "precision",
+        "control_openstax_chapters": [
+          "V1C1"
+        ],
+        "s1_direction_class": "person_first",
+        "s2_direction_class": "person_first",
+        "s3_direction_class": "person_first",
+        "direction_class_maj": "person_first",
+        "person_first_maj": true,
+        "s1_retrieved_utc": "2026-11-14",
+        "s2_retrieved_utc": "unverified",
+        "s3_retrieved_utc": "2026-11-14"
+      },
+      {
+        "item_id": "W068",
+        "word": "beats",
+        "control_openstax_chapters": [
+          "V1C17"
+        ],
+        "s1_direction_class": "person_first",
+        "s2_direction_class": "person_first",
+        "s3_direction_class": "person_first",
+        "direction_class_maj": "person_first",
+        "person_first_maj": true,
+        "s1_retrieved_utc": "2026-11-14",
+        "s2_retrieved_utc": "unverified",
+        "s3_retrieved_utc": "2026-11-14"
+      },
+      {
+        "item_id": "W071",
+        "word": "torque",
+        "control_openstax_chapters": [
+          "V1C10"
+        ],
+        "s1_direction_class": "no_person_sense",
+        "s2_direction_class": "no_person_sense",
+        "s3_direction_class": "no_person_sense",
+        "direction_class_maj": "no_person_sense",
+        "person_first_maj": false,
+        "s1_retrieved_utc": "2026-11-14",
+        "s2_retrieved_utc": "unverified",
+        "s3_retrieved_utc": "2026-11-14"
+      },
+      {
+        "item_id": "W075",
+        "word": "overtones",
+        "control_openstax_chapters": [
+          "V1C17"
+        ],
+        "s1_direction_class": "physics_first",
+        "s2_direction_class": "physics_first",
+        "s3_direction_class": "physics_first",
+        "direction_class_maj": "physics_first",
+        "person_first_maj": false,
+        "s1_retrieved_utc": "2026-11-14",
+        "s2_retrieved_utc": "unverified",
+        "s3_retrieved_utc": "2026-11-14"
+      },
+      {
+        "item_id": "W076",
+        "word": "discrepancy",
+        "control_openstax_chapters": [
+          "V1C1"
+        ],
+        "s1_direction_class": "both_from_start",
+        "s2_direction_class": "person_first",
+        "s3_direction_class": "person_first",
+        "direction_class_maj": "person_first",
+        "person_first_maj": true,
+        "s1_retrieved_utc": "2026-11-14",
+        "s2_retrieved_utc": "unverified",
+        "s3_retrieved_utc": "2026-11-14"
+      },
+      {
+        "item_id": "W077",
+        "word": "antinode",
+        "control_openstax_chapters": [
+          "V1C16"
+        ],
+        "s1_direction_class": "no_person_sense",
+        "s2_direction_class": "no_person_sense",
+        "s3_direction_class": "no_person_sense",
+        "direction_class_maj": "no_person_sense",
+        "person_first_maj": false,
+        "s1_retrieved_utc": "2026-11-14",
+        "s2_retrieved_utc": "unverified",
+        "s3_retrieved_utc": "2026-11-14"
+      },
+      {
+        "item_id": "W078",
+        "word": "entropy",
+        "control_openstax_chapters": [
+          "V2C4"
+        ],
+        "s1_direction_class": "no_person_sense",
+        "s2_direction_class": "physics_first",
+        "s3_direction_class": "no_person_sense",
+        "direction_class_maj": "no_person_sense",
+        "person_first_maj": false,
+        "s1_retrieved_utc": "2026-11-14",
+        "s2_retrieved_utc": "unverified",
+        "s3_retrieved_utc": "2026-11-14"
+      }
+    ]
+  },
+  "descriptive_ledger_80_agreement": {
+    "inferential_status": "DESCRIPTIVE_LEDGER_AGREEMENT_NOT_CONFIRMATORY",
+    "n_items": 35,
+    "core_law_count": 21,
+    "secondary_physics_count": 14,
+    "vs_inward_first": {
+      "all_35": {
+        "n_items": 35,
+        "ledger_positive_count": 5,
+        "ledger_positive_words": [
+          "energy",
+          "force",
+          "inertia",
+          "power",
+          "work"
+        ],
+        "by_rater": {
+          "maj_3run": {
+            "coded_positive_count": 10,
+            "coded_positive_words": [
+              "accelerate",
+              "distance",
+              "energy",
+              "force",
+              "frequency",
+              "gravity",
+              "matter",
+              "power",
+              "pressure",
+              "work"
+            ],
+            "tp": 4,
+            "fp": 6,
+            "fn": 1,
+            "tn": 24,
+            "tp_words": [
+              "energy",
+              "force",
+              "power",
+              "work"
+            ],
+            "fp_words": [
+              "accelerate",
+              "distance",
+              "frequency",
+              "gravity",
+              "matter",
+              "pressure"
+            ],
+            "fn_words": [
+              "inertia"
+            ],
+            "n_items": 35,
+            "categories": [
+              "true",
+              "false"
+            ],
+            "matches": 28,
+            "agreement_rate": {
+              "num": 4,
+              "den": 5,
+              "fraction": "4/5",
+              "float": 0.8
+            },
+            "p_o": {
+              "num": 4,
+              "den": 5,
+              "fraction": "4/5",
+              "float": 0.8
+            },
+            "p_e": {
+              "num": 32,
+              "den": 49,
+              "fraction": "32/49",
+              "float": 0.6530612244897959
+            },
+            "confusion_matrix": {
+              "true": {
+                "true": 4,
+                "false": 6
+              },
+              "false": {
+                "true": 1,
+                "false": 24
+              }
+            },
+            "kappa": {
+              "num": 36,
+              "den": 85,
+              "fraction": "36/85",
+              "float": 0.4235294117647059
+            },
+            "kappa_fraction": "36/85",
+            "kappa_float": 0.4235294117647059,
+            "degenerate_single_category": false
+          },
+          "s1_gemini_hydrogen": {
+            "coded_positive_count": 8,
+            "coded_positive_words": [
+              "distance",
+              "energy",
+              "force",
+              "frequency",
+              "gravity",
+              "matter",
+              "power",
+              "pressure"
+            ],
+            "tp": 3,
+            "fp": 5,
+            "fn": 2,
+            "tn": 25,
+            "tp_words": [
+              "energy",
+              "force",
+              "power"
+            ],
+            "fp_words": [
+              "distance",
+              "frequency",
+              "gravity",
+              "matter",
+              "pressure"
+            ],
+            "fn_words": [
+              "inertia",
+              "work"
+            ],
+            "n_items": 35,
+            "categories": [
+              "true",
+              "false"
+            ],
+            "matches": 28,
+            "agreement_rate": {
+              "num": 4,
+              "den": 5,
+              "fraction": "4/5",
+              "float": 0.8
+            },
+            "p_o": {
+              "num": 4,
+              "den": 5,
+              "fraction": "4/5",
+              "float": 0.8
+            },
+            "p_e": {
+              "num": 34,
+              "den": 49,
+              "fraction": "34/49",
+              "float": 0.6938775510204082
+            },
+            "confusion_matrix": {
+              "true": {
+                "true": 3,
+                "false": 5
+              },
+              "false": {
+                "true": 2,
+                "false": 25
+              }
+            },
+            "kappa": {
+              "num": 26,
+              "den": 75,
+              "fraction": "26/75",
+              "float": 0.3466666666666667
+            },
+            "kappa_fraction": "26/75",
+            "kappa_float": 0.3466666666666667,
+            "degenerate_single_category": false
+          },
+          "s2_opus_5_5": {
+            "coded_positive_count": 11,
+            "coded_positive_words": [
+              "accelerate",
+              "charge",
+              "distance",
+              "energy",
+              "force",
+              "frequency",
+              "gravity",
+              "matter",
+              "power",
+              "pressure",
+              "work"
+            ],
+            "tp": 4,
+            "fp": 7,
+            "fn": 1,
+            "tn": 23,
+            "tp_words": [
+              "energy",
+              "force",
+              "power",
+              "work"
+            ],
+            "fp_words": [
+              "accelerate",
+              "charge",
+              "distance",
+              "frequency",
+              "gravity",
+              "matter",
+              "pressure"
+            ],
+            "fn_words": [
+              "inertia"
+            ],
+            "n_items": 35,
+            "categories": [
+              "true",
+              "false"
+            ],
+            "matches": 27,
+            "agreement_rate": {
+              "num": 27,
+              "den": 35,
+              "fraction": "27/35",
+              "float": 0.7714285714285715
+            },
+            "p_o": {
+              "num": 27,
+              "den": 35,
+              "fraction": "27/35",
+              "float": 0.7714285714285715
+            },
+            "p_e": {
+              "num": 31,
+              "den": 49,
+              "fraction": "31/49",
+              "float": 0.6326530612244898
+            },
+            "confusion_matrix": {
+              "true": {
+                "true": 4,
+                "false": 7
+              },
+              "false": {
+                "true": 1,
+                "false": 23
+              }
+            },
+            "kappa": {
+              "num": 17,
+              "den": 45,
+              "fraction": "17/45",
+              "float": 0.37777777777777777
+            },
+            "kappa_fraction": "17/45",
+            "kappa_float": 0.37777777777777777,
+            "degenerate_single_category": false
+          },
+          "s3_gemini_carbon": {
+            "coded_positive_count": 8,
+            "coded_positive_words": [
+              "accelerate",
+              "distance",
+              "force",
+              "frequency",
+              "gravity",
+              "matter",
+              "power",
+              "work"
+            ],
+            "tp": 3,
+            "fp": 5,
+            "fn": 2,
+            "tn": 25,
+            "tp_words": [
+              "force",
+              "power",
+              "work"
+            ],
+            "fp_words": [
+              "accelerate",
+              "distance",
+              "frequency",
+              "gravity",
+              "matter"
+            ],
+            "fn_words": [
+              "energy",
+              "inertia"
+            ],
+            "n_items": 35,
+            "categories": [
+              "true",
+              "false"
+            ],
+            "matches": 28,
+            "agreement_rate": {
+              "num": 4,
+              "den": 5,
+              "fraction": "4/5",
+              "float": 0.8
+            },
+            "p_o": {
+              "num": 4,
+              "den": 5,
+              "fraction": "4/5",
+              "float": 0.8
+            },
+            "p_e": {
+              "num": 34,
+              "den": 49,
+              "fraction": "34/49",
+              "float": 0.6938775510204082
+            },
+            "confusion_matrix": {
+              "true": {
+                "true": 3,
+                "false": 5
+              },
+              "false": {
+                "true": 2,
+                "false": 25
+              }
+            },
+            "kappa": {
+              "num": 26,
+              "den": 75,
+              "fraction": "26/75",
+              "float": 0.3466666666666667
+            },
+            "kappa_fraction": "26/75",
+            "kappa_float": 0.3466666666666667,
+            "degenerate_single_category": false
+          }
+        }
+      },
+      "core_law_21": {
+        "n_items": 21,
+        "ledger_positive_count": 5,
+        "ledger_positive_words": [
+          "energy",
+          "force",
+          "inertia",
+          "power",
+          "work"
+        ],
+        "by_rater": {
+          "maj_3run": {
+            "coded_positive_count": 9,
+            "coded_positive_words": [
+              "accelerate",
+              "distance",
+              "energy",
+              "force",
+              "gravity",
+              "matter",
+              "power",
+              "pressure",
+              "work"
+            ],
+            "tp": 4,
+            "fp": 5,
+            "fn": 1,
+            "tn": 11,
+            "tp_words": [
+              "energy",
+              "force",
+              "power",
+              "work"
+            ],
+            "fp_words": [
+              "accelerate",
+              "distance",
+              "gravity",
+              "matter",
+              "pressure"
+            ],
+            "fn_words": [
+              "inertia"
+            ],
+            "n_items": 21,
+            "categories": [
+              "true",
+              "false"
+            ],
+            "matches": 15,
+            "agreement_rate": {
+              "num": 5,
+              "den": 7,
+              "fraction": "5/7",
+              "float": 0.7142857142857143
+            },
+            "p_o": {
+              "num": 5,
+              "den": 7,
+              "fraction": "5/7",
+              "float": 0.7142857142857143
+            },
+            "p_e": {
+              "num": 79,
+              "den": 147,
+              "fraction": "79/147",
+              "float": 0.5374149659863946
+            },
+            "confusion_matrix": {
+              "true": {
+                "true": 4,
+                "false": 5
+              },
+              "false": {
+                "true": 1,
+                "false": 11
+              }
+            },
+            "kappa": {
+              "num": 13,
+              "den": 34,
+              "fraction": "13/34",
+              "float": 0.38235294117647056
+            },
+            "kappa_fraction": "13/34",
+            "kappa_float": 0.38235294117647056,
+            "degenerate_single_category": false
+          },
+          "s1_gemini_hydrogen": {
+            "coded_positive_count": 7,
+            "coded_positive_words": [
+              "distance",
+              "energy",
+              "force",
+              "gravity",
+              "matter",
+              "power",
+              "pressure"
+            ],
+            "tp": 3,
+            "fp": 4,
+            "fn": 2,
+            "tn": 12,
+            "tp_words": [
+              "energy",
+              "force",
+              "power"
+            ],
+            "fp_words": [
+              "distance",
+              "gravity",
+              "matter",
+              "pressure"
+            ],
+            "fn_words": [
+              "inertia",
+              "work"
+            ],
+            "n_items": 21,
+            "categories": [
+              "true",
+              "false"
+            ],
+            "matches": 15,
+            "agreement_rate": {
+              "num": 5,
+              "den": 7,
+              "fraction": "5/7",
+              "float": 0.7142857142857143
+            },
+            "p_o": {
+              "num": 5,
+              "den": 7,
+              "fraction": "5/7",
+              "float": 0.7142857142857143
+            },
+            "p_e": {
+              "num": 37,
+              "den": 63,
+              "fraction": "37/63",
+              "float": 0.5873015873015873
+            },
+            "confusion_matrix": {
+              "true": {
+                "true": 3,
+                "false": 4
+              },
+              "false": {
+                "true": 2,
+                "false": 12
+              }
+            },
+            "kappa": {
+              "num": 4,
+              "den": 13,
+              "fraction": "4/13",
+              "float": 0.3076923076923077
+            },
+            "kappa_fraction": "4/13",
+            "kappa_float": 0.3076923076923077,
+            "degenerate_single_category": false
+          },
+          "s2_opus_5_5": {
+            "coded_positive_count": 10,
+            "coded_positive_words": [
+              "accelerate",
+              "charge",
+              "distance",
+              "energy",
+              "force",
+              "gravity",
+              "matter",
+              "power",
+              "pressure",
+              "work"
+            ],
+            "tp": 4,
+            "fp": 6,
+            "fn": 1,
+            "tn": 10,
+            "tp_words": [
+              "energy",
+              "force",
+              "power",
+              "work"
+            ],
+            "fp_words": [
+              "accelerate",
+              "charge",
+              "distance",
+              "gravity",
+              "matter",
+              "pressure"
+            ],
+            "fn_words": [
+              "inertia"
+            ],
+            "n_items": 21,
+            "categories": [
+              "true",
+              "false"
+            ],
+            "matches": 14,
+            "agreement_rate": {
+              "num": 2,
+              "den": 3,
+              "fraction": "2/3",
+              "float": 0.6666666666666666
+            },
+            "p_o": {
+              "num": 2,
+              "den": 3,
+              "fraction": "2/3",
+              "float": 0.6666666666666666
+            },
+            "p_e": {
+              "num": 226,
+              "den": 441,
+              "fraction": "226/441",
+              "float": 0.5124716553287982
+            },
+            "confusion_matrix": {
+              "true": {
+                "true": 4,
+                "false": 6
+              },
+              "false": {
+                "true": 1,
+                "false": 10
+              }
+            },
+            "kappa": {
+              "num": 68,
+              "den": 215,
+              "fraction": "68/215",
+              "float": 0.31627906976744186
+            },
+            "kappa_fraction": "68/215",
+            "kappa_float": 0.31627906976744186,
+            "degenerate_single_category": false
+          },
+          "s3_gemini_carbon": {
+            "coded_positive_count": 7,
+            "coded_positive_words": [
+              "accelerate",
+              "distance",
+              "force",
+              "gravity",
+              "matter",
+              "power",
+              "work"
+            ],
+            "tp": 3,
+            "fp": 4,
+            "fn": 2,
+            "tn": 12,
+            "tp_words": [
+              "force",
+              "power",
+              "work"
+            ],
+            "fp_words": [
+              "accelerate",
+              "distance",
+              "gravity",
+              "matter"
+            ],
+            "fn_words": [
+              "energy",
+              "inertia"
+            ],
+            "n_items": 21,
+            "categories": [
+              "true",
+              "false"
+            ],
+            "matches": 15,
+            "agreement_rate": {
+              "num": 5,
+              "den": 7,
+              "fraction": "5/7",
+              "float": 0.7142857142857143
+            },
+            "p_o": {
+              "num": 5,
+              "den": 7,
+              "fraction": "5/7",
+              "float": 0.7142857142857143
+            },
+            "p_e": {
+              "num": 37,
+              "den": 63,
+              "fraction": "37/63",
+              "float": 0.5873015873015873
+            },
+            "confusion_matrix": {
+              "true": {
+                "true": 3,
+                "false": 4
+              },
+              "false": {
+                "true": 2,
+                "false": 12
+              }
+            },
+            "kappa": {
+              "num": 4,
+              "den": 13,
+              "fraction": "4/13",
+              "float": 0.3076923076923077
+            },
+            "kappa_fraction": "4/13",
+            "kappa_float": 0.3076923076923077,
+            "degenerate_single_category": false
+          }
+        }
+      },
+      "secondary_physics_14": {
+        "n_items": 14,
+        "ledger_positive_count": 0,
+        "ledger_positive_words": [],
+        "by_rater": {
+          "maj_3run": {
+            "coded_positive_count": 1,
+            "coded_positive_words": [
+              "frequency"
+            ],
+            "tp": 0,
+            "fp": 1,
+            "fn": 0,
+            "tn": 13,
+            "tp_words": [],
+            "fp_words": [
+              "frequency"
+            ],
+            "fn_words": [],
+            "n_items": 14,
+            "categories": [
+              "true",
+              "false"
+            ],
+            "matches": 13,
+            "agreement_rate": {
+              "num": 13,
+              "den": 14,
+              "fraction": "13/14",
+              "float": 0.9285714285714286
+            },
+            "p_o": {
+              "num": 13,
+              "den": 14,
+              "fraction": "13/14",
+              "float": 0.9285714285714286
+            },
+            "p_e": {
+              "num": 13,
+              "den": 14,
+              "fraction": "13/14",
+              "float": 0.9285714285714286
+            },
+            "confusion_matrix": {
+              "true": {
+                "true": 0,
+                "false": 1
+              },
+              "false": {
+                "true": 0,
+                "false": 13
+              }
+            },
+            "kappa": {
+              "num": 0,
+              "den": 1,
+              "fraction": "0/1",
+              "float": 0.0
+            },
+            "kappa_fraction": "0/1",
+            "kappa_float": 0.0,
+            "degenerate_single_category": false
+          },
+          "s1_gemini_hydrogen": {
+            "coded_positive_count": 1,
+            "coded_positive_words": [
+              "frequency"
+            ],
+            "tp": 0,
+            "fp": 1,
+            "fn": 0,
+            "tn": 13,
+            "tp_words": [],
+            "fp_words": [
+              "frequency"
+            ],
+            "fn_words": [],
+            "n_items": 14,
+            "categories": [
+              "true",
+              "false"
+            ],
+            "matches": 13,
+            "agreement_rate": {
+              "num": 13,
+              "den": 14,
+              "fraction": "13/14",
+              "float": 0.9285714285714286
+            },
+            "p_o": {
+              "num": 13,
+              "den": 14,
+              "fraction": "13/14",
+              "float": 0.9285714285714286
+            },
+            "p_e": {
+              "num": 13,
+              "den": 14,
+              "fraction": "13/14",
+              "float": 0.9285714285714286
+            },
+            "confusion_matrix": {
+              "true": {
+                "true": 0,
+                "false": 1
+              },
+              "false": {
+                "true": 0,
+                "false": 13
+              }
+            },
+            "kappa": {
+              "num": 0,
+              "den": 1,
+              "fraction": "0/1",
+              "float": 0.0
+            },
+            "kappa_fraction": "0/1",
+            "kappa_float": 0.0,
+            "degenerate_single_category": false
+          },
+          "s2_opus_5_5": {
+            "coded_positive_count": 1,
+            "coded_positive_words": [
+              "frequency"
+            ],
+            "tp": 0,
+            "fp": 1,
+            "fn": 0,
+            "tn": 13,
+            "tp_words": [],
+            "fp_words": [
+              "frequency"
+            ],
+            "fn_words": [],
+            "n_items": 14,
+            "categories": [
+              "true",
+              "false"
+            ],
+            "matches": 13,
+            "agreement_rate": {
+              "num": 13,
+              "den": 14,
+              "fraction": "13/14",
+              "float": 0.9285714285714286
+            },
+            "p_o": {
+              "num": 13,
+              "den": 14,
+              "fraction": "13/14",
+              "float": 0.9285714285714286
+            },
+            "p_e": {
+              "num": 13,
+              "den": 14,
+              "fraction": "13/14",
+              "float": 0.9285714285714286
+            },
+            "confusion_matrix": {
+              "true": {
+                "true": 0,
+                "false": 1
+              },
+              "false": {
+                "true": 0,
+                "false": 13
+              }
+            },
+            "kappa": {
+              "num": 0,
+              "den": 1,
+              "fraction": "0/1",
+              "float": 0.0
+            },
+            "kappa_fraction": "0/1",
+            "kappa_float": 0.0,
+            "degenerate_single_category": false
+          },
+          "s3_gemini_carbon": {
+            "coded_positive_count": 1,
+            "coded_positive_words": [
+              "frequency"
+            ],
+            "tp": 0,
+            "fp": 1,
+            "fn": 0,
+            "tn": 13,
+            "tp_words": [],
+            "fp_words": [
+              "frequency"
+            ],
+            "fn_words": [],
+            "n_items": 14,
+            "categories": [
+              "true",
+              "false"
+            ],
+            "matches": 13,
+            "agreement_rate": {
+              "num": 13,
+              "den": 14,
+              "fraction": "13/14",
+              "float": 0.9285714285714286
+            },
+            "p_o": {
+              "num": 13,
+              "den": 14,
+              "fraction": "13/14",
+              "float": 0.9285714285714286
+            },
+            "p_e": {
+              "num": 13,
+              "den": 14,
+              "fraction": "13/14",
+              "float": 0.9285714285714286
+            },
+            "confusion_matrix": {
+              "true": {
+                "true": 0,
+                "false": 1
+              },
+              "false": {
+                "true": 0,
+                "false": 13
+              }
+            },
+            "kappa": {
+              "num": 0,
+              "den": 1,
+              "fraction": "0/1",
+              "float": 0.0
+            },
+            "kappa_fraction": "0/1",
+            "kappa_float": 0.0,
+            "degenerate_single_category": false
+          }
+        }
+      }
+    },
+    "vs_inward_first_or_either_side": {
+      "all_35": {
+        "n_items": 35,
+        "ledger_positive_count": 8,
+        "ledger_positive_words": [
+          "energy",
+          "force",
+          "gravity",
+          "inertia",
+          "matter",
+          "power",
+          "pressure",
+          "work"
+        ],
+        "by_rater": {
+          "maj_3run": {
+            "coded_positive_count": 10,
+            "coded_positive_words": [
+              "accelerate",
+              "distance",
+              "energy",
+              "force",
+              "frequency",
+              "gravity",
+              "matter",
+              "power",
+              "pressure",
+              "work"
+            ],
+            "tp": 7,
+            "fp": 3,
+            "fn": 1,
+            "tn": 24,
+            "tp_words": [
+              "energy",
+              "force",
+              "gravity",
+              "matter",
+              "power",
+              "pressure",
+              "work"
+            ],
+            "fp_words": [
+              "accelerate",
+              "distance",
+              "frequency"
+            ],
+            "fn_words": [
+              "inertia"
+            ],
+            "n_items": 35,
+            "categories": [
+              "true",
+              "false"
+            ],
+            "matches": 31,
+            "agreement_rate": {
+              "num": 31,
+              "den": 35,
+              "fraction": "31/35",
+              "float": 0.8857142857142857
+            },
+            "p_o": {
+              "num": 31,
+              "den": 35,
+              "fraction": "31/35",
+              "float": 0.8857142857142857
+            },
+            "p_e": {
+              "num": 151,
+              "den": 245,
+              "fraction": "151/245",
+              "float": 0.6163265306122448
+            },
+            "confusion_matrix": {
+              "true": {
+                "true": 7,
+                "false": 3
+              },
+              "false": {
+                "true": 1,
+                "false": 24
+              }
+            },
+            "kappa": {
+              "num": 33,
+              "den": 47,
+              "fraction": "33/47",
+              "float": 0.7021276595744681
+            },
+            "kappa_fraction": "33/47",
+            "kappa_float": 0.7021276595744681,
+            "degenerate_single_category": false
+          },
+          "s1_gemini_hydrogen": {
+            "coded_positive_count": 8,
+            "coded_positive_words": [
+              "distance",
+              "energy",
+              "force",
+              "frequency",
+              "gravity",
+              "matter",
+              "power",
+              "pressure"
+            ],
+            "tp": 6,
+            "fp": 2,
+            "fn": 2,
+            "tn": 25,
+            "tp_words": [
+              "energy",
+              "force",
+              "gravity",
+              "matter",
+              "power",
+              "pressure"
+            ],
+            "fp_words": [
+              "distance",
+              "frequency"
+            ],
+            "fn_words": [
+              "inertia",
+              "work"
+            ],
+            "n_items": 35,
+            "categories": [
+              "true",
+              "false"
+            ],
+            "matches": 31,
+            "agreement_rate": {
+              "num": 31,
+              "den": 35,
+              "fraction": "31/35",
+              "float": 0.8857142857142857
+            },
+            "p_o": {
+              "num": 31,
+              "den": 35,
+              "fraction": "31/35",
+              "float": 0.8857142857142857
+            },
+            "p_e": {
+              "num": 793,
+              "den": 1225,
+              "fraction": "793/1225",
+              "float": 0.6473469387755102
+            },
+            "confusion_matrix": {
+              "true": {
+                "true": 6,
+                "false": 2
+              },
+              "false": {
+                "true": 2,
+                "false": 25
+              }
+            },
+            "kappa": {
+              "num": 73,
+              "den": 108,
+              "fraction": "73/108",
+              "float": 0.6759259259259259
+            },
+            "kappa_fraction": "73/108",
+            "kappa_float": 0.6759259259259259,
+            "degenerate_single_category": false
+          },
+          "s2_opus_5_5": {
+            "coded_positive_count": 11,
+            "coded_positive_words": [
+              "accelerate",
+              "charge",
+              "distance",
+              "energy",
+              "force",
+              "frequency",
+              "gravity",
+              "matter",
+              "power",
+              "pressure",
+              "work"
+            ],
+            "tp": 7,
+            "fp": 4,
+            "fn": 1,
+            "tn": 23,
+            "tp_words": [
+              "energy",
+              "force",
+              "gravity",
+              "matter",
+              "power",
+              "pressure",
+              "work"
+            ],
+            "fp_words": [
+              "accelerate",
+              "charge",
+              "distance",
+              "frequency"
+            ],
+            "fn_words": [
+              "inertia"
+            ],
+            "n_items": 35,
+            "categories": [
+              "true",
+              "false"
+            ],
+            "matches": 30,
+            "agreement_rate": {
+              "num": 6,
+              "den": 7,
+              "fraction": "6/7",
+              "float": 0.8571428571428571
+            },
+            "p_o": {
+              "num": 6,
+              "den": 7,
+              "fraction": "6/7",
+              "float": 0.8571428571428571
+            },
+            "p_e": {
+              "num": 736,
+              "den": 1225,
+              "fraction": "736/1225",
+              "float": 0.6008163265306122
+            },
+            "confusion_matrix": {
+              "true": {
+                "true": 7,
+                "false": 4
+              },
+              "false": {
+                "true": 1,
+                "false": 23
+              }
+            },
+            "kappa": {
+              "num": 314,
+              "den": 489,
+              "fraction": "314/489",
+              "float": 0.6421267893660532
+            },
+            "kappa_fraction": "314/489",
+            "kappa_float": 0.6421267893660532,
+            "degenerate_single_category": false
+          },
+          "s3_gemini_carbon": {
+            "coded_positive_count": 8,
+            "coded_positive_words": [
+              "accelerate",
+              "distance",
+              "force",
+              "frequency",
+              "gravity",
+              "matter",
+              "power",
+              "work"
+            ],
+            "tp": 5,
+            "fp": 3,
+            "fn": 3,
+            "tn": 24,
+            "tp_words": [
+              "force",
+              "gravity",
+              "matter",
+              "power",
+              "work"
+            ],
+            "fp_words": [
+              "accelerate",
+              "distance",
+              "frequency"
+            ],
+            "fn_words": [
+              "energy",
+              "inertia",
+              "pressure"
+            ],
+            "n_items": 35,
+            "categories": [
+              "true",
+              "false"
+            ],
+            "matches": 29,
+            "agreement_rate": {
+              "num": 29,
+              "den": 35,
+              "fraction": "29/35",
+              "float": 0.8285714285714286
+            },
+            "p_o": {
+              "num": 29,
+              "den": 35,
+              "fraction": "29/35",
+              "float": 0.8285714285714286
+            },
+            "p_e": {
+              "num": 793,
+              "den": 1225,
+              "fraction": "793/1225",
+              "float": 0.6473469387755102
+            },
+            "confusion_matrix": {
+              "true": {
+                "true": 5,
+                "false": 3
+              },
+              "false": {
+                "true": 3,
+                "false": 24
+              }
+            },
+            "kappa": {
+              "num": 37,
+              "den": 72,
+              "fraction": "37/72",
+              "float": 0.5138888888888888
+            },
+            "kappa_fraction": "37/72",
+            "kappa_float": 0.5138888888888888,
+            "degenerate_single_category": false
+          }
+        }
+      },
+      "core_law_21": {
+        "n_items": 21,
+        "ledger_positive_count": 8,
+        "ledger_positive_words": [
+          "energy",
+          "force",
+          "gravity",
+          "inertia",
+          "matter",
+          "power",
+          "pressure",
+          "work"
+        ],
+        "by_rater": {
+          "maj_3run": {
+            "coded_positive_count": 9,
+            "coded_positive_words": [
+              "accelerate",
+              "distance",
+              "energy",
+              "force",
+              "gravity",
+              "matter",
+              "power",
+              "pressure",
+              "work"
+            ],
+            "tp": 7,
+            "fp": 2,
+            "fn": 1,
+            "tn": 11,
+            "tp_words": [
+              "energy",
+              "force",
+              "gravity",
+              "matter",
+              "power",
+              "pressure",
+              "work"
+            ],
+            "fp_words": [
+              "accelerate",
+              "distance"
+            ],
+            "fn_words": [
+              "inertia"
+            ],
+            "n_items": 21,
+            "categories": [
+              "true",
+              "false"
+            ],
+            "matches": 18,
+            "agreement_rate": {
+              "num": 6,
+              "den": 7,
+              "fraction": "6/7",
+              "float": 0.8571428571428571
+            },
+            "p_o": {
+              "num": 6,
+              "den": 7,
+              "fraction": "6/7",
+              "float": 0.8571428571428571
+            },
+            "p_e": {
+              "num": 76,
+              "den": 147,
+              "fraction": "76/147",
+              "float": 0.5170068027210885
+            },
+            "confusion_matrix": {
+              "true": {
+                "true": 7,
+                "false": 2
+              },
+              "false": {
+                "true": 1,
+                "false": 11
+              }
+            },
+            "kappa": {
+              "num": 50,
+              "den": 71,
+              "fraction": "50/71",
+              "float": 0.704225352112676
+            },
+            "kappa_fraction": "50/71",
+            "kappa_float": 0.704225352112676,
+            "degenerate_single_category": false
+          },
+          "s1_gemini_hydrogen": {
+            "coded_positive_count": 7,
+            "coded_positive_words": [
+              "distance",
+              "energy",
+              "force",
+              "gravity",
+              "matter",
+              "power",
+              "pressure"
+            ],
+            "tp": 6,
+            "fp": 1,
+            "fn": 2,
+            "tn": 12,
+            "tp_words": [
+              "energy",
+              "force",
+              "gravity",
+              "matter",
+              "power",
+              "pressure"
+            ],
+            "fp_words": [
+              "distance"
+            ],
+            "fn_words": [
+              "inertia",
+              "work"
+            ],
+            "n_items": 21,
+            "categories": [
+              "true",
+              "false"
+            ],
+            "matches": 18,
+            "agreement_rate": {
+              "num": 6,
+              "den": 7,
+              "fraction": "6/7",
+              "float": 0.8571428571428571
+            },
+            "p_o": {
+              "num": 6,
+              "den": 7,
+              "fraction": "6/7",
+              "float": 0.8571428571428571
+            },
+            "p_e": {
+              "num": 34,
+              "den": 63,
+              "fraction": "34/63",
+              "float": 0.5396825396825397
+            },
+            "confusion_matrix": {
+              "true": {
+                "true": 6,
+                "false": 1
+              },
+              "false": {
+                "true": 2,
+                "false": 12
+              }
+            },
+            "kappa": {
+              "num": 20,
+              "den": 29,
+              "fraction": "20/29",
+              "float": 0.6896551724137931
+            },
+            "kappa_fraction": "20/29",
+            "kappa_float": 0.6896551724137931,
+            "degenerate_single_category": false
+          },
+          "s2_opus_5_5": {
+            "coded_positive_count": 10,
+            "coded_positive_words": [
+              "accelerate",
+              "charge",
+              "distance",
+              "energy",
+              "force",
+              "gravity",
+              "matter",
+              "power",
+              "pressure",
+              "work"
+            ],
+            "tp": 7,
+            "fp": 3,
+            "fn": 1,
+            "tn": 10,
+            "tp_words": [
+              "energy",
+              "force",
+              "gravity",
+              "matter",
+              "power",
+              "pressure",
+              "work"
+            ],
+            "fp_words": [
+              "accelerate",
+              "charge",
+              "distance"
+            ],
+            "fn_words": [
+              "inertia"
+            ],
+            "n_items": 21,
+            "categories": [
+              "true",
+              "false"
+            ],
+            "matches": 17,
+            "agreement_rate": {
+              "num": 17,
+              "den": 21,
+              "fraction": "17/21",
+              "float": 0.8095238095238095
+            },
+            "p_o": {
+              "num": 17,
+              "den": 21,
+              "fraction": "17/21",
+              "float": 0.8095238095238095
+            },
+            "p_e": {
+              "num": 223,
+              "den": 441,
+              "fraction": "223/441",
+              "float": 0.5056689342403629
+            },
+            "confusion_matrix": {
+              "true": {
+                "true": 7,
+                "false": 3
+              },
+              "false": {
+                "true": 1,
+                "false": 10
+              }
+            },
+            "kappa": {
+              "num": 67,
+              "den": 109,
+              "fraction": "67/109",
+              "float": 0.6146788990825688
+            },
+            "kappa_fraction": "67/109",
+            "kappa_float": 0.6146788990825688,
+            "degenerate_single_category": false
+          },
+          "s3_gemini_carbon": {
+            "coded_positive_count": 7,
+            "coded_positive_words": [
+              "accelerate",
+              "distance",
+              "force",
+              "gravity",
+              "matter",
+              "power",
+              "work"
+            ],
+            "tp": 5,
+            "fp": 2,
+            "fn": 3,
+            "tn": 11,
+            "tp_words": [
+              "force",
+              "gravity",
+              "matter",
+              "power",
+              "work"
+            ],
+            "fp_words": [
+              "accelerate",
+              "distance"
+            ],
+            "fn_words": [
+              "energy",
+              "inertia",
+              "pressure"
+            ],
+            "n_items": 21,
+            "categories": [
+              "true",
+              "false"
+            ],
+            "matches": 16,
+            "agreement_rate": {
+              "num": 16,
+              "den": 21,
+              "fraction": "16/21",
+              "float": 0.7619047619047619
+            },
+            "p_o": {
+              "num": 16,
+              "den": 21,
+              "fraction": "16/21",
+              "float": 0.7619047619047619
+            },
+            "p_e": {
+              "num": 34,
+              "den": 63,
+              "fraction": "34/63",
+              "float": 0.5396825396825397
+            },
+            "confusion_matrix": {
+              "true": {
+                "true": 5,
+                "false": 2
+              },
+              "false": {
+                "true": 3,
+                "false": 11
+              }
+            },
+            "kappa": {
+              "num": 14,
+              "den": 29,
+              "fraction": "14/29",
+              "float": 0.4827586206896552
+            },
+            "kappa_fraction": "14/29",
+            "kappa_float": 0.4827586206896552,
+            "degenerate_single_category": false
+          }
+        }
+      },
+      "secondary_physics_14": {
+        "n_items": 14,
+        "ledger_positive_count": 0,
+        "ledger_positive_words": [],
+        "by_rater": {
+          "maj_3run": {
+            "coded_positive_count": 1,
+            "coded_positive_words": [
+              "frequency"
+            ],
+            "tp": 0,
+            "fp": 1,
+            "fn": 0,
+            "tn": 13,
+            "tp_words": [],
+            "fp_words": [
+              "frequency"
+            ],
+            "fn_words": [],
+            "n_items": 14,
+            "categories": [
+              "true",
+              "false"
+            ],
+            "matches": 13,
+            "agreement_rate": {
+              "num": 13,
+              "den": 14,
+              "fraction": "13/14",
+              "float": 0.9285714285714286
+            },
+            "p_o": {
+              "num": 13,
+              "den": 14,
+              "fraction": "13/14",
+              "float": 0.9285714285714286
+            },
+            "p_e": {
+              "num": 13,
+              "den": 14,
+              "fraction": "13/14",
+              "float": 0.9285714285714286
+            },
+            "confusion_matrix": {
+              "true": {
+                "true": 0,
+                "false": 1
+              },
+              "false": {
+                "true": 0,
+                "false": 13
+              }
+            },
+            "kappa": {
+              "num": 0,
+              "den": 1,
+              "fraction": "0/1",
+              "float": 0.0
+            },
+            "kappa_fraction": "0/1",
+            "kappa_float": 0.0,
+            "degenerate_single_category": false
+          },
+          "s1_gemini_hydrogen": {
+            "coded_positive_count": 1,
+            "coded_positive_words": [
+              "frequency"
+            ],
+            "tp": 0,
+            "fp": 1,
+            "fn": 0,
+            "tn": 13,
+            "tp_words": [],
+            "fp_words": [
+              "frequency"
+            ],
+            "fn_words": [],
+            "n_items": 14,
+            "categories": [
+              "true",
+              "false"
+            ],
+            "matches": 13,
+            "agreement_rate": {
+              "num": 13,
+              "den": 14,
+              "fraction": "13/14",
+              "float": 0.9285714285714286
+            },
+            "p_o": {
+              "num": 13,
+              "den": 14,
+              "fraction": "13/14",
+              "float": 0.9285714285714286
+            },
+            "p_e": {
+              "num": 13,
+              "den": 14,
+              "fraction": "13/14",
+              "float": 0.9285714285714286
+            },
+            "confusion_matrix": {
+              "true": {
+                "true": 0,
+                "false": 1
+              },
+              "false": {
+                "true": 0,
+                "false": 13
+              }
+            },
+            "kappa": {
+              "num": 0,
+              "den": 1,
+              "fraction": "0/1",
+              "float": 0.0
+            },
+            "kappa_fraction": "0/1",
+            "kappa_float": 0.0,
+            "degenerate_single_category": false
+          },
+          "s2_opus_5_5": {
+            "coded_positive_count": 1,
+            "coded_positive_words": [
+              "frequency"
+            ],
+            "tp": 0,
+            "fp": 1,
+            "fn": 0,
+            "tn": 13,
+            "tp_words": [],
+            "fp_words": [
+              "frequency"
+            ],
+            "fn_words": [],
+            "n_items": 14,
+            "categories": [
+              "true",
+              "false"
+            ],
+            "matches": 13,
+            "agreement_rate": {
+              "num": 13,
+              "den": 14,
+              "fraction": "13/14",
+              "float": 0.9285714285714286
+            },
+            "p_o": {
+              "num": 13,
+              "den": 14,
+              "fraction": "13/14",
+              "float": 0.9285714285714286
+            },
+            "p_e": {
+              "num": 13,
+              "den": 14,
+              "fraction": "13/14",
+              "float": 0.9285714285714286
+            },
+            "confusion_matrix": {
+              "true": {
+                "true": 0,
+                "false": 1
+              },
+              "false": {
+                "true": 0,
+                "false": 13
+              }
+            },
+            "kappa": {
+              "num": 0,
+              "den": 1,
+              "fraction": "0/1",
+              "float": 0.0
+            },
+            "kappa_fraction": "0/1",
+            "kappa_float": 0.0,
+            "degenerate_single_category": false
+          },
+          "s3_gemini_carbon": {
+            "coded_positive_count": 1,
+            "coded_positive_words": [
+              "frequency"
+            ],
+            "tp": 0,
+            "fp": 1,
+            "fn": 0,
+            "tn": 13,
+            "tp_words": [],
+            "fp_words": [
+              "frequency"
+            ],
+            "fn_words": [],
+            "n_items": 14,
+            "categories": [
+              "true",
+              "false"
+            ],
+            "matches": 13,
+            "agreement_rate": {
+              "num": 13,
+              "den": 14,
+              "fraction": "13/14",
+              "float": 0.9285714285714286
+            },
+            "p_o": {
+              "num": 13,
+              "den": 14,
+              "fraction": "13/14",
+              "float": 0.9285714285714286
+            },
+            "p_e": {
+              "num": 13,
+              "den": 14,
+              "fraction": "13/14",
+              "float": 0.9285714285714286
+            },
+            "confusion_matrix": {
+              "true": {
+                "true": 0,
+                "false": 1
+              },
+              "false": {
+                "true": 0,
+                "false": 13
+              }
+            },
+            "kappa": {
+              "num": 0,
+              "den": 1,
+              "fraction": "0/1",
+              "float": 0.0
+            },
+            "kappa_fraction": "0/1",
+            "kappa_float": 0.0,
+            "degenerate_single_category": false
+          }
+        }
+      }
+    },
+    "cross_tabulation_maj_3run_vs_ledger_kind": {
+      "all_35": {
+        "n_items": 35,
+        "row_categories_4": [
+          "person_first",
+          "physics_first",
+          "both_from_start",
+          "no_person_sense"
+        ],
+        "tie_row_category": "tie_or_disagreement",
+        "col_categories_8": [
+          "inward first",
+          "either side",
+          "outward first",
+          "both ways",
+          "family",
+          "household",
+          "nothing to add",
+          "not used"
+        ],
+        "matrix_4x8": {
+          "person_first": {
+            "inward first": 4,
+            "either side": 3,
+            "outward first": 0,
+            "both ways": 0,
+            "family": 1,
+            "household": 1,
+            "nothing to add": 1,
+            "not used": 0
+          },
+          "physics_first": {
+            "inward first": 1,
+            "either side": 0,
+            "outward first": 7,
+            "both ways": 1,
+            "family": 2,
+            "household": 5,
+            "nothing to add": 1,
+            "not used": 1
+          },
+          "both_from_start": {
+            "inward first": 0,
+            "either side": 0,
+            "outward first": 0,
+            "both ways": 0,
+            "family": 2,
+            "household": 0,
+            "nothing to add": 0,
+            "not used": 0
+          },
+          "no_person_sense": {
+            "inward first": 0,
+            "either side": 0,
+            "outward first": 2,
+            "both ways": 0,
+            "family": 1,
+            "household": 1,
+            "nothing to add": 0,
+            "not used": 0
+          }
+        },
+        "tie_or_disagreement_row": {
+          "inward first": 0,
+          "either side": 0,
+          "outward first": 0,
+          "both ways": 1,
+          "family": 0,
+          "household": 0,
+          "nothing to add": 0,
+          "not used": 0
+        },
+        "matrix_5x8_with_tie_row": {
+          "person_first": {
+            "inward first": 4,
+            "either side": 3,
+            "outward first": 0,
+            "both ways": 0,
+            "family": 1,
+            "household": 1,
+            "nothing to add": 1,
+            "not used": 0
+          },
+          "physics_first": {
+            "inward first": 1,
+            "either side": 0,
+            "outward first": 7,
+            "both ways": 1,
+            "family": 2,
+            "household": 5,
+            "nothing to add": 1,
+            "not used": 1
+          },
+          "both_from_start": {
+            "inward first": 0,
+            "either side": 0,
+            "outward first": 0,
+            "both ways": 0,
+            "family": 2,
+            "household": 0,
+            "nothing to add": 0,
+            "not used": 0
+          },
+          "no_person_sense": {
+            "inward first": 0,
+            "either side": 0,
+            "outward first": 2,
+            "both ways": 0,
+            "family": 1,
+            "household": 1,
+            "nothing to add": 0,
+            "not used": 0
+          },
+          "tie_or_disagreement": {
+            "inward first": 0,
+            "either side": 0,
+            "outward first": 0,
+            "both ways": 1,
+            "family": 0,
+            "household": 0,
+            "nothing to add": 0,
+            "not used": 0
+          }
+        },
+        "row_totals": {
+          "person_first": 10,
+          "physics_first": 18,
+          "both_from_start": 2,
+          "no_person_sense": 4,
+          "tie_or_disagreement": 1
+        },
+        "col_totals": {
+          "inward first": 5,
+          "either side": 3,
+          "outward first": 9,
+          "both ways": 2,
+          "family": 6,
+          "household": 7,
+          "nothing to add": 2,
+          "not used": 1
+        },
+        "words_by_cell": {
+          "person_first": {
+            "inward first": [
+              "energy",
+              "force",
+              "power",
+              "work"
+            ],
+            "either side": [
+              "gravity",
+              "matter",
+              "pressure"
+            ],
+            "outward first": [],
+            "both ways": [],
+            "family": [
+              "distance"
+            ],
+            "household": [
+              "frequency"
+            ],
+            "nothing to add": [
+              "accelerate"
+            ],
+            "not used": []
+          },
+          "physics_first": {
+            "inward first": [
+              "inertia"
+            ],
+            "either side": [],
+            "outward first": [
+              "attraction",
+              "culminate",
+              "friction",
+              "reflection",
+              "resonance",
+              "tension",
+              "vortex"
+            ],
+            "both ways": [
+              "vibration"
+            ],
+            "family": [
+              "current",
+              "momentum"
+            ],
+            "household": [
+              "density",
+              "electric",
+              "field",
+              "focus",
+              "mass"
+            ],
+            "nothing to add": [
+              "radiate"
+            ],
+            "not used": [
+              "wave"
+            ]
+          },
+          "both_from_start": {
+            "inward first": [],
+            "either side": [],
+            "outward first": [],
+            "both ways": [],
+            "family": [
+              "light",
+              "time"
+            ],
+            "household": [],
+            "nothing to add": [],
+            "not used": []
+          },
+          "no_person_sense": {
+            "inward first": [],
+            "either side": [],
+            "outward first": [
+              "converge",
+              "limit"
+            ],
+            "both ways": [],
+            "family": [
+              "space"
+            ],
+            "household": [
+              "volume"
+            ],
+            "nothing to add": [],
+            "not used": []
+          },
+          "tie_or_disagreement": {
+            "inward first": [],
+            "either side": [],
+            "outward first": [],
+            "both ways": [
+              "charge"
+            ],
+            "family": [],
+            "household": [],
+            "nothing to add": [],
+            "not used": []
+          }
+        }
+      },
+      "core_law_21": {
+        "n_items": 21,
+        "row_categories_4": [
+          "person_first",
+          "physics_first",
+          "both_from_start",
+          "no_person_sense"
+        ],
+        "tie_row_category": "tie_or_disagreement",
+        "col_categories_8": [
+          "inward first",
+          "either side",
+          "outward first",
+          "both ways",
+          "family",
+          "household",
+          "nothing to add",
+          "not used"
+        ],
+        "matrix_4x8": {
+          "person_first": {
+            "inward first": 4,
+            "either side": 3,
+            "outward first": 0,
+            "both ways": 0,
+            "family": 1,
+            "household": 0,
+            "nothing to add": 1,
+            "not used": 0
+          },
+          "physics_first": {
+            "inward first": 1,
+            "either side": 0,
+            "outward first": 1,
+            "both ways": 0,
+            "family": 2,
+            "household": 3,
+            "nothing to add": 0,
+            "not used": 0
+          },
+          "both_from_start": {
+            "inward first": 0,
+            "either side": 0,
+            "outward first": 0,
+            "both ways": 0,
+            "family": 2,
+            "household": 0,
+            "nothing to add": 0,
+            "not used": 0
+          },
+          "no_person_sense": {
+            "inward first": 0,
+            "either side": 0,
+            "outward first": 0,
+            "both ways": 0,
+            "family": 1,
+            "household": 1,
+            "nothing to add": 0,
+            "not used": 0
+          }
+        },
+        "tie_or_disagreement_row": {
+          "inward first": 0,
+          "either side": 0,
+          "outward first": 0,
+          "both ways": 1,
+          "family": 0,
+          "household": 0,
+          "nothing to add": 0,
+          "not used": 0
+        },
+        "matrix_5x8_with_tie_row": {
+          "person_first": {
+            "inward first": 4,
+            "either side": 3,
+            "outward first": 0,
+            "both ways": 0,
+            "family": 1,
+            "household": 0,
+            "nothing to add": 1,
+            "not used": 0
+          },
+          "physics_first": {
+            "inward first": 1,
+            "either side": 0,
+            "outward first": 1,
+            "both ways": 0,
+            "family": 2,
+            "household": 3,
+            "nothing to add": 0,
+            "not used": 0
+          },
+          "both_from_start": {
+            "inward first": 0,
+            "either side": 0,
+            "outward first": 0,
+            "both ways": 0,
+            "family": 2,
+            "household": 0,
+            "nothing to add": 0,
+            "not used": 0
+          },
+          "no_person_sense": {
+            "inward first": 0,
+            "either side": 0,
+            "outward first": 0,
+            "both ways": 0,
+            "family": 1,
+            "household": 1,
+            "nothing to add": 0,
+            "not used": 0
+          },
+          "tie_or_disagreement": {
+            "inward first": 0,
+            "either side": 0,
+            "outward first": 0,
+            "both ways": 1,
+            "family": 0,
+            "household": 0,
+            "nothing to add": 0,
+            "not used": 0
+          }
+        },
+        "row_totals": {
+          "person_first": 9,
+          "physics_first": 7,
+          "both_from_start": 2,
+          "no_person_sense": 2,
+          "tie_or_disagreement": 1
+        },
+        "col_totals": {
+          "inward first": 5,
+          "either side": 3,
+          "outward first": 1,
+          "both ways": 1,
+          "family": 6,
+          "household": 4,
+          "nothing to add": 1,
+          "not used": 0
+        },
+        "words_by_cell": {
+          "person_first": {
+            "inward first": [
+              "energy",
+              "force",
+              "power",
+              "work"
+            ],
+            "either side": [
+              "gravity",
+              "matter",
+              "pressure"
+            ],
+            "outward first": [],
+            "both ways": [],
+            "family": [
+              "distance"
+            ],
+            "household": [],
+            "nothing to add": [
+              "accelerate"
+            ],
+            "not used": []
+          },
+          "physics_first": {
+            "inward first": [
+              "inertia"
+            ],
+            "either side": [],
+            "outward first": [
+              "attraction"
+            ],
+            "both ways": [],
+            "family": [
+              "current",
+              "momentum"
+            ],
+            "household": [
+              "density",
+              "electric",
+              "mass"
+            ],
+            "nothing to add": [],
+            "not used": []
+          },
+          "both_from_start": {
+            "inward first": [],
+            "either side": [],
+            "outward first": [],
+            "both ways": [],
+            "family": [
+              "light",
+              "time"
+            ],
+            "household": [],
+            "nothing to add": [],
+            "not used": []
+          },
+          "no_person_sense": {
+            "inward first": [],
+            "either side": [],
+            "outward first": [],
+            "both ways": [],
+            "family": [
+              "space"
+            ],
+            "household": [
+              "volume"
+            ],
+            "nothing to add": [],
+            "not used": []
+          },
+          "tie_or_disagreement": {
+            "inward first": [],
+            "either side": [],
+            "outward first": [],
+            "both ways": [
+              "charge"
+            ],
+            "family": [],
+            "household": [],
+            "nothing to add": [],
+            "not used": []
+          }
+        }
+      },
+      "secondary_physics_14": {
+        "n_items": 14,
+        "row_categories_4": [
+          "person_first",
+          "physics_first",
+          "both_from_start",
+          "no_person_sense"
+        ],
+        "tie_row_category": "tie_or_disagreement",
+        "col_categories_8": [
+          "inward first",
+          "either side",
+          "outward first",
+          "both ways",
+          "family",
+          "household",
+          "nothing to add",
+          "not used"
+        ],
+        "matrix_4x8": {
+          "person_first": {
+            "inward first": 0,
+            "either side": 0,
+            "outward first": 0,
+            "both ways": 0,
+            "family": 0,
+            "household": 1,
+            "nothing to add": 0,
+            "not used": 0
+          },
+          "physics_first": {
+            "inward first": 0,
+            "either side": 0,
+            "outward first": 6,
+            "both ways": 1,
+            "family": 0,
+            "household": 2,
+            "nothing to add": 1,
+            "not used": 1
+          },
+          "both_from_start": {
+            "inward first": 0,
+            "either side": 0,
+            "outward first": 0,
+            "both ways": 0,
+            "family": 0,
+            "household": 0,
+            "nothing to add": 0,
+            "not used": 0
+          },
+          "no_person_sense": {
+            "inward first": 0,
+            "either side": 0,
+            "outward first": 2,
+            "both ways": 0,
+            "family": 0,
+            "household": 0,
+            "nothing to add": 0,
+            "not used": 0
+          }
+        },
+        "tie_or_disagreement_row": {
+          "inward first": 0,
+          "either side": 0,
+          "outward first": 0,
+          "both ways": 0,
+          "family": 0,
+          "household": 0,
+          "nothing to add": 0,
+          "not used": 0
+        },
+        "matrix_5x8_with_tie_row": {
+          "person_first": {
+            "inward first": 0,
+            "either side": 0,
+            "outward first": 0,
+            "both ways": 0,
+            "family": 0,
+            "household": 1,
+            "nothing to add": 0,
+            "not used": 0
+          },
+          "physics_first": {
+            "inward first": 0,
+            "either side": 0,
+            "outward first": 6,
+            "both ways": 1,
+            "family": 0,
+            "household": 2,
+            "nothing to add": 1,
+            "not used": 1
+          },
+          "both_from_start": {
+            "inward first": 0,
+            "either side": 0,
+            "outward first": 0,
+            "both ways": 0,
+            "family": 0,
+            "household": 0,
+            "nothing to add": 0,
+            "not used": 0
+          },
+          "no_person_sense": {
+            "inward first": 0,
+            "either side": 0,
+            "outward first": 2,
+            "both ways": 0,
+            "family": 0,
+            "household": 0,
+            "nothing to add": 0,
+            "not used": 0
+          },
+          "tie_or_disagreement": {
+            "inward first": 0,
+            "either side": 0,
+            "outward first": 0,
+            "both ways": 0,
+            "family": 0,
+            "household": 0,
+            "nothing to add": 0,
+            "not used": 0
+          }
+        },
+        "row_totals": {
+          "person_first": 1,
+          "physics_first": 11,
+          "both_from_start": 0,
+          "no_person_sense": 2,
+          "tie_or_disagreement": 0
+        },
+        "col_totals": {
+          "inward first": 0,
+          "either side": 0,
+          "outward first": 8,
+          "both ways": 1,
+          "family": 0,
+          "household": 3,
+          "nothing to add": 1,
+          "not used": 1
+        },
+        "words_by_cell": {
+          "person_first": {
+            "inward first": [],
+            "either side": [],
+            "outward first": [],
+            "both ways": [],
+            "family": [],
+            "household": [
+              "frequency"
+            ],
+            "nothing to add": [],
+            "not used": []
+          },
+          "physics_first": {
+            "inward first": [],
+            "either side": [],
+            "outward first": [
+              "culminate",
+              "friction",
+              "reflection",
+              "resonance",
+              "tension",
+              "vortex"
+            ],
+            "both ways": [
+              "vibration"
+            ],
+            "family": [],
+            "household": [
+              "field",
+              "focus"
+            ],
+            "nothing to add": [
+              "radiate"
+            ],
+            "not used": [
+              "wave"
+            ]
+          },
+          "both_from_start": {
+            "inward first": [],
+            "either side": [],
+            "outward first": [],
+            "both ways": [],
+            "family": [],
+            "household": [],
+            "nothing to add": [],
+            "not used": []
+          },
+          "no_person_sense": {
+            "inward first": [],
+            "either side": [],
+            "outward first": [
+              "converge",
+              "limit"
+            ],
+            "both ways": [],
+            "family": [],
+            "household": [],
+            "nothing to add": [],
+            "not used": []
+          },
+          "tie_or_disagreement": {
+            "inward first": [],
+            "either side": [],
+            "outward first": [],
+            "both ways": [],
+            "family": [],
+            "household": [],
+            "nothing to add": [],
+            "not used": []
+          }
+        }
+      }
+    },
+    "ledger_physics_35_per_word": [
+      {
+        "item_id": "W003",
+        "word": "friction",
+        "ledger_stratum": "secondary_physics",
+        "ledger_kind": "outward first",
+        "in_targets_10": false,
+        "s1_direction_class": "physics_first",
+        "s2_direction_class": "physics_first",
+        "s3_direction_class": "physics_first",
+        "direction_class_maj": "physics_first",
+        "person_first_maj": false,
+        "s2_retrieved_utc": "2026-11-14",
+        "ledger_is_inward_first": false,
+        "ledger_is_inward_or_either_side": false
+      },
+      {
+        "item_id": "W004",
+        "word": "focus",
+        "ledger_stratum": "secondary_physics",
+        "ledger_kind": "household",
+        "in_targets_10": false,
+        "s1_direction_class": "physics_first",
+        "s2_direction_class": "physics_first",
+        "s3_direction_class": "physics_first",
+        "direction_class_maj": "physics_first",
+        "person_first_maj": false,
+        "s2_retrieved_utc": "unverified",
+        "ledger_is_inward_first": false,
+        "ledger_is_inward_or_either_side": false
+      },
+      {
+        "item_id": "W005",
+        "word": "inertia",
+        "ledger_stratum": "core_law",
+        "ledger_kind": "inward first",
+        "in_targets_10": false,
+        "s1_direction_class": "physics_first",
+        "s2_direction_class": "physics_first",
+        "s3_direction_class": "physics_first",
+        "direction_class_maj": "physics_first",
+        "person_first_maj": false,
+        "s2_retrieved_utc": "unverified",
+        "ledger_is_inward_first": true,
+        "ledger_is_inward_or_either_side": true
+      },
+      {
+        "item_id": "W014",
+        "word": "power",
+        "ledger_stratum": "core_law",
+        "ledger_kind": "inward first",
+        "in_targets_10": false,
+        "s1_direction_class": "person_first",
+        "s2_direction_class": "person_first",
+        "s3_direction_class": "person_first",
+        "direction_class_maj": "person_first",
+        "person_first_maj": true,
+        "s2_retrieved_utc": "unverified",
+        "ledger_is_inward_first": true,
+        "ledger_is_inward_or_either_side": true
+      },
+      {
+        "item_id": "W015",
+        "word": "pressure",
+        "ledger_stratum": "core_law",
+        "ledger_kind": "either side",
+        "in_targets_10": false,
+        "s1_direction_class": "person_first",
+        "s2_direction_class": "person_first",
+        "s3_direction_class": "both_from_start",
+        "direction_class_maj": "person_first",
+        "person_first_maj": true,
+        "s2_retrieved_utc": "unverified",
+        "ledger_is_inward_first": false,
+        "ledger_is_inward_or_either_side": true
+      },
+      {
+        "item_id": "W018",
+        "word": "matter",
+        "ledger_stratum": "core_law",
+        "ledger_kind": "either side",
+        "in_targets_10": false,
+        "s1_direction_class": "person_first",
+        "s2_direction_class": "person_first",
+        "s3_direction_class": "person_first",
+        "direction_class_maj": "person_first",
+        "person_first_maj": true,
+        "s2_retrieved_utc": "unverified",
+        "ledger_is_inward_first": false,
+        "ledger_is_inward_or_either_side": true
+      },
+      {
+        "item_id": "W019",
+        "word": "reflection",
+        "ledger_stratum": "secondary_physics",
+        "ledger_kind": "outward first",
+        "in_targets_10": false,
+        "s1_direction_class": "physics_first",
+        "s2_direction_class": "physics_first",
+        "s3_direction_class": "physics_first",
+        "direction_class_maj": "physics_first",
+        "person_first_maj": false,
+        "s2_retrieved_utc": "unverified",
+        "ledger_is_inward_first": false,
+        "ledger_is_inward_or_either_side": false
+      },
+      {
+        "item_id": "W020",
+        "word": "attraction",
+        "ledger_stratum": "core_law",
+        "ledger_kind": "outward first",
+        "in_targets_10": false,
+        "s1_direction_class": "physics_first",
+        "s2_direction_class": "physics_first",
+        "s3_direction_class": "physics_first",
+        "direction_class_maj": "physics_first",
+        "person_first_maj": false,
+        "s2_retrieved_utc": "unverified",
+        "ledger_is_inward_first": false,
+        "ledger_is_inward_or_either_side": false
+      },
+      {
+        "item_id": "W021",
+        "word": "limit",
+        "ledger_stratum": "secondary_physics",
+        "ledger_kind": "outward first",
+        "in_targets_10": false,
+        "s1_direction_class": "no_person_sense",
+        "s2_direction_class": "no_person_sense",
+        "s3_direction_class": "no_person_sense",
+        "direction_class_maj": "no_person_sense",
+        "person_first_maj": false,
+        "s2_retrieved_utc": "unverified",
+        "ledger_is_inward_first": false,
+        "ledger_is_inward_or_either_side": false
+      },
+      {
+        "item_id": "W023",
+        "word": "momentum",
+        "ledger_stratum": "core_law",
+        "ledger_kind": "family",
+        "in_targets_10": false,
+        "s1_direction_class": "physics_first",
+        "s2_direction_class": "physics_first",
+        "s3_direction_class": "physics_first",
+        "direction_class_maj": "physics_first",
+        "person_first_maj": false,
+        "s2_retrieved_utc": "unverified",
+        "ledger_is_inward_first": false,
+        "ledger_is_inward_or_either_side": false
+      },
+      {
+        "item_id": "W025",
+        "word": "radiate",
+        "ledger_stratum": "secondary_physics",
+        "ledger_kind": "nothing to add",
+        "in_targets_10": false,
+        "s1_direction_class": "no_person_sense",
+        "s2_direction_class": "physics_first",
+        "s3_direction_class": "physics_first",
+        "direction_class_maj": "physics_first",
+        "person_first_maj": false,
+        "s2_retrieved_utc": "unverified",
+        "ledger_is_inward_first": false,
+        "ledger_is_inward_or_either_side": false
+      },
+      {
+        "item_id": "W026",
+        "word": "time",
+        "ledger_stratum": "core_law",
+        "ledger_kind": "family",
+        "in_targets_10": true,
+        "s1_direction_class": "both_from_start",
+        "s2_direction_class": "no_person_sense",
+        "s3_direction_class": "both_from_start",
+        "direction_class_maj": "both_from_start",
+        "person_first_maj": false,
+        "s2_retrieved_utc": "unverified",
+        "ledger_is_inward_first": false,
+        "ledger_is_inward_or_either_side": false
+      },
+      {
+        "item_id": "W028",
+        "word": "converge",
+        "ledger_stratum": "secondary_physics",
+        "ledger_kind": "outward first",
+        "in_targets_10": false,
+        "s1_direction_class": "no_person_sense",
+        "s2_direction_class": "physics_first",
+        "s3_direction_class": "no_person_sense",
+        "direction_class_maj": "no_person_sense",
+        "person_first_maj": false,
+        "s2_retrieved_utc": "unverified",
+        "ledger_is_inward_first": false,
+        "ledger_is_inward_or_either_side": false
+      },
+      {
+        "item_id": "W029",
+        "word": "current",
+        "ledger_stratum": "core_law",
+        "ledger_kind": "family",
+        "in_targets_10": false,
+        "s1_direction_class": "physics_first",
+        "s2_direction_class": "physics_first",
+        "s3_direction_class": "no_person_sense",
+        "direction_class_maj": "physics_first",
+        "person_first_maj": false,
+        "s2_retrieved_utc": "unverified",
+        "ledger_is_inward_first": false,
+        "ledger_is_inward_or_either_side": false
+      },
+      {
+        "item_id": "W032",
+        "word": "frequency",
+        "ledger_stratum": "secondary_physics",
+        "ledger_kind": "household",
+        "in_targets_10": false,
+        "s1_direction_class": "person_first",
+        "s2_direction_class": "person_first",
+        "s3_direction_class": "person_first",
+        "direction_class_maj": "person_first",
+        "person_first_maj": true,
+        "s2_retrieved_utc": "unverified",
+        "ledger_is_inward_first": false,
+        "ledger_is_inward_or_either_side": false
+      },
+      {
+        "item_id": "W035",
+        "word": "electric",
+        "ledger_stratum": "core_law",
+        "ledger_kind": "household",
+        "in_targets_10": false,
+        "s1_direction_class": "physics_first",
+        "s2_direction_class": "physics_first",
+        "s3_direction_class": "physics_first",
+        "direction_class_maj": "physics_first",
+        "person_first_maj": false,
+        "s2_retrieved_utc": "unverified",
+        "ledger_is_inward_first": false,
+        "ledger_is_inward_or_either_side": false
+      },
+      {
+        "item_id": "W036",
+        "word": "light",
+        "ledger_stratum": "core_law",
+        "ledger_kind": "family",
+        "in_targets_10": false,
+        "s1_direction_class": "both_from_start",
+        "s2_direction_class": "both_from_start",
+        "s3_direction_class": "both_from_start",
+        "direction_class_maj": "both_from_start",
+        "person_first_maj": false,
+        "s2_retrieved_utc": "unverified",
+        "ledger_is_inward_first": false,
+        "ledger_is_inward_or_either_side": false
+      },
+      {
+        "item_id": "W038",
+        "word": "vortex",
+        "ledger_stratum": "secondary_physics",
+        "ledger_kind": "outward first",
+        "in_targets_10": false,
+        "s1_direction_class": "physics_first",
+        "s2_direction_class": "physics_first",
+        "s3_direction_class": "physics_first",
+        "direction_class_maj": "physics_first",
+        "person_first_maj": false,
+        "s2_retrieved_utc": "unverified",
+        "ledger_is_inward_first": false,
+        "ledger_is_inward_or_either_side": false
+      },
+      {
+        "item_id": "W039",
+        "word": "gravity",
+        "ledger_stratum": "core_law",
+        "ledger_kind": "either side",
+        "in_targets_10": false,
+        "s1_direction_class": "person_first",
+        "s2_direction_class": "person_first",
+        "s3_direction_class": "person_first",
+        "direction_class_maj": "person_first",
+        "person_first_maj": true,
+        "s2_retrieved_utc": "unverified",
+        "ledger_is_inward_first": false,
+        "ledger_is_inward_or_either_side": true
+      },
+      {
+        "item_id": "W040",
+        "word": "work",
+        "ledger_stratum": "core_law",
+        "ledger_kind": "inward first",
+        "in_targets_10": false,
+        "s1_direction_class": "both_from_start",
+        "s2_direction_class": "person_first",
+        "s3_direction_class": "person_first",
+        "direction_class_maj": "person_first",
+        "person_first_maj": true,
+        "s2_retrieved_utc": "unverified",
+        "ledger_is_inward_first": true,
+        "ledger_is_inward_or_either_side": true
+      },
+      {
+        "item_id": "W043",
+        "word": "vibration",
+        "ledger_stratum": "secondary_physics",
+        "ledger_kind": "both ways",
+        "in_targets_10": false,
+        "s1_direction_class": "physics_first",
+        "s2_direction_class": "physics_first",
+        "s3_direction_class": "physics_first",
+        "direction_class_maj": "physics_first",
+        "person_first_maj": false,
+        "s2_retrieved_utc": "unverified",
+        "ledger_is_inward_first": false,
+        "ledger_is_inward_or_either_side": false
+      },
+      {
+        "item_id": "W044",
+        "word": "distance",
+        "ledger_stratum": "core_law",
+        "ledger_kind": "family",
+        "in_targets_10": false,
+        "s1_direction_class": "person_first",
+        "s2_direction_class": "person_first",
+        "s3_direction_class": "person_first",
+        "direction_class_maj": "person_first",
+        "person_first_maj": true,
+        "s2_retrieved_utc": "unverified",
+        "ledger_is_inward_first": false,
+        "ledger_is_inward_or_either_side": false
+      },
+      {
+        "item_id": "W045",
+        "word": "resonance",
+        "ledger_stratum": "secondary_physics",
+        "ledger_kind": "outward first",
+        "in_targets_10": false,
+        "s1_direction_class": "no_person_sense",
+        "s2_direction_class": "physics_first",
+        "s3_direction_class": "physics_first",
+        "direction_class_maj": "physics_first",
+        "person_first_maj": false,
+        "s2_retrieved_utc": "unverified",
+        "ledger_is_inward_first": false,
+        "ledger_is_inward_or_either_side": false
+      },
+      {
+        "item_id": "W046",
+        "word": "energy",
+        "ledger_stratum": "core_law",
+        "ledger_kind": "inward first",
+        "in_targets_10": true,
+        "s1_direction_class": "person_first",
+        "s2_direction_class": "person_first",
+        "s3_direction_class": "physics_first",
+        "direction_class_maj": "person_first",
+        "person_first_maj": true,
+        "s2_retrieved_utc": "unverified",
+        "ledger_is_inward_first": true,
+        "ledger_is_inward_or_either_side": true
+      },
+      {
+        "item_id": "W047",
+        "word": "field",
+        "ledger_stratum": "secondary_physics",
+        "ledger_kind": "household",
+        "in_targets_10": false,
+        "s1_direction_class": "physics_first",
+        "s2_direction_class": "physics_first",
+        "s3_direction_class": "physics_first",
+        "direction_class_maj": "physics_first",
+        "person_first_maj": false,
+        "s2_retrieved_utc": "unverified",
+        "ledger_is_inward_first": false,
+        "ledger_is_inward_or_either_side": false
+      },
+      {
+        "item_id": "W051",
+        "word": "force",
+        "ledger_stratum": "core_law",
+        "ledger_kind": "inward first",
+        "in_targets_10": true,
+        "s1_direction_class": "person_first",
+        "s2_direction_class": "person_first",
+        "s3_direction_class": "person_first",
+        "direction_class_maj": "person_first",
+        "person_first_maj": true,
+        "s2_retrieved_utc": "unverified",
+        "ledger_is_inward_first": true,
+        "ledger_is_inward_or_either_side": true
+      },
+      {
+        "item_id": "W054",
+        "word": "tension",
+        "ledger_stratum": "secondary_physics",
+        "ledger_kind": "outward first",
+        "in_targets_10": false,
+        "s1_direction_class": "physics_first",
+        "s2_direction_class": "physics_first",
+        "s3_direction_class": "physics_first",
+        "direction_class_maj": "physics_first",
+        "person_first_maj": false,
+        "s2_retrieved_utc": "unverified",
+        "ledger_is_inward_first": false,
+        "ledger_is_inward_or_either_side": false
+      },
+      {
+        "item_id": "W059",
+        "word": "accelerate",
+        "ledger_stratum": "core_law",
+        "ledger_kind": "nothing to add",
+        "in_targets_10": false,
+        "s1_direction_class": "no_person_sense",
+        "s2_direction_class": "person_first",
+        "s3_direction_class": "person_first",
+        "direction_class_maj": "person_first",
+        "person_first_maj": true,
+        "s2_retrieved_utc": "unverified",
+        "ledger_is_inward_first": false,
+        "ledger_is_inward_or_either_side": false
+      },
+      {
+        "item_id": "W063",
+        "word": "volume",
+        "ledger_stratum": "core_law",
+        "ledger_kind": "household",
+        "in_targets_10": true,
+        "s1_direction_class": "no_person_sense",
+        "s2_direction_class": "no_person_sense",
+        "s3_direction_class": "no_person_sense",
+        "direction_class_maj": "no_person_sense",
+        "person_first_maj": false,
+        "s2_retrieved_utc": "unverified",
+        "ledger_is_inward_first": false,
+        "ledger_is_inward_or_either_side": false
+      },
+      {
+        "item_id": "W064",
+        "word": "mass",
+        "ledger_stratum": "core_law",
+        "ledger_kind": "household",
+        "in_targets_10": true,
+        "s1_direction_class": "physics_first",
+        "s2_direction_class": "no_person_sense",
+        "s3_direction_class": "physics_first",
+        "direction_class_maj": "physics_first",
+        "person_first_maj": false,
+        "s2_retrieved_utc": "unverified",
+        "ledger_is_inward_first": false,
+        "ledger_is_inward_or_either_side": false
+      },
+      {
+        "item_id": "W065",
+        "word": "density",
+        "ledger_stratum": "core_law",
+        "ledger_kind": "household",
+        "in_targets_10": true,
+        "s1_direction_class": "no_person_sense",
+        "s2_direction_class": "physics_first",
+        "s3_direction_class": "physics_first",
+        "direction_class_maj": "physics_first",
+        "person_first_maj": false,
+        "s2_retrieved_utc": "unverified",
+        "ledger_is_inward_first": false,
+        "ledger_is_inward_or_either_side": false
+      },
+      {
+        "item_id": "W069",
+        "word": "culminate",
+        "ledger_stratum": "secondary_physics",
+        "ledger_kind": "outward first",
+        "in_targets_10": false,
+        "s1_direction_class": "physics_first",
+        "s2_direction_class": "physics_first",
+        "s3_direction_class": "physics_first",
+        "direction_class_maj": "physics_first",
+        "person_first_maj": false,
+        "s2_retrieved_utc": "unverified",
+        "ledger_is_inward_first": false,
+        "ledger_is_inward_or_either_side": false
+      },
+      {
+        "item_id": "W070",
+        "word": "wave",
+        "ledger_stratum": "secondary_physics",
+        "ledger_kind": "not used",
+        "in_targets_10": false,
+        "s1_direction_class": "physics_first",
+        "s2_direction_class": "physics_first",
+        "s3_direction_class": "both_from_start",
+        "direction_class_maj": "physics_first",
+        "person_first_maj": false,
+        "s2_retrieved_utc": "unverified",
+        "ledger_is_inward_first": false,
+        "ledger_is_inward_or_either_side": false
+      },
+      {
+        "item_id": "W072",
+        "word": "charge",
+        "ledger_stratum": "core_law",
+        "ledger_kind": "both ways",
+        "in_targets_10": false,
+        "s1_direction_class": "physics_first",
+        "s2_direction_class": "person_first",
+        "s3_direction_class": "both_from_start",
+        "direction_class_maj": "tie_or_disagreement",
+        "person_first_maj": false,
+        "s2_retrieved_utc": "unverified",
+        "ledger_is_inward_first": false,
+        "ledger_is_inward_or_either_side": false
+      },
+      {
+        "item_id": "W073",
+        "word": "space",
+        "ledger_stratum": "core_law",
+        "ledger_kind": "family",
+        "in_targets_10": true,
+        "s1_direction_class": "physics_first",
+        "s2_direction_class": "no_person_sense",
+        "s3_direction_class": "no_person_sense",
+        "direction_class_maj": "no_person_sense",
+        "person_first_maj": false,
+        "s2_retrieved_utc": "unverified",
+        "ledger_is_inward_first": false,
+        "ledger_is_inward_or_either_side": false
+      }
+    ]
+  }
+}

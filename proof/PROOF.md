@@ -351,11 +351,24 @@ Substituting `gemini_hydrogen` for `gemini_carbon` (`(gemini_hydrogen, grok_4_7,
 
 ## 5. Part V — Held-Out Etymology Direction Control (proof/heldout/, Part 3)
 
-**Status**: **Corpus preparation, deterministic exclusions, `40`-word control draw, and anonymized `78`-word single-source coding packet complete; external `etymonline.com` session collection and statistical scoring are pending (not yet run).**
+**Status**: **`PROTOCOL_DEVIATED_PRE_UNMASKING` — Null result ($p \ge 0.3818$ across all `9` scoring rules, `0/9` with $p < 0.05$) under two pre-unmasking protocol deviations.**
 
-To replace the post-hoc core-law directionality split documented in [Section 3.3](#33-descriptive-core-law-directionality-summary-post-hoc-not-inferential), [prepare_part3_etymology.py](heldout/prepare_part3_etymology.py) builds the preregistered external control pool and anonymized coding packet following [PREREGISTRATION.md](heldout/PREREGISTRATION.md) Section 2:
+This section replaces the exploratory post-hoc core-law directionality audit in [Section 3.3](#33-descriptive-core-law-directionality-summary-post-hoc-not-inferential) with the preregistered external OpenStax control evaluation ([PREREGISTRATION.md](heldout/PREREGISTRATION.md) Section 2). All codings ([etymology_codings.csv](heldout/etymology_codings.csv)) were ingested and committed before joining against [word_coding_key.csv](heldout/word_coding_key.csv) (`part3_pre_unmasking_commit_sha = cf6f1352a36e798e65c28c6d77cd320180b3761c`), and [evaluate_part3.py](heldout/evaluate_part3.py) emits the joined item table ([part3_item_table.csv](heldout/part3_item_table.csv)) and exact rational statistics ([part3_results.json](heldout/part3_results.json)).
 
-1. **External Control Extraction (`openstax_key_terms_raw.csv`)**: Fetches all `153` CNXML modules across the same `22` chapters of the frozen OpenStax *University Physics* bundle (`bundle_commit_sha = 2300d5b8ca2571dacc6ec25ebef56ba8d49000a2`, SHA-256 verified per module URL in [openstax_fetch_manifest.json](heldout/openstax_fetch_manifest.json)) and extracts `<glossary><definition><term>` headwords verbatim without `<meaning>` prose, yielding `454` raw entries ([openstax_key_terms_raw.csv](heldout/openstax_key_terms_raw.csv)).
+**Upfront Protocol-Deviation Disclosure**:
+1. **Model-Family Reduction (`2` Families Instead of `3`)**: `grok_4_7` refused the task, leaving `3` sessions across `2` model families: `s1 = gemini_hydrogen` (Gemini family, `78/78` retrieved live `2026-11-14`, seeing only neutral IDs `W001..W078` and headwords from [word_coding_packet.csv](heldout/word_coding_packet.csv) under [etymology_coding_prompt.md](heldout/etymology_coding_prompt.md)), `s2 = opus_5_5` (Anthropic family, seeing the same neutral packet), and `s3 = gemini_carbon` (Gemini family, `78/78` retrieved live `2026-11-14`, neutral packet only). Consequently, Gemini sessions hold `2/3` of the `direction_class_maj` majority vote.
+2. **Unverified Parametric-Memory Coding in `s2 = opus_5_5` (`75/78` Items)**: `s2` retrieved `3/78` entries live on `2026-11-14` (`W001` `theory` [control], `W002` `sound` [control], and `W003` `friction` [`ledger_physics_35`]) before encountering `etymonline.com` anti-bot blocking. The remaining `75/78` entries (`W004..W078`) were coded from parametric memory and flagged `retrieved_utc = "unverified"` (`etymonline_url = "unverified"`), which affects `10/10` target nouns, `38/40` OpenStax controls, and `34/35` `ledger_physics_35` words.
+
+**Headline Outcomes ($p \ge 0.3818$ Across All Rules)**:
+- **Preregistered Primary (`maj_3run`)**: `4/10` (`2/5 = 0.4000`) targets vs. `13/40` (`0.3250`) controls coded `"person_first"` (`risk_difference = +3/40 = +0.0750`), exact one-sided Fisher $p = 4388533/9529015 \approx 0.4605$ (two-sided $p = 66975323/93384347 \approx 0.7172$).
+- **Per-Session**: `s1_gemini_hydrogen` yields `3/10` vs. `11/40` (one-sided $p = 38612951/66703105 \approx 0.5789$), `s2_opus_5_5_memory_75_of_78` yields `4/10` vs. `12/40` (one-sided $p = 3813173/9529015 \approx 0.4002$), and `s3_gemini_carbon` yields `3/10` vs. `11/40` (one-sided $p = 38612951/66703105 \approx 0.5789$).
+- **Cross-Family Sensitivity**: `cross_family_strict_s1_and_s2` yields `3/10` vs. `8/40` (one-sided $p = 178257281/466921735 \approx 0.3818$) and `cross_family_strict_s3_and_s2` yields `3/10` vs. `9/40` (one-sided $p = 209807921/466921735 \approx 0.4493$). Neither the primary rule nor any sensitivity rule approaches $p < 0.05$.
+
+### 5.1 Corpus, Exclusions, Sampling (`seed = 20261113`), & Provenance
+
+[prepare_part3_etymology.py](heldout/prepare_part3_etymology.py) builds the external control pool and neutral packet from the frozen OpenStax corpus (`Access for free at https://openstax.org — Licensed under CC BY 4.0.`):
+
+1. **External Control Extraction ([openstax_key_terms_raw.csv](heldout/openstax_key_terms_raw.csv))**: Fetches all `153` CNXML modules across the same `22` chapters of the frozen OpenStax *University Physics* bundle (`bundle_commit_sha = 2300d5b8ca2571dacc6ec25ebef56ba8d49000a2`, SHA-256 verified per module URL in [openstax_fetch_manifest.json](heldout/openstax_fetch_manifest.json)) and extracts `<glossary><definition><term>` headwords verbatim without `<meaning>` prose, yielding `454` raw entries.
 2. **Deterministic Filtering & Exclusions `C1`–`C3` ([control_exclusion_log.csv](heldout/control_exclusion_log.csv))**:
    - Retains `101` unique lowercase single-word (`^[a-z]+$`) candidates verbatim (no case-folding).
    - Applies preregistered exclusions against all `80` words in [ledger_80.json](etymology/ledger_80.json) and the `10` confirmed physical quantity targets (`acceleration, density, energy, force, mass, space, speed, time, velocity, volume`):
@@ -363,11 +376,77 @@ To replace the post-hoc core-law directionality split documented in [Section 3.3
      - `C2_CONFIRMED_TARGET` (`0`): (`density` and `force` match `C1` first; `acceleration, speed, velocity` do not appear as standalone lowercase `<term>` entries).
      - `C3_MORPHOLOGICAL_VARIANT` (`1`): `radiation` (Latinate/affix root of `radiate`).
    - Leaves `89` eligible control candidates (`>= 40`). Two audited edge cases remain eligible under the `PREREGISTRATION.md` affix rule: `wavelength` (compound `wave` + `length`) and `compressibility` (`com-` prefix, not in `{un-, in-, im-, non-, re-}`).
-3. **Sample Draw & Anonymized Coding Packet (`seed = 20261113`)**:
-   - Draws `controls_40 = random.Random(20261113).sample(eligible_controls, 40)` (`100%` disjoint from both `ledger_80` and `targets_10`).
-   - Forms the `78`-word unified coding pool: `35` physics-eligible words from `ledger_80.json` (`ledger_physics_35`) $+$ `3` remaining target nouns (`acceleration, speed, velocity`, since `7` overlap: `density, energy, force, mass, space, time, volume`) $+$ `40` OpenStax controls, shuffled with `seed = 20261113` as `W001..W078`.
-   - Emits the withheld answer key [word_coding_key.csv](heldout/word_coding_key.csv), the ID/word packet [word_coding_packet.csv](heldout/word_coding_packet.csv), and the standalone coding prompt [etymology_coding_prompt.md](heldout/etymology_coding_prompt.md) (`source_coverage = "single-source"` on `https://www.etymonline.com` only, no quoted dictionary prose allowed, zero group/stratum/TSR identifiers).
-4. **Offline Reproducibility & Confirmatory Analysis Spec (Pending Data)**: `prepare_part3_etymology.py --verify-offline` checks byte-for-byte parity from `openstax_key_terms_raw.csv` with zero network requests and enforces hex-encoded repo/leak hygiene checks. Once `3` standalone external `etymonline.com` sessions are collected and ingested, the preregistered primary check tests the one-sided Fisher's exact test (upper tail for target `"person_first"` proportion $>$ control `"person_first"` proportion, $p < 0.05$) comparing `targets_10` against `controls_40`, after committing `etymology_codings.csv` prior to joining with `word_coding_key.csv`, alongside the descriptive `n = 35` ledger agreement check.
+3. **Sample Draw, Packet Construction, & Commit Lineage**:
+   - `controls_40 = random.Random(20261113).sample(eligible_controls, 40)` (`targets_10 & controls_40 = empty`, `ledger_physics_35 & controls_40 = empty`).
+   - Unified `78`-word coding pool (`W001..W078`, shuffled with `seed = 20261113`): `35` physics-eligible words from `ledger_80.json` (`21 core_law + 14 secondary_physics`) $+$ `3` target-only nouns (`acceleration, speed, velocity`, with `7` overlap words `density, energy, force, mass, space, time, volume`) $+$ `40` OpenStax controls.
+   - Reference commits: preregistration SHA `463ad9f93c8a276b1e0d9ee497198dfa2169d079`, packet prep SHA `343a502862e0d4ac9b082294f229eec7d954ef1b` ([word_coding_key.csv](heldout/word_coding_key.csv), [word_coding_packet.csv](heldout/word_coding_packet.csv), [etymology_coding_prompt.md](heldout/etymology_coding_prompt.md)), and pre-unmasking ingestion SHA `cf6f1352a36e798e65c28c6d77cd320180b3761c` ([ingest_part3_codings.py](heldout/ingest_part3_codings.py), [etymology_codings.csv](heldout/etymology_codings.csv), `packets/part3_session_{1,2,3}.json`).
+   - Across all `78` items (`source_coverage = "single-source"`), `direction_class_maj` assigns `person_first = 25`, `physics_first = 29`, `no_person_sense = 19`, `both_from_start = 3`, and `tie_or_disagreement = 2`.
+
+### 5.2 Target (`n = 10`) vs. Control (`n = 40`) Results & Per-Model Sensitivity
+
+Every rater configuration and aggregation rule yields a null result on the primary `10` vs. `40` comparison (`p_lt_0_05 = false` for `9/9` rules):
+
+| Rule | `targets_10` (`n=10`) | `controls_40` (`n=40`) | Risk Difference | One-Sided Fisher $p$ | Two-Sided Fisher $p$ |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| `maj_3run` | `4/10` (`0.4000`) | `13/40` (`0.3250`) | `+3/40` (`+0.0750`) | `4388533/9529015` (`0.4605`) | `66975323/93384347` (`0.7172`) |
+| `s1_gemini_hydrogen` | `3/10` (`0.3000`) | `11/40` (`0.2750`) | `+1/40` (`+0.0250`) | `38612951/66703105` (`0.5789`) | `1/1` (`1.0000`) |
+| `s2_opus_5_5_memory_75_of_78` | `4/10` (`0.4000`) | `12/40` (`0.3000`) | `+1/10` (`+0.1000`) | `3813173/9529015` (`0.4002`) | `9428173/13340621` (`0.7067`) |
+| `s3_gemini_carbon` | `3/10` (`0.3000`) | `11/40` (`0.2750`) | `+1/40` (`+0.0250`) | `38612951/66703105` (`0.5789`) | `1/1` (`1.0000`) |
+| `cross_family_strict_s1_and_s2` | `3/10` (`0.3000`) | `8/40` (`0.2000`) | `+1/10` (`+0.1000`) | `178257281/466921735` (`0.3818`) | `62622473/93384347` (`0.6706`) |
+| `cross_family_strict_s3_and_s2` | `3/10` (`0.3000`) | `9/40` (`0.2250`) | `+3/40` (`+0.0750`) | `209807921/466921735` (`0.4493`) | `320211259/466921735` (`0.6858`) |
+| `cross_family_lenient_s1_or_s2` | `4/10` (`0.4000`) | `15/40` (`0.3750`) | `+1/40` (`+0.0250`) | `84969349/146746831` (`0.5790`) | `1/1` (`1.0000`) |
+| `cross_family_lenient_s3_or_s2` | `4/10` (`0.4000`) | `14/40` (`0.3500`) | `+1/20` (`+0.0500`) | `381932081/733734155` (`0.5205`) | `1/1` (`1.0000`) |
+| `unanimous_all_3` | `2/10` (`0.2000`) | `6/40` (`0.1500`) | `+1/20` (`+0.0500`) | `18235891/35791910` (`0.5095`) | `2336287/3579191` (`0.6527`) |
+
+Under `maj_3run`, the `4`-category (+ `"tie_or_disagreement"`) distribution is `[person_first=4, physics_first=2, both_from_start=1, no_person_sense=3, tie_or_disagreement=0]` in `targets_10` versus `[13, 11, 1 (heat), 14, 1 (sound)]` in `controls_40`. All `10` targets carry `s2_retrieved_utc = "unverified"`:
+
+| ID | Word | `s1` (`gemini_hydrogen`) | `s2` (`opus_5_5`, unverified) | `s3` (`gemini_carbon`) | `direction_class_maj` | `ledger_80` `kind` |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| `W074` | `acceleration` | `no_person_sense` | `person_first` | `person_first` | `person_first` | *(target-only)* |
+| `W065` | `density` | `no_person_sense` | `physics_first` | `physics_first` | `physics_first` | `household` (`core_law`) |
+| `W046` | `energy` | `person_first` | `person_first` | `physics_first` | `person_first` | `inward first` (`core_law`) |
+| `W051` | `force` | `person_first` | `person_first` | `person_first` | `person_first` | `inward first` (`core_law`) |
+| `W064` | `mass` | `physics_first` | `no_person_sense` | `physics_first` | `physics_first` | `household` (`core_law`) |
+| `W073` | `space` | `physics_first` | `no_person_sense` | `no_person_sense` | `no_person_sense` | `family` (`core_law`) |
+| `W048` | `speed` | `person_first` | `person_first` | `person_first` | `person_first` | *(target-only)* |
+| `W026` | `time` | `both_from_start` | `no_person_sense` | `both_from_start` | `both_from_start` | `family` (`core_law`) |
+| `W011` | `velocity` | `no_person_sense` | `no_person_sense` | `no_person_sense` | `no_person_sense` | *(target-only)* |
+| `W063` | `volume` | `no_person_sense` | `no_person_sense` | `no_person_sense` | `no_person_sense` | `household` (`core_law`) |
+
+- **Control `"person_first"` Words (`13/40` in `maj_3run`)**: `associative, beats, commutative, conduction, discrepancy, displacement, event, hearing, law, precision, theory, thrust, uncertainty`. Six controls are unanimously `"person_first"` (`associative, beats, hearing, law, precision, theory`, where `W001 theory` was live-verified in `s2`). Per-session differences in `controls_40`: `s2` alone codes `second` as `"person_first"` (`s1 = s3 = physics_first`); `s1` alone codes `sound` as `"person_first"` (`W002 sound` was live-verified in `s2` as `both_from_start`, while `s3` coded `no_person_sense`, producing `"tie_or_disagreement"`); `s3` codes `conduction` as `physics_first` (`s1 = s2 = person_first`); `s1` codes `discrepancy, event, uncertainty` as non-`person_first` while `s2 = s3 = person_first`; `s2` codes `commutative` (`no_person_sense`) and `displacement` (`both_from_start`) differently from Gemini (`person_first`).
+- **Inter-Session Reliability**:
+  - `all_78 (N = 78)`: `4`-category Fleiss' $\kappa = 12413/19199 \approx 0.6465$ (`P_bar = 88/117 = 0.7521`, `P_e = 8179/27378 = 0.2987`, unanimous `50/78 = 0.6410`, `2` ties: `W002 sound` and `W072 charge`); binary `"person_first"` Fleiss' $\kappa = 421/616 \approx 0.6834$ (`P_bar = 34/39 = 0.8718`, `P_e = 905/1521 = 0.5950`, unanimous `63/78 = 0.8077`). Pairwise agreement and Cohen's $\kappa$: within-Gemini `s1_vs_s3` is `58/78` ($\kappa = 1361/2141 \approx 0.6357$) `4`-cat / `67/78` ($\kappa = 250/393 \approx 0.6361$) binary; cross-family `s1_vs_s2` is `57/78` ($\kappa = 1310/2129 \approx 0.6153$) / `67/78` ($\kappa = 826/1255 \approx 0.6582$); cross-family `s3_vs_s2` is `61/78` ($\kappa = 2945/4271 \approx 0.6895$) / `70/78` ($\kappa = 319/423 \approx 0.7541$).
+  - `primary_50 (N = 50)`: `4`-category Fleiss' $\kappa = 4967/7892 \approx 0.6294$ (`P_bar = 37/50 = 0.7400`, `P_e = 1679/5625 = 0.2985`, unanimous `31/50 = 0.6200`, `1` tie `W002 sound`); binary Fleiss' $\kappa = 137/212 \approx 0.6462$ (`P_bar = 64/75 = 0.8533`, `P_e = 3293/5625 = 0.5854`, unanimous `39/50 = 0.7800`). Pairwise: `s1_vs_s3` `38/50` ($1163/1763 \approx 0.6597$) `4`-cat / `42/50` ($38/63 \approx 0.6032$) binary; `s1_vs_s2` `35/50` ($1009/1759 \approx 0.5736$) / `42/50` ($163/263 \approx 0.6198$); `s3_vs_s2` `38/50` ($1151/1751 \approx 0.6573$) / `44/50` ($188/263 \approx 0.7148$).
+  - `ledger_physics_35 (N = 35)`: `4`-category Fleiss' $\kappa = 4177/7222 \approx 0.5784$ (unanimous `21/35`, `1` tie `W072 charge`); binary Fleiss' $\kappa = 527/702 \approx 0.7507$ (unanimous `30/35`). Pairwise: `s1_vs_s3` `24/35` ($437/822 \approx 0.5316$) `4`-cat / `31/35` ($73/108 \approx 0.6759$) binary; `s1_vs_s2` `25/35` ($443/793 \approx 0.5586$) / `32/35` ($128/163 \approx 0.7853$); `s3_vs_s2` `27/35` ($521/801 \approx 0.6504$) / `32/35` ($128/163 \approx 0.7853$). Within-Gemini agreement (`s1_vs_s3`) is no higher than cross-family agreement (`s3_vs_s2`).
+
+### 5.3 Descriptive Agreement With `ledger_80.json` (`n = 35` Physics-Eligible Words)
+
+Comparing binary `"person_first"` codings against [ledger_80.json](etymology/ledger_80.json) across the `35` physics-eligible words (`21 core_law + 14 secondary_physics`, where `0` of `14` `secondary_physics` words carry `"inward first"` or `"either side"` in `ledger_80.json`, giving $\kappa = 0/1 = 0.0000$ on `secondary_physics_14` for all raters with `13/14` agreement due to `frequency` FP):
+
+| Ledger Reference Definition | Subset (`n`) | `maj_3run` | `s1` (`gemini_hydrogen`) | `s2` (`opus_5_5`, 34/35 unverified) | `s3` (`gemini_carbon`) |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| `inward first` (`5` words) | `all_35` (`35`) | `28/35` (`0.8000`), $\kappa = 36/85$ (`0.4235`) | `28/35` (`0.8000`), $\kappa = 26/75$ (`0.3467`) | `27/35` (`0.7714`), $\kappa = 17/45$ (`0.3778`) | `28/35` (`0.8000`), $\kappa = 26/75$ (`0.3467`) |
+| `inward first` (`5` words) | `core_law_21` (`21`) | `15/21` (`0.7143`), $\kappa = 13/34$ (`0.3824`) | `15/21` (`0.7143`), $\kappa = 4/13$ (`0.3077`) | `14/21` (`0.6667`), $\kappa = 68/215$ (`0.3163`) | `15/21` (`0.7143`), $\kappa = 4/13$ (`0.3077`) |
+| `inward first` (`0` words) | `secondary_physics_14` (`14`) | `13/14` (`0.9286`), $\kappa = 0/1$ (`0.0000`) | `13/14` (`0.9286`), $\kappa = 0/1$ (`0.0000`) | `13/14` (`0.9286`), $\kappa = 0/1$ (`0.0000`) | `13/14` (`0.9286`), $\kappa = 0/1$ (`0.0000`) |
+| `inward first` or `either side` (`8` words) | `all_35` (`35`) | `31/35` (`0.8857`), $\kappa = 33/47$ (`0.7021`) | `31/35` (`0.8857`), $\kappa = 73/108$ (`0.6759`) | `30/35` (`0.8571`), $\kappa = 314/489$ (`0.6421`) | `29/35` (`0.8286`), $\kappa = 37/72$ (`0.5139`) |
+| `inward first` or `either side` (`8` words) | `core_law_21` (`21`) | `18/21` (`0.8571`), $\kappa = 50/71$ (`0.7042`) | `18/21` (`0.8571`), $\kappa = 20/29$ (`0.6897`) | `17/21` (`0.8095`), $\kappa = 67/109$ (`0.6147`) | `16/21` (`0.7619`), $\kappa = 14/29$ (`0.4828`) |
+| `inward first` or `either side` (`0` words) | `secondary_physics_14` (`14`) | `13/14` (`0.9286`), $\kappa = 0/1$ (`0.0000`) | `13/14` (`0.9286`), $\kappa = 0/1$ (`0.0000`) | `13/14` (`0.9286`), $\kappa = 0/1$ (`0.0000`) | `13/14` (`0.9286`), $\kappa = 0/1$ (`0.0000`) |
+
+Full `5 x 8` cross-tabulation of `direction_class_maj` against the `8` `ledger_80.json` `kind` categories (`n = 35`):
+
+| `direction_class_maj` \ `ledger_80` `kind` | `inward first` | `either side` | `outward first` | `both ways` | `family` | `household` | `nothing to add` | `not used` | Total |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| `person_first` | `4` (`energy, force, power, work`) | `3` (`gravity, matter, pressure`) | `0` | `0` | `1` (`distance`) | `1` (`frequency`) | `1` (`accelerate`) | `0` | `10` |
+| `physics_first` | `1` (`inertia`) | `0` | `7` (`attraction, culminate, friction, reflection, resonance, tension, vortex`) | `1` (`vibration`) | `2` (`current, momentum`) | `5` (`density, electric, field, focus, mass`) | `1` (`radiate`) | `1` (`wave`) | `18` |
+| `both_from_start` | `0` | `0` | `0` | `0` | `2` (`light, time`) | `0` | `0` | `0` | `2` |
+| `no_person_sense` | `0` | `0` | `2` (`converge, limit`) | `0` | `1` (`space`) | `1` (`volume`) | `0` | `0` | `4` |
+| `tie_or_disagreement` | `0` | `0` | `0` | `1` (`charge`) | `0` | `0` | `0` | `0` | `1` |
+| Total | `5` | `3` | `9` | `2` | `6` | `7` | `2` | `1` | `35` |
+
+Observed divergences relative to `ledger_80.json`:
+- `inertia` (`ledger_80` `inward first` vs. unanimous `physics_first` in Part 3): `ledger_80.json` coded the Latin root (`inward first`) while noting an early-18th-century English physics attestation, whereas [etymology_coding_prompt.md](heldout/etymology_coding_prompt.md) asks for earliest English attestation (`s1..s3` all `physics_first`).
+- `gravity, matter, pressure` (`ledger_80` `either side` vs. `person_first_maj` in Part 3): `ledger_80.json` placed these in `either side` because their Latin roots carried physical senses while early English senses were non-physical; earliest-English coding under Part 3 rules assigns them `person_first_maj` (so adding `either side` to `inward first` raises `maj_3run` agreement from `28/35`, $\kappa = 0.4235$, to `31/35`, $\kappa = 0.7021$).
+- Remaining false positives and misses under `maj_3run`: `distance` (`family`), `frequency` (`household`), and `accelerate` (`nothing to add`; `s1` coded `no_person_sense`, `s2 = s3 = person_first`) are coded `person_first_maj`. Among `ledger_80` `inward first` entries (`5`), `force` and `power` are unanimous `person_first`, `energy` is `2/3` `person_first` (`s3` coded `physics_first`), `work` is `2/3` `person_first` (`s1` coded `both_from_start`), and `inertia` is missed by all `3` sessions (`s1`, `s2`, `s3` all `physics_first`).
 
 ---
 
@@ -411,9 +490,11 @@ python proof/run_all_proofs.py
 
 This single command compiles the Lean 4 suite (`0 sorry`, `0 warnings`, negative nominal-type check, 35-item `#print axioms` audit), runs Z3's $S_{29}$ automorphism solver, 21 1-minimal MUC extractors, and 14-slot WordNet 3.0 + live Oxford / Linux fallback dictionary checks, runs all exact rational 80-word combinatorial audits and self-tests, and writes [verification_certificate.json](verification_certificate.json) with runtime OS/architecture metadata and SHA-256 hashes of all verified source files.
 
-To replay the offline held-out Part 2 scoring and Part 3 packet generation checks (zero network requests):
+To replay the offline held-out Part 2 and Part 3 verification checks (zero network requests):
 
 ```bash
 PYTHONDONTWRITEBYTECODE=1 python3 -B proof/heldout/evaluate_part2.py --verify-offline
 PYTHONDONTWRITEBYTECODE=1 python3 -B proof/heldout/prepare_part3_etymology.py --verify-offline
+PYTHONDONTWRITEBYTECODE=1 python3 -B proof/heldout/ingest_part3_codings.py --verify-offline
+PYTHONDONTWRITEBYTECODE=1 python3 -B proof/heldout/evaluate_part3.py --verify-offline
 ```
