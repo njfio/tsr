@@ -1,0 +1,704 @@
+[
+  {
+    "item_id": "W001",
+    "word": "theory",
+    "etymonline_url": "https://www.etymonline.com/word/theory",
+    "etymonline_retrieved_utc": "2026-11-14",
+    "earliest_person_sense": "1590s mental contemplation",
+    "earliest_physics_sense": "1610s explanatory principle system",
+    "direction_class": "person_first"
+  },
+  {
+    "item_id": "W002",
+    "word": "sound",
+    "etymonline_url": "https://www.etymonline.com/word/sound",
+    "etymonline_retrieved_utc": "2026-11-14",
+    "earliest_person_sense": "none",
+    "earliest_physics_sense": "c. 1300 audible acoustic vibration",
+    "direction_class": "no_person_sense"
+  },
+  {
+    "item_id": "W003",
+    "word": "friction",
+    "etymonline_url": "https://www.etymonline.com/word/friction",
+    "etymonline_retrieved_utc": "2026-11-14",
+    "earliest_person_sense": "1761 interpersonal discord",
+    "earliest_physics_sense": "1560s physical chafing resistance",
+    "direction_class": "physics_first"
+  },
+  {
+    "item_id": "W004",
+    "word": "focus",
+    "etymonline_url": "https://www.etymonline.com/word/focus",
+    "etymonline_retrieved_utc": "2026-11-14",
+    "earliest_person_sense": "1796 mental concentration center",
+    "earliest_physics_sense": "1640s optical convergence point",
+    "direction_class": "physics_first"
+  },
+  {
+    "item_id": "W005",
+    "word": "inertia",
+    "etymonline_url": "https://www.etymonline.com/word/inertia",
+    "etymonline_retrieved_utc": "2026-11-14",
+    "earliest_person_sense": "1822 personal apathy sluggishness",
+    "earliest_physics_sense": "1713 physical motion resistance",
+    "direction_class": "physics_first"
+  },
+  {
+    "item_id": "W006",
+    "word": "scalar",
+    "etymonline_url": "https://www.etymonline.com/word/scalar",
+    "etymonline_retrieved_utc": "2026-11-14",
+    "earliest_person_sense": "none",
+    "earliest_physics_sense": "1650s ladder-like mathematical quantity",
+    "direction_class": "no_person_sense"
+  },
+  {
+    "item_id": "W007",
+    "word": "calorimeter",
+    "etymonline_url": "https://www.etymonline.com/word/calorimeter",
+    "etymonline_retrieved_utc": "2026-11-14",
+    "earliest_person_sense": "none",
+    "earliest_physics_sense": "1794 thermal measurement apparatus",
+    "direction_class": "no_person_sense"
+  },
+  {
+    "item_id": "W008",
+    "word": "vapor",
+    "etymonline_url": "https://www.etymonline.com/word/vapor",
+    "etymonline_retrieved_utc": "2026-11-14",
+    "earliest_person_sense": "1660s depressive nervous condition",
+    "earliest_physics_sense": "late 14c. visible exhalation steam",
+    "direction_class": "physics_first"
+  },
+  {
+    "item_id": "W009",
+    "word": "uncertainty",
+    "etymonline_url": "https://www.etymonline.com/word/uncertainty",
+    "etymonline_retrieved_utc": "2026-11-14",
+    "earliest_person_sense": "late 14c. mental doubt state",
+    "earliest_physics_sense": "1927 quantum measurement indeterminacy",
+    "direction_class": "person_first"
+  },
+  {
+    "item_id": "W010",
+    "word": "kinematics",
+    "etymonline_url": "https://www.etymonline.com/word/kinematics",
+    "etymonline_retrieved_utc": "2026-11-14",
+    "earliest_person_sense": "none",
+    "earliest_physics_sense": "1840 pure motion science",
+    "direction_class": "no_person_sense"
+  },
+  {
+    "item_id": "W011",
+    "word": "velocity",
+    "etymonline_url": "https://www.etymonline.com/word/velocity",
+    "etymonline_retrieved_utc": "2026-11-14",
+    "earliest_person_sense": "none",
+    "earliest_physics_sense": "mid-15c. swiftness rapid motion",
+    "direction_class": "no_person_sense"
+  },
+  {
+    "item_id": "W012",
+    "word": "event",
+    "etymonline_url": "https://www.etymonline.com/word/event",
+    "etymonline_retrieved_utc": "2026-11-14",
+    "earliest_person_sense": "1570s human action outcome",
+    "earliest_physics_sense": "1914 spacetime coordinate point",
+    "direction_class": "person_first"
+  },
+  {
+    "item_id": "W013",
+    "word": "thrust",
+    "etymonline_url": "https://www.etymonline.com/word/thrust",
+    "etymonline_retrieved_utc": "2026-11-14",
+    "earliest_person_sense": "late 12c. forceful pushing action",
+    "earliest_physics_sense": "late 12c. mechanical pushing force",
+    "direction_class": "both_from_start"
+  },
+  {
+    "item_id": "W014",
+    "word": "power",
+    "etymonline_url": "https://www.etymonline.com/word/power",
+    "etymonline_retrieved_utc": "2026-11-14",
+    "earliest_person_sense": "c. 1300 personal ability authority",
+    "earliest_physics_sense": "1727 mechanical work rate",
+    "direction_class": "person_first"
+  },
+  {
+    "item_id": "W015",
+    "word": "pressure",
+    "etymonline_url": "https://www.etymonline.com/word/pressure",
+    "etymonline_retrieved_utc": "2026-11-14",
+    "earliest_person_sense": "late 14c. mental affliction distress",
+    "earliest_physics_sense": "late 14c. physical squeezing compression",
+    "direction_class": "both_from_start"
+  },
+  {
+    "item_id": "W016",
+    "word": "dimension",
+    "etymonline_url": "https://www.etymonline.com/word/dimension",
+    "etymonline_retrieved_utc": "2026-11-14",
+    "earliest_person_sense": "1929 conceptual aspect scope",
+    "earliest_physics_sense": "late 14c. measurable spatial extent",
+    "direction_class": "physics_first"
+  },
+  {
+    "item_id": "W017",
+    "word": "weight",
+    "etymonline_url": "https://www.etymonline.com/word/weight",
+    "etymonline_retrieved_utc": "2026-11-14",
+    "earliest_person_sense": "late 14c. personal burden importance",
+    "earliest_physics_sense": "Old English downward body heaviness",
+    "direction_class": "physics_first"
+  },
+  {
+    "item_id": "W018",
+    "word": "matter",
+    "etymonline_url": "https://www.etymonline.com/word/matter",
+    "etymonline_retrieved_utc": "2026-11-14",
+    "earliest_person_sense": "c. 1200 human affair topic",
+    "earliest_physics_sense": "mid-14c. corporeal physical substance",
+    "direction_class": "person_first"
+  },
+  {
+    "item_id": "W019",
+    "word": "reflection",
+    "etymonline_url": "https://www.etymonline.com/word/reflection",
+    "etymonline_retrieved_utc": "2026-11-14",
+    "earliest_person_sense": "1670s contemplative mental thought",
+    "earliest_physics_sense": "late 14c. surface light throwback",
+    "direction_class": "physics_first"
+  },
+  {
+    "item_id": "W020",
+    "word": "attraction",
+    "etymonline_url": "https://www.etymonline.com/word/attraction",
+    "etymonline_retrieved_utc": "2026-11-14",
+    "earliest_person_sense": "c. 1600 personal allure charm",
+    "earliest_physics_sense": "early 15c. physical drawing pull",
+    "direction_class": "physics_first"
+  },
+  {
+    "item_id": "W021",
+    "word": "limit",
+    "etymonline_url": "https://www.etymonline.com/word/limit",
+    "etymonline_retrieved_utc": "2026-11-14",
+    "earliest_person_sense": "none",
+    "earliest_physics_sense": "early 15c. spatial boundary border",
+    "direction_class": "no_person_sense"
+  },
+  {
+    "item_id": "W022",
+    "word": "viscosity",
+    "etymonline_url": "https://www.etymonline.com/word/viscosity",
+    "etymonline_retrieved_utc": "2026-11-14",
+    "earliest_person_sense": "none",
+    "earliest_physics_sense": "early 15c. glutinous sticky fluid",
+    "direction_class": "no_person_sense"
+  },
+  {
+    "item_id": "W023",
+    "word": "momentum",
+    "etymonline_url": "https://www.etymonline.com/word/momentum",
+    "etymonline_retrieved_utc": "2026-11-14",
+    "earliest_person_sense": "1782 impelling personal vigor",
+    "earliest_physics_sense": "1610s moving body impetus",
+    "direction_class": "physics_first"
+  },
+  {
+    "item_id": "W024",
+    "word": "commutative",
+    "etymonline_url": "https://www.etymonline.com/word/commutative",
+    "etymonline_retrieved_utc": "2026-11-14",
+    "earliest_person_sense": "1550s mutual human exchange",
+    "earliest_physics_sense": "1844 algebraic order independence",
+    "direction_class": "person_first"
+  },
+  {
+    "item_id": "W025",
+    "word": "radiate",
+    "etymonline_url": "https://www.etymonline.com/word/radiate",
+    "etymonline_retrieved_utc": "2026-11-14",
+    "earliest_person_sense": "1823 expressive emotional glow",
+    "earliest_physics_sense": "1610s emit physical rays",
+    "direction_class": "physics_first"
+  },
+  {
+    "item_id": "W026",
+    "word": "time",
+    "etymonline_url": "https://www.etymonline.com/word/time",
+    "etymonline_retrieved_utc": "2026-11-14",
+    "earliest_person_sense": "Old English lifetime human occasion",
+    "earliest_physics_sense": "Old English finite temporal duration",
+    "direction_class": "both_from_start"
+  },
+  {
+    "item_id": "W027",
+    "word": "law",
+    "etymonline_url": "https://www.etymonline.com/word/law",
+    "etymonline_retrieved_utc": "2026-11-14",
+    "earliest_person_sense": "Old English binding social ordinance",
+    "earliest_physics_sense": "1660s regular natural phenomenon",
+    "direction_class": "person_first"
+  },
+  {
+    "item_id": "W028",
+    "word": "converge",
+    "etymonline_url": "https://www.etymonline.com/word/converge",
+    "etymonline_retrieved_utc": "2026-11-14",
+    "earliest_person_sense": "none",
+    "earliest_physics_sense": "1660s incline toward point",
+    "direction_class": "no_person_sense"
+  },
+  {
+    "item_id": "W029",
+    "word": "current",
+    "etymonline_url": "https://www.etymonline.com/word/current",
+    "etymonline_retrieved_utc": "2026-11-14",
+    "earliest_person_sense": "none",
+    "earliest_physics_sense": "1550s flowing fluid stream",
+    "direction_class": "no_person_sense"
+  },
+  {
+    "item_id": "W030",
+    "word": "environment",
+    "etymonline_url": "https://www.etymonline.com/word/environment",
+    "etymonline_retrieved_utc": "2026-11-14",
+    "earliest_person_sense": "1827 surrounding developmental conditions",
+    "earliest_physics_sense": "c. 1600 physical surrounding state",
+    "direction_class": "physics_first"
+  },
+  {
+    "item_id": "W031",
+    "word": "overtone",
+    "etymonline_url": "https://www.etymonline.com/word/overtone",
+    "etymonline_retrieved_utc": "2026-11-14",
+    "earliest_person_sense": "1901 subtle implied quality",
+    "earliest_physics_sense": "1867 upper acoustic harmonic",
+    "direction_class": "physics_first"
+  },
+  {
+    "item_id": "W032",
+    "word": "frequency",
+    "etymonline_url": "https://www.etymonline.com/word/frequency",
+    "etymonline_retrieved_utc": "2026-11-14",
+    "earliest_person_sense": "1550s crowded human assembly",
+    "earliest_physics_sense": "1831 periodic oscillation rate",
+    "direction_class": "person_first"
+  },
+  {
+    "item_id": "W033",
+    "word": "pitch",
+    "etymonline_url": "https://www.etymonline.com/word/pitch",
+    "etymonline_retrieved_utc": "2026-11-14",
+    "earliest_person_sense": "1876 persuasive sales talk",
+    "earliest_physics_sense": "12c. thrusting physical throw",
+    "direction_class": "physics_first"
+  },
+  {
+    "item_id": "W034",
+    "word": "inelastic",
+    "etymonline_url": "https://www.etymonline.com/word/inelastic",
+    "etymonline_retrieved_utc": "2026-11-14",
+    "earliest_person_sense": "1848 unyielding personal adaptability",
+    "earliest_physics_sense": "1706 lacking physical springiness",
+    "direction_class": "physics_first"
+  },
+  {
+    "item_id": "W035",
+    "word": "electric",
+    "etymonline_url": "https://www.etymonline.com/word/electric",
+    "etymonline_retrieved_utc": "2026-11-14",
+    "earliest_person_sense": "1793 thrilling emotional excitement",
+    "earliest_physics_sense": "1640s amber-like attractive property",
+    "direction_class": "physics_first"
+  },
+  {
+    "item_id": "W036",
+    "word": "light",
+    "etymonline_url": "https://www.etymonline.com/word/light",
+    "etymonline_retrieved_utc": "2026-11-14",
+    "earliest_person_sense": "Old English spiritual mental illumination",
+    "earliest_physics_sense": "Old English radiant luminous energy",
+    "direction_class": "both_from_start"
+  },
+  {
+    "item_id": "W037",
+    "word": "displacement",
+    "etymonline_url": "https://www.etymonline.com/word/displacement",
+    "etymonline_retrieved_utc": "2026-11-14",
+    "earliest_person_sense": "1610s ousting from office",
+    "earliest_physics_sense": "1802 spatial fluid shift",
+    "direction_class": "person_first"
+  },
+  {
+    "item_id": "W038",
+    "word": "vortex",
+    "etymonline_url": "https://www.etymonline.com/word/vortex",
+    "etymonline_retrieved_utc": "2026-11-14",
+    "earliest_person_sense": "1741 overwhelming social whirl",
+    "earliest_physics_sense": "1650s whirling cosmic fluid",
+    "direction_class": "physics_first"
+  },
+  {
+    "item_id": "W039",
+    "word": "gravity",
+    "etymonline_url": "https://www.etymonline.com/word/gravity",
+    "etymonline_retrieved_utc": "2026-11-14",
+    "earliest_person_sense": "1505 solemn personal dignity",
+    "earliest_physics_sense": "1620s downward physical weight",
+    "direction_class": "person_first"
+  },
+  {
+    "item_id": "W040",
+    "word": "work",
+    "etymonline_url": "https://www.etymonline.com/word/work",
+    "etymonline_retrieved_utc": "2026-11-14",
+    "earliest_person_sense": "Old English human labor exertion",
+    "earliest_physics_sense": "1826 force times distance",
+    "direction_class": "person_first"
+  },
+  {
+    "item_id": "W041",
+    "word": "associative",
+    "etymonline_url": "https://www.etymonline.com/word/associative",
+    "etymonline_retrieved_utc": "2026-11-14",
+    "earliest_person_sense": "1801 mental social connection",
+    "earliest_physics_sense": "1844 mathematical grouping property",
+    "direction_class": "person_first"
+  },
+  {
+    "item_id": "W042",
+    "word": "conduction",
+    "etymonline_url": "https://www.etymonline.com/word/conduction",
+    "etymonline_retrieved_utc": "2026-11-14",
+    "earliest_person_sense": "1540s human leadership guidance",
+    "earliest_physics_sense": "early 15c. fluid pipe conveyance",
+    "direction_class": "physics_first"
+  },
+  {
+    "item_id": "W043",
+    "word": "vibration",
+    "etymonline_url": "https://www.etymonline.com/word/vibration",
+    "etymonline_retrieved_utc": "2026-11-14",
+    "earliest_person_sense": "1893 intuitive emotional aura",
+    "earliest_physics_sense": "1650s oscillating physical motion",
+    "direction_class": "physics_first"
+  },
+  {
+    "item_id": "W044",
+    "word": "distance",
+    "etymonline_url": "https://www.etymonline.com/word/distance",
+    "etymonline_retrieved_utc": "2026-11-14",
+    "earliest_person_sense": "c. 1300 interpersonal discord strife",
+    "earliest_physics_sense": "late 14c. spatial interval length",
+    "direction_class": "person_first"
+  },
+  {
+    "item_id": "W045",
+    "word": "resonance",
+    "etymonline_url": "https://www.etymonline.com/word/resonance",
+    "etymonline_retrieved_utc": "2026-11-14",
+    "earliest_person_sense": "1870s emotional evocative significance",
+    "earliest_physics_sense": "late 15c. acoustic sound prolongation",
+    "direction_class": "physics_first"
+  },
+  {
+    "item_id": "W046",
+    "word": "energy",
+    "etymonline_url": "https://www.etymonline.com/word/energy",
+    "etymonline_retrieved_utc": "2026-11-14",
+    "earliest_person_sense": "1660s personal vigor expression",
+    "earliest_physics_sense": "1590s active physical operation",
+    "direction_class": "physics_first"
+  },
+  {
+    "item_id": "W047",
+    "word": "field",
+    "etymonline_url": "https://www.etymonline.com/word/field",
+    "etymonline_retrieved_utc": "2026-11-14",
+    "earliest_person_sense": "14c. human activity sphere",
+    "earliest_physics_sense": "Old English open land expanse",
+    "direction_class": "physics_first"
+  },
+  {
+    "item_id": "W048",
+    "word": "speed",
+    "etymonline_url": "https://www.etymonline.com/word/speed",
+    "etymonline_retrieved_utc": "2026-11-14",
+    "earliest_person_sense": "Old English personal prosperity success",
+    "earliest_physics_sense": "late Old English swiftness motion rate",
+    "direction_class": "person_first"
+  },
+  {
+    "item_id": "W049",
+    "word": "aphelion",
+    "etymonline_url": "https://www.etymonline.com/word/aphelion",
+    "etymonline_retrieved_utc": "2026-11-14",
+    "earliest_person_sense": "none",
+    "earliest_physics_sense": "1650s furthest solar orbit",
+    "direction_class": "no_person_sense"
+  },
+  {
+    "item_id": "W050",
+    "word": "vector",
+    "etymonline_url": "https://www.etymonline.com/word/vector",
+    "etymonline_retrieved_utc": "2026-11-14",
+    "earliest_person_sense": "none",
+    "earliest_physics_sense": "1704 astronomical radius line",
+    "direction_class": "no_person_sense"
+  },
+  {
+    "item_id": "W051",
+    "word": "force",
+    "etymonline_url": "https://www.etymonline.com/word/force",
+    "etymonline_retrieved_utc": "2026-11-14",
+    "earliest_person_sense": "c. 1300 physical human strength",
+    "earliest_physics_sense": "1660s mechanical motion agency",
+    "direction_class": "person_first"
+  },
+  {
+    "item_id": "W052",
+    "word": "oscillation",
+    "etymonline_url": "https://www.etymonline.com/word/oscillation",
+    "etymonline_retrieved_utc": "2026-11-14",
+    "earliest_person_sense": "1725 mental wavering vacillation",
+    "earliest_physics_sense": "1650s swinging pendulum motion",
+    "direction_class": "physics_first"
+  },
+  {
+    "item_id": "W053",
+    "word": "heat",
+    "etymonline_url": "https://www.etymonline.com/word/heat",
+    "etymonline_retrieved_utc": "2026-11-14",
+    "earliest_person_sense": "Old English emotional ardor passion",
+    "earliest_physics_sense": "Old English sensible thermal warmth",
+    "direction_class": "both_from_start"
+  },
+  {
+    "item_id": "W054",
+    "word": "tension",
+    "etymonline_url": "https://www.etymonline.com/word/tension",
+    "etymonline_retrieved_utc": "2026-11-14",
+    "earliest_person_sense": "1763 nervous mental strain",
+    "earliest_physics_sense": "1530s bodily stretching condition",
+    "direction_class": "physics_first"
+  },
+  {
+    "item_id": "W055",
+    "word": "superposition",
+    "etymonline_url": "https://www.etymonline.com/word/superposition",
+    "etymonline_retrieved_utc": "2026-11-14",
+    "earliest_person_sense": "none",
+    "earliest_physics_sense": "1650s geometric spatial placement",
+    "direction_class": "no_person_sense"
+  },
+  {
+    "item_id": "W056",
+    "word": "physics",
+    "etymonline_url": "https://www.etymonline.com/word/physics",
+    "etymonline_retrieved_utc": "2026-11-14",
+    "earliest_person_sense": "none",
+    "earliest_physics_sense": "1580s natural science study",
+    "direction_class": "no_person_sense"
+  },
+  {
+    "item_id": "W057",
+    "word": "node",
+    "etymonline_url": "https://www.etymonline.com/word/node",
+    "etymonline_retrieved_utc": "2026-11-14",
+    "earliest_person_sense": "none",
+    "earliest_physics_sense": "early 15c. bodily knot swelling",
+    "direction_class": "no_person_sense"
+  },
+  {
+    "item_id": "W058",
+    "word": "model",
+    "etymonline_url": "https://www.etymonline.com/word/model",
+    "etymonline_retrieved_utc": "2026-11-14",
+    "earliest_person_sense": "1630s exemplary human ideal",
+    "earliest_physics_sense": "1570s architectural scale representation",
+    "direction_class": "physics_first"
+  },
+  {
+    "item_id": "W059",
+    "word": "accelerate",
+    "etymonline_url": "https://www.etymonline.com/word/accelerate",
+    "etymonline_retrieved_utc": "2026-11-14",
+    "earliest_person_sense": "1520s hasten human action",
+    "earliest_physics_sense": "1640s increase physical velocity",
+    "direction_class": "person_first"
+  },
+  {
+    "item_id": "W060",
+    "word": "hearing",
+    "etymonline_url": "https://www.etymonline.com/word/hearing",
+    "etymonline_retrieved_utc": "2026-11-14",
+    "earliest_person_sense": "Old English human auditory perception",
+    "earliest_physics_sense": "late 13c. audible sound distance",
+    "direction_class": "person_first"
+  },
+  {
+    "item_id": "W061",
+    "word": "second",
+    "etymonline_url": "https://www.etymonline.com/word/second",
+    "etymonline_retrieved_utc": "2026-11-14",
+    "earliest_person_sense": "1590s personal duel supporter",
+    "earliest_physics_sense": "late 14c. sexagesimal angular unit",
+    "direction_class": "physics_first"
+  },
+  {
+    "item_id": "W062",
+    "word": "dynamics",
+    "etymonline_url": "https://www.etymonline.com/word/dynamics",
+    "etymonline_retrieved_utc": "2026-11-14",
+    "earliest_person_sense": "1845 psychological social interplay",
+    "earliest_physics_sense": "1788 mechanical force science",
+    "direction_class": "physics_first"
+  },
+  {
+    "item_id": "W063",
+    "word": "volume",
+    "etymonline_url": "https://www.etymonline.com/word/volume",
+    "etymonline_retrieved_utc": "2026-11-14",
+    "earliest_person_sense": "none",
+    "earliest_physics_sense": "late 14c. physical parchment scroll",
+    "direction_class": "no_person_sense"
+  },
+  {
+    "item_id": "W064",
+    "word": "mass",
+    "etymonline_url": "https://www.etymonline.com/word/mass",
+    "etymonline_retrieved_utc": "2026-11-14",
+    "earliest_person_sense": "1580s human crowd multitude",
+    "earliest_physics_sense": "late 14c. lump material bulk",
+    "direction_class": "physics_first"
+  },
+  {
+    "item_id": "W065",
+    "word": "density",
+    "etymonline_url": "https://www.etymonline.com/word/density",
+    "etymonline_retrieved_utc": "2026-11-14",
+    "earliest_person_sense": "1822 mental stupidity dullness",
+    "earliest_physics_sense": "c. 1600 material compactness thickness",
+    "direction_class": "physics_first"
+  },
+  {
+    "item_id": "W066",
+    "word": "units",
+    "etymonline_url": "https://www.etymonline.com/word/units",
+    "etymonline_retrieved_utc": "2026-11-14",
+    "earliest_person_sense": "none",
+    "earliest_physics_sense": "1570s single mathematical magnitudes",
+    "direction_class": "no_person_sense"
+  },
+  {
+    "item_id": "W067",
+    "word": "precision",
+    "etymonline_url": "https://www.etymonline.com/word/precision",
+    "etymonline_retrieved_utc": "2026-11-14",
+    "earliest_person_sense": "1740 mental definition exactness",
+    "earliest_physics_sense": "1765 measurement instrument accuracy",
+    "direction_class": "person_first"
+  },
+  {
+    "item_id": "W068",
+    "word": "beats",
+    "etymonline_url": "https://www.etymonline.com/word/beats",
+    "etymonline_retrieved_utc": "2026-11-14",
+    "earliest_person_sense": "Old English repeated human striking",
+    "earliest_physics_sense": "1749 acoustic interference pulsations",
+    "direction_class": "person_first"
+  },
+  {
+    "item_id": "W069",
+    "word": "culminate",
+    "etymonline_url": "https://www.etymonline.com/word/culminate",
+    "etymonline_retrieved_utc": "2026-11-14",
+    "earliest_person_sense": "1787 reach personal climax",
+    "earliest_physics_sense": "1640s reach astronomical meridian",
+    "direction_class": "physics_first"
+  },
+  {
+    "item_id": "W070",
+    "word": "wave",
+    "etymonline_url": "https://www.etymonline.com/word/wave",
+    "etymonline_retrieved_utc": "2026-11-14",
+    "earliest_person_sense": "Old English hand beckoning gesture",
+    "earliest_physics_sense": "Old English moving water billow",
+    "direction_class": "both_from_start"
+  },
+  {
+    "item_id": "W071",
+    "word": "torque",
+    "etymonline_url": "https://www.etymonline.com/word/torque",
+    "etymonline_retrieved_utc": "2026-11-14",
+    "earliest_person_sense": "none",
+    "earliest_physics_sense": "1834 twisted metal necklace",
+    "direction_class": "no_person_sense"
+  },
+  {
+    "item_id": "W072",
+    "word": "charge",
+    "etymonline_url": "https://www.etymonline.com/word/charge",
+    "etymonline_retrieved_utc": "2026-11-14",
+    "earliest_person_sense": "c. 1200 personal duty responsibility",
+    "earliest_physics_sense": "c. 1200 material weight load",
+    "direction_class": "both_from_start"
+  },
+  {
+    "item_id": "W073",
+    "word": "space",
+    "etymonline_url": "https://www.etymonline.com/word/space",
+    "etymonline_retrieved_utc": "2026-11-14",
+    "earliest_person_sense": "none",
+    "earliest_physics_sense": "c. 1300 temporal spatial extent",
+    "direction_class": "no_person_sense"
+  },
+  {
+    "item_id": "W074",
+    "word": "acceleration",
+    "etymonline_url": "https://www.etymonline.com/word/acceleration",
+    "etymonline_retrieved_utc": "2026-11-14",
+    "earliest_person_sense": "1530s hastening human action",
+    "earliest_physics_sense": "1660s velocity change rate",
+    "direction_class": "person_first"
+  },
+  {
+    "item_id": "W075",
+    "word": "overtones",
+    "etymonline_url": "https://www.etymonline.com/word/overtones",
+    "etymonline_retrieved_utc": "2026-11-14",
+    "earliest_person_sense": "1901 subtle implied qualities",
+    "earliest_physics_sense": "1867 upper acoustic harmonics",
+    "direction_class": "physics_first"
+  },
+  {
+    "item_id": "W076",
+    "word": "discrepancy",
+    "etymonline_url": "https://www.etymonline.com/word/discrepancy",
+    "etymonline_retrieved_utc": "2026-11-14",
+    "earliest_person_sense": "late 14c. interpersonal disagreement discord",
+    "earliest_physics_sense": "1600s factual measurement divergence",
+    "direction_class": "person_first"
+  },
+  {
+    "item_id": "W077",
+    "word": "antinode",
+    "etymonline_url": "https://www.etymonline.com/word/antinode",
+    "etymonline_retrieved_utc": "2026-11-14",
+    "earliest_person_sense": "none",
+    "earliest_physics_sense": "1871 maximum wave amplitude",
+    "direction_class": "no_person_sense"
+  },
+  {
+    "item_id": "W078",
+    "word": "entropy",
+    "etymonline_url": "https://www.etymonline.com/word/entropy",
+    "etymonline_retrieved_utc": "2026-11-14",
+    "earliest_person_sense": "none",
+    "earliest_physics_sense": "1868 unavailable thermal energy",
+    "direction_class": "no_person_sense"
+  }
+]

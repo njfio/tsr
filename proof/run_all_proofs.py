@@ -6,7 +6,7 @@ Executes all three independent, deterministic, zero-LLM verification pillars:
                                   consistency checks, source scan for zero `sorry`/`admit`/
                                   `axiom`/`have _`, negative typecheck on nominal `PhysDim`
                                   vs `NonphysRank`, and `#print axioms` audit across all
-                                  34 headline items.
+                                  35 headline items.
   - Part II (`proof/z3/`):        Z3 (SMT) structural automorphism cascade on S_29
                                   (8.84e30 -> 12 -> 2 -> 1) under hand-written Map relations
                                   + Ch. 16 axiomatic MUC audit (21 deletion-verified
@@ -62,7 +62,7 @@ LEAN_THEOREMS: list[str] = [
     "TSR.the_knife_irreversibility",
     "TSR.destructive_null_requires_spatial_separation",
     "TSR.single_locus_cannot_cancel",
-    # MirrorFunctor.lean (Thms/Props 2.1 - 2.4, 13 items)
+    # MirrorFunctor.lean (Thms/Props 2.1 - 2.4, 14 items)
     "TSR.density_volume_product_symmetric",
     "TSR.canonicalMirrorRankHom_isomorphism",
     "TSR.elimination_theorem_desire_vibrance",
@@ -71,6 +71,7 @@ LEAN_THEOREMS: list[str] = [
     "TSR.temporal_momentum_energy_factorization",
     "TSR.two_level_reading_theorem",
     "TSR.v57_rule_wordings_benchmark",
+    "TSR.constant_baselines_benchmark",
     "TSR.falling_man_equivalence",
     "TSR.frequency_product_strict_monotonicity",
     "TSR.cross_hinge_dilation_throttling",
@@ -109,7 +110,7 @@ def verify_lean_suite() -> dict[str, Any]:
     lean_files = sorted(LEAN_DIR.rglob("*.lean"))
     lean_files = [f for f in lean_files if ".lake" not in f.parts]
     assert len(lean_files) >= 7, f"Expected >= 7 Lean files, found {len(lean_files)}"
-    assert len(LEAN_THEOREMS) == 34, f"Expected 34 headline Lean theorems, found {len(LEAN_THEOREMS)}"
+    assert len(LEAN_THEOREMS) == 35, f"Expected 35 headline Lean theorems, found {len(LEAN_THEOREMS)}"
 
     # 1. Source hygiene scan: zero `sorry`, `admit`, custom `axiom`, or unused `have _`
     for lf in lean_files:
@@ -143,7 +144,7 @@ def verify_lean_suite() -> dict[str, Any]:
     combined_build_out = (build_proc.stdout + "\n" + build_proc.stderr).strip()
     assert "warning:" not in combined_build_out, f"Lean build emitted warnings:\n{combined_build_out}"
 
-    # 4. Kernel axiom audit on all 34 headline theorems via `#print axioms`
+    # 4. Kernel axiom audit on all 35 headline theorems via `#print axioms`
     stdin_script = "import TSR\n" + "\n".join(f"#print axioms {t}" for t in LEAN_THEOREMS) + "\n"
     ax_proc = subprocess.run(
         ["lake", "env", "lean", "--stdin"],
@@ -403,6 +404,7 @@ def main() -> None:
         "suite": "Theory of Sovereign Reflectivity (TSR) — Machine-Checked Formalization and Consistency Check Certificate",
         "all_checks_passed": True,
         "zero_llm_calls": True,
+        "preregistration_commit_sha": "463ad9f93c8a276b1e0d9ee497198dfa2169d079",
         "execution_os": platform.system(),
         "execution_arch": platform.machine(),
         "python_version": platform.python_version(),

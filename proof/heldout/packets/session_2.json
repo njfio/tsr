@@ -1,0 +1,587 @@
+[
+  {
+    "card_id": "C001",
+    "q1": "Yes",
+    "q2": "No",
+    "q3": "No",
+    "q4": "No",
+    "ruling": "Keep",
+    "rationale": "Continuity identity A1 v1 = A2 v2 is two names for one conserved flow, so 'there's nothing to turn around' and the relationship keeps its shape."
+  },
+  {
+    "card_id": "C002",
+    "q1": "Yes",
+    "q2": "No",
+    "q3": "Yes",
+    "q4": "No",
+    "ruling": "Keep",
+    "rationale": "ΔL = α L ΔT is a defining physical relation, so it is an identity or definition and the relationship keeps its shape."
+  },
+  {
+    "card_id": "C003",
+    "q1": "No",
+    "q2": "No",
+    "q3": "Yes",
+    "q4": "No",
+    "ruling": "the rule doesn't say",
+    "rationale": "Allowed wavelengths depend on cavity length L, but that separation is a boundary condition, not 'the distance resistance makes.'"
+  },
+  {
+    "card_id": "C004",
+    "q1": "No",
+    "q2": "No",
+    "q3": "No",
+    "q4": "No",
+    "ruling": "Invert",
+    "rationale": "Kinetic friction is resistance to sliding, so it 'depends on resistance' and flipping resistant to receptive turns it around."
+  },
+  {
+    "card_id": "C005",
+    "q1": "No",
+    "q2": "No",
+    "q3": "No",
+    "q4": "No",
+    "ruling": "the rule doesn't say",
+    "rationale": "Time dilation relates frame times by speed; it is neither resistance, the distance resistance makes, nor an identity or shared-energy definition."
+  },
+  {
+    "card_id": "C006",
+    "q1": "No",
+    "q2": "Yes",
+    "q3": "Yes",
+    "q4": "No",
+    "ruling": "Invert",
+    "rationale": "m d²x/dt² plus damping is inertial and resistive opposition to change in motion, so the relationship depends on resistance and turns around."
+  },
+  {
+    "card_id": "C007",
+    "q1": "Yes",
+    "q2": "No",
+    "q3": "No",
+    "q4": "No",
+    "ruling": "Keep",
+    "rationale": "ω = dθ/dt is a definition, two names for one rate, so there's nothing to turn around and the relationship keeps its shape."
+  },
+  {
+    "card_id": "C008",
+    "q1": "No",
+    "q2": "Yes",
+    "q3": "Yes",
+    "q4": "Yes",
+    "ruling": "Keep",
+    "rationale": "Orbital period is fixed by shared gravitational coupling of M_E across r, so it is 'the work of the one energy both sides share' and keeps."
+  },
+  {
+    "card_id": "C009",
+    "q1": "Yes",
+    "q2": "No",
+    "q3": "No",
+    "q4": "No",
+    "ruling": "Keep",
+    "rationale": "Cp = CV + R is a defining correspondence of heat capacities, so it is an identity and the relationship keeps its shape."
+  },
+  {
+    "card_id": "C010",
+    "q1": "Yes",
+    "q2": "No",
+    "q3": "No",
+    "q4": "No",
+    "ruling": "Keep",
+    "rationale": "dL/dt = Στ is the defining angular form of how motion changes under torque, an identity, so the relationship keeps its shape."
+  },
+  {
+    "card_id": "C011",
+    "q1": "Yes",
+    "q2": "Yes",
+    "q3": "No",
+    "q4": "No",
+    "ruling": "Keep",
+    "rationale": "E = γmc² and K = (γ−1)mc² are energy-mass identities, and 'even with mass in it' an identity keeps its shape."
+  },
+  {
+    "card_id": "C012",
+    "q1": "Yes",
+    "q2": "Yes",
+    "q3": "No",
+    "q4": "No",
+    "ruling": "Keep",
+    "rationale": "pV = NkT is the defining equation of state for a fixed quantity of gas, so it is a definition and keeps its shape."
+  },
+  {
+    "card_id": "C013",
+    "q1": "Yes",
+    "q2": "No",
+    "q3": "Yes",
+    "q4": "No",
+    "ruling": "Keep",
+    "rationale": "The Lorentz coordinate map is a frame-invariance correspondence, two descriptions of one event, so the relationship keeps its shape."
+  },
+  {
+    "card_id": "C014",
+    "q1": "Yes",
+    "q2": "Yes",
+    "q3": "No",
+    "q4": "No",
+    "ruling": "Keep",
+    "rationale": "Boyle's P1V1 = P2V2 is a conservation identity at fixed n and T, so there's nothing to turn around."
+  },
+  {
+    "card_id": "C015",
+    "q1": "No",
+    "q2": "Yes",
+    "q3": "No",
+    "q4": "No",
+    "ruling": "Invert",
+    "rationale": "v < c because rest mass makes γ and kinetic energy grow without bound, so more mass-resistance means harder approach to c and it turns around."
+  },
+  {
+    "card_id": "C016",
+    "q1": "Yes",
+    "q2": "No",
+    "q3": "Yes",
+    "q4": "No",
+    "ruling": "Keep",
+    "rationale": "The curl-free test is the defining condition for a conservative field, an identity of path-independence, so the relationship keeps."
+  },
+  {
+    "card_id": "C017",
+    "q1": "Yes",
+    "q2": "No",
+    "q3": "Yes",
+    "q4": "Yes",
+    "ruling": "Keep",
+    "rationale": "Fl = −dU/dl defines force from shared potential-well energy, 'the work of the one energy both sides share,' so it keeps."
+  },
+  {
+    "card_id": "C018",
+    "q1": "No",
+    "q2": "Yes",
+    "q3": "Yes",
+    "q4": "Yes",
+    "ruling": "Keep",
+    "rationale": "Redshift and lensing are shared gravitational curvature and wells across space, so they are the work of the one energy both sides share and keep."
+  },
+  {
+    "card_id": "C019",
+    "q1": "Yes",
+    "q2": "No",
+    "q3": "No",
+    "q4": "No",
+    "ruling": "Keep",
+    "rationale": "KP = Qh/W is a definition of coefficient of performance from energy accounting, so the relationship keeps its shape."
+  },
+  {
+    "card_id": "C020",
+    "q1": "Yes",
+    "q2": "No",
+    "q3": "No",
+    "q4": "No",
+    "ruling": "Keep",
+    "rationale": "ΔV = β V ΔT is a defining thermal-expansion relation, so it is an identity and keeps its shape."
+  },
+  {
+    "card_id": "C021",
+    "q1": "No",
+    "q2": "No",
+    "q3": "Yes",
+    "q4": "No",
+    "ruling": "Invert",
+    "rationale": "Stokes drag is resistive opposition to motion through a fluid, so the relationship depends on resistance and turns around."
+  },
+  {
+    "card_id": "C022",
+    "q1": "Yes",
+    "q2": "No",
+    "q3": "No",
+    "q4": "No",
+    "ruling": "Keep",
+    "rationale": "Ei = Ef is a conservation identity, two names for one unchanged total, so there's nothing to turn around."
+  },
+  {
+    "card_id": "C023",
+    "q1": "Yes",
+    "q2": "No",
+    "q3": "No",
+    "q4": "No",
+    "ruling": "Keep",
+    "rationale": "Same laws in every inertial frame is a frame-invariance principle, so it is an identity and the relationship keeps its shape."
+  },
+  {
+    "card_id": "C024",
+    "q1": "Yes",
+    "q2": "No",
+    "q3": "Yes",
+    "q4": "No",
+    "ruling": "Keep",
+    "rationale": "Wnet = ΔK is an energy correspondence identity, two names for one change, so the relationship keeps its shape."
+  },
+  {
+    "card_id": "C025",
+    "q1": "Yes",
+    "q2": "No",
+    "q3": "No",
+    "q4": "No",
+    "ruling": "Keep",
+    "rationale": "J ≡ ∫F dt is a definition of impulse, so there's nothing to turn around and the relationship keeps its shape."
+  },
+  {
+    "card_id": "C026",
+    "q1": "No",
+    "q2": "Yes",
+    "q3": "Yes",
+    "q4": "Yes",
+    "ruling": "Keep",
+    "rationale": "Work by near-Earth gravity is shared gravitational potential-well coupling across height, so it is the work of the one energy both sides share and keeps."
+  },
+  {
+    "card_id": "C027",
+    "q1": "No",
+    "q2": "Yes",
+    "q3": "No",
+    "q4": "No",
+    "ruling": "Invert",
+    "rationale": "F = ma is inertial resistance to a change in motion, and more mass means more of that resistance, so flipping turns it around."
+  },
+  {
+    "card_id": "C028",
+    "q1": "Yes",
+    "q2": "No",
+    "q3": "Yes",
+    "q4": "No",
+    "ruling": "Keep",
+    "rationale": "The inverse Lorentz time map is a frame correspondence of one event, so it is an identity and the relationship keeps its shape."
+  },
+  {
+    "card_id": "C029",
+    "q1": "Yes",
+    "q2": "No",
+    "q3": "No",
+    "q4": "No",
+    "ruling": "Keep",
+    "rationale": "v(t) = −Aω sin(ωt+φ) is the defined time derivative of the stated displacement, so the relationship keeps its shape."
+  },
+  {
+    "card_id": "C030",
+    "q1": "Yes",
+    "q2": "No",
+    "q3": "No",
+    "q4": "No",
+    "ruling": "Keep",
+    "rationale": "a = aC + aT is a definitional decomposition of one acceleration, so there's nothing to turn around."
+  },
+  {
+    "card_id": "C031",
+    "q1": "Yes",
+    "q2": "Yes",
+    "q3": "No",
+    "q4": "No",
+    "ruling": "Keep",
+    "rationale": "v = √(γRT/M) is a defining relation for sound speed in a fixed molar mass of gas, so even with mass in it the identity keeps."
+  },
+  {
+    "card_id": "C032",
+    "q1": "Yes",
+    "q2": "Yes",
+    "q3": "No",
+    "q4": "No",
+    "ruling": "Keep",
+    "rationale": "m = ρV defines density as mass per volume, two names for one quantity, so 'even with mass in it' the relationship keeps."
+  },
+  {
+    "card_id": "C033",
+    "q1": "Yes",
+    "q2": "Yes",
+    "q3": "Yes",
+    "q4": "No",
+    "ruling": "Keep",
+    "rationale": "I = Σ mj rj² is the definition of moment of inertia, so even with mass and separation in it an identity keeps its shape."
+  },
+  {
+    "card_id": "C034",
+    "q1": "No",
+    "q2": "No",
+    "q3": "Yes",
+    "q4": "No",
+    "ruling": "Invert",
+    "rationale": "Young's modulus is axial stiffness, resistance to a change in length, so the relationship depends on resistance and turns around."
+  },
+  {
+    "card_id": "C035",
+    "q1": "Yes",
+    "q2": "No",
+    "q3": "No",
+    "q4": "No",
+    "ruling": "Keep",
+    "rationale": "No preferred inertial frame is a symmetry/frame-invariance principle, so it is an identity and the relationship keeps its shape."
+  },
+  {
+    "card_id": "C036",
+    "q1": "Yes",
+    "q2": "No",
+    "q3": "No",
+    "q4": "No",
+    "ruling": "Keep",
+    "rationale": "γ = Cp/CV is a definition of the adiabatic index, two names for one ratio, so the relationship keeps its shape."
+  },
+  {
+    "card_id": "C037",
+    "q1": "No",
+    "q2": "No",
+    "q3": "Yes",
+    "q4": "No",
+    "ruling": "the rule doesn't say",
+    "rationale": "Relativity of simultaneity depends on spatial separation Δx, but not on resistance or the distance resistance makes, and it is not an identity."
+  },
+  {
+    "card_id": "C038",
+    "q1": "Yes",
+    "q2": "Yes",
+    "q3": "No",
+    "q4": "No",
+    "ruling": "Keep",
+    "rationale": "aCM as the mass-weighted mean acceleration is a definition of the center of mass, so even with mass in it the relationship keeps."
+  },
+  {
+    "card_id": "C039",
+    "q1": "No",
+    "q2": "No",
+    "q3": "Yes",
+    "q4": "No",
+    "ruling": "Invert",
+    "rationale": "Dynamic viscosity is shear resistance across gap L, so it depends on resistance and the distance that resistance makes, and turns around."
+  },
+  {
+    "card_id": "C040",
+    "q1": "Yes",
+    "q2": "Yes",
+    "q3": "No",
+    "q4": "No",
+    "ruling": "Keep",
+    "rationale": "E0 = mc² is an equivalence identity, two names for one thing, so even with mass in it the relationship keeps its shape."
+  },
+  {
+    "card_id": "C041",
+    "q1": "Yes",
+    "q2": "Yes",
+    "q3": "No",
+    "q4": "No",
+    "ruling": "Keep",
+    "rationale": "pV^γ = constant is a conservation identity for a fixed quantity of ideal gas, so there's nothing to turn around."
+  },
+  {
+    "card_id": "C042",
+    "q1": "Yes",
+    "q2": "No",
+    "q3": "Yes",
+    "q4": "No",
+    "ruling": "Keep",
+    "rationale": "Invariant s² is a frame-invariance identity, the same interval in every inertial frame, so the relationship keeps its shape."
+  },
+  {
+    "card_id": "C043",
+    "q1": "Yes",
+    "q2": "No",
+    "q3": "Yes",
+    "q4": "No",
+    "ruling": "Keep",
+    "rationale": "k ≡ 2π/λ is a definition of angular wave number, so there's nothing to turn around and the relationship keeps."
+  },
+  {
+    "card_id": "C044",
+    "q1": "Yes",
+    "q2": "No",
+    "q3": "No",
+    "q4": "No",
+    "ruling": "Keep",
+    "rationale": "KR = Tc/(Th−Tc) is a defining relation for reversible refrigerator performance, so it is an identity and keeps."
+  },
+  {
+    "card_id": "C045",
+    "q1": "Yes",
+    "q2": "No",
+    "q3": "Yes",
+    "q4": "No",
+    "ruling": "Keep",
+    "rationale": "x = x0 + v0 t + ½at² is a defining kinematic relation under constant acceleration, so the relationship keeps its shape."
+  },
+  {
+    "card_id": "C046",
+    "q1": "No",
+    "q2": "Yes",
+    "q3": "Yes",
+    "q4": "No",
+    "ruling": "Invert",
+    "rationale": "Downslope acceleration is reduced by m and ICM/r², so more mass or inertial resistance means less acceleration and flipping turns it around."
+  },
+  {
+    "card_id": "C047",
+    "q1": "No",
+    "q2": "No",
+    "q3": "Yes",
+    "q4": "No",
+    "ruling": "Invert",
+    "rationale": "Conductive heat flow falls as slab thickness d grows, so it depends on the distance resistance makes and more separation means less flow, turning it around."
+  },
+  {
+    "card_id": "C048",
+    "q1": "Yes",
+    "q2": "Yes",
+    "q3": "No",
+    "q4": "Yes",
+    "ruling": "Keep",
+    "rationale": "N = mg is equilibrium balance of weight, a gravitational defining relation, so it is an identity and keeps its shape."
+  },
+  {
+    "card_id": "C049",
+    "q1": "Yes",
+    "q2": "No",
+    "q3": "No",
+    "q4": "No",
+    "ruling": "Keep",
+    "rationale": "fo = fs((v±vo)/v) is a defining kinematic correspondence of one wave, so the relationship keeps its shape."
+  },
+  {
+    "card_id": "C050",
+    "q1": "Yes",
+    "q2": "Yes",
+    "q3": "No",
+    "q4": "Yes",
+    "ruling": "Keep",
+    "rationale": "Local equivalence of gravity and acceleration is an equivalence principle for shared gravitational coupling, so the relationship keeps."
+  },
+  {
+    "card_id": "C051",
+    "q1": "No",
+    "q2": "Yes",
+    "q3": "Yes",
+    "q4": "Yes",
+    "ruling": "Keep",
+    "rationale": "Kepler's T² ∝ a³/GM is shared gravitational orbital coupling across separation, the work of the one energy both sides share, so it keeps."
+  },
+  {
+    "card_id": "C052",
+    "q1": "Yes",
+    "q2": "No",
+    "q3": "No",
+    "q4": "No",
+    "ruling": "Keep",
+    "rationale": "The Cartesian component sum is a definition of the velocity vector, so there's nothing to turn around."
+  },
+  {
+    "card_id": "C053",
+    "q1": "Yes",
+    "q2": "No",
+    "q3": "No",
+    "q4": "No",
+    "ruling": "Keep",
+    "rationale": "Constant velocity when net force is zero is a defining inertial principle, so it is an identity and the relationship keeps its shape."
+  },
+  {
+    "card_id": "C054",
+    "q1": "Yes",
+    "q2": "No",
+    "q3": "No",
+    "q4": "No",
+    "ruling": "Keep",
+    "rationale": "FAB = −FBA is a reciprocal action-reaction pairing, so it is an identity and the relationship keeps its shape."
+  },
+  {
+    "card_id": "C055",
+    "q1": "Yes",
+    "q2": "No",
+    "q3": "No",
+    "q4": "No",
+    "ruling": "Keep",
+    "rationale": "v = ω/k is a definition of phase speed, two names for one wave rate, so the relationship keeps its shape."
+  },
+  {
+    "card_id": "C056",
+    "q1": "Yes",
+    "q2": "No",
+    "q3": "No",
+    "q4": "No",
+    "ruling": "Keep",
+    "rationale": "The component sum of second derivatives is a definition of the acceleration vector, so there's nothing to turn around."
+  },
+  {
+    "card_id": "C057",
+    "q1": "Yes",
+    "q2": "No",
+    "q3": "No",
+    "q4": "No",
+    "ruling": "Keep",
+    "rationale": "|vmax| = Aω is a defining relation of simple harmonic motion, so it is an identity and keeps its shape."
+  },
+  {
+    "card_id": "C058",
+    "q1": "Yes",
+    "q2": "No",
+    "q3": "No",
+    "q4": "No",
+    "ruling": "Keep",
+    "rationale": "Average velocity as (v0+v)/2 under constant acceleration is a kinematic definition, so the relationship keeps."
+  },
+  {
+    "card_id": "C059",
+    "q1": "Yes",
+    "q2": "No",
+    "q3": "No",
+    "q4": "No",
+    "ruling": "Keep",
+    "rationale": "CV = (d/2)R is a defining equipartition relation, so it is an identity and the relationship keeps its shape."
+  },
+  {
+    "card_id": "C060",
+    "q1": "No",
+    "q2": "Yes",
+    "q3": "Yes",
+    "q4": "Yes",
+    "ruling": "Keep",
+    "rationale": "Mass-energy curving spacetime and geodesic motion is shared gravitational curvature, the work of the one energy both sides share, so it keeps."
+  },
+  {
+    "card_id": "C061",
+    "q1": "No",
+    "q2": "Yes",
+    "q3": "Yes",
+    "q4": "Yes",
+    "ruling": "Keep",
+    "rationale": "Newtonian attraction is shared gravitational coupling across r, so it is the work of the one energy both sides share and the relationship keeps."
+  },
+  {
+    "card_id": "C062",
+    "q1": "Yes",
+    "q2": "No",
+    "q3": "Yes",
+    "q4": "Yes",
+    "ruling": "Keep",
+    "rationale": "F = −kx is the defining Hookean relation of a conservative potential-well coupling, so it is an identity and keeps."
+  },
+  {
+    "card_id": "C063",
+    "q1": "No",
+    "q2": "No",
+    "q3": "Yes",
+    "q4": "No",
+    "ruling": "the rule doesn't say",
+    "rationale": "Length contraction changes a measured length with relative speed, but it does not depend on resistance or the distance resistance makes, and it is not an identity."
+  },
+  {
+    "card_id": "C064",
+    "q1": "No",
+    "q2": "No",
+    "q3": "Yes",
+    "q4": "Yes",
+    "ruling": "Keep",
+    "rationale": "Free-fall height under constant g is motion in a shared gravitational field, the work of the one energy both sides share, so it keeps."
+  },
+  {
+    "card_id": "C065",
+    "q1": "No",
+    "q2": "No",
+    "q3": "No",
+    "q4": "No",
+    "ruling": "Invert",
+    "rationale": "Bulk modulus is explicitly resistance to uniform compression, so the relationship depends on resistance and flipping resistant to receptive turns it around."
+  }
+]

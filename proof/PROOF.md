@@ -33,10 +33,10 @@ Compared to earlier drafts of this document and verification scripts, the follow
 
 ```mermaid
 flowchart LR
-    subgraph P1["Part I: Lean 4.35.0 Kernel (34 Items)"]
+    subgraph P1["Part I: Lean 4.35.0 Kernel (35 Items)"]
         OA["OrderedAlgebra.lean (OrderedField + QRat)"]
         C1["Condition.lean (9 Items)"]
-        C2["MirrorFunctor.lean (13 Items incl. v57 Benchmark)"]
+        C2["MirrorFunctor.lean (14 Items incl. v57 Benchmark)"]
         C3["Crossing.lean (6 Items)"]
         C4["EntityAndMeta.lean (6 Items)"]
         OA --> C1 & C2 & C3 --> C4
@@ -59,7 +59,7 @@ flowchart LR
 
 Source directory: [proof/lean/](lean) (`0 sorry`, `0 admit`, `0 custom axioms`, `0 Classical.choice`, `0 have _`; negative compile check rejects `def bad : TSR.PhysDim → TSR.NonphysRank := id`).
 
-Every theorem below is quantified over `[OrderedField F]` ([OrderedAlgebra.lean](lean/TSR/OrderedAlgebra.lean#L21-L40), including `sub_nonneg_of_le` [#L195-L199](lean/TSR/OrderedAlgebra.lean#L195-L199) and `mul_left_cancel_pos` [#L254-L258](lean/TSR/OrderedAlgebra.lean#L254-L258)) and constructively inhabited on `QRat` ([#L499-L743](lean/TSR/OrderedAlgebra.lean#L499-L743)). Across all **34 verified items**: **15** use zero axioms (pure CIC), **12** depend only on `[propext]`, and **7** depend on `[propext, Quot.sound]`.
+Every theorem below is quantified over `[OrderedField F]` ([OrderedAlgebra.lean](lean/TSR/OrderedAlgebra.lean#L21-L40), including `sub_nonneg_of_le` [#L195-L199](lean/TSR/OrderedAlgebra.lean#L195-L199) and `mul_left_cancel_pos` [#L254-L258](lean/TSR/OrderedAlgebra.lean#L254-L258)) and constructively inhabited on `QRat` ([#L499-L743](lean/TSR/OrderedAlgebra.lean#L499-L743)). Across all **35 verified items**: **15** use zero axioms (pure CIC), **13** depend only on `[propext]`, and **7** depend on `[propext, Quot.sound]`.
 
 ### 1.1 Explicit Classification Standard `(a)` / `(b)` / `(c)`
 
@@ -69,12 +69,12 @@ Every Lean theorem proves something exact, but for different reasons:
 - **`(c)` Modeling choice not in the book**: Quantitative equations, data encodings, or code labels added during Lean formalization that do not appear verbatim in *SM v57*. Hybrids such as **(a) over (c)** mean Lean proves `(a)` deductively about the chosen `(c)` model.
 
 Specifically flagged as **`(c)` not in *SM v57***:
-1. **Dilation formula $v_{\text{eff}} = C_{\text{rate}} \cdot \frac{T_0}{T_0 + h}$** ([cross_hinge_dilation_throttling](lean/TSR/MirrorFunctor.lean#L772-L821)) and the identifier word `hinge` (*v57* speaks of *The Present* / center rather than a `"hinge"` rate quotient).
+1. **Dilation formula $v_{\text{eff}} = C_{\text{rate}} \cdot \frac{T_0}{T_0 + h}$** ([cross_hinge_dilation_throttling](lean/TSR/MirrorFunctor.lean#L795-L844)) and the identifier word `hinge` (*v57* speaks of *The Present* / center rather than a `"hinge"` rate quotient).
 2. **Squared-error state update rules $(x - s)^2$** in [predErrorSq](lean/TSR/EntityAndMeta.lean#L209-L210), [subgoalErrorSq](lean/TSR/EntityAndMeta.lean#L213-L214), [four_way_entity_separation](lean/TSR/EntityAndMeta.lean#L349-L498), [pairwiseContrast](lean/TSR/EntityAndMeta.lean#L703-L705), and [independence_of_first_partition](lean/TSR/EntityAndMeta.lean#L734-L760).
 3. **`"reversible equilibrium"` encoding (`IsothermalEquilibriumBalance` / `reversibleStateEquilibrium`) for Row 17 (Boyle's law)** in [two_level_reading_theorem](lean/TSR/MirrorFunctor.lean#L626-L637). In *SM v57* Ch. 16, p. 118, Boyle's law stays `.Keep` for a different physical reason: **pressure exists only because walls hold something in; walls are resistance, so pressure can only exist where the two sides touch**, keeping the compressed pressure–volume relation unchanged when resistance is on.
 4. **Formalization code labels not used as *v57* terms**: identifiers containing `hinge` (`cross_hinge_dilation_throttling`), `barrier` (`barrier`, `ResistanceWorkBarrier`, `countActiveBarriers`, `multiBarrierWorkRow`), `temporal momentum` (`physTemporalMomentum`, *cf. SM v57* Ch. 17 pp. 129–130), and `twoRegion` / `threeRegion` (`MirrorArchitecture.twoRegionNoSharedE` vs. `.threeRegionSharedE`; *SM v57* Ch. 16 p. 117 writes `"two sides"` vs. `"three: the two sides and the continuum where they meet, with one energy in it"`).
 
-### 1.2 Complete 34-Item Classification Table
+### 1.2 Complete 35-Item Classification Table
 
 | # | Lean Identifier & Location | Kernel Axioms | Class | What Lean Actually Proves vs. What Is `(b)` or `(c)` |
 |---:|:---|:---|:---|:---|
@@ -95,23 +95,24 @@ Specifically flagged as **`(c)` not in *SM v57***:
 | 15 | [`temporal_momentum_energy_factorization`](lean/TSR/MirrorFunctor.lean#L412-L421) | `none` | `(a)/(b) over (c)` | `(b)` Associative factoring $m \cdot c \cdot c = m \cdot (c \cdot c)$ over `(c)` code label `physTemporalMomentum` (`"temporal momentum"` is a code identifier, not a *v57* term). |
 | 16 | [`two_level_reading_theorem`](lean/TSR/MirrorFunctor.lean#L626-L637) | `[propext]` | `(a) over (c)` | Finite `decide` check over `(c)` 17-row `LawAST` hand-classification `R_read` (`17/17`), narrow `R_read_ch2_clauses` (`4` misses), `(c)` `IsothermalEquilibriumBalance` Row 17, and `(c)` `multiBarrierWorkRow` (`2` active barriers). |
 | 17 | [`v57_rule_wordings_benchmark`](lean/TSR/MirrorFunctor.lean#L682-L687) | `[propext]` | `(a) over (c)` | Finite `decide` evaluation of `(c)` AST encodings `R_read_v57_ch2` (`14/17`, fails `[11, 12, 17]`) and `R_read_v57_ch16` (`16/17`, fails `[17]`). See [Section 1.3](#13-v57-rule-wordings-benchmark). |
-| 18 | [`falling_man_equivalence`](lean/TSR/MirrorFunctor.lean#L703-L749) | `none` | `(b)` | Pure `(b)` ordered-field mechanics $m a = m g - R \iff R/m + a = g$ with boundary cases ($a = 0 \iff R = mg$; $R = 0 \iff a = g$). |
-| 19 | [`frequency_product_strict_monotonicity`](lean/TSR/MirrorFunctor.lean#L755-L759) | `none` | `(b)` | Pure `(b)` `OrderedField` strict monotonicity ($0 < M_1 < M_2 \land 0 < A_1 < A_2 \implies M_1 A_1 < M_2 A_2$). |
-| 20 | [`cross_hinge_dilation_throttling`](lean/TSR/MirrorFunctor.lean#L772-L821) | `[propext]` | `(a)/(b) over (c)` | **`(c)` Ansatz not in book**: formula $v_{\text{eff}} = C_{\text{rate}} \cdot \frac{T_0}{T_0 + h}$ and identifier word `"hinge"` are modeling choices; $v_{\text{eff}} = C_{\text{rate}} \iff h = 0$ and $0 < h \implies 0 < v_{\text{eff}} < C_{\text{rate}}$ follow by `(b)` algebra. |
-| 21 | [`ratio_laws_fail_monotonicity`](lean/TSR/MirrorFunctor.lean#L829-L857) | `[propext, Quot.sound]` | `(b)/(a)` | `(b)` Explicit `QRat` arithmetic witnesses `(1, 4, 1, 2)` and `(1, 2, 1, 4)` refuting unconditional monotonicity of $A/M$ and $M/A$. |
-| 22 | [`light_surface_of_mirror`](lean/TSR/MirrorFunctor.lean#L929-L993) | `[propext]` | `(b) + (c)` | `(b)` Relativistic shell algebra ($m = 0 \iff pc = E \iff v = c$, $ds^2 = 0$, $E, p, v > 0$); calling $m = 0$ `"the surface of the mirror"` is `(c)` book reading (*v57* Ch. 2 p. 24, Ch. 21 p. 154). |
-| 23 | [`v4_group_and_action`](lean/TSR/Crossing.lean#L111-L123) | `none` | `(b) over (c)` | `(b)` Klein-4 ($V_4$) group laws (`decide`) over `(c)` 4-pole `Quad` grid ([L46](lean/TSR/Crossing.lean#L46)). |
-| 24 | [`derived_diagonal_symmetry`](lean/TSR/Crossing.lean#L131-L159) | `none` | `(a) over (c)` | Finite `decide` search over `24` bijections showing `(c)` Irreversible-Pole & side-swap axioms force `diag` (`Desire ↔ Expectation`, `Belief ↔ Intuition`). |
-| 25 | [`resistance_contrast_filter_properties`](lean/TSR/Crossing.lean#L200-L223) | `[propext]` | `(a)/(b) over (c)` | `(b)` Idempotence and sign inequalities of `(c)` projection [`projectNP`](lean/TSR/Crossing.lean#L177). |
-| 26 | [`self_refutation_of_wanting_nonwanting`](lean/TSR/Crossing.lean#L248-L283) | `[propext]` | `(a) over (c)` | Deductive contradiction and force-balance consequences on `(c)` `FallingManState` ([L228-L238](lean/TSR/Crossing.lean#L228-L238)) predicates. |
-| 27 | [`direct_forcing_increases_confinement`](lean/TSR/Crossing.lean#L301-L308) | `none` | `(a)/(b) over (c)` | `(b)` Ordered-field addition monotonicity ($H < H + \beta u_{\text{force}}$) on `(c)` `confinementStep`. |
-| 28 | [`unique_weak_diagonal_escape`](lean/TSR/Crossing.lean#L367-L434) | `[propext]` | `(a)/(b) over (c)` | Exhaustive induction over `(c)` finite `Quad` paths: when `tuned = true`, only `[Intuition, Belief, Expectation]` exits without cycle. |
-| 29 | [`multiplicative_gate_characterization`](lean/TSR/EntityAndMeta.lean#L55-L81) | `none` | `(a)/(b) over (c)` | `(b)` Field algebra showing $u \cdot x$ satisfies `(c)` `IsZeroAnnihilatingGate` while $a u + b x$ ($a, b > 0$) leaks bilaterally. |
-| 30 | [`coupled_entity_false_positive_ease`](lean/TSR/EntityAndMeta.lean#L113-L153) | `[propext]` | `(a)/(b) over (c)` | `(b)` Linear sum conservation $R_1' + R_2' = R_1 + R_2$ over `(c)` 2-entity `CoupledExchange` ([L91-L100](lean/TSR/EntityAndMeta.lean#L91-L100)). |
-| 31 | [`four_way_entity_separation`](lean/TSR/EntityAndMeta.lean#L349-L498) | `[propext]` | `(a)/(b) over (c)` | **`(c)` Toy rules not in book**: synthetic `rockDyn`/`frozenAIDyn`/`persistentMemoryAIDyn`/`sovereignEntityDyn` using `(c)` quadratic updates `(x - s)^2` ([L209-L214](lean/TSR/EntityAndMeta.lean#L209-L214)); `(b)` induction separates all 6 pairs across arbitrary `xs : List F`. |
-| 32 | [`tsr_axioms_consistent`](lean/TSR/EntityAndMeta.lean#L681-L682) | `[propext, Quot.sound]` | `(a) over (c)` | Relative consistency of `(c)` `TSRSystemModel` ([L517-L544](lean/TSR/EntityAndMeta.lean#L517-L544)) via constructive `QRat` witness `canonicalTSRModel` ([L648-L677](lean/TSR/EntityAndMeta.lean#L648-L677)). |
-| 33 | [`independence_of_first_partition`](lean/TSR/EntityAndMeta.lean#L734-L760) | `[propext, Quot.sound]` | `(a)/(b) over (c)` | **`(c)` Toy formula not in book**: `QRat` counter-models (`undividedSingleLocusWorld`, `unresistedMultiLocusWorld`, `partitionedContrastWorld`) showing neither `|Locus| ≥ 2` nor `ρ > 0` alone yields positive `(c)` `pairwiseContrast = ρ * (state x - state y)^2`. |
-| 34 | [`gravity_open_joint_two_vs_three_regions`](lean/TSR/EntityAndMeta.lean#L795-L812) | `none` | `(a) over (c)` | `decide` evaluation of `(c)` `R_readArch` / `countActiveBarriers` on `.twoRegionNoSharedE` (`15/17`) vs. `.threeRegionSharedE` (`17/17`). |
+| 18 | [`constant_baselines_benchmark`](lean/TSR/MirrorFunctor.lean#L701-L710) | `[propext]` | `(a) over (c)` | Finite `decide` evaluation of `(c)` constant baselines `R_read_always_keep` (`14/17`, misses `[2, 8, 9]`) and `R_read_always_invert` (`3/17`, matches `[2, 8, 9]`); `R_read_v57_ch2` ties `always-Keep` (`14/17`) and `R_read_v57_ch16` (`16/17`) exceeds it by `2`. See [Section 1.3](#13-v57-rule-wordings-benchmark). |
+| 19 | [`falling_man_equivalence`](lean/TSR/MirrorFunctor.lean#L726-L772) | `none` | `(b)` | Pure `(b)` ordered-field mechanics $m a = m g - R \iff R/m + a = g$ with boundary cases ($a = 0 \iff R = mg$; $R = 0 \iff a = g$). |
+| 20 | [`frequency_product_strict_monotonicity`](lean/TSR/MirrorFunctor.lean#L778-L782) | `none` | `(b)` | Pure `(b)` `OrderedField` strict monotonicity ($0 < M_1 < M_2 \land 0 < A_1 < A_2 \implies M_1 A_1 < M_2 A_2$). |
+| 21 | [`cross_hinge_dilation_throttling`](lean/TSR/MirrorFunctor.lean#L795-L844) | `[propext]` | `(a)/(b) over (c)` | **`(c)` Ansatz not in book**: formula $v_{\text{eff}} = C_{\text{rate}} \cdot \frac{T_0}{T_0 + h}$ and identifier word `"hinge"` are modeling choices; $v_{\text{eff}} = C_{\text{rate}} \iff h = 0$ and $0 < h \implies 0 < v_{\text{eff}} < C_{\text{rate}}$ follow by `(b)` algebra. |
+| 22 | [`ratio_laws_fail_monotonicity`](lean/TSR/MirrorFunctor.lean#L852-L880) | `[propext, Quot.sound]` | `(b)/(a)` | `(b)` Explicit `QRat` arithmetic witnesses `(1, 4, 1, 2)` and `(1, 2, 1, 4)` refuting unconditional monotonicity of $A/M$ and $M/A$. |
+| 23 | [`light_surface_of_mirror`](lean/TSR/MirrorFunctor.lean#L952-L1016) | `[propext]` | `(b) + (c)` | `(b)` Relativistic shell algebra ($m = 0 \iff pc = E \iff v = c$, $ds^2 = 0$, $E, p, v > 0$); calling $m = 0$ `"the surface of the mirror"` is `(c)` book reading (*v57* Ch. 2 p. 24, Ch. 21 p. 154). |
+| 24 | [`v4_group_and_action`](lean/TSR/Crossing.lean#L111-L123) | `none` | `(b) over (c)` | `(b)` Klein-4 ($V_4$) group laws (`decide`) over `(c)` 4-pole `Quad` grid ([L46](lean/TSR/Crossing.lean#L46)). |
+| 25 | [`derived_diagonal_symmetry`](lean/TSR/Crossing.lean#L131-L159) | `none` | `(a) over (c)` | Finite `decide` search over `24` bijections showing `(c)` Irreversible-Pole & side-swap axioms force `diag` (`Desire ↔ Expectation`, `Belief ↔ Intuition`). |
+| 26 | [`resistance_contrast_filter_properties`](lean/TSR/Crossing.lean#L200-L223) | `[propext]` | `(a)/(b) over (c)` | `(b)` Idempotence and sign inequalities of `(c)` projection [`projectNP`](lean/TSR/Crossing.lean#L177). |
+| 27 | [`self_refutation_of_wanting_nonwanting`](lean/TSR/Crossing.lean#L248-L283) | `[propext]` | `(a) over (c)` | Deductive contradiction and force-balance consequences on `(c)` `FallingManState` ([L228-L238](lean/TSR/Crossing.lean#L228-L238)) predicates. |
+| 28 | [`direct_forcing_increases_confinement`](lean/TSR/Crossing.lean#L301-L308) | `none` | `(a)/(b) over (c)` | `(b)` Ordered-field addition monotonicity ($H < H + \beta u_{\text{force}}$) on `(c)` `confinementStep`. |
+| 29 | [`unique_weak_diagonal_escape`](lean/TSR/Crossing.lean#L367-L434) | `[propext]` | `(a)/(b) over (c)` | Exhaustive induction over `(c)` finite `Quad` paths: when `tuned = true`, only `[Intuition, Belief, Expectation]` exits without cycle. |
+| 30 | [`multiplicative_gate_characterization`](lean/TSR/EntityAndMeta.lean#L55-L81) | `none` | `(a)/(b) over (c)` | `(b)` Field algebra showing $u \cdot x$ satisfies `(c)` `IsZeroAnnihilatingGate` while $a u + b x$ ($a, b > 0$) leaks bilaterally. |
+| 31 | [`coupled_entity_false_positive_ease`](lean/TSR/EntityAndMeta.lean#L113-L153) | `[propext]` | `(a)/(b) over (c)` | `(b)` Linear sum conservation $R_1' + R_2' = R_1 + R_2$ over `(c)` 2-entity `CoupledExchange` ([L91-L100](lean/TSR/EntityAndMeta.lean#L91-L100)). |
+| 32 | [`four_way_entity_separation`](lean/TSR/EntityAndMeta.lean#L349-L498) | `[propext]` | `(a)/(b) over (c)` | **`(c)` Toy rules not in book**: synthetic `rockDyn`/`frozenAIDyn`/`persistentMemoryAIDyn`/`sovereignEntityDyn` using `(c)` quadratic updates `(x - s)^2` ([L209-L214](lean/TSR/EntityAndMeta.lean#L209-L214)); `(b)` induction separates all 6 pairs across arbitrary `xs : List F`. |
+| 33 | [`tsr_axioms_consistent`](lean/TSR/EntityAndMeta.lean#L681-L682) | `[propext, Quot.sound]` | `(a) over (c)` | Relative consistency of `(c)` `TSRSystemModel` ([L517-L544](lean/TSR/EntityAndMeta.lean#L517-L544)) via constructive `QRat` witness `canonicalTSRModel` ([L648-L677](lean/TSR/EntityAndMeta.lean#L648-L677)). |
+| 34 | [`independence_of_first_partition`](lean/TSR/EntityAndMeta.lean#L734-L760) | `[propext, Quot.sound]` | `(a)/(b) over (c)` | **`(c)` Toy formula not in book**: `QRat` counter-models (`undividedSingleLocusWorld`, `unresistedMultiLocusWorld`, `partitionedContrastWorld`) showing neither `|Locus| ≥ 2` nor `ρ > 0` alone yields positive `(c)` `pairwiseContrast = ρ * (state x - state y)^2`. |
+| 35 | [`gravity_open_joint_two_vs_three_regions`](lean/TSR/EntityAndMeta.lean#L795-L812) | `none` | `(a) over (c)` | `decide` evaluation of `(c)` `R_readArch` / `countActiveBarriers` on `.twoRegionNoSharedE` (`15/17`) vs. `.threeRegionSharedE` (`17/17`). |
 
 ### 1.3 `v57` Rule-Wordings Benchmark
 
@@ -119,10 +120,18 @@ Specifically flagged as **`(c)` not in *SM v57***:
 
 | Rule / Model Encoding | Source Citation / Status | Match Count | Missed Rows | Structural Explanation |
 | :--- | :--- | :---: | :--- | :--- |
+| [`R_read_always_invert`](lean/TSR/MirrorFunctor.lean#L693) | `(c)` Constant baseline (`always-Invert`) | **3 / 17** | `1, 3–7, 10–17` | Matches only the 3 `.Invert` rows (`2, 8, 9`). |
+| [`R_read_always_keep`](lean/TSR/MirrorFunctor.lean#L690) | `(c)` Constant baseline (`always-Keep`) | **14 / 17** | `2, 8, 9` | Matches all 14 `.Keep` rows; misses only the 3 `.Invert` rows (`2, 8, 9`). |
 | [`R_read_ch2_clauses`](lean/TSR/MirrorFunctor.lean#L573-L574) | `(c)` Narrow `hasMass`-only proxy | **13 / 17** | `2, 11, 12, 17` | Misses Row 2 (`no shared now` / distance without mass), gravity rows `11–12`, and Boyle `17`. |
 | [`R_read_v57_ch2`](lean/TSR/MirrorFunctor.lean#L656-L659) | *SM v57*, Ch. 2, p. 20 (`dependsOnResistanceOrSeparation`) | **14 / 17** | `11, 12, 17` | Adds `"or on the distance resistance makes"` (`SpatialSeparationDependence`), resolving Row 2; still lacks shared-energy work and boundary walls. |
 | [`R_read_v57_ch16`](lean/TSR/MirrorFunctor.lean#L664-L667) | *SM v57*, Ch. 16, p. 116 (`+ isSharedEnergyWork`) | **16 / 17** | `17` | Adds `"or the work of the one energy both sides share"` (`.SharedCenterCurvature`), resolving Rows `11–12` and isolating Row 17 (`Boyle`). |
 | [`R_read`](lean/TSR/MirrorFunctor.lean#L563-L564) (`two_level_reading_theorem`) | `(c)` 6-category `LawAST` + `IsothermalEquilibriumBalance` | **17 / 17** | None | **Note**: `17/17` requires hand-assigning laws to the six `LawAST` categories plus `(c)` `IsothermalEquilibriumBalance` for Row 17; in *SM v57* Ch. 16, p. 118, Boyle is instead explained because pressure requires walls, walls are resistance, and pressure exists only where the two sides touch. |
+
+`benchmarkRows17` has 14 `Keep` rulings and 3 `Invert` rulings (`2, 8, 9`). As checked by [`constant_baselines_benchmark`](lean/TSR/MirrorFunctor.lean#L701-L710), `always-Keep` matches 14/17 and `always-Invert` matches 3/17. `R_read_v57_ch2` (14/17) ties `always-Keep`, and `R_read_v57_ch16` (16/17) beats it by two laws.
+
+**17-Row Provenance (`"construction"` vs. `"applied later"`):** Nicholas built the table in *The Sovereign Mirror* from `E = mc^2` and Newton's mechanics, and confirmed provenance for the 17 benchmark rows before any held-out run:
+- **`"construction"` (4 rows):** Row `7` (`7 E = mc^2`), Row `14` (`Newton's third law`), Row `15` (`m = density x volume`), and Row `16` (`F = ma`). All 4 have ruling `Keep` (`4/4` `Keep`); `always-Keep`, `R_read_v57_ch2`, and `R_read_v57_ch16` match `4/4` (`always-Invert`: `0/4`).
+- **`"applied later"` (13 rows):** Rows `1–6`, `8–13`, and `17` (`1 laws same for every observer`, `2 no shared now (distance)`, `3 no fixed frame`, `4 special vs general`, `5 time dilation`, `6 length contraction`, `8 cost of more speed`, `9 mass can't reach c`, `10 space-time one continuum`, Row `11` gravity spacetime curvature, Row `12` gravity lensing, `13 conservation`, Row `17` Boyle's law). These 13 rows contain `10` `Keep` rulings and `3` `Invert` rulings (`2, 8, 9`). On these 13 applied-later rows, `always-Keep` matches `10/13`, `always-Invert` matches `3/13`, `R_read_v57_ch2` matches `10/13` (missing Rows `11, 12, 17`), and `R_read_v57_ch16` matches `12/13` (missing Row `17`).
 
 Similarly, [gravity_open_joint_two_vs_three_regions](lean/TSR/EntityAndMeta.lean#L795-L812) shows via `decide` how adding shared-energy evaluation (code identifiers `.twoRegionNoSharedE` vs. `.threeRegionSharedE`, encoding *SM v57* Ch. 16 p. 117's `"two sides"` vs. `"three: the two sides and the continuum where they meet, with one energy in it"`) shifts Rows `11–12` from `.Invert` (`15/17`) to `.Keep` (`17/17`) while leaving the other 15 rows unchanged.
 
@@ -254,9 +263,224 @@ Reported purely as **descriptive ledger ratios**:
   - `all_core_law_5_of_21`: `3.24e-3` ($5\%$), `0.0522` ($10\%$), `0.1975` ($15\%$).
 - **Full 80-word tally**: `5/21` in `core_law`, `0/14` in `secondary_physics`, `0/45` structurally ineligible (`153/180752 ≈ 8.46e-4`).
 
+The held-out control sampling and coding setup intended to address the post-hoc selection limit above (Part 3) is documented in [Section 5](#5-part-v--held-out-etymology-direction-control-proofheldout-part-3).
+
 ---
 
-## 4. Single-Command Reproduction
+## 4. Part IV — Held-Out Law Evaluation (proof/heldout/, Part 2)
+
+- **Claim tested:** The one rule as printed in *The Sovereign Mirror* v57 (pp. 20 and 116) is enough to rule on a law it was not built from, in hands other than the author's.
+- **Not tested:** Whether a ruling is true.
+- **Shared-session disclosure (`Pre-Results Amendment 2`):** Under [PREREGISTRATION.md](heldout/PREREGISTRATION.md) Section 0.5, Track `(b)` rulings/rationales (`b1..b3`) and Track `(c)` physics-codebook flags (`q1..q4` for `c1..c3`) were generated inside the **same standalone session per model family** (`s1 = gemini_carbon`, `s2 = grok_4_7`, `s3 = kimi_k3`) via [combined_evaluation_packet.md](heldout/combined_evaluation_packet.md). Accordingly, agreement between `b_maj_ruling` and induced `R_read_v57_ch16` / `R_read_v57_ch2` tests **within-session codebook-to-prose consistency** rather than session-independent cross-validation; independence holds across the 3 distinct model families (3-category Fleiss' $\kappa$) and against the pre-committed `benchmarkRows17` book rulings.
+
+- **Overall Primary Verdict**: **FAIL (`passes_all_three = false`)**. Across `3` standalone evaluation sessions on the `48` held-out OpenStax laws, Conditions 2 and 3 pass (`BA = 9/10 = 0.9000`, `L_BA = 0.7370 > 0.50`, Fisher $p = 45/177232627 \approx 2.5390 \times 10^{-7} < 0.05$), while **Condition 1 fails** (`3`-category Fleiss' $\kappa = 2447/5039 \approx 0.4856 < 0.60$). Under the shared-session protocol (`Amendments 1–2`), Conditions 2–3 measure **within-session codebook-to-prose consistency** rather than an independent cross-session check.
+
+### 4.1 Corpus, Protocol & Disclosure Notes
+
+- **Sources & Attribution**: External laws were extracted from all `22` chapters of the OpenStax *University Physics* frozen bundle (`bundle_commit_sha = 2300d5b8ca2571dacc6ec25ebef56ba8d49000a2`; [openstax_fetch_manifest.json](heldout/openstax_fetch_manifest.json), [openstax_key_equations_raw.csv](heldout/openstax_key_equations_raw.csv)) — *Access for free at https://openstax.org — Licensed under CC BY 4.0.* Deterministic exclusions ([exclusion_log.csv](heldout/exclusion_log.csv), [eligible_laws_pool.csv](heldout/eligible_laws_pool.csv)), sampling (`48` held-out laws, [sample_manifest.csv](heldout/sample_manifest.csv)), and redaction/interleaving with the `17` Lean benchmark rows (`65` total anonymized cards `C001..C065`, [law_cards.csv](heldout/law_cards.csv)) are generated by [fetch_and_sample_laws.py](heldout/fetch_and_sample_laws.py), [build_law_cards.py](heldout/build_law_cards.py), and [build_evaluation_packets.py](heldout/build_evaluation_packets.py) into [combined_evaluation_packet.md](heldout/combined_evaluation_packet.md).
+- **Commit Provenance SHAs**:
+  - `preregistration_commit_sha`: `463ad9f93c8a276b1e0d9ee497198dfa2169d079` ([PREREGISTRATION.md](heldout/PREREGISTRATION.md); pre-data protocol locking `A1` 17-row provenance, `A2` Option 2 redacted inline examples, `A3` Option B all-gravitation `q4` scope, and `A4` `10` physical-quantity target words before any OpenStax fetch)
+  - `amendment_1_commit_sha`: `b66f48efb76e0f8d17d7db32848ad95f0a5c8633` (pre-results author withdrawal from Track `(a)` rulings and fixing held-out sample size at `N = 48`)
+  - `amendment_2_commit_sha`: `530a254a51789a9fd68e1889f713b86d829c1146` (pre-results single combined evaluation prompt [combined_evaluation_packet.md](heldout/combined_evaluation_packet.md) across 3 model families with shared-session disclosure)
+  - `pre_unmasking_commit_sha`: `5f5c828d2d8dc32b53de887b9faa6ad214faf8e6` (`appliers.csv` and `labels.csv` committed prior to reading `sample_manifest.csv`)
+- **Model Panel & Artifacts**: Primary 3-session panel in [ingest_sessions.py](heldout/ingest_sessions.py), [appliers.csv](heldout/appliers.csv), and [labels.csv](heldout/labels.csv) consists of `s1 = gemini_carbon`, `s2 = grok_4_7`, and `s3 = kimi_k3`; a 4th archived run (`gemini_hydrogen`) is analyzed solely for descriptive sensitivity and excluded from primary inference. Full exact rational results live in [part2_results.json](heldout/part2_results.json) (computed by [evaluate_part2.py](heldout/evaluate_part2.py)).
+- **Shared-Session & Audit Limitations**: Under Amendment 2 (`shared_session_disclosure`), Track `(b)` rulings (`b1..b3`) and Track `(c)` codebook flags (`q1..q4`) were produced in the same model session, so Condition 2/3 tests whether each session's rule application agrees with predictions from its own codebook readings. In `s3` (`kimi_k3`), the paste for `C065.rationale` truncated mid-sentence (`"Bulk modulus explicitly \"measures a material's resistance to uniform hydrostatic compression\"; since [truncated in paste]"`); its ruling (`"Invert"`) and `q1..q4` values are intact.
+
+### 4.2 Held-Out 48 Primary Results (`never_pooled_with_calibration_17`)
+
+#### Confirmatory Primary Gate Summary
+
+| Check | Exact Quantity Tested | Result | Threshold / Criterion | Verdict |
+| :--- | :--- | :--- | :--- | :--- |
+| Condition 1 (Across-family agreement) | 3-cat Fleiss' $\kappa$ across `b1, b2, b3` (`N = 48`) | `2447/5039` (`0.4856`, unanimous `31/48 = 64.58%`) | `>= 0.60` | **FAIL** |
+| Condition 2 (Fisher exact test) | `TP=8, FP=0, FN=2, TN=34` (`pred_ch16` vs definite `b_maj_ruling`, `N_def = 44`) | One-sided $p = 45/177232627 \approx 2.5390 \times 10^{-7}$ | `p < 0.05` | **PASS** (within-session) |
+| Condition 3 (95% CI lower bound) | `pred_ch16` vs definite `b_maj_ruling` (`N_def = 44`) | `BA = 9/10` (`0.9000`), Wilson-MOVER `CI = [0.7370, 0.9717]` | `L_BA > 0.50` | **PASS** (within-session) |
+| **Overall Primary Gate** | **`passes_all_three`** (`C1 AND C2 AND C3`) | **`false`** | All three pass | **FAIL** |
+
+- **Inter-session Agreement Detail**: Across all `144` held-out Track `(b)` ratings (`48 × 3`), category counts are `Keep = 97`, `Invert = 32`, and `"the rule doesn't say" = 15` (`P_bar = 3/4 = 0.7500`, `P_e = 5329/10368 ≈ 0.5140`). Usage of `"the rule doesn't say"` is concentrated in `b1` (`gemini_carbon`: `12/48 = 25.0%`) versus `b2` (`grok_4_7`: `1/48`) and `b3` (`kimi_k3`: `2/48`). On the `35/48` subset where all three sessions gave a definite `Keep`/`Invert` ruling (`Keep = 75`, `Invert = 30`), 2-category Fleiss' $\kappa = 61/75 \approx 0.8133$ (`unanimous = 31/35`).
+- **Track `(c)` Inter-session Agreement (`N = 48`)**: Two-category Fleiss' $\kappa$ on codebook flags is `q1 = 359/551 ≈ 0.6515` (`36/48` unanimous, `Yes=87, No=57`), `q2 = 935/1007 ≈ 0.9285` (`46/48` unanimous, `Yes=38, No=106`), `q3 = 251/323 ≈ 0.7771` (`40/48` unanimous, `Yes=68, No=76`), and `q4 = 119/155 ≈ 0.7677` (`44/48` unanimous, `Yes=20, No=124`).
+
+#### Predictors vs. Majority Ruling `b_maj_ruling` (`N = 48` & `N_def = 44`)
+
+| Rule / Baseline Predictor | Unconditional Matches (`48`) | Uncond. 4-cat Cohen's $\kappa$ | Definite `N_def = 44` Acc | `TPR` / `TNR` | Balanced Acc (`BA`) | 95% Wilson-MOVER CI | One-sided Fisher $p$ |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **`pred_ch16`** (primary) | `42/48` (`0.8750`) | `13/19` (`0.6842`) | `21/22` (`0.9545`) | `4/5` (`0.8000`) / `1/1` (`1.0000`) | `9/10` (`0.9000`) | `[0.7370, 0.9717]` | `45/177232627` (`2.5390e-07`) |
+| `pred_ch2` (no `q4` carve-out) | `37/48` (`0.7708`) | `21/43` (`0.4884`) | `37/44` (`0.8409`) | `4/5` (`0.8000`) / `29/34` (`0.8529`) | `281/340` (`0.8265`) | `[0.6534, 0.9092]` | `2171/8675723` (`2.5024e-04`) |
+| `pred_naive_mass` (`q2 == Yes`) | `28/48` (`0.5833`) | `0/1` (`0.0000`) | `7/11` (`0.6364`) | `3/10` (`0.3000`) / `25/34` (`0.7353`) | `44/85` (`0.5176`) | `[0.3905, 0.6805]` | `4845983/8675723` (`0.5586`) |
+| `R_read_always_keep` | `34/48` (`0.7083`) | `0/1` (`0.0000`) | `17/22` (`0.7727`) | `0/1` (`0.0000`) / `1/1` (`1.0000`) | `1/2` (`0.5000`) | `[0.4492, 0.6388]` | `1/1` (`1.0000`) |
+| `R_read_always_invert` | `10/48` (`0.2083`) | `0/1` (`0.0000`) | `5/22` (`0.2273`) | `1/1` (`1.0000`) / `0/1` (`0.0000`) | `1/2` (`0.5000`) | `[0.3612, 0.5508]` | `1/1` (`1.0000`) |
+
+- **Individual Appliers vs. `pred_ch16`**:
+  - Across all `48` laws: `b1` (`gemini_carbon`) matches `2/3 = 32/48` (`0.6667`, `TPR=9/10`, `TNR=23/38`, `BA=143/190 = 0.7526`, CI `[0.5812, 0.8333]`); `b2` (`grok_4_7`) matches `7/8 = 42/48` (`0.8750`, `TPR=3/5`, `TNR=18/19`, `BA=147/190 = 0.7737`, CI `[0.6180, 0.8911]`); `b3` (`kimi_k3`) matches `43/48` (`0.8958`, `TPR=9/10`, `TNR=17/19`, `BA=341/380 = 0.8974`, CI `[0.7308, 0.9493]`).
+  - Restricted to definite `b_maj` (`N_def = 44`): `b1` `31/44` (`0.7045`, `BA=59/72 = 0.8194`, CI `[0.6379, 0.8876]`); `b2` `10/11` (`40/44 = 0.9091`, `BA=61/72 = 0.8472`, CI `[0.6656, 0.9387]`); `b3` `21/22` (`42/44 = 0.9545`, `BA=35/36 = 0.9722`, CI `[0.7982, 0.9923]`).
+
+#### Misses, Unanimous False Negatives & Non-Definite Cards (`part2_disagreements.csv`)
+
+[part2_disagreements.csv](heldout/part2_disagreements.csv) records all `19` held-out laws (`C002, C003, C004, C008, C012, C020, C026, C031, C033, C041, C044, C048, C049, C051, C059, C061, C062, C064, C065`) where either `b1..b3` disagreed, `b_maj` was non-definite, or `b_maj`, `pred_ch2`, and `pred_ch16` diverged:
+
+1. **Two Unanimous `Invert` Misses (`b_maj = Invert`, `pred_ch16 = Keep`)**:
+   - `C004` (`H051`, Vol. 1 Ch. 6, *Magnitude of kinetic friction*, $f_k = \mu_k N$): all three sessions ruled `Invert`, and all three coded `q1..q4 = (No, No, No, No)` $\to$ `pred_ch16 = Keep` (surface resistance without an explicit mass or spatial separation variable).
+   - `C065` (`H124`, Vol. 1 Ch. 12, *Bulk modulus*, $B = -\Delta p (V_0/\Delta V)$): all three sessions ruled `Invert` (`kimi_k3` rationale truncated in paste), and all three coded `q1..q4 = (No, No, No, No)` $\to$ `pred_ch16 = Keep` (hydrostatic compression resistance without an explicit mass or spatial separation term).
+2. **Two Majority `"the rule doesn't say"` Cards**: `C020` (`H215`, *Thermal expansion in three dimensions*: `b1=doesn't say, b2=Keep, b3=doesn't say`) and `C049` (`H209`, *Observed frequency for a moving observer and a stationary source*: `b1=doesn't say, b2=Keep, b3=doesn't say`).
+3. **Two `"no_majority"` 3-Way Splits**: `C002` (`H213`, *Linear thermal expansion*: `b1=doesn't say, b2=Keep, b3=Invert`) and `C003` (`H191`, *Wavelength for symmetric boundary conditions*: `b1=Invert, b2=doesn't say, b3=Keep`).
+4. **Nine Additional `b1 = "the rule doesn't say"` Cards (`b2 = b3 = Keep` $\to$ `b_maj = Keep`)**: `C008` (*Orbital period*), `C012` (*Ideal gas law in terms of molecules*), `C026` (*Work done going from A to B by Earth's gravity, near its surface*), `C041` (*Condition for an ideal gas in a quasi-static adiabatic process*), `C044` (*Performance coefficient of a reversible refrigerator*), `C051` (*Kepler's third law*), `C059` (*Molar heat capacity at constant volume for an ideal gas with d degrees of freedom*), `C061` (*Newton's law of gravitation*), and `C064` (*Height of free fall*).
+
+### 4.3 Separate Calibration Check on `benchmarkRows17` (`n = 17`, Never Pooled)
+
+Static Lean benchmark checks on `benchmarkRows17` (`3`-predicate book wording rules): `lean_R_read_v57_ch2 = 14/17` (`missed = [11, 12, 17]`), `lean_R_read_v57_ch16 = 16/17` (`missed = [17]`), `always_keep = 14/17`, `always_invert = 3/17` (`matched = [2, 8, 9]`).
+
+Running the redacted interleaved `benchmarkRows17` cards (`17` total: `4 construction` rows `[7, 14, 15, 16]` all `Keep`, and `13 applied later` rows `[1..6, 8..13, 17]`, `10 Keep / 3 Invert`) through the fresh sessions gives:
+
+- **Inter-session Agreement on `17`**: 3-category Fleiss' $\kappa = 335/692 \approx 0.4841$ (`unanimous = 10/17`); on the `11/17` unanimously definite subset, 2-category Fleiss' $\kappa = 149/182 \approx 0.8187`.
+- **Track `(b)` vs. `book_ruling` (`17`)**: `b_maj_ruling = 13/17` (`b1 = 11/17`, `b2 = 12/17`, `b3 = 13/17`), `pred_ch16 = 14/17`, `pred_ch2 = 12/17`, `pred_naive_mass = 9/17`, compared to `always-Keep = 14/17`.
+  - **`construction` split (`4` rows)**: `b_maj_ruling = 3/4` (`b1 = 3/4, b2 = 3/4, b3 = 3/4`), `pred_ch16 = 3/4`, `pred_ch2 = 3/4`, `pred_naive_mass = 1/4`, vs. `always-Keep = 4/4`. On Row `16` (`C027`, $F = ma$), where the prose cue `"force is mass times acceleration"` was redacted under `A2` Option 2, **all three Track `(b)` sessions (`b1..b3`) and all three Track `(c)` codebooks (`q1_maj = No, q2_maj = Yes`) inverted $F = ma$**, opposite `book_ruling = Keep`.
+  - **`applied later` split (`13` rows)**: `b_maj_ruling = 10/13` (`b1 = 8/13, b2 = 9/13, b3 = 10/13`), `pred_ch16 = 11/13`, `pred_ch2 = 9/13`, `pred_naive_mass = 8/13`, vs. `always-Keep = 10/13`.
+  - **Four `b_maj_ruling` Misses on `17`**:
+    - Row `5` (`C005`, `5 time dilation`, `book = Keep`): `b1=Invert, b2=doesn't say, b3=doesn't say` $\to$ `b_maj = "the rule doesn't say"` (`pred_ch16 = Keep`).
+    - Row `6` (`C063`, `6 length contraction`, `book = Keep`): `b1=Invert, b2=doesn't say, b3=Invert` $\to$ `b_maj = Invert` (`q3_maj = Yes`, `pred_ch16 = Invert`).
+    - Row `8` (`C011`, `8 cost of more speed`, `book = Invert`): `b1=Invert, b2=Keep, b3=Keep` $\to$ `b_maj = Keep` (`q1_maj = Yes`, `pred_ch16 = Keep`).
+    - Row `16` (`C027`, `F = ma`, `book = Keep`): `b1=Invert, b2=Invert, b3=Invert` $\to$ `b_maj = Invert` (`q1_maj = No, q2_maj = Yes`, `pred_ch16 = Invert`).
+  - Note also Row `17` (`C014`, Boyle's law, `book = Keep`, `lean_R_read_v57_ch16 = Invert`): sessions gave `b_maj = Keep` (`b1=doesn't say, b2=Keep, b3=Keep`) and `pred_ch16 = Keep`.
+- **Track `(c)` vs. Lean Ground-Truth Predicates on `17`**: Fleiss' $\kappa$ on `q1..q4` is `271/322 ≈ 0.8416` (`q1`), `1/1` (`q2`), `1/1` (`q3`), `1/1` (`q4`); `q_maj` matches Lean predicates `14/17` on `q1` ($\kappa = 92/143 \approx 0.6434$, mismatch `[8, 16, 17]`), `16/17` on `q2` ($\kappa = 128/145 \approx 0.8828$, mismatch `[4]`), `13/17` on `q3` ($\kappa = 6/23 \approx 0.2609$, mismatch `[6, 10, 11, 12]`), `16/17` on `q4` ($\kappa = 56/73 \approx 0.7671$, mismatch `[4]`), yielding `pred_ch16` vs. `lean_R_read_v57_ch16` agreement `13/17` (mismatch `[6, 8, 16, 17]`). Within-session `b_maj_ruling` vs. `pred_ch16` on `17` is `16/17` (mismatch `[5]`, `16/16` on definite rows).
+
+### 4.4 Descriptive Sensitivity Run (`gemini_hydrogen`)
+
+Substituting `gemini_hydrogen` for `gemini_carbon` (`(gemini_hydrogen, grok_4_7, kimi_k3)`) does not change the confirmatory outcome (`would_pass_all_three_if_primary = false`): Condition 1 remains below threshold with 3-category Fleiss' $\kappa = 2051/3779 \approx 0.5427 < 0.60$ (`45/48` unanimously definite, 2-cat $\kappa = 17/27 \approx 0.6296$; `N_def = 45`, `pred_ch16` vs. definite `b_maj`: `TP=9, FP=0, FN=2, TN=34`, `acc = 43/45 = 0.9556`, `BA = 10/11 ≈ 0.9091`, CI `[0.7530, 0.9743]`, Fisher $p = 1/16112057 \approx 6.2065 \times 10^{-8}$). On `calibration_17`, swap-in agreement is `b_maj vs book = 13/17` (`3/4` construction, `10/13` applied later), `s1_extra vs book = 13/17`, and `b_maj vs pred_ch16 = 16/17` (3-cat $\kappa = 244/295 \approx 0.8271$). Across all `4` archived runs combined (`s1, s2, s3, extra`), 3-category Fleiss' $\kappa = 959/2111 \approx 0.4543$ on `48` and `177/296 ≈ 0.5980` on `17`.
+
+---
+
+## 5. Part V — Held-Out Etymology Direction Control (proof/heldout/, Part 3)
+
+**Status**: **`PROTOCOL_DEVIATED_PRE_UNMASKING` — Null result ($p \ge 0.3818$ across all `9` scoring rules, `0/9` with $p < 0.05$) under two pre-unmasking protocol deviations.**
+
+This section replaces the exploratory post-hoc core-law directionality audit in [Section 3.3](#33-descriptive-core-law-directionality-summary-post-hoc-not-inferential) with the preregistered external OpenStax control evaluation ([PREREGISTRATION.md](heldout/PREREGISTRATION.md) Section 2). All codings ([etymology_codings.csv](heldout/etymology_codings.csv)) were ingested and committed before joining against [word_coding_key.csv](heldout/word_coding_key.csv) (`part3_pre_unmasking_commit_sha = cf6f1352a36e798e65c28c6d77cd320180b3761c`), and [evaluate_part3.py](heldout/evaluate_part3.py) emits the joined item table ([part3_item_table.csv](heldout/part3_item_table.csv)) and exact rational statistics ([part3_results.json](heldout/part3_results.json)).
+
+**Upfront Protocol-Deviation Disclosure**:
+1. **Model-Family Reduction (`2` Families Instead of `3`)**: `grok_4_7` refused the task, leaving `3` sessions across `2` model families: `s1 = gemini_hydrogen` (Gemini family, `78/78` retrieved live `2026-11-14`, seeing only neutral IDs `W001..W078` and headwords from [word_coding_packet.csv](heldout/word_coding_packet.csv) under [etymology_coding_prompt.md](heldout/etymology_coding_prompt.md)), `s2 = opus_5_5` (Anthropic family, seeing the same neutral packet), and `s3 = gemini_carbon` (Gemini family, `78/78` retrieved live `2026-11-14`, neutral packet only). Consequently, Gemini sessions hold `2/3` of the `direction_class_maj` majority vote.
+2. **Unverified Parametric-Memory Coding in `s2 = opus_5_5` (`75/78` Items)**: `s2` retrieved `3/78` entries live on `2026-11-14` (`W001` `theory` [control], `W002` `sound` [control], and `W003` `friction` [`ledger_physics_35`]) before encountering `etymonline.com` anti-bot blocking. The remaining `75/78` entries (`W004..W078`) were coded from parametric memory and flagged `etymonline_retrieved_utc = "unverified"` (`s2_retrieved_utc = "unverified"` in [etymology_codings.csv](heldout/etymology_codings.csv), retaining canonical `https://www.etymonline.com/word/<word>` URLs), which affects `10/10` target nouns, `38/40` OpenStax controls, and `34/35` `ledger_physics_35` words.
+
+**Headline Outcomes ($p \ge 0.3818$ Across All Rules)**:
+- **Preregistered Primary (`maj_3run`)**: `4/10` (`2/5 = 0.4000`) targets vs. `13/40` (`0.3250`) controls coded `"person_first"` (`risk_difference = +3/40 = +0.0750`), exact one-sided Fisher $p = 4388533/9529015 \approx 0.4605$ (two-sided $p = 66975323/93384347 \approx 0.7172$).
+- **Per-Session**: `s1_gemini_hydrogen` yields `3/10` vs. `11/40` (one-sided $p = 38612951/66703105 \approx 0.5789$), `s2_opus_5_5_memory_75_of_78` yields `4/10` vs. `12/40` (one-sided $p = 3813173/9529015 \approx 0.4002$), and `s3_gemini_carbon` yields `3/10` vs. `11/40` (one-sided $p = 38612951/66703105 \approx 0.5789$).
+- **Cross-Family Sensitivity**: `cross_family_strict_s1_and_s2` yields `3/10` vs. `8/40` (one-sided $p = 178257281/466921735 \approx 0.3818$) and `cross_family_strict_s3_and_s2` yields `3/10` vs. `9/40` (one-sided $p = 209807921/466921735 \approx 0.4493$). Neither the primary rule nor any sensitivity rule approaches $p < 0.05$.
+
+### 5.1 Corpus, Exclusions, Sampling (`seed = 20261113`), & Provenance
+
+[prepare_part3_etymology.py](heldout/prepare_part3_etymology.py) builds the external control pool and neutral packet from the frozen OpenStax corpus (`Access for free at https://openstax.org — Licensed under CC BY 4.0.`):
+
+1. **External Control Extraction ([openstax_key_terms_raw.csv](heldout/openstax_key_terms_raw.csv))**: Fetches all `153` CNXML modules across the same `22` chapters of the frozen OpenStax *University Physics* bundle (`bundle_commit_sha = 2300d5b8ca2571dacc6ec25ebef56ba8d49000a2`, SHA-256 verified per module URL in [openstax_fetch_manifest.json](heldout/openstax_fetch_manifest.json)) and extracts `<glossary><definition><term>` headwords verbatim without `<meaning>` prose, yielding `454` raw entries.
+2. **Deterministic Filtering & Exclusions `C1`–`C3` ([control_exclusion_log.csv](heldout/control_exclusion_log.csv))**:
+   - Retains `101` unique lowercase single-word (`^[a-z]+$`) candidates verbatim (no case-folding).
+   - Applies preregistered exclusions against all `80` words in [ledger_80.json](etymology/ledger_80.json) and the `10` confirmed physical quantity targets (`acceleration, density, energy, force, mass, space, speed, time, velocity, volume`):
+     - `C1_IN_LEDGER_80` (`11`): `density, force, friction, inertia, momentum, power, pressure, resonance, tension, wave, work`.
+     - `C2_CONFIRMED_TARGET` (`0`): (`density` and `force` match `C1` first; `acceleration, speed, velocity` do not appear as standalone lowercase `<term>` entries).
+     - `C3_MORPHOLOGICAL_VARIANT` (`1`): `radiation` (Latinate/affix root of `radiate`).
+   - Leaves `89` eligible control candidates (`>= 40`). Two audited edge cases remain eligible under the `PREREGISTRATION.md` affix rule: `wavelength` (compound `wave` + `length`) and `compressibility` (`com-` prefix, not in `{un-, in-, im-, non-, re-}`).
+3. **Sample Draw, Packet Construction, & Commit Lineage**:
+   - `controls_40 = random.Random(20261113).sample(eligible_controls, 40)` (`targets_10 & controls_40 = empty`, `ledger_physics_35 & controls_40 = empty`).
+   - Unified `78`-word coding pool (`W001..W078`, shuffled with `seed = 20261113`): `35` physics-eligible words from `ledger_80.json` (`21 core_law + 14 secondary_physics`) $+$ `3` target-only nouns (`acceleration, speed, velocity`, with `7` overlap words `density, energy, force, mass, space, time, volume`) $+$ `40` OpenStax controls.
+   - Reference commits: preregistration SHA `463ad9f93c8a276b1e0d9ee497198dfa2169d079`, packet prep SHA `343a502862e0d4ac9b082294f229eec7d954ef1b` ([word_coding_key.csv](heldout/word_coding_key.csv), [word_coding_packet.csv](heldout/word_coding_packet.csv), [etymology_coding_prompt.md](heldout/etymology_coding_prompt.md)), and pre-unmasking ingestion SHA `cf6f1352a36e798e65c28c6d77cd320180b3761c` ([ingest_part3_codings.py](heldout/ingest_part3_codings.py), [etymology_codings.csv](heldout/etymology_codings.csv), `packets/part3_session_{1,2,3}.json`).
+   - Across all `78` items (`source_coverage = "single-source"`), `direction_class_maj` assigns `person_first = 25`, `physics_first = 29`, `no_person_sense = 19`, `both_from_start = 3`, and `tie_or_disagreement = 2`.
+
+### 5.2 Target (`n = 10`) vs. Control (`n = 40`) Results & Per-Model Sensitivity
+
+Every rater configuration and aggregation rule yields a null result on the primary `10` vs. `40` comparison (`p_lt_0_05 = false` for `9/9` rules):
+
+| Rule | `targets_10` (`n=10`) | `controls_40` (`n=40`) | Risk Difference | One-Sided Fisher $p$ | Two-Sided Fisher $p$ |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| `maj_3run` | `4/10` (`0.4000`) | `13/40` (`0.3250`) | `+3/40` (`+0.0750`) | `4388533/9529015` (`0.4605`) | `66975323/93384347` (`0.7172`) |
+| `s1_gemini_hydrogen` | `3/10` (`0.3000`) | `11/40` (`0.2750`) | `+1/40` (`+0.0250`) | `38612951/66703105` (`0.5789`) | `1/1` (`1.0000`) |
+| `s2_opus_5_5_memory_75_of_78` | `4/10` (`0.4000`) | `12/40` (`0.3000`) | `+1/10` (`+0.1000`) | `3813173/9529015` (`0.4002`) | `9428173/13340621` (`0.7067`) |
+| `s3_gemini_carbon` | `3/10` (`0.3000`) | `11/40` (`0.2750`) | `+1/40` (`+0.0250`) | `38612951/66703105` (`0.5789`) | `1/1` (`1.0000`) |
+| `cross_family_strict_s1_and_s2` | `3/10` (`0.3000`) | `8/40` (`0.2000`) | `+1/10` (`+0.1000`) | `178257281/466921735` (`0.3818`) | `62622473/93384347` (`0.6706`) |
+| `cross_family_strict_s3_and_s2` | `3/10` (`0.3000`) | `9/40` (`0.2250`) | `+3/40` (`+0.0750`) | `209807921/466921735` (`0.4493`) | `320211259/466921735` (`0.6858`) |
+| `cross_family_lenient_s1_or_s2` | `4/10` (`0.4000`) | `15/40` (`0.3750`) | `+1/40` (`+0.0250`) | `84969349/146746831` (`0.5790`) | `1/1` (`1.0000`) |
+| `cross_family_lenient_s3_or_s2` | `4/10` (`0.4000`) | `14/40` (`0.3500`) | `+1/20` (`+0.0500`) | `381932081/733734155` (`0.5205`) | `1/1` (`1.0000`) |
+| `unanimous_all_3` | `2/10` (`0.2000`) | `6/40` (`0.1500`) | `+1/20` (`+0.0500`) | `18235891/35791910` (`0.5095`) | `2336287/3579191` (`0.6527`) |
+
+Under `maj_3run`, the `4`-category (+ `"tie_or_disagreement"`) distribution is `[person_first=4, physics_first=2, both_from_start=1, no_person_sense=3, tie_or_disagreement=0]` in `targets_10` versus `[13, 11, 1 (heat), 14, 1 (sound)]` in `controls_40`. All `10` targets carry `s2_retrieved_utc = "unverified"`:
+
+| ID | Word | `s1` (`gemini_hydrogen`) | `s2` (`opus_5_5`, unverified) | `s3` (`gemini_carbon`) | `direction_class_maj` | `ledger_80` `kind` |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| `W074` | `acceleration` | `no_person_sense` | `person_first` | `person_first` | `person_first` | *(target-only)* |
+| `W065` | `density` | `no_person_sense` | `physics_first` | `physics_first` | `physics_first` | `household` (`core_law`) |
+| `W046` | `energy` | `person_first` | `person_first` | `physics_first` | `person_first` | `inward first` (`core_law`) |
+| `W051` | `force` | `person_first` | `person_first` | `person_first` | `person_first` | `inward first` (`core_law`) |
+| `W064` | `mass` | `physics_first` | `no_person_sense` | `physics_first` | `physics_first` | `household` (`core_law`) |
+| `W073` | `space` | `physics_first` | `no_person_sense` | `no_person_sense` | `no_person_sense` | `family` (`core_law`) |
+| `W048` | `speed` | `person_first` | `person_first` | `person_first` | `person_first` | *(target-only)* |
+| `W026` | `time` | `both_from_start` | `no_person_sense` | `both_from_start` | `both_from_start` | `family` (`core_law`) |
+| `W011` | `velocity` | `no_person_sense` | `no_person_sense` | `no_person_sense` | `no_person_sense` | *(target-only)* |
+| `W063` | `volume` | `no_person_sense` | `no_person_sense` | `no_person_sense` | `no_person_sense` | `household` (`core_law`) |
+
+- **Control `"person_first"` Words (`13/40` in `maj_3run`)**: `associative, beats, commutative, conduction, discrepancy, displacement, event, hearing, law, precision, theory, thrust, uncertainty`. Six controls are unanimously `"person_first"` (`associative, beats, hearing, law, precision, theory`, where `W001 theory` was live-verified in `s2`). Per-session differences in `controls_40`: `s2` alone codes `second` as `"person_first"` (`s1 = s3 = physics_first`); `s1` alone codes `sound` as `"person_first"` (`W002 sound` was live-verified in `s2` as `both_from_start`, while `s3` coded `no_person_sense`, producing `"tie_or_disagreement"`); `s3` codes `conduction` as `physics_first` (`s1 = s2 = person_first`); `s1` codes `discrepancy, event, uncertainty` as non-`person_first` while `s2 = s3 = person_first`; `s2` codes `commutative` (`no_person_sense`) and `displacement` (`both_from_start`) differently from Gemini (`person_first`).
+- **Inter-Session Reliability**:
+  - `all_78 (N = 78)`: `4`-category Fleiss' $\kappa = 12413/19199 \approx 0.6465$ (`P_bar = 88/117 = 0.7521`, `P_e = 8179/27378 = 0.2987`, unanimous `50/78 = 0.6410`, `2` ties: `W002 sound` and `W072 charge`); binary `"person_first"` Fleiss' $\kappa = 421/616 \approx 0.6834$ (`P_bar = 34/39 = 0.8718`, `P_e = 905/1521 = 0.5950`, unanimous `63/78 = 0.8077`). Pairwise agreement and Cohen's $\kappa$: within-Gemini `s1_vs_s3` is `58/78` ($\kappa = 1361/2141 \approx 0.6357$) `4`-cat / `67/78` ($\kappa = 250/393 \approx 0.6361$) binary; cross-family `s1_vs_s2` is `57/78` ($\kappa = 1310/2129 \approx 0.6153$) / `67/78` ($\kappa = 826/1255 \approx 0.6582$); cross-family `s3_vs_s2` is `61/78` ($\kappa = 2945/4271 \approx 0.6895$) / `70/78` ($\kappa = 319/423 \approx 0.7541$).
+  - `primary_50 (N = 50)`: `4`-category Fleiss' $\kappa = 4967/7892 \approx 0.6294$ (`P_bar = 37/50 = 0.7400`, `P_e = 1679/5625 = 0.2985`, unanimous `31/50 = 0.6200`, `1` tie `W002 sound`); binary Fleiss' $\kappa = 137/212 \approx 0.6462$ (`P_bar = 64/75 = 0.8533`, `P_e = 3293/5625 = 0.5854`, unanimous `39/50 = 0.7800`). Pairwise: `s1_vs_s3` `38/50` ($1163/1763 \approx 0.6597$) `4`-cat / `42/50` ($38/63 \approx 0.6032$) binary; `s1_vs_s2` `35/50` ($1009/1759 \approx 0.5736$) / `42/50` ($163/263 \approx 0.6198$); `s3_vs_s2` `38/50` ($1151/1751 \approx 0.6573$) / `44/50` ($188/263 \approx 0.7148$).
+  - `ledger_physics_35 (N = 35)`: `4`-category Fleiss' $\kappa = 4177/7222 \approx 0.5784$ (unanimous `21/35`, `1` tie `W072 charge`); binary Fleiss' $\kappa = 527/702 \approx 0.7507$ (unanimous `30/35`). Pairwise: `s1_vs_s3` `24/35` ($437/822 \approx 0.5316$) `4`-cat / `31/35` ($73/108 \approx 0.6759$) binary; `s1_vs_s2` `25/35` ($443/793 \approx 0.5586$) / `32/35` ($128/163 \approx 0.7853$); `s3_vs_s2` `27/35` ($521/801 \approx 0.6504$) / `32/35` ($128/163 \approx 0.7853$). On `all_78` and `ledger_physics_35`, within-Gemini agreement (`s1_vs_s3`) is lower than cross-family `s3_vs_s2` on both `4`-category and binary scales; on `primary_50`, both pairs match on `38/50` items (`4`-cat $\kappa = 0.6597$ vs. $0.6573$), while `s3_vs_s2` is higher on binary `"person_first"` (`44/50`, $\kappa = 0.7148$ vs. `42/50`, $\kappa = 0.6032$).
+
+### 5.3 Descriptive Agreement With `ledger_80.json` (`n = 35` Physics-Eligible Words)
+
+Comparing binary `"person_first"` codings against [ledger_80.json](etymology/ledger_80.json) across the `35` physics-eligible words (`21 core_law + 14 secondary_physics`, where `0` of `14` `secondary_physics` words carry `"inward first"` or `"either side"` in `ledger_80.json`, giving $\kappa = 0/1 = 0.0000$ on `secondary_physics_14` for all raters with `13/14` agreement due to `frequency` FP):
+
+| Ledger Reference Definition | Subset (`n`) | `maj_3run` | `s1` (`gemini_hydrogen`) | `s2` (`opus_5_5`, 34/35 unverified) | `s3` (`gemini_carbon`) |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| `inward first` (`5` words) | `all_35` (`35`) | `28/35` (`0.8000`), $\kappa = 36/85$ (`0.4235`) | `28/35` (`0.8000`), $\kappa = 26/75$ (`0.3467`) | `27/35` (`0.7714`), $\kappa = 17/45$ (`0.3778`) | `28/35` (`0.8000`), $\kappa = 26/75$ (`0.3467`) |
+| `inward first` (`5` words) | `core_law_21` (`21`) | `15/21` (`0.7143`), $\kappa = 13/34$ (`0.3824`) | `15/21` (`0.7143`), $\kappa = 4/13$ (`0.3077`) | `14/21` (`0.6667`), $\kappa = 68/215$ (`0.3163`) | `15/21` (`0.7143`), $\kappa = 4/13$ (`0.3077`) |
+| `inward first` (`0` words) | `secondary_physics_14` (`14`) | `13/14` (`0.9286`), $\kappa = 0/1$ (`0.0000`) | `13/14` (`0.9286`), $\kappa = 0/1$ (`0.0000`) | `13/14` (`0.9286`), $\kappa = 0/1$ (`0.0000`) | `13/14` (`0.9286`), $\kappa = 0/1$ (`0.0000`) |
+| `inward first` or `either side` (`8` words) | `all_35` (`35`) | `31/35` (`0.8857`), $\kappa = 33/47$ (`0.7021`) | `31/35` (`0.8857`), $\kappa = 73/108$ (`0.6759`) | `30/35` (`0.8571`), $\kappa = 314/489$ (`0.6421`) | `29/35` (`0.8286`), $\kappa = 37/72$ (`0.5139`) |
+| `inward first` or `either side` (`8` words) | `core_law_21` (`21`) | `18/21` (`0.8571`), $\kappa = 50/71$ (`0.7042`) | `18/21` (`0.8571`), $\kappa = 20/29$ (`0.6897`) | `17/21` (`0.8095`), $\kappa = 67/109$ (`0.6147`) | `16/21` (`0.7619`), $\kappa = 14/29$ (`0.4828`) |
+| `inward first` or `either side` (`0` words) | `secondary_physics_14` (`14`) | `13/14` (`0.9286`), $\kappa = 0/1$ (`0.0000`) | `13/14` (`0.9286`), $\kappa = 0/1$ (`0.0000`) | `13/14` (`0.9286`), $\kappa = 0/1$ (`0.0000`) | `13/14` (`0.9286`), $\kappa = 0/1$ (`0.0000`) |
+
+Full `5 x 8` cross-tabulation of `direction_class_maj` against the `8` `ledger_80.json` `kind` categories (`n = 35`):
+
+| `direction_class_maj` \ `ledger_80` `kind` | `inward first` | `either side` | `outward first` | `both ways` | `family` | `household` | `nothing to add` | `not used` | Total |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| `person_first` | `4` (`energy, force, power, work`) | `3` (`gravity, matter, pressure`) | `0` | `0` | `1` (`distance`) | `1` (`frequency`) | `1` (`accelerate`) | `0` | `10` |
+| `physics_first` | `1` (`inertia`) | `0` | `7` (`attraction, culminate, friction, reflection, resonance, tension, vortex`) | `1` (`vibration`) | `2` (`current, momentum`) | `5` (`density, electric, field, focus, mass`) | `1` (`radiate`) | `1` (`wave`) | `18` |
+| `both_from_start` | `0` | `0` | `0` | `0` | `2` (`light, time`) | `0` | `0` | `0` | `2` |
+| `no_person_sense` | `0` | `0` | `2` (`converge, limit`) | `0` | `1` (`space`) | `1` (`volume`) | `0` | `0` | `4` |
+| `tie_or_disagreement` | `0` | `0` | `0` | `1` (`charge`) | `0` | `0` | `0` | `0` | `1` |
+| Total | `5` | `3` | `9` | `2` | `6` | `7` | `2` | `1` | `35` |
+
+Observed divergences relative to `ledger_80.json`:
+- `inertia` (`ledger_80` `inward first` vs. unanimous `physics_first` in Part 3): `ledger_80.json` coded the Latin root (`inward first`) while noting an early-18th-century English physics attestation, whereas [etymology_coding_prompt.md](heldout/etymology_coding_prompt.md) asks for earliest English attestation (`s1..s3` all `physics_first`).
+- `gravity, matter, pressure` (`ledger_80` `either side` vs. `person_first_maj` in Part 3): `ledger_80.json` placed these in `either side` because their Latin roots carried physical senses while early English senses were non-physical; earliest-English coding under Part 3 rules assigns them `person_first_maj` (so adding `either side` to `inward first` raises `maj_3run` agreement from `28/35`, $\kappa = 0.4235$, to `31/35`, $\kappa = 0.7021$).
+- Remaining false positives and misses under `maj_3run`: `distance` (`family`), `frequency` (`household`), and `accelerate` (`nothing to add`; `s1` coded `no_person_sense`, `s2 = s3 = person_first`) are coded `person_first_maj`. Among `ledger_80` `inward first` entries (`5`), `force` and `power` are unanimous `person_first`, `energy` is `2/3` `person_first` (`s3` coded `physics_first`), `work` is `2/3` `person_first` (`s1` coded `both_from_start`), and `inertia` is missed by all `3` sessions (`s1`, `s2`, `s3` all `physics_first`).
+
+---
+
+## 6. Part VI — Cross-Platform CI & 15-Mutation Verification Audit (Part 4)
+
+### 6.1 Automated GitHub Actions Workflow ([verify-proofs.yml](../.github/workflows/verify-proofs.yml))
+
+Continuous integration runs on `ubuntu-latest` with Python `3.12`, `z3-solver==5.4.1`, and Lean `v4.35.0` (exact toolchain versions parity-checked against [run_all_proofs.py](run_all_proofs.py)), builds and runs `PYTHONDONTWRITEBYTECODE=1 python -B proof/run_all_proofs.py`, and verifies that the freshly generated [verification_certificate.json](verification_certificate.json) matches the committed certificate on all source hashes and proof checks, permitting differences only on `5` declared runtime/environment fields (`execution_os`, `execution_arch`, `python_version`, `lean_version`, `verification_runtime_seconds`).
+
+### 6.2 Independent 15-Mutation Suite ([run_mutation_suite.py](heldout/run_mutation_suite.py) → [mutation_results.json](heldout/mutation_results.json))
+
+In addition to positive theorem/solver runs, [run_mutation_suite.py](heldout/run_mutation_suite.py) applies `15` targeted adversarial mutations in isolated temporary repository copies (executed on Linux `aarch64`, Python `3.12.15`) to confirm each proof gate actually rejects broken definitions, dropped assumptions, weakened Z3 graphs, or altered combinatorial counts. **All `15/15` mutations were caught (`0` surviving, `all_caught = true`)**:
+
+| ID | Target File | Mutated Symbol / Construct | Failing Verifier Check | Outcome |
+| :--- | :--- | :--- | :--- | :--- |
+| `M01` | `proof/lean/TSR/Condition.lean` | `barrier` (Lean definition) | `lake build` fails at `condition_triad_equivalence` / `destructive_null_requires_spatial_separation` | Caught (`exit 1`) |
+| `M02` | `proof/lean/TSR/Condition.lean` | `condition_triad_equivalence` assumption | `lake build` fails at `condition_triad_equivalence` (missing partition assumption `hPart`) | Caught (`exit 1`) |
+| `M03` | `proof/lean/TSR/Condition.lean` | `damped_ripple_strict_decay` assumption | `lake build` fails at `damped_ripple_strict_decay` (`M.alpha_bounds_of_pos hRes` type mismatch) | Caught (`exit 1`) |
+| `M04` | `proof/lean/TSR/MirrorFunctor.lean` | `mirrorAtom` (Lean definition) | `lake build` fails at `mirrorAtom_involutive` / `R_form_involutive` | Caught (`exit 1`) |
+| `M05` | `proof/lean/TSR/MirrorFunctor.lean` | `regionResistant` (Lean definition) | `lake build` fails at `two_level_reading_theorem` and `gravity_open_joint_two_vs_three_regions` | Caught (`exit 1`) |
+| `M06` | `proof/lean/TSR/MirrorFunctor.lean` | `benchmarkRows17` Row 2 | `lake build` fails at `two_level_reading_theorem` and `v57_rule_wordings_benchmark` | Caught (`exit 1`) |
+| `M07` | `proof/lean/TSR/MirrorFunctor.lean` | `benchmarkRows17` Row 7 | `lake build` fails at `two_level_reading_theorem` and `v57_rule_wordings_benchmark` | Caught (`exit 1`) |
+| `M08` | `proof/lean/TSR/MirrorFunctor.lean` | `isSharedEnergyWork` (Lean definition) | `lake build` fails at `v57_rule_wordings_benchmark` (`R_read_v57_ch16` drops `16 -> 14`) | Caught (`exit 1`) |
+| `M09` | `proof/lean/TSR/Crossing.lean` | `canStep` (Lean definition) | `lake build` fails at `step_from_intuition_false` and `unique_weak_diagonal_escape` | Caught (`exit 1`) |
+| `M10` | `proof/lean/TSR/EntityAndMeta.lean` | `sovereignEntityDyn` (Lean definition) | `lake build` fails at `four_way_entity_separation` | Caught (`exit 1`) |
+| `M11` | `proof/z3/structural_rigidity.py` | `_build_stage_relations` (Stage 2) | `run_structural_rigidity()` raises `AssertionError: Expected 2 at Stage 2, got 4` | Caught (`exit 1`) |
+| `M12` | `proof/z3/structural_rigidity.py` | `_build_stage_relations` (Stage 3) | `run_structural_rigidity()` raises `AssertionError: Expected 1 at Stage 3, got 2` | Caught (`exit 1`) |
+| `M13` | `proof/z3/lexical_rigidity.py` | `SLOT_REQUIREMENTS["Expansion"]` | `verify_tsr_sat_and_uniqueness()` raises `AssertionError` (uniqueness violated) | Caught (`exit 1`) |
+| `M14` | `proof/etymology/combinatorial_proofs.py` | `shares_4char_substring` | `verify_part3_invariants()` fails (`N_orth_unrelated` shifts `3152 -> 3153`) and self-tests fail | Caught (`exit 1`) |
+| `M15` | `proof/etymology/combinatorial_proofs.py` | `exact_hypergeometric_upper_tail` | `verify_part3_invariants()` fails (`p` shifts out of `0.287 < p < 0.289` to `0.0429`) | Caught (`exit 1`) |
+
+---
+
+## 7. Single-Command Reproduction
 
 From the repository root on either macOS or Linux (requiring Lean `v4.35.0` via `elan` and Python `3.12` + `z3-solver`):
 
@@ -264,4 +488,13 @@ From the repository root on either macOS or Linux (requiring Lean `v4.35.0` via 
 python proof/run_all_proofs.py
 ```
 
-This single command compiles the Lean 4 suite (`0 sorry`, `0 warnings`, negative nominal-type check, 34-item `#print axioms` audit), runs Z3's $S_{29}$ automorphism solver, 21 1-minimal MUC extractors, and 14-slot WordNet 3.0 + live Oxford / Linux fallback dictionary checks, runs all exact rational 80-word combinatorial audits and self-tests, and writes [verification_certificate.json](verification_certificate.json) with runtime OS/architecture metadata and SHA-256 hashes of all verified source files.
+This single command compiles the Lean 4 suite (`0 sorry`, `0 warnings`, negative nominal-type check, 35-item `#print axioms` audit), runs Z3's $S_{29}$ automorphism solver, 21 1-minimal MUC extractors, and 14-slot WordNet 3.0 + live Oxford / Linux fallback dictionary checks, runs all exact rational 80-word combinatorial audits and self-tests, and writes [verification_certificate.json](verification_certificate.json) with runtime OS/architecture metadata and SHA-256 hashes of all verified source files.
+
+To replay the offline held-out Part 2 and Part 3 verification checks (zero network requests):
+
+```bash
+PYTHONDONTWRITEBYTECODE=1 python3 -B proof/heldout/evaluate_part2.py --verify-offline
+PYTHONDONTWRITEBYTECODE=1 python3 -B proof/heldout/prepare_part3_etymology.py --verify-offline
+PYTHONDONTWRITEBYTECODE=1 python3 -B proof/heldout/ingest_part3_codings.py --verify-offline
+PYTHONDONTWRITEBYTECODE=1 python3 -B proof/heldout/evaluate_part3.py --verify-offline
+```

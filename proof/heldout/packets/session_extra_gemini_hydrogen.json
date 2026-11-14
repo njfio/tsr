@@ -1,0 +1,587 @@
+[
+  {
+    "card_id": "C001",
+    "q1": "Yes",
+    "q2": "No",
+    "q3": "No",
+    "q4": "No",
+    "ruling": "Keep",
+    "rationale": "Expresses a conservation/continuity identity (A_1 v_1 = A_2 v_2); per Chapter 2, 'If it’s an identity or a definition, two names for one thing, [...], there’s nothing to turn around' so 'the relationship keeps its shape.'"
+  },
+  {
+    "card_id": "C002",
+    "q1": "No",
+    "q2": "No",
+    "q3": "Yes",
+    "q4": "No",
+    "ruling": "Invert",
+    "rationale": "Depends on initial spatial length L and thermal resistance/expansion; per Chapter 2, 'If it depends on resistance, or on the distance resistance makes, so that more mass or more separation means more of something, flipping resistant to receptive turns it around.'"
+  },
+  {
+    "card_id": "C003",
+    "q1": "No",
+    "q2": "No",
+    "q3": "Yes",
+    "q4": "No",
+    "ruling": "Invert",
+    "rationale": "Depends on the spatial separation L between boundaries; per Chapter 2, 'If it depends on resistance, or on the distance resistance makes... flipping resistant to receptive turns it around.'"
+  },
+  {
+    "card_id": "C004",
+    "q1": "No",
+    "q2": "No",
+    "q3": "No",
+    "q4": "No",
+    "ruling": "Invert",
+    "rationale": "Describes kinetic friction opposing motion, a direct resistant condition; per Chapter 2, 'If it depends on resistance... flipping resistant to receptive turns it around.'"
+  },
+  {
+    "card_id": "C005",
+    "q1": "No",
+    "q2": "No",
+    "q3": "No",
+    "q4": "No",
+    "ruling": "the rule doesn't say",
+    "rationale": "Relates coordinate time and proper time via relative speed v without mass, spatial separation, or identity; the quoted passages do not decide pure kinematic time dilation."
+  },
+  {
+    "card_id": "C006",
+    "q1": "No",
+    "q2": "Yes",
+    "q3": "Yes",
+    "q4": "No",
+    "ruling": "Invert",
+    "rationale": "Depends on inertial mass m, viscous damping resistance b, and displacement x; per Chapter 2, 'If it depends on resistance, or on the distance resistance makes... flipping resistant to receptive turns it around.'"
+  },
+  {
+    "card_id": "C007",
+    "q1": "Yes",
+    "q2": "No",
+    "q3": "No",
+    "q4": "No",
+    "ruling": "Keep",
+    "rationale": "Defines instantaneous angular velocity as d\\theta/dt; per Chapter 2, 'If it’s an identity or a definition, two names for one thing, [...], there’s nothing to turn around' and 'the relationship keeps its shape.'"
+  },
+  {
+    "card_id": "C008",
+    "q1": "No",
+    "q2": "Yes",
+    "q3": "Yes",
+    "q4": "Yes",
+    "ruling": "Keep",
+    "rationale": "Governs gravitational orbital motion in a shared gravitational field; per Chapter 16, it is 'the work of the one energy both sides share' rather than non-gravitational resistance."
+  },
+  {
+    "card_id": "C009",
+    "q1": "Yes",
+    "q2": "Yes",
+    "q3": "No",
+    "q4": "No",
+    "ruling": "Keep",
+    "rationale": "Expresses an thermodynamic identity (C_p = C_V + R) for an ideal gas; per Chapter 2, 'If it’s an identity or a definition... there’s nothing to turn around, even with mass in it; the terms reflect and the relationship keeps its shape.'"
+  },
+  {
+    "card_id": "C010",
+    "q1": "No",
+    "q2": "Yes",
+    "q3": "No",
+    "q4": "No",
+    "ruling": "Invert",
+    "rationale": "Governs dynamical change in angular momentum of massive particles under external torque; per Chapter 2, 'Physics already measures resistance to a change in motion. It calls it mass... If it depends on resistance... flipping resistant to receptive turns it around.'"
+  },
+  {
+    "card_id": "C011",
+    "q1": "Yes",
+    "q2": "Yes",
+    "q3": "No",
+    "q4": "No",
+    "ruling": "Keep",
+    "rationale": "Expresses the mass-energy equivalence identity E = \\gamma m c^2; per Chapter 2, 'If it’s an identity or a definition, two names for one thing, [...], there’s nothing to turn around, even with mass in it.'"
+  },
+  {
+    "card_id": "C012",
+    "q1": "Yes",
+    "q2": "Yes",
+    "q3": "No",
+    "q4": "No",
+    "ruling": "Keep",
+    "rationale": "Expresses the ideal-gas state identity pV = N k_B T; per Chapter 2, 'If it’s an identity or a definition... there’s nothing to turn around, even with mass in it; the terms reflect and the relationship keeps its shape.'"
+  },
+  {
+    "card_id": "C013",
+    "q1": "Yes",
+    "q2": "No",
+    "q3": "Yes",
+    "q4": "No",
+    "ruling": "Keep",
+    "rationale": "Expresses the Lorentz coordinate transformation identity between inertial frames; per Chapter 2, 'If it’s an identity or a definition... the relationship keeps its shape.'"
+  },
+  {
+    "card_id": "C014",
+    "q1": "Yes",
+    "q2": "Yes",
+    "q3": "No",
+    "q4": "No",
+    "ruling": "Keep",
+    "rationale": "Expresses a conservation/state identity P_1 V_1 = P_2 V_2 for a fixed molar amount n; per Chapter 2, 'If it’s an identity or a definition... there’s nothing to turn around, even with mass in it.'"
+  },
+  {
+    "card_id": "C015",
+    "q1": "No",
+    "q2": "Yes",
+    "q3": "No",
+    "q4": "No",
+    "ruling": "Invert",
+    "rationale": "Describes an inertial barrier where rest mass m > 0 prevents reaching speed c; per Chapter 2, 'If it depends on resistance... flipping resistant to receptive turns it around.'"
+  },
+  {
+    "card_id": "C016",
+    "q1": "Yes",
+    "q2": "No",
+    "q3": "Yes",
+    "q4": "No",
+    "ruling": "Keep",
+    "rationale": "Defines the mathematical condition for a conservative, path-independent force field; per Chapter 2, 'If it’s an identity or a definition... the relationship keeps its shape.'"
+  },
+  {
+    "card_id": "C017",
+    "q1": "Yes",
+    "q2": "No",
+    "q3": "Yes",
+    "q4": "No",
+    "ruling": "Keep",
+    "rationale": "Defines conservative force as the negative spatial gradient of potential energy; per Chapter 2, 'If it’s an identity or a definition... the relationship keeps its shape.'"
+  },
+  {
+    "card_id": "C018",
+    "q1": "No",
+    "q2": "Yes",
+    "q3": "Yes",
+    "q4": "Yes",
+    "ruling": "Keep",
+    "rationale": "Governs spacetime curvature, gravitational potential wells, and gravitational lensing; per Chapter 16, it is 'the work of the one energy both sides share.'"
+  },
+  {
+    "card_id": "C019",
+    "q1": "Yes",
+    "q2": "No",
+    "q3": "No",
+    "q4": "No",
+    "ruling": "Keep",
+    "rationale": "Defines the coefficient of performance of a heat pump as K_P = Q_h / W; per Chapter 2, 'If it’s an identity or a definition, two names for one thing... the relationship keeps its shape.'"
+  },
+  {
+    "card_id": "C020",
+    "q1": "No",
+    "q2": "No",
+    "q3": "No",
+    "q4": "No",
+    "ruling": "Invert",
+    "rationale": "Describes volumetric thermal expansion against material resistance; per Chapter 2, 'If it depends on resistance... flipping resistant to receptive turns it around.'"
+  },
+  {
+    "card_id": "C021",
+    "q1": "No",
+    "q2": "No",
+    "q3": "Yes",
+    "q4": "No",
+    "ruling": "Invert",
+    "rationale": "Describes viscous drag resistance F_s = 6 \\pi r \\eta v; per Chapter 2, 'If it depends on resistance, or on the distance resistance makes... flipping resistant to receptive turns it around.'"
+  },
+  {
+    "card_id": "C022",
+    "q1": "Yes",
+    "q2": "No",
+    "q3": "No",
+    "q4": "No",
+    "ruling": "Keep",
+    "rationale": "Expresses conservation of total energy (E_i = E_f) in an isolated system; per Chapter 2, 'If it’s an identity or a definition... the relationship keeps its shape.'"
+  },
+  {
+    "card_id": "C023",
+    "q1": "Yes",
+    "q2": "No",
+    "q3": "No",
+    "q4": "No",
+    "ruling": "Keep",
+    "rationale": "Expresses the symmetry/frame-invariance principle of physical laws across inertial frames; per Chapter 2, 'If it’s an identity or a definition... the relationship keeps its shape.'"
+  },
+  {
+    "card_id": "C024",
+    "q1": "Yes",
+    "q2": "Yes",
+    "q3": "No",
+    "q4": "No",
+    "ruling": "Keep",
+    "rationale": "Expresses the work-energy equivalence identity W_net = K_B - K_A; per Chapter 2, 'If it’s an identity or a definition... there’s nothing to turn around, even with mass in it.'"
+  },
+  {
+    "card_id": "C025",
+    "q1": "Yes",
+    "q2": "No",
+    "q3": "No",
+    "q4": "No",
+    "ruling": "Keep",
+    "rationale": "Defines impulse as the time integral of force; per Chapter 2, 'If it’s an identity or a definition, two names for one thing... the relationship keeps its shape.'"
+  },
+  {
+    "card_id": "C026",
+    "q1": "No",
+    "q2": "Yes",
+    "q3": "Yes",
+    "q4": "Yes",
+    "ruling": "Keep",
+    "rationale": "Governs work done by Earth's gravitational field across vertical displacement; per Chapter 16, it is 'the work of the one energy both sides share.'"
+  },
+  {
+    "card_id": "C027",
+    "q1": "No",
+    "q2": "Yes",
+    "q3": "No",
+    "q4": "No",
+    "ruling": "Invert",
+    "rationale": "Relates net force to inertial mass m and acceleration; per Chapter 2, 'Physics already measures resistance to a change in motion. It calls it mass... If it depends on resistance... flipping resistant to receptive turns it around.'"
+  },
+  {
+    "card_id": "C028",
+    "q1": "Yes",
+    "q2": "No",
+    "q3": "Yes",
+    "q4": "No",
+    "ruling": "Keep",
+    "rationale": "Expresses the Lorentz time transformation identity between inertial frames; per Chapter 2, 'If it’s an identity or a definition... the relationship keeps its shape.'"
+  },
+  {
+    "card_id": "C029",
+    "q1": "Yes",
+    "q2": "No",
+    "q3": "No",
+    "q4": "No",
+    "ruling": "Keep",
+    "rationale": "Expresses the kinematic derivative identity v(t) = dx/dt for simple harmonic motion; per Chapter 2, 'If it’s an identity or a definition... the relationship keeps its shape.'"
+  },
+  {
+    "card_id": "C030",
+    "q1": "Yes",
+    "q2": "No",
+    "q3": "No",
+    "q4": "No",
+    "ruling": "Keep",
+    "rationale": "Expresses the vector decomposition identity \\vec{a} = \\vec{a}_C + \\vec{a}_T; per Chapter 2, 'If it’s an identity or a definition... the relationship keeps its shape.'"
+  },
+  {
+    "card_id": "C031",
+    "q1": "No",
+    "q2": "Yes",
+    "q3": "No",
+    "q4": "No",
+    "ruling": "Invert",
+    "rationale": "Depends on molar mass M (inertial resistance of gas molecules) limiting sound speed; per Chapter 2, 'If it depends on resistance... flipping resistant to receptive turns it around.'"
+  },
+  {
+    "card_id": "C032",
+    "q1": "Yes",
+    "q2": "Yes",
+    "q3": "No",
+    "q4": "No",
+    "ruling": "Keep",
+    "rationale": "Defines mass density as \\rho = m / V; per Chapter 2, 'If it’s an identity or a definition, two names for one thing, [...], there’s nothing to turn around, even with mass in it.'"
+  },
+  {
+    "card_id": "C033",
+    "q1": "Yes",
+    "q2": "Yes",
+    "q3": "Yes",
+    "q4": "No",
+    "ruling": "Keep",
+    "rationale": "Defines moment of inertia I = \\sum_j m_j r_j^2; per Chapter 2, 'If it’s an identity or a definition, two names for one thing, [...], there’s nothing to turn around, even with mass in it.'"
+  },
+  {
+    "card_id": "C034",
+    "q1": "Yes",
+    "q2": "No",
+    "q3": "Yes",
+    "q4": "No",
+    "ruling": "Keep",
+    "rationale": "Defines Young's modulus as the ratio of tensile stress to tensile strain; per Chapter 2, 'If it’s an identity or a definition, two names for one thing... the relationship keeps its shape.'"
+  },
+  {
+    "card_id": "C035",
+    "q1": "Yes",
+    "q2": "No",
+    "q3": "No",
+    "q4": "No",
+    "ruling": "Keep",
+    "rationale": "Expresses the principle of relativity (symmetry/equivalence of all inertial frames); per Chapter 2, 'If it’s an identity or a definition... the relationship keeps its shape.'"
+  },
+  {
+    "card_id": "C036",
+    "q1": "Yes",
+    "q2": "No",
+    "q3": "No",
+    "q4": "No",
+    "ruling": "Keep",
+    "rationale": "Defines the adiabatic index as \\gamma = C_p / C_V; per Chapter 2, 'If it’s an identity or a definition, two names for one thing... the relationship keeps its shape.'"
+  },
+  {
+    "card_id": "C037",
+    "q1": "No",
+    "q2": "No",
+    "q3": "Yes",
+    "q4": "No",
+    "ruling": "Invert",
+    "rationale": "Depends on spatial separation \\Delta x between events; per Chapter 2, 'If it depends on resistance, or on the distance resistance makes, so that more mass or more separation means more of something, flipping resistant to receptive turns it around.'"
+  },
+  {
+    "card_id": "C038",
+    "q1": "Yes",
+    "q2": "Yes",
+    "q3": "No",
+    "q4": "No",
+    "ruling": "Keep",
+    "rationale": "Defines center-of-mass acceleration as the mass-weighted average of particle accelerations; per Chapter 2, 'If it’s an identity or a definition... there’s nothing to turn around, even with mass in it.'"
+  },
+  {
+    "card_id": "C039",
+    "q1": "Yes",
+    "q2": "No",
+    "q3": "Yes",
+    "q4": "No",
+    "ruling": "Keep",
+    "rationale": "Defines dynamic viscosity \\eta = F L / (v A); per Chapter 2, 'If it’s an identity or a definition, two names for one thing... the relationship keeps its shape.'"
+  },
+  {
+    "card_id": "C040",
+    "q1": "Yes",
+    "q2": "Yes",
+    "q3": "No",
+    "q4": "No",
+    "ruling": "Keep",
+    "rationale": "Expresses the rest-energy equivalence identity E_0 = m c^2; per Chapter 2, 'If it’s an identity or a definition, two names for one thing, [...], there’s nothing to turn around, even with mass in it.'"
+  },
+  {
+    "card_id": "C041",
+    "q1": "Yes",
+    "q2": "Yes",
+    "q3": "No",
+    "q4": "No",
+    "ruling": "Keep",
+    "rationale": "Expresses the adiabatic conservation/state identity p V^\\gamma = constant for a fixed quantity of gas; per Chapter 2, 'If it’s an identity or a definition... there’s nothing to turn around, even with mass in it.'"
+  },
+  {
+    "card_id": "C042",
+    "q1": "Yes",
+    "q2": "No",
+    "q3": "Yes",
+    "q4": "No",
+    "ruling": "Keep",
+    "rationale": "Expresses the frame-invariance identity of the spacetime interval s^2; per Chapter 2, 'If it’s an identity or a definition... the relationship keeps its shape.'"
+  },
+  {
+    "card_id": "C043",
+    "q1": "Yes",
+    "q2": "No",
+    "q3": "No",
+    "q4": "No",
+    "ruling": "Keep",
+    "rationale": "Defines angular wave number k \\equiv 2 \\pi / \\lambda; per Chapter 2, 'If it’s an identity or a definition, two names for one thing... the relationship keeps its shape.'"
+  },
+  {
+    "card_id": "C044",
+    "q1": "Yes",
+    "q2": "No",
+    "q3": "No",
+    "q4": "No",
+    "ruling": "Keep",
+    "rationale": "Defines the Carnot refrigerator coefficient of performance K_R = T_c / (T_h - T_c); per Chapter 2, 'If it’s an identity or a definition... the relationship keeps its shape.'"
+  },
+  {
+    "card_id": "C045",
+    "q1": "Yes",
+    "q2": "No",
+    "q3": "No",
+    "q4": "No",
+    "ruling": "Keep",
+    "rationale": "Expresses a purely kinematic identity for constant-acceleration motion; per Chapter 2, 'If it’s an identity or a definition... the relationship keeps its shape.'"
+  },
+  {
+    "card_id": "C046",
+    "q1": "No",
+    "q2": "Yes",
+    "q3": "Yes",
+    "q4": "Yes",
+    "ruling": "Keep",
+    "rationale": "Governs gravitational acceleration down an incline; per Chapter 16, gravitational work is 'the work of the one energy both sides share.'"
+  },
+  {
+    "card_id": "C047",
+    "q1": "No",
+    "q2": "No",
+    "q3": "Yes",
+    "q4": "No",
+    "ruling": "Invert",
+    "rationale": "Depends on slab thickness d (spatial separation) and thermal conduction resistance; per Chapter 2, 'If it depends on resistance, or on the distance resistance makes... flipping resistant to receptive turns it around.'"
+  },
+  {
+    "card_id": "C048",
+    "q1": "No",
+    "q2": "Yes",
+    "q3": "No",
+    "q4": "Yes",
+    "ruling": "Keep",
+    "rationale": "Balances normal force against gravitational weight mg; per Chapter 16, gravitational coupling is 'the work of the one energy both sides share.'"
+  },
+  {
+    "card_id": "C049",
+    "q1": "No",
+    "q2": "No",
+    "q3": "No",
+    "q4": "No",
+    "ruling": "the rule doesn't say",
+    "rationale": "Describes the non-relativistic Doppler shift from relative motion through a medium without mass, spatial separation, or identity; the quoted passages do not decide this."
+  },
+  {
+    "card_id": "C050",
+    "q1": "Yes",
+    "q2": "Yes",
+    "q3": "No",
+    "q4": "Yes",
+    "ruling": "Keep",
+    "rationale": "Expresses the equivalence principle between gravitational and inertial mass/frames; per Chapter 2 and Chapter 16, it is both an equivalence identity and 'the work of the one energy both sides share.'"
+  },
+  {
+    "card_id": "C051",
+    "q1": "No",
+    "q2": "Yes",
+    "q3": "Yes",
+    "q4": "Yes",
+    "ruling": "Keep",
+    "rationale": "Governs Keplerian orbital period in a shared gravitational field; per Chapter 16, it is 'the work of the one energy both sides share.'"
+  },
+  {
+    "card_id": "C052",
+    "q1": "Yes",
+    "q2": "No",
+    "q3": "No",
+    "q4": "No",
+    "ruling": "Keep",
+    "rationale": "Expresses the Cartesian vector component identity for velocity; per Chapter 2, 'If it’s an identity or a definition... the relationship keeps its shape.'"
+  },
+  {
+    "card_id": "C053",
+    "q1": "Yes",
+    "q2": "No",
+    "q3": "No",
+    "q4": "No",
+    "ruling": "Keep",
+    "rationale": "Expresses Newton's first law (inertial frame invariance/conservation of velocity when net force is zero); per Chapter 2, 'If it’s an identity or a definition... the relationship keeps its shape.'"
+  },
+  {
+    "card_id": "C054",
+    "q1": "Yes",
+    "q2": "No",
+    "q3": "No",
+    "q4": "No",
+    "ruling": "Keep",
+    "rationale": "Expresses the reciprocal action-reaction pairing \\vec{F}_{AB} = -\\vec{F}_{BA}; per Chapter 2, 'If it’s an identity or a definition... the relationship keeps its shape.'"
+  },
+  {
+    "card_id": "C055",
+    "q1": "Yes",
+    "q2": "No",
+    "q3": "No",
+    "q4": "No",
+    "ruling": "Keep",
+    "rationale": "Defines wave phase speed as v = \\omega / k; per Chapter 2, 'If it’s an identity or a definition, two names for one thing... the relationship keeps its shape.'"
+  },
+  {
+    "card_id": "C056",
+    "q1": "Yes",
+    "q2": "No",
+    "q3": "No",
+    "q4": "No",
+    "ruling": "Keep",
+    "rationale": "Expresses the Cartesian second-derivative identity for acceleration; per Chapter 2, 'If it’s an identity or a definition... the relationship keeps its shape.'"
+  },
+  {
+    "card_id": "C057",
+    "q1": "Yes",
+    "q2": "No",
+    "q3": "No",
+    "q4": "No",
+    "ruling": "Keep",
+    "rationale": "Expresses the kinematic identity |v_max| = A \\omega in simple harmonic motion; per Chapter 2, 'If it’s an identity or a definition... the relationship keeps its shape.'"
+  },
+  {
+    "card_id": "C058",
+    "q1": "Yes",
+    "q2": "No",
+    "q3": "No",
+    "q4": "No",
+    "ruling": "Keep",
+    "rationale": "Expresses the kinematic average-velocity identity \\bar{v} = (v_0 + v)/2; per Chapter 2, 'If it’s an identity or a definition... the relationship keeps its shape.'"
+  },
+  {
+    "card_id": "C059",
+    "q1": "Yes",
+    "q2": "No",
+    "q3": "No",
+    "q4": "No",
+    "ruling": "Keep",
+    "rationale": "Expresses the equipartition identity C_V = (d/2) R; per Chapter 2, 'If it’s an identity or a definition... the relationship keeps its shape.'"
+  },
+  {
+    "card_id": "C060",
+    "q1": "No",
+    "q2": "Yes",
+    "q3": "No",
+    "q4": "Yes",
+    "ruling": "Keep",
+    "rationale": "Governs relativistic spacetime curvature produced by mass-energy; per Chapter 16, it is 'the work of the one energy both sides share.'"
+  },
+  {
+    "card_id": "C061",
+    "q1": "No",
+    "q2": "Yes",
+    "q3": "Yes",
+    "q4": "Yes",
+    "ruling": "Keep",
+    "rationale": "Governs Newtonian universal gravitation between masses across space; per Chapter 16, it is 'the work of the one energy both sides share.'"
+  },
+  {
+    "card_id": "C062",
+    "q1": "No",
+    "q2": "No",
+    "q3": "Yes",
+    "q4": "No",
+    "ruling": "Invert",
+    "rationale": "Depends on spatial displacement \\vec{x} and elastic spring resistance k; per Chapter 2, 'If it depends on resistance, or on the distance resistance makes... flipping resistant to receptive turns it around.'"
+  },
+  {
+    "card_id": "C063",
+    "q1": "No",
+    "q2": "No",
+    "q3": "Yes",
+    "q4": "No",
+    "ruling": "Invert",
+    "rationale": "Depends on spatial length L_0 and its contraction across inertial frames; per Chapter 2, 'If it depends on resistance, or on the distance resistance makes... flipping resistant to receptive turns it around.'"
+  },
+  {
+    "card_id": "C064",
+    "q1": "No",
+    "q2": "No",
+    "q3": "Yes",
+    "q4": "Yes",
+    "ruling": "Keep",
+    "rationale": "Governs vertical free fall in Earth's gravitational field; per Chapter 16, gravitational motion is 'the work of the one energy both sides share.'"
+  },
+  {
+    "card_id": "C065",
+    "q1": "Yes",
+    "q2": "No",
+    "q3": "No",
+    "q4": "No",
+    "ruling": "Keep",
+    "rationale": "Defines bulk modulus B as the ratio of bulk stress to bulk strain; per Chapter 2, 'If it’s an identity or a definition, two names for one thing... the relationship keeps its shape.'"
+  }
+]

@@ -1,0 +1,587 @@
+[
+  {
+    "card_id": "C001",
+    "q1": "Yes",
+    "q2": "No",
+    "q3": "No",
+    "q4": "No",
+    "ruling": "Keep",
+    "rationale": "Conservation of flow rate in a streamtube is an identity of continuity; \"there's nothing to turn around.\""
+  },
+  {
+    "card_id": "C002",
+    "q1": "No",
+    "q2": "No",
+    "q3": "Yes",
+    "q4": "No",
+    "ruling": "Invert",
+    "rationale": "Expansion scales with initial length L, so it \"depends on the distance resistance makes\"; more length means more of it."
+  },
+  {
+    "card_id": "C003",
+    "q1": "Yes",
+    "q2": "No",
+    "q3": "Yes",
+    "q4": "No",
+    "ruling": "Keep",
+    "rationale": "Harmonic wavelengths are defined by the cavity condition; a defining relation has \"nothing to turn around.\""
+  },
+  {
+    "card_id": "C004",
+    "q1": "No",
+    "q2": "No",
+    "q3": "No",
+    "q4": "No",
+    "ruling": "Invert",
+    "rationale": "Kinetic friction is resistance to sliding, so \"resistant becomes receptive\" and the relationship \"turns around.\""
+  },
+  {
+    "card_id": "C005",
+    "q1": "No",
+    "q2": "No",
+    "q3": "No",
+    "q4": "No",
+    "ruling": "the rule doesn't say",
+    "rationale": "Time dilation involves no mass, no spatial separation, and no resistance; the quoted passages address only resistance, distance, identity, or shared energy."
+  },
+  {
+    "card_id": "C006",
+    "q1": "No",
+    "q2": "Yes",
+    "q3": "Yes",
+    "q4": "No",
+    "ruling": "Invert",
+    "rationale": "Damped-oscillator dynamics depend on inertial and damping resistance with mass; \"more mass... turns it around.\""
+  },
+  {
+    "card_id": "C007",
+    "q1": "Yes",
+    "q2": "No",
+    "q3": "No",
+    "q4": "No",
+    "ruling": "Keep",
+    "rationale": "Angular velocity is defined as a time derivative; \"an identity or a definition... the relationship keeps its shape.\""
+  },
+  {
+    "card_id": "C008",
+    "q1": "No",
+    "q2": "Yes",
+    "q3": "Yes",
+    "q4": "Yes",
+    "ruling": "Keep",
+    "rationale": "The orbital-period law is gravitational, \"the work of the one energy both sides share\" (Chapter 16), not a resistance relation."
+  },
+  {
+    "card_id": "C009",
+    "q1": "Yes",
+    "q2": "Yes",
+    "q3": "No",
+    "q4": "No",
+    "ruling": "Keep",
+    "rationale": "Ideal-gas heat-capacity identity; \"nothing to turn around, even with mass in it.\""
+  },
+  {
+    "card_id": "C010",
+    "q1": "Yes",
+    "q2": "No",
+    "q3": "No",
+    "q4": "No",
+    "ruling": "Keep",
+    "rationale": "Torque equals rate of change of angular momentum, a conservation-type identity that \"keeps its shape.\""
+  },
+  {
+    "card_id": "C011",
+    "q1": "Yes",
+    "q2": "Yes",
+    "q3": "No",
+    "q4": "No",
+    "ruling": "Keep",
+    "rationale": "Relativistic energy relations are defining mass–energy identities, \"two names for one thing... even with mass in it.\""
+  },
+  {
+    "card_id": "C012",
+    "q1": "Yes",
+    "q2": "Yes",
+    "q3": "No",
+    "q4": "No",
+    "ruling": "Keep",
+    "rationale": "The ideal-gas equation of state is a defining relation of equilibrium, so it \"keeps its shape.\""
+  },
+  {
+    "card_id": "C013",
+    "q1": "Yes",
+    "q2": "No",
+    "q3": "Yes",
+    "q4": "No",
+    "ruling": "Keep",
+    "rationale": "The Lorentz spatial transform is a frame-correspondence identity, not a resistance relation."
+  },
+  {
+    "card_id": "C014",
+    "q1": "Yes",
+    "q2": "Yes",
+    "q3": "No",
+    "q4": "No",
+    "ruling": "Keep",
+    "rationale": "Boyle's relation equates two states of one gas; an identity, \"nothing to turn around.\""
+  },
+  {
+    "card_id": "C015",
+    "q1": "No",
+    "q2": "Yes",
+    "q3": "No",
+    "q4": "No",
+    "ruling": "Invert",
+    "rationale": "The speed limit on massive bodies is an inertial barrier—unbounded resistance to acceleration—so it \"depends on resistance... more mass means more.\""
+  },
+  {
+    "card_id": "C016",
+    "q1": "Yes",
+    "q2": "No",
+    "q3": "No",
+    "q4": "No",
+    "ruling": "Keep",
+    "rationale": "The mixed-derivative equality is the defining condition of a conservative field; a definition \"keeps its shape.\""
+  },
+  {
+    "card_id": "C017",
+    "q1": "Yes",
+    "q2": "No",
+    "q3": "Yes",
+    "q4": "No",
+    "ruling": "Keep",
+    "rationale": "F = −dU/dl is the defining relation between conservative force and potential; \"two names for one thing.\""
+  },
+  {
+    "card_id": "C018",
+    "q1": "No",
+    "q2": "Yes",
+    "q3": "Yes",
+    "q4": "Yes",
+    "ruling": "Keep",
+    "rationale": "Gravitational redshift and lensing are curvature effects, \"the work of the one energy both sides share.\""
+  },
+  {
+    "card_id": "C019",
+    "q1": "Yes",
+    "q2": "No",
+    "q3": "No",
+    "q4": "No",
+    "ruling": "Keep",
+    "rationale": "The coefficient of performance is defined as a heat-to-work ratio; a definition has \"nothing to turn around.\""
+  },
+  {
+    "card_id": "C020",
+    "q1": "No",
+    "q2": "No",
+    "q3": "No",
+    "q4": "No",
+    "ruling": "the rule doesn't say",
+    "rationale": "Volume expansion depends on volume and temperature, not resistance, distance, identity, or shared energy; the quoted passages do not decide it."
+  },
+  {
+    "card_id": "C021",
+    "q1": "No",
+    "q2": "No",
+    "q3": "Yes",
+    "q4": "No",
+    "ruling": "Invert",
+    "rationale": "Stokes drag is resistance to motion through the fluid, so \"resistant becomes receptive\" and it \"turns around.\""
+  },
+  {
+    "card_id": "C022",
+    "q1": "Yes",
+    "q2": "No",
+    "q3": "No",
+    "q4": "No",
+    "ruling": "Keep",
+    "rationale": "Energy conservation in an isolated system is an identity of total energy; \"the relationship keeps its shape.\""
+  },
+  {
+    "card_id": "C023",
+    "q1": "Yes",
+    "q2": "No",
+    "q3": "No",
+    "q4": "No",
+    "ruling": "Keep",
+    "rationale": "Frame-invariance of the laws is a symmetry principle—an identity across frames—with \"nothing to turn around.\""
+  },
+  {
+    "card_id": "C024",
+    "q1": "Yes",
+    "q2": "Yes",
+    "q3": "Yes",
+    "q4": "No",
+    "ruling": "Keep",
+    "rationale": "The work–energy theorem is an equivalence identity, \"two names for one thing... even with mass in it.\""
+  },
+  {
+    "card_id": "C025",
+    "q1": "Yes",
+    "q2": "No",
+    "q3": "No",
+    "q4": "No",
+    "ruling": "Keep",
+    "rationale": "Impulse is defined as the time integral of force; a definition \"keeps its shape.\""
+  },
+  {
+    "card_id": "C026",
+    "q1": "No",
+    "q2": "Yes",
+    "q3": "Yes",
+    "q4": "Yes",
+    "ruling": "Keep",
+    "rationale": "Work in the gravitational potential well is gravitational shared-energy coupling, \"the work of the one energy both sides share.\""
+  },
+  {
+    "card_id": "C027",
+    "q1": "No",
+    "q2": "Yes",
+    "q3": "No",
+    "q4": "No",
+    "ruling": "Invert",
+    "rationale": "F = ma is the paradigm resistance law: \"Physics already measures resistance to a change in motion. It calls it mass,\" so it \"turns around.\""
+  },
+  {
+    "card_id": "C028",
+    "q1": "Yes",
+    "q2": "No",
+    "q3": "Yes",
+    "q4": "No",
+    "ruling": "Keep",
+    "rationale": "The Lorentz time transform is a frame-correspondence identity, which \"keeps its shape.\""
+  },
+  {
+    "card_id": "C029",
+    "q1": "Yes",
+    "q2": "No",
+    "q3": "Yes",
+    "q4": "No",
+    "ruling": "Keep",
+    "rationale": "The SHM velocity formula is the definitional derivative of the stated displacement—an identity with \"nothing to turn around.\""
+  },
+  {
+    "card_id": "C030",
+    "q1": "Yes",
+    "q2": "No",
+    "q3": "No",
+    "q4": "No",
+    "ruling": "Keep",
+    "rationale": "Decomposition of acceleration into normal and tangential parts is an identity of vector components."
+  },
+  {
+    "card_id": "C031",
+    "q1": "No",
+    "q2": "Yes",
+    "q3": "No",
+    "q4": "No",
+    "ruling": "Invert",
+    "rationale": "Sound speed is set by the medium's inertia against elastic restoration—mass-dependent resistance—so the flip \"turns it around.\""
+  },
+  {
+    "card_id": "C032",
+    "q1": "Yes",
+    "q2": "Yes",
+    "q3": "No",
+    "q4": "No",
+    "ruling": "Keep",
+    "rationale": "Mass–density–volume is a defining identity, \"two names for one thing... even with mass in it.\""
+  },
+  {
+    "card_id": "C033",
+    "q1": "Yes",
+    "q2": "Yes",
+    "q3": "Yes",
+    "q4": "No",
+    "ruling": "Keep",
+    "rationale": "I = Σm r² defines the moment of inertia; an identity has \"nothing to turn around, even with mass in it.\""
+  },
+  {
+    "card_id": "C034",
+    "q1": "No",
+    "q2": "No",
+    "q3": "Yes",
+    "q4": "No",
+    "ruling": "Invert",
+    "rationale": "Young's modulus is stiffness—resistance to change of shape—and scales with lengths, so it \"depends on resistance... [and] the distance resistance makes.\""
+  },
+  {
+    "card_id": "C035",
+    "q1": "Yes",
+    "q2": "No",
+    "q3": "No",
+    "q4": "No",
+    "ruling": "Keep",
+    "rationale": "Equivalence of inertial frames is a symmetry/frame-invariance principle; an identity that \"keeps its shape.\""
+  },
+  {
+    "card_id": "C036",
+    "q1": "Yes",
+    "q2": "No",
+    "q3": "No",
+    "q4": "No",
+    "ruling": "Keep",
+    "rationale": "The adiabatic index is defined as a ratio; a definition has \"nothing to turn around.\""
+  },
+  {
+    "card_id": "C037",
+    "q1": "No",
+    "q2": "No",
+    "q3": "Yes",
+    "q4": "No",
+    "ruling": "Invert",
+    "rationale": "The simultaneity gap grows with spatial separation Δx, so it \"depends on the distance resistance makes\"; more separation means more of it."
+  },
+  {
+    "card_id": "C038",
+    "q1": "Yes",
+    "q2": "Yes",
+    "q3": "No",
+    "q4": "No",
+    "ruling": "Keep",
+    "rationale": "The center-of-mass acceleration identity is definitional—\"nothing to turn around, even with mass in it.\""
+  },
+  {
+    "card_id": "C039",
+    "q1": "No",
+    "q2": "No",
+    "q3": "Yes",
+    "q4": "No",
+    "ruling": "Invert",
+    "rationale": "Viscosity is shear resistance across the plate gap L; it \"depends on resistance... [and] the distance resistance makes.\""
+  },
+  {
+    "card_id": "C040",
+    "q1": "Yes",
+    "q2": "Yes",
+    "q3": "No",
+    "q4": "No",
+    "ruling": "Keep",
+    "rationale": "E₀ = mc² is the mass–energy equivalence identity, \"two names for one thing... even with mass in it.\""
+  },
+  {
+    "card_id": "C041",
+    "q1": "Yes",
+    "q2": "Yes",
+    "q3": "No",
+    "q4": "No",
+    "ruling": "Keep",
+    "rationale": "The adiabatic pV^γ relation is a state identity for one gas along the process; it \"keeps its shape.\""
+  },
+  {
+    "card_id": "C042",
+    "q1": "Yes",
+    "q2": "No",
+    "q3": "Yes",
+    "q4": "No",
+    "ruling": "Keep",
+    "rationale": "Invariance of the spacetime interval is a frame-invariance identity—\"two names for one thing.\" keeping its shape."
+  },
+  {
+    "card_id": "C043",
+    "q1": "Yes",
+    "q2": "No",
+    "q3": "Yes",
+    "q4": "No",
+    "ruling": "Keep",
+    "rationale": "Angular wave number is defined as 2π/λ; a definition has \"nothing to turn around.\""
+  },
+  {
+    "card_id": "C044",
+    "q1": "Yes",
+    "q2": "No",
+    "q3": "No",
+    "q4": "No",
+    "ruling": "Keep",
+    "rationale": "The Carnot-refrigerator COP is a defined identity of the reversible cycle; it \"keeps its shape.\""
+  },
+  {
+    "card_id": "C045",
+    "q1": "Yes",
+    "q2": "No",
+    "q3": "No",
+    "q4": "No",
+    "ruling": "Keep",
+    "rationale": "The position–time formula is the kinematic identity defining uniformly accelerated motion; \"nothing to turn around.\""
+  },
+  {
+    "card_id": "C046",
+    "q1": "No",
+    "q2": "Yes",
+    "q3": "Yes",
+    "q4": "No",
+    "ruling": "Invert",
+    "rationale": "Rolling acceleration is limited by translational and rotational inertia (m, I)—resistance to change in motion—so it \"turns around.\""
+  },
+  {
+    "card_id": "C047",
+    "q1": "No",
+    "q2": "No",
+    "q3": "Yes",
+    "q4": "No",
+    "ruling": "Invert",
+    "rationale": "Conductive heat rate is transport across thickness d against thermal resistance; it \"depends on... the distance resistance makes.\""
+  },
+  {
+    "card_id": "C048",
+    "q1": "Yes",
+    "q2": "Yes",
+    "q3": "No",
+    "q4": "No",
+    "ruling": "Keep",
+    "rationale": "N = mg is an equilibrium balance identity of two forces; \"nothing to turn around, even with mass in it.\""
+  },
+  {
+    "card_id": "C049",
+    "q1": "No",
+    "q2": "No",
+    "q3": "No",
+    "q4": "No",
+    "ruling": "the rule doesn't say",
+    "rationale": "The Doppler shift is a relative-motion frequency effect with no mass, distance, or resistance dependence; the quoted passages do not decide it."
+  },
+  {
+    "card_id": "C050",
+    "q1": "Yes",
+    "q2": "Yes",
+    "q3": "No",
+    "q4": "Yes",
+    "ruling": "Keep",
+    "rationale": "The equivalence principle is literally an equivalence identity of inertia and gravity—\"two names for one thing... even with mass in it.\""
+  },
+  {
+    "card_id": "C051",
+    "q1": "No",
+    "q2": "Yes",
+    "q3": "Yes",
+    "q4": "Yes",
+    "ruling": "Keep",
+    "rationale": "Kepler's law is a Newtonian gravitational/orbital law, \"the work of the one energy both sides share,\" not resistance-based."
+  },
+  {
+    "card_id": "C052",
+    "q1": "Yes",
+    "q2": "No",
+    "q3": "No",
+    "q4": "No",
+    "ruling": "Keep",
+    "rationale": "Cartesian components of velocity are a definitional decomposition; it \"keeps its shape.\""
+  },
+  {
+    "card_id": "C053",
+    "q1": "Yes",
+    "q2": "No",
+    "q3": "No",
+    "q4": "No",
+    "ruling": "Keep",
+    "rationale": "Newton's first law is conservation of velocity/momentum—an identity of constant motion—\"nothing to turn around.\""
+  },
+  {
+    "card_id": "C054",
+    "q1": "Yes",
+    "q2": "No",
+    "q3": "No",
+    "q4": "No",
+    "ruling": "Keep",
+    "rationale": "The third law is a reciprocal action–reaction pairing, one interaction with two sides; \"the relationship keeps its shape.\""
+  },
+  {
+    "card_id": "C055",
+    "q1": "Yes",
+    "q2": "No",
+    "q3": "No",
+    "q4": "No",
+    "ruling": "Keep",
+    "rationale": "Phase speed is defined as ω/k; a definition has \"nothing to turn around.\""
+  },
+  {
+    "card_id": "C056",
+    "q1": "Yes",
+    "q2": "No",
+    "q3": "No",
+    "q4": "No",
+    "ruling": "Keep",
+    "rationale": "Acceleration components are definitional second derivatives along the basis; an identity that \"keeps its shape.\""
+  },
+  {
+    "card_id": "C057",
+    "q1": "Yes",
+    "q2": "No",
+    "q3": "Yes",
+    "q4": "No",
+    "ruling": "Keep",
+    "rationale": "v_max = Aω follows identity-wise from the SHM solution; \"nothing to turn around.\""
+  },
+  {
+    "card_id": "C058",
+    "q1": "Yes",
+    "q2": "No",
+    "q3": "No",
+    "q4": "No",
+    "ruling": "Keep",
+    "rationale": "The average of endpoint velocities is a kinematic identity for constant acceleration; \"the relationship keeps its shape.\""
+  },
+  {
+    "card_id": "C059",
+    "q1": "Yes",
+    "q2": "No",
+    "q3": "No",
+    "q4": "No",
+    "ruling": "Keep",
+    "rationale": "C_V = (d/2)R is the equipartition defining relation for the heat capacity; \"nothing to turn around.\""
+  },
+  {
+    "card_id": "C060",
+    "q1": "No",
+    "q2": "Yes",
+    "q3": "Yes",
+    "q4": "Yes",
+    "ruling": "Keep",
+    "rationale": "Mass–energy curving spacetime is \"the work of the one energy both sides share\" (Chapter 16/17), not a resistance relation."
+  },
+  {
+    "card_id": "C061",
+    "q1": "No",
+    "q2": "Yes",
+    "q3": "Yes",
+    "q4": "Yes",
+    "ruling": "Keep",
+    "rationale": "Universal gravitation is shared gravitational/field energy across space—\"the work of the one energy both sides share.\"—so it keeps its shape."
+  },
+  {
+    "card_id": "C062",
+    "q1": "No",
+    "q2": "No",
+    "q3": "Yes",
+    "q4": "No",
+    "ruling": "Invert",
+    "rationale": "Hooke's restoring force is elastic resistance that grows with displacement: \"depends on resistance... more [displacement] means more.\""
+  },
+  {
+    "card_id": "C063",
+    "q1": "No",
+    "q2": "No",
+    "q3": "Yes",
+    "q4": "No",
+    "ruling": "Invert",
+    "rationale": "Length contraction is a relation over measured length itself—\"the distance resistance makes\"—so the flip \"turns it around.\""
+  },
+  {
+    "card_id": "C064",
+    "q1": "No",
+    "q2": "No",
+    "q3": "No",
+    "q4": "Yes",
+    "ruling": "Keep",
+    "rationale": "Free fall is motion governed solely by gravity, so it belongs to \"the work of the one energy both sides share.\" and keeps its shape."
+  },
+  {
+    "card_id": "C065",
+    "q1": "No",
+    "q2": "No",
+    "q3": "No",
+    "q4": "No",
+    "ruling": "Invert",
+    "rationale": "Bulk modulus explicitly \"measures a material's resistance to uniform hydrostatic compression\"; since [truncated in paste]"
+  }
+]

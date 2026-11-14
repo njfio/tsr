@@ -1,0 +1,79 @@
+item_id,word,in_targets_10,in_controls_40,in_ledger_physics_35,ledger_stratum,ledger_kind,control_openstax_chapters,preregistration_commit_sha
+W001,theory,false,true,false,,,V1C1,463ad9f93c8a276b1e0d9ee497198dfa2169d079
+W002,sound,false,true,false,,,V1C17,463ad9f93c8a276b1e0d9ee497198dfa2169d079
+W003,friction,false,false,true,secondary_physics,outward first,,463ad9f93c8a276b1e0d9ee497198dfa2169d079
+W004,focus,false,false,true,secondary_physics,household,,463ad9f93c8a276b1e0d9ee497198dfa2169d079
+W005,inertia,false,false,true,core_law,inward first,,463ad9f93c8a276b1e0d9ee497198dfa2169d079
+W006,scalar,false,true,false,,,V1C2,463ad9f93c8a276b1e0d9ee497198dfa2169d079
+W007,calorimeter,false,true,false,,,V2C1,463ad9f93c8a276b1e0d9ee497198dfa2169d079
+W008,vapor,false,true,false,,,V2C1,463ad9f93c8a276b1e0d9ee497198dfa2169d079
+W009,uncertainty,false,true,false,,,V1C1,463ad9f93c8a276b1e0d9ee497198dfa2169d079
+W010,kinematics,false,true,false,,,V1C3,463ad9f93c8a276b1e0d9ee497198dfa2169d079
+W011,velocity,true,false,false,,,,463ad9f93c8a276b1e0d9ee497198dfa2169d079
+W012,event,false,true,false,,,V3C5,463ad9f93c8a276b1e0d9ee497198dfa2169d079
+W013,thrust,false,true,false,,,V1C5,463ad9f93c8a276b1e0d9ee497198dfa2169d079
+W014,power,false,false,true,core_law,inward first,,463ad9f93c8a276b1e0d9ee497198dfa2169d079
+W015,pressure,false,false,true,core_law,either side,,463ad9f93c8a276b1e0d9ee497198dfa2169d079
+W016,dimension,false,true,false,,,V1C1,463ad9f93c8a276b1e0d9ee497198dfa2169d079
+W017,weight,false,true,false,,,V1C5,463ad9f93c8a276b1e0d9ee497198dfa2169d079
+W018,matter,false,false,true,core_law,either side,,463ad9f93c8a276b1e0d9ee497198dfa2169d079
+W019,reflection,false,false,true,secondary_physics,outward first,,463ad9f93c8a276b1e0d9ee497198dfa2169d079
+W020,attraction,false,false,true,core_law,outward first,,463ad9f93c8a276b1e0d9ee497198dfa2169d079
+W021,limit,false,false,true,secondary_physics,outward first,,463ad9f93c8a276b1e0d9ee497198dfa2169d079
+W022,viscosity,false,true,false,,,V1C14,463ad9f93c8a276b1e0d9ee497198dfa2169d079
+W023,momentum,false,false,true,core_law,family,,463ad9f93c8a276b1e0d9ee497198dfa2169d079
+W024,commutative,false,true,false,,,V1C2,463ad9f93c8a276b1e0d9ee497198dfa2169d079
+W025,radiate,false,false,true,secondary_physics,nothing to add,,463ad9f93c8a276b1e0d9ee497198dfa2169d079
+W026,time,true,false,true,core_law,family,,463ad9f93c8a276b1e0d9ee497198dfa2169d079
+W027,law,false,true,false,,,V1C1,463ad9f93c8a276b1e0d9ee497198dfa2169d079
+W028,converge,false,false,true,secondary_physics,outward first,,463ad9f93c8a276b1e0d9ee497198dfa2169d079
+W029,current,false,false,true,core_law,family,,463ad9f93c8a276b1e0d9ee497198dfa2169d079
+W030,environment,false,true,false,,,V2C3,463ad9f93c8a276b1e0d9ee497198dfa2169d079
+W031,overtone,false,true,false,,,V1C16,463ad9f93c8a276b1e0d9ee497198dfa2169d079
+W032,frequency,false,false,true,secondary_physics,household,,463ad9f93c8a276b1e0d9ee497198dfa2169d079
+W033,pitch,false,true,false,,,V1C17,463ad9f93c8a276b1e0d9ee497198dfa2169d079
+W034,inelastic,false,true,false,,,V1C9,463ad9f93c8a276b1e0d9ee497198dfa2169d079
+W035,electric,false,false,true,core_law,household,,463ad9f93c8a276b1e0d9ee497198dfa2169d079
+W036,light,false,false,true,core_law,family,,463ad9f93c8a276b1e0d9ee497198dfa2169d079
+W037,displacement,false,true,false,,,V1C2;V1C3,463ad9f93c8a276b1e0d9ee497198dfa2169d079
+W038,vortex,false,false,true,secondary_physics,outward first,,463ad9f93c8a276b1e0d9ee497198dfa2169d079
+W039,gravity,false,false,true,core_law,either side,,463ad9f93c8a276b1e0d9ee497198dfa2169d079
+W040,work,false,false,true,core_law,inward first,,463ad9f93c8a276b1e0d9ee497198dfa2169d079
+W041,associative,false,true,false,,,V1C2,463ad9f93c8a276b1e0d9ee497198dfa2169d079
+W042,conduction,false,true,false,,,V2C1,463ad9f93c8a276b1e0d9ee497198dfa2169d079
+W043,vibration,false,false,true,secondary_physics,both ways,,463ad9f93c8a276b1e0d9ee497198dfa2169d079
+W044,distance,false,false,true,core_law,family,,463ad9f93c8a276b1e0d9ee497198dfa2169d079
+W045,resonance,false,false,true,secondary_physics,outward first,,463ad9f93c8a276b1e0d9ee497198dfa2169d079
+W046,energy,true,false,true,core_law,inward first,,463ad9f93c8a276b1e0d9ee497198dfa2169d079
+W047,field,false,false,true,secondary_physics,household,,463ad9f93c8a276b1e0d9ee497198dfa2169d079
+W048,speed,true,false,false,,,,463ad9f93c8a276b1e0d9ee497198dfa2169d079
+W049,aphelion,false,true,false,,,V1C13,463ad9f93c8a276b1e0d9ee497198dfa2169d079
+W050,vector,false,true,false,,,V1C2,463ad9f93c8a276b1e0d9ee497198dfa2169d079
+W051,force,true,false,true,core_law,inward first,,463ad9f93c8a276b1e0d9ee497198dfa2169d079
+W052,oscillation,false,true,false,,,V1C15,463ad9f93c8a276b1e0d9ee497198dfa2169d079
+W053,heat,false,true,false,,,V2C1,463ad9f93c8a276b1e0d9ee497198dfa2169d079
+W054,tension,false,false,true,secondary_physics,outward first,,463ad9f93c8a276b1e0d9ee497198dfa2169d079
+W055,superposition,false,true,false,,,V1C16,463ad9f93c8a276b1e0d9ee497198dfa2169d079
+W056,physics,false,true,false,,,V1C1,463ad9f93c8a276b1e0d9ee497198dfa2169d079
+W057,node,false,true,false,,,V1C16,463ad9f93c8a276b1e0d9ee497198dfa2169d079
+W058,model,false,true,false,,,V1C1,463ad9f93c8a276b1e0d9ee497198dfa2169d079
+W059,accelerate,false,false,true,core_law,nothing to add,,463ad9f93c8a276b1e0d9ee497198dfa2169d079
+W060,hearing,false,true,false,,,V1C17,463ad9f93c8a276b1e0d9ee497198dfa2169d079
+W061,second,false,true,false,,,V1C1,463ad9f93c8a276b1e0d9ee497198dfa2169d079
+W062,dynamics,false,true,false,,,V1C5,463ad9f93c8a276b1e0d9ee497198dfa2169d079
+W063,volume,true,false,true,core_law,household,,463ad9f93c8a276b1e0d9ee497198dfa2169d079
+W064,mass,true,false,true,core_law,household,,463ad9f93c8a276b1e0d9ee497198dfa2169d079
+W065,density,true,false,true,core_law,household,,463ad9f93c8a276b1e0d9ee497198dfa2169d079
+W066,units,false,true,false,,,V1C1,463ad9f93c8a276b1e0d9ee497198dfa2169d079
+W067,precision,false,true,false,,,V1C1,463ad9f93c8a276b1e0d9ee497198dfa2169d079
+W068,beats,false,true,false,,,V1C17,463ad9f93c8a276b1e0d9ee497198dfa2169d079
+W069,culminate,false,false,true,secondary_physics,outward first,,463ad9f93c8a276b1e0d9ee497198dfa2169d079
+W070,wave,false,false,true,secondary_physics,not used,,463ad9f93c8a276b1e0d9ee497198dfa2169d079
+W071,torque,false,true,false,,,V1C10,463ad9f93c8a276b1e0d9ee497198dfa2169d079
+W072,charge,false,false,true,core_law,both ways,,463ad9f93c8a276b1e0d9ee497198dfa2169d079
+W073,space,true,false,true,core_law,family,,463ad9f93c8a276b1e0d9ee497198dfa2169d079
+W074,acceleration,true,false,false,,,,463ad9f93c8a276b1e0d9ee497198dfa2169d079
+W075,overtones,false,true,false,,,V1C17,463ad9f93c8a276b1e0d9ee497198dfa2169d079
+W076,discrepancy,false,true,false,,,V1C1,463ad9f93c8a276b1e0d9ee497198dfa2169d079
+W077,antinode,false,true,false,,,V1C16,463ad9f93c8a276b1e0d9ee497198dfa2169d079
+W078,entropy,false,true,false,,,V2C4,463ad9f93c8a276b1e0d9ee497198dfa2169d079

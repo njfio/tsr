@@ -1,0 +1,111 @@
+name: Verify TSR Proofs
+
+on: [push, pull_request]
+
+jobs:
+  verify-proofs:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install pinned Z3 solver
+        run: pip install --no-cache-dir z3-solver==5.4.1
+
+      - name: Install elan and pinned Lean toolchain
+        run: |
+          curl -sSf https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain none
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+          export PATH="$HOME/.elan/bin:$PATH"
+          cd proof/lean
+          elan show
+          lake --version
+
+      - name: Save committed verification certificate
+        run: cp proof/verification_certificate.json /tmp/committed_certificate.json
+
+      - name: Run full TSR proof verification suite
+        run: PYTHONDONTWRITEBYTECODE=1 python -B proof/run_all_proofs.py
+
+      - name: Verify certificate reproducibility gate
+        run: |
+          PYTHONDONTWRITEBYTECODE=1 python -B - <<'EOF'
+          import json
+          import sys
+          from pathlib import Path
+
+          PERMITTED_KEYS = {
+              "execution_os",
+              "execution_arch",
+              "python_version",
+              "lean_version",
+              "verification_runtime_seconds",
+          }
+
+          committed_path = Path("/tmp/committed_certificate.json")
+          fresh_path = Path("proof/verification_certificate.json")
+
+          committed = json.loads(committed_path.read_text(encoding="utf-8"))
+          fresh = json.loads(fresh_path.read_text(encoding="utf-8"))
+
+          assert fresh.get("all_checks_passed") is True, f"all_checks_passed was {fresh.get('all_checks_passed')!r}"
+          assert fresh.get("execution_os") == "Linux", f"execution_os was {fresh.get('execution_os')!r}"
+          assert "4.35.0" in fresh.get("lean_version", ""), f"lean_version was {fresh.get('lean_version')!r}"
+          assert fresh.get("z3_version") == "5.4.1", f"z3_version was {fresh.get('z3_version')!r}"
+          assert (
+              fresh.get("preregistration_commit_sha")
+              == "463ad9f93c8a276b1e0d9ee497198dfa2169d079"
+          ), f"preregistration_commit_sha was {fresh.get('preregistration_commit_sha')!r}"
+
+          def strip_permitted(obj):
+              if isinstance(obj, dict):
+                  return {
+                      k: strip_permitted(v)
+                      for k, v in obj.items()
+                      if k not in PERMITTED_KEYS
+                  }
+              if isinstance(obj, list):
+                  return [strip_permitted(item) for item in obj]
+              return obj
+
+          def find_diffs(a, b, path="$"):
+              diffs = []
+              if type(a) is not type(b):
+                  diffs.append(
+                      f"{path}: type mismatch committed={type(a).__name__}({a!r}) vs fresh={type(b).__name__}({b!r})"
+                  )
+                  return diffs
+              if isinstance(a, dict):
+                  for key in sorted(set(a.keys()) | set(b.keys())):
+                      child = f"{path}.{key}"
+                      if key not in a:
+                          diffs.append(f"{child}: missing in committed, present in fresh ({b[key]!r})")
+                      elif key not in b:
+                          diffs.append(f"{child}: present in committed ({a[key]!r}), missing in fresh")
+                      else:
+                          diffs.extend(find_diffs(a[key], b[key], child))
+              elif isinstance(a, list):
+                  if len(a) != len(b):
+                      diffs.append(f"{path}: list length mismatch committed={len(a)} vs fresh={len(b)}")
+                  for idx, (item_a, item_b) in enumerate(zip(a, b)):
+                      diffs.extend(find_diffs(item_a, item_b, f"{path}[{idx}]"))
+              elif a != b:
+                  diffs.append(f"{path}: value mismatch committed={a!r} vs fresh={b!r}")
+              return diffs
+
+          stripped_committed = strip_permitted(committed)
+          stripped_fresh = strip_permitted(fresh)
+          diffs = find_diffs(stripped_committed, stripped_fresh)
+          if diffs:
+              print("Certificate reproducibility gate FAILED. Differing JSON paths:", file=sys.stderr)
+              for d in diffs:
+                  print(f"  - {d}", file=sys.stderr)
+              sys.exit(1)
+
+          print("Certificate reproducibility gate PASSED: all non-platform fields match byte-for-byte.")
+          EOF

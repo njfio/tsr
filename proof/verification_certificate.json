@@ -2,12 +2,13 @@
   "suite": "Theory of Sovereign Reflectivity (TSR) \u2014 Machine-Checked Formalization and Consistency Check Certificate",
   "all_checks_passed": true,
   "zero_llm_calls": true,
+  "preregistration_commit_sha": "463ad9f93c8a276b1e0d9ee497198dfa2169d079",
   "execution_os": "Linux",
   "execution_arch": "aarch64",
   "python_version": "3.12.15",
   "lean_version": "Lean (version 4.35.0, aarch64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
   "z3_version": "5.4.1",
-  "verification_runtime_seconds": 9.188,
+  "verification_runtime_seconds": 6.035,
   "part_I_lean4_deductive": {
     "lean_version": "Lean (version 4.35.0, aarch64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
     "modules_verified": [
@@ -24,9 +25,9 @@
     "zero_classical_choice_verified": true,
     "zero_unused_have_underscore_verified": true,
     "nominal_dim_rank_separation_verified": true,
-    "total_theorems_audited": 34,
+    "total_theorems_audited": 35,
     "pure_axiom_free_cic_theorems": 15,
-    "constructive_quotient_propext_theorems": 19,
+    "constructive_quotient_propext_theorems": 20,
     "theorem_kernel_axioms": {
       "TSR.condition_triad_equivalence": [],
       "TSR.receptive_triad_equivalence": [
@@ -65,6 +66,9 @@
         "propext"
       ],
       "TSR.v57_rule_wordings_benchmark": [
+        "propext"
+      ],
+      "TSR.constant_baselines_benchmark": [
         "propext"
       ],
       "TSR.falling_man_equivalence": [],
@@ -9565,7 +9569,7 @@
     "proof/lean/TSR/Condition.lean": "74eda17113ef246e27ae0f65cc2caa96bb125d200c9e2867ef902ede3e2fd798",
     "proof/lean/TSR/Crossing.lean": "e5074c0463acd8bf9ca989750777b3f409e7e167e8e840376b0162207da02403",
     "proof/lean/TSR/EntityAndMeta.lean": "111f48b1bd7fd0115327483e71028d8baaba2b1cbecbf42479e860a5fee3d52f",
-    "proof/lean/TSR/MirrorFunctor.lean": "c3df59fe46436e967469f195b1c1e192507a03644ae71129ccfe9c7e8847fc8e",
+    "proof/lean/TSR/MirrorFunctor.lean": "30f4b7d563aa0838edca427b5963f0df98cdee8961d278c1a76ee3dfdcd5d81b",
     "proof/lean/TSR/OrderedAlgebra.lean": "7269ad747af10d722f822d90fc1131f9f98c76e585a69f508970b032075660d5",
     "proof/lean/TSR.lean": "8d27ea5f821596d9e685f22a6b88ace07d2f63dd9e7b49a6790d119a5714778a",
     "proof/lean/lake-manifest.json": "97d2d9f81ce5c9cb236b17a0aa2c66ad06f7bf053703cf607cfdd4b162d9f750",
