@@ -33,10 +33,10 @@ Compared to earlier drafts of this document and verification scripts, the follow
 
 ```mermaid
 flowchart LR
-    subgraph P1["Part I: Lean 4.35.0 Kernel (34 Items)"]
+    subgraph P1["Part I: Lean 4.35.0 Kernel (35 Items)"]
         OA["OrderedAlgebra.lean (OrderedField + QRat)"]
         C1["Condition.lean (9 Items)"]
-        C2["MirrorFunctor.lean (13 Items incl. v57 Benchmark)"]
+        C2["MirrorFunctor.lean (14 Items incl. v57 Benchmark)"]
         C3["Crossing.lean (6 Items)"]
         C4["EntityAndMeta.lean (6 Items)"]
         OA --> C1 & C2 & C3 --> C4
@@ -59,7 +59,7 @@ flowchart LR
 
 Source directory: [proof/lean/](lean) (`0 sorry`, `0 admit`, `0 custom axioms`, `0 Classical.choice`, `0 have _`; negative compile check rejects `def bad : TSR.PhysDim → TSR.NonphysRank := id`).
 
-Every theorem below is quantified over `[OrderedField F]` ([OrderedAlgebra.lean](lean/TSR/OrderedAlgebra.lean#L21-L40), including `sub_nonneg_of_le` [#L195-L199](lean/TSR/OrderedAlgebra.lean#L195-L199) and `mul_left_cancel_pos` [#L254-L258](lean/TSR/OrderedAlgebra.lean#L254-L258)) and constructively inhabited on `QRat` ([#L499-L743](lean/TSR/OrderedAlgebra.lean#L499-L743)). Across all **34 verified items**: **15** use zero axioms (pure CIC), **12** depend only on `[propext]`, and **7** depend on `[propext, Quot.sound]`.
+Every theorem below is quantified over `[OrderedField F]` ([OrderedAlgebra.lean](lean/TSR/OrderedAlgebra.lean#L21-L40), including `sub_nonneg_of_le` [#L195-L199](lean/TSR/OrderedAlgebra.lean#L195-L199) and `mul_left_cancel_pos` [#L254-L258](lean/TSR/OrderedAlgebra.lean#L254-L258)) and constructively inhabited on `QRat` ([#L499-L743](lean/TSR/OrderedAlgebra.lean#L499-L743)). Across all **35 verified items**: **15** use zero axioms (pure CIC), **13** depend only on `[propext]`, and **7** depend on `[propext, Quot.sound]`.
 
 ### 1.1 Explicit Classification Standard `(a)` / `(b)` / `(c)`
 
@@ -69,12 +69,12 @@ Every Lean theorem proves something exact, but for different reasons:
 - **`(c)` Modeling choice not in the book**: Quantitative equations, data encodings, or code labels added during Lean formalization that do not appear verbatim in *SM v57*. Hybrids such as **(a) over (c)** mean Lean proves `(a)` deductively about the chosen `(c)` model.
 
 Specifically flagged as **`(c)` not in *SM v57***:
-1. **Dilation formula $v_{\text{eff}} = C_{\text{rate}} \cdot \frac{T_0}{T_0 + h}$** ([cross_hinge_dilation_throttling](lean/TSR/MirrorFunctor.lean#L772-L821)) and the identifier word `hinge` (*v57* speaks of *The Present* / center rather than a `"hinge"` rate quotient).
+1. **Dilation formula $v_{\text{eff}} = C_{\text{rate}} \cdot \frac{T_0}{T_0 + h}$** ([cross_hinge_dilation_throttling](lean/TSR/MirrorFunctor.lean#L795-L844)) and the identifier word `hinge` (*v57* speaks of *The Present* / center rather than a `"hinge"` rate quotient).
 2. **Squared-error state update rules $(x - s)^2$** in [predErrorSq](lean/TSR/EntityAndMeta.lean#L209-L210), [subgoalErrorSq](lean/TSR/EntityAndMeta.lean#L213-L214), [four_way_entity_separation](lean/TSR/EntityAndMeta.lean#L349-L498), [pairwiseContrast](lean/TSR/EntityAndMeta.lean#L703-L705), and [independence_of_first_partition](lean/TSR/EntityAndMeta.lean#L734-L760).
 3. **`"reversible equilibrium"` encoding (`IsothermalEquilibriumBalance` / `reversibleStateEquilibrium`) for Row 17 (Boyle's law)** in [two_level_reading_theorem](lean/TSR/MirrorFunctor.lean#L626-L637). In *SM v57* Ch. 16, p. 118, Boyle's law stays `.Keep` for a different physical reason: **pressure exists only because walls hold something in; walls are resistance, so pressure can only exist where the two sides touch**, keeping the compressed pressure–volume relation unchanged when resistance is on.
 4. **Formalization code labels not used as *v57* terms**: identifiers containing `hinge` (`cross_hinge_dilation_throttling`), `barrier` (`barrier`, `ResistanceWorkBarrier`, `countActiveBarriers`, `multiBarrierWorkRow`), `temporal momentum` (`physTemporalMomentum`, *cf. SM v57* Ch. 17 pp. 129–130), and `twoRegion` / `threeRegion` (`MirrorArchitecture.twoRegionNoSharedE` vs. `.threeRegionSharedE`; *SM v57* Ch. 16 p. 117 writes `"two sides"` vs. `"three: the two sides and the continuum where they meet, with one energy in it"`).
 
-### 1.2 Complete 34-Item Classification Table
+### 1.2 Complete 35-Item Classification Table
 
 | # | Lean Identifier & Location | Kernel Axioms | Class | What Lean Actually Proves vs. What Is `(b)` or `(c)` |
 |---:|:---|:---|:---|:---|
@@ -95,23 +95,24 @@ Specifically flagged as **`(c)` not in *SM v57***:
 | 15 | [`temporal_momentum_energy_factorization`](lean/TSR/MirrorFunctor.lean#L412-L421) | `none` | `(a)/(b) over (c)` | `(b)` Associative factoring $m \cdot c \cdot c = m \cdot (c \cdot c)$ over `(c)` code label `physTemporalMomentum` (`"temporal momentum"` is a code identifier, not a *v57* term). |
 | 16 | [`two_level_reading_theorem`](lean/TSR/MirrorFunctor.lean#L626-L637) | `[propext]` | `(a) over (c)` | Finite `decide` check over `(c)` 17-row `LawAST` hand-classification `R_read` (`17/17`), narrow `R_read_ch2_clauses` (`4` misses), `(c)` `IsothermalEquilibriumBalance` Row 17, and `(c)` `multiBarrierWorkRow` (`2` active barriers). |
 | 17 | [`v57_rule_wordings_benchmark`](lean/TSR/MirrorFunctor.lean#L682-L687) | `[propext]` | `(a) over (c)` | Finite `decide` evaluation of `(c)` AST encodings `R_read_v57_ch2` (`14/17`, fails `[11, 12, 17]`) and `R_read_v57_ch16` (`16/17`, fails `[17]`). See [Section 1.3](#13-v57-rule-wordings-benchmark). |
-| 18 | [`falling_man_equivalence`](lean/TSR/MirrorFunctor.lean#L703-L749) | `none` | `(b)` | Pure `(b)` ordered-field mechanics $m a = m g - R \iff R/m + a = g$ with boundary cases ($a = 0 \iff R = mg$; $R = 0 \iff a = g$). |
-| 19 | [`frequency_product_strict_monotonicity`](lean/TSR/MirrorFunctor.lean#L755-L759) | `none` | `(b)` | Pure `(b)` `OrderedField` strict monotonicity ($0 < M_1 < M_2 \land 0 < A_1 < A_2 \implies M_1 A_1 < M_2 A_2$). |
-| 20 | [`cross_hinge_dilation_throttling`](lean/TSR/MirrorFunctor.lean#L772-L821) | `[propext]` | `(a)/(b) over (c)` | **`(c)` Ansatz not in book**: formula $v_{\text{eff}} = C_{\text{rate}} \cdot \frac{T_0}{T_0 + h}$ and identifier word `"hinge"` are modeling choices; $v_{\text{eff}} = C_{\text{rate}} \iff h = 0$ and $0 < h \implies 0 < v_{\text{eff}} < C_{\text{rate}}$ follow by `(b)` algebra. |
-| 21 | [`ratio_laws_fail_monotonicity`](lean/TSR/MirrorFunctor.lean#L829-L857) | `[propext, Quot.sound]` | `(b)/(a)` | `(b)` Explicit `QRat` arithmetic witnesses `(1, 4, 1, 2)` and `(1, 2, 1, 4)` refuting unconditional monotonicity of $A/M$ and $M/A$. |
-| 22 | [`light_surface_of_mirror`](lean/TSR/MirrorFunctor.lean#L929-L993) | `[propext]` | `(b) + (c)` | `(b)` Relativistic shell algebra ($m = 0 \iff pc = E \iff v = c$, $ds^2 = 0$, $E, p, v > 0$); calling $m = 0$ `"the surface of the mirror"` is `(c)` book reading (*v57* Ch. 2 p. 24, Ch. 21 p. 154). |
-| 23 | [`v4_group_and_action`](lean/TSR/Crossing.lean#L111-L123) | `none` | `(b) over (c)` | `(b)` Klein-4 ($V_4$) group laws (`decide`) over `(c)` 4-pole `Quad` grid ([L46](lean/TSR/Crossing.lean#L46)). |
-| 24 | [`derived_diagonal_symmetry`](lean/TSR/Crossing.lean#L131-L159) | `none` | `(a) over (c)` | Finite `decide` search over `24` bijections showing `(c)` Irreversible-Pole & side-swap axioms force `diag` (`Desire ↔ Expectation`, `Belief ↔ Intuition`). |
-| 25 | [`resistance_contrast_filter_properties`](lean/TSR/Crossing.lean#L200-L223) | `[propext]` | `(a)/(b) over (c)` | `(b)` Idempotence and sign inequalities of `(c)` projection [`projectNP`](lean/TSR/Crossing.lean#L177). |
-| 26 | [`self_refutation_of_wanting_nonwanting`](lean/TSR/Crossing.lean#L248-L283) | `[propext]` | `(a) over (c)` | Deductive contradiction and force-balance consequences on `(c)` `FallingManState` ([L228-L238](lean/TSR/Crossing.lean#L228-L238)) predicates. |
-| 27 | [`direct_forcing_increases_confinement`](lean/TSR/Crossing.lean#L301-L308) | `none` | `(a)/(b) over (c)` | `(b)` Ordered-field addition monotonicity ($H < H + \beta u_{\text{force}}$) on `(c)` `confinementStep`. |
-| 28 | [`unique_weak_diagonal_escape`](lean/TSR/Crossing.lean#L367-L434) | `[propext]` | `(a)/(b) over (c)` | Exhaustive induction over `(c)` finite `Quad` paths: when `tuned = true`, only `[Intuition, Belief, Expectation]` exits without cycle. |
-| 29 | [`multiplicative_gate_characterization`](lean/TSR/EntityAndMeta.lean#L55-L81) | `none` | `(a)/(b) over (c)` | `(b)` Field algebra showing $u \cdot x$ satisfies `(c)` `IsZeroAnnihilatingGate` while $a u + b x$ ($a, b > 0$) leaks bilaterally. |
-| 30 | [`coupled_entity_false_positive_ease`](lean/TSR/EntityAndMeta.lean#L113-L153) | `[propext]` | `(a)/(b) over (c)` | `(b)` Linear sum conservation $R_1' + R_2' = R_1 + R_2$ over `(c)` 2-entity `CoupledExchange` ([L91-L100](lean/TSR/EntityAndMeta.lean#L91-L100)). |
-| 31 | [`four_way_entity_separation`](lean/TSR/EntityAndMeta.lean#L349-L498) | `[propext]` | `(a)/(b) over (c)` | **`(c)` Toy rules not in book**: synthetic `rockDyn`/`frozenAIDyn`/`persistentMemoryAIDyn`/`sovereignEntityDyn` using `(c)` quadratic updates `(x - s)^2` ([L209-L214](lean/TSR/EntityAndMeta.lean#L209-L214)); `(b)` induction separates all 6 pairs across arbitrary `xs : List F`. |
-| 32 | [`tsr_axioms_consistent`](lean/TSR/EntityAndMeta.lean#L681-L682) | `[propext, Quot.sound]` | `(a) over (c)` | Relative consistency of `(c)` `TSRSystemModel` ([L517-L544](lean/TSR/EntityAndMeta.lean#L517-L544)) via constructive `QRat` witness `canonicalTSRModel` ([L648-L677](lean/TSR/EntityAndMeta.lean#L648-L677)). |
-| 33 | [`independence_of_first_partition`](lean/TSR/EntityAndMeta.lean#L734-L760) | `[propext, Quot.sound]` | `(a)/(b) over (c)` | **`(c)` Toy formula not in book**: `QRat` counter-models (`undividedSingleLocusWorld`, `unresistedMultiLocusWorld`, `partitionedContrastWorld`) showing neither `|Locus| ≥ 2` nor `ρ > 0` alone yields positive `(c)` `pairwiseContrast = ρ * (state x - state y)^2`. |
-| 34 | [`gravity_open_joint_two_vs_three_regions`](lean/TSR/EntityAndMeta.lean#L795-L812) | `none` | `(a) over (c)` | `decide` evaluation of `(c)` `R_readArch` / `countActiveBarriers` on `.twoRegionNoSharedE` (`15/17`) vs. `.threeRegionSharedE` (`17/17`). |
+| 18 | [`constant_baselines_benchmark`](lean/TSR/MirrorFunctor.lean#L701-L710) | `[propext]` | `(a) over (c)` | Finite `decide` evaluation of `(c)` constant baselines `R_read_always_keep` (`14/17`, misses `[2, 8, 9]`) and `R_read_always_invert` (`3/17`, matches `[2, 8, 9]`); `R_read_v57_ch2` ties `always-Keep` (`14/17`) and `R_read_v57_ch16` (`16/17`) exceeds it by `2`. See [Section 1.3](#13-v57-rule-wordings-benchmark). |
+| 19 | [`falling_man_equivalence`](lean/TSR/MirrorFunctor.lean#L726-L772) | `none` | `(b)` | Pure `(b)` ordered-field mechanics $m a = m g - R \iff R/m + a = g$ with boundary cases ($a = 0 \iff R = mg$; $R = 0 \iff a = g$). |
+| 20 | [`frequency_product_strict_monotonicity`](lean/TSR/MirrorFunctor.lean#L778-L782) | `none` | `(b)` | Pure `(b)` `OrderedField` strict monotonicity ($0 < M_1 < M_2 \land 0 < A_1 < A_2 \implies M_1 A_1 < M_2 A_2$). |
+| 21 | [`cross_hinge_dilation_throttling`](lean/TSR/MirrorFunctor.lean#L795-L844) | `[propext]` | `(a)/(b) over (c)` | **`(c)` Ansatz not in book**: formula $v_{\text{eff}} = C_{\text{rate}} \cdot \frac{T_0}{T_0 + h}$ and identifier word `"hinge"` are modeling choices; $v_{\text{eff}} = C_{\text{rate}} \iff h = 0$ and $0 < h \implies 0 < v_{\text{eff}} < C_{\text{rate}}$ follow by `(b)` algebra. |
+| 22 | [`ratio_laws_fail_monotonicity`](lean/TSR/MirrorFunctor.lean#L852-L880) | `[propext, Quot.sound]` | `(b)/(a)` | `(b)` Explicit `QRat` arithmetic witnesses `(1, 4, 1, 2)` and `(1, 2, 1, 4)` refuting unconditional monotonicity of $A/M$ and $M/A$. |
+| 23 | [`light_surface_of_mirror`](lean/TSR/MirrorFunctor.lean#L952-L1016) | `[propext]` | `(b) + (c)` | `(b)` Relativistic shell algebra ($m = 0 \iff pc = E \iff v = c$, $ds^2 = 0$, $E, p, v > 0$); calling $m = 0$ `"the surface of the mirror"` is `(c)` book reading (*v57* Ch. 2 p. 24, Ch. 21 p. 154). |
+| 24 | [`v4_group_and_action`](lean/TSR/Crossing.lean#L111-L123) | `none` | `(b) over (c)` | `(b)` Klein-4 ($V_4$) group laws (`decide`) over `(c)` 4-pole `Quad` grid ([L46](lean/TSR/Crossing.lean#L46)). |
+| 25 | [`derived_diagonal_symmetry`](lean/TSR/Crossing.lean#L131-L159) | `none` | `(a) over (c)` | Finite `decide` search over `24` bijections showing `(c)` Irreversible-Pole & side-swap axioms force `diag` (`Desire ↔ Expectation`, `Belief ↔ Intuition`). |
+| 26 | [`resistance_contrast_filter_properties`](lean/TSR/Crossing.lean#L200-L223) | `[propext]` | `(a)/(b) over (c)` | `(b)` Idempotence and sign inequalities of `(c)` projection [`projectNP`](lean/TSR/Crossing.lean#L177). |
+| 27 | [`self_refutation_of_wanting_nonwanting`](lean/TSR/Crossing.lean#L248-L283) | `[propext]` | `(a) over (c)` | Deductive contradiction and force-balance consequences on `(c)` `FallingManState` ([L228-L238](lean/TSR/Crossing.lean#L228-L238)) predicates. |
+| 28 | [`direct_forcing_increases_confinement`](lean/TSR/Crossing.lean#L301-L308) | `none` | `(a)/(b) over (c)` | `(b)` Ordered-field addition monotonicity ($H < H + \beta u_{\text{force}}$) on `(c)` `confinementStep`. |
+| 29 | [`unique_weak_diagonal_escape`](lean/TSR/Crossing.lean#L367-L434) | `[propext]` | `(a)/(b) over (c)` | Exhaustive induction over `(c)` finite `Quad` paths: when `tuned = true`, only `[Intuition, Belief, Expectation]` exits without cycle. |
+| 30 | [`multiplicative_gate_characterization`](lean/TSR/EntityAndMeta.lean#L55-L81) | `none` | `(a)/(b) over (c)` | `(b)` Field algebra showing $u \cdot x$ satisfies `(c)` `IsZeroAnnihilatingGate` while $a u + b x$ ($a, b > 0$) leaks bilaterally. |
+| 31 | [`coupled_entity_false_positive_ease`](lean/TSR/EntityAndMeta.lean#L113-L153) | `[propext]` | `(a)/(b) over (c)` | `(b)` Linear sum conservation $R_1' + R_2' = R_1 + R_2$ over `(c)` 2-entity `CoupledExchange` ([L91-L100](lean/TSR/EntityAndMeta.lean#L91-L100)). |
+| 32 | [`four_way_entity_separation`](lean/TSR/EntityAndMeta.lean#L349-L498) | `[propext]` | `(a)/(b) over (c)` | **`(c)` Toy rules not in book**: synthetic `rockDyn`/`frozenAIDyn`/`persistentMemoryAIDyn`/`sovereignEntityDyn` using `(c)` quadratic updates `(x - s)^2` ([L209-L214](lean/TSR/EntityAndMeta.lean#L209-L214)); `(b)` induction separates all 6 pairs across arbitrary `xs : List F`. |
+| 33 | [`tsr_axioms_consistent`](lean/TSR/EntityAndMeta.lean#L681-L682) | `[propext, Quot.sound]` | `(a) over (c)` | Relative consistency of `(c)` `TSRSystemModel` ([L517-L544](lean/TSR/EntityAndMeta.lean#L517-L544)) via constructive `QRat` witness `canonicalTSRModel` ([L648-L677](lean/TSR/EntityAndMeta.lean#L648-L677)). |
+| 34 | [`independence_of_first_partition`](lean/TSR/EntityAndMeta.lean#L734-L760) | `[propext, Quot.sound]` | `(a)/(b) over (c)` | **`(c)` Toy formula not in book**: `QRat` counter-models (`undividedSingleLocusWorld`, `unresistedMultiLocusWorld`, `partitionedContrastWorld`) showing neither `|Locus| ≥ 2` nor `ρ > 0` alone yields positive `(c)` `pairwiseContrast = ρ * (state x - state y)^2`. |
+| 35 | [`gravity_open_joint_two_vs_three_regions`](lean/TSR/EntityAndMeta.lean#L795-L812) | `none` | `(a) over (c)` | `decide` evaluation of `(c)` `R_readArch` / `countActiveBarriers` on `.twoRegionNoSharedE` (`15/17`) vs. `.threeRegionSharedE` (`17/17`). |
 
 ### 1.3 `v57` Rule-Wordings Benchmark
 
@@ -119,10 +120,18 @@ Specifically flagged as **`(c)` not in *SM v57***:
 
 | Rule / Model Encoding | Source Citation / Status | Match Count | Missed Rows | Structural Explanation |
 | :--- | :--- | :---: | :--- | :--- |
+| [`R_read_always_invert`](lean/TSR/MirrorFunctor.lean#L693) | `(c)` Constant baseline (`always-Invert`) | **3 / 17** | `1, 3–7, 10–17` | Matches only the 3 `.Invert` rows (`2, 8, 9`). |
+| [`R_read_always_keep`](lean/TSR/MirrorFunctor.lean#L690) | `(c)` Constant baseline (`always-Keep`) | **14 / 17** | `2, 8, 9` | Matches all 14 `.Keep` rows; misses only the 3 `.Invert` rows (`2, 8, 9`). |
 | [`R_read_ch2_clauses`](lean/TSR/MirrorFunctor.lean#L573-L574) | `(c)` Narrow `hasMass`-only proxy | **13 / 17** | `2, 11, 12, 17` | Misses Row 2 (`no shared now` / distance without mass), gravity rows `11–12`, and Boyle `17`. |
 | [`R_read_v57_ch2`](lean/TSR/MirrorFunctor.lean#L656-L659) | *SM v57*, Ch. 2, p. 20 (`dependsOnResistanceOrSeparation`) | **14 / 17** | `11, 12, 17` | Adds `"or on the distance resistance makes"` (`SpatialSeparationDependence`), resolving Row 2; still lacks shared-energy work and boundary walls. |
 | [`R_read_v57_ch16`](lean/TSR/MirrorFunctor.lean#L664-L667) | *SM v57*, Ch. 16, p. 116 (`+ isSharedEnergyWork`) | **16 / 17** | `17` | Adds `"or the work of the one energy both sides share"` (`.SharedCenterCurvature`), resolving Rows `11–12` and isolating Row 17 (`Boyle`). |
 | [`R_read`](lean/TSR/MirrorFunctor.lean#L563-L564) (`two_level_reading_theorem`) | `(c)` 6-category `LawAST` + `IsothermalEquilibriumBalance` | **17 / 17** | None | **Note**: `17/17` requires hand-assigning laws to the six `LawAST` categories plus `(c)` `IsothermalEquilibriumBalance` for Row 17; in *SM v57* Ch. 16, p. 118, Boyle is instead explained because pressure requires walls, walls are resistance, and pressure exists only where the two sides touch. |
+
+`benchmarkRows17` has 14 `Keep` rulings and 3 `Invert` rulings (`2, 8, 9`). As checked by [`constant_baselines_benchmark`](lean/TSR/MirrorFunctor.lean#L701-L710), `always-Keep` matches 14/17 and `always-Invert` matches 3/17. `R_read_v57_ch2` (14/17) ties `always-Keep`, and `R_read_v57_ch16` (16/17) beats it by two laws.
+
+**17-Row Provenance (`"construction"` vs. `"applied later"`):** Nicholas built the table in *The Sovereign Mirror* from `E = mc^2` and Newton's mechanics, and confirmed provenance for the 17 benchmark rows before any held-out run:
+- **`"construction"` (4 rows):** Row `7` (`7 E = mc^2`), Row `14` (`Newton's third law`), Row `15` (`m = density x volume`), and Row `16` (`F = ma`). All 4 have ruling `Keep` (`4/4` `Keep`); `always-Keep`, `R_read_v57_ch2`, and `R_read_v57_ch16` match `4/4` (`always-Invert`: `0/4`).
+- **`"applied later"` (13 rows):** Rows `1–6`, `8–13`, and `17` (`1 laws same for every observer`, `2 no shared now (distance)`, `3 no fixed frame`, `4 special vs general`, `5 time dilation`, `6 length contraction`, `8 cost of more speed`, `9 mass can't reach c`, `10 space-time one continuum`, Row `11` gravity spacetime curvature, Row `12` gravity lensing, `13 conservation`, Row `17` Boyle's law). These 13 rows contain `10` `Keep` rulings and `3` `Invert` rulings (`2, 8, 9`). On these 13 applied-later rows, `always-Keep` matches `10/13`, `always-Invert` matches `3/13`, `R_read_v57_ch2` matches `10/13` (missing Rows `11, 12, 17`), and `R_read_v57_ch16` matches `12/13` (missing Row `17`).
 
 Similarly, [gravity_open_joint_two_vs_three_regions](lean/TSR/EntityAndMeta.lean#L795-L812) shows via `decide` how adding shared-energy evaluation (code identifiers `.twoRegionNoSharedE` vs. `.threeRegionSharedE`, encoding *SM v57* Ch. 16 p. 117's `"two sides"` vs. `"three: the two sides and the continuum where they meet, with one energy in it"`) shifts Rows `11–12` from `.Invert` (`15/17`) to `.Keep` (`17/17`) while leaving the other 15 rows unchanged.
 
@@ -264,4 +273,4 @@ From the repository root on either macOS or Linux (requiring Lean `v4.35.0` via 
 python proof/run_all_proofs.py
 ```
 
-This single command compiles the Lean 4 suite (`0 sorry`, `0 warnings`, negative nominal-type check, 34-item `#print axioms` audit), runs Z3's $S_{29}$ automorphism solver, 21 1-minimal MUC extractors, and 14-slot WordNet 3.0 + live Oxford / Linux fallback dictionary checks, runs all exact rational 80-word combinatorial audits and self-tests, and writes [verification_certificate.json](verification_certificate.json) with runtime OS/architecture metadata and SHA-256 hashes of all verified source files.
+This single command compiles the Lean 4 suite (`0 sorry`, `0 warnings`, negative nominal-type check, 35-item `#print axioms` audit), runs Z3's $S_{29}$ automorphism solver, 21 1-minimal MUC extractors, and 14-slot WordNet 3.0 + live Oxford / Linux fallback dictionary checks, runs all exact rational 80-word combinatorial audits and self-tests, and writes [verification_certificate.json](verification_certificate.json) with runtime OS/architecture metadata and SHA-256 hashes of all verified source files.

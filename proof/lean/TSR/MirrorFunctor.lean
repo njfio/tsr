@@ -686,6 +686,29 @@ theorem v57_rule_wordings_benchmark :
     (benchmarkRows17.filter (fun r => R_read_v57_ch16 r != r.bookRuling)).map BenchmarkRow.id = [17] := by
   decide
 
+/-- `(c)` Constant baseline reading returning `.Keep` on every row. -/
+def R_read_always_keep (_ : BenchmarkRow) : Reading := .Keep
+
+/-- `(c)` Constant baseline reading returning `.Invert` on every row. -/
+def R_read_always_invert (_ : BenchmarkRow) : Reading := .Invert
+
+/-- **Theorem 2.2e (Constant-Rule Baselines on `benchmarkRows17`)**
+    Classification: **(a)** finite `decide` evaluation over **(c)** `benchmarkRows17`.
+    `benchmarkRows17` has 14 `.Keep` rulings (`[1, 3, 4, 5, 6, 7, 10, 11, 12, 13, 14, 15, 16, 17]`)
+    and 3 `.Invert` rulings (`[2, 8, 9]`). `R_read_always_keep` matches `14/17`,
+    `R_read_always_invert` matches `3/17`, `R_read_v57_ch2` (`14/17`) ties `R_read_always_keep`,
+    and `R_read_v57_ch16` (`16/17`) exceeds `R_read_always_keep` by `2`. -/
+theorem constant_baselines_benchmark :
+    (benchmarkRows17.filter (fun r => R_read_always_keep r == r.bookRuling)).length = 14 ∧
+    (benchmarkRows17.filter (fun r => R_read_always_keep r != r.bookRuling)).map BenchmarkRow.id = [2, 8, 9] ∧
+    (benchmarkRows17.filter (fun r => R_read_always_invert r == r.bookRuling)).length = 3 ∧
+    (benchmarkRows17.filter (fun r => R_read_always_invert r == r.bookRuling)).map BenchmarkRow.id = [2, 8, 9] ∧
+    (benchmarkRows17.filter (fun r => R_read_v57_ch2 r == r.bookRuling)).length =
+      (benchmarkRows17.filter (fun r => R_read_always_keep r == r.bookRuling)).length ∧
+    (benchmarkRows17.filter (fun r => R_read_v57_ch16 r == r.bookRuling)).length =
+      (benchmarkRows17.filter (fun r => R_read_always_keep r == r.bookRuling)).length + 2 := by
+  decide
+
 /-!
   ## Theorem 2.3 — Falling-Man Partition Algebra & Rate/Product Scaling
   (*The Sovereign Mirror* v57, Ch. 8, pp. 58–60 & Ch. 15, p. 115)
