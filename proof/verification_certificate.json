@@ -7,7 +7,7 @@
   "python_version": "3.12.15",
   "lean_version": "Lean (version 4.35.0, aarch64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
   "z3_version": "5.4.1",
-  "verification_runtime_seconds": 9.264,
+  "verification_runtime_seconds": 9.188,
   "part_I_lean4_deductive": {
     "lean_version": "Lean (version 4.35.0, aarch64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
     "modules_verified": [
@@ -111,7 +111,7 @@
   },
   "part_II_A_z3_structural_rigidity": {
     "proof_id": "Part_II_A_Unlabeled_Graph_Structural_Rigidity",
-    "epistemic_scope": "Following The Sovereign Mirror (v57, Note p. 9), 'the table borrows the shape of physics, not its authority.' Although the Z3 solver receives only unlabeled integer node IDs 0..28 with zero English dictionary definitions, the 29-node graph relations in `_build_stage_relations` were written by hand knowing the Map terms. What this Z3 automorphism proof establishes is: no two terms in the Map, as encoded, are interchangeable (12 -> 2 -> 1 automorphism collapse, all 29/29 nodes fixed at Stage 3), and no encoded bijection swaps the Nonphysical and Physical sectors.",
+    "epistemic_scope": "Following The Sovereign Mirror (v57, Note p. 9), 'the table borrows the shape of physics, not its authority'. Although the Z3 solver receives only unlabeled integer node IDs 0..28 with zero English dictionary definitions, the 29-node graph relations in `_build_stage_relations` were written by hand knowing the Map terms. What this Z3 automorphism proof establishes is: no two terms in the Map, as encoded, are interchangeable (12 -> 2 -> 1 automorphism collapse, all 29/29 nodes fixed at Stage 3), and no encoded bijection swaps the Nonphysical and Physical sectors.",
     "relations_hand_written_knowing_targets": true,
     "z3_version": "5.4.1",
     "total_unlabeled_nodes": 29,
@@ -435,7 +435,7 @@
           }
         },
         "Movement": {
-          "citation": "SM Intro p.15, Ch.16 p.123 & Map p.175 ('change in motion; a self-contained part of the whole, like a movement in a symphony')",
+          "citation": "SM v57 pp. 21, 31, Ch. 16 p. 123 & Map p. 175 ('Receptivity to change in motion; a self-contained part of the whole, like a movement in a symphony.')",
           "sense_A_concept_groups": [
             [
               "location",
@@ -1029,7 +1029,7 @@
           }
         },
         "Movement": {
-          "citation": "SM Intro p.15, Ch.16 p.123 & Map p.175 ('change in motion; a self-contained part of the whole, like a movement in a symphony')",
+          "citation": "SM v57 pp. 21, 31, Ch. 16 p. 123 & Map p. 175 ('Receptivity to change in motion; a self-contained part of the whole, like a movement in a symphony.')",
           "sense_A_concept_groups": [
             [
               "location",
@@ -2112,7 +2112,7 @@
     },
     "descriptive_core_law_directionality_summary": {
       "inferential_status": "DESCRIPTIVE_ONLY_POST_HOC_SPLIT_NOT_INFERENTIAL",
-      "author_assigned_kind_labels_disclosure": "The `kind` labels in proof/etymology/ledger_80.json were assigned by the author while drafting What the Words Knew (proof 36, pp. 99-104), not blind. Furthermore, the 21 `core_law` vs 14 `secondary_physics` split is post hoc, and in proof 36 p. 99 `'inward first'` means 'began in human life and was later handed to physics' (making all 45 `not_physics_term` words structurally ineligible, 0/45 by definition). Therefore EVERY Fisher enrichment ratio, odds ratio, and binomial bound below is strictly descriptive (`DESCRIPTIVE_ONLY_POST_HOC_SPLIT_NOT_INFERENTIAL`) and MUST NOT be reported as a confirmatory test.",
+      "author_assigned_kind_labels_disclosure": "The `kind` labels in proof/etymology/ledger_80.json were assigned by the author while drafting What the Words Knew (proof 36, pp. 99-104), not blind. Furthermore, the 21 `core_law` vs 14 `secondary_physics` split is post hoc, and WTWK proof 36 p. 99 reads: \"Inward first is the rare kind: a word for a state of a person that was later handed to physics.\" (making all 45 `not_physics_term` words structurally ineligible, 0/45 by definition). Therefore EVERY Fisher enrichment ratio, odds ratio, and binomial bound below is strictly descriptive (`DESCRIPTIVE_ONLY_POST_HOC_SPLIT_NOT_INFERENTIAL`) and MUST NOT be reported as a confirmatory test.",
       "ledger_total_words": 80,
       "eligible_physics_words_total": 35,
       "structurally_ineligible_not_physics_term_count": 45,
@@ -2322,7 +2322,7 @@
       },
       "descriptive_80_word_ledger_concentration_summary": {
         "inferential_status": "DESCRIPTIVE_ONLY_POST_HOC_SPLIT_NOT_INFERENTIAL",
-        "structural_ineligibility_reason": "45 of the 59 non-core_law words are `not_physics_term` and cannot be 'handed to physics' (`inward first`) by definition; do NOT cite this ratio as an inferential hypothesis test.",
+        "structural_ineligibility_reason": "45 of the 59 non-core_law words are `not_physics_term` and cannot be handed to physics (`inward first`, WTWK proof 36 p. 99) by definition; do NOT cite this ratio as an inferential hypothesis test.",
         "ledger_tally": "5/21 in core_law vs 0/14 in secondary_physics and 0/45 in not_physics_term",
         "descriptive_hypergeometric_ratio_fraction": "153/180752",
         "descriptive_hypergeometric_ratio_float": 0.0008464636629193592
@@ -9562,19 +9562,19 @@
     }
   },
   "source_sha256_manifest": {
-    "proof/lean/TSR/Condition.lean": "476940554a7ab264ecf4a3dbf62b38ee9e16ecea6c011ef453e068d7b518a1e7",
+    "proof/lean/TSR/Condition.lean": "74eda17113ef246e27ae0f65cc2caa96bb125d200c9e2867ef902ede3e2fd798",
     "proof/lean/TSR/Crossing.lean": "e5074c0463acd8bf9ca989750777b3f409e7e167e8e840376b0162207da02403",
     "proof/lean/TSR/EntityAndMeta.lean": "111f48b1bd7fd0115327483e71028d8baaba2b1cbecbf42479e860a5fee3d52f",
-    "proof/lean/TSR/MirrorFunctor.lean": "ee611ff6a6f3c36f1e7c57287442f719cc3904c099a6d316124c37bc48e84336",
+    "proof/lean/TSR/MirrorFunctor.lean": "c3df59fe46436e967469f195b1c1e192507a03644ae71129ccfe9c7e8847fc8e",
     "proof/lean/TSR/OrderedAlgebra.lean": "7269ad747af10d722f822d90fc1131f9f98c76e585a69f508970b032075660d5",
     "proof/lean/TSR.lean": "8d27ea5f821596d9e685f22a6b88ace07d2f63dd9e7b49a6790d119a5714778a",
     "proof/lean/lake-manifest.json": "97d2d9f81ce5c9cb236b17a0aa2c66ad06f7bf053703cf607cfdd4b162d9f750",
     "proof/lean/lakefile.lean": "2d4435988719f340c9f6d3e3659d400a1f8e9063f217f21a917b12ad8d49af7e",
     "proof/lean/lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
-    "proof/z3/lexical_rigidity.py": "3e9adfba2e43a1afdf72a4fe6285cd3404604760de79d60674cda80733207cd9",
-    "proof/z3/structural_rigidity.py": "e3662cfdb25e1e55e2c4eda1141a0554df9b0215df4acff868e267a83915edb1",
+    "proof/z3/lexical_rigidity.py": "59949efce5e042b614e9d881b5c4514e03009063896efd67341ea9b530048964",
+    "proof/z3/structural_rigidity.py": "a162ae713f813b345908fa3fc34a7ada404b010943c905d7bd4fa47c133a3f71",
     "proof/z3/wordnet_100_synsets.json": "9ae84ba4d9e8e0b2293862ed3e42bd86817b223220b549c8eb4c13511b765618",
-    "proof/etymology/combinatorial_proofs.py": "7b34e89993388d7c7fbff4800b234e5d8fe27dd8dbadcf6c4dbe991c7c7a57c7",
+    "proof/etymology/combinatorial_proofs.py": "069064b135336190957e7bc05bbb98ed2eabce4fd230937dcc49f74f19e02893",
     "proof/etymology/ledger_80.json": "8189784b98c4c45bac5ece3cdad2619a4082dd685a5def9b7e324f28e2123c37"
   }
 }

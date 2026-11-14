@@ -242,7 +242,7 @@ Source function: [run_descriptive_core_law_directionality_audit](etymology/combi
 
 Two methodological limits prevent these numbers from acting as inferential $p$-values:
 1. All `kind` labels in [ledger_80.json](etymology/ledger_80.json) (`36 family`, `19 outward first`, `7 household`, `5 inward first`, `4 either side`, `3 nothing to add`, `2 both ways`, `1 a pun`, `1 no help`, `1 not used`, `1 unknown`) were **assigned by the author while drafting *What the Words Knew* (*proof 36*, pp. 99–104), not blind**.
-2. Splitting the `35` physics-eligible words into `21 core_law` vs. `14 secondary_physics` is **post hoc** (and all `45 not_physics_term` words are `0/45` by definition because `"inward first"` means handed to physics).
+2. Splitting the `35` physics-eligible words into `21 core_law` vs. `14 secondary_physics` is **post hoc** (and all `45 not_physics_term` words are `0/45` by definition; *WTWK proof 36* p. 99 reads: *"Inward first is the rare kind: a word for a state of a person that was later handed to physics."*).
 
 Reported purely as **descriptive ledger ratios**:
 - **Directional `core_law` vs. `secondary_physics`**: `5` inward / `1` outward (`energy, force, inertia, power, work` vs. `attraction`) vs. `0` inward / `8` outward — exact contingency fraction $\frac{\binom{6}{5}\binom{8}{0}}{\binom{14}{5}} = \frac{3}{1001} \approx 0.00300$ (Haldane-Anscombe OR $= \frac{187}{3} \approx 62.33$).

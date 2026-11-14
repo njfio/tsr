@@ -413,10 +413,10 @@ theorem zero_resistance_monotone (M : PerturbationMedium F)
 
 /-- **Theorem 1.3 ("The Knife" — Physical Covering vs. Zero-Resistance Irreversibility)**:
     1. *Physical covering*: A physical state `P0` displaced by `δ > 0` (`P1 = P0 + δ`) and
-       pushed back by `-δ` (`P2 = P1 - δ`) returns identically to `P2 = P0` (*"you can cover a cut"*).
+       pushed back by `-δ` (`P2 = P1 - δ`) returns identically to `P2 = P0` (*"You can cover a cut."*, *SM* v57 Ch. 14 p. 106).
     2. *Nonphysical non-uncutting*: In a zero-resistance cumulative medium (`ρ = 0`) receiving
        contrast energy `ξ_n ≥ 0`, once step `k` strictly expands the baseline (`B_k < B_{k+1}`),
-       no future state `B_m` (`m ≥ k + 1`) ever returns to `B_k` (*"you can't uncut it"*). -/
+       no future state `B_m` (`m ≥ k + 1`) ever returns to `B_k` (*"You can't uncut it."*, *SM* v57 Ch. 14 p. 106). -/
 theorem the_knife_irreversibility (M : PerturbationMedium F)
     (hRec : M.rho = zero) (P0 delta B0 : F) (hDelta : zero < delta)
     (xi : Nat → F) (hNonneg : ∀ n : Nat, zero ≤ xi n)

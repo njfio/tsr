@@ -93,10 +93,10 @@ FEATURES: list[str] = [
     "means_persistent_flow",           # Dictionary sense: a continuous flowing stream (p. 123, p. 125)
     "collects_rather_than_radiates",   # Gathers/runs together rather than pouring outward from a point (p. 123)
     "means_present_moment",            # Dictionary sense: happening now / the present time (p. 123, p. 125)
-    "means_motion_receptivity",        # Dictionary sense: act/receptivity of changing motion (p. 123, p. 175)
-    "means_self_contained_part",       # Dictionary sense: self-contained section of a larger whole, e.g. symphony (p. 175)
+    "means_motion_receptivity",        # Dictionary sense: act/receptivity of changing motion (pp. 21, 123, Map p. 175)
+    "means_self_contained_part",       # Dictionary sense: self-contained section of a larger whole, e.g. symphony (pp. 21, 31, Map p. 175)
     "irreversible_cumulative_growth",  # Dictionary sense: unfolding/enlarging irreversibly (p. 123)
-    "continuum_unfolding_sense",       # Continuum/whole spreading-out ('cosmic expansion') rather than bounded organismal lifecycle
+    "continuum_unfolding_sense",       # Continuum/whole spreading-out (cosmic expansion) rather than bounded organismal lifecycle
     "oscillatory_difference_root",     # Dictionary sense: oscillatory state grounding Frequency & Vibrance (p. 123, p. 125)
     "change_is_felt_emotion",          # Experiential readout: felt frequency whose change is emotion (p. 124, p. 174)
     "means_rate_of_value_rise",        # Dictionary sense: rising in value / quickening of gain (p. 124, p. 125)
@@ -411,7 +411,7 @@ def _build_base_constraints(
     allowed_ids = [CAND_IDX[w] for w in allowed_pool]
     labeled: list[tuple[str, z3.BoolRef]] = []
 
-    # Domain restriction + injectivity ("two rows cannot say the same thing", Ch. 16 p. 124)
+    # Domain restriction + injectivity ("Two rows would end up saying the same thing.", SM v57 Ch. 16 p. 124)
     for s_idx, s_name in enumerate(SLOTS):
         labeled.append(
             (
@@ -738,7 +738,7 @@ DUAL_SENSE_POLYSEMY_SPECS: list[tuple[str, str, str, list[set[str]], list[set[st
     (
         "Movement",
         "move",
-        "SM Intro p.15, Ch.16 p.123 & Map p.175 ('change in motion; a self-contained part of the whole, like a movement in a symphony')",
+        "SM v57 pp. 21, 31, Ch. 16 p. 123 & Map p. 175 ('Receptivity to change in motion; a self-contained part of the whole, like a movement in a symphony.')",
         [{"motion", "location", "position"}],
         [{"part", "division", "section"}, {"symphony", "sonata", "musical", "music", "concerto"}],
     ),
