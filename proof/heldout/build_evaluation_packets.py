@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-build_evaluation_packets.py — Emit and verify Track (b) and Track (c) withheld-origin packets.
+build_evaluation_packets.py — Emit and verify the combined withheld-origin evaluation packet.
 
 Reads ONLY proof/heldout/law_cards.csv (65 cards C001..C065).
 Python 3.12+ standard library only (zero external packages).
@@ -17,16 +17,16 @@ from typing import Any
 
 PREREGISTRATION_COMMIT_SHA = "463ad9f93c8a276b1e0d9ee497198dfa2169d079"
 AMENDMENT_1_COMMIT_SHA = "b66f48efb76e0f8d17d7db32848ad95f0a5c8633"
+AMENDMENT_2_COMMIT_SHA = "530a254a51789a9fd68e1889f713b86d829c1146"
 EXPECTED_CARD_COUNT = 65
 
 HELDOUT_DIR = Path(__file__).resolve().parent
 LAW_CARDS_CSV_PATH = HELDOUT_DIR / "law_cards.csv"
-APPLIER_PACKET_PATH = HELDOUT_DIR / "applier_packet.md"
-LABELING_PACKET_PATH = HELDOUT_DIR / "labeling_packet.md"
+COMBINED_PACKET_PATH = HELDOUT_DIR / "combined_evaluation_packet.md"
 
 CARD_FIELDS = ["card_id", "what_it_says", "quantities_related", "conditions_to_hold"]
 LAW_CARDS_FIELDS = CARD_FIELDS + ["preregistration_commit_sha"]
-CARDS_SECTION_MARKER = "## Law Cards"
+CARDS_SECTION_MARKER = "## Section 3: Law Cards (`C001`..`C065`)"
 
 # Hex-encoded hygiene patterns so restricted/forbidden tokens never appear literally in this file.
 _FORBIDDEN_SUBSTRINGS_HEX = [
@@ -66,59 +66,25 @@ _REDACTED_AND_ROW_LEAKS_HEX = [
     "726f7773203136",
 ]
 
-_APPLIER_HEADER_LEAKS_HEX = [
+_HEADER_LEAKS_HEX = [
     "67726176697479",
     "776f726b65642072756c696e67",
     "7265646163746564",
     "6578636c75646564",
 ]
 
-_TSR_CI_WORD_TOKENS_HEX = [
-    "76696272616e6365",
-    "617070726563696174696f6e",
-    "706f696e74206f66207265666c656374696f6e",
-    "706f696e74206f662061747472616374696f6e",
-    "736f7665726569676e",
-    "6e6f6e706879736963616c",
-    "7265636570746976697479",
-    "726563657074697665",
-    "6b656570",
-    "696e76657274",
-    "747372",
-    "74686520736f7665726569676e206d6972726f72",
-    "776861742074686520776f726473206b6e6577",
-    "63757272656e74206f6620636f6e7363696f75736e657373",
-    "6e6f6e706879736963616c206d6f76656d656e74",
-    "657870616e73696f6e2064696c6174696f6e",
-    "657465726e616c2d656e657267657469632d656e74697479",
-    "636f6e7363696f75732d706879736963616c",
-    "636f6e7363696f757320656e65726779",
-    "766962726174696f6e616c207265616c697479",
-    "7375626a656374697665207265616c697479",
-    "636f6c6c656374697665207265616c697479",
-    "6d6972726f72",
-    "763537",
-    "746865206d6170",
-    "6c696d69746c657373",
-]
-
-_TSR_CI_SUBSTRINGS_HEX = [
+_FORMULA_LEAKS_HEX = [
+    "725f726561645f",
     "725f72656164",
+    "646570656e64735f6f6e5f726573697374616e63655f6f725f73657061726174696f6e",
+    "6e6f7420713120616e64",
+    "6e6f7420713220616e64",
+    "6e6f7420713420616e64",
     "626f6f6b72756c696e67",
     "6d6972726f7266756e63746f72",
-]
-
-_TSR_CS_WORD_TOKENS_HEX = [
-    "4d6f76656d656e74",
-    "43757272656e74",
-    "566f72746578",
-    "436f6e76657267656e6365",
-    "41747472616374696f6e",
-    "566962726174696f6e",
-    "457870616e73696f6e",
-    "4d6972726f72",
-    "4d6170",
-    "534d",
+    "69736964656e746974796f726571756976",
+    "6973736861726564656e65726779776f726b",
+    "646570656e64736f6e726573697374616e63656f7273657061726174696f6e",
 ]
 
 # Verbatim rule passages and term definitions from PREREGISTRATION.md Section 1.6.
@@ -269,34 +235,47 @@ def _render_cards_lines(cards: list[dict[str, str]]) -> list[str]:
     return lines
 
 
-def _render_applier_packet_bytes(cards: list[dict[str, str]]) -> bytes:
-    """Render Track (b) applier_packet.md deterministically."""
+def _render_combined_packet_bytes(cards: list[dict[str, str]]) -> bytes:
+    """Render combined_evaluation_packet.md deterministically."""
     lines: list[str] = [
-        "# Track (b) Independent Rule-Applier Evaluation Packet",
+        "# Combined Evaluation Packet (Physics Codebook and Rule Application)",
         "",
         f"- **preregistration_commit_sha:** `{PREREGISTRATION_COMMIT_SHA}`",
         f"- **amendment_1_commit_sha:** `{AMENDMENT_1_COMMIT_SHA}`",
+        f"- **amendment_2_commit_sha:** `{AMENDMENT_2_COMMIT_SHA}`",
         f"- **Card count:** {len(cards)} ({cards[0]['card_id']}..{cards[-1]['card_id']})",
         "",
         "## Instructions",
         "",
         "1. You are working in a clean, standalone session with zero access to external files, repositories, or background sources.",
-        "2. Apply **ONLY** the two *The Sovereign Mirror* (v57) rule passages and the term definitions reproduced verbatim below. Do **not** rely on external sources, outside knowledge, or infer the origin of any card.",
-        f"3. Evaluate all `{len(cards)}` law cards (`{cards[0]['card_id']}`..`{cards[-1]['card_id']}`) independently in the exact order presented. Do **not** group, sort, or omit any card.",
-        '4. For each card, assign `ruling` in `{"Keep", "Invert", "the rule doesn\'t say"}` and a one-line `rationale` citing which phrase of the quoted rule applies.',
-        f"5. Return **ONLY** a valid JSON array of `{len(cards)}` objects in exact order `{cards[0]['card_id']}`..`{cards[-1]['card_id']}` with exact keys `\"card_id\"`, `\"ruling\"`, and `\"rationale\"`:",
+        f"2. Evaluate all `{len(cards)}` law cards (`{cards[0]['card_id']}`..`{cards[-1]['card_id']}`) independently in the exact order presented. Do **not** use external sources, infer card origin, group, sort, or skip cards.",
+        "3. **Part 1 (`q1`–`q4`):** Answer the four binary (`\"Yes\"` / `\"No\"`) physics questions (`q1` = `q1_identity_or_definition`, `q2` = `q2_mass_or_inertia_term`, `q3` = `q3_spatial_separation`, `q4` = `q4_shared_energy_curvature`) strictly from the physical law on each card, standard physics definitions, and the Section 1 questions and `q4` scope rule below.",
+        '4. **Part 2 (`ruling` & `rationale`):** Apply **only** the two *The Sovereign Mirror* (v57) rule passages and term definitions reproduced verbatim in Section 2 below to judge whether each card keeps its relationship (`"Keep"`), turns around (`"Invert"`), or is not decided by the quoted text (`"the rule doesn\'t say"`). Do **not** derive `"ruling"` mechanically from your `q1..q4` answers; judge it directly from the quoted passages, and write a one-line `"rationale"` citing which phrase of the quoted rule applies.',
+        f"5. Return **ONLY** a valid JSON array of `{len(cards)}` objects in exact order `{cards[0]['card_id']}`..`{cards[-1]['card_id']}` with exact keys `\"card_id\"`, `\"q1\"`, `\"q2\"`, `\"q3\"`, `\"q4\"`, `\"ruling\"`, and `\"rationale\"`:",
         "",
         "```json",
         "[",
         "  {",
         '    "card_id": "<card_id>",',
+        '    "q1": "<Yes | No>",',
+        '    "q2": "<Yes | No>",',
+        '    "q3": "<Yes | No>",',
+        '    "q4": "<Yes | No>",',
         '    "ruling": "<Keep | Invert | the rule doesn\'t say>",',
         '    "rationale": "<one-line rationale citing which phrase of the quoted rule applies>"',
         "  }",
         "]",
         "```",
         "",
-        "## Locked Rule Passages and Term Definitions (*The Sovereign Mirror*, v57)",
+        "## Section 1: Four Binary Physics Codebook Questions",
+        "",
+        *_CODEBOOK_QUESTIONS,
+        "",
+        "### Scope Rule for `q4`",
+        "",
+        _Q4_SCOPE_RULE,
+        "",
+        "## Section 2: Locked Rule Passages and Term Definitions (*The Sovereign Mirror*, v57)",
         "",
         "### Rule Passages",
         "",
@@ -337,63 +316,17 @@ def _render_applier_packet_bytes(cards: list[dict[str, str]]) -> bytes:
     return ("\n".join(lines) + "\n").encode("utf-8")
 
 
-def _render_labeling_packet_bytes(cards: list[dict[str, str]]) -> bytes:
-    """Render Track (c) labeling_packet.md deterministically."""
-    lines: list[str] = [
-        "# Track (c) Physics Codebook Evaluation Packet",
-        "",
-        f"- **preregistration_commit_sha:** `{PREREGISTRATION_COMMIT_SHA}`",
-        f"- **amendment_1_commit_sha:** `{AMENDMENT_1_COMMIT_SHA}`",
-        f"- **Card count:** {len(cards)} ({cards[0]['card_id']}..{cards[-1]['card_id']})",
-        "",
-        "## Instructions",
-        "",
-        "1. You are working in a clean, standalone physics classification session with zero access to external files, repositories, or background sources.",
-        f"2. Read each of the `{len(cards)}` physics law cards (`{cards[0]['card_id']}`..`{cards[-1]['card_id']}`) independently in the exact order presented, using standard physics definitions and the four binary (`\"Yes\"` / `\"No\"`) questions and scope rule below. Do **not** group, sort, or omit cards, and do **not** infer the origin of any card.",
-        '3. For each card, answer `q1` (`q1_identity_or_definition`), `q2` (`q2_mass_or_inertia_term`), `q3` (`q3_spatial_separation`), and `q4` (`q4_shared_energy_curvature`) with exact string `"Yes"` or `"No"`.',
-        f"4. Return **ONLY** a valid JSON array of `{len(cards)}` objects in exact order `{cards[0]['card_id']}`..`{cards[-1]['card_id']}` with exact keys `\"card_id\"`, `\"q1\"`, `\"q2\"`, `\"q3\"`, and `\"q4\"`:",
-        "",
-        "```json",
-        "[",
-        "  {",
-        '    "card_id": "<card_id>",',
-        '    "q1": "<Yes | No>",',
-        '    "q2": "<Yes | No>",',
-        '    "q3": "<Yes | No>",',
-        '    "q4": "<Yes | No>"',
-        "  }",
-        "]",
-        "```",
-        "",
-        "## Four Binary Physics Codebook Questions",
-        "",
-        *_CODEBOOK_QUESTIONS,
-        "",
-        "### Scope Rule for `q4`",
-        "",
-        _Q4_SCOPE_RULE,
-        "",
-        "---",
-        "",
-    ]
-    lines.extend(_render_cards_lines(cards))
-    return ("\n".join(lines) + "\n").encode("utf-8")
-
-
-def _check_hygiene(script_text: str, applier_text: str, labeling_text: str) -> None:
+def _check_hygiene(script_text: str, packet_text: str) -> None:
     forbidden = _decode_hex_list(_FORBIDDEN_SUBSTRINGS_HEX)
     origin_ci = _decode_hex_list(_ORIGIN_CI_SUBSTRINGS_HEX)
     origin_cs = bytes.fromhex(_ORIGIN_CS_TOKEN_HEX).decode("utf-8")
     redacted_leaks = _decode_hex_list(_REDACTED_AND_ROW_LEAKS_HEX)
-    applier_header_leaks = _decode_hex_list(_APPLIER_HEADER_LEAKS_HEX)
-    tsr_ci_words = _decode_hex_list(_TSR_CI_WORD_TOKENS_HEX)
-    tsr_ci_substrings = _decode_hex_list(_TSR_CI_SUBSTRINGS_HEX)
-    tsr_cs_words = _decode_hex_list(_TSR_CS_WORD_TOKENS_HEX)
+    header_leaks = _decode_hex_list(_HEADER_LEAKS_HEX)
+    formula_leaks = _decode_hex_list(_FORMULA_LEAKS_HEX)
 
     for label, text in (
         (Path(__file__).name, script_text),
-        (APPLIER_PACKET_PATH.name, applier_text),
-        (LABELING_PACKET_PATH.name, labeling_text),
+        (COMBINED_PACKET_PATH.name, packet_text),
     ):
         lowered = text.lower()
         for tok in forbidden:
@@ -404,77 +337,59 @@ def _check_hygiene(script_text: str, applier_text: str, labeling_text: str) -> N
                 raise RuntimeError(f"Origin-leak token {tok!r} found in {label}")
         if origin_cs in text or re.search(r"\bH\d{3}\b", text):
             raise RuntimeError(f"Origin identifier token found in {label}")
+        for tok in formula_leaks:
+            if tok.lower() in lowered:
+                raise RuntimeError(f"Formula/code leak {tok!r} found in {label}")
 
-    applier_lower = applier_text.lower()
+    cards_idx = packet_text.find(CARDS_SECTION_MARKER)
+    if cards_idx == -1:
+        raise RuntimeError(f"Missing {CARDS_SECTION_MARKER!r} in {COMBINED_PACKET_PATH.name}")
+    header_lower = packet_text[:cards_idx].lower()
     for tok in redacted_leaks:
-        if tok.lower() in applier_lower:
-            raise RuntimeError(f"Redacted-clause or row leak {tok!r} found in {APPLIER_PACKET_PATH.name}")
-
-    applier_cards_idx = applier_text.find(CARDS_SECTION_MARKER)
-    if applier_cards_idx == -1:
-        raise RuntimeError(f"Missing {CARDS_SECTION_MARKER!r} in {APPLIER_PACKET_PATH.name}")
-    applier_header_lower = applier_text[:applier_cards_idx].lower()
-    for tok in applier_header_leaks:
-        if tok.lower() in applier_header_lower:
-            raise RuntimeError(f"Header/citation leak {tok!r} found in {APPLIER_PACKET_PATH.name}")
-
-    labeling_lower = labeling_text.lower()
-    for tok in tsr_ci_words:
-        if re.search(r"\b" + re.escape(tok) + r"\b", labeling_text, flags=re.IGNORECASE):
-            raise RuntimeError(f"TSR case-insensitive word {tok!r} found in {LABELING_PACKET_PATH.name}")
-    for tok in tsr_ci_substrings:
-        if tok.lower() in labeling_lower:
-            raise RuntimeError(f"TSR identifier substring {tok!r} found in {LABELING_PACKET_PATH.name}")
-    for tok in tsr_cs_words:
-        if re.search(r"\b" + re.escape(tok) + r"\b", labeling_text):
-            raise RuntimeError(f"TSR case-sensitive word {tok!r} found in {LABELING_PACKET_PATH.name}")
+        if tok.lower() in header_lower:
+            raise RuntimeError(f"Redacted-clause or row leak {tok!r} found in {COMBINED_PACKET_PATH.name} header")
+    for tok in header_leaks:
+        if tok.lower() in header_lower:
+            raise RuntimeError(f"Header/citation leak {tok!r} found in {COMBINED_PACKET_PATH.name} header")
 
 
 def run(verify_offline: bool) -> dict[str, Any]:
     cards = _load_all_law_cards()
-    applier_bytes = _render_applier_packet_bytes(cards)
-    labeling_bytes = _render_labeling_packet_bytes(cards)
-
-    applier_text = applier_bytes.decode("utf-8")
-    labeling_text = labeling_bytes.decode("utf-8")
+    packet_bytes = _render_combined_packet_bytes(cards)
+    packet_text = packet_bytes.decode("utf-8")
     script_text = Path(__file__).read_text(encoding="utf-8")
 
-    _check_hygiene(script_text, applier_text, labeling_text)
+    _check_hygiene(script_text, packet_text)
 
     if verify_offline:
-        if not APPLIER_PACKET_PATH.exists():
-            raise RuntimeError(f"Missing output file on disk: {APPLIER_PACKET_PATH}")
-        if not LABELING_PACKET_PATH.exists():
-            raise RuntimeError(f"Missing output file on disk: {LABELING_PACKET_PATH}")
-        if APPLIER_PACKET_PATH.read_bytes() != applier_bytes:
-            raise RuntimeError(f"Byte-for-byte mismatch on {APPLIER_PACKET_PATH.name}")
-        if LABELING_PACKET_PATH.read_bytes() != labeling_bytes:
-            raise RuntimeError(f"Byte-for-byte mismatch on {LABELING_PACKET_PATH.name}")
+        if not COMBINED_PACKET_PATH.exists():
+            raise RuntimeError(f"Missing output file on disk: {COMBINED_PACKET_PATH}")
+        if COMBINED_PACKET_PATH.read_bytes() != packet_bytes:
+            raise RuntimeError(f"Byte-for-byte mismatch on {COMBINED_PACKET_PATH.name}")
     else:
-        APPLIER_PACKET_PATH.write_bytes(applier_bytes)
-        LABELING_PACKET_PATH.write_bytes(labeling_bytes)
+        COMBINED_PACKET_PATH.write_bytes(packet_bytes)
 
     return {
         "mode": "verify-offline" if verify_offline else "build",
         "card_count": len(cards),
         "first_card_id": cards[0]["card_id"],
         "last_card_id": cards[-1]["card_id"],
-        "applier_packet_bytes": len(applier_bytes),
-        "labeling_packet_bytes": len(labeling_bytes),
+        "combined_evaluation_packet_bytes": len(packet_bytes),
         "preregistration_commit_sha": PREREGISTRATION_COMMIT_SHA,
         "amendment_1_commit_sha": AMENDMENT_1_COMMIT_SHA,
+        "amendment_2_commit_sha": AMENDMENT_2_COMMIT_SHA,
         "hygiene_passed": True,
     }
 
 
 def main() -> int:
     parser = argparse.ArgumentParser(
-        description="Emit and verify Track (b) applier_packet.md and Track (c) labeling_packet.md for 65 cards."
+        description="Emit and verify combined_evaluation_packet.md for 65 cards."
     )
     parser.add_argument(
         "--verify-offline",
         action="store_true",
-        help="Re-render both packets in memory and assert byte-for-byte parity and hygiene against disk.",
+        help="Re-render combined_evaluation_packet.md in memory and assert byte-for-byte parity and hygiene against disk.",
     )
     args = parser.parse_args()
     result = run(args.verify_offline)
