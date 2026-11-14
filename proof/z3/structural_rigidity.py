@@ -214,7 +214,7 @@ def _build_stage_relations(stage: int) -> dict[str, Any]:
         )
 
     if stage >= 3:
-        # The Sovereign Mirror (v57), Note p. 9: "the table borrows the shape of physics, not its authority."
+        # The Sovereign Mirror (v57), Note p. 9: "the table borrows the shape of physics, not its authority"
         # Ch. 2 pp. 26-27 stationary/poised vs. returning polarity of the two Current partners:
         #   Idle (across from Electro): poised, running while standing still (present at rest without traveling)
         #   Reflected (across from Magnetic): bent back, closing on itself (always returning rather than pouring out)
@@ -374,7 +374,7 @@ def run_structural_rigidity() -> dict[str, Any]:
         "proof_id": "Part_II_A_Unlabeled_Graph_Structural_Rigidity",
         "epistemic_scope": (
             "Following The Sovereign Mirror (v57, Note p. 9), 'the table borrows the shape of physics, "
-            "not its authority.' Although the Z3 solver receives only unlabeled integer node IDs 0..28 "
+            "not its authority'. Although the Z3 solver receives only unlabeled integer node IDs 0..28 "
             "with zero English dictionary definitions, the 29-node graph relations in `_build_stage_relations` "
             "were written by hand knowing the Map terms. What this Z3 automorphism proof establishes is: "
             "no two terms in the Map, as encoded, are interchangeable (12 -> 2 -> 1 automorphism collapse, "

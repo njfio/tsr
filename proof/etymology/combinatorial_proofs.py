@@ -1430,9 +1430,9 @@ def run_descriptive_core_law_directionality_audit(words: list[dict[str, Any]]) -
         "author_assigned_kind_labels_disclosure": (
             "The `kind` labels in proof/etymology/ledger_80.json were assigned by the author while "
             "drafting What the Words Knew (proof 36, pp. 99-104), not blind. Furthermore, the "
-            "21 `core_law` vs 14 `secondary_physics` split is post hoc, and in proof 36 p. 99 "
-            "`'inward first'` means 'began in human life and was later handed to physics' (making "
-            "all 45 `not_physics_term` words structurally ineligible, 0/45 by definition). Therefore "
+            "21 `core_law` vs 14 `secondary_physics` split is post hoc, and WTWK proof 36 p. 99 reads: "
+            '"Inward first is the rare kind: a word for a state of a person that was later handed to physics." '
+            "(making all 45 `not_physics_term` words structurally ineligible, 0/45 by definition). Therefore "
             "EVERY Fisher enrichment ratio, odds ratio, and binomial bound below is strictly descriptive "
             "(`DESCRIPTIVE_ONLY_POST_HOC_SPLIT_NOT_INFERENTIAL`) and MUST NOT be reported as a confirmatory test."
         ),
@@ -1501,7 +1501,7 @@ def run_descriptive_core_law_directionality_audit(words: list[dict[str, Any]]) -
             "inferential_status": CORE_LAW_FISHER_STATUS,
             "structural_ineligibility_reason": (
                 "45 of the 59 non-core_law words are `not_physics_term` and cannot be "
-                "'handed to physics' (`inward first`) by definition; do NOT cite this ratio "
+                "handed to physics (`inward first`, WTWK proof 36 p. 99) by definition; do NOT cite this ratio "
                 "as an inferential hypothesis test."
             ),
             "ledger_tally": "5/21 in core_law vs 0/14 in secondary_physics and 0/45 in not_physics_term",

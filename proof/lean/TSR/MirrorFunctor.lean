@@ -644,14 +644,14 @@ def isSharedEnergyWork : LawAST → Bool
   | _                      => false
 
 /-- `(c)` Predicate encoding *SM* v57, Ch. 2, p. 20 / Ch. 16, p. 116:
-    `"depend[s] on resistance, or on the distance resistance makes"` as
+    `"depend on resistance, or on the distance resistance makes"` as
     `r.hasMass || (r.lawAST == .SpatialSeparationDependence)`. -/
 def dependsOnResistanceOrSeparation (r : BenchmarkRow) : Bool :=
   r.hasMass || (r.lawAST == .SpatialSeparationDependence)
 
 /-- `(c)` Encoding of the full *The Sovereign Mirror* v57 Ch. 2, p. 20 reading rule:
-    `"If it depends on resistance, or on the distance resistance makes... flipping resistant to
-    receptive turns it around... If it's an identity or a definition... there's nothing to turn
+    `"If it depends on resistance, or on the distance resistance makes"` → `.Invert`, unless
+    `"If it's an identity or a definition"`, where `"there's nothing to turn
     around, even with mass in it; the terms reflect and the relationship keeps its shape."` -/
 def R_read_v57_ch2 (r : BenchmarkRow) : Reading :=
   if isIdentityOrEquiv r.lawAST then .Keep
@@ -659,7 +659,7 @@ def R_read_v57_ch2 (r : BenchmarkRow) : Reading :=
   else .Keep
 
 /-- `(c)` Encoding of the *The Sovereign Mirror* v57 Ch. 16, p. 116 reading rule:
-    `"...does this relationship depend on resistance, or on the distance resistance makes, or is it
+    `"does this relationship depend on resistance, or on the distance resistance makes, or is it
     an identity, a definition, or the work of the one energy both sides share?"` -/
 def R_read_v57_ch16 (r : BenchmarkRow) : Reading :=
   if isIdentityOrEquiv r.lawAST || isSharedEnergyWork r.lawAST then .Keep
@@ -857,7 +857,7 @@ theorem ratio_laws_fail_monotonicity :
       decide
 
 /-!
-  ## Theorem 2.4 — Relativistic Zero-Mass Boundary ("Light as the Surface of the Mirror")
+  ## Theorem 2.4 — Relativistic Zero-Mass Boundary (Light as the Surface of the Mirror)
   (*The Sovereign Mirror* v57, Ch. 2, p. 24 & Ch. 21, pp. 154–155)
 -/
 
@@ -919,7 +919,7 @@ def dsSquared {F : Type} [OrderedField F] (S : RelativisticShell F) : F :=
 def lengthFactorSq {F : Type} [OrderedField F] (S : RelativisticShell F) : F :=
   one - (S.v /ᶠ S.c) * (S.v /ᶠ S.c)
 
-/-- **Theorem 2.4 (Zero-Mass Null-Shell Boundary — TSR's "Light as the Surface of the Mirror" Reading)**
+/-- **Theorem 2.4 (Zero-Mass Null-Shell Boundary — TSR's Light-as-the-Surface-of-the-Mirror Reading)**
     Classifications: **(b)** standard special-relativistic kinematics & ordered-field algebra on
     `RelativisticShell F`; **(c)** interpreting the `m = 0` null asymptote as `"the surface of the mirror"`
     follows *SM* v57 Ch. 21, pp. 154–155 (`"This paragraph says light is the surface of the mirror"` /
