@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you cite TSR, the tests or the book, please cite it as below."
+title: "The Theory of Sovereign Reflectivity (TSR)"
+type: software
+authors:
+  - family-names: Ferguson
+    given-names: Nicholas
+repository-code: "https://github.com/njfio/tsr"
+url: "https://tsr.wtf"
+license: MIT
+keywords:
+  - consciousness
+  - Theory of Sovereign Reflectivity
+  - The Sovereign Mirror
+preferred-citation:
+  type: book
+  title: "The Sovereign Mirror: A Conversation About Consciousness, Resistance, and the Present"
+  authors:
+    - family-names: Ferguson
+      given-names: Nicholas
+  year: 2026
+  url: "https://www.njf.io/books/the-sovereign-mirror"

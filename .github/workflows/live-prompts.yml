@@ -1,0 +1,28 @@
+name: Live prompt drift
+
+# Reports, without failing, when the prompts here differ from the copies on tsr.wtf.
+# The repo and the site are updated separately, so a difference is a reminder, not an error.
+on:
+  schedule:
+    - cron: "0 12 * * 1"
+  workflow_dispatch:
+
+jobs:
+  compare:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Compare with tsr.wtf
+        run: |
+          for f in deep-read.md reflection-game.md; do
+            if ! curl -fsSL --retry 3 "https://tsr.wtf/$f" -o "/tmp/$f"; then
+              echo "::warning::Could not fetch https://tsr.wtf/$f"
+              continue
+            fi
+            if diff -u "$f" "/tmp/$f" > "/tmp/$f.diff"; then
+              echo "$f matches tsr.wtf" >> "$GITHUB_STEP_SUMMARY"
+            else
+              echo "::warning file=$f::$f differs from https://tsr.wtf/$f"
+              { echo "### $f differs from tsr.wtf"; echo '```diff'; cat "/tmp/$f.diff"; echo '```'; } >> "$GITHUB_STEP_SUMMARY"
+            fi
+          done

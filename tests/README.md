@@ -42,11 +42,18 @@ Run on 22 October 2026 with five AIs (Astra, Kimi K3, Fable 5.1, Argon, Grok 4.7
 
 ## What the tests leave open
 
-1. Which wins when a relation is both a definition and a cost?
-2. How is a law written once it turns around? Five AIs reversed Hooke's law five different ways.
-3. The vocabulary ends at mechanics: temperature, waves, phase and heat have no partners.
-4. Kinetic energy kept as a definition clashes with row 8.
-5. Escape velocity may not have a reflection at all.
+Round 1 raised five open questions. The author's ruling of October 2026, in [`deep-read.md`](../deep-read.md), answers three of them: a formula keeps its shape on both sides, and only a cost's reading turns around.
+
+Still open:
+
+1. The vocabulary ends at mechanics: temperature, waves, phase and heat have no partners.
+2. Escape velocity may not have a reflection at all.
+
+Answered by the ruling (kept here as the round 1 record):
+
+- Which wins when a relation is both a definition and a cost? Both hold, at different levels: the definition keeps its shape and the cost's reading turns around.
+- How is a law written once it turns around? It isn't rewritten. The formula carries across in the table's terms and only its reading turns over, so the five different reversals of Hooke's law were five attempts at a step the rule doesn't take.
+- Kinetic energy kept as a definition clashes with row 8. Under the ruling there's no clash: kinetic energy keeps its shape, and row 8 is its reading as a cost of speed, turned over.
 
 ## Run it yourself
 

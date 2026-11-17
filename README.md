@@ -58,7 +58,7 @@ I don't think a reflection table only counts because its author likes how it sou
 | [`proof/`](proof/PROOF.md) | Machine-checked formalization: Lean 4 theorems, Z3 uniqueness, exact etymology math, and `15/15` mutation audit |
 | [`harness/`](harness/RESULTS.md) | Preregistered evaluation across 6 AI model families on 40 unseen OpenStax equations (`v2`: 5 generators/raters + DeepSeek opponent) and 5-AI web/Crossing/prose diagnostics ([`deep_v3`](harness/deep_v3/RESULTS_DEEP_V3.md)) |
 | [`tests/`](tests/) | Earlier tests of the one rule: a formal model, a 5-AI extension test, and masked round-2 ratings, with results and open questions |
-| `10-02 The universe as reflection..mp3` | Audio recording: *The universe as reflection* |
+| [`audio/the-universe-as-reflection.mp3`](audio/the-universe-as-reflection.mp3) | Audio recording: *The universe as reflection* |
 | [`the-sovereign-mirror/`](the-sovereign-mirror/) | Cover art for the book |
 
 ## 🤝 How it was written

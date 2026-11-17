@@ -16,6 +16,12 @@ jobs:
         with:
           python-version: "3.12"
 
+      - name: Check the October formal model against tests/results.txt
+        working-directory: tests
+        run: |
+          PYTHONDONTWRITEBYTECODE=1 python -B tsr_formal.py > /tmp/tsr_formal_out.txt
+          diff -u results.txt /tmp/tsr_formal_out.txt
+
       - name: Install pinned Z3 solver
         run: pip install --no-cache-dir z3-solver==5.4.1
 
